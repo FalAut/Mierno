@@ -61,4 +61,6 @@ ServerEvents.recipes((event) => {
     plantingStation("minecraft:ender_pearl", "minecraft:ender_pearl");
 
     plantingStation("minecraft:leather", "minecraft:leather");
+
+    plantingStation(["2x ars_nouveau:magebloom"], "ars_nouveau:magebloom_crop");
 });

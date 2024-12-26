@@ -141,7 +141,8 @@
     "tooltip.mierno.hold_shift": "按住 [%s] 查看更多信息",
     "tooltip.mierno.oak_sapling": "可以种在§f白色混凝土§r上",
     "tooltip.mierno.oak_mortar": "右键研磨副手的物品",
-    "tooltip.mierno.source_flower": "已经没什么好害怕的了",
+    "tooltip.mierno.source_flower_1": "已经没什么好害怕的了",
+    "tooltip.mierno.source_flower_2": "与白雏菊的机制相似，需要消耗魔源，可以自动从半径6格内的魔源罐里吸收魔源",
     "tooltip.mierno.meteorite_compass1": "右键定位最近的迷宫",
     "tooltip.mierno.meteorite_compass2": "罗盘上的指针会指向迷宫存在的方向",
     "tooltip.mierno.meteorite_compass3": "若罗盘快速旋转，则代表当前区块存在迷宫（迷宫生成在地下Y20处）",
@@ -230,6 +231,8 @@
     "tooltip.mierno.vengeance_ring_2": "§c§l警告：不要将此物品长时间带在身上，会随机地导致游戏崩溃！用完记得扔AE或箱子里",
     "tooltip.mierno.ae2_press": "通过破坏神秘方块获得",
     "tooltip.mierno.clay_ball": "在粘土花附近放置沙子来产生黏土球",
+    "tooltip.mierno.alfheim_portal": "警告：不要用时间之瓶加速精灵门核心，会造成卡顿",
+    "tooltip.mierno.imbuement_chamber": "灌注室现在会消耗基座上的材料",
 
     "biome.mierno.black_and_white": "黑与白",
     "biome.mierno.misty_forest": "迷雾森林",

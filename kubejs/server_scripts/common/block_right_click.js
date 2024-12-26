@@ -78,3 +78,11 @@ BlockEvents.rightClicked("mierno:colossal_furnace_core", (event) => {
         controller.getPattern().autoBuild(player, new $MultiblockState(level, block.pos));
     }
 });
+
+BlockEvents.rightClicked("botania:alfheim_portal", (event) => {
+    const { hand, item, player } = event;
+    if (hand != "MAIN_HAND" || item != "tiab:time_in_a_bottle") return;
+
+    player.setStatusMessage(Text.translate("tooltip.mierno.alfheim_portal").darkRed());
+    event.cancel();
+});

@@ -59,92 +59,6 @@ ServerEvents.recipes((event) => {
     });
 
     event.custom({
-        type: "ars_nouveau:imbuement",
-        count: 1,
-        input: {
-            item: "ars_nouveau:source_gem",
-        },
-        output: "ars_nouveau:conjuration_essence",
-        pedestalItems: [
-            {
-                item: {
-                    item: "naturesaura:sky_ingot",
-                },
-            },
-            {
-                item: {
-                    item: "ars_nouveau:frostaya_pod",
-                },
-            },
-            {
-                item: {
-                    item: "botania:rune_water",
-                },
-            },
-        ],
-        source: 1000,
-    });
-
-    event.custom({
-        type: "ars_nouveau:imbuement",
-        count: 1,
-        input: {
-            item: "ars_nouveau:source_gem",
-        },
-        output: "ars_nouveau:abjuration_essence",
-        pedestalItems: [
-            {
-                item: {
-                    item: "ars_nouveau:bastion_pod",
-                },
-            },
-            {
-                item: {
-                    item: "botania:rune_mana",
-                },
-            },
-            {
-                item: {
-                    item: "botania:dragonstone",
-                },
-            },
-        ],
-        source: 1000,
-    });
-
-    event.custom({
-        type: "ars_nouveau:imbuement",
-        count: 1,
-        input: {
-            tag: "forge:seeds",
-        },
-        output: "ars_nouveau:magebloom_crop",
-        pedestalItems: [
-            {
-                item: {
-                    item: "ars_nouveau:magebloom_fiber",
-                },
-            },
-            {
-                item: {
-                    item: "ars_nouveau:magebloom_fiber",
-                },
-            },
-            {
-                item: {
-                    item: "ars_nouveau:magebloom_fiber",
-                },
-            },
-            {
-                item: {
-                    item: "ars_nouveau:magebloom_fiber",
-                },
-            },
-        ],
-        source: 5000,
-    });
-
-    event.custom({
         type: "ars_nouveau:enchanting_apparatus",
         output: {
             item: "ars_nouveau:ritual_wilden_summon",
@@ -327,5 +241,194 @@ ServerEvents.recipes((event) => {
             },
         ],
         source: 2000,
+    });
+
+    event.custom({
+        type: "ars_nouveau:imbuement",
+        count: 1,
+        input: {
+            item: "ars_nouveau:source_gem",
+        },
+        output: "ars_nouveau:conjuration_essence",
+        pedestalItems: [
+            {
+                item: {
+                    item: "ars_nouveau:air_essence",
+                },
+            },
+            {
+                item: {
+                    item: "ars_nouveau:earth_essence",
+                },
+            },
+            {
+                item: {
+                    item: "ars_nouveau:abjuration_essence",
+                },
+            },
+        ],
+        source: 2000,
+    });
+
+    event.custom({
+        type: "ars_nouveau:imbuement",
+        count: 1,
+        input: {
+            item: "ars_nouveau:source_gem",
+        },
+        output: "ars_nouveau:manipulation_essence",
+        pedestalItems: [
+            {
+                item: {
+                    item: "ars_nouveau:fire_essence",
+                },
+            },
+            {
+                item: {
+                    item: "ars_nouveau:water_essence",
+                },
+            },
+            {
+                item: {
+                    item: "ars_nouveau:abjuration_essence",
+                },
+            },
+        ],
+        source: 2000,
+    });
+
+    event.custom({
+        type: "ars_nouveau:imbuement",
+        count: 1,
+        input: {
+            item: "ars_nouveau:source_gem",
+        },
+        output: "ars_nouveau:earth_essence",
+        pedestalItems: [
+            {
+                item: {
+                    item: "ars_nouveau:magebloom_fiber",
+                },
+            },
+            {
+                item: {
+                    item: "ars_nouveau:magebloom",
+                },
+            },
+            {
+                item: {
+                    item: "botania:rune_earth",
+                },
+            },
+        ],
+        source: 1000,
+    });
+
+    event.custom({
+        type: "ars_nouveau:imbuement",
+        count: 1,
+        input: {
+            item: "ars_nouveau:source_gem",
+        },
+        output: "ars_nouveau:water_essence",
+        pedestalItems: [
+            {
+                item: {
+                    item: "ars_nouveau:magebloom_fiber",
+                },
+            },
+            {
+                item: {
+                    item: "ars_nouveau:magebloom",
+                },
+            },
+            {
+                item: {
+                    item: "botania:rune_water",
+                },
+            },
+        ],
+        source: 1000,
+    });
+
+    event.custom({
+        type: "ars_nouveau:imbuement",
+        count: 1,
+        input: {
+            item: "ars_nouveau:source_gem",
+        },
+        output: "ars_nouveau:fire_essence",
+        pedestalItems: [
+            {
+                item: {
+                    item: "ars_nouveau:magebloom_fiber",
+                },
+            },
+            {
+                item: {
+                    item: "ars_nouveau:magebloom",
+                },
+            },
+            {
+                item: {
+                    item: "botania:rune_fire",
+                },
+            },
+        ],
+        source: 1000,
+    });
+
+    event.custom({
+        type: "ars_nouveau:imbuement",
+        count: 1,
+        input: {
+            item: "ars_nouveau:source_gem",
+        },
+        output: "ars_nouveau:air_essence",
+        pedestalItems: [
+            {
+                item: {
+                    item: "ars_nouveau:magebloom_fiber",
+                },
+            },
+            {
+                item: {
+                    item: "ars_nouveau:magebloom",
+                },
+            },
+            {
+                item: {
+                    item: "botania:rune_air",
+                },
+            },
+        ],
+        source: 1000,
+    });
+
+    event.custom({
+        type: "ars_nouveau:imbuement",
+        count: 1,
+        input: {
+            item: "ars_nouveau:source_gem",
+        },
+        output: "ars_nouveau:abjuration_essence",
+        pedestalItems: [
+            {
+                item: {
+                    item: "ars_nouveau:magebloom_fiber",
+                },
+            },
+            {
+                item: {
+                    item: "ars_nouveau:magebloom",
+                },
+            },
+            {
+                item: {
+                    item: "botania:rune_mana",
+                },
+            },
+        ],
+        source: 1000,
     });
 });

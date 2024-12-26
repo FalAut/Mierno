@@ -16,11 +16,11 @@ JEIAddedEvents.registerCategories((event) => {
                 let overlay = guiHelper.createDrawable("botania:textures/gui/pure_daisy_overlay.png", 0, 0, 64, 44);
                 $RenderSystem.enableBlend();
                 overlay.draw(guiGraphics, 24, 0);
-                $HUDHandler.renderManaBar(guiGraphics, 2, 46, 0x8a2be2, 0.75, recipe.data.cost / 10, 1000);
+                $HUDHandler.renderManaBar(guiGraphics, 2, 46, 0x8a2be2, 0.75, recipe.data.cost.toFixed(0), 1000);
                 $RenderSystem.disableBlend();
 
-                let costText = Text.translate("desc.mierno.source_flower.cost", recipe.data.cost);
-                let timeText = Text.translate("desc.mierno.source_flower.time", recipe.data.time);
+                let costText = Text.translate("desc.mierno.source_flower.cost", recipe.data.cost.toFixed(0));
+                let timeText = Text.translate("desc.mierno.source_flower.time", (recipe.data.time / 20).toFixed(0));
                 guiGraphics.drawWordWrap(Client.font, costText, 2, 36, 100, 0);
                 guiGraphics.drawWordWrap(Client.font, timeText, 67, 0, 100, 0);
             });

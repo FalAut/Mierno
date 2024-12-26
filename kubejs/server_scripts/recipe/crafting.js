@@ -70,6 +70,7 @@ ServerEvents.recipes((event) => {
         ])
         .keepIngredient("mierno:dream_lantern");
 
+    kubejs.shapeless("2x ars_nouveau:magebloom_fiber", "ars_nouveau:magebloom");
     kubejs.shapeless(
         Item.of(
             "ae2:meteorite_compass",

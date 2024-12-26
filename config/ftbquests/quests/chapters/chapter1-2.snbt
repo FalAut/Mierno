@@ -436,7 +436,7 @@
 				type: "item"
 			}]
 			x: 12.5d
-			y: 2.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["31905BCEC2F1F40C"]
@@ -455,7 +455,7 @@
 				type: "item"
 			}]
 			x: 12.5d
-			y: 0.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["705E3C69A699CF59"]
@@ -466,7 +466,7 @@
 				type: "item"
 			}]
 			x: 12.5d
-			y: 1.0d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -488,7 +488,7 @@
 				type: "item"
 			}]
 			x: 14.0d
-			y: 1.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["056C442009E33606"]
@@ -510,7 +510,7 @@
 				type: "item"
 			}]
 			x: 10.0d
-			y: -0.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["341A543368E45E54"]
@@ -544,18 +544,7 @@
 				type: "item"
 			}]
 			x: 10.0d
-			y: 3.0d
-		}
-		{
-			dependencies: ["518CE5DBE348157F"]
-			id: "585CE738D747F797"
-			tasks: [{
-				id: "4FB62E5DC4F3172D"
-				item: "ars_nouveau:magebloom_fiber"
-				type: "item"
-			}]
-			x: 9.0d
-			y: 1.5d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -571,7 +560,7 @@
 				type: "item"
 			}]
 			x: 11.5d
-			y: 1.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["5D95FECF8D811E7F"]
@@ -686,13 +675,10 @@
 				}
 			]
 			x: 10.0d
-			y: 1.0d
+			y: 0.5d
 		}
 		{
-			dependencies: [
-				"585CE738D747F797"
-				"0053DDDECA4BCD0D"
-			]
+			dependencies: ["0053DDDECA4BCD0D"]
 			id: "7B32EB98BBB2E402"
 			tasks: [{
 				id: "669634EB22694CDF"
@@ -700,7 +686,7 @@
 				type: "item"
 			}]
 			x: 10.0d
-			y: 2.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["2FD756089FF93EEF"]
@@ -723,7 +709,7 @@
 				}
 			]
 			x: 11.0d
-			y: 2.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["62399F5DF57F5561"]
@@ -789,7 +775,7 @@
 				type: "item"
 			}]
 			x: 11.5d
-			y: -0.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["198B6F92CB7F3082"]

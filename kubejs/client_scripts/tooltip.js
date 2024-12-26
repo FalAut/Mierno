@@ -36,7 +36,10 @@ ItemEvents.tooltip((event) => {
     event.add("botania:black_lotus", Text.translate("tooltip.mierno.black_lotus").gold());
     event.add(
         ["mierno:source_flower", "mierno:flowing_source_flower"],
-        Text.translate("tooltip.mierno.source_flower").gray().italic(true)
+        [
+            Text.translate("tooltip.mierno.source_flower_1").gray().italic(true),
+            Text.translate("tooltip.mierno.source_flower_2").gold(),
+        ]
     );
     event.add("mierno:dream_wings", Text.translate("tooltip.mierno.dream_wings").gold());
     event.add("mierno:addition_sigil", Text.translate("tooltip.mierno.addition_sigil").gold());
@@ -89,11 +92,11 @@ ItemEvents.tooltip((event) => {
         Text.translate("tooltip.mierno.misty_forest_ore").gold()
     );
 
-    event.add("minecraft:feather", Text.translate("tooltip.mierno.market_can_buy").gold());
-    event.add("minecraft:feather", Text.translate("tooltip.mierno.market_can_buy").gold());
-    event.add("minecraft:egg", Text.translate("tooltip.mierno.market_can_buy").gold());
-    event.add("minecraft:snowball", Text.translate("tooltip.mierno.market_can_buy").gold());
-    event.add("minecraft:spider_eye", Text.translate("tooltip.mierno.market_can_buy").gold());
+    event.add(
+        ["feather", "leather", "egg", "snowball", "string", "spider_eye"],
+        Text.translate("tooltip.mierno.market_can_buy").gold()
+    );
+
     event.add("naturesaura:animal_spawner", Text.translate("tooltip.mierno.animal_spawner").gold());
     event.add(
         "ftbquests:book",
@@ -161,4 +164,7 @@ ItemEvents.tooltip((event) => {
     );
 
     event.add(["minecraft:clay_ball", "botania:clayconia"], Text.translate("tooltip.mierno.clay_ball").gold());
+
+    event.add("botania:alfheim_portal", Text.translate("tooltip.mierno.alfheim_portal").darkRed());
+    event.add("ars_nouveau:imbuement_chamber", Text.translate("tooltip.mierno.imbuement_chamber").gold());
 });

@@ -195,10 +195,6 @@
             "outputs": ["botania:light_blue_double_flower"]
         },
         {
-            "seed": "ars_nouveau:magebloom_crop",
-            "outputs": ["ars_nouveau:magebloom", "ars_nouveau:magebloom_crop"]
-        },
-        {
             "seed": "botania:black_mystical_flower",
             "outputs": ["botania:black_mystical_flower"]
         },

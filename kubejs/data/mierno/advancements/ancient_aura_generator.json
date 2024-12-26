@@ -1,0 +1,28 @@
+{
+    "parent": "mierno:gold_fiber",
+    "display": {
+        "icon": {
+            "item": "mierno:ancient_aura_generator_core"
+        },
+        "title": {
+            "translate": "advancement.mierno.ancient_aura_generator.title"
+        },
+        "description": {
+            "translate": "advancement.mierno.ancient_aura_generator.desc"
+        },
+        "hidden": false
+    },
+    "criteria": {
+        "ancient_aura_generator": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": ["mierno:ancient_aura_generator_core"]
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [["ancient_aura_generator"]]
+}

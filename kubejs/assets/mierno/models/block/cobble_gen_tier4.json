@@ -1,0 +1,6 @@
+{
+    "parent": "mierno:block/cobble_gen_base",
+    "textures": {
+        "material": "block/gold_block"
+    }
+}

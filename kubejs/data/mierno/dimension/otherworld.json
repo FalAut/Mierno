@@ -1,0 +1,11 @@
+{
+    "type": "mierno:otherworld",
+    "generator": {
+        "type": "minecraft:noise",
+        "settings": "mierno:otherworld",
+        "biome_source": {
+            "type": "minecraft:fixed",
+            "biome": "mierno:otherworld"
+        }
+    }
+}

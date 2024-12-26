@@ -1,0 +1,33 @@
+{
+	id: "4B54E0AE2DA15519"
+	loot_size: 1
+	order_index: 2
+	rewards: [
+		{
+			command: "ae2 channelmode default"
+			title: "{mierno.welcome.ae_channel.default}"
+			type: "command"
+		}
+		{
+			command: "/ae2 channelmode x2"
+			title: "{mierno.welcome.ae_channel.x2}"
+			type: "command"
+		}
+		{
+			command: "/ae2 channelmode x3"
+			title: "{mierno.welcome.ae_channel.x3}"
+			type: "command"
+		}
+		{
+			command: "/ae2 channelmode x4"
+			title: "{mierno.welcome.ae_channel.x4}"
+			type: "command"
+		}
+		{
+			command: "/ae2 channelmode infinite"
+			title: "{mierno.welcome.ae_channel.infinite}"
+			type: "command"
+		}
+	]
+	title: "ae_channel"
+}

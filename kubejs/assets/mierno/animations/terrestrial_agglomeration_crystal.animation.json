@@ -1,0 +1,51 @@
+{
+    "format_version": "1.8.0",
+    "animations": {
+        "base": {
+            "play_once": true,
+            "animation_length": 3,
+            "bones": {
+                "all": {
+                    "position": {
+                        "vector": [0, 0, 0]
+                    }
+                }
+            }
+        },
+        "formed": {
+            "loop": true,
+            "animation_length": 3,
+            "bones": {
+                "all": {
+                    "position": {
+                        "vector": [0, "math.cos(query.anim_time * 115) * 5", 0]
+                    }
+                }
+            }
+        },
+        "working": {
+            "loop": true,
+            "animation_length": 6,
+            "bones": {
+                "bone1": {
+                    "rotation": {
+                        "0.0": [0, 0, 0],
+                        "6.0": [360, 360, 360]
+                    }
+                },
+                "bone2": {
+                    "rotation": {
+                        "0.0": [0, 0, 0],
+                        "6.0": [360, 360, 0]
+                    }
+                },
+                "bone3": {
+                    "rotation": {
+                        "0.0": [0, 0, 0],
+                        "6.0": [360, 360, 0]
+                    }
+                }
+            }
+        }
+    }
+}

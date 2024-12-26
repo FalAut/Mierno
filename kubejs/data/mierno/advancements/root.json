@@ -1,0 +1,30 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:white_concrete"
+        },
+        "title": {
+            "translate": "advancement.mierno.root.title"
+        },
+        "description": {
+            "color": "#CCCCCC",
+            "translate": "advancement.mierno.root.desc"
+        },
+        "background": "minecraft:textures/block/white_concrete.png",
+        "frame": "task",
+        "hidden": false
+    },
+    "criteria": {
+        "concrete": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": ["minecraft:white_concrete", "minecraft:gray_concrete"]
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [["concrete"]]
+}

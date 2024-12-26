@@ -1,0 +1,13 @@
+{
+    "variants": {
+        "axis=x": {
+            "model": "mierno:block/misty_forest_portal"
+        },
+        "axis=z": {
+            "model": "mierno:block/misty_forest_portal"
+        },
+        "axis=y": {
+            "model": "mierno:block/misty_forest_portal"
+        }
+    }
+}

@@ -1,0 +1,84 @@
+name: Create Modpack Release
+
+on:
+    workflow_dispatch:
+        inputs:
+            ref:
+                description: "Mierno repository reference (branch/tag)"
+                default: "main"
+                required: true
+
+jobs:
+    create-release:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v4
+              with:
+                  fetch-depth: 2
+                  ref: ${{ github.event.inputs.ref }}
+
+            - name: Set up environment and determine version
+              id: setup
+              run: |
+                  # Print repository structure
+                  echo "Debugging repository structure:"
+                  ls -R || { echo "Failed to list repository structure"; exit 1; }
+
+                  # Check for CHANGELOG.md
+                  CHANGELOG_PATH="./CHANGELOG.md"
+                  if [ ! -f "$CHANGELOG_PATH" ]; then
+                      echo "Error: $CHANGELOG_PATH not found in repository root."
+                      exit 1
+                  fi
+
+                  # Debug CHANGELOG.md content
+                  echo "Debugging CHANGELOG.md content:"
+                  cat "$CHANGELOG_PATH" || { echo "Failed to read $CHANGELOG_PATH"; exit 1; }
+
+                  # Extract version
+                  LATEST_VERSION=$(grep -oP '^## v\K[0-9]+(\.[0-9]+)*' "$CHANGELOG_PATH" | head -n1)
+
+                  if [ -z "$LATEST_VERSION" ]; then
+                      echo "Error: Failed to extract version from $CHANGELOG_PATH. Ensure it contains a line starting with '## v' followed by a version number."
+                      exit 1
+                  fi
+
+                  echo "Extracted version: $LATEST_VERSION"
+                  echo "VERSION=$LATEST_VERSION" >> $GITHUB_OUTPUT
+                  echo "ZIP_NAME=Mierno-$LATEST_VERSION.zip" >> $GITHUB_OUTPUT
+
+            - name: Debug outputs
+              run: |
+                  echo "VERSION is ${{ steps.setup.outputs.VERSION }}"
+                  echo "ZIP_NAME is ${{ steps.setup.outputs.ZIP_NAME }}"
+
+            - name: Update manifest.json version
+              run: |
+                  sed -i '/"name": *"Mierno",/!b;n;s/"version": *"[^"]*"/"version": "${{ steps.setup.outputs.VERSION }}"/' manifest.json
+                  echo "Updated manifest.json with version ${{ steps.setup.outputs.VERSION }}"
+
+            - name: Create and package modpack
+              run: |
+                  mkdir overrides
+                  mv config defaultconfigs hotai kubejs ldlib overrides/
+                  zip -r ${{ steps.setup.outputs.ZIP_NAME }} overrides manifest.json modlist.html
+
+            - name: Extract CHANGELOG for current version
+              run: |
+                  sed -n "/^## v${{ steps.setup.outputs.VERSION }}/,/^## /p" CHANGELOG.md | sed '$d' > extracted_changelog.txt
+
+            - name: Create GitHub Release
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              run: |
+                  gh release create "v${{ steps.setup.outputs.VERSION }}" \
+                    ${{ steps.setup.outputs.ZIP_NAME }} \
+                    --title "Mierno v${{ steps.setup.outputs.VERSION }}" \
+                    --notes-file extracted_changelog.txt
+
+            - name: Additional Debugging
+              run: |
+                  echo "Final extracted changelog:"
+                  cat extracted_changelog.txt

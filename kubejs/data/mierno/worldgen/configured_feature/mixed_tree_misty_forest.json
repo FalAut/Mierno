@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:simple_random_selector",
+    "config": {
+        "features": [
+            "ars_nouveau:placed_cascading_tree",
+            "ars_nouveau:placed_blazing_tree",
+            "ars_nouveau:placed_vexing_tree",
+            "ars_nouveau:placed_flourishing_tree",
+            "thermal:mega_rubberwood_tree"
+        ]
+    }
+}

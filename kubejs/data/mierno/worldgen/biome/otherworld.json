@@ -1,0 +1,98 @@
+{
+    "carvers": {},
+    "downfall": 0.0,
+    "effects": {
+        "fog_color": 6840176,
+        "particle": {
+            "options": {
+                "type": "minecraft:soul"
+            },
+            "probability": 0.001
+        },
+        "sky_color": 7254527,
+        "water_color": 4159204,
+        "water_fog_color": 329011
+    },
+    "features": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            "mierno:patch_spirit_fire",
+            "mierno:otherworld_datura",
+            "mierno:ore_iesnium",
+            "mierno:ore_arcane_crystal",
+            "mierno:ore_runic",
+            "mierno:ore_xpetrified"
+        ],
+        [],
+        []
+    ],
+    "has_precipitation": false,
+    "spawn_costs": {},
+    "spawners": {
+        "ambient": [
+            {
+                "type": "minecraft:bat",
+                "maxCount": 2,
+                "minCount": 1,
+                "weight": 60
+            }
+        ],
+        "axolotls": [],
+        "creature": [],
+        "misc": [],
+        "monster": [
+            {
+                "type": "minecraft:ghast",
+                "maxCount": 4,
+                "minCount": 4,
+                "weight": 100
+            },
+            {
+                "type": "minecraft:wither_skeleton",
+                "maxCount": 4,
+                "minCount": 4,
+                "weight": 100
+            },
+            {
+                "type": "minecraft:enderman",
+                "maxCount": 4,
+                "minCount": 1,
+                "weight": 100
+            },
+            {
+                "type": "minecraft:evoker",
+                "maxCount": 1,
+                "minCount": 1,
+                "weight": 50
+            },
+            {
+                "type": "minecraft:pillager",
+                "maxCount": 4,
+                "minCount": 4,
+                "weight": 100
+            },
+            {
+                "type": "minecraft:ravager",
+                "maxCount": 1,
+                "minCount": 1,
+                "weight": 50
+            },
+            {
+                "type": "minecraft:vindicator",
+                "maxCount": 2,
+                "minCount": 2,
+                "weight": 50
+            }
+        ],
+        "underground_water_creature": [],
+        "water_ambient": [],
+        "water_creature": []
+    },
+    "temperature": 2.0
+}

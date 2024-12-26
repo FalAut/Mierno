@@ -1,0 +1,423 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	disable_toast: true
+	filename: "welcome"
+	group: ""
+	icon: "minecraft:poppy"
+	id: "3B53D31B7F26A320"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "mierno:textures/image/packicon.png"
+				}
+			}
+			id: "53EB8D2B73DBB6CC"
+			rewards: [
+				{
+					id: "0A52F62FBBF86DFC"
+					item: "ae2:creative_energy_cell"
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "47221960C76FE6FE"
+					item: "ae2:drive"
+					team_reward: true
+					type: "item"
+				}
+				{
+					count: 16
+					id: "73212191B5845ABD"
+					item: "ae2:black_glass_cable"
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "6128B6FEC264CE8F"
+					item: "ae2:crafting_terminal"
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "2772BC0189A2F038"
+					item: {
+						Count: 1
+						id: "expatternprovider:infinity_cell"
+						tag: {
+							record: {
+								"#c": "ae2:i"
+								id: "minecraft:white_concrete"
+							}
+						}
+					}
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "534EF4EBA4457C57"
+					item: {
+						Count: 1
+						id: "expatternprovider:infinity_cell"
+						tag: {
+							record: {
+								"#c": "ae2:i"
+								id: "minecraft:gray_concrete"
+							}
+						}
+					}
+					team_reward: true
+					type: "item"
+				}
+				{
+					count: 4
+					id: "45A01D5B3446DA35"
+					item: {
+						Count: 1
+						id: "ae2:item_storage_cell_4k"
+						tag: { }
+					}
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "722F67F79866C7A3"
+					item: "ae2:wireless_access_point"
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "2E2EA8A99ABDC6FE"
+					item: "aeinfinitybooster:dimension_card"
+					team_reward: true
+					type: "item"
+				}
+				{
+					id: "7B0FF15B58BD08D0"
+					item: {
+						Count: 1
+						id: "ae2wtlib:wireless_universal_terminal"
+						tag: {
+							crafting: 1b
+							internalCurrentPower: Infinityd
+							internalMaxPower: 4800000.0d
+							pattern_access: 1b
+							pattern_encoding: 1b
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "698F64E2FD58D079"
+				type: "checkmark"
+			}]
+			title: "{mierno.packname}"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"{mierno.welcome.special_thanks.tyumen}"
+				"{\"translate\":\"mierno.welcome.special_thanks.tyumens\",\"extra\":[{\"translate\":\"mierno.welcome.special_thanks.bilibili\",\"color\":\"green\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://space.bilibili.com/32796946\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}},{\"text\":\" | \",\"color\":\"white\"},{\"translate\":\"mierno.welcome.special_thanks.huya\",\"color\":\"green\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://www.huya.com/raini\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}}]}"
+			]
+			disable_toast: true
+			icon: "minecraft:poppy"
+			id: "46991BFC9FC2D6C6"
+			rewards: [{
+				id: "46F5D16DC12A7E5E"
+				item: "minecraft:poppy"
+				team_reward: true
+				type: "item"
+			}]
+			tasks: [{
+				id: "56F69640C5FBBDCA"
+				type: "checkmark"
+			}]
+			title: "{mierno.welcome.special_thanks.title}"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			disable_toast: true
+			icon: "akashictome:tome"
+			id: "03407C903157428A"
+			rewards: [{
+				id: "23CDF5DE97A306E5"
+				item: {
+					Count: 1
+					id: "akashictome:tome"
+					tag: {
+						"akashictome:data": {
+							ae2: {
+								Count: 1b
+								id: "ae2:guide"
+							}
+							ars_nouveau: {
+								Count: 1b
+								id: "ars_nouveau:worn_notebook"
+							}
+							bloodmagic: {
+								Count: 1b
+								id: "patchouli:guide_book"
+								tag: {
+									"patchouli:book": "bloodmagic:guide"
+								}
+							}
+							botania: {
+								Count: 1b
+								id: "botania:lexicon"
+								tag: {
+									"botania:elven_unlock": 1b
+								}
+							}
+							ftbquests: {
+								Count: 1b
+								id: "ftbquests:book"
+								tag: {
+									"akashictome:displayName": {
+										text: "{\"translate\":\"item.ftbquests.book\"}"
+									}
+									"akashictome:is_morphing": 1b
+									display: {
+										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"translate\":\"item.ftbquests.book\"}]}"
+									}
+								}
+							}
+							malum: {
+								Count: 1b
+								id: "malum:encyclopedia_arcana"
+							}
+							modularrouters: {
+								Count: 1b
+								id: "patchouli:guide_book"
+								tag: {
+									"patchouli:book": "modularrouters:book"
+								}
+							}
+							naturesaura: {
+								Count: 1b
+								id: "patchouli:guide_book"
+								tag: {
+									"patchouli:book": "naturesaura:book"
+								}
+							}
+							occultism: {
+								Count: 1b
+								id: "occultism:dictionary_of_spirits"
+								tag: {
+									"modonomicon:book_id": "occultism:dictionary_of_spirits"
+								}
+							}
+							pneumaticcraft: {
+								Count: 1b
+								id: "patchouli:guide_book"
+								tag: {
+									"patchouli:book": "pneumaticcraft:book"
+								}
+							}
+							powah: {
+								Count: 1b
+								id: "powah:book"
+							}
+							wizards_reborn: {
+								Count: 1b
+								id: "wizards_reborn:arcanemicon"
+								tag: {
+									"akashictome:displayName": {
+										text: "{\"translate\":\"item.wizards_reborn.arcanemicon\"}"
+									}
+									"akashictome:is_morphing": 1b
+									display: {
+										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"translate\":\"item.wizards_reborn.arcanemicon\"}]}"
+									}
+								}
+							}
+						}
+						"akashictome:is_morphing": 1b
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			tasks: [{
+				id: "75694B1483477882"
+				type: "checkmark"
+			}]
+			title: "{item.akashictome.tome}"
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			can_repeat: true
+			description: [
+				"{mierno.welcome.projecte.desc1}"
+				""
+				"{mierno.welcome.projecte.desc2}"
+				""
+				"{mierno.welcome.projecte.desc3}"
+			]
+			disable_toast: true
+			icon: "projecte:transmutation_tablet"
+			id: "75B2DA742222B8B7"
+			rewards: [{
+				icon: "projecte:transmutation_tablet"
+				id: "065A030FB09ED60E"
+				team_reward: true
+				title: "{item.projecte.transmutation_tablet}"
+				type: "custom"
+			}]
+			subtitle: "{mierno.welcome.projecte.subtitle}"
+			tasks: [{
+				id: "22E8C9CE45959651"
+				type: "checkmark"
+			}]
+			title: "{mierno.welcome.projecte.title}"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			can_repeat: true
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "expatternprovider:infinity_cell"
+				tag: {
+					record: {
+						"#c": "ae2:i"
+						id: "minecraft:white_concrete"
+					}
+				}
+			}
+			id: "3EE9E3DE66E3340D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4297B69B37F665DC"
+				table_id: 3921120320289517308L
+				team_reward: true
+				type: "choice"
+			}]
+			tasks: [{
+				id: "57934F2B0BF1223E"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			disable_toast: true
+			icon: "ae2:mysterious_cube"
+			id: "406D05107F210C39"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7963CAD27213DB7A"
+				table_id: 5428210489582769433L
+				team_reward: true
+				type: "choice"
+			}]
+			subtitle: "{mierno.welcome.ae_channel.subtitle}"
+			tasks: [{
+				id: "7E5B63433D67E301"
+				type: "checkmark"
+			}]
+			title: "{mierno.welcome.ae_channel.title}"
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			can_repeat: true
+			disable_toast: true
+			id: "175A651CCC00332A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1DFFA0461B8694AC"
+				table_id: 6107721875627554540L
+				team_reward: true
+				type: "choice"
+			}]
+			subtitle: "{mierno.welcome.market.subtitle}"
+			tasks: [{
+				consume_items: true
+				id: "396DB38FE2B21BC4"
+				item: "minecraft:emerald_block"
+				type: "item"
+			}]
+			title: "{mierno.welcome.market.title}"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			description: [
+				"{mierno.welcome.backup.desc1}"
+				""
+				"{mierno.welcome.backup.desc2}"
+				"{mierno.welcome.backup.desc3}"
+				""
+				"{mierno.welcome.backup.desc4}"
+				""
+				"{mierno.welcome.backup.desc5}"
+				""
+				"{mierno.welcome.backup.desc6}"
+				""
+				"{mierno.welcome.backup.desc7}"
+			]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "ftblibrary:textures/icons/down.png"
+				}
+			}
+			id: "0E06636DACBA0779"
+			subtitle: "{mierno.welcome.backup.subtitle}"
+			tasks: [{
+				id: "7DDC9678810D119B"
+				title: "{mierno.welcome.backup.title}"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			description: [
+				"{mierno.welcome.community.desc1}"
+				""
+				"{\"text\":\"      \",\"extra\":[{\"translate\":\"mierno.welcome.community.qq_channel\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://pd.qq.com/s/48af4i42y\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":{\"translate\":\"message.mierno.clickopen\"}}},{\"text\":\"   |   \",\"color\":\"white\"},{\"translate\":\"mierno.welcome.community.github\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/FalAut/Mierno\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":{\"translate\":\"message.mierno.clickopen\"}}},{\"text\":\"   |   \",\"color\":\"white\"},{\"translate\":\"mierno.welcome.community.discord\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://discord.gg/6HPKTvHX\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":{\"translate\":\"message.mierno.clickopen\"}}}],\"color\":\"gold\"}"
+				""
+				""
+				""
+				"{\"text\":\"QQ测试群：490811326\",\"color\":\"gold\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://qm.qq.com/q/GeogW2Smkw\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":{\"translate\":\"message.mierno.clickopen\"}}}"
+			]
+			disable_toast: true
+			icon: {
+				Count: 1
+				id: "ftbquests:custom_icon"
+				tag: {
+					Icon: "ftblibrary:icons/friends"
+				}
+			}
+			id: "0FA0564AC1CAA53D"
+			subtitle: "{mierno.welcome.community.subtitle}"
+			tasks: [{
+				id: "60AC0D4488A78F3B"
+				type: "checkmark"
+			}]
+			title: "{mierno.welcome.community.title}"
+			x: 1.5d
+			y: 1.5d
+		}
+	]
+	title: "{mierno.welcome.title}"
+}

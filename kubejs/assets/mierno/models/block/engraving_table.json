@@ -1,0 +1,11 @@
+{
+    "parent": "minecraft:block/lectern",
+    "textures": {
+        "particle": "mierno:block/engraving_table_sides",
+        "bottom": "mierno:block/infused_wood",
+        "base": "mierno:block/infused_wood",
+        "front": "mierno:block/engraving_table_front",
+        "sides": "mierno:block/engraving_table_sides",
+        "top": "mierno:block/engraving_table_top"
+    }
+}

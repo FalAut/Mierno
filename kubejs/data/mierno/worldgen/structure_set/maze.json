@@ -1,0 +1,15 @@
+{
+    "structures": [
+        {
+            "structure": "mierno:maze",
+            "weight": 1
+        }
+    ],
+    "placement": {
+        "type": "minecraft:random_spread",
+        "salt": 100,
+        "locate_offset": [9, 0, 9],
+        "spacing": 15,
+        "separation": 8
+    }
+}

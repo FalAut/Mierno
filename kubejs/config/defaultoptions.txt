@@ -1,0 +1,3 @@
+renderDistance:6
+simulationDistance:6
+bobView:false

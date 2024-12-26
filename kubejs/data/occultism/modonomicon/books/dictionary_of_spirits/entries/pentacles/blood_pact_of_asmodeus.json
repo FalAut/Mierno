@@ -1,0 +1,30 @@
+{
+	"name": "book.occultism.dictionary_of_spirits.pentacles.blood_pact_of_asmodeus.name",
+	"background_u_index": 0,
+	"background_v_index": 0,
+	"category": "occultism:pentacles",
+	"description": "",
+	"hide_while_locked": false,
+	"show_when_any_parent_unlocked": true,
+	"icon": "mierno:ritual_dummy/blood_pact_of_asmodeus",
+	"pages": [
+		{
+			"type": "modonomicon:text",
+			"anchor": "",
+			"show_title_separator": true,
+			"text": "book.occultism.dictionary_of_spirits.pentacles.blood_pact_of_asmodeus.intro.text",
+			"title": "book.occultism.dictionary_of_spirits.pentacles.blood_pact_of_asmodeus.intro.title",
+			"use_markdown_in_title": false
+		},
+		{
+			"type": "modonomicon:multiblock",
+			"anchor": "",
+			"multiblock_id": "occultism:blood_pact_of_asmodeus",
+			"multiblock_name": "",
+			"show_visualize_button": true,
+			"text": ""
+		}
+	],
+	"x": -10,
+	"y": 2
+}

@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "particle": "mekanism:block/block_steel",
+        "down": "#particle",
+        "up": "#particle",
+        "north": "mierno:block/matter_mixer_controller",
+        "east": "#particle",
+        "south": "#particle",
+        "west": "#particle"
+    }
+}

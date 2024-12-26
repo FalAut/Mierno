@@ -1,0 +1,12 @@
+# Default config file that will be copied to local\ftbchunks\client-config.snbt if it doesn't exist!
+# Just copy any values you wish to override in here!
+
+{ 	
+    minimap: {
+        enabled: false
+    }
+
+    waypoints: {
+        death_waypoints: false
+    }
+}

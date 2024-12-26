@@ -1,0 +1,840 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter1-2"
+	group: "7299F76F5EAD0EDE"
+	icon: "mierno:dream_lantern"
+	id: "6947F7F20C04CA3E"
+	images: [{
+		height: 3.0d
+		hover: ["mierno.chapter1-2.mana_to_source.subtitle"]
+		image: "mierno:textures/image/mana_to_source.png"
+		rotation: 0.0d
+		width: 4.38568129330254d
+		x: 8.5d
+		y: -3.5d
+	}]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["650A934E657C4828"]
+			icon: "mierno:dream_lantern"
+			id: "341A543368E45E54"
+			shape: "gear"
+			size: 2.0d
+			subtitle: "{\"translate\":\"mierno.chapter1-2.enter_misty_forest.subtitle\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"0AA9F448417D561E\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}}"
+			tasks: [{
+				dimension: "mierno:misty_forest"
+				id: "74911D77994DC1FA"
+				title: "{mierno.chapter1-2.enter_misty_forest.title}"
+				type: "dimension"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["341A543368E45E54"]
+			id: "1ED6C61F7420F418"
+			tasks: [{
+				icon: "botania:white_mystical_flower"
+				id: "69390B6D020D01A4"
+				title: "{tag.botania.mystical_flowers}"
+				type: "custom"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1ED6C61F7420F418"]
+			id: "5258DC18B1AA1995"
+			tasks: [{
+				id: "50B9272F8E1AA511"
+				item: "botania:fertilizer"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1ED6C61F7420F418"]
+			id: "719598689B2A6A0C"
+			tasks: [{
+				id: "0B2B273E8FBDD3F8"
+				item: "botania:pure_daisy"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["719598689B2A6A0C"]
+			id: "2A532B873EAA2A43"
+			tasks: [{
+				id: "7416C4D1E69D9C7E"
+				item: "botania:livingrock"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["719598689B2A6A0C"]
+			id: "7F52F0B508735AD6"
+			tasks: [{
+				id: "073611407EA26CB8"
+				item: "botania:livingwood"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["1ED6C61F7420F418"]
+			id: "3F185A10F8AAD623"
+			tasks: [{
+				id: "1276A84957C28319"
+				item: "botania:black_lotus"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["08502873283123EA"]
+			id: "2AB33AA024C2DA5F"
+			shape: "square"
+			subtitle: "{\"translate\":\"mierno.chapter1-2.alfheim_portal.subtitle\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"05A9162469429213\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}}"
+			tasks: [
+				{
+					id: "05A4C6E59925F6E8"
+					item: "botania:alfheim_portal"
+					type: "item"
+				}
+				{
+					id: "609B165B04BFD317"
+					item: "botania:natura_pylon"
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2AB33AA024C2DA5F"]
+			id: "67A66442CFED1732"
+			subtitle: "{mierno.chapter1-2.elven_portal_conversion.subtitle}"
+			tasks: [{
+				id: "19BB31D35297C042"
+				item: "botania:shimmerrock"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["2AB33AA024C2DA5F"]
+			id: "5A8D08BBA0AB0B90"
+			tasks: [
+				{
+					id: "30FBFDB81E7B8FB4"
+					item: "botania:elementium_ingot"
+					type: "item"
+				}
+				{
+					id: "35325C553A61D768"
+					item: "botania:dragonstone"
+					type: "item"
+				}
+				{
+					id: "247288CC79F4F824"
+					item: "botania:pixie_dust"
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2A532B873EAA2A43"]
+			id: "587246C3575DA78B"
+			tasks: [{
+				id: "52C8B40C74449F94"
+				item: "botania:mana_pool"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["7F52F0B508735AD6"]
+			id: "7C7CB69C71262761"
+			tasks: [{
+				id: "08BB6B8739A54672"
+				item: "botania:mana_spreader"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["62399F5DF57F5561"]
+			id: "6BFDFA38118C2AA7"
+			rewards: [{
+				id: "66F2844982AD5D2D"
+				item: "botania:spark_upgrade_dominant"
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "{\"translate\":\"mierno.chapter1-2.terra_plate.subtitle\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"4842CC82C1CF0559\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}}"
+			tasks: [{
+				id: "04C9C16269524713"
+				item: "botania:terra_plate"
+				type: "item"
+			}]
+			title: "{mierno.chapter1-2.terra_plate.title}"
+			x: 5.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6BFDFA38118C2AA7"]
+			id: "08502873283123EA"
+			tasks: [{
+				id: "53CD3A61FC9F8C35"
+				item: "botania:terrasteel_ingot"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["587246C3575DA78B"]
+			id: "56B0BBDF1BD456B9"
+			tasks: [
+				{
+					id: "5A775B823683F24E"
+					item: "botania:manasteel_ingot"
+					type: "item"
+				}
+				{
+					id: "59A827C685C3D453"
+					item: "botania:mana_diamond"
+					type: "item"
+				}
+				{
+					id: "44BEC30DD9AB231E"
+					item: "botania:mana_powder"
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["56B0BBDF1BD456B9"]
+			id: "62399F5DF57F5561"
+			tasks: [{
+				id: "3A6F81AB6DB8BFF5"
+				item: "botania:runic_altar"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1ED6C61F7420F418"]
+			id: "6F23AB7DA432A5CE"
+			tasks: [{
+				id: "389068EC84966E8A"
+				item: "botania:clayconia"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6F23AB7DA432A5CE"]
+			id: "5D95FECF8D811E7F"
+			tasks: [{
+				id: "74E56F899D096EEF"
+				item: "minecraft:clay_ball"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["341A543368E45E54"]
+			id: "678EFB78B1959946"
+			subtitle: "{mierno.chapter1-1.bottle_mist.subtitle}"
+			tasks: [{
+				id: "354255C3C3EC889B"
+				item: {
+					Count: 1
+					id: "naturesaura:aura_bottle"
+					tag: {
+						stored_type: "mierno:mist"
+					}
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2AB33AA024C2DA5F"]
+			id: "6F79995AF59A5557"
+			tasks: [{
+				id: "3FD0E3355CEB2556"
+				item: "ae2:sky_stone_block"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"5A8D08BBA0AB0B90"
+				"57A8951466619FE4"
+				"67A66442CFED1732"
+			]
+			id: "056C442009E33606"
+			tasks: [{
+				id: "47BA4E0A52AFAA3C"
+				item: "ars_nouveau:source_gem"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6BFDFA38118C2AA7"]
+			id: "57A8951466619FE4"
+			tasks: [
+				{
+					id: "41DFE6324B2CE4ED"
+					item: "ars_nouveau:imbuement_chamber"
+					type: "item"
+				}
+				{
+					id: "4AD10B46E6F34885"
+					item: "ars_nouveau:arcane_pedestal"
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["678EFB78B1959946"]
+			id: "039DEBDCAF68B14D"
+			tasks: [{
+				id: "6561072C2908CAD7"
+				item: {
+					Count: 1
+					id: "ae2:meteorite_compass"
+					tag: {
+						display: {
+							Lore: [
+								"{\"italic\":false,\"color\":\"gold\",\"translate\":\"tooltip.mierno.meteorite_compass1\"}"
+								"{\"italic\":false,\"color\":\"gold\",\"translate\":\"tooltip.mierno.meteorite_compass2\"}"
+								"{\"italic\":false,\"color\":\"gold\",\"translate\":\"tooltip.mierno.meteorite_compass3\"}"
+							]
+							Name: "{\"translate\":\"item.mierno.maze_compass\",\"bold\":true,\"italic\":false}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["198B6F92CB7F3082"]
+			id: "245DC334FDA4AB00"
+			tasks: [{
+				id: "751866613C786927"
+				item: "botania:overgrowth_seed"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["198B6F92CB7F3082"]
+			id: "3A57FAF02C0F3714"
+			shape: "heart"
+			tasks: [{
+				id: "093A50FD076BAEAB"
+				item: {
+					Count: 1
+					id: "tiab:time_in_a_bottle"
+					tag: {
+						storedTime: 622080000
+						totalAccumulatedTime: 622080000
+					}
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"6F79995AF59A5557"
+				"5A8D08BBA0AB0B90"
+			]
+			id: "368690E9474BB079"
+			tasks: [{
+				id: "6771BDA9F1542903"
+				item: "ae2:mysterious_cube"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"09E9A9FF0A178C94"
+				"6F79995AF59A5557"
+				"368690E9474BB079"
+				"50B0CC93E4CFE5D6"
+				"2B96419F4DD86B22"
+			]
+			id: "6641707922E5AB63"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "61C60031809D5BD8"
+				item: "ae2:controller"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2AB33AA024C2DA5F"]
+			id: "09E9A9FF0A178C94"
+			tasks: [{
+				id: "6EB2604B00CDDA9C"
+				item: "ae2:certus_quartz_crystal"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["31905BCEC2F1F40C"]
+			id: "1607F136A1C1E367"
+			tasks: [{
+				id: "43D619994F6E7984"
+				item: {
+					Count: 1
+					id: "ars_nouveau:jar_of_light"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 12.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["31905BCEC2F1F40C"]
+			id: "5FFA822EE1E8BE7E"
+			tasks: [{
+				id: "1F4630BA490FCC2B"
+				item: {
+					Count: 1
+					id: "ars_nouveau:void_jar"
+					tag: {
+						an_voidJar: {
+							on: 0b
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 12.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["705E3C69A699CF59"]
+			id: "577F713B211E2AF4"
+			tasks: [{
+				id: "31E5794A105B08CD"
+				item: "ars_nouveau:wilden_tribute"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"705E3C69A699CF59"
+				"1607F136A1C1E367"
+				"5FFA822EE1E8BE7E"
+			]
+			id: "6ED6EFD4B2E4AE1E"
+			rewards: [{
+				id: "575C70AB7C3C31E9"
+				item: "evilcraft:eternal_water"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "610F545B581D1AFD"
+				item: "ae2:condenser"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["056C442009E33606"]
+			id: "518CE5DBE348157F"
+			tasks: [{
+				id: "3B4C3CD968E0BB17"
+				item: "mierno:source_flower"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["518CE5DBE348157F"]
+			id: "683BFEA87CF90206"
+			tasks: [{
+				id: "216AD37449F8CBAF"
+				item: "ars_nouveau:sourcestone"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["341A543368E45E54"]
+			id: "0AD660FC52E12B9C"
+			tasks: [
+				{
+					id: "479F4ADD894CA110"
+					item: "ars_nouveau:wilden_horn"
+					type: "item"
+				}
+				{
+					id: "07734DCAE3ACA785"
+					item: "ars_nouveau:wilden_spike"
+					type: "item"
+				}
+				{
+					id: "36ED28B658C0B410"
+					item: "ars_nouveau:wilden_wing"
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7B32EB98BBB2E402"]
+			id: "2FD756089FF93EEF"
+			tasks: [{
+				id: "5949342D3D4A2167"
+				item: "ars_nouveau:magebloom"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["518CE5DBE348157F"]
+			id: "585CE738D747F797"
+			tasks: [{
+				id: "4FB62E5DC4F3172D"
+				item: "ars_nouveau:magebloom_fiber"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"0053DDDECA4BCD0D"
+				"3899D7896D69E280"
+			]
+			description: ["{mierno.chapter1-2.wilden_summon.desc1}"]
+			id: "705E3C69A699CF59"
+			subtitle: "{mierno.chapter1-2.wilden_summon.subtitle}"
+			tasks: [{
+				id: "3C8CA090C96EBFD1"
+				item: "ars_nouveau:ritual_wilden_summon"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5D95FECF8D811E7F"]
+			id: "6BE50FF0F278BE53"
+			tasks: [{
+				id: "2ED4F05D647F53C0"
+				item: "mierno:planting_station"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["341A543368E45E54"]
+			id: "3103B4047304E3CC"
+			tasks: [{
+				id: "5217DA90FEA05B6D"
+				item: "ars_nouveau:sourceberry_bush"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["341A543368E45E54"]
+			icon: "mierno:maze_block"
+			id: "198B6F92CB7F3082"
+			tasks: [{
+				id: "33D2FC34AC68359E"
+				structure: "mierno:maze"
+				type: "structure"
+			}]
+			title: "{mierno.chapter1-2.find_maze.title}"
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["341A543368E45E54"]
+			id: "14E1CFC1C6535C47"
+			tasks: [{
+				id: "0E14D402758C7624"
+				item: "thermal:rubberwood_sapling"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"14E1CFC1C6535C47"
+				"70A4FD85BCB100A5"
+			]
+			id: "5C3DC7501542C952"
+			tasks: [{
+				id: "41131CCDED266E03"
+				item: "thermal:cured_rubber"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["78E11B0D446D4103"]
+			id: "70A4FD85BCB100A5"
+			tasks: [{
+				id: "278D138568393F84"
+				item: "thermal:device_tree_extractor"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5C3DC7501542C952"]
+			id: "4EABAF556D363CA9"
+			tasks: [
+				{
+					id: "1241ED5CC60D1270"
+					item: "pipez:item_pipe"
+					type: "item"
+				}
+				{
+					id: "5B4E00E23C1051DB"
+					item: "pipez:fluid_pipe"
+					type: "item"
+				}
+				{
+					id: "59078817835B7B02"
+					item: "pipez:energy_pipe"
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"056C442009E33606"
+				"683BFEA87CF90206"
+			]
+			id: "0053DDDECA4BCD0D"
+			tasks: [
+				{
+					id: "31905BCEC2F1F40C"
+					item: "ars_nouveau:enchanting_apparatus"
+					type: "item"
+				}
+				{
+					id: "708BD8D3D2F4C43E"
+					item: "ars_nouveau:arcane_core"
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"585CE738D747F797"
+				"0053DDDECA4BCD0D"
+			]
+			id: "7B32EB98BBB2E402"
+			tasks: [{
+				id: "669634EB22694CDF"
+				item: "ars_nouveau:magebloom_crop"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2FD756089FF93EEF"]
+			id: "3899D7896D69E280"
+			tasks: [
+				{
+					id: "4F3010C6208050F4"
+					item: "ars_nouveau:conjuration_essence"
+					type: "item"
+				}
+				{
+					id: "033EE19E1A34D470"
+					item: "ars_nouveau:abjuration_essence"
+					type: "item"
+				}
+				{
+					id: "52A8D33231C9DA92"
+					item: "ars_nouveau:manipulation_essence"
+					type: "item"
+				}
+			]
+			x: 11.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["62399F5DF57F5561"]
+			id: "603A9579C1E43A5E"
+			tasks: [{
+				id: "6810E2CC559437A4"
+				item: "botania:alchemy_catalyst"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["056C442009E33606"]
+			id: "40E14E3636698CB3"
+			min_width: 300
+			rewards: [{
+				id: "69A227E1D61CFBE4"
+				item: {
+					Count: 1
+					id: "botania:lens_speed"
+					tag: {
+						compositeLens: {
+							Count: 1b
+							id: "botania:lens_power"
+						}
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "286782FA60653917"
+				item: "ars_nouveau:source_jar"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["09E9A9FF0A178C94"]
+			id: "50B0CC93E4CFE5D6"
+			tasks: [
+				{
+					id: "1393FA958042FB4E"
+					item: "ae2:charger"
+					type: "item"
+				}
+				{
+					id: "6AE01F465328AA49"
+					item: "ae2:inscriber"
+					type: "item"
+				}
+			]
+			x: 5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["705E3C69A699CF59"]
+			id: "4D733A88621454BE"
+			tasks: [{
+				id: "1D528D13CB512A9E"
+				item: "mierno:addition_sigil"
+				type: "item"
+			}]
+			x: 11.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["198B6F92CB7F3082"]
+			id: "361F553475AC6C8F"
+			rewards: [{
+				id: "2CB98E8E598DA236"
+				item: "botania:blacker_lotus"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6488FA964B9F6198"
+				item: "botania:blacker_lotus"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["368690E9474BB079"]
+			id: "2B96419F4DD86B22"
+			tasks: [
+				{
+					id: "67557FE0D78BB74B"
+					item: "ae2:calculation_processor_press"
+					type: "item"
+				}
+				{
+					id: "5F3D40CE051BD838"
+					item: "ae2:engineering_processor_press"
+					type: "item"
+				}
+				{
+					id: "0520A822AF96D449"
+					item: "ae2:logic_processor_press"
+					type: "item"
+				}
+				{
+					id: "7379D0B80E9D0765"
+					item: "ae2:silicon_press"
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 4.5d
+		}
+	]
+	title: "{mierno.chapter1-2.title}"
+}

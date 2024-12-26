@@ -1,0 +1,65 @@
+**
+!.gitignore
+!.prettierrc
+!.README.md
+!CHANGELOG.md
+!manifest.json
+!modlist.html
+!.github/
+!.github/**
+
+## Config
+!config/
+!config/modpack-update-checker
+!config/modpack-update-checker/**
+!config/fml.toml
+!config/modernfix-mixins.properties
+!config/ftbquests
+!config/ftbquests/**
+!config/capsule
+!config/capsule/**
+!config/capsule/rewards
+!config/capsule-common.toml
+!config/patchouli-client.toml
+!config/invtweaks-client.toml
+!config/ars_nouveau-client.toml
+!config/ars_nouveau-common.toml   
+!config/occultism-client.toml
+!config/ProjectE
+!config/ProjectE/client.toml
+!config/ProjectE/custom_emc.json
+!config/ProjectE/mapping.toml
+!config/ProjectE/processing.toml
+!config/jade
+!config/jade/plugins.json
+!config/wizards_reborn-common.toml
+!config/malum-common.toml
+!config/botania-common.toml
+!config/fluffy_fur-client.toml
+!config/ae2
+!config/ae2/common.json
+!config/simplebackups-common.toml
+!config/evilcraft-common.toml
+
+## Defaultconfigs
+!defaultconfigs/
+!defaultconfigs/ftbchunks
+!defaultconfigs/ftbchunks/client-config.snbt
+!defaultconfigs/ftbquests
+!defaultconfigs/ftbquests/client-config.snbt
+!defaultconfigs/fluxnetworks-server.toml
+
+## KubeJS
+!kubejs/
+!kubejs/**
+kubejs/README.txt
+kubejs/jsconfig.json
+kubejs/config/probejs.json
+
+## Hotai
+!hotai/
+!hotai/**
+
+## MBD2
+!ldlib/
+!ldlib/**

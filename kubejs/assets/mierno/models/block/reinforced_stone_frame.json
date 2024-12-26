@@ -1,0 +1,9 @@
+{
+    "parent": "mierno:block/frame",
+    "render_type": "minecraft:cutout",
+    "textures": {
+        "bottom": "mierno:block/reinforced_stone_frame",
+        "side": "mierno:block/reinforced_stone_frame",
+        "top": "mierno:block/reinforced_stone_frame"
+    }
+}

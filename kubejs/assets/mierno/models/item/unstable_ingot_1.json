@@ -1,0 +1,7 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "mierno:item/unstable_ingot",
+        "layer1": "mierno:item/ingot_red_layer_10"
+    }
+}

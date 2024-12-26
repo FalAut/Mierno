@@ -1,0 +1,627 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter1-3"
+	group: "7299F76F5EAD0EDE"
+	icon: "mierno:unstable_singularity"
+	id: "390976FF234B8E3A"
+	images: [
+		{
+			height: 3.0d
+			image: "mierno:textures/image/mana_to_fluid.png"
+			rotation: 0.0d
+			width: 3.75177304964539d
+			x: 6.0d
+			y: -4.0d
+		}
+		{
+			height: 3.0d
+			image: "mierno:textures/image/source_to_fluid.png"
+			rotation: 0.0d
+			width: 2.941176470588235d
+			x: 9.5d
+			y: -4.0d
+		}
+	]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["6ED6EFD4B2E4AE1E"]
+			id: "17B793516831F2C7"
+			rewards: [{
+				id: "51D05803573B98E3"
+				item: "evilcraft:eternal_water"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "3FD4E48EA9DDF75D"
+				item: "ae2:condenser"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["17B793516831F2C7"]
+			id: "25652CCA98D82B4A"
+			tasks: [{
+				id: "2387881280661A11"
+				item: "ae2:matter_ball"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["610A725A0DF114D0"]
+			id: "75BAD40844484C00"
+			tasks: [{
+				id: "67B16617CB591EEE"
+				item: "thermal:machine_frame"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"4BC4F7F11BD34028"
+				"6D6FA7BE1A487FB3"
+			]
+			id: "5993C21DE70CE752"
+			tasks: [{
+				id: "38CF12E469528CEB"
+				item: "thermal:machine_smelter"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["17B793516831F2C7"]
+			id: "20FEC8DA43340AD4"
+			tasks: [{
+				id: "6042C38C42B4C06C"
+				item: "mekanism:ingot_steel"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["09E9A9FF0A178C94"]
+			id: "17B1CA485924D72F"
+			tasks: [{
+				id: "0DF01AEF6F77467B"
+				item: "ae2:quartz_vibrant_glass"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["75BAD40844484C00"]
+			id: "525DF809BFD2F98E"
+			tasks: [{
+				id: "6FB994B521421CEA"
+				item: {
+					Count: 1
+					id: "thermal:machine_press"
+					tag: {
+						BlockEntityTag: {
+							Energy: 0
+							EnergyMax: 50000
+							EnergyRecv: 200
+							EnergySend: 200
+							RSControl: {
+								RSMode: 0b
+								RSThreshold: 0b
+							}
+							Sides: [B;
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+							]
+							Xfer: {
+								XferIn: 0b
+								XferOut: 0b
+							}
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["610A725A0DF114D0"]
+			id: "4ECE67E37358F721"
+			tasks: [{
+				id: "341BEF7E460A2BC3"
+				item: "thermal:press_gear_die"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"20FEC8DA43340AD4"
+				"17B1CA485924D72F"
+				"25652CCA98D82B4A"
+			]
+			id: "610A725A0DF114D0"
+			shape: "square"
+			size: 1.5d
+			subtitle: "{\"translate\":\"mierno.chapter1-3.assembly_room.subtitle\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"16DC6C2BE109C5E8\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}}"
+			tasks: [{
+				id: "0DE72ECF063E6C81"
+				item: "mierno:assembly_room_controller"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"525DF809BFD2F98E"
+				"4ECE67E37358F721"
+			]
+			id: "4BC4F7F11BD34028"
+			tasks: [{
+				id: "415E09A9B2055ED8"
+				item: "thermal:iron_gear"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["610A725A0DF114D0"]
+			id: "6D6FA7BE1A487FB3"
+			tasks: [
+				{
+					id: "12A71F95049D78A4"
+					item: "thermal:rf_coil"
+					type: "item"
+				}
+				{
+					id: "7F3B592200968A32"
+					item: "thermal:redstone_servo"
+					type: "item"
+				}
+			]
+			x: 4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"2C16FE50E04573D0"
+				"7B6AB8426C039D04"
+				"7C72035916849C9B"
+			]
+			id: "170A8B3BBCD68B1C"
+			tasks: [
+				{
+					id: "6A6B7084BA20C29D"
+					item: "thermal:lumium_ingot"
+					type: "item"
+				}
+				{
+					id: "568C0701A6F09D77"
+					item: "thermal:signalum_ingot"
+					type: "item"
+				}
+				{
+					id: "3C31278F58930B60"
+					item: "thermal:enderium_ingot"
+					type: "item"
+				}
+				{
+					id: "02AA22DF9928A30C"
+					item: "mierno:molten_lumium_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "574A93041E7625F3"
+					item: "mierno:molten_signalum_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2B614320A5F44166"
+					item: "thermal:ender_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["75BAD40844484C00"]
+			hide_dependency_lines: true
+			id: "7C72035916849C9B"
+			tasks: [{
+				id: "164500FCBEEE0D41"
+				item: {
+					Count: 1
+					id: "thermal:machine_chiller"
+					tag: {
+						BlockEntityTag: {
+							Energy: 0
+							EnergyMax: 50000
+							EnergyRecv: 200
+							EnergySend: 200
+							RSControl: {
+								RSMode: 0b
+								RSThreshold: 0b
+							}
+							Sides: [B;
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+							]
+							Xfer: {
+								XferIn: 0b
+								XferOut: 0b
+							}
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 8.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4D733A88621454BE"]
+			id: "227BDCCA7431278E"
+			tasks: [{
+				id: "0EE3011A728C0A33"
+				item: {
+					Count: 1
+					id: "mierno:addition_sigil"
+					tag: {
+						Enchantments: [{
+							id: "mierno:activate"
+							lvl: 1s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"170A8B3BBCD68B1C"
+				"227BDCCA7431278E"
+			]
+			id: "4A2B7E68773E4ADB"
+			tasks: [{
+				id: "5021E4EE76B491CE"
+				item: {
+					Count: 1
+					id: "mierno:unstable_ingot"
+					tag: {
+						Stable: 100.0d
+					}
+				}
+				type: "item"
+			}]
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["525DF809BFD2F98E"]
+			hide_dependency_lines: true
+			id: "72BC37D8287894FB"
+			rewards: [{
+				id: "4E5C6B838A01B731"
+				item: {
+					Count: 1
+					id: "botania:lens_speed"
+					tag: {
+						compositeLens: {
+							Count: 1b
+							id: "botania:lens_power"
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "{tooltip.mierno.orbital_fluid_retainer_2}"
+			tasks: [{
+				id: "790919D891BC12F2"
+				item: {
+					Count: 1
+					id: "wizards_reborn:orbital_fluid_retainer"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "{tooltip.mierno.orbital_fluid_retainer_1}"
+			x: 7.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"72BC37D8287894FB"
+				"240518FA0C977C14"
+			]
+			id: "7B6AB8426C039D04"
+			tasks: [
+				{
+					id: "3DE037D1FD8BC467"
+					item: "mierno:liquid_mana_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4A47F84D78E79D88"
+					item: "mierno:liquid_source_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3B1E7B7E8D79E064"
+					type: "checkmark"
+				}
+			]
+			x: 8.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4BC4F7F11BD34028"]
+			id: "2C16FE50E04573D0"
+			shape: "square"
+			size: 1.5d
+			subtitle: "{\"translate\":\"mierno.chapter1-3.matter_mixer.subtitle\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"298B029C5CFEADA3\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}}"
+			tasks: [{
+				id: "0CDB9036F41E36B5"
+				item: "mierno:matter_mixer_controller"
+				type: "item"
+			}]
+			x: 7.25d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3899D7896D69E280"]
+			hide_dependency_lines: true
+			id: "240518FA0C977C14"
+			subtitle: "{tooltip.mierno.source_fluidlink_2}"
+			tasks: [{
+				id: "6AFC878C2F35967D"
+				item: "mierno:source_fluidlink"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4A2B7E68773E4ADB"]
+			id: "0C74AC4CB2A839A0"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "1A091C8D7D37A2BC"
+				item: "mierno:unstable_singularity"
+				type: "item"
+			}]
+			x: 12.2d
+			y: 0.0d
+		}
+		{
+			dependencies: ["20FEC8DA43340AD4"]
+			id: "4BD0A50CA5194D45"
+			shape: "square"
+			size: 1.5d
+			subtitle: "{\"translate\":\"mierno.chapter1-3.void_ore_minner.subtitle\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"4D2F655DD344ED44\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}}"
+			tasks: [{
+				id: "5550FFC44ABEAA15"
+				item: "mierno:void_ore_miner_controller"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4BD0A50CA5194D45"]
+			id: "08725E7EAD500EED"
+			tasks: [
+				{
+					id: "0B5A4FCF3E6C0701"
+					item: "thermal:tin_ore"
+					type: "item"
+				}
+				{
+					id: "49F2F6787D8D1BA6"
+					item: "thermal:lead_ore"
+					type: "item"
+				}
+				{
+					id: "67C6974B14D4BBEE"
+					item: "thermal:silver_ore"
+					type: "item"
+				}
+				{
+					id: "764A0BA4834CABEE"
+					item: "thermal:nickel_ore"
+					type: "item"
+				}
+				{
+					id: "255C7C02B5227830"
+					item: "powah:uraninite_ore_poor"
+					type: "item"
+				}
+				{
+					id: "6B936098E7090577"
+					item: "powah:uraninite_ore"
+					type: "item"
+				}
+				{
+					id: "6F93E80093066C86"
+					item: "powah:uraninite_ore_dense"
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["20FEC8DA43340AD4"]
+			id: "5A041A553C8F8B20"
+			tasks: [{
+				id: "1231468FB00F8CD1"
+				item: "mekanismgenerators:solar_generator"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5A041A553C8F8B20"]
+			id: "1A61484DF3E21B25"
+			tasks: [{
+				id: "45807465685861B9"
+				item: "mekanismgenerators:advanced_solar_generator"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5993C21DE70CE752"]
+			id: "522E39DE17A8C274"
+			tasks: [
+				{
+					id: "4641AE5BA65C2CB2"
+					item: "thermal:tin_ingot"
+					type: "item"
+				}
+				{
+					id: "0F58F65F688FD14B"
+					item: "thermal:lead_ingot"
+					type: "item"
+				}
+				{
+					id: "17A48749FEB4881B"
+					item: "thermal:silver_ingot"
+					type: "item"
+				}
+				{
+					id: "5C99EC8468D9F72F"
+					item: "thermal:nickel_ingot"
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["522E39DE17A8C274"]
+			id: "5458329452A9E056"
+			tasks: [{
+				id: "0D4D28FBAE6716EA"
+				item: "thermal:upgrade_augment_1"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5993C21DE70CE752"]
+			id: "5A16B4CE72DD3B68"
+			tasks: [{
+				id: "5A75A81EC954A10D"
+				item: "powah:dielectric_paste"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5A16B4CE72DD3B68"]
+			id: "1D6466564BBB5EFD"
+			tasks: [{
+				id: "651B05EFA1AE8D57"
+				item: "powah:energizing_rod_starter"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"1D6466564BBB5EFD"
+				"15A53D51200205AF"
+			]
+			id: "28E33E84A5A91FF4"
+			tasks: [{
+				id: "364912307E7B73D7"
+				item: "powah:reactor_starter"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5A16B4CE72DD3B68"]
+			id: "15A53D51200205AF"
+			tasks: [{
+				id: "1F101E623B2C2E9E"
+				item: "powah:uraninite"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1A61484DF3E21B25"]
+			id: "2C1498BF40BCFB97"
+			tasks: [{
+				id: "7F092829D192F82A"
+				item: {
+					Count: 1
+					id: "mekanismgenerators:wind_generator"
+					tag: {
+						mekData: {
+							EnergyContainers: [{
+								Container: 0b
+								stored: "46912.5000"
+							}]
+							componentUpgrade: {
+								Items: [ ]
+								upgrades: [ ]
+							}
+							controlType: 0
+							owner: [I;
+								-1176636689
+								-74432454
+								-2003584141
+								1476401073
+							]
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+	]
+	title: "{mierno.chapter1-3.title}"
+}

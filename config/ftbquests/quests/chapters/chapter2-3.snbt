@@ -1,0 +1,318 @@
+{
+	always_invisible: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter2-3"
+	group: "25B116B1000F1A1E"
+	icon: {
+		Count: 1
+		id: "forbidden_arcanus:eternal_stella"
+		tag: { }
+	}
+	id: "516E45775E7754C0"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			id: "449883B0BE46FF22"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "36A554263164AD90"
+				item: "forbidden_arcanus:mundabitur_dust"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["449883B0BE46FF22"]
+			id: "7AD46ABE6C425F33"
+			tasks: [{
+				id: "2364D64DE49F5A38"
+				item: "forbidden_arcanus:deorum_ingot"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			id: "7B04B3A1DA1C9284"
+			tasks: [{
+				id: "1E54B29C0C1DD142"
+				item: "forbidden_arcanus:stella_arcanum"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -1.0d
+		}
+		{
+			id: "0AE6261DC4FCA0F6"
+			tasks: [{
+				id: "2CAEC1F80644B116"
+				item: "forbidden_arcanus:clibano_core"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0AE6261DC4FCA0F6"]
+			id: "1BD81F6DDDD130F4"
+			tasks: [{
+				id: "487CCE0DAF4E836C"
+				item: "forbidden_arcanus:stellarite_piece"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 0.0d
+		}
+		{
+			id: "578BEC6A99F962F0"
+			tasks: [{
+				id: "16FF93F599E2D869"
+				item: {
+					Count: 1
+					id: "forbidden_arcanus:eternal_stella"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 9.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6AF197CA741D2F4F"]
+			id: "0EEABBD13AFD2EA0"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "40274C2394324103"
+				item: "forbidden_arcanus:ferrognetic_mixture"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"7AD46ABE6C425F33"
+				"531E3290F094FD3B"
+				"629F64FE55853848"
+			]
+			icon: "forbidden_arcanus:hephaestus_forge"
+			id: "4C4DAAE3273D4F94"
+			subtitle: "{\"translate\":\"mierno.chapter2-3.hephaestus_forge.subtitle\",\"color\":\"gold\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/create ponder forbidden_arcanus:hephaestus_forge\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}}"
+			tasks: [{
+				icon: "forbidden_arcanus:hephaestus_forge"
+				id: "30ECB0BAC8FE95B9"
+				observe_type: 0
+				timer: 0L
+				title: "{mierno.chapter2-3.check_hephaestus_forge.title}"
+				to_observe: "forbidden_arcanus:hephaestus_forge"
+				type: "observation"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["578BEC6A99F962F0"]
+			icon: {
+				Count: 1
+				id: "forbidden_arcanus:hephaestus_forge"
+				tag: {
+					BlockStateTag: {
+						tier: 2
+					}
+				}
+			}
+			id: "6AF197CA741D2F4F"
+			tasks: [{
+				id: "53951A5461CCC4E0"
+				type: "checkmark"
+			}]
+			title: "{block.forbidden_arcanus.hephaestus_forge}"
+			x: 11.0d
+			y: 0.0d
+		}
+		{
+			id: "629F64FE55853848"
+			tasks: [{
+				id: "6F22FF04562F99EC"
+				item: "forbidden_arcanus:darkstone"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			id: "531E3290F094FD3B"
+			tasks: [{
+				id: "01FCEF498838FB0F"
+				item: "minecraft:smithing_table"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			id: "297ECB810C918599"
+			tasks: [{
+				id: "2AA4F6658A765D3A"
+				item: {
+					Count: 1
+					id: "forbidden_arcanus:blood_test_tube"
+					tag: {
+						Blood: 3000
+					}
+				}
+				type: "item"
+			}]
+			x: 3.5d
+			y: -1.5d
+		}
+		{
+			id: "773E1E2A96A99123"
+			tasks: [{
+				id: "7F2868B289AB78AB"
+				item: "forbidden_arcanus:maledictus_pact"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			id: "01660174B3CF5EFA"
+			tasks: [{
+				id: "6661F2A615793D3F"
+				item: "bloodmagic:altar"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			id: "1FF69C9F07E0A0FB"
+			tasks: [{
+				id: "0BDE26F163F12AF1"
+				item: "forbidden_arcanus:dark_rune"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 1.0d
+		}
+		{
+			id: "046BE8D8DF58B5E5"
+			tasks: [{
+				id: "6264948C34BF0F69"
+				item: "forbidden_arcanus:corrupted_arcane_crystal"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -1.0d
+		}
+		{
+			id: "13BD7AC93C50147C"
+			tasks: [{
+				id: "6384A01252F0ADE6"
+				item: "forbidden_arcanus:quantum_catcher"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			id: "160A2182B129F30F"
+			tasks: [{
+				id: "5F8E7DF31B6AE34B"
+				item: {
+					Count: 1
+					id: "forbidden_arcanus:reinforced_deorum_blacksmith_gavel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.5d
+		}
+		{
+			id: "1BFE4019DFCE5250"
+			tasks: [{
+				id: "4394140335397F4F"
+				item: "forbidden_arcanus:dark_nether_star"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			id: "5015D21B9B93A6E7"
+			tasks: [{
+				id: "4EEFF1AA0A4FB051"
+				item: "bloodmagic:blankrune"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 1.0d
+		}
+		{
+			id: "1DAEF872073C7174"
+			tasks: [{
+				id: "7B598B02BC1AFB28"
+				item: "bloodmagic:weakbloodorb"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -1.0d
+		}
+		{
+			id: "498D984BC02F5354"
+			tasks: [{
+				id: "5E70A8BBC4232B9F"
+				item: "bloodmagic:soulforge"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			id: "7F1ED6E7BE35734A"
+			tasks: [{
+				id: "6FAF94D5EE01851D"
+				item: "bloodmagic:alchemytable"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -3.0d
+		}
+		{
+			id: "669CF4FCA695FD8B"
+			tasks: [{
+				id: "7F2F587AD05CE390"
+				item: "bloodmagic:alchemicalreactionchamber"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -4.5d
+		}
+		{
+			id: "322793B57EC6060F"
+			tasks: [{
+				id: "1F424D6F8FF3B70C"
+				item: {
+					Count: 1
+					id: "bloodmagic:arcaneashes"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 9.0d
+			y: -3.0d
+		}
+	]
+	title: "{mierno.chapter2-3.title}"
+}

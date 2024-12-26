@@ -1,0 +1,66 @@
+{
+    "format_version": "1.8.0",
+    "animations": {
+        "formed": {
+            "loop": true,
+            "animation_length": 8,
+            "bones": {
+                "bone": {
+                    "rotation": {
+                        "0.0": {
+                            "vector": [0, 0, 0]
+                        },
+                        "8.0": {
+                            "vector": [360, 360, 0]
+                        }
+                    },
+                    "position": {
+                        "0.0": {
+                            "vector": [0, 0, 0]
+                        },
+                        "2.0": {
+                            "vector": [96, "math.cos(query.anim_time * 120) * 10", 0]
+                        },
+                        "4.0": {
+                            "vector": [96, "math.cos(query.anim_time * 120) * 10", -96]
+                        },
+                        "6.0": {
+                            "vector": [0, "math.cos(query.anim_time * 120) * 10", -96]
+                        },
+                        "8.0": {
+                            "vector": [0, "math.cos(query.anim_time * 120) * 10", 0]
+                        }
+                    }
+                },
+                "bone2": {
+                    "rotation": {
+                        "0.0": {
+                            "vector": [0, 0, 0]
+                        },
+                        "8.0": {
+                            "vector": [360, 360, 0]
+                        }
+                    },
+                    "position": {
+                        "0.0": {
+                            "vector": [0, 0, 0]
+                        },
+                        "2.0": {
+                            "vector": [-96, "math.cos(query.anim_time * 120) * 10", 0]
+                        },
+                        "4.0": {
+                            "vector": [-96, "math.cos(query.anim_time * 120) * 10", 96]
+                        },
+                        "6.0": {
+                            "vector": [0, "math.cos(query.anim_time * 120) * 10", 96]
+                        },
+                        "8.0": {
+                            "vector": [0, "math.cos(query.anim_time * 120) * 10", 0]
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "geckolib_format_version": 2
+}

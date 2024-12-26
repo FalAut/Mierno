@@ -1,10 +1,8 @@
-// 坩埚
 BlockEvents.rightClicked((event) => {
     handleCrucibleInteraction(event, "mierno:oak_crucible", "leaves", "water");
     handleCrucibleInteraction(event, "mierno:fired_crucible", "mierno:fired_crucible_fuel", "lava");
 });
 
-// 堆肥桶
 BlockEvents.rightClicked("composter", (event) => {
     const { block, hand } = event;
     if (hand != "MAIN_HAND") return;

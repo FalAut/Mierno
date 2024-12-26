@@ -142,7 +142,6 @@
     "tooltip.mierno.oak_sapling": "可以种在§f白色混凝土§r上",
     "tooltip.mierno.oak_mortar": "右键研磨副手的物品",
     "tooltip.mierno.source_flower": "已经没什么好害怕的了",
-    "tooltip.mierno.pseudo_inversion_sigil": "我有我自己的规则。",
     "tooltip.mierno.meteorite_compass1": "右键定位最近的迷宫",
     "tooltip.mierno.meteorite_compass2": "罗盘上的指针会指向迷宫存在的方向",
     "tooltip.mierno.meteorite_compass3": "若罗盘快速旋转，则代表当前区块存在迷宫（迷宫生成在地下Y20处）",

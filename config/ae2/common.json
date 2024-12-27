@@ -81,8 +81,8 @@
     "p2pTunnelTransportTax": 0.025
   },
   "Condenser": {
-    "MatterBalls": 16,
-    "SteelIngot": 64,
+    "MatterBalls": 256,
+    "SteelNugget": 2560,
     "Singularity": 256000
   },
   "tickRates": {

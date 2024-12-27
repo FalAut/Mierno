@@ -4,7 +4,7 @@
     "minecraft": { "modLoaders": [{ "id": "forge-47.3.22", "primary": true }], "version": "1.20.1" },
     "name": "Mierno",
     "overrides": "overrides",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "author": "FalAut",
     "files": [
         { "fileID": 5583765, "projectID": 232758, "required": true },

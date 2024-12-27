@@ -93,7 +93,36 @@ ItemEvents.tooltip((event) => {
     );
 
     event.add(
-        ["feather", "leather", "egg", "snowball", "string", "spider_eye"],
+        [
+            "minecraft:sunflower",
+            "minecraft:sugar_cane",
+            "minecraft:cocoa_beans",
+            "minecraft:nether_wart",
+            "minecraft:glow_berries",
+            "minecraft:sweet_berries",
+            "minecraft:warped_fungus",
+            "minecraft:crimson_fungus",
+            "minecraft:brown_mushroom",
+            "minecraft:red_mushroom",
+            "minecraft:kelp",
+            "minecraft:carrot",
+            "minecraft:bamboo",
+            "minecraft:string",
+            "minecraft:blaze_rod",
+            "minecraft:white_wool",
+            "ars_nouveau:drygmy_se",
+            "ars_nouveau:starbuncle_se",
+            "ars_nouveau:whirlisprig_se",
+            "minecraft:feather",
+            "minecraft:cactus",
+            "minecraft:chorus_flower",
+            "minecraft:leather",
+            "minecraft:egg",
+            "minecraft:pumpkin_seeds",
+            "minecraft:melon_seeds",
+            "minecraft:snowball",
+            "minecraft:spider_eye",
+        ],
         Text.translate("tooltip.mierno.market_can_buy").gold()
     );
 
@@ -171,4 +200,6 @@ ItemEvents.tooltip((event) => {
         "mierno:modular_alfheim_portal_core",
         Text.translate("tooltip.mierno.modular_alfheim_portal_core").gold()
     );
+    event.add("evilcraft:eternal_water", Text.translate("tooltip.mierno.eternal_water").gold());
+    event.add("naturesaura:spring", Text.translate("tooltip.mierno.spring").gold());
 });

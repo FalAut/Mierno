@@ -69,7 +69,8 @@ ServerEvents.tags("block", (event) => {
 
 ServerEvents.tags("fluid", (event) => {
     event.remove("forge:crude_oil", "thermal:crude_oil");
-    event.add("minecraft:lava", ["mierno:flowing_soul_lava", "mierno:soul_lava"]);
+    event.removeAll("minecraft:water");
+    event.add("minecraft:water", "water");
 });
 
 ServerEvents.tags("worldgen/biome", (event) => {

@@ -235,7 +235,9 @@
     "tooltip.mierno.clay_ball": "在粘土花附近放置沙子来产生黏土球",
     "tooltip.mierno.alfheim_portal": "警告：不要用时间之瓶加速精灵门核心，会造成卡顿",
     "tooltip.mierno.imbuement_chamber": "灌注室现在会消耗基座上的材料",
-    "tooltip.mierno.modular_alfheim_portal_core": "若连不上火花请重新放置一次火花",
+    "tooltip.mierno.modular_alfheim_portal_core": "可附加火花，若连不上请尝试重新放置",
+    "tooltip.mierno.eternal_water": "一个无限的水源，可以自动向液体容器输出水",
+    "tooltip.mierno.spring": "一个无限的水源，可以使用流体管道抽取",
 
     "biome.mierno.black_and_white": "黑与白",
     "biome.mierno.misty_forest": "迷雾森林",
@@ -265,7 +267,7 @@
     "jade.tooltip.source": "魔源: %s",
     "jade.tooltip.mana": "魔力: %s%s",
 
-    "gui.tooltips.ae2.SteelIngot": "每 %s 个物品聚合为一个钢锭",
+    "gui.tooltips.ae2.SteelNugget": "每 %s 个物品聚合为一个钢粒",
 
     "mierno.time.seconds": "%s 秒",
     "mierno.time.minutes": "%s 分钟",

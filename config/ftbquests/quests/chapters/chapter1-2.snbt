@@ -578,6 +578,11 @@
 		{
 			dependencies: ["5D95FECF8D811E7F"]
 			id: "6BE50FF0F278BE53"
+			rewards: [{
+				id: "79AF591A51A6471C"
+				item: "naturesaura:spring"
+				type: "item"
+			}]
 			tasks: [{
 				id: "2ED4F05D647F53C0"
 				item: "mierno:planting_station"

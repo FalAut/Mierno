@@ -203,12 +203,12 @@ ServerEvents.recipes((event) => {
     });
 
     kubejs.shaped("ae2:charger", ["ABA", "A  ", "ABA"], {
-        A: "ae2:smooth_quartz_slab",
+        A: "ae2:quartz_block",
         B: "botania:elementium_ingot",
     });
 
     kubejs.shaped("ae2:inscriber", ["ABA", "C A", "ABA"], {
-        A: "ae2:smooth_quartz_slab",
+        A: "ae2:quartz_block",
         B: "sticky_piston",
         C: "botania:elementium_ingot",
     });

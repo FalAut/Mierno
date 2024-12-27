@@ -84,8 +84,8 @@
 			dependencies: ["17B793516831F2C7"]
 			id: "20FEC8DA43340AD4"
 			tasks: [{
-				id: "6042C38C42B4C06C"
-				item: "mekanism:ingot_steel"
+				id: "2E47839F5914A879"
+				item: "mekanism:nugget_steel"
 				type: "item"
 			}]
 			x: 1.5d

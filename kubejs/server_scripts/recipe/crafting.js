@@ -96,6 +96,10 @@ ServerEvents.recipes((event) => {
             '{amts:[L;4032L],ic:4032L,internalCurrentPower:200000.0d,keys:[{"#c":"ae2:i",id:"ae2:pink_paint_ball"}]}'
         ).weakNBT()
     );
+    kubejs.shapeless(Item.of("expatternprovider:infinity_cell", '{record:{"#c":"ae2:f",id:"minecraft:water"}}'), [
+        "ae2:fluid_cell_housing",
+        "evilcraft:eternal_water",
+    ]);
 
     kubejs.shapeless("naturesaura:birth_spirit", "naturesaura:calling_spirit").modifyResult((grid, result) => {
         if (!grid.player || grid.player.isFake() || grid.menu instanceof $AssemblyHaloContainer) return Item.empty;
@@ -565,4 +569,22 @@ ServerEvents.recipes((event) => {
         E: "ae2:logic_processor",
         F: "ae2:printed_silicon",
     });
+
+    kubejs.shaped(
+        Item.of("expatternprovider:infinity_cell", '{record:{"#c":"ae2:i",id:"minecraft:white_concrete"}}'),
+        ["AAA", "ABA", "AAA"],
+        {
+            A: "white_concrete",
+            B: "gray_concrete",
+        }
+    );
+
+    kubejs.shaped(
+        Item.of("expatternprovider:infinity_cell", '{record:{"#c":"ae2:i",id:"minecraft:gray_concrete"}}'),
+        ["AAA", "ABA", "AAA"],
+        {
+            A: "gray_concrete",
+            B: "white_concrete",
+        }
+    );
 });

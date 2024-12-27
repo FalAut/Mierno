@@ -178,7 +178,7 @@ ServerEvents.recipes((event) => {
         "botania:elven_trade/dragonstone_block",
         "ae2:transform/fluix_crystals",
         "ae2:transform/fluix_crystal",
-        "",
+        "expatternprovider:water_cell",
         "",
         "",
         "",

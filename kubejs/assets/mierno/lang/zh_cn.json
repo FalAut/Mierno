@@ -238,6 +238,8 @@
     "tooltip.mierno.modular_alfheim_portal_core": "可附加火花，若连不上请尝试重新放置",
     "tooltip.mierno.eternal_water": "一个无限的水源，可以自动向液体容器输出水",
     "tooltip.mierno.spring": "一个无限的水源，可以使用流体管道抽取",
+    "tooltip.mierno.condenser_1": "每 125 mb流体也可算作 1 物品。",
+    "tooltip.mierno.condenser_2": "§6在网络里放一个ME无限水元件，然后写一个比如「32000B水->1奇点」的样板给物质聚合器，下单可以直接秒做，非常简单",
 
     "biome.mierno.black_and_white": "黑与白",
     "biome.mierno.misty_forest": "迷雾森林",
@@ -365,7 +367,7 @@
     "mierno.welcome.projecte.subtitle": "你可以自行选择是否需要转化桌",
     "mierno.welcome.projecte.desc1": "等价交换模组不存在任务进程中，若不需要可删除此模组，没有影响",
     "mierno.welcome.projecte.desc2": "注意：所有物品的 EMC 被设置为 1，只是 EMC 不会显示在物品提示上",
-    "mierno.welcome.projecte.desc3": "注意：转换桌不记录 NBT，因此一些特殊的物品（例如：瓶装阳光）无法正常转化",
+    "mierno.welcome.projecte.desc3": "注意：转换桌不记录 NBT，因此一些特殊的物品（例如：瓶装阳光、ME无限混凝土元件）无法正常转化",
 
     "mierno.capsule.misty_forest_portal_subtitle": "§6→【点我】← 查看如何激活迷雾森林传送门",
 

@@ -202,4 +202,8 @@ ItemEvents.tooltip((event) => {
     );
     event.add("evilcraft:eternal_water", Text.translate("tooltip.mierno.eternal_water").gold());
     event.add("naturesaura:spring", Text.translate("tooltip.mierno.spring").gold());
+    event.add("ae2:condenser", [
+        Text.translate("tooltip.mierno.condenser_1").gold(),
+        Text.translate("tooltip.mierno.condenser_2").gold(),
+    ]);
 });

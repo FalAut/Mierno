@@ -1,8 +1,54 @@
+const $TitleScreen = Java.loadClass("net.minecraft.client.gui.screens.TitleScreen");
+const $Button = Java.loadClass("net.minecraft.client.gui.components.Button");
+const $ButtonUtils = Java.loadClass("com.jab125.mpuc.client.util.ButtonUtils");
+const $NewChangelogScreen = Java.loadClass("com.jab125.mpuc.client.gui.screen.changelog.NewChangelogScreen");
 const $ModernFixClient = Java.loadClass("org.embeddedt.modernfix.ModernFixClient");
 const $SystemToast = Java.loadClass("net.minecraft.client.gui.components.toasts.SystemToast");
 const $BrandingControl = Java.loadClass("net.minecraftforge.internal.BrandingControl");
 const $ArrayList = Java.loadClass("java.util.ArrayList");
 const $MpucApi = Java.loadClass("com.jab125.mpuc.api.MpucApi");
+
+ForgeEvents.onEvent("net.minecraftforge.client.event.ScreenEvent$Init$Post", (event) => {
+    const { screen } = event;
+
+    if (screen instanceof $TitleScreen) {
+        let buttonWidth = 50;
+        let buttonHeight = 20;
+        let margin = 10;
+
+        let buttons = [
+            { label: "QQ频道", link: "https://pd.qq.com/s/48af4i42y" },
+            { label: "Github", link: "https://github.com/FalAut/Mierno" },
+            { label: "Discord", link: "https://discord.com/invite/dECQZNNngD" },
+        ];
+
+        buttons.forEach((button, index) => {
+            screen.addRenderableWidget(
+                $Button
+                    .builder(button.label, () => {
+                        $ButtonUtils.confirmLink(screen, false, button.link);
+                    })
+                    .bounds(
+                        screen.width - buttonWidth - margin,
+                        screen.height - (buttonHeight + margin) * (buttons.length - index),
+                        buttonWidth,
+                        buttonHeight
+                    )
+                    .build()
+            );
+        });
+    } else if (screen instanceof $NewChangelogScreen) {
+        screen.renderables.forEach((widget) => {
+            if (widget instanceof $Button) {
+                if (widget.message.toString() == "empty") {
+                    widget.visible = false;
+                } else if (widget.message.getString() == "Generic") {
+                    widget.setMessage("Github");
+                }
+            }
+        });
+    }
+});
 
 let isStartup = false;
 
@@ -52,7 +98,6 @@ ForgeEvents.onEvent("net.minecraftforge.event.TickEvent$ClientTickEvent", (event
 
         brandingsField.set(brandingControl, newBrandings);
 
-        // Ding
         Client.soundManager.play(
             new $SimpleSoundInstance(
                 "entity.experience_orb.pickup",

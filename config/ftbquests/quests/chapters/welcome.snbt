@@ -394,11 +394,7 @@
 			description: [
 				"{mierno.welcome.community.desc1}"
 				""
-				"{\"text\":\"      \",\"extra\":[{\"translate\":\"mierno.welcome.community.qq_channel\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://pd.qq.com/s/48af4i42y\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":{\"translate\":\"message.mierno.clickopen\"}}},{\"text\":\"   |   \",\"color\":\"white\"},{\"translate\":\"mierno.welcome.community.github\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/FalAut/Mierno\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":{\"translate\":\"message.mierno.clickopen\"}}},{\"text\":\"   |   \",\"color\":\"white\"},{\"translate\":\"mierno.welcome.community.discord\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://discord.gg/6HPKTvHX\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":{\"translate\":\"message.mierno.clickopen\"}}}],\"color\":\"gold\"}"
-				""
-				""
-				""
-				"{\"text\":\"QQ测试群：490811326\",\"color\":\"gold\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://qm.qq.com/q/GeogW2Smkw\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":{\"translate\":\"message.mierno.clickopen\"}}}"
+				"{\"text\":\"      \",\"extra\":[{\"translate\":\"mierno.welcome.community.qq_channel\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://pd.qq.com/s/48af4i42y\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":{\"translate\":\"message.mierno.clickopen\"}}},{\"text\":\"   |   \",\"color\":\"white\"},{\"translate\":\"mierno.welcome.community.github\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/FalAut/Mierno\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":{\"translate\":\"message.mierno.clickopen\"}}},{\"text\":\"   |   \",\"color\":\"white\"},{\"translate\":\"mierno.welcome.community.discord\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://discord.com/invite/dECQZNNngD\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":{\"translate\":\"message.mierno.clickopen\"}}}],\"color\":\"gold\"}"
 			]
 			disable_toast: true
 			icon: {

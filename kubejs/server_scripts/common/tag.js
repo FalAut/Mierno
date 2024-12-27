@@ -6,7 +6,7 @@ ServerEvents.tags("item", (event) => {
     event.add("botania:special_floating_flowers", "mierno:flowing_source_flower");
 
     Ingredient.all.itemIds.forEach((itemId) => {
-        event.add("mierno:all_item", itemId);
+        event.add("mierno:all_items", itemId);
     });
 
     event.add("mierno:fired_crucible_fuel", ["gray_concrete"]);

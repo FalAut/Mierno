@@ -551,14 +551,27 @@
 				"0053DDDECA4BCD0D"
 				"3899D7896D69E280"
 			]
-			description: ["{mierno.chapter1-2.wilden_summon.desc1}"]
+			description: [
+				"{mierno.chapter1-2.wilden_summon.desc1}"
+				""
+				"{mierno.chapter1-2.wilden_summon.desc2}"
+			]
+			icon: "ars_nouveau:ritual_wilden_summon"
 			id: "705E3C69A699CF59"
 			subtitle: "{mierno.chapter1-2.wilden_summon.subtitle}"
-			tasks: [{
-				id: "3C8CA090C96EBFD1"
-				item: "ars_nouveau:ritual_wilden_summon"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "3C8CA090C96EBFD1"
+					item: "ars_nouveau:ritual_wilden_summon"
+					type: "item"
+				}
+				{
+					id: "76CFF9E45C5219C0"
+					item: "ars_nouveau:ritual_brazier"
+					type: "item"
+				}
+			]
+			title: "{mierno.chapter1-2.wilden_summon.title}"
 			x: 11.5d
 			y: 0.5d
 		}
@@ -725,7 +738,6 @@
 		{
 			dependencies: ["056C442009E33606"]
 			id: "40E14E3636698CB3"
-			min_width: 300
 			rewards: [{
 				id: "69A227E1D61CFBE4"
 				item: {

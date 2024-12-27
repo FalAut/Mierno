@@ -556,4 +556,13 @@ ServerEvents.recipes((event) => {
         E: "pneumaticcraft:transistor",
         F: "pneumaticcraft:pcb_blueprint",
     });
+
+    kubejs.shaped("mierno:modular_alfheim_portal_core", ["ABA", "CDE", "AFA"], {
+        A: "botania:terrasteel_nugget",
+        B: "ae2:cell_component_1k",
+        C: "ae2:engineering_processor",
+        D: "mierno:mana_input",
+        E: "ae2:logic_processor",
+        F: "ae2:printed_silicon",
+    });
 });

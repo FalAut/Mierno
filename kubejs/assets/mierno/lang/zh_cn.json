@@ -87,6 +87,7 @@
     "block.mierno.planting_station": "种植站",
     "block.mierno.spirit_attuned_gem_block": "魔灵同调水晶块",
     "block.mierno.printing_room_controller": "印刷室控制器",
+    "block.mierno.modular_alfheim_portal_core": "模块化精灵门核心",
 
     "mierno.oak_crucible": "橡木坩埚",
     "mierno.fired_crucible": "坩埚",
@@ -103,6 +104,7 @@
     "mierno.memory_source_drawing": "忆源汲取",
     "mierno.planting_station": "种植站",
     "mierno.printing_room": "印刷室",
+    "mierno.modular_elven_trade": "模块化精灵交易",
 
     "fluid.mierno.gensousitu": "幻想质",
     "fluid.mierno.liquid_mana": "液态魔力",
@@ -233,6 +235,7 @@
     "tooltip.mierno.clay_ball": "在粘土花附近放置沙子来产生黏土球",
     "tooltip.mierno.alfheim_portal": "警告：不要用时间之瓶加速精灵门核心，会造成卡顿",
     "tooltip.mierno.imbuement_chamber": "灌注室现在会消耗基座上的材料",
+    "tooltip.mierno.modular_alfheim_portal_core": "若连不上火花请重新放置一次火花",
 
     "biome.mierno.black_and_white": "黑与白",
     "biome.mierno.misty_forest": "迷雾森林",
@@ -388,8 +391,10 @@
     "mierno.chapter1-2.alfheim_portal.subtitle": "§6→【点我】← 查看精灵门的胶囊",
     "mierno.chapter1-2.mana_to_source.subtitle": "§6如图所示，可用魔力 1:10 转化魔源，但只能使用魔力发射器",
     "mierno.chapter1-2.elven_portal_conversion.subtitle": "§6在激活的精灵门核心半径5格范围内放置活石，活石会被转化为微光石",
+    "mierno.chapter1-2.wilden_summon.title": "§e召唤荒野奇美拉",
     "mierno.chapter1-2.wilden_summon.subtitle": "§6激活仪式之前，务必向仪式火盆投入荒野之角、荒野尖刺、荒野膜翼才能召唤出Boss",
-    "mierno.chapter1-2.wilden_summon.desc1": "§c友情提示：这个Boss会爆炸并摧毁方块，请勿在基地中召唤！",
+    "mierno.chapter1-2.wilden_summon.desc1": "§c友情提示：这个Boss可能会爆炸并摧毁方块，请勿在基地中召唤！",
+    "mierno.chapter1-2.wilden_summon.desc2": "§a打这个Boss建议用远程攻击，比如做一个植物魔法的水晶弓（消耗魔力发射箭矢），戴上梦之翼飞在天上慢慢磨。不过这个Boss有一个形态是会飞的，注意变换思路",
 
     "mierno.chapter1-3.assembly_room.subtitle": "§6→【点我】← 查看装配室的胶囊",
     "mierno.chapter1-3.matter_mixer.subtitle": "§6→【点我】← 查看物质混合机的胶囊",

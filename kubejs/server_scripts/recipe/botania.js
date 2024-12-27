@@ -207,9 +207,11 @@ ServerEvents.recipes((event) => {
     );
 
     botania.elven_trade("botania:dragonstone", ["botania:mana_diamond", "botania:mana_diamond"]);
+    botania.elven_trade("botania:dragonstone_block", ["botania:mana_diamond_block", "botania:mana_diamond_block"]);
     botania.elven_trade("botania:pixie_dust", ["botania:mana_powder", "botania:mana_powder"]);
     botania.elven_trade("ae2:certus_quartz_crystal", ["botania:quartz_mana", "botania:quartz_mana"]);
     botania.elven_trade("ae2:sky_stone_block", "botania:livingrock");
+
     /**
      * @param {OutputItem_} output
      * @param {InputItem_} input

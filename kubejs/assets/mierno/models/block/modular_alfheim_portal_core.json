@@ -1,0 +1,7 @@
+{
+    "parent": "mierno:block/blockmodel_overlay_all",
+    "textures": {
+        "bg_all": "mierno:block/mana_input",
+        "ov_all": "mierno:block/alfheim_portal_activated_overlay"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "block.expatternprovider.circuit_cutter": "电路切片器",
+    "block.expatternprovider.oversize_interface": "ME 超大接口",
+    "block.expatternprovider.assembler_matrix_frame": "装配矩阵框架",
+    "block.expatternprovider.assembler_matrix_wall": "装配矩阵墙",
+    "block.expatternprovider.assembler_matrix_pattern": "装配矩阵样板核心",
+    "block.expatternprovider.assembler_matrix_crafter": "装配矩阵制作核心",
+    "block.expatternprovider.assembler_matrix_speed": "装配矩阵速度核心",
+    "block.expatternprovider.silicon_block": "硅块"
+}

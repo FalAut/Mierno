@@ -167,4 +167,8 @@ ItemEvents.tooltip((event) => {
 
     event.add("botania:alfheim_portal", Text.translate("tooltip.mierno.alfheim_portal").darkRed());
     event.add("ars_nouveau:imbuement_chamber", Text.translate("tooltip.mierno.imbuement_chamber").gold());
+    event.add(
+        "mierno:modular_alfheim_portal_core",
+        Text.translate("tooltip.mierno.modular_alfheim_portal_core").gold()
+    );
 });

@@ -42,8 +42,8 @@
 				item: "forbidden_arcanus:stella_arcanum"
 				type: "item"
 			}]
-			x: 10.0d
-			y: -1.0d
+			x: 11.5d
+			y: 0.0d
 		}
 		{
 			id: "0AE6261DC4FCA0F6"
@@ -52,8 +52,8 @@
 				item: "forbidden_arcanus:clibano_core"
 				type: "item"
 			}]
-			x: 9.0d
-			y: -1.0d
+			x: 12.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["0AE6261DC4FCA0F6"]
@@ -63,8 +63,8 @@
 				item: "forbidden_arcanus:stellarite_piece"
 				type: "item"
 			}]
-			x: 9.5d
-			y: 0.0d
+			x: 13.0d
+			y: 1.0d
 		}
 		{
 			id: "578BEC6A99F962F0"
@@ -77,7 +77,7 @@
 				}
 				type: "item"
 			}]
-			x: 9.5d
+			x: 14.0d
 			y: 1.0d
 		}
 		{
@@ -90,8 +90,8 @@
 				item: "forbidden_arcanus:ferrognetic_mixture"
 				type: "item"
 			}]
-			x: 11.0d
-			y: 1.5d
+			x: 15.0d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -114,6 +114,16 @@
 					id: "4879E4F1CD78DAAF"
 					item: "forbidden_arcanus:xpetrified_orb"
 					team_reward: true
+					type: "item"
+				}
+				{
+					id: "461AD1AE3EB5D80B"
+					item: "forbidden_arcanus:darkstone_pedestal"
+					type: "item"
+				}
+				{
+					id: "55FBE65BEDBA066A"
+					item: "forbidden_arcanus:arcane_crystal_obelisk"
 					type: "item"
 				}
 			]
@@ -148,8 +158,8 @@
 				type: "checkmark"
 			}]
 			title: "{block.forbidden_arcanus.hephaestus_forge}"
-			x: 11.0d
-			y: 0.0d
+			x: 15.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["2A700F246060C907"]
@@ -212,8 +222,18 @@
 				"4C4DAAE3273D4F94"
 				"160A2182B129F30F"
 				"297ECB810C918599"
+				"773E1E2A96A99123"
 			]
 			id: "01660174B3CF5EFA"
+			rewards: [{
+				id: "386A0C7BE9283CDA"
+				item: {
+					Count: 1
+					id: "bloodmagic:sacrificialdagger"
+					tag: { }
+				}
+				type: "item"
+			}]
 			shape: "square"
 			size: 1.5d
 			tasks: [{
@@ -225,7 +245,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["629F64FE55853848"]
+			dependencies: ["36F845B340538A42"]
 			id: "1FF69C9F07E0A0FB"
 			shape: "square"
 			size: 0.8d
@@ -250,16 +270,6 @@
 			}]
 			x: 4.7d
 			y: 2.0d
-		}
-		{
-			id: "13BD7AC93C50147C"
-			tasks: [{
-				id: "6384A01252F0ADE6"
-				item: "forbidden_arcanus:quantum_catcher"
-				type: "item"
-			}]
-			x: 7.5d
-			y: 3.0d
 		}
 		{
 			id: "160A2182B129F30F"
@@ -297,6 +307,7 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["01660174B3CF5EFA"]
 			id: "5015D21B9B93A6E7"
 			rewards: [
 				{
@@ -310,8 +321,9 @@
 					type: "item"
 				}
 			]
+			shape: "octagon"
 			tasks: [{
-				id: "4EEFF1AA0A4FB051"
+				id: "2DF91D058EAD518C"
 				item: "bloodmagic:blankrune"
 				type: "item"
 			}]
@@ -320,13 +332,20 @@
 		}
 		{
 			id: "1DAEF872073C7174"
+			rewards: [{
+				id: "1850D6823350181B"
+				item: "bloodmagic:divinationsigil"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 0.8d
 			tasks: [{
 				id: "7B598B02BC1AFB28"
 				item: "bloodmagic:weakbloodorb"
 				type: "item"
 			}]
-			x: 7.0d
-			y: 2.0d
+			x: 5.5d
+			y: 0.8d
 		}
 		{
 			id: "498D984BC02F5354"
@@ -335,8 +354,8 @@
 				item: "bloodmagic:soulforge"
 				type: "item"
 			}]
-			x: 8.0d
-			y: -2.0d
+			x: 16.0d
+			y: -3.5d
 		}
 		{
 			id: "7F1ED6E7BE35734A"
@@ -345,8 +364,8 @@
 				item: "bloodmagic:alchemytable"
 				type: "item"
 			}]
-			x: 8.0d
-			y: -3.0d
+			x: 13.5d
+			y: -4.0d
 		}
 		{
 			id: "669CF4FCA695FD8B"
@@ -355,8 +374,8 @@
 				item: "bloodmagic:alchemicalreactionchamber"
 				type: "item"
 			}]
-			x: 9.0d
-			y: -4.5d
+			x: 13.0d
+			y: -2.5d
 		}
 		{
 			id: "322793B57EC6060F"
@@ -371,8 +390,8 @@
 				}
 				type: "item"
 			}]
-			x: 9.0d
-			y: -3.0d
+			x: 12.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["449883B0BE46FF22"]
@@ -393,8 +412,8 @@
 				item: "bloodmagic:largebloodstonebrick"
 				type: "item"
 			}]
-			x: 10.0d
-			y: -2.0d
+			x: 15.5d
+			y: -1.5d
 		}
 		{
 			id: "64FD15986953427F"
@@ -403,11 +422,11 @@
 				item: "bloodmagic:strong_tau"
 				type: "item"
 			}]
-			x: 8.0d
-			y: -1.0d
+			x: 15.0d
+			y: -3.5d
 		}
 		{
-			dependencies: ["773E1E2A96A99123"]
+			dependencies: ["01660174B3CF5EFA"]
 			icon: "mierno:blood_converter"
 			id: "7D8273A6E34F1025"
 			shape: "hexagon"
@@ -428,6 +447,261 @@
 			]
 			x: 4.0d
 			y: -2.5d
+		}
+		{
+			id: "75E3932110BC1559"
+			tasks: [{
+				id: "064E2700FAB6698E"
+				item: "bloodmagic:activationcrystalweak"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 2.5d
+		}
+		{
+			id: "52F66F70138FCC56"
+			shape: "hexagon"
+			size: 0.8d
+			tasks: [{
+				id: "05A21582F94C01BA"
+				item: "bloodmagic:blankslate"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -0.8d
+		}
+		{
+			id: "221E88604970BCA5"
+			tasks: [
+				{
+					id: "08AE247AFC701DDD"
+					item: "bloodmagic:ritualstone"
+					type: "item"
+				}
+				{
+					id: "5A1397F51D800674"
+					item: "bloodmagic:masterritualstone"
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			id: "7D42CBA5678E1734"
+			tasks: [{
+				id: "60F38B1DB169742E"
+				item: "bloodmagic:reagentbinding"
+				type: "item"
+			}]
+			x: 15.5d
+			y: -2.5d
+		}
+		{
+			id: "019A248C3EE31FF7"
+			tasks: [{
+				id: "27C6A7DFA5DA29FC"
+				item: {
+					Count: 1
+					id: "bloodmagic:duskscribetool"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 9.5d
+			y: -1.0d
+		}
+		{
+			id: "12AF7D3CD4F56896"
+			tasks: [{
+				id: "6F35AE54B58C94D5"
+				item: "forbidden_arcanus:crescent_moon"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -1.0d
+		}
+		{
+			id: "0D09F2E2D3CFB01C"
+			tasks: [{
+				id: "24A6B07280AAC167"
+				item: "bloodmagic:duskritualstone"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -0.5d
+		}
+		{
+			id: "79C2430BD343186A"
+			subtitle: "{mierno.chapter2-3.check_hephaestus_forge_tier2.subtitle}"
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						id: "forbidden_arcanus:hephaestus_forge"
+						tag: {
+							BlockStateTag: {
+								tier: 2
+							}
+						}
+					}
+					id: "64A7A1CBFBB1D1E1"
+					observe_type: 2
+					timer: 0L
+					title: "{mierno.chapter2-3.check_hephaestus_forge_tier2.title}"
+					to_observe: "forbidden_arcanus:hephaestus_forge[tier=2]"
+					type: "observation"
+				}
+				{
+					id: "4804AACFA6673A79"
+					item: {
+						Count: 1
+						id: "forbidden_arcanus:hephaestus_forge"
+						tag: {
+							BlockStateTag: {
+								tier: 2
+							}
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			id: "443FB60CDF992AFC"
+			tasks: [{
+				id: "7D678F785119E521"
+				item: "forbidden_arcanus:artisan_relic"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 0.0d
+		}
+		{
+			id: "38BE74CB65B5DBCC"
+			tasks: [{
+				id: "5297F06CB5A12543"
+				item: "forbidden_arcanus:elementarium"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 1.0d
+		}
+		{
+			id: "2C6E59848DB2C3A2"
+			tasks: [
+				{
+					id: "6DDF5374E3A6A2BB"
+					item: {
+						Count: 1
+						id: "forbidden_arcanus:smelter_prism"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2DB52BCFF05E251F"
+					item: "forbidden_arcanus:whirlwind_prism"
+					type: "item"
+				}
+				{
+					id: "0C18F7129BBC336A"
+					item: "forbidden_arcanus:sea_prism"
+					type: "item"
+				}
+				{
+					id: "4B7A6DCC297432DE"
+					item: "forbidden_arcanus:terrastomp_prism"
+					type: "item"
+				}
+			]
+			x: 9.5d
+			y: 1.0d
+		}
+		{
+			id: "4CF3518C252F84A1"
+			tasks: [
+				{
+					id: "506D05F723E12263"
+					item: {
+						Count: 1
+						id: "bloodmagic:firescribetool"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1FDA51C80C870454"
+					item: {
+						Count: 1
+						id: "bloodmagic:airscribetool"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3A4791AA9304AFA0"
+					item: {
+						Count: 1
+						id: "bloodmagic:waterscribetool"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "37733B229C3118D1"
+					item: {
+						Count: 1
+						id: "bloodmagic:earthscribetool"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 9.5d
+			y: 0.0d
+		}
+		{
+			id: "191ACD1E4234C48E"
+			tasks: [
+				{
+					id: "30B9B62F66E48990"
+					item: "bloodmagic:fireritualstone"
+					type: "item"
+				}
+				{
+					id: "1997312BCC4DA82B"
+					item: "bloodmagic:airritualstone"
+					type: "item"
+				}
+				{
+					id: "779DE718344CB079"
+					item: "bloodmagic:waterritualstone"
+					type: "item"
+				}
+				{
+					id: "42ED52F22FA7938F"
+					item: "bloodmagic:earthritualstone"
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: 0.5d
 		}
 	]
 	title: "{mierno.chapter2-3.title}"

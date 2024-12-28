@@ -61,7 +61,7 @@ ServerEvents.recipes((event) => {
         });
     }
 
-    pulverizer("9x forbidden_arcanus:mundabitur_dust", "mierno:colorless_gem");
+    pulverizer("4x forbidden_arcanus:mundabitur_dust", "mierno:colorless_gem");
     pulverizer("ae2:certus_quartz_dust", "#ae2:all_certus_quartz");
     pulverizer("evilcraft:dark_gem_crushed", "evilcraft:dark_gem");
     pulverizer("ae2:fluix_dust", "ae2:fluix_crystal");

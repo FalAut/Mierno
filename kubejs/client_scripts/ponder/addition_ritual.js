@@ -21,7 +21,7 @@ Ponder.registry((event) => {
                         id: "mierno:addition_sigil",
                         tag: { Enchantments: [{ id: "mierno:activate", lvl: 1 }] },
                     },
-                    NoGravity: 1,
+                    NoGravity: true,
                 });
             });
 

@@ -38,41 +38,44 @@ BlockEvents.rightClicked("enchanting_table", (event) => {
 });
 
 EntityEvents.death((event) => {
-    const { entity, level, source } = event;
-    if (!source.actual || !source.actual.isPlayer()) return;
+    const { entity, level } = event;
     const block = entity.block;
+    if (!checkAllConditions(level, block)) return;
+
     const multiblock = $PatchouliAPI.getMultiblock("mierno:division_sigil_activation_ritual");
-    const player = source.player;
 
-    if (checkAllConditions(level, block)) {
-        multiblock.simulate(level, block.pos, "none", false).second.forEach((result) => {
-            if (result.character == "A") {
-                level.setBlock(
-                    result.worldPosition.below(),
-                    Block.getBlock("botania:mutated_grass").defaultBlockState(),
-                    2
-                );
-            }
-            if (result.character == "B") {
-                level.setBlock(
-                    result.worldPosition.above(),
-                    Blocks.REDSTONE_WIRE.defaultBlockState().setValue(BlockProperties.POWER, new $Integer("15")),
-                    2
-                );
-            }
-        });
+    multiblock.simulate(level, block.pos, "none", false).second.forEach((result) => {
+        if (result.character == "A") {
+            level.setBlock(
+                result.worldPosition.below(),
+                Block.getBlock("botania:mutated_grass").defaultBlockState(),
+                2
+            );
+        }
+        if (result.character == "B") {
+            level.setBlock(
+                result.worldPosition.above(),
+                Blocks.REDSTONE_WIRE.defaultBlockState().setValue(BlockProperties.POWER, new $Integer("15")),
+                2
+            );
+        }
+    });
 
-        let lightningBoltEntity = block.createEntity("lightning_bolt");
-        lightningBoltEntity.moveTo(Vec3d.atCenterOf(block.pos));
-        lightningBoltEntity.spawn();
+    let lightningBoltEntity = block.createEntity("lightning_bolt");
+    lightningBoltEntity.setVisualOnly(true);
+    lightningBoltEntity.moveTo(Vec3d.atCenterOf(block.pos));
+    lightningBoltEntity.spawn();
 
-        let inventory = player.inventory;
-        let slot = inventory.find("mierno:division_sigil");
-        let sigil = inventory.getStackInSlot(slot);
-        sigil.count--;
-        let activateSigil = Item.of("mierno:division_sigil").enchant("mierno:activate", 1);
-        player.give(activateSigil);
+    level.getEntitiesWithin(AABB.ofBlock(block.pos)).forEach((entity) => {
+        if (entity?.item != "mierno:division_sigil") return;
+
+        /**@type {Internal.ItemEntity} */
+        let itemEntity = entity;
+        itemEntity.setItem(Item.of("mierno:division_sigil").enchant("mierno:activate", 1));
+        itemEntity.moveTo(Vec3d.atCenterOf(block.pos.above()));
+        itemEntity.setDeltaMovement(new Vec3d(0, 0.01, 0));
+        itemEntity.setNoGravity(true);
+        itemEntity.setGlowing(true);
         level.broadcastEntityEvent(entity, 35);
-        player.sendData("display_item_activation", { displayItem: activateSigil.id });
-    }
+    });
 });

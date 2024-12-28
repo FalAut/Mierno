@@ -395,4 +395,15 @@ ServerEvents.recipes((event) => {
             },
         })
         .id("mierno:spirit_furnace/blood_pact_of_asmodeus");
+
+    event.custom({
+        type: "occultism:miner",
+        ingredient: {
+            tag: "occultism:miners/master",
+        },
+        result: {
+            item: "occultism:iesnium_ore",
+        },
+        weight: 100,
+    });
 });

@@ -232,7 +232,7 @@ ServerEvents.recipes((event) => {
 
     kubejs.shaped("8x forbidden_arcanus:darkstone", ["AAA", "ABA", "AAA"], {
         A: "occultism:otherstone",
-        B: "evilcraft:dark_block",
+        B: "evilcraft:inverted_potentia_empowered",
     });
 
     kubejs.shaped("ae2:quartz_glass", ["ABA", "BAB", "ABA"], {
@@ -731,5 +731,21 @@ ServerEvents.recipes((event) => {
     kubejs.shaped("forbidden_arcanus:aureal_bottle", ["AAA", "ABA", "AAA"], {
         A: "forbidden_arcanus:arcane_crystal_dust",
         B: "forbidden_arcanus:xpetrified_orb",
+    });
+
+    kubejs.shaped("forbidden_arcanus:corrupti_dust", ["ABA", "BCB", "ABA"], {
+        A: "forbidden_arcanus:arcane_crystal_dust",
+        B: "evilcraft:dark_gem_crushed",
+        C: "forbidden_arcanus:mundabitur_dust",
+    });
+
+    kubejs.shaped("8x forbidden_arcanus:dark_rune", ["AAA", "ABA", "AAA"], {
+        A: "forbidden_arcanus:rune",
+        B: "evilcraft:inverted_potentia_empowered",
+    });
+
+    kubejs.shaped("8x forbidden_arcanus:corrupted_arcane_crystal", ["AAA", "ABA", "AAA"], {
+        A: "forbidden_arcanus:arcane_crystal",
+        B: "forbidden_arcanus:corrupti_dust",
     });
 });

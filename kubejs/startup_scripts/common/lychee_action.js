@@ -55,11 +55,11 @@ LycheeEvents.customAction("place_misty_forest_portal", (event) => {
 
 LycheeEvents.customAction("addition_sigil_activation", (event) => {
     event.action.applyFunc = (recipe, ctx, times) => {
-        let itemEntity = ctx.getParam("this_entity");
-        const { level, block } = itemEntity;
+        let anvilEntity = ctx.getParam("this_entity");
+        const { level, block } = anvilEntity;
 
         const resultEntity = block.createEntity("item");
-        resultEntity.item = Item.of("mierno:addition_sigil").enchant("mierno:activate", 1);
+        resultEntity.setItem(Item.of("mierno:addition_sigil").enchant("mierno:activate", 1));
         resultEntity.moveTo(Vec3d.atCenterOf(block.pos.above()));
         resultEntity.setDeltaMovement(new Vec3d(0, 0.01, 0));
         resultEntity.setNoGravity(true);

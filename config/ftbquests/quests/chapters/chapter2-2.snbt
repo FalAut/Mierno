@@ -955,6 +955,22 @@
 			x: 4.25d
 			y: 3.5d
 		}
+		{
+			dependencies: ["074F917DE7987D00"]
+			id: "23FE1B415DD6D247"
+			rewards: [{
+				id: "66829388926A38EC"
+				item: "occultism:magic_lamp_empty"
+				type: "item"
+			}]
+			tasks: [{
+				id: "540D5564031CB635"
+				item: "occultism:dimensional_mineshaft"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.0d
+		}
 	]
 	title: "{mierno.chapter2-2.title}"
 }

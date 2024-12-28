@@ -27,21 +27,23 @@ ServerEvents.recipes((event) => {
     chiller("thermal:lumium_ingot", "mierno:molten_lumium");
     chiller("thermal:signalum_ingot", "mierno:molten_signalum");
 
-    event.custom({
-        type: "thermal:pulverizer",
-        ingredient: {
-            item: "mierno:colorless_gem",
-        },
-        result: [
-            {
-                item: "forbidden_arcanus:mundabitur_dust",
-            },
-            {
-                item: "forbidden_arcanus:mundabitur_dust",
-                chance: 0.5,
-            },
-        ],
-    });
+    function pulverizer(output, input) {
+        event.custom({
+            type: "thermal:pulverizer",
+            ingredient: input.startsWith("#") ? { tag: input.substring(1) } : { item: input },
+            result: [
+                {
+                    item: output,
+                },
+            ],
+        });
+    }
+
+    pulverizer("forbidden_arcanus:mundabitur_dust", "mierno:colorless_gem");
+    pulverizer("ae2:certus_quartz_dust", "#ae2:all_certus_quartz");
+    pulverizer("ae2:fluix_dust", "ae2:fluix_crystal");
+    pulverizer("ae2:sky_dust", "ae2:sky_stone_block");
+    pulverizer("ae2:ender_dust", "minecraft:ender_pearl");
 
     event.custom({
         type: "thermal:refinery",
@@ -77,6 +79,77 @@ ServerEvents.recipes((event) => {
         result: [
             {
                 item: "thermal:machine_frame",
+                count: 1,
+            },
+        ],
+        energy: 8000,
+    });
+
+    event.custom({
+        type: "thermal:smelter",
+        ingredients: [
+            {
+                item: "minecraft:redstone",
+                count: 16,
+            },
+            {
+                item: "thermal:iron_plate",
+                count: 8,
+            },
+            {
+                item: "ae2:matter_ball",
+                count: 64,
+            },
+        ],
+        result: [
+            {
+                item: "thermal:redstone_servo",
+                count: 1,
+            },
+        ],
+        energy: 8000,
+    });
+
+    event.custom({
+        type: "thermal:smelter",
+        ingredients: [
+            {
+                item: "minecraft:redstone",
+                count: 16,
+            },
+            {
+                item: "thermal:gold_plate",
+                count: 8,
+            },
+            {
+                item: "ae2:matter_ball",
+                count: 64,
+            },
+        ],
+        result: [
+            {
+                item: "thermal:rf_coil",
+                count: 1,
+            },
+        ],
+        energy: 8000,
+    });
+
+    event.custom({
+        type: "thermal:smelter",
+        ingredients: [
+            {
+                item: "minecraft:blaze_powder",
+                count: 8,
+            },
+            {
+                item: "botania:quartz_mana",
+                count: 1,
+            },
+        ],
+        result: [
+            {
+                item: "malum:blazing_quartz",
                 count: 1,
             },
         ],
@@ -218,6 +291,62 @@ ServerEvents.recipes((event) => {
         result: [
             {
                 item: "pneumaticcraft:compressed_iron_gear",
+            },
+        ],
+    });
+
+    event.custom({
+        type: "thermal:press",
+        ingredients: [
+            {
+                tag: "minecraft:lapis_lazuli",
+                count: 4,
+            },
+            {
+                item: "thermal:press_gear_die",
+            },
+        ],
+        result: [
+            {
+                item: "thermal:lapis_gear",
+            },
+        ],
+    });
+
+    event.custom({
+        type: "thermal:press",
+        ingredients: [
+            {
+                tag: "minecraft:diamond",
+                count: 4,
+            },
+            {
+                item: "thermal:press_gear_die",
+            },
+        ],
+        result: [
+            {
+                item: "thermal:diamond_gear",
+            },
+        ],
+    });
+
+    event.custom({
+        type: "thermal:pyrolyzer",
+        ingredient: {
+            item: "fluxnetworks:flux_dust",
+        },
+        result: [
+            {
+                item: "thermal:tar",
+            },
+            {
+                item: "thermal:tar",
+                chance: 0.25,
+            },
+            {
+                fluid: "thermal:heavy_oil",
+                amount: 250,
             },
         ],
     });

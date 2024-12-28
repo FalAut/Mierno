@@ -87,7 +87,7 @@ ServerEvents.recipes((event) => {
             {
                 type: "pneumaticcraft:stacked_item",
                 count: 4,
-                item: "powah:capacitor_nitro",
+                item: "powah:crystal_nitro",
             },
         ],
         pressure: 3.0,

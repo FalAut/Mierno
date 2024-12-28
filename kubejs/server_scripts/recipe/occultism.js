@@ -148,6 +148,56 @@ ServerEvents.recipes((event) => {
             type: "occultism:ritual",
             ritual_type: "occultism:craft",
             activation_item: {
+                item: "evilcraft:vengeance_ring",
+            },
+            pentacle_id: "occultism:blood_pact_of_asmodeus",
+            duration: 60,
+            ritual_dummy: {
+                item: "mierno:ritual_dummy/blood_pact_of_asmodeus",
+            },
+            ingredients: [
+                {
+                    item: "botania:rune_wrath",
+                },
+                {
+                    item: "botania:rune_greed",
+                },
+                {
+                    item: "evilcraft:blood_orb_filled",
+                },
+                {
+                    item: "evilcraft:blood_orb_filled",
+                },
+                {
+                    item: "evilcraft:blood_orb_filled",
+                },
+                {
+                    item: "evilcraft:blood_orb_filled",
+                },
+                {
+                    item: "occultism:iesnium_ingot",
+                },
+                {
+                    item: "occultism:iesnium_ingot",
+                },
+                {
+                    item: "occultism:iesnium_ingot",
+                },
+                {
+                    item: "occultism:iesnium_ingot",
+                },
+            ],
+            result: {
+                item: "evilcraft:piercing_vengeance_focus",
+            },
+        })
+        .id("mierno:piercing_vengeance_focus/blood_pact_of_asmodeus");
+
+    event
+        .custom({
+            type: "occultism:ritual",
+            ritual_type: "occultism:craft",
+            activation_item: {
                 item: "occultism:soul_gem",
             },
             pentacle_id: "occultism:blood_pact_of_asmodeus",

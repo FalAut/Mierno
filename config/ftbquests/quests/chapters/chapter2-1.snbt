@@ -613,13 +613,28 @@
 		}
 		{
 			dependencies: ["50B0CC93E4CFE5D6"]
+			icon: "botania:pinkinator"
 			id: "24D38824ADA5B6BE"
-			shape: "diamond"
-			tasks: [{
-				id: "356AFC343B724EE9"
-				item: "botania:pinkinator"
+			rewards: [{
+				count: 64
+				id: "50E33D042D4C383F"
+				item: "ae2:pink_lumen_paint_ball"
 				type: "item"
 			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "356AFC343B724EE9"
+					item: "botania:pinkinator"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "3C94A9D71A674795"
+					item: "ae2:pink_lumen_paint_ball"
+					type: "item"
+				}
+			]
 			x: 12.75d
 			y: 3.55d
 		}

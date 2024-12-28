@@ -1,10 +1,44 @@
 MBDMachineEvents.onBeforeRecipeWorking("mierno:fired_crucible", (event) => {
-    const { machine } = event.event;
+    const info = event.event;
+    const { machine } = info;
     const heatSource = machine.level.getBlock(machine.pos.below());
 
-    if (!heatSource.hasTag("mierno:crucible_heat_source")) {
-        event.event.setCanceled(true);
+    if (heatSource.hasTag("mierno:crucible_heat_source")) {
+        if (heatSource.id == "minecraft:campfire" && heatSource.properties.lit == "false") {
+            info.setCanceled(true);
+        }
+    } else {
+        info.setCanceled(true);
     }
+});
+
+MBDMachineEvents.onBeforeRecipeModify("mierno:fired_crucible", (event) => {
+    const info = event.event;
+    const { machine, recipe } = info;
+    const heatSource = machine.level.getBlock(machine.pos.below());
+    const copyRecipe = recipe.copy();
+
+    switch (heatSource.id) {
+        case "minecraft:campfire":
+            copyRecipe.duration = 80;
+            break;
+        case "minecraft:lava":
+            copyRecipe.duration = 60;
+            break;
+        case "botania:blaze_block":
+            copyRecipe.duration = 40;
+            break;
+        case "minecraft:magma_block":
+            copyRecipe.duration = 20;
+            break;
+        case "powah:blazing_crystal_block":
+            copyRecipe.duration = 1;
+            break;
+        default:
+            break;
+    }
+
+    info.setRecipe(copyRecipe);
 });
 
 MBDMachineEvents.onBeforeRecipeModify("mierno:colossal_furnace_core", (event) => {

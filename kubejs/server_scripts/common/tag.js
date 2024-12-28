@@ -42,7 +42,14 @@ ServerEvents.tags("block", (event) => {
     event.add("minecraft:dirt", ["white_concrete", "botania:enchanted_soil"]);
     event.add("stripped_logs", /:stripped.*log$/);
     event.add("botania:special_floating_flowers", "mierno:flowing_source_flower");
-    event.add("mierno:crucible_heat_source", ["fire", "torch", "lava", "magma_block"]);
+    event.add("mierno:crucible_heat_source", [
+        "fire",
+        "powah:blazing_crystal_block",
+        "minecraft:campfire",
+        "botania:blaze_block",
+        "lava",
+        "magma_block",
+    ]);
 
     event.add("minecraft:mineable/axe", ["mierno:infused_wood"]);
     event.add("minecraft:needs_iron_tool", [

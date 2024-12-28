@@ -92,4 +92,5 @@ ServerEvents.recipes((event) => {
     naturesaura.animal_spawner("chicken", ["naturesaura:birth_spirit", "botania:rune_air"]);
     naturesaura.animal_spawner("sheep", ["naturesaura:birth_spirit", "botania:rune_water"]);
     naturesaura.animal_spawner("pig", ["naturesaura:birth_spirit", "botania:rune_fire"]);
+    naturesaura.animal_spawner("ghast", ["naturesaura:birth_spirit", "minecraft:white_dye"]);
 });

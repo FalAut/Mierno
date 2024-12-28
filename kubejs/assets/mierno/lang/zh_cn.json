@@ -37,6 +37,7 @@
     "item.mierno.empty_nether_star": "空下界之星",
     "item.mierno.memory_source_gem": "忆源宝石",
     "item.mierno.dark_eyes": "暗黑之眼",
+    "item.mierno.source_emerald": "魔源绿宝石",
 
     "block.mierno.infused_wood": "灌注之木",
     "block.mierno.misty_forest_portal": "迷雾森林传送门",
@@ -156,7 +157,7 @@
     "tooltip.mierno.fire_starter": "对着方块长按右键引火",
     "tooltip.mierno.fired_crucible_1": "将§7灰色混凝土§r右键放进去，也可以丢进去",
     "tooltip.mierno.fired_crucible_2": "当坩埚下方有热源的时候就会开始产生熔岩",
-    "tooltip.mierno.fired_crucible_3": "可用热源：火，火把，熔岩, 岩浆块",
+    "tooltip.mierno.fired_crucible_3": "可用热源和其速度加成请查看JEI",
     "tooltip.mierno.fired_crucible_4": "满1000 mB时可以用桶取出",
     "tooltip.mierno.fired_crucible_5": "空手 + Shift右键可取出物品",
     "tooltip.mierno.oak_crucible_1": "将§2树叶§r右键放进去，也可以丢进去",
@@ -240,6 +241,8 @@
     "tooltip.mierno.spring": "一个无限的水源，可以使用流体管道抽取",
     "tooltip.mierno.condenser_1": "每 125 mb流体也可算作 1 物品。",
     "tooltip.mierno.condenser_2": "§6在网络里放一个ME无限水元件，然后写一个比如「32000B水->1奇点」的样板给物质聚合器，下单可以直接秒做，非常简单",
+    "tooltip.mierno.pinkinator_1": "使用装满粉红色光通染色球的物质炮合成",
+    "tooltip.mierno.pinkinator_2": "使用后把半径为 16 格球体内的任意一只凋灵变成 粉色凋灵",
 
     "biome.mierno.black_and_white": "黑与白",
     "biome.mierno.misty_forest": "迷雾森林",
@@ -263,6 +266,7 @@
     "jei.mierno.category.beacon_convert": "信标转化",
     "jei.mierno.category.ore_gen": "矿石生成",
     "jei.mierno.category.nether_portal_convert": "下界传送门交易",
+    "jei.mierno.category.crucible_heat_source": "坩埚热源",
 
     "config.jade.plugin_mierno.numerical_source": "魔源定量统计",
     "config.jade.plugin_mierno.numerical_mana": "魔力定量统计",

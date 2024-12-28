@@ -239,6 +239,8 @@ ServerEvents.recipes((event) => {
     alchemyMana("minecraft:ender_pearl", "minecraft:amethyst_shard");
     alchemyMana("minecraft:quartz", "minecraft:lapis_lazuli");
     alchemyMana("leather", "feather");
+    alchemyMana("minecraft:prismarine_shard", "botania:quartz_mana");
+    alchemyMana("minecraft:prismarine_crystals", "minecraft:prismarine_shard");
 
     /**
      * @param {OutputItem_} output

@@ -83,17 +83,19 @@ ServerEvents.recipes((event) => {
         ["minecraft:compass", Item.of("naturesaura:aura_bottle", '{stored_type:"mierno:mist"}').weakNBT()]
     );
 
+    kubejs.shapeless("4x ae2:not_so_mysterious_cube", "ae2:mysterious_cube");
     kubejs.shapeless("naturesaura:gold_leaf", ["gold_ingot", "#leaves"]);
     kubejs.shapeless("mierno:futura_block", "ae2:controller").keepIngredient("ae2:controller");
     kubejs.shapeless("2x botania:blacker_lotus", "botania:blacker_lotus");
     kubejs.shapeless("4x forbidden_arcanus:dark_nether_star", "forbidden_arcanus:dark_nether_star_block");
-    kubejs.shapeless("powah:capacitor_basic", "2x powah:capacitor_basic_tiny");
+    kubejs.shapeless("2x powah:capacitor_basic", "2x powah:capacitor_basic_tiny");
+    kubejs.shapeless("2x powah:capacitor_basic_large", "2x powah:capacitor_basic");
     kubejs.shapeless("mierno:dark_eyes", ["minecraft:ender_eye", "occultism:otherworld_essence"]);
     kubejs.shapeless(
         "botania:pinkinator",
         Item.of(
             "ae2:matter_cannon",
-            '{amts:[L;4032L],ic:4032L,internalCurrentPower:200000.0d,keys:[{"#c":"ae2:i",id:"ae2:pink_paint_ball"}]}'
+            '{amts:[L;4032L],ic:4032L,internalCurrentPower:200000.0d,keys:[{"#c":"ae2:i",id:"ae2:pink_lumen_paint_ball"}]}'
         ).weakNBT()
     );
     kubejs.shapeless(Item.of("expatternprovider:infinity_cell", '{record:{"#c":"ae2:f",id:"minecraft:water"}}'), [
@@ -274,14 +276,6 @@ ServerEvents.recipes((event) => {
         F: "ae2:printed_silicon",
     });
 
-    kubejs.shaped("thermal:machine_press", [" A ", "BCB", "DED"], {
-        A: "iron_block",
-        B: "thermal:iron_plate",
-        C: "thermal:machine_frame",
-        D: "thermal:rf_coil",
-        E: "thermal:redstone_servo",
-    });
-
     kubejs.shaped("mierno:matter_mixer_controller", ["ABA", "EDE", "ACA"], {
         A: "mekanism:block_steel",
         B: "ae2:calculation_processor",
@@ -325,10 +319,6 @@ ServerEvents.recipes((event) => {
 
     kubejs.shaped("mierno:oak_crucible", ["A A", "A A", "AAA"], {
         A: "oak_log",
-    });
-
-    kubejs.shaped("thermal:press_gear_die", [" A ", "A A", " A "], {
-        A: "thermal:iron_plate",
     });
 
     kubejs.shaped("thermal:device_tree_extractor", ["AAA", "ABC", "ADA"], {
@@ -434,15 +424,6 @@ ServerEvents.recipes((event) => {
         F: "ae2:printed_silicon",
     });
 
-    kubejs.shaped("mierno:oil_drilling_rig_controller", ["ABA", "CDE", "AFA"], {
-        A: "pneumaticcraft:pressure_chamber_wall",
-        B: "pneumaticcraft:capacitor",
-        C: "pneumaticcraft:transistor",
-        D: "pneumaticcraft:small_tank",
-        E: "pneumaticcraft:transistor",
-        F: "pneumaticcraft:pressure_gauge",
-    });
-
     kubejs.shaped("8x pneumaticcraft:reinforced_stone", ["AAA", "ABA", "AAA"], {
         A: "pneumaticcraft:compressed_stone",
         B: "pneumaticcraft:compressed_iron_block",
@@ -479,8 +460,8 @@ ServerEvents.recipes((event) => {
         C: "minecraft:smooth_stone_slab",
     });
 
-    kubejs.shaped("powah:capacitor_basic_tiny", [" AB", "ACA", "BA "], {
-        A: "iron_ingot",
+    kubejs.shaped("2x powah:capacitor_basic_tiny", [" AB", "ACA", "BA "], {
+        A: "mekanism:ingot_steel",
         B: "powah:dielectric_paste",
         C: "redstone_block",
     });
@@ -552,15 +533,6 @@ ServerEvents.recipes((event) => {
         B: "forbidden_arcanus:deorum_block",
     });
 
-    kubejs.shaped("mierno:printing_room_controller", ["ABA", "CDE", "AFA"], {
-        A: "pneumaticcraft:pressure_chamber_wall",
-        B: "pneumaticcraft:capacitor",
-        C: "pneumaticcraft:transistor",
-        D: "mierno:energy_input",
-        E: "pneumaticcraft:transistor",
-        F: "pneumaticcraft:pcb_blueprint",
-    });
-
     kubejs.shaped("mierno:modular_alfheim_portal_core", ["ABA", "CDE", "AFA"], {
         A: "botania:terrasteel_nugget",
         B: "ae2:cell_component_1k",
@@ -587,4 +559,172 @@ ServerEvents.recipes((event) => {
             B: "white_concrete",
         }
     );
+
+    kubejs.shaped("thermal:machine_furnace", ["ABC", "DED", "FGF"], {
+        A: "ae2:logic_processor",
+        B: "minecraft:furnace",
+        C: "ae2:engineering_processor",
+        D: "thermal:copper_gear",
+        E: "thermal:machine_frame",
+        F: "thermal:rf_coil",
+        G: "thermal:redstone_servo",
+    });
+
+    kubejs.shaped("thermal:machine_sawmill", ["ABC", "DED", "FGF"], {
+        A: "ae2:logic_processor",
+        B: "thermal:saw_blade",
+        C: "ae2:engineering_processor",
+        D: "thermal:copper_gear",
+        E: "thermal:machine_frame",
+        F: "thermal:rf_coil",
+        G: "thermal:redstone_servo",
+    });
+
+    kubejs.shaped("thermal:machine_pulverizer", ["ABC", "DED", "FGF"], {
+        A: "ae2:logic_processor",
+        B: "minecraft:piston",
+        C: "ae2:engineering_processor",
+        D: "thermal:copper_gear",
+        E: "thermal:machine_frame",
+        F: "thermal:rf_coil",
+        G: "thermal:redstone_servo",
+    });
+
+    kubejs.shaped("thermal:machine_smelter", ["ABC", "DED", "FGF"], {
+        A: "ae2:logic_processor",
+        B: "minecraft:blast_furnace",
+        C: "ae2:engineering_processor",
+        D: "thermal:copper_gear",
+        E: "thermal:machine_frame",
+        F: "thermal:rf_coil",
+        G: "thermal:redstone_servo",
+    });
+
+    kubejs.shaped("thermal:machine_insolator", ["ABC", "DED", "FGF"], {
+        A: "ae2:logic_processor",
+        B: "mierno:planting_station",
+        C: "ae2:engineering_processor",
+        D: "thermal:copper_gear",
+        E: "thermal:machine_frame",
+        F: "thermal:rf_coil",
+        G: "thermal:redstone_servo",
+    });
+
+    kubejs.shaped("thermal:machine_centrifuge", ["ABC", "DED", "FGF"], {
+        A: "ae2:logic_processor",
+        B: "minecraft:compass",
+        C: "ae2:engineering_processor",
+        D: "thermal:copper_gear",
+        E: "thermal:machine_frame",
+        F: "thermal:rf_coil",
+        G: "thermal:redstone_servo",
+    });
+
+    kubejs.shaped("thermal:machine_press", ["ABC", "DED", "FGF"], {
+        A: "ae2:logic_processor",
+        B: "minecraft:iron_block",
+        C: "ae2:engineering_processor",
+        D: "thermal:copper_gear",
+        E: "thermal:machine_frame",
+        F: "thermal:rf_coil",
+        G: "thermal:redstone_servo",
+    });
+
+    kubejs.shaped("thermal:machine_crucible", ["ABC", "DED", "FGF"], {
+        A: "ae2:logic_processor",
+        B: "mierno:fired_crucible",
+        C: "ae2:engineering_processor",
+        D: "thermal:copper_gear",
+        E: "thermal:machine_frame",
+        F: "thermal:rf_coil",
+        G: "thermal:redstone_servo",
+    });
+
+    kubejs.shaped("thermal:machine_chiller", ["ABC", "DED", "FGF"], {
+        A: "ae2:logic_processor",
+        B: "botania:rune_water",
+        C: "ae2:engineering_processor",
+        D: "thermal:copper_gear",
+        E: "thermal:machine_frame",
+        F: "thermal:rf_coil",
+        G: "thermal:redstone_servo",
+    });
+
+    kubejs.shaped("thermal:machine_refinery", ["ABC", "DED", "FGF"], {
+        A: "ae2:logic_processor",
+        B: "thermal:device_tree_extractor",
+        C: "ae2:engineering_processor",
+        D: "thermal:copper_gear",
+        E: "thermal:machine_frame",
+        F: "thermal:rf_coil",
+        G: "thermal:redstone_servo",
+    });
+
+    kubejs.shaped("thermal:machine_pyrolyzer", ["ABC", "DED", "FGF"], {
+        A: "ae2:logic_processor",
+        B: "minecraft:blaze_rod",
+        C: "ae2:engineering_processor",
+        D: "thermal:copper_gear",
+        E: "thermal:machine_frame",
+        F: "thermal:rf_coil",
+        G: "thermal:redstone_servo",
+    });
+
+    kubejs.shaped("thermal:machine_bottler", ["ABC", "DED", "FGF"], {
+        A: "ae2:logic_processor",
+        B: "minecraft:bucket",
+        C: "ae2:engineering_processor",
+        D: "thermal:copper_gear",
+        E: "thermal:machine_frame",
+        F: "thermal:rf_coil",
+        G: "thermal:redstone_servo",
+    });
+
+    kubejs.shaped("thermal:machine_brewer", ["ABC", "DED", "FGF"], {
+        A: "ae2:logic_processor",
+        B: "minecraft:brewing_stand",
+        C: "ae2:engineering_processor",
+        D: "thermal:copper_gear",
+        E: "thermal:machine_frame",
+        F: "thermal:rf_coil",
+        G: "thermal:redstone_servo",
+    });
+
+    kubejs.shaped("thermal:machine_crystallizer", ["ABC", "DED", "FGF"], {
+        A: "ae2:logic_processor",
+        B: "ae2:crystal_resonance_generator",
+        C: "ae2:engineering_processor",
+        D: "thermal:copper_gear",
+        E: "thermal:machine_frame",
+        F: "thermal:rf_coil",
+        G: "thermal:redstone_servo",
+    });
+
+    kubejs.shaped("thermal:machine_crafter", ["ABC", "DED", "FGF"], {
+        A: "ae2:logic_processor",
+        B: "minecraft:crafting_table",
+        C: "ae2:engineering_processor",
+        D: "thermal:copper_gear",
+        E: "thermal:machine_frame",
+        F: "thermal:rf_coil",
+        G: "thermal:redstone_servo",
+    });
+
+    kubejs.shaped("2x powah:capacitor_niotic", ["ABA", "BCB", "ABA"], {
+        A: "powah:dielectric_paste",
+        B: "powah:crystal_niotic",
+        C: "powah:capacitor_blazing",
+    });
+
+    kubejs.shaped("2x powah:capacitor_spirited", ["ABA", "BCB", "ABA"], {
+        A: "powah:dielectric_paste",
+        B: "powah:crystal_spirited",
+        C: "powah:capacitor_niotic",
+    });
+
+    kubejs.shaped("2x powah:capacitor_nitro", ["ABA", "BCB", "ABA"], {
+        A: "powah:dielectric_paste",
+        B: "powah:crystal_nitro",
+        C: "powah:capacitor_spirited",
+    });
 });

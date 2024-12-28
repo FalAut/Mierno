@@ -35,6 +35,33 @@ ServerEvents.recipes((event) => {
         type: "ars_nouveau:imbuement",
         count: 1,
         input: {
+            item: "minecraft:emerald",
+        },
+        output: "mierno:source_emerald",
+        pedestalItems: [
+            {
+                item: {
+                    item: "ars_nouveau:sourceberry_bush",
+                },
+            },
+            {
+                item: {
+                    item: "ars_nouveau:sourceberry_bush",
+                },
+            },
+            {
+                item: {
+                    item: "ars_nouveau:sourceberry_bush",
+                },
+            },
+        ],
+        source: 1000,
+    });
+
+    event.custom({
+        type: "ars_nouveau:imbuement",
+        count: 1,
+        input: {
             item: "botania:shimmerrock",
         },
         output: "ars_nouveau:source_gem",

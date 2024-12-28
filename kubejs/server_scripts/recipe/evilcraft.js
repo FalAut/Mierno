@@ -64,4 +64,19 @@ ServerEvents.recipes((event) => {
         xp: 0.05,
         tier: 3,
     });
+
+    event.custom({
+        type: "evilcraft:blood_infuser",
+        item: "evilcraft:blood_orb_empty",
+        fluid: {
+            fluid: "evilcraft:blood",
+            amount: 10000,
+        },
+        result: {
+            item: "evilcraft:blood_orb_filled",
+        },
+        duration: 100,
+        xp: 2.2,
+        tier: 1,
+    });
 });

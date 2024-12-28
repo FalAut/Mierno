@@ -9,7 +9,6 @@ ServerEvents.recipes((event) => {
     event.replaceInput({ id: "botania:spark_upgrade_dominant" }, "botania:pixie_dust", "botania:mana_powder");
     event.replaceInput({ id: "botania:spark_upgrade_recessive" }, "botania:pixie_dust", "botania:mana_powder");
     event.replaceInput({ id: "botania:spark_upgrade_isolated" }, "botania:pixie_dust", "botania:mana_powder");
-    event.replaceInput({ id: "thermal:machine_smelter" }, "thermal:invar_gear", "thermal:redstone_servo");
     event.replaceInput({ id: "modularrouters:blank_module" }, "paper", "iron_ingot");
     event.replaceInput({ id: "thermal:chiller_ingot_cast" }, "minecraft:nether_brick", "#forge:ingots");
     event.replaceInput({ id: "naturesaura:altar/prismarine" }, "quartz", "botania:quartz_mana");
@@ -54,9 +53,10 @@ ServerEvents.recipes((event) => {
     );
     event.replaceInput({ id: "pneumaticcraft:air_compressor" }, "furnace", "thermal:machine_frame");
     event.replaceInput({ id: "pneumaticcraft:small_tank" }, "glass", "pneumaticcraft:pressure_chamber_glass");
+    event.replaceInput({ id: "pneumaticcraft:small_tank" }, "minecraft:iron_bars", "mierno:reinforced_stone_frame");
     event.replaceInput({ id: "pneumaticcraft:refinery_output" }, "glass", "pneumaticcraft:pressure_chamber_glass");
     event.replaceInput({ id: "pneumaticcraft:refinery" }, "redstone", "pneumaticcraft:transistor");
-    event.replaceInput({ id: "pneumaticcraft:heat_frame" }, "furnace", "thermal:machine_frame");
+    event.replaceInput({ id: "pneumaticcraft:heat_frame" }, "furnace", "mierno:reinforced_stone_frame");
     event.replaceInput(
         { id: "pneumaticcraft:uv_light_box" },
         "pneumaticcraft:pcb_blueprint",
@@ -72,4 +72,6 @@ ServerEvents.recipes((event) => {
         "forbidden_arcanus:deorum_ingot",
         "forbidden_arcanus:deorum_block"
     );
+    event.replaceInput({ mod: "powah" }, "iron_ingot", "mekanism:ingot_steel");
+    event.replaceInput({ id: "evilcraft:crafting/blood_orb_empty" }, "iron_ingot", "forbidden_arcanus:arcane_crystal");
 });

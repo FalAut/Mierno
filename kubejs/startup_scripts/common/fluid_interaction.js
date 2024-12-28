@@ -62,4 +62,5 @@ StartupEvents.postInit((event) => {
     blockGen("copper_ore", "weathered_copper", "mierno:gensousitu");
     blockGen("copper_ore", "oxidized_copper", "mierno:gensousitu");
     blockGen("ancient_debris", "netherite_block", "mierno:gensousitu");
+    blockGen("obsidian", "crying_obsidian", "mierno:gensousitu");
 });

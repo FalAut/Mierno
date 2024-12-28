@@ -11,7 +11,7 @@
 			image: "mierno:textures/image/mana_to_fluid.png"
 			rotation: 0.0d
 			width: 3.75177304964539d
-			x: 6.0d
+			x: 7.0d
 			y: -4.0d
 		}
 		{
@@ -19,7 +19,7 @@
 			image: "mierno:textures/image/source_to_fluid.png"
 			rotation: 0.0d
 			width: 2.941176470588235d
-			x: 9.5d
+			x: 10.0d
 			y: -4.0d
 		}
 	]
@@ -363,7 +363,7 @@
 				type: "item"
 			}]
 			title: "{tooltip.mierno.orbital_fluid_retainer_1}"
-			x: 7.5d
+			x: 8.0d
 			y: -2.0d
 		}
 		{
@@ -417,7 +417,7 @@
 				item: "mierno:source_fluidlink"
 				type: "item"
 			}]
-			x: 8.5d
+			x: 9.0d
 			y: -2.0d
 		}
 		{

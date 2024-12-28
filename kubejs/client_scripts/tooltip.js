@@ -206,4 +206,9 @@ ItemEvents.tooltip((event) => {
         Text.translate("tooltip.mierno.condenser_1").gold(),
         Text.translate("tooltip.mierno.condenser_2").gold(),
     ]);
+
+    event.add("botania:pinkinator", [
+        Text.translate("tooltip.mierno.pinkinator_1").gold(),
+        Text.translate("tooltip.mierno.pinkinator_2").gold(),
+    ]);
 });

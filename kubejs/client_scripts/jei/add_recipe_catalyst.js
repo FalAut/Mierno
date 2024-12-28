@@ -6,6 +6,7 @@ JEIAddedEvents.registerRecipeCatalysts((event) => {
         ["mierno:colossal_furnace_core", $RecipeTypes.SMELTING],
         ["minecraft:beacon", "mierno:beacon_convert"],
         ["mierno:gensousitu_bucket", "mierno:ore_gen"],
+        ["mierno:fired_crucible", "mierno:crucible_heat_source"],
     ];
 
     catalysts.forEach(([input, recipe]) => {

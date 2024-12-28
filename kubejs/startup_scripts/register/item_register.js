@@ -19,6 +19,7 @@ StartupEvents.registry("item", (event) => {
     event.create("mierno:pseudo_inversion_sigil").unstackable().rarity("epic").glow(true);
     event.create("mierno:colorless_gem").rarity("epic");
     event.create("mierno:unstable_singularity").rarity("epic");
+    event.create("mierno:source_emerald");
 
     let darkTemple = $ResourceKey.create(REGISTRIES_STRUCTURE, "mierno:dark_temple");
     event.createCustom("mierno:dark_eyes", () => new $ItemStructureFinder("dark_eyes", darkTemple, 0x808080, 512));

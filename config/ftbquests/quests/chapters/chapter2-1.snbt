@@ -558,6 +558,17 @@
 		}
 		{
 			dependencies: ["2BF2975073C94B18"]
+			description: [
+				"{tooltip.mierno.memory_source_drawing_crystal_core_1}"
+				""
+				"{tooltip.mierno.memory_source_drawing_crystal_core_2}"
+				""
+				"{tooltip.mierno.memory_source_drawing_crystal_core_3}"
+				""
+				"{tooltip.mierno.memory_source_drawing_crystal_core_4}"
+				""
+				"{tooltip.mierno.memory_source_drawing_crystal_core_5}"
+			]
 			id: "77140A526C5DFD64"
 			shape: "square"
 			size: 1.5d

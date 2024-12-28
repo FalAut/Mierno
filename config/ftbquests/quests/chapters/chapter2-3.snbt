@@ -1,5 +1,4 @@
 {
-	always_invisible: true
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "chapter2-3"
@@ -168,48 +167,69 @@
 				}
 				type: "item"
 			}]
-			x: 3.5d
+			x: 4.5d
 			y: -1.5d
 		}
 		{
+			dependencies: [
+				"1FF69C9F07E0A0FB"
+				"046BE8D8DF58B5E5"
+				"1BFE4019DFCE5250"
+			]
 			id: "773E1E2A96A99123"
+			shape: "pentagon"
+			size: 1.2d
 			tasks: [{
 				id: "7F2868B289AB78AB"
 				item: "forbidden_arcanus:maledictus_pact"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 0.0d
+			x: 4.0d
+			y: 1.15d
 		}
 		{
+			dependencies: [
+				"4C4DAAE3273D4F94"
+				"160A2182B129F30F"
+				"297ECB810C918599"
+			]
 			id: "01660174B3CF5EFA"
+			shape: "square"
+			size: 1.5d
 			tasks: [{
 				id: "6661F2A615793D3F"
 				item: "bloodmagic:altar"
 				type: "item"
 			}]
-			x: 7.5d
+			x: 4.0d
 			y: 0.0d
 		}
 		{
+			dependencies: ["629F64FE55853848"]
 			id: "1FF69C9F07E0A0FB"
+			shape: "square"
+			size: 0.8d
 			tasks: [{
 				id: "0BDE26F163F12AF1"
 				item: "forbidden_arcanus:dark_rune"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 1.0d
+			x: 3.3d
+			y: 2.0d
 		}
 		{
+			dependencies: ["4B0CD7F8E48FF223"]
+			hide_dependency_lines: true
 			id: "046BE8D8DF58B5E5"
+			shape: "square"
+			size: 0.8d
 			tasks: [{
 				id: "6264948C34BF0F69"
 				item: "forbidden_arcanus:corrupted_arcane_crystal"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -1.0d
+			x: 4.7d
+			y: 2.0d
 		}
 		{
 			id: "13BD7AC93C50147C"
@@ -218,13 +238,13 @@
 				item: "forbidden_arcanus:quantum_catcher"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 1.0d
+			x: 7.5d
+			y: 3.0d
 		}
 		{
 			id: "160A2182B129F30F"
-			tasks: [{
-				id: "5F8E7DF31B6AE34B"
+			rewards: [{
+				id: "24125FDF051CA9B8"
 				item: {
 					Count: 1
 					id: "forbidden_arcanus:reinforced_deorum_blacksmith_gavel"
@@ -234,28 +254,48 @@
 				}
 				type: "item"
 			}]
-			x: 4.5d
+			tasks: [{
+				id: "3165DB0230A5D7A3"
+				item: "forbidden_arcanus:blacksmith_gavel_head"
+				type: "item"
+			}]
+			x: 3.5d
 			y: -1.5d
 		}
 		{
+			dependencies: ["0C7112DF125C73F2"]
 			id: "1BFE4019DFCE5250"
+			shape: "square"
+			size: 0.8d
 			tasks: [{
 				id: "4394140335397F4F"
 				item: "forbidden_arcanus:dark_nether_star"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 0.0d
+			x: 4.0d
+			y: 2.0d
 		}
 		{
 			id: "5015D21B9B93A6E7"
+			rewards: [
+				{
+					id: "76D7E692006E041E"
+					item: "bloodmagic:dislocationrune"
+					type: "item"
+				}
+				{
+					id: "0F73BDF4016CFC76"
+					item: "bloodmagic:accelerationrune"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "4EEFF1AA0A4FB051"
 				item: "bloodmagic:blankrune"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 1.0d
+			x: 5.5d
+			y: 0.0d
 		}
 		{
 			id: "1DAEF872073C7174"
@@ -264,8 +304,8 @@
 				item: "bloodmagic:weakbloodorb"
 				type: "item"
 			}]
-			x: 6.5d
-			y: -1.0d
+			x: 7.0d
+			y: 2.0d
 		}
 		{
 			id: "498D984BC02F5354"
@@ -312,6 +352,49 @@
 			}]
 			x: 9.0d
 			y: -3.0d
+		}
+		{
+			id: "4B0CD7F8E48FF223"
+			shape: "diamond"
+			tasks: [{
+				id: "49FF51494D8A5769"
+				item: "forbidden_arcanus:corrupti_dust"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.35d
+		}
+		{
+			id: "03BC1F752D786775"
+			tasks: [{
+				id: "54B2850C0DB303E8"
+				item: "bloodmagic:largebloodstonebrick"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -1.0d
+		}
+		{
+			id: "64FD15986953427F"
+			tasks: [{
+				id: "6757D2EAC6621E65"
+				item: "bloodmagic:strong_tau"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -2.0d
+		}
+		{
+			id: "7D8273A6E34F1025"
+			shape: "hexagon"
+			size: 1.2d
+			tasks: [{
+				id: "6562229C8017F2E9"
+				item: "mierno:blood_converter"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.5d
 		}
 	]
 	title: "{mierno.chapter2-3.title}"

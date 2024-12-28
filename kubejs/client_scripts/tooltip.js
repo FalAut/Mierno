@@ -211,4 +211,8 @@ ItemEvents.tooltip((event) => {
         Text.translate("tooltip.mierno.pinkinator_1").gold(),
         Text.translate("tooltip.mierno.pinkinator_2").gold(),
     ]);
+
+    event.add("bloodmagic:altar", Text.translate("tooltip.mierno.bloodmagic_altar").gold());
+    event.add("bloodmagic:dislocationrune", Text.translate("tooltip.mierno.dislocationrune").gold());
+    event.add("bloodmagic:accelerationrune", Text.translate("tooltip.mierno.accelerationrune").gold());
 });

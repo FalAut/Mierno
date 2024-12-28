@@ -89,6 +89,7 @@
     "block.mierno.spirit_attuned_gem_block": "魔灵同调水晶块",
     "block.mierno.printing_room_controller": "印刷室控制器",
     "block.mierno.modular_alfheim_portal_core": "模块化精灵门核心",
+    "block.mierno.blood_converter": "血液转换器",
 
     "mierno.oak_crucible": "橡木坩埚",
     "mierno.fired_crucible": "坩埚",
@@ -106,6 +107,7 @@
     "mierno.planting_station": "种植站",
     "mierno.printing_room": "印刷室",
     "mierno.modular_elven_trade": "模块化精灵交易",
+    "mierno.blood_conversion": "血液转换",
 
     "fluid.mierno.gensousitu": "幻想质",
     "fluid.mierno.liquid_mana": "液态魔力",
@@ -243,6 +245,9 @@
     "tooltip.mierno.condenser_2": "§6在网络里放一个ME无限水元件，然后写一个比如「32000B水->1奇点」的样板给物质聚合器，下单可以直接秒做，非常简单",
     "tooltip.mierno.pinkinator_1": "使用装满粉红色光通染色球的物质炮合成",
     "tooltip.mierno.pinkinator_2": "使用后把半径为 16 格球体内的任意一只凋灵变成 粉色凋灵",
+    "tooltip.mierno.bloodmagic_altar": "可以用管道输入生命源质，但是默认速度很慢，可以用转位符文和促速符文加速",
+    "tooltip.mierno.dislocationrune": "提升血之祭坛在与外部进行生命源质交换时的速度，每个符文提供 20% 的可叠加增量",
+    "tooltip.mierno.accelerationrune": "用于提升充能符文与转位符文的操作，每个促速符文提升 1 tick，最大可用于 19 个。",
 
     "biome.mierno.black_and_white": "黑与白",
     "biome.mierno.misty_forest": "迷雾森林",
@@ -359,7 +364,7 @@
 
     "mierno.welcome.backup.title": "备份",
     "mierno.welcome.backup.subtitle": "拯救你的存档",
-    "mierno.welcome.backup.desc1": "每 1 个小时会自动进行一次备份",
+    "mierno.welcome.backup.desc1": "每 1 个小时（现实时间）会自动进行一次备份",
     "mierno.welcome.backup.desc2": "最多会保留 10 个备份",
     "mierno.welcome.backup.desc3": "超过后会自动依次删除最早的备份",
     "mierno.welcome.backup.desc4": "你也可以输入指令 /simplebackups backup start 进行备份",

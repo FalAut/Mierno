@@ -60,6 +60,8 @@ ServerEvents.tags("block", (event) => {
     event.add("minecraft:mineable/pickaxe", [
         "mierno:reinforced_stone_frame",
         "mierno:futura_block",
+        "mierno:nether_catalyst",
+        "mierno:end_catalyst",
         "mierno:source_fluidlink",
     ]);
 

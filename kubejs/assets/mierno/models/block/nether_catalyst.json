@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube_directional",
+    "textures": {
+        "particle": "mierno:block/nether_catalyst_top",
+        "up": "mierno:block/nether_catalyst_top",
+        "down": "mierno:block/nether_catalyst_top",
+        "north": "mierno:block/nether_catalyst_front",
+        "south": "mierno:block/nether_catalyst_front",
+        "west": "mierno:block/nether_catalyst_side",
+        "east": "mierno:block/nether_catalyst_side"
+    }
+}

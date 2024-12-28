@@ -78,12 +78,55 @@ ServerEvents.recipes((event) => {
         Item.of("naturesaura:aura_bottle", '{stored_type:"naturesaura:overworld"}').weakNBT(),
     ]);
 
+    naturesaura.tree_ritual("mierno:nether_catalyst", [
+        "minecraft:lava_bucket",
+        "minecraft:netherrack",
+        "naturesaura:infused_stone",
+        "naturesaura:infused_stone",
+        "naturesaura:gold_brick",
+        "naturesaura:gold_brick",
+        "naturesaura:gold_brick",
+        "naturesaura:gold_brick",
+    ]);
+
+    naturesaura.tree_ritual("mierno:end_catalyst", [
+        "minecraft:end_crystal",
+        "minecraft:end_stone",
+        "naturesaura:infused_stone",
+        "naturesaura:infused_stone",
+        "naturesaura:gold_brick",
+        "naturesaura:gold_brick",
+        "naturesaura:gold_brick",
+        "naturesaura:gold_brick",
+    ]);
+
     naturesaura.altar("naturesaura:infused_stone", "minecraft:stone");
     naturesaura.altar("mierno:infused_wood", "#logs");
     naturesaura.altar("minecraft:glowstone_dust", "minecraft:redstone", "naturesaura:conversion_catalyst");
     naturesaura.altar("minecraft:amethyst_shard", "minecraft:emerald", "naturesaura:conversion_catalyst");
     naturesaura.altar("minecraft:quartz", "minecraft:lapis_lazuli", "naturesaura:conversion_catalyst");
     naturesaura.altar("botania:vivid_seeds", "botania:grass_seeds");
+    naturesaura.altar("naturesaura:tainted_gold", "gold_ingot", "mierno:nether_catalyst");
+    naturesaura.altar("naturesaura:tainted_gold_block", "gold_block", "mierno:nether_catalyst");
+    naturesaura.altar(
+        Item.of("naturesaura:aura_bottle", '{stored_type:"naturesaura:nether"}'),
+        "naturesaura:bottle_two_the_rebottling",
+        "mierno:nether_catalyst"
+    );
+    naturesaura.altar(
+        Item.of("naturesaura:aura_bottle", '{stored_type:"naturesaura:overworld"}'),
+        "naturesaura:bottle_two_the_rebottling"
+    );
+    naturesaura.altar(
+        Item.of("naturesaura:aura_bottle", '{stored_type:"naturesaura:end"}'),
+        "naturesaura:bottle_two_the_rebottling",
+        "mierno:end_catalyst"
+    );
+    naturesaura.altar(
+        "minecraft:dragon_breath",
+        Item.of("naturesaura:aura_bottle", '{stored_type:"naturesaura:end"}').weakNBT(),
+        "mierno:end_catalyst"
+    );
 
     naturesaura.offering("mierno:whos_gift", "mierno:wrapped_gift");
     naturesaura.offering("mierno:dream_wings", "naturesaura:pet_reviver");

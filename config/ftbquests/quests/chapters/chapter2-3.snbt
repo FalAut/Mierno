@@ -152,6 +152,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["2A700F246060C907"]
 			id: "629F64FE55853848"
 			tasks: [{
 				id: "6F22FF04562F99EC"
@@ -162,6 +163,7 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["7C2D6C62922FB508"]
 			id: "531E3290F094FD3B"
 			tasks: [{
 				id: "01FCEF498838FB0F"
@@ -373,6 +375,7 @@
 			y: -3.0d
 		}
 		{
+			dependencies: ["449883B0BE46FF22"]
 			id: "4B0CD7F8E48FF223"
 			shape: "diamond"
 			tasks: [{

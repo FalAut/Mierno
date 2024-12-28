@@ -90,6 +90,8 @@
     "block.mierno.printing_room_controller": "印刷室控制器",
     "block.mierno.modular_alfheim_portal_core": "模块化精灵门核心",
     "block.mierno.blood_converter": "血液转换器",
+    "block.mierno.nether_catalyst": "下界催化器",
+    "block.mierno.end_catalyst": "末地催化器",
 
     "mierno.oak_crucible": "橡木坩埚",
     "mierno.fired_crucible": "坩埚",
@@ -215,7 +217,7 @@
     "tooltip.mierno.divination_rod_3": "探测完成后，寻找附近的§a白色高亮线条§r，这个位置会有§a艾瑟金属矿石§r",
     "tooltip.mierno.divination_rod_4": "你也可以从探测杖的颜色获得提示，越紫代表离矿石越近",
     "tooltip.mierno.flux_dust": "将红石粉扔入下界传送门获得",
-    "tooltip.mierno.colorless_gem": "如果没有梦之眼，带上它会获得黑暗和失明效果",
+    "tooltip.mierno.colorless_gem": "如果没有梦之眼，带着它会获得黑暗和失明效果",
     "tooltip.mierno.unstable_ingot": "带在身上或扔在地上 10 秒后会爆炸",
     "tooltip.mierno.unstable_singularity": "物极必反，不稳定奇点不会爆炸",
     "tooltip.mierno.source_fluidlink_1": "吸收周围魔源罐中的§5魔源§r来为§e上方§r的§a流体存储器§r产生§d液态魔源",

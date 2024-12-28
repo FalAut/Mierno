@@ -1,6 +1,14 @@
 ServerEvents.recipes((event) => {
     const { thermal } = event.recipes;
 
+    /**
+     * 急速冷冻机
+     * @param {OutputItem_} output
+     * @param {Fluid_} inputFluid
+     * @param {number} amount
+     * @param {InputItem_} inputCast
+     * @param {number} energy
+     */
     function chiller(output, inputFluid, amount, inputCast, energy) {
         event.custom({
             type: "thermal:chiller",
@@ -27,20 +35,35 @@ ServerEvents.recipes((event) => {
     chiller("thermal:lumium_ingot", "mierno:molten_lumium");
     chiller("thermal:signalum_ingot", "mierno:molten_signalum");
 
+    /**
+     * 磨粉机
+     * @param {OutputItem_} output
+     * @param {InputItem_} input
+     */
     function pulverizer(output, input) {
+        let count = 1;
+        let match = output.match(/^(\d+)x\s*(.+)$/);
+        if (match) {
+            count = parseInt(match[1]);
+            output = match[2];
+        }
+
+        // 创建自定义配方
         event.custom({
             type: "thermal:pulverizer",
             ingredient: input.startsWith("#") ? { tag: input.substring(1) } : { item: input },
             result: [
                 {
                     item: output,
+                    count: count,
                 },
             ],
         });
     }
 
-    pulverizer("forbidden_arcanus:mundabitur_dust", "mierno:colorless_gem");
+    pulverizer("9x forbidden_arcanus:mundabitur_dust", "mierno:colorless_gem");
     pulverizer("ae2:certus_quartz_dust", "#ae2:all_certus_quartz");
+    pulverizer("evilcraft:dark_gem_crushed", "evilcraft:dark_gem");
     pulverizer("ae2:fluix_dust", "ae2:fluix_crystal");
     pulverizer("ae2:sky_dust", "ae2:sky_stone_block");
     pulverizer("ae2:ender_dust", "minecraft:ender_pearl");

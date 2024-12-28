@@ -16,6 +16,8 @@ ServerEvents.loaded((event) => {
     }
 });
 
+// const $ForgeHooks = Java.loadClass("net.minecraftforge.common.ForgeHooks");
+
 // ServerEvents.loaded((event) => {
 //     let fuelItems = {};
 

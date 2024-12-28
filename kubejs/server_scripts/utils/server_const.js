@@ -11,7 +11,6 @@ const $StructurePlaceSettings = Java.loadClass(
 );
 const $ResourceKey = Java.loadClass("net.minecraft.resources.ResourceKey");
 const DAMAGE_TYPE = $ResourceKey.createRegistryKey("damage_type");
-const $ForgeHooks = Java.loadClass("net.minecraftforge.common.ForgeHooks");
 const $IMultiController = Java.loadClass("com.lowdragmc.mbd2.api.machine.IMultiController");
 const $MultiblockState = Java.loadClass("com.lowdragmc.mbd2.api.pattern.MultiblockState");
 const $Optional = Java.loadClass("java.util.Optional");

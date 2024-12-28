@@ -1,0 +1,8 @@
+
+[embeddiumplus]
+
+	[embeddiumplus.general]
+		#Configure FPS Display mode
+		#Complete mode gives you min FPS count and average count
+		#Allowed Values: OFF, SIMPLE, ADVANCED
+		fpsDisplay = "OFF"

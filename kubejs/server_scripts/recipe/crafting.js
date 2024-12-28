@@ -727,4 +727,9 @@ ServerEvents.recipes((event) => {
         B: "powah:crystal_nitro",
         C: "powah:capacitor_spirited",
     });
+
+    kubejs.shaped("forbidden_arcanus:aureal_bottle", ["AAA", "ABA", "AAA"], {
+        A: "forbidden_arcanus:arcane_crystal_dust",
+        B: "forbidden_arcanus:xpetrified_orb",
+    });
 });

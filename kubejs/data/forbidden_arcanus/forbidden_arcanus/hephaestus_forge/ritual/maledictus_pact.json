@@ -1,0 +1,71 @@
+{
+    "additional_requirements": {
+        "forge_tier": 1
+    },
+    "essences": {
+        "aureal": 100,
+        "blood": 3000,
+        "experience": 900,
+        "souls": 10
+    },
+    "inputs": [
+        {
+            "amount": 1,
+            "ingredient": {
+                "item": "evilcraft:dark_power_gem"
+            }
+        },
+        {
+            "amount": 1,
+            "ingredient": {
+                "item": "forbidden_arcanus:dark_rune"
+            }
+        },
+        {
+            "amount": 1,
+            "ingredient": {
+                "item": "forbidden_arcanus:dark_nether_star"
+            }
+        },
+        {
+            "amount": 1,
+            "ingredient": {
+                "item": "forbidden_arcanus:corrupted_arcane_crystal"
+            }
+        },
+        {
+            "amount": 1,
+            "ingredient": {
+                "item": "evilcraft:inverted_potentia_empowered"
+            }
+        },
+        {
+            "amount": 1,
+            "ingredient": {
+                "item": "evilcraft:blood_waxed_coal"
+            }
+        },
+        {
+            "amount": 1,
+            "ingredient": {
+                "item": "evilcraft:blood_orb_filled"
+            }
+        },
+        {
+            "amount": 1,
+            "ingredient": {
+                "item": "evilcraft:corrupted_tear"
+            }
+        }
+    ],
+    "main_ingredient": {
+        "item": "evilcraft:garmonbozia"
+    },
+    "result": {
+        "type": "forbidden_arcanus:create_item",
+        "result_item": {
+            "Count": 1,
+            "id": "forbidden_arcanus:maledictus_pact"
+        }
+    }
+}

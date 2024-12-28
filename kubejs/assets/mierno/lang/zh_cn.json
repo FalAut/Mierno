@@ -248,6 +248,12 @@
     "tooltip.mierno.bloodmagic_altar": "可以用管道输入生命源质，但是默认速度很慢，可以用转位符文和促速符文加速",
     "tooltip.mierno.dislocationrune": "提升血之祭坛在与外部进行生命源质交换时的速度，每个符文提供 20% 的可叠加增量",
     "tooltip.mierno.accelerationrune": "用于提升充能符文与转位符文的操作，每个促速符文提升 1 tick，最大可用于 19 个。",
+    "tooltip.mierno.xpetrified_orb": "可放入赫菲斯托斯锻炉的经验槽位中，每个可以提供 91 经验",
+    "tooltip.mierno.aureal_bottle": "可放入赫菲斯托斯锻炉中来为其提供辉光能量",
+    "tooltip.mierno.soul": "可放入赫菲斯托斯锻炉中来为其提供灵魂",
+    "tooltip.mierno.enchanted_soul": "可放入赫菲斯托斯锻炉中来为其提供灵魂，每个附魔灵魂可提供 10 灵魂",
+    "tooltip.mierno.blood_converter": "将血液转换为生命源质",
+    "tooltip.mierno.blood_test_tube": "可放入赫菲斯托斯锻炉中来为其提供血液",
 
     "biome.mierno.black_and_white": "黑与白",
     "biome.mierno.misty_forest": "迷雾森林",

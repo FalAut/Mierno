@@ -2,7 +2,7 @@
     "parent": "forbidden_arcanus:block/cube_all_cutout",
     "textures": {
         "all": "occultism:block/otherstone",
-        "cutout": "forbidden_arcanus:block/arcane_crystal_ore/arcane_crystal_ore_layer",
+        "cutout": "forbidden_arcanus:block/runic_stone/rune_layer",
         "particle": "occultism:block/otherstone"
     }
 }

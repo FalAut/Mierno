@@ -616,5 +616,10 @@
     "trainer.bloodmagic.allowupgrade": "Allow up to: %s %s",
     "trainer.bloodmagic.blacklist": "Allow other upgrades",
     "trainer.bloodmagic.blockupgrade": "Deny: %s",
-    "trainer.bloodmagic.whitelist": "Deny other upgrades"
+    "trainer.bloodmagic.whitelist": "Deny other upgrades",
+    "block.bloodmagic.life_essence_block": "生命源质",
+    "life_essence_fluid_type": "生命源质",
+    "block.bloodmagic.doubt_block": "恶魔源质",
+    "doubt_fluid_type": "恶魔源质",
+    "item.bloodmagic.doubt_bucket": "恶魔源质桶"
 }

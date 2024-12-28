@@ -6,7 +6,7 @@
         "targets": [
             {
                 "state": {
-                    "Name": "forbidden_arcanus:runic_darkstone"
+                    "Name": "forbidden_arcanus:runic_stone"
                 },
                 "target": {
                     "block": "occultism:otherstone",

@@ -101,7 +101,10 @@ ForgeEvents.onEvent("net.minecraftforge.event.level.BlockEvent$NeighborNotifyEve
     const { pos, level } = event;
     let blockState = level.getBlockState(pos.above());
 
-    if (blockState == Block.getBlock("mierno:source_flower").defaultBlockState()) {
+    if (
+        blockState == Block.getBlock("mierno:source_flower").defaultBlockState() ||
+        blockState == Block.getBlock("mierno:datura").defaultBlockState()
+    ) {
         level.destroyBlock(pos.above(), true);
     }
 });

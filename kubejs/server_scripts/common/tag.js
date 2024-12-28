@@ -72,6 +72,30 @@ ServerEvents.tags("block", (event) => {
     ]);
 
     event.add("minecraft:saplings", ["naturesaura:ancient_sapling"]);
+
+    event.add("minecraft:mineable/pickaxe", [
+        "bloodmagic:speedrune2",
+        "bloodmagic:sacrificerune2",
+        "bloodmagic:selfsacrificerune2",
+        "bloodmagic:dislocationrune2",
+        "bloodmagic:altarcapacityrune2",
+        "bloodmagic:bettercapacityrune2",
+        "bloodmagic:orbcapacityrune2",
+        "bloodmagic:accelerationrune2",
+        "bloodmagic:chargingrune2",
+    ]);
+
+    event.add("minecraft:needs_diamond_tool", [
+        "bloodmagic:speedrune2",
+        "bloodmagic:sacrificerune2",
+        "bloodmagic:selfsacrificerune2",
+        "bloodmagic:dislocationrune2",
+        "bloodmagic:altarcapacityrune2",
+        "bloodmagic:bettercapacityrune2",
+        "bloodmagic:orbcapacityrune2",
+        "bloodmagic:accelerationrune2",
+        "bloodmagic:chargingrune2",
+    ]);
 });
 
 ServerEvents.tags("fluid", (event) => {

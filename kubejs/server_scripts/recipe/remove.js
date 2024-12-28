@@ -217,7 +217,7 @@ ServerEvents.recipes((event) => {
         "botania:gaia_pylon",
         "evilcraft:crafting/piercing_vengeance_focus",
         "evilcraft:blood_infuser/base/blood_orb_filled",
-        "",
+        "forbidden_arcanus:aureal_bottle",
         "",
         "",
         "",

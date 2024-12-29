@@ -52,7 +52,6 @@
 !kubejs/**
 kubejs/README.txt
 kubejs/jsconfig.json
-kubejs/config/probejs.json
 
 ## Hotai
 !hotai/

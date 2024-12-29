@@ -32,16 +32,13 @@ BlockEvents.rightClicked("white_concrete", (event) => {
 });
 
 BlockEvents.rightClicked((event) => {
-    const { hand } = event;
-    if (hand != "MAIN_HAND") return;
+    const { hand, item } = event;
+    if (hand != "MAIN_HAND" || item != "mierno:source_flower" || block.hasTag("minecraft:dirt")) return;
 
-    if (item == "mierno:source_flower") {
-        if (!block.hasTag("minecraft:dirt")) {
-            player.inventoryMenu.broadcastFullState();
-            event.cancel();
-        }
-    }
+    player.inventoryMenu.broadcastFullState();
+    event.cancel();
 });
+
 BlockEvents.rightClicked((event) => {
     const { hand, level, block, item, player, server } = event;
     if (hand != "MAIN_HAND") return;
@@ -76,9 +73,35 @@ BlockEvents.rightClicked("mierno:colossal_furnace_core", (event) => {
     const { block, player, item, level } = event;
     if (item != "mierno:colossal_furnace_proxy") return;
 
-    let controller = $IMultiController.ofController(level, block.pos).orElse(null);
+    const { x, y, z } = block.pos;
+    const aabb = AABB.of(x - 1, y, z - 1, x + 1, y + 3, z + 1);
 
-    if (controller != null && item.count >= 26) {
+    const isAreaClear = level.getEntitiesWithin(aabb).isEmpty();
+    const hasSpace = checkAreaWithAABBIsEmptyBlockWithoutCore(level, aabb, block.pos);
+
+    if (item.count < 26) {
+        player.tell(
+            Text.translate(
+                "message.mierno.colossal_furnace_core_no_enough_item",
+                Text.of((26 - item.count).toFixed(0)).yellow()
+            ).darkRed()
+        );
+        return;
+    }
+
+    if (!hasSpace) {
+        player.tell(Text.translate("message.mierno.colossal_furnace_core_no_space").darkRed());
+        return;
+    }
+
+    if (!isAreaClear) {
+        player.tell(Text.translate("message.mierno.colossal_furnace_core_no_clear").darkRed());
+        return;
+    }
+
+    const controller = $IMultiController.ofController(level, block.pos).orElse(null);
+
+    if (controller != null) {
         controller.getPattern().autoBuild(player, new $MultiblockState(level, block.pos));
     }
 });

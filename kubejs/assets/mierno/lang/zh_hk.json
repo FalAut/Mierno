@@ -145,6 +145,9 @@
     "message.mierno.maze_locating_success": "成功找到迷宮！請觀察迷宮羅盤上的指針",
     "message.mierno.maze_locating_fail": "未找到迷宮",
     "message.mierno.no_health_craft": "當前生命值不足以合成",
+    "message.mierno.colossal_furnace_core_no_clear": "請保證巨型熔爐搭建範圍內沒有§c生物§r存在",
+    "message.mierno.colossal_furnace_core_no_space": "請保證巨型熔爐搭建範圍內沒有除核心外的§c其他方塊§r存在",
+    "message.mierno.colossal_furnace_core_no_enough_item": "巨型熔爐框架不足，需要 §a26§r 個，還差 %s 個",
 
     "death.attack.mistDamage": "%1$s 迷失了",
 

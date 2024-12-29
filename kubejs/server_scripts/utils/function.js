@@ -138,3 +138,31 @@ function convertTime(playTime) {
 
     return result || "";
 }
+
+/**
+ *
+ * @param {Internal.Level} level
+ * @param {Internal.AABB} aabb
+ * @param {BlockPos} corePos
+ * @returns {boolean}
+ */
+function checkAreaWithAABBIsEmptyBlockWithoutCore(level, aabb, corePos) {
+    const { minX, minY, minZ, maxX, maxY, maxZ } = aabb;
+    const coreX = corePos.x;
+    const coreY = corePos.y;
+    const coreZ = corePos.z;
+
+    for (let x = minX; x <= maxX; x++) {
+        for (let y = minY; y <= maxY; y++) {
+            for (let z = minZ; z <= maxZ; z++) {
+                if (x == coreX && y == coreY && z == coreZ) {
+                    continue;
+                }
+                if (!level.isEmptyBlock([x, y, z])) {
+                    return false;
+                }
+            }
+        }
+    }
+    return true; // 如果范围内全为空方块，返回 true
+}

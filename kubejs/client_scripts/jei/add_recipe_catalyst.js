@@ -7,6 +7,7 @@ JEIAddedEvents.registerRecipeCatalysts((event) => {
         ["minecraft:beacon", "mierno:beacon_convert"],
         ["mierno:gensousitu_bucket", "mierno:ore_gen"],
         ["mierno:fired_crucible", "mierno:crucible_heat_source"],
+        ["evilcraft:spirit_furnace", "mierno:spirit_furnace"],
     ];
 
     catalysts.forEach(([input, recipe]) => {

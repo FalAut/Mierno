@@ -145,6 +145,9 @@
     "message.mierno.maze_locating_success": "Maze found! Watch the pointer on your Maze Compass",
     "message.mierno.maze_locating_fail": "No maze found",
     "message.mierno.no_health_craft": "Not enough health to craft",
+    "message.mierno.colossal_furnace_core_no_clear": "Please ensure that there are no §centities§r within the construction area of the Colossal Furnace.",
+    "message.mierno.colossal_furnace_core_no_space": "Please ensure that there are no §cblocks other than the core§r within the construction area of the Colossal Furnace.",
+    "message.mierno.colossal_furnace_core_no_enough_item": "The Colossal Furnace frame is incomplete. §a26§r are required, but %s are missing.",
 
     "death.attack.mistDamage": "%1$s got lost in the mist",
 

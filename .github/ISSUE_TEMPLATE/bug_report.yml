@@ -1,0 +1,35 @@
+name: Bug report
+description: You found a bug or encountered a crash? Please report it here.
+labels: ["bug"]
+body:
+    - type: markdown
+      attributes:
+          value: |
+              Provide a summary of the issue in the Title above.
+
+    - type: input
+      id: version
+      attributes:
+          label: Modpack Version
+      validations:
+          required: true
+
+    - type: textarea
+      id: description
+      attributes:
+          label: Describe the bug
+          description: |
+              Please describe as best as possible.
+              Always use the most recent version from [our releases](https://github.com/FalAut/Mierno/releases) (preferably) or [curseforge](https://www.curseforge.com/minecraft/modpacks/mierno/files), it might already be fixed.
+      validations:
+          required: true
+
+    - type: input
+      id: log
+      attributes:
+          label: Crash Report / Log
+          description: |
+              Provide a link to a crashlog. E.g. on [Gist](https://gist.github.com/), [pastebin](https://pastebin.com/), [mclogs](https://mclo.gs/) or similar.
+              If there is no crash report, you can send <game directory>/logs/latest.log
+      validations:
+          required: false

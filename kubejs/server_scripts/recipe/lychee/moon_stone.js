@@ -10,8 +10,8 @@ ServerEvents.recipes((event) => {
             {
                 type: "time",
                 value: {
-                    min: 5500,
-                    max: 6500,
+                    min: 17500,
+                    max: 18500,
                 },
             },
             {
@@ -25,12 +25,12 @@ ServerEvents.recipes((event) => {
             },
             {
                 type: "custom",
-                id: "add_solar",
+                id: "add_lunar",
             },
         ],
         item_in: [
             {
-                item: "mierno:sun_crystal",
+                item: "mierno:moon_stone",
             },
         ],
         block_in: "*",
@@ -49,8 +49,8 @@ ServerEvents.recipes((event) => {
             {
                 type: "time",
                 value: {
-                    min: 5500,
-                    max: 6500,
+                    min: 17500,
+                    max: 18500,
                 },
             },
             {
@@ -61,12 +61,12 @@ ServerEvents.recipes((event) => {
         post: [
             {
                 type: "drop_item",
-                item: "mierno:sun_crystal_full",
+                item: "mierno:moon_stone_full",
             },
         ],
         item_in: [
             {
-                item: "mierno:sun_crystal",
+                item: "mierno:moon_stone",
             },
         ],
         block_in: "*",

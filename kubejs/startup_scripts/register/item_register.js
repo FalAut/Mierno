@@ -11,6 +11,7 @@ StartupEvents.registry("item", (event) => {
     event.create("mierno:empty_nether_star");
     event.create("mierno:memory_source_gem").rarity("epic");
     event.create("mierno:sun_crystal_full").unstackable().glow(true).rarity("uncommon");
+    event.create("mierno:moon_stone_full").unstackable().glow(true).rarity("epic");
     event.createCustom("mierno:dream_lantern", () => new $ItemAuraCache("dream_lantern", 2560000));
     event.create("mierno:addition_sigil").unstackable();
     event.create("mierno:subtraction_sigil").unstackable();

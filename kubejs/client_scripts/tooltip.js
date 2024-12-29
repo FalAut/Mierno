@@ -10,6 +10,7 @@ ItemEvents.tooltip((event) => {
         { item: "botania:third_eye", lines: 4 },
         { item: "mierno:memory_source_drawing_crystal_core", lines: 5 },
         { item: "occultism:divination_rod", lines: 4 },
+        { item: "naturesaura:time_changer", lines: 5 },
     ];
 
     shiftTooltipItems.forEach((shiftTooltipItem) => {
@@ -89,7 +90,7 @@ ItemEvents.tooltip((event) => {
             "powah:uraninite_ore",
             "powah:uraninite_ore_dense",
         ],
-        Text.translate("tooltip.mierno.misty_forest_ore").gold()
+        Text.translate("tooltip.mierno.overworld_ore").gold()
     );
 
     event.add(
@@ -224,4 +225,17 @@ ItemEvents.tooltip((event) => {
     event.add("forbidden_arcanus:enchanted_soul", Text.translate("tooltip.mierno.enchanted_soul").gold());
     event.add("mierno:blood_converter", Text.translate("tooltip.mierno.blood_converter").gold());
     event.add("forbidden_arcanus:blood_test_tube", Text.translate("tooltip.mierno.blood_test_tube").gold());
+
+    event.add(
+        [
+            "forbidden_arcanus:arcane_crystal_ore",
+            "forbidden_arcanus:xpetrified_ore",
+            "forbidden_arcanus:runic_stone",
+            "occultism:otherstone",
+        ],
+        Text.translate("tooltip.mierno.otherworld_ore").gold()
+    );
+
+    event.add("mierno:sun_crystal_full", Text.translate("tooltip.mierno.sun_crystal_full").gold());
+    event.add("mierno:moon_stone_full", Text.translate("tooltip.mierno.moon_stone_full").gold());
 });

@@ -36,23 +36,33 @@
 			y: 0.0d
 		}
 		{
+			dependencies: [
+				"191ACD1E4234C48E"
+				"0D09F2E2D3CFB01C"
+				"75E3932110BC1559"
+			]
 			id: "7B04B3A1DA1C9284"
 			tasks: [{
 				id: "1E54B29C0C1DD142"
 				item: "forbidden_arcanus:stella_arcanum"
 				type: "item"
 			}]
-			x: 11.5d
+			x: 10.5d
 			y: 0.0d
 		}
 		{
+			dependencies: [
+				"7B04B3A1DA1C9284"
+				"443FB60CDF992AFC"
+				"37341885FB89FB47"
+			]
 			id: "0AE6261DC4FCA0F6"
 			tasks: [{
 				id: "2CAEC1F80644B116"
 				item: "forbidden_arcanus:clibano_core"
 				type: "item"
 			}]
-			x: 12.0d
+			x: 11.5d
 			y: 1.0d
 		}
 		{
@@ -63,10 +73,14 @@
 				item: "forbidden_arcanus:stellarite_piece"
 				type: "item"
 			}]
-			x: 13.0d
-			y: 1.0d
+			x: 11.0d
+			y: 2.0d
 		}
 		{
+			dependencies: [
+				"1BD81F6DDDD130F4"
+				"6AF197CA741D2F4F"
+			]
 			id: "578BEC6A99F962F0"
 			tasks: [{
 				id: "16FF93F599E2D869"
@@ -77,11 +91,11 @@
 				}
 				type: "item"
 			}]
-			x: 14.0d
-			y: 1.0d
+			x: 11.5d
+			y: 3.0d
 		}
 		{
-			dependencies: ["6AF197CA741D2F4F"]
+			dependencies: ["598C50EF81AAA7D1"]
 			id: "0EEABBD13AFD2EA0"
 			shape: "gear"
 			size: 2.0d
@@ -90,8 +104,8 @@
 				item: "forbidden_arcanus:ferrognetic_mixture"
 				type: "item"
 			}]
-			x: 15.0d
-			y: 3.5d
+			x: 8.5d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -142,23 +156,56 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["578BEC6A99F962F0"]
+			dependencies: [
+				"0AE6261DC4FCA0F6"
+				"1BD81F6DDDD130F4"
+			]
 			icon: {
 				Count: 1
 				id: "forbidden_arcanus:hephaestus_forge"
 				tag: {
 					BlockStateTag: {
-						tier: 2
+						tier: 4
 					}
 				}
 			}
 			id: "6AF197CA741D2F4F"
-			tasks: [{
-				id: "53951A5461CCC4E0"
-				type: "checkmark"
-			}]
-			title: "{block.forbidden_arcanus.hephaestus_forge}"
-			x: 15.0d
+			shape: "square"
+			subtitle: "{mierno.chapter2-3.check_hephaestus_forge_tier4.subtitle}"
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						id: "forbidden_arcanus:hephaestus_forge"
+						tag: {
+							BlockStateTag: {
+								tier: 4
+							}
+						}
+					}
+					id: "5A1CC5A173119F74"
+					observe_type: 2
+					timer: 0L
+					title: "{mierno.chapter2-3.check_hephaestus_forge_tier4.title}"
+					to_observe: "forbidden_arcanus:hephaestus_forge[tier=4]"
+					type: "observation"
+				}
+				{
+					id: "6D8A16494AC6033A"
+					item: {
+						Count: 1
+						id: "forbidden_arcanus:hephaestus_forge"
+						tag: {
+							BlockStateTag: {
+								tier: 4
+							}
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 12.0d
 			y: 2.0d
 		}
 		{
@@ -184,6 +231,7 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["6C17540363263CB9"]
 			id: "297ECB810C918599"
 			shape: "hexagon"
 			tasks: [{
@@ -272,6 +320,7 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["5D95FECF8D811E7F"]
 			id: "160A2182B129F30F"
 			rewards: [{
 				id: "24125FDF051CA9B8"
@@ -331,6 +380,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["01660174B3CF5EFA"]
 			id: "1DAEF872073C7174"
 			rewards: [{
 				id: "1850D6823350181B"
@@ -348,52 +398,6 @@
 			y: 0.8d
 		}
 		{
-			id: "498D984BC02F5354"
-			tasks: [{
-				id: "5E70A8BBC4232B9F"
-				item: "bloodmagic:soulforge"
-				type: "item"
-			}]
-			x: 16.0d
-			y: -3.5d
-		}
-		{
-			id: "7F1ED6E7BE35734A"
-			tasks: [{
-				id: "6FAF94D5EE01851D"
-				item: "bloodmagic:alchemytable"
-				type: "item"
-			}]
-			x: 13.5d
-			y: -4.0d
-		}
-		{
-			id: "669CF4FCA695FD8B"
-			tasks: [{
-				id: "7F2F587AD05CE390"
-				item: "bloodmagic:alchemicalreactionchamber"
-				type: "item"
-			}]
-			x: 13.0d
-			y: -2.5d
-		}
-		{
-			id: "322793B57EC6060F"
-			tasks: [{
-				id: "1F424D6F8FF3B70C"
-				item: {
-					Count: 1
-					id: "bloodmagic:arcaneashes"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: 12.5d
-			y: -4.0d
-		}
-		{
 			dependencies: ["449883B0BE46FF22"]
 			id: "4B0CD7F8E48FF223"
 			shape: "diamond"
@@ -404,26 +408,6 @@
 			}]
 			x: 0.0d
 			y: -1.35d
-		}
-		{
-			id: "03BC1F752D786775"
-			tasks: [{
-				id: "54B2850C0DB303E8"
-				item: "bloodmagic:largebloodstonebrick"
-				type: "item"
-			}]
-			x: 15.5d
-			y: -1.5d
-		}
-		{
-			id: "64FD15986953427F"
-			tasks: [{
-				id: "6757D2EAC6621E65"
-				item: "bloodmagic:strong_tau"
-				type: "item"
-			}]
-			x: 15.0d
-			y: -3.5d
 		}
 		{
 			dependencies: ["01660174B3CF5EFA"]
@@ -455,10 +439,11 @@
 				item: "bloodmagic:activationcrystalweak"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 2.5d
+			x: 10.5d
+			y: -1.0d
 		}
 		{
+			dependencies: ["01660174B3CF5EFA"]
 			id: "52F66F70138FCC56"
 			shape: "hexagon"
 			size: 0.8d
@@ -471,6 +456,11 @@
 			y: -0.8d
 		}
 		{
+			dependencies: [
+				"5015D21B9B93A6E7"
+				"52F66F70138FCC56"
+				"1DAEF872073C7174"
+			]
 			id: "221E88604970BCA5"
 			tasks: [
 				{
@@ -488,17 +478,12 @@
 			y: 0.0d
 		}
 		{
-			id: "7D42CBA5678E1734"
-			tasks: [{
-				id: "60F38B1DB169742E"
-				item: "bloodmagic:reagentbinding"
-				type: "item"
-			}]
-			x: 15.5d
-			y: -2.5d
-		}
-		{
+			dependencies: [
+				"12AF7D3CD4F56896"
+				"2C6E59848DB2C3A2"
+			]
 			id: "019A248C3EE31FF7"
+			shape: "hexagon"
 			tasks: [{
 				id: "27C6A7DFA5DA29FC"
 				item: {
@@ -510,31 +495,49 @@
 				}
 				type: "item"
 			}]
-			x: 9.5d
+			x: 8.5d
 			y: -1.0d
 		}
 		{
+			dependencies: [
+				"221E88604970BCA5"
+				"79C2430BD343186A"
+			]
 			id: "12AF7D3CD4F56896"
+			shape: "rsquare"
+			size: 0.8d
 			tasks: [{
 				id: "6F35AE54B58C94D5"
 				item: "forbidden_arcanus:crescent_moon"
 				type: "item"
 			}]
-			x: 8.5d
-			y: -1.0d
+			x: 7.5d
+			y: -0.8d
 		}
 		{
+			dependencies: ["019A248C3EE31FF7"]
 			id: "0D09F2E2D3CFB01C"
 			tasks: [{
 				id: "24A6B07280AAC167"
 				item: "bloodmagic:duskritualstone"
 				type: "item"
 			}]
-			x: 10.5d
+			x: 9.5d
 			y: -0.5d
 		}
 		{
+			dependencies: ["221E88604970BCA5"]
+			icon: {
+				Count: 1
+				id: "forbidden_arcanus:hephaestus_forge"
+				tag: {
+					BlockStateTag: {
+						tier: 2
+					}
+				}
+			}
 			id: "79C2430BD343186A"
+			shape: "square"
 			subtitle: "{mierno.chapter2-3.check_hephaestus_forge_tier2.subtitle}"
 			tasks: [
 				{
@@ -573,27 +576,39 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["7B04B3A1DA1C9284"]
 			id: "443FB60CDF992AFC"
 			tasks: [{
 				id: "7D678F785119E521"
 				item: "forbidden_arcanus:artisan_relic"
 				type: "item"
 			}]
-			x: 12.5d
+			x: 11.5d
 			y: 0.0d
 		}
 		{
+			dependencies: [
+				"221E88604970BCA5"
+				"79C2430BD343186A"
+			]
 			id: "38BE74CB65B5DBCC"
+			shape: "rsquare"
+			size: 0.8d
 			tasks: [{
 				id: "5297F06CB5A12543"
 				item: "forbidden_arcanus:elementarium"
 				type: "item"
 			}]
-			x: 8.5d
-			y: 1.0d
+			x: 7.5d
+			y: 0.8d
 		}
 		{
+			dependencies: [
+				"79C2430BD343186A"
+				"38BE74CB65B5DBCC"
+			]
 			id: "2C6E59848DB2C3A2"
+			shape: "octagon"
 			tasks: [
 				{
 					id: "6DDF5374E3A6A2BB"
@@ -622,11 +637,16 @@
 					type: "item"
 				}
 			]
-			x: 9.5d
-			y: 1.0d
+			x: 8.5d
+			y: 0.0d
 		}
 		{
+			dependencies: [
+				"38BE74CB65B5DBCC"
+				"2C6E59848DB2C3A2"
+			]
 			id: "4CF3518C252F84A1"
+			shape: "hexagon"
 			tasks: [
 				{
 					id: "506D05F723E12263"
@@ -673,10 +693,11 @@
 					type: "item"
 				}
 			]
-			x: 9.5d
-			y: 0.0d
+			x: 8.5d
+			y: 1.0d
 		}
 		{
+			dependencies: ["4CF3518C252F84A1"]
 			id: "191ACD1E4234C48E"
 			tasks: [
 				{
@@ -700,8 +721,108 @@
 					type: "item"
 				}
 			]
-			x: 10.5d
+			x: 9.5d
 			y: 0.5d
+		}
+		{
+			dependencies: ["7B04B3A1DA1C9284"]
+			icon: {
+				Count: 1
+				id: "forbidden_arcanus:hephaestus_forge"
+				tag: {
+					BlockStateTag: {
+						tier: 3
+					}
+				}
+			}
+			id: "37341885FB89FB47"
+			shape: "square"
+			subtitle: "{mierno.chapter2-3.check_hephaestus_forge_tier3.subtitle}"
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						id: "forbidden_arcanus:hephaestus_forge"
+						tag: {
+							BlockStateTag: {
+								tier: 3
+							}
+						}
+					}
+					id: "43DC46C69B01A59B"
+					observe_type: 2
+					timer: 0L
+					title: "{mierno.chapter2-3.check_hephaestus_forge_tier3.title}"
+					to_observe: "forbidden_arcanus:hephaestus_forge[tier=3]"
+					type: "observation"
+				}
+				{
+					id: "0A3A90DAE9DDC25E"
+					item: {
+						Count: 1
+						id: "forbidden_arcanus:hephaestus_forge"
+						tag: {
+							BlockStateTag: {
+								tier: 3
+							}
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 12.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["578BEC6A99F962F0"]
+			icon: {
+				Count: 1
+				id: "forbidden_arcanus:hephaestus_forge"
+				tag: {
+					BlockStateTag: {
+						tier: 5
+					}
+				}
+			}
+			id: "598C50EF81AAA7D1"
+			shape: "square"
+			subtitle: "{mierno.chapter2-3.check_hephaestus_forge_tier5.subtitle}"
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						id: "forbidden_arcanus:hephaestus_forge"
+						tag: {
+							BlockStateTag: {
+								tier: 5
+							}
+						}
+					}
+					id: "2335D32C2DCAC514"
+					observe_type: 2
+					timer: 0L
+					title: "{mierno.chapter2-3.check_hephaestus_forge_tier5.title}"
+					to_observe: "forbidden_arcanus:hephaestus_forge[tier=5]"
+					type: "observation"
+				}
+				{
+					id: "7CB9EDE226F1A0F4"
+					item: {
+						Count: 1
+						id: "forbidden_arcanus:hephaestus_forge"
+						tag: {
+							BlockStateTag: {
+								tier: 5
+							}
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 11.5d
+			y: 4.0d
 		}
 	]
 	title: "{mierno.chapter2-3.title}"

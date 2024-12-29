@@ -154,3 +154,44 @@ LycheeEvents.customAction("unstable_ingot_explosion", (event) => {
         });
     };
 });
+
+LycheeEvents.customAction("add_lunar", (event) => {
+    event.action.applyFunc = (recipe, ctx, times) => {
+        /**@type {Internal.ItemEntity} */
+        let itemEntity = ctx.getParam("this_entity");
+        let count = itemEntity.item.count;
+
+        if (!itemEntity.nbt.Item.tag) {
+            itemEntity.mergeNbt({
+                Item: {
+                    Count: count,
+                    id: "mierno:moon_stone",
+                    tag: {
+                        Lunar: 0,
+                    },
+                },
+            });
+        }
+
+        let amount = itemEntity.nbt.Item.tag.Lunar;
+        if (amount >= 100) {
+            itemEntity.mergeNbt({
+                Item: {
+                    Count: count,
+                    id: "mierno:moon_stone_full",
+                },
+            });
+            return;
+        }
+
+        itemEntity.mergeNbt({
+            Item: {
+                Count: count,
+                id: "mierno:moon_stone",
+                tag: {
+                    Lunar: amount + 1,
+                },
+            },
+        });
+    };
+});

@@ -748,4 +748,9 @@ ServerEvents.recipes((event) => {
         A: "forbidden_arcanus:arcane_crystal",
         B: "forbidden_arcanus:corrupti_dust",
     });
+
+    kubejs.shaped("bloodmagic:ritualstone", ["AAA", "ABA", "AAA"], {
+        A: "bloodmagic:infusedslate",
+        B: "bloodmagic:blankrune",
+    });
 });

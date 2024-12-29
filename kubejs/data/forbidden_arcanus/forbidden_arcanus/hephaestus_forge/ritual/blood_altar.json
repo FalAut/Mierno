@@ -1,0 +1,72 @@
+{
+    "additional_requirements": {
+        "enhancers": ["forbidden_arcanus:maledictus_pact"],
+        "forge_tier": 1
+    },
+    "essences": {
+        "aureal": 100,
+        "blood": 3000,
+        "experience": 900,
+        "souls": 10
+    },
+    "inputs": [
+        {
+            "amount": 1,
+            "ingredient": {
+                "item": "evilcraft:corrupted_tear"
+            }
+        },
+        {
+            "amount": 1,
+            "ingredient": {
+                "item": "evilcraft:blood_waxed_coal"
+            }
+        },
+        {
+            "amount": 1,
+            "ingredient": {
+                "item": "evilcraft:blood_orb_filled"
+            }
+        },
+        {
+            "amount": 1,
+            "ingredient": {
+                "item": "evilcraft:burning_gem_stone"
+            }
+        },
+        {
+            "amount": 1,
+            "ingredient": {
+                "item": "evilcraft:sanguinary_pedestal_1"
+            }
+        },
+        {
+            "amount": 1,
+            "ingredient": {
+                "item": "evilcraft:inverted_potentia_empowered"
+            }
+        },
+        {
+            "amount": 1,
+            "ingredient": {
+                "item": "evilcraft:garmonbozia"
+            }
+        },
+        {
+            "amount": 1,
+            "ingredient": {
+                "item": "evilcraft:dark_power_gem"
+            }
+        }
+    ],
+    "main_ingredient": {
+        "item": "evilcraft:blood_infusion_core"
+    },
+    "result": {
+        "type": "forbidden_arcanus:create_item",
+        "result_item": {
+            "Count": 1,
+            "id": "bloodmagic:altar"
+        }
+    }
+}

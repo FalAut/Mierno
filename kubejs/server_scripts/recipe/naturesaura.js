@@ -100,6 +100,17 @@ ServerEvents.recipes((event) => {
         "naturesaura:gold_brick",
     ]);
 
+    naturesaura.tree_ritual("naturesaura:time_changer", [
+        "naturesaura:chunk_loader",
+        "naturesaura:sky_ingot_block",
+        "ars_nouveau:ritual_sunrise",
+        "ars_nouveau:ritual_moonfall",
+        "naturesaura:calling_spirit",
+        "naturesaura:calling_spirit",
+        "naturesaura:calling_spirit",
+        "naturesaura:calling_spirit",
+    ]);
+
     naturesaura.altar("naturesaura:infused_stone", "minecraft:stone");
     naturesaura.altar("mierno:infused_wood", "#logs");
     naturesaura.altar("minecraft:glowstone_dust", "minecraft:redstone", "naturesaura:conversion_catalyst");

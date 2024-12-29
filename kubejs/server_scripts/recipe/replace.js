@@ -74,4 +74,10 @@ ServerEvents.recipes((event) => {
     );
     event.replaceInput({ mod: "powah" }, "iron_ingot", "mekanism:ingot_steel");
     event.replaceInput({ id: "evilcraft:crafting/blood_orb_empty" }, "iron_ingot", "forbidden_arcanus:arcane_crystal");
+    event.replaceInput({ id: "bloodmagic:ritual_stone_master" }, "obsidian", "bloodmagic:ritualstone");
+    event.replaceInput(
+        { id: "naturesaura:chunk_loader" },
+        Item.of("naturesaura:aura_bottle", '{stored_type:"naturesaura:end"}').strongNBT(),
+        "fluxnetworks:flux_core"
+    );
 });

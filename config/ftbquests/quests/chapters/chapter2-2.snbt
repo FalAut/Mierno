@@ -971,6 +971,48 @@
 			x: 6.0d
 			y: -1.0d
 		}
+		{
+			dependencies: ["6C95247ADE07020A"]
+			description: [
+				"{tooltip.mierno.time_changer_1}"
+				""
+				"{tooltip.mierno.time_changer_2}"
+				""
+				"{tooltip.mierno.time_changer_3}"
+				""
+				"{tooltip.mierno.time_changer_4}"
+				""
+				"{tooltip.mierno.time_changer_5}"
+			]
+			id: "1269781E0D02FCE5"
+			rewards: [
+				{
+					id: "08BDCD4F0716124A"
+					item: "minecraft:clock"
+					type: "item"
+				}
+				{
+					id: "2CA2AB75223CCCCD"
+					item: "minecraft:item_frame"
+					type: "item"
+				}
+				{
+					id: "051DE8193CC8F898"
+					item: "naturesaura:clock_hand"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "{tooltip.mierno.time_changer_1}"
+			tasks: [{
+				id: "2FC7FA36972B7635"
+				item: "naturesaura:time_changer"
+				type: "item"
+			}]
+			x: 13.5d
+			y: -2.5d
+		}
 	]
 	title: "{mierno.chapter2-2.title}"
 }

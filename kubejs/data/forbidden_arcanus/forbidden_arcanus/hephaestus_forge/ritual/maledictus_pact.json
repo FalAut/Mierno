@@ -61,6 +61,10 @@
     "main_ingredient": {
         "item": "evilcraft:garmonbozia"
     },
+    "magic_circle": {
+        "inner_texture": "forbidden_arcanus:textures/effect/magic_circle/inner/damnare.png",
+        "outer_texture": "forbidden_arcanus:textures/effect/magic_circle/outer/repel.png"
+    },
     "result": {
         "type": "forbidden_arcanus:create_item",
         "result_item": {

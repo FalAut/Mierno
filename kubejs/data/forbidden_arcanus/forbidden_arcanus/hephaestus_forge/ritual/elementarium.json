@@ -1,76 +1,75 @@
 {
     "additional_requirements": {
-        "enhancers": ["forbidden_arcanus:maledictus_pact"],
-        "forge_tier": 1
+        "forge_tier": 2
     },
     "essences": {
-        "aureal": 100,
-        "blood": 3000,
-        "experience": 900,
-        "souls": 10
+        "aureal": 3000,
+        "blood": 5000,
+        "experience": 1350,
+        "souls": 50
     },
     "inputs": [
         {
             "amount": 1,
             "ingredient": {
-                "item": "evilcraft:corrupted_tear"
+                "item": "forbidden_arcanus:whirlwind_prism"
             }
         },
         {
             "amount": 1,
             "ingredient": {
-                "item": "evilcraft:blood_waxed_coal"
+                "item": "forbidden_arcanus:mundabitur_dust"
             }
         },
         {
             "amount": 1,
             "ingredient": {
-                "item": "evilcraft:blood_orb_filled"
+                "item": "forbidden_arcanus:smelter_prism"
             }
         },
         {
             "amount": 1,
             "ingredient": {
-                "item": "evilcraft:burning_gem_stone"
+                "item": "forbidden_arcanus:mundabitur_dust"
             }
         },
         {
             "amount": 1,
             "ingredient": {
-                "item": "evilcraft:sanguinary_pedestal_1"
+                "item": "forbidden_arcanus:sea_prism"
             }
         },
         {
             "amount": 1,
             "ingredient": {
-                "item": "evilcraft:inverted_potentia_empowered"
+                "item": "forbidden_arcanus:mundabitur_dust"
             }
         },
         {
             "amount": 1,
             "ingredient": {
-                "item": "evilcraft:garmonbozia"
+                "item": "forbidden_arcanus:terrastomp_prism"
             }
         },
         {
             "amount": 1,
             "ingredient": {
-                "item": "evilcraft:dark_power_gem"
+                "item": "forbidden_arcanus:mundabitur_dust"
             }
         }
     ],
     "main_ingredient": {
-        "item": "evilcraft:blood_infusion_core"
+        "item": "bloodmagic:masterritualstone"
     },
     "magic_circle": {
-        "inner_texture": "forbidden_arcanus:textures/effect/magic_circle/inner/damnare.png",
-        "outer_texture": "forbidden_arcanus:textures/effect/magic_circle/outer/repel.png"
+        "inner_texture": "forbidden_arcanus:textures/effect/magic_circle/inner/invocation.png",
+        "outer_texture": "forbidden_arcanus:textures/effect/magic_circle/outer/corrupt_interpolate.png"
     },
     "result": {
         "type": "forbidden_arcanus:create_item",
         "result_item": {
             "Count": 1,
-            "id": "bloodmagic:altar"
+            "id": "forbidden_arcanus:elementarium"
         }
     }
 }

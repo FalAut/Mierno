@@ -34,6 +34,7 @@ ServerEvents.recipes((event) => {
     chiller("thermal:enderium_ingot", "thermal:ender");
     chiller("thermal:lumium_ingot", "mierno:molten_lumium");
     chiller("thermal:signalum_ingot", "mierno:molten_signalum");
+    chiller("evilcraft:condensed_blood", "evilcraft:blood", 500, "thermal:chiller_ball_cast");
 
     /**
      * 磨粉机

@@ -31,3 +31,11 @@ ItemEvents.crafted("naturesaura:birth_spirit", (event) => {
         player.invulnerableTime = 0;
     }
 });
+
+// LoquatEvents.playerEnteredArea((event) => {
+//     const { area, player } = event;
+
+//     if (area.tags.contains("destroyed_end_portal")) {
+//         player.tell(":D");
+//     }
+// });

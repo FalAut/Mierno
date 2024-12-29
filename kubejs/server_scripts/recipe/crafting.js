@@ -83,6 +83,10 @@ ServerEvents.recipes((event) => {
         ["minecraft:compass", Item.of("naturesaura:aura_bottle", '{stored_type:"mierno:mist"}').weakNBT()]
     );
 
+    kubejs
+        .shapeless("bloodmagic:ritualdivinerdusk", ["bloodmagic:ritualdiviner", "bloodmagic:duskscribetool"])
+        .keepIngredient("bloodmagic:duskscribetool");
+
     kubejs.shapeless("4x ae2:not_so_mysterious_cube", "ae2:mysterious_cube");
     kubejs.shapeless("naturesaura:gold_leaf", ["gold_ingot", "#leaves"]);
     kubejs.shapeless("mierno:futura_block", "ae2:controller").keepIngredient("ae2:controller");
@@ -753,4 +757,17 @@ ServerEvents.recipes((event) => {
         A: "bloodmagic:infusedslate",
         B: "bloodmagic:blankrune",
     });
+
+    kubejs
+        .shaped("bloodmagic:ritualdiviner", [" A ", "BCD", " E "], {
+            A: "bloodmagic:firescribetool",
+            B: "bloodmagic:airscribetool",
+            C: "botania:dreamwood_twig",
+            D: "bloodmagic:waterscribetool",
+            E: "bloodmagic:earthscribetool",
+        })
+        .keepIngredient("bloodmagic:firescribetool")
+        .keepIngredient("bloodmagic:airscribetool")
+        .keepIngredient("bloodmagic:waterscribetool")
+        .keepIngredient("bloodmagic:earthscribetool");
 });

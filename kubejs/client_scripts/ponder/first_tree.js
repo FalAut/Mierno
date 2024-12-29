@@ -1,5 +1,5 @@
 Ponder.registry((event) => {
-    event.create("oak_sapling").scene("first_tree", "First Tree", "mierno:first_tree", (scene, util) => {
+    event.create("oak_sapling").scene("first_tree", "第一颗树", "mierno:first_tree", (scene, util) => {
         scene.setSceneOffsetY(-1);
         scene.scaleSceneView(0.8);
         scene.showStructure(0);

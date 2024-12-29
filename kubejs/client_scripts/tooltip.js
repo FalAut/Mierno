@@ -218,10 +218,8 @@ ItemEvents.tooltip((event) => {
     event.add("bloodmagic:accelerationrune", Text.translate("tooltip.mierno.accelerationrune").gold());
     event.add("forbidden_arcanus:xpetrified_orb", Text.translate("tooltip.mierno.xpetrified_orb").gold());
     event.add("forbidden_arcanus:aureal_bottle", Text.translate("tooltip.mierno.aureal_bottle").gold());
-    event.add(
-        ["forbidden_arcanus:soul", "forbidden_arcanus:corrupt_soul"],
-        Text.translate("tooltip.mierno.soul").gold()
-    );
+    event.add("forbidden_arcanus:soul", Text.translate("tooltip.mierno.soul").gold());
+    event.add("forbidden_arcanus:corrupt_soul", Text.translate("tooltip.mierno.corrupt_soul").gold());
     event.add("forbidden_arcanus:enchanted_soul", Text.translate("tooltip.mierno.enchanted_soul").gold());
     event.add("mierno:blood_converter", Text.translate("tooltip.mierno.blood_converter").gold());
     event.add("forbidden_arcanus:blood_test_tube", Text.translate("tooltip.mierno.blood_test_tube").gold());
@@ -238,4 +236,9 @@ ItemEvents.tooltip((event) => {
 
     event.add("mierno:sun_crystal_full", Text.translate("tooltip.mierno.sun_crystal_full").gold());
     event.add("mierno:moon_stone_full", Text.translate("tooltip.mierno.moon_stone_full").gold());
+    event.add("evilcraft:condensed_blood", Text.translate("tooltip.mierno.condensed_blood").gold());
+    event.add(
+        ["bloodmagic:ritualdiviner", "bloodmagic:ritualdivinerdusk"],
+        Text.translate("tooltip.mierno.ritualdiviner").gold()
+    );
 });

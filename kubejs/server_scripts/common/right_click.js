@@ -32,7 +32,7 @@ BlockEvents.rightClicked("white_concrete", (event) => {
 });
 
 BlockEvents.rightClicked((event) => {
-    const { hand, level, block, item, player, server } = event;
+    const { hand } = event;
     if (hand != "MAIN_HAND") return;
 
     if (item == "mierno:source_flower") {
@@ -41,10 +41,14 @@ BlockEvents.rightClicked((event) => {
             event.cancel();
         }
     }
+});
+BlockEvents.rightClicked((event) => {
+    const { hand, level, block, item, player, server } = event;
+    if (hand != "MAIN_HAND") return;
 
     let curiosInventory = $CuriosApi.getCuriosInventory(player).resolve().get();
     let foundThirdEye = curiosInventory.equippedCurios.allItems.some((item) => item == "botania:third_eye");
-    const structureTemplate = server.structureManager.get("mierno:demons_dream").get();
+    let structureTemplate = server.structureManager.get("mierno:demons_dream").get();
     let otherworld = server.getLevel("mierno:otherworld");
 
     if (
@@ -85,4 +89,76 @@ BlockEvents.rightClicked("botania:alfheim_portal", (event) => {
 
     player.setStatusMessage(Text.translate("tooltip.mierno.alfheim_portal").darkRed());
     event.cancel();
+});
+
+BlockEvents.rightClicked((event) => {
+    const { block, player, level } = event;
+    if (!block.hasTag("minecraft:crops")) return;
+    let blockState = level.getBlockState(block.pos);
+    let cropBlock = blockState.block;
+
+    if (cropBlock.isMaxAge(blockState)) {
+        let loot = $Block.getDrops(blockState, level, block.pos, null, player, player.mainHandItem);
+        let seedYeeted = false;
+        for (let i in loot) {
+            if (loot[i].id == cropBlock.getCloneItemStack(level, block.pos, blockState).id) {
+                loot[i].count--;
+                seedYeeted = true;
+                break;
+            }
+        }
+        loot.forEach((item) => {
+            $Block.popResource(level, block.pos, item);
+        });
+        if (seedYeeted) {
+            block.set(block.id, { age: "0" });
+            level.playSound(null, block.x, block.y, block.z, "block.crop.break", "blocks", 1, 1);
+        } else {
+            level.destroyBlock(block.pos, true, null, 32);
+        }
+        player.swing();
+        event.cancel();
+    }
+});
+
+ItemEvents.rightClicked("mierno:whos_gift", (event) => {
+    const { item, player } = event;
+
+    player.give("iron_block");
+    player.give("gold_block");
+    player.give("copper_block");
+    player.give("coal_block");
+    player.give("redstone_block");
+    player.give("lapis_block");
+    player.give("diamond_block");
+    player.give("emerald_block");
+
+    item.count--;
+    player.swing();
+});
+
+ItemEvents.rightClicked("mierno:dream_lantern", (event) => {
+    const { player, level } = event;
+
+    if (player.lookAngle.y() == 1) {
+        const /**@type {Internal.ServerPlayer} */ serverPlayer = player;
+
+        if (serverPlayer.respawnPosition) {
+            const { x, y, z } = serverPlayer.getRespawnPosition();
+            const respawnDimension = serverPlayer.getRespawnDimension().location();
+
+            serverPlayer.teleportTo(respawnDimension, x, y, z, 0, 0);
+        } else {
+            const { x, y, z } = level.getSharedSpawnPos();
+
+            serverPlayer.teleportTo("overworld", x, y, z, 0, 0);
+        }
+    }
+});
+
+ItemEvents.rightClicked("mierno:portable_crafting_table", (event) => {
+    const { player } = event;
+
+    openCraftingMenu(player);
+    player.swing();
 });

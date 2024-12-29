@@ -621,5 +621,7 @@
     "life_essence_fluid_type": "生命源质",
     "block.bloodmagic.doubt_block": "恶魔源质",
     "doubt_fluid_type": "恶魔源质",
-    "item.bloodmagic.doubt_bucket": "恶魔源质桶"
+    "item.bloodmagic.doubt_bucket": "恶魔源质桶",
+    "ritual.bloodmagic.standardDungeonRitual": "无尽领域之路",
+    "ritual.bloodmagic.standardDungeonRitual.info": "召唤一个反转之柱进入恶魔领域的深处。"
 }

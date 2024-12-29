@@ -21,7 +21,7 @@
     ],
     "magic_circle": {
         "inner_texture": "forbidden_arcanus:textures/effect/magic_circle/inner/origin.png",
-        "outer_texture": "forbidden_arcanus:textures/effect/magic_circle/outer/pure.png"
+        "outer_texture": "forbidden_arcanus:textures/effect/magic_circle/outer/corrupt_interpolate.png"
     },
     "main_ingredient": {
         "item": "bloodmagic:masterritualstone"

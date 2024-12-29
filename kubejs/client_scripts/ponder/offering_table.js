@@ -15,7 +15,7 @@ Ponder.registry((event) => {
 
     event
         .create("naturesaura:offering_table")
-        .scene("offering_table", "Offering Table", "mierno:offering_table", (scene, util) => {
+        .scene("offering_table", "祭祀台", "mierno:offering_table", (scene, util) => {
             scene.scaleSceneView(0.8);
             scene.showStructure();
 

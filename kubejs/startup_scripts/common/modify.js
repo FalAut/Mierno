@@ -24,7 +24,18 @@ ItemEvents.modification((event) => {
         }
     });
 
-    const betterStackItem = ["evilcraft:inverted_potentia", "evilcraft:inverted_potentia_empowered"];
+    const betterStackItem = [
+        "evilcraft:inverted_potentia",
+        "evilcraft:inverted_potentia_empowered",
+        "forbidden_arcanus:aureal_bottle",
+        "forbidden_arcanus:splash_aureal_bottle",
+        "minecraft:ender_pearl",
+        "minecraft:bucket",
+        "minecraft:snowball",
+        "minecraft:egg",
+        "minecraft:honey_bottle",
+        "forbidden_arcanus:xpetrified_orb",
+    ];
 
     betterStackItem.forEach((itemID) => {
         event.modify(itemID, (item) => {

@@ -1,0 +1,8 @@
+{
+    "type": "forbidden_arcanus:simple_item",
+    "amount": 500,
+    "essence_type": "blood",
+    "item": {
+        "item": "evilcraft:condensed_blood"
+    }
+}

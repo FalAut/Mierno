@@ -80,6 +80,10 @@
 		containerClass = "gripe._90.megacells.menu.MEGAInterfaceMenu"
 		sortRange = ""
 
+	[[sorting.containerOverrides]]
+		containerClass = "com.stal111.forbidden_arcanus.client.gui.screen.HephaestusForgeScreen"
+		sortRange = ""
+
 	#Categor(y/ies) for sorting
 	#
 	#name: the name of the category

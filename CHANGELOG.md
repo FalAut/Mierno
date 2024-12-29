@@ -1,7 +1,8 @@
-## v0.0.5
+# v0.0.5
 
+-   =====中文 Chinese=====
 -   在主菜单添加了一些加入社群的按钮
--   尝试修复 Forbidden Arcanus 模组神秘的"residueType" is null 问题，其有极小的概率导致玩家无法进入世界，显示无效的玩家数据
+-   尝试修复 Forbidden Arcanus 模组神秘的 "residueType" is null 问题，其有极小的概率导致玩家无法进入世界，显示无效的玩家数据
 -   现在哭泣的黑曜石和幻想质可以生成黑曜石
 -   恶魂可以用白色染料在降生祭坛召唤
 -   添加了伺服器和通量线圈的感应炉配方
@@ -10,6 +11,24 @@
 -   添加下界和末地催化器
 -   优化分割徽章激活仪式
 -   添加月之石
+-   制作了第三章的一半
+-   已燃尽
+-   |
+-   |
+-   |
+-   =====English 英文=====
+-   Added some community join buttons in the main menu
+-   Attempted to fix the mysterious Forbidden Arcanus mod issue where "residueType" is null, which has a very small chance of preventing players from entering the world and showing invalid player data
+-   Crying Obsidian and Fantasium can now generate Obsidian
+-   Ghasts can now be summoned at the Birth Altar using White Dye
+-   Added recipes for Server and Flux Coil Induction Furnace
+-   Crucible heat sources can now provide a speed boost to the Crucible
+-   Added Blood Converter
+-   Added Nether and End Catalysts
+-   Optimized the Badge of Division activation ritual
+-   Added Moonstone
+-   Completed half of Chapter 3
+-   yiranjin
 
 ## v0.0.4
 

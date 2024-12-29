@@ -1,14 +1,14 @@
 let ritualConditions = [];
 
-const checkCondition = (condition, messageKey, player) => {
+function checkCondition(condition, messageKey, player) {
     const status = condition ? "§a✅" : "§4❌";
     if (player) {
         player.tell(Text.translate(`message.mierno.activation_ritual.${messageKey}`, status).gold());
     }
     return condition;
-};
+}
 
-const checkAllConditions = (level, block, player) => {
+function checkAllConditions(level, block, player) {
     const multiblock = $PatchouliAPI.getMultiblock("mierno:division_sigil_activation_ritual");
     const brightness = level.getBrightness("block", block.pos);
     const time = level.getDayTime();
@@ -21,7 +21,7 @@ const checkAllConditions = (level, block, player) => {
     ];
 
     return ritualConditions.every(Boolean);
-};
+}
 
 BlockEvents.rightClicked("enchanting_table", (event) => {
     const { hand, item, level, block, player } = event;

@@ -13,6 +13,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["07D40C8E0F39FE83"]
 			id: "449883B0BE46FF22"
 			shape: "gear"
 			size: 2.0d
@@ -34,78 +35,6 @@
 			}]
 			x: 1.5d
 			y: 0.0d
-		}
-		{
-			dependencies: [
-				"191ACD1E4234C48E"
-				"0D09F2E2D3CFB01C"
-				"75E3932110BC1559"
-			]
-			id: "7B04B3A1DA1C9284"
-			tasks: [{
-				id: "1E54B29C0C1DD142"
-				item: "forbidden_arcanus:stella_arcanum"
-				type: "item"
-			}]
-			x: 10.5d
-			y: 0.0d
-		}
-		{
-			dependencies: [
-				"7B04B3A1DA1C9284"
-				"443FB60CDF992AFC"
-				"37341885FB89FB47"
-			]
-			id: "0AE6261DC4FCA0F6"
-			tasks: [{
-				id: "2CAEC1F80644B116"
-				item: "forbidden_arcanus:clibano_core"
-				type: "item"
-			}]
-			x: 11.5d
-			y: 1.0d
-		}
-		{
-			dependencies: ["0AE6261DC4FCA0F6"]
-			id: "1BD81F6DDDD130F4"
-			tasks: [{
-				id: "487CCE0DAF4E836C"
-				item: "forbidden_arcanus:stellarite_piece"
-				type: "item"
-			}]
-			x: 11.0d
-			y: 2.0d
-		}
-		{
-			dependencies: [
-				"1BD81F6DDDD130F4"
-				"6AF197CA741D2F4F"
-			]
-			id: "578BEC6A99F962F0"
-			tasks: [{
-				id: "16FF93F599E2D869"
-				item: {
-					Count: 1
-					id: "forbidden_arcanus:eternal_stella"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 11.5d
-			y: 3.0d
-		}
-		{
-			dependencies: ["598C50EF81AAA7D1"]
-			id: "0EEABBD13AFD2EA0"
-			shape: "gear"
-			size: 2.0d
-			tasks: [{
-				id: "40274C2394324103"
-				item: "forbidden_arcanus:ferrognetic_mixture"
-				type: "item"
-			}]
-			x: 8.5d
-			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -156,59 +85,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"0AE6261DC4FCA0F6"
-				"1BD81F6DDDD130F4"
-			]
-			icon: {
-				Count: 1
-				id: "forbidden_arcanus:hephaestus_forge"
-				tag: {
-					BlockStateTag: {
-						tier: 4
-					}
-				}
-			}
-			id: "6AF197CA741D2F4F"
-			shape: "square"
-			subtitle: "{mierno.chapter2-3.check_hephaestus_forge_tier4.subtitle}"
-			tasks: [
-				{
-					icon: {
-						Count: 1
-						id: "forbidden_arcanus:hephaestus_forge"
-						tag: {
-							BlockStateTag: {
-								tier: 4
-							}
-						}
-					}
-					id: "5A1CC5A173119F74"
-					observe_type: 2
-					timer: 0L
-					title: "{mierno.chapter2-3.check_hephaestus_forge_tier4.title}"
-					to_observe: "forbidden_arcanus:hephaestus_forge[tier=4]"
-					type: "observation"
-				}
-				{
-					id: "6D8A16494AC6033A"
-					item: {
-						Count: 1
-						id: "forbidden_arcanus:hephaestus_forge"
-						tag: {
-							BlockStateTag: {
-								tier: 4
-							}
-						}
-					}
-					optional_task: true
-					type: "item"
-				}
-			]
-			x: 12.0d
-			y: 2.0d
-		}
-		{
 			dependencies: ["2A700F246060C907"]
 			id: "629F64FE55853848"
 			tasks: [{
@@ -233,9 +109,8 @@
 		{
 			dependencies: ["6C17540363263CB9"]
 			id: "297ECB810C918599"
-			shape: "hexagon"
-			tasks: [{
-				id: "2AA4F6658A765D3A"
+			rewards: [{
+				id: "57EAD8E00F9A3E63"
 				item: {
 					Count: 1
 					id: "forbidden_arcanus:blood_test_tube"
@@ -243,6 +118,12 @@
 						Blood: 3000
 					}
 				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "07DD7E0A94799868"
+				item: "evilcraft:condensed_blood"
 				type: "item"
 			}]
 			x: 4.5d
@@ -433,16 +314,6 @@
 			y: -2.5d
 		}
 		{
-			id: "75E3932110BC1559"
-			tasks: [{
-				id: "064E2700FAB6698E"
-				item: "bloodmagic:activationcrystalweak"
-				type: "item"
-			}]
-			x: 10.5d
-			y: -1.0d
-		}
-		{
 			dependencies: ["01660174B3CF5EFA"]
 			id: "52F66F70138FCC56"
 			shape: "hexagon"
@@ -478,10 +349,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"12AF7D3CD4F56896"
-				"2C6E59848DB2C3A2"
-			]
+			dependencies: ["12AF7D3CD4F56896"]
 			id: "019A248C3EE31FF7"
 			shape: "hexagon"
 			tasks: [{
@@ -516,13 +384,19 @@
 		}
 		{
 			dependencies: ["019A248C3EE31FF7"]
+			icon: "bloodmagic:duskritualstone"
 			id: "0D09F2E2D3CFB01C"
+			shape: "diamond"
 			tasks: [{
-				id: "24A6B07280AAC167"
-				item: "bloodmagic:duskritualstone"
-				type: "item"
+				icon: "bloodmagic:duskritualstone"
+				id: "494D50DB0C40F16B"
+				observe_type: 0
+				timer: 0L
+				title: "{mierno.chapter2-3.duskritualstone_title}"
+				to_observe: "bloodmagic:duskritualstone"
+				type: "observation"
 			}]
-			x: 9.5d
+			x: 10.0d
 			y: -0.5d
 		}
 		{
@@ -573,17 +447,6 @@
 				}
 			]
 			x: 7.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["7B04B3A1DA1C9284"]
-			id: "443FB60CDF992AFC"
-			tasks: [{
-				id: "7D678F785119E521"
-				item: "forbidden_arcanus:artisan_relic"
-				type: "item"
-			}]
-			x: 11.5d
 			y: 0.0d
 		}
 		{
@@ -698,131 +561,106 @@
 		}
 		{
 			dependencies: ["4CF3518C252F84A1"]
+			icon: "bloodmagic:fireritualstone"
 			id: "191ACD1E4234C48E"
+			shape: "diamond"
 			tasks: [
 				{
-					id: "30B9B62F66E48990"
-					item: "bloodmagic:fireritualstone"
+					icon: "bloodmagic:fireritualstone"
+					id: "3BCC0589AFE7DE3C"
+					observe_type: 0
+					timer: 0L
+					title: "{mierno.chapter2-3.fireritualstone_title}"
+					to_observe: "bloodmagic:fireritualstone"
+					type: "observation"
+				}
+				{
+					icon: "bloodmagic:waterritualstone"
+					id: "51E3A0BDA9F9DFFD"
+					observe_type: 0
+					timer: 0L
+					title: "{mierno.chapter2-3.waterritualstone_title}"
+					to_observe: "bloodmagic:waterritualstone"
+					type: "observation"
+				}
+				{
+					icon: "bloodmagic:earthritualstone"
+					id: "5800971E2B3E9A96"
+					observe_type: 0
+					timer: 0L
+					title: "{mierno.chapter2-3.earthritualstone_title}"
+					to_observe: "bloodmagic:earthritualstone"
+					type: "observation"
+				}
+				{
+					icon: "bloodmagic:airritualstone"
+					id: "3A61C61F93753386"
+					observe_type: 0
+					timer: 0L
+					title: "{mierno.chapter2-3.airritualstone_title}"
+					to_observe: "bloodmagic:airritualstone"
+					type: "observation"
+				}
+			]
+			x: 10.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"4CF3518C252F84A1"
+				"019A248C3EE31FF7"
+			]
+			description: [
+				"{mierno.chapter2-3.ritualdiviner_desc1}"
+				""
+				"{mierno.chapter2-3.ritualdiviner_desc2}"
+				""
+				"{mierno.chapter2-3.ritualdiviner_desc3}"
+				""
+				"{mierno.chapter2-3.ritualdiviner_desc4}"
+			]
+			id: "6C526DAD27F77FB7"
+			shape: "diamond"
+			size: 1.2d
+			subtitle: "{tooltip.mierno.ritualdiviner}"
+			tasks: [
+				{
+					id: "605BB2C4F6A1DC61"
+					item: {
+						Count: 1
+						id: "bloodmagic:ritualdiviner"
+						tag: {
+							activated: 0b
+							direction: 4
+						}
+					}
 					type: "item"
 				}
 				{
-					id: "1997312BCC4DA82B"
-					item: "bloodmagic:airritualstone"
-					type: "item"
-				}
-				{
-					id: "779DE718344CB079"
-					item: "bloodmagic:waterritualstone"
-					type: "item"
-				}
-				{
-					id: "42ED52F22FA7938F"
-					item: "bloodmagic:earthritualstone"
+					id: "6606AA71AEA1C7E7"
+					item: {
+						Count: 1
+						id: "bloodmagic:ritualdivinerdusk"
+						tag: {
+							activated: 0b
+						}
+					}
+					optional_task: true
 					type: "item"
 				}
 			]
 			x: 9.5d
-			y: 0.5d
-		}
-		{
-			dependencies: ["7B04B3A1DA1C9284"]
-			icon: {
-				Count: 1
-				id: "forbidden_arcanus:hephaestus_forge"
-				tag: {
-					BlockStateTag: {
-						tier: 3
-					}
-				}
-			}
-			id: "37341885FB89FB47"
-			shape: "square"
-			subtitle: "{mierno.chapter2-3.check_hephaestus_forge_tier3.subtitle}"
-			tasks: [
-				{
-					icon: {
-						Count: 1
-						id: "forbidden_arcanus:hephaestus_forge"
-						tag: {
-							BlockStateTag: {
-								tier: 3
-							}
-						}
-					}
-					id: "43DC46C69B01A59B"
-					observe_type: 2
-					timer: 0L
-					title: "{mierno.chapter2-3.check_hephaestus_forge_tier3.title}"
-					to_observe: "forbidden_arcanus:hephaestus_forge[tier=3]"
-					type: "observation"
-				}
-				{
-					id: "0A3A90DAE9DDC25E"
-					item: {
-						Count: 1
-						id: "forbidden_arcanus:hephaestus_forge"
-						tag: {
-							BlockStateTag: {
-								tier: 3
-							}
-						}
-					}
-					optional_task: true
-					type: "item"
-				}
-			]
-			x: 12.5d
 			y: 0.0d
 		}
 		{
-			dependencies: ["578BEC6A99F962F0"]
-			icon: {
-				Count: 1
-				id: "forbidden_arcanus:hephaestus_forge"
-				tag: {
-					BlockStateTag: {
-						tier: 5
-					}
-				}
-			}
-			id: "598C50EF81AAA7D1"
-			shape: "square"
-			subtitle: "{mierno.chapter2-3.check_hephaestus_forge_tier5.subtitle}"
-			tasks: [
-				{
-					icon: {
-						Count: 1
-						id: "forbidden_arcanus:hephaestus_forge"
-						tag: {
-							BlockStateTag: {
-								tier: 5
-							}
-						}
-					}
-					id: "2335D32C2DCAC514"
-					observe_type: 2
-					timer: 0L
-					title: "{mierno.chapter2-3.check_hephaestus_forge_tier5.title}"
-					to_observe: "forbidden_arcanus:hephaestus_forge[tier=5]"
-					type: "observation"
-				}
-				{
-					id: "7CB9EDE226F1A0F4"
-					item: {
-						Count: 1
-						id: "forbidden_arcanus:hephaestus_forge"
-						tag: {
-							BlockStateTag: {
-								tier: 5
-							}
-						}
-					}
-					optional_task: true
-					type: "item"
-				}
-			]
-			x: 11.5d
-			y: 4.0d
+			id: "24FE0AA7D7BD9689"
+			tasks: [{
+				id: "02B447A28AA1E2F7"
+				type: "checkmark"
+			}]
+			title: "{mierno.tobecontinue}"
+			x: 11.0d
+			y: 0.0d
 		}
 	]
 	title: "{mierno.chapter2-3.title}"

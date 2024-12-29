@@ -640,7 +640,6 @@
 					type: "item"
 				}
 				{
-					count: 64L
 					id: "3C94A9D71A674795"
 					item: "ae2:pink_lumen_paint_ball"
 					type: "item"

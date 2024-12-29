@@ -116,6 +116,7 @@
 			]
 			shape: "gear"
 			size: 2.0d
+			subtitle: "{mierno.welcome.main.subtitle}"
 			tasks: [{
 				id: "698F64E2FD58D079"
 				type: "checkmark"
@@ -127,8 +128,12 @@
 		{
 			can_repeat: true
 			description: [
+				"{mierno.welcome.special_thanks.falaut}"
+				""
 				"{mierno.welcome.special_thanks.tyumen}"
 				"{\"translate\":\"mierno.welcome.special_thanks.tyumens\",\"extra\":[{\"translate\":\"mierno.welcome.special_thanks.bilibili\",\"color\":\"green\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://space.bilibili.com/32796946\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}},{\"text\":\" | \",\"color\":\"white\"},{\"translate\":\"mierno.welcome.special_thanks.huya\",\"color\":\"green\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://www.huya.com/raini\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}}]}"
+				""
+				"{mierno.welcome.special_thanks.test_players}"
 			]
 			disable_toast: true
 			icon: "minecraft:poppy"

@@ -45,6 +45,7 @@
 !defaultconfigs/
 !defaultconfigs/ftbchunks
 !defaultconfigs/ftbchunks/client-config.snbt
+!defaultconfigs/ftbchunks/ftbchunks-world.snbt
 !defaultconfigs/ftbquests
 !defaultconfigs/ftbquests/client-config.snbt
 !defaultconfigs/fluxnetworks-server.toml

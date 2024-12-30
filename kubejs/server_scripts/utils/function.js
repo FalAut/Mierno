@@ -164,5 +164,5 @@ function checkAreaWithAABBIsEmptyBlockWithoutCore(level, aabb, corePos) {
             }
         }
     }
-    return true; // 如果范围内全为空方块，返回 true
+    return true;
 }

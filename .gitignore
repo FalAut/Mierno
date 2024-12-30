@@ -36,7 +36,7 @@
 !config/jade/plugins.json
 !config/wizards_reborn-common.toml
 !config/malum-common.toml
-!config/botania-common.toml
+!config/botania-client.toml
 !config/fluffy_fur-client.toml
 !config/simplebackups-common.toml
 !config/evilcraft-common.toml

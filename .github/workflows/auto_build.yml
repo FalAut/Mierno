@@ -67,6 +67,11 @@ jobs:
                   cp -r config defaultconfigs hotai kubejs ldlib overrides/
                   zip -r ${{ steps.setup.outputs.ZIP_NAME }} overrides manifest.json modlist.html
 
+            - name: List files before server pack
+              run: |
+                  echo "Listing root directory:"
+                  ls -R
+
             - name: Create and package server pack
               run: |
                   # 创建服务端打包目录

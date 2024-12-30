@@ -1,27 +1,22 @@
-**The text content was translated into English using machine translation. Apologies for any inaccuracies!**
+# How to Start/Run the Server
 
-# How To Start / Run The Server
-
-**Of course you can use your own way to start / run the server**
+You can start or run the server using the methods below.
 
 ## Preparation
 
-Find JAVA=‘path/to/java’ in variables.txt.
-Change ‘path/to/java’ to your Java path, e.g. ‘C:/Program Files/Java/jdk-17/bin/java.exe’.
-Note that the path separator needs to be / and not \.
-If the specified path is not set, it may try to use the system's default Java (if it exists)
-When you are done, read the instructions below depending on your system type.
+1. Open the `variables.txt` file.
+2. Locate the line `JAVA="path/to/java"`.
+3. Replace `"path/to/java"` with your Java installation path, for example: `C:/Program Files/Java/jdk-17/bin/java.exe`.
+   **Note**: Use `/` as the path separator instead of `\`.
+4. If no specific path is set, the system may attempt to use the default Java installation (if available).
+5. Proceed to the instructions below based on your operating system.
 
 ## Windows
 
-Run `start.bat`.
-**Do not delete the PowerShell (ps1) files!**
+1. Run the `start.bat` file to launch the server.
+2. **Important**: Do not delete the PowerShell script file (`.ps1`).
 
-You may run `start.ps1` from a console-window manually, but using the Batch-script is recommended.
-Running PowerShell-scripts requires changing the ExecutionPolicy of your Windows-system. The Batch-script
-can bypass this for the start-script.
-
-TL;DR: start.bat better than start.ps1
+You can also manually run `start.ps1` from the console window, but using the batch script (`.bat` file) is recommended for simplicity.
 
 ## Linux
 
@@ -31,20 +26,19 @@ Run `.\start.sh` or `bash start.sh` to start the server.
 
 Run `.\start.sh` or `bash start.sh` to start the server.
 
-## Note
+## Important Notes
 
-**When you see this message in the console**
+When you see the following message in the console:
 
-_Mojang's EULA has not yet been accepted. In order to run a Minecraft server, you must accept Mojang's EULA._
-_Mojang's EULA is available to read at https://aka.ms/MinecraftEULA_
-_If you agree to Mojang's EULA then type 'I agree'_
-_Answer:_
+```
+Mojang's EULA has not yet been accepted. In order to run a Minecraft server, you must accept Mojang's EULA.
+Mojang's EULA is available to read at https://aka.ms/MinecraftEULA
+If you agree to Mojang's EULA then type 'I agree'
+Answer:
+```
 
-**At this point, please agree to Mojang's EULA by typing I agree in the console before proceeding to start the server**
-**After this, it will start to download the libraries required by the server, please wait patiently and keep your internet connection open.**
-**Go to the community for help if you have problems**
+Please type `I agree` in the console to accept Mojang's EULA, allowing the server to continue starting. After this, the server will begin downloading the necessary libraries. Please wait patiently and ensure a stable internet connection.
 
-Forge and NeoForge 1.17 and up will create run.xx-scripts due to the ServerStarterJar being used to install
-and run the server. It is safe to ignore these and continue using the start.xx-scripts.
-Deleting the run.xx-scripts will result in the server being installed again by the ServerStarterJar. More about
-the ServerStarterJar at https://github.com/neoforged/ServerStarterJar
+If you encounter any issues, please seek help from the community.
+
+**Note**: Forge and NeoForge versions 1.17 and above create `run.xx` scripts because `ServerStarterJar` is used to install and run the server. It is safe to ignore these scripts and continue using the `start.xx` scripts. Deleting the `run.xx` scripts will cause the server to be reinstalled by `ServerStarterJar`. For more information about `ServerStarterJar`, visit [ServerStarterJar GitHub](https://github.com/neoforged/ServerStarterJar).

@@ -59,12 +59,14 @@ jobs:
                   echo "VERSION=$LATEST_VERSION" >> $GITHUB_OUTPUT
                   echo "ZIP_NAME=Mierno-$LATEST_VERSION.zip" >> $GITHUB_OUTPUT
                   echo "SERVER_ZIP_NAME=Mierno-$LATEST_VERSION-server.zip" >> $GITHUB_OUTPUT
+                  echo "SERVER_NO_MODS_ZIP_NAME=Mierno-$LATEST_VERSION-server-no_mods.zip" >> $GITHUB_OUTPUT
 
             - name: Debug outputs
               run: |
                   echo "VERSION is ${{ steps.setup.outputs.VERSION }}"
                   echo "ZIP_NAME is ${{ steps.setup.outputs.ZIP_NAME }}"
                   echo "SERVER_ZIP_NAME is ${{ steps.setup.outputs.SERVER_ZIP_NAME }}"
+                  echo "SERVER_NO_MODS_ZIP_NAME is ${{ steps.setup.outputs.SERVER_NO_MODS_ZIP_NAME }}"
 
             - name: Update manifest.json version
               run: |
@@ -93,6 +95,21 @@ jobs:
 
                   # 打包服务端
                   zip -r "../${{ steps.setup.outputs.SERVER_ZIP_NAME }}" ./*
+
+            # 创建并打包不带 mods 的服务端
+            - name: Create and package server pack without mods
+              run: |
+                  # 创建临时目录用于不带 mods 的服务端打包
+                  mkdir server_pack_no_mods_dir
+
+                  # 复制 server_pack_dir 的内容到临时目录
+                  cp -r server_pack_dir/* server_pack_no_mods_dir/
+
+                  # 删除 mods 文件夹
+                  rm -rf server_pack_no_mods_dir/mods
+
+                  # 打包不带 mods 的服务端
+                  zip -r "${{ steps.setup.outputs.SERVER_NO_MODS_ZIP_NAME }}" server_pack_no_mods_dir/*
 
             - name: Extract CHANGELOG for current version
               run: |
@@ -129,6 +146,17 @@ jobs:
                   upload_url: ${{ steps.create_release.outputs.upload_url }}
                   asset_path: ./${{ steps.setup.outputs.SERVER_ZIP_NAME }}
                   asset_name: ${{ steps.setup.outputs.SERVER_ZIP_NAME }}
+                  asset_content_type: application/zip
+
+            # 上传不带 mods 的服务端 ZIP 文件
+            - name: Upload Server Pack No Mods ZIP
+              uses: actions/upload-release-asset@v1
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              with:
+                  upload_url: ${{ steps.create_release.outputs.upload_url }}
+                  asset_path: ./${{ steps.setup.outputs.SERVER_NO_MODS_ZIP_NAME }}
+                  asset_name: ${{ steps.setup.outputs.SERVER_NO_MODS_ZIP_NAME }}
                   asset_content_type: application/zip
 
             - name: Additional Debugging

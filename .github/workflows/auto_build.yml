@@ -29,25 +29,14 @@ jobs:
             - name: Set up environment and determine version
               id: setup
               run: |
-                  # 切换到 main_repo 目录
                   cd main_repo
 
-                  # 打印仓库结构以进行调试
-                  echo "Debugging repository structure for main_repo:"
-                  ls -R || { echo "Failed to list repository structure in main_repo"; exit 1; }
-
-                  # 检查 CHANGELOG.md 是否存在
                   CHANGELOG_PATH="./CHANGELOG.md"
                   if [ ! -f "$CHANGELOG_PATH" ]; then
                       echo "Error: $CHANGELOG_PATH not found in main_repo."
                       exit 1
                   fi
 
-                  # 打印 CHANGELOG.md 内容以进行调试
-                  echo "Debugging CHANGELOG.md content in main_repo:"
-                  cat "$CHANGELOG_PATH" || { echo "Failed to read $CHANGELOG_PATH"; exit 1; }
-
-                  # 从 CHANGELOG.md 中提取最新版本号
                   LATEST_VERSION=$(grep -oP '^## v\K[0-9]+(\.[0-9]+)*' "$CHANGELOG_PATH" | head -n1)
 
                   if [ -z "$LATEST_VERSION" ]; then
@@ -60,13 +49,6 @@ jobs:
                   echo "ZIP_NAME=Mierno-$LATEST_VERSION.zip" >> $GITHUB_OUTPUT
                   echo "SERVER_ZIP_NAME=Mierno-$LATEST_VERSION-server.zip" >> $GITHUB_OUTPUT
                   echo "SERVER_NO_MODS_ZIP_NAME=Mierno-$LATEST_VERSION-server-no_mods.zip" >> $GITHUB_OUTPUT
-
-            - name: Debug outputs
-              run: |
-                  echo "VERSION is ${{ steps.setup.outputs.VERSION }}"
-                  echo "ZIP_NAME is ${{ steps.setup.outputs.ZIP_NAME }}"
-                  echo "SERVER_ZIP_NAME is ${{ steps.setup.outputs.SERVER_ZIP_NAME }}"
-                  echo "SERVER_NO_MODS_ZIP_NAME is ${{ steps.setup.outputs.SERVER_NO_MODS_ZIP_NAME }}"
 
             - name: Update manifest.json version
               run: |
@@ -83,31 +65,20 @@ jobs:
 
             - name: Create and package server pack
               run: |
-                  # 切换到 server_pack_dir 目录
                   cd server_pack_dir
 
-                  # 打印服务端仓库结构以进行调试
-                  echo "Debugging repository structure for server_pack_dir:"
-                  ls -R || { echo "Failed to list repository structure in server_pack_dir"; exit 1; }
-
-                  # 确保不包含 README.md 和 .gitignore
                   rm -f README.md .gitignore
 
-                  # 打包服务端
                   zip -r "../${{ steps.setup.outputs.SERVER_ZIP_NAME }}" ./*
 
             - name: Create and package server pack without mods
               run: |
-                  # 创建临时目录用于不带 mods 的服务端打包
                   mkdir server_pack_no_mods_dir
 
-                  # 复制 server_pack_dir 的内容到临时目录
                   cp -r server_pack_dir/* server_pack_no_mods_dir/
 
-                  # 删除 mods 文件夹
                   rm -rf server_pack_no_mods_dir/mods
 
-                  # 打包不带 mods 的服务端
                   zip -r "${{ steps.setup.outputs.SERVER_NO_MODS_ZIP_NAME }}" server_pack_no_mods_dir/*
 
             - name: Extract CHANGELOG for current version
@@ -115,19 +86,44 @@ jobs:
                   cd main_repo
                   sed -n "/^## v${{ steps.setup.outputs.VERSION }}/,/^## /p" CHANGELOG.md | sed '$d' > ../extracted_changelog.txt
 
-            - name: Create GitHub Release and Upload Assets
-              uses: ncipollo/release-action@v1
+            - name: Create GitHub Release
+              id: create_release
+              uses: actions/create-release@v1
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               with:
-                  tag: "v${{ steps.setup.outputs.VERSION }}"
-                  name: "Mierno v${{ steps.setup.outputs.VERSION }}"
-                  body: |
-                      $(cat extracted_changelog.txt)
-                  files: |
-                      ./${{ steps.setup.outputs.ZIP_NAME }}
-                      ./${{ steps.setup.outputs.SERVER_ZIP_NAME }}
-                      ./${{ steps.setup.outputs.SERVER_NO_MODS_ZIP_NAME }}
+                  tag_name: "v${{ steps.setup.outputs.VERSION }}"
+                  release_name: "Mierno v${{ steps.setup.outputs.VERSION }}"
+                  body_path: extracted_changelog.txt
+                  draft: false
+                  prerelease: false
 
-            - name: Additional Debugging
-              run: |
-                  echo "Final extracted changelog:"
-                  cat extracted_changelog.txt
+            - name: Upload Modpack ZIP
+              uses: actions/upload-release-asset@v1
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              with:
+                  upload_url: ${{ steps.create_release.outputs.upload_url }}
+                  asset_path: ./${{ steps.setup.outputs.ZIP_NAME }}
+                  asset_name: ${{ steps.setup.outputs.ZIP_NAME }}
+                  asset_content_type: application/zip
+
+            - name: Upload Server Pack ZIP
+              uses: actions/upload-release-asset@v1
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              with:
+                  upload_url: ${{ steps.create_release.outputs.upload_url }}
+                  asset_path: ./${{ steps.setup.outputs.SERVER_ZIP_NAME }}
+                  asset_name: ${{ steps.setup.outputs.SERVER_ZIP_NAME }}
+                  asset_content_type: application/zip
+
+            - name: Upload Server Pack No Mods ZIP
+              uses: actions/upload-release-asset@v1
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              with:
+                  upload_url: ${{ steps.create_release.outputs.upload_url }}
+                  asset_path: ./${{ steps.setup.outputs.SERVER_NO_MODS_ZIP_NAME }}
+                  asset_name: ${{ steps.setup.outputs.SERVER_NO_MODS_ZIP_NAME }}
+                  asset_content_type: application/zip

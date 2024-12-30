@@ -64,7 +64,7 @@ jobs:
             - name: Create and package modpack
               run: |
                   mkdir overrides
-                  mv config defaultconfigs hotai kubejs ldlib overrides/
+                  cp -r config defaultconfigs hotai kubejs ldlib overrides/
                   zip -r ${{ steps.setup.outputs.ZIP_NAME }} overrides manifest.json modlist.html
 
             - name: Create and package server pack

@@ -6,37 +6,37 @@
     "overrides": [
         {
             "predicate": {
-                "lunar": 0
+                "mierno:lunar": 0
             },
             "model": "mierno:item/moon_stone_0"
         },
         {
             "predicate": {
-                "lunar": 0.2
+                "mierno:lunar": 0.2
             },
             "model": "mierno:item/moon_stone_1"
         },
         {
             "predicate": {
-                "lunar": 0.4
+                "mierno:lunar": 0.4
             },
             "model": "mierno:item/moon_stone_2"
         },
         {
             "predicate": {
-                "lunar": 0.6
+                "mierno:lunar": 0.6
             },
             "model": "mierno:item/moon_stone_3"
         },
         {
             "predicate": {
-                "lunar": 0.8
+                "mierno:lunar": 0.8
             },
             "model": "mierno:item/moon_stone_4"
         },
         {
             "predicate": {
-                "lunar": 1
+                "mierno:lunar": 1
             },
             "model": "mierno:item/moon_stone_full"
         }

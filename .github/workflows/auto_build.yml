@@ -13,28 +13,38 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
-            - name: Checkout repository
+            - name: Checkout main branch
               uses: actions/checkout@v4
               with:
                   fetch-depth: 2
                   ref: ${{ github.event.inputs.ref }}
+                  path: main_repo
+
+            - name: Checkout server_pack branch
+              uses: actions/checkout@v4
+              with:
+                  ref: server_pack
+                  path: server_pack_dir
 
             - name: Set up environment and determine version
               id: setup
               run: |
+                  # 切换到 main_repo 目录
+                  cd main_repo
+
                   # 打印仓库结构以进行调试
-                  echo "Debugging repository structure:"
-                  ls -R || { echo "Failed to list repository structure"; exit 1; }
+                  echo "Debugging repository structure for main_repo:"
+                  ls -R || { echo "Failed to list repository structure in main_repo"; exit 1; }
 
                   # 检查 CHANGELOG.md 是否存在
                   CHANGELOG_PATH="./CHANGELOG.md"
                   if [ ! -f "$CHANGELOG_PATH" ]; then
-                      echo "Error: $CHANGELOG_PATH not found in repository root."
+                      echo "Error: $CHANGELOG_PATH not found in main_repo."
                       exit 1
                   fi
 
                   # 打印 CHANGELOG.md 内容以进行调试
-                  echo "Debugging CHANGELOG.md content:"
+                  echo "Debugging CHANGELOG.md content in main_repo:"
                   cat "$CHANGELOG_PATH" || { echo "Failed to read $CHANGELOG_PATH"; exit 1; }
 
                   # 从 CHANGELOG.md 中提取最新版本号
@@ -58,75 +68,44 @@ jobs:
 
             - name: Update manifest.json version
               run: |
+                  cd main_repo
                   sed -i '/"name": *"Mierno",/!b;n;s/"version": *"[^"]*"/"version": "${{ steps.setup.outputs.VERSION }}"/' manifest.json
                   echo "Updated manifest.json with version ${{ steps.setup.outputs.VERSION }}"
 
             - name: Create and package modpack
               run: |
+                  cd main_repo
                   mkdir overrides
                   cp -r config defaultconfigs hotai kubejs ldlib overrides/
-                  zip -r ${{ steps.setup.outputs.ZIP_NAME }} overrides manifest.json modlist.html
-
-            - name: List files before server pack
-              run: |
-                  echo "Listing root directory:"
-                  ls -R
+                  zip -r "../${{ steps.setup.outputs.ZIP_NAME }}" overrides manifest.json modlist.html
 
             - name: Create and package server pack
               run: |
-                  # 创建服务端打包目录
-                  mkdir server_pack
+                  # 切换到 server_pack_dir 目录
+                  cd server_pack_dir
 
-                  # 复制必要的目录到服务端打包目录
-                  cp -r config defaultconfigs kubejs ldlib server_pack/
-
-                  # 进入服务端打包目录
-                  cd server_pack
-
-                  # 根据 server_pack 的 .gitignore 删除客户端相关文件
-                  rm -rf config/jade
-                  rm -rf config/modpack-update-checker
-                  rm -rf config/ProjectE/client.toml
-                  rm -rf config/ars_nouveau-client.toml
-                  rm -rf config/botania-client.toml
-                  rm -rf config/embeddium++.toml
-                  rm -rf config/fluffy_fur-client.toml
-                  rm -rf config/invtweaks-client.toml
-                  rm -rf config/occultism-client.toml
-                  rm -rf config/patchouli-client.toml
-
-                  rm -rf defaultconfigs/ftbchunks/client-config.snbt
-                  rm -rf defaultconfigs/ftbquests/client-config.snbt
-
-                  rm -rf kubejs/startup_scripts/client
-
-                  # 删除 hotai
-                  rm -rf hotai
-
-                  # 返回根目录
-                  cd ..
-
-                  # 复制服务端特有文件到服务端打包目录
-                  # 假设服务端文件位于 server_files/ 目录下，请根据实际情况调整
-                  cp -r server_files/* server_pack/
+                  # 打印服务端仓库结构以进行调试
+                  echo "Debugging repository structure for server_pack_dir:"
+                  ls -R || { echo "Failed to list repository structure in server_pack_dir"; exit 1; }
 
                   # 确保不包含 README.md 和 .gitignore
-                  rm -f server_pack/README.md server_pack/.gitignore
+                  rm -f README.md .gitignore
 
                   # 打包服务端
-                  zip -r ${{ steps.setup.outputs.SERVER_ZIP_NAME }} server_pack
+                  zip -r "../${{ steps.setup.outputs.SERVER_ZIP_NAME }}" ./*
 
             - name: Extract CHANGELOG for current version
               run: |
-                  sed -n "/^## v${{ steps.setup.outputs.VERSION }}/,/^## /p" CHANGELOG.md | sed '$d' > extracted_changelog.txt
+                  cd main_repo
+                  sed -n "/^## v${{ steps.setup.outputs.VERSION }}/,/^## /p" CHANGELOG.md | sed '$d' > ../extracted_changelog.txt
 
             - name: Create GitHub Release
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               run: |
                   gh release create "v${{ steps.setup.outputs.VERSION }}" \
-                    ${{ steps.setup.outputs.ZIP_NAME }} \
-                    ${{ steps.setup.outputs.SERVER_ZIP_NAME }} \
+                    "${{ steps.setup.outputs.ZIP_NAME }}" \
+                    "${{ steps.setup.outputs.SERVER_ZIP_NAME }}" \
                     --title "Mierno v${{ steps.setup.outputs.VERSION }}" \
                     --notes-file extracted_changelog.txt
 

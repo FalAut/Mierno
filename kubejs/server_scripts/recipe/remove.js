@@ -2,8 +2,6 @@
 
 ServerEvents.recipes((event) => {
     event.remove({ mod: "projecte" });
-    event.remove({ mod: "mekanism" });
-    event.remove({ mod: "mekanismgenerators" });
     event.remove({ type: "occultism:miner" });
 
     let recipesToRemoveID = [

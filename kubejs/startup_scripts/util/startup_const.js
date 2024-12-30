@@ -25,7 +25,3 @@ const $Integer = Java.loadClass("java.lang.Integer");
 const $BlockHitResult = Java.loadClass("net.minecraft.world.phys.BlockHitResult");
 const $UseOnContext = Java.loadClass("net.minecraft.world.item.context.UseOnContext");
 const $DummyTooltipItem = Java.loadClass("com.klikli_dev.occultism.common.item.DummyTooltipItem");
-const $SimpleSoundInstance = Java.loadClass("net.minecraft.client.resources.sounds.SimpleSoundInstance");
-const $SoundInstance = Java.loadClass("net.minecraft.client.resources.sounds.SoundInstance");
-
-const REGISTRIES_STRUCTURE = $ResourceKey.createRegistryKey("worldgen/structure");

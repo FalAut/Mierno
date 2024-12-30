@@ -22,7 +22,7 @@ StartupEvents.registry("item", (event) => {
     event.create("mierno:unstable_singularity").rarity("epic");
     event.create("mierno:source_emerald");
 
-    let darkTemple = $ResourceKey.create(REGISTRIES_STRUCTURE, "mierno:dark_temple");
+    let darkTemple = $ResourceKey.create($ResourceKey.createRegistryKey("worldgen/structure"), "mierno:dark_temple");
     event.createCustom("mierno:dark_eyes", () => new $ItemStructureFinder("dark_eyes", darkTemple, 0x808080, 512));
     event.createCustom(
         "mierno:ritual_dummy/blood_pact_of_asmodeus",

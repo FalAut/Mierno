@@ -191,12 +191,24 @@
 				"4648D64F506FF6B4"
 			]
 			id: "560E6468D1517943"
-			rewards: [{
-				count: 2
-				id: "2745671074066F9A"
-				item: "minecraft:hopper"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 2
+					id: "51675D9A3003520A"
+					item: "functionalstorage:oak_1"
+					type: "item"
+				}
+				{
+					id: "5695091937838EA3"
+					item: "functionalstorage:puller_upgrade"
+					type: "item"
+				}
+				{
+					id: "07E18E0B0E9B537B"
+					item: "functionalstorage:pusher_upgrade"
+					type: "item"
+				}
+			]
 			shape: "square"
 			subtitle: "{\"translate\":\"mierno.chapter1-1.nature_altar.subtitle\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"66D8BC9D66037D0F\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}}"
 			tasks: [{

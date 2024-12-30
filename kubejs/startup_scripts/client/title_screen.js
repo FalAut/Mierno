@@ -6,6 +6,8 @@ const $ModernFixClient = Java.loadClass("org.embeddedt.modernfix.ModernFixClient
 const $SystemToast = Java.loadClass("net.minecraft.client.gui.components.toasts.SystemToast");
 const $BrandingControl = Java.loadClass("net.minecraftforge.internal.BrandingControl");
 const $ArrayList = Java.loadClass("java.util.ArrayList");
+const $SimpleSoundInstance = Java.loadClass("net.minecraft.client.resources.sounds.SimpleSoundInstance");
+const $SoundInstance = Java.loadClass("net.minecraft.client.resources.sounds.SoundInstance");
 const $MpucApi = Java.loadClass("com.jab125.mpuc.api.MpucApi");
 
 ForgeEvents.onEvent("net.minecraftforge.client.event.ScreenEvent$Init$Post", (event) => {

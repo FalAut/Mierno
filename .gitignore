@@ -12,6 +12,4 @@ config/patchouli-client.toml
 defaultconfigs/ftbchunks/client-config.snbt
 defaultconfigs/ftbquests/client-config.snbt
 
-hotai
-
 kubejs/startup_scripts/client

@@ -273,6 +273,8 @@
     "tooltip.mierno.time_changer_5": "This consumes a lot of aura as a cost--the more time skipped, the more aura consumed",
     "tooltip.mierno.condensed_blood": "Can provide 500 blood to a Hephaestus Forge",
     "tooltip.mierno.ritualdiviner": "The Ritual Diviner can help players place ritual stones by consuming LP from the soul network and ritual stones from inventory.",
+    "tooltip.mierno.blitz_rod": "Blitz are spawned in the Misty Forest and can also be summoned through the Altar of Birthing.",
+    "tooltip.mierno.basalz_rod": "Blitz are spawned in the basalt deltas of the lower realms and can also be summoned through the Altar of Birthing",
 
     "biome.mierno.black_and_white": "Black and White",
     "biome.mierno.misty_forest": "Misty Forest",
@@ -456,7 +458,7 @@
     "mierno.chapter2-2.open_blood_pact_of_asmodeus.desc": "§6Click to view ritual: §4Blood Pact of Asmodeus",
     "mierno.chapter2-2.open_craft_djinni.desc": "§6Click to view ritual: §eHigher Binding of Striga",
     "mierno.chapter2-2.open_summon_wild_afrit.desc": "§6Click to view ritual: §cAbaras Open Summoning",
-    "mierno.chapter2-2.afrit_essence.desc": "§eHint: You can spawn a cow using the Animal Spawner, please check JEI for the cow spawn egg recipe",
+    "mierno.chapter2-2.afrit_essence.desc": "§eHint: You can spawn a cow using the Altar of Birthing, please check JEI for the cow spawn egg recipe",
 
     "mierno.chapter2-3.check_hephaestus_forge.title": "Observe the Hephaestus Forge",
     "mierno.chapter2-3.hephaestus_forge.subtitle": "§6→【Click Me】← View how to activate and use the Hephaestus Forge",

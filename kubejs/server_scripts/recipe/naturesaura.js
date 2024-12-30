@@ -147,4 +147,7 @@ ServerEvents.recipes((event) => {
     naturesaura.animal_spawner("sheep", ["naturesaura:birth_spirit", "botania:rune_water"]);
     naturesaura.animal_spawner("pig", ["naturesaura:birth_spirit", "botania:rune_fire"]);
     naturesaura.animal_spawner("ghast", ["naturesaura:birth_spirit", "minecraft:white_dye"]);
+    naturesaura.animal_spawner("thermal:basalz", ["naturesaura:birth_spirit", "ars_nouveau:earth_essence"]);
+    naturesaura.animal_spawner("thermal:blitz", ["naturesaura:birth_spirit", "ars_nouveau:air_essence"]);
+    naturesaura.animal_spawner("thermal:blizz", ["naturesaura:birth_spirit", "minecraft:blue_ice"]);
 });

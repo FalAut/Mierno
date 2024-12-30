@@ -241,4 +241,6 @@ ItemEvents.tooltip((event) => {
         ["bloodmagic:ritualdiviner", "bloodmagic:ritualdivinerdusk"],
         Text.translate("tooltip.mierno.ritualdiviner").gold()
     );
+    event.add("thermal:blitz_rod", Text.translate("tooltip.mierno.blitz_rod").gold());
+    event.add("thermal:basalz_rod", Text.translate("tooltip.mierno.basalz_rod").gold());
 });

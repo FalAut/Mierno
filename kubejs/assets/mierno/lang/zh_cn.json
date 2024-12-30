@@ -273,6 +273,8 @@
     "tooltip.mierno.time_changer_5": "作为代价，这会消耗大量的灵气--跳过的时间越多，消耗的灵气就越多",
     "tooltip.mierno.condensed_blood": "可放入赫菲斯托斯锻炉中来为其提供 500 血液",
     "tooltip.mierno.ritualdiviner": "仪式推测杖可以消耗灵魂网络内的LP和背包中库存的仪式石帮助玩家摆放仪式。",
+    "tooltip.mierno.blitz_rod": "狂风人在迷雾森林中生成，也可通过降生祭坛召唤",
+    "tooltip.mierno.basalz_rod": "岩石人在下界的玄武岩三角洲中生成，也可通过降生祭坛召唤",
 
     "biome.mierno.black_and_white": "黑与白",
     "biome.mierno.misty_forest": "迷雾森林",

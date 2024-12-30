@@ -1,6 +1,0 @@
-{
-    "parent": "botania:block/shapes/cross",
-    "textures": {
-        "cross": "mierno:block/source_flower"
-    }
-}

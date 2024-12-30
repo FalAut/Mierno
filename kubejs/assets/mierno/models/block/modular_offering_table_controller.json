@@ -1,8 +1,0 @@
-{
-    "parent": "minecraft:block/orientable",
-    "textures": {
-        "front": "naturesaura:block/time_changer",
-        "side": "naturesaura:block/time_changer",
-        "top": "mierno:block/modular_offering_table_controller_top"
-    }
-}

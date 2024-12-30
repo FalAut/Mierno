@@ -100,14 +100,36 @@ jobs:
                   sed -n "/^## v${{ steps.setup.outputs.VERSION }}/,/^## /p" CHANGELOG.md | sed '$d' > ../extracted_changelog.txt
 
             - name: Create GitHub Release
+              id: create_release
+              uses: actions/create-release@v1
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-              run: |
-                  gh release create "v${{ steps.setup.outputs.VERSION }}" \
-                    "${{ steps.setup.outputs.ZIP_NAME }}" \
-                    "${{ steps.setup.outputs.SERVER_ZIP_NAME }}" \
-                    --title "Mierno v${{ steps.setup.outputs.VERSION }}" \
-                    --notes-file extracted_changelog.txt
+              with:
+                  tag_name: "v${{ steps.setup.outputs.VERSION }}"
+                  release_name: "Mierno v${{ steps.setup.outputs.VERSION }}"
+                  body_path: extracted_changelog.txt
+                  draft: false
+                  prerelease: false
+
+            - name: Upload Modpack ZIP
+              uses: actions/upload-release-asset@v1
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              with:
+                  upload_url: ${{ steps.create_release.outputs.upload_url }}
+                  asset_path: ./${{ steps.setup.outputs.ZIP_NAME }}
+                  asset_name: ${{ steps.setup.outputs.ZIP_NAME }}
+                  asset_content_type: application/zip
+
+            - name: Upload Server Pack ZIP
+              uses: actions/upload-release-asset@v1
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              with:
+                  upload_url: ${{ steps.create_release.outputs.upload_url }}
+                  asset_path: ./${{ steps.setup.outputs.SERVER_ZIP_NAME }}
+                  asset_name: ${{ steps.setup.outputs.SERVER_ZIP_NAME }}
+                  asset_content_type: application/zip
 
             - name: Additional Debugging
               run: |

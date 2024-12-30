@@ -18,7 +18,6 @@ const $PortalIgnitionSource = Java.loadClass("net.kyrptonaught.customportalapi.p
 const $CustomPortalBuilder = Java.loadClass("net.kyrptonaught.customportalapi.api.CustomPortalBuilder");
 const $CustomPortalBlock = Java.loadClass("net.kyrptonaught.customportalapi.CustomPortalBlock");
 const $BlockBehaviour$Properties = Java.loadClass("net.minecraft.world.level.block.state.BlockBehaviour$Properties");
-const $RenderSystem = Java.loadClass("com.mojang.blaze3d.systems.RenderSystem");
 const $KubeJS = Java.loadClass("dev.latvian.mods.kubejs.KubeJS");
 const $Context = Java.loadClass("dev.latvian.mods.rhino.Context");
 const $Integer = Java.loadClass("java.lang.Integer");

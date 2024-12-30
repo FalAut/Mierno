@@ -1,3 +1,5 @@
+const $RenderSystem = Java.loadClass("com.mojang.blaze3d.systems.RenderSystem");
+
 ForgeEvents.onEvent("net.minecraftforge.client.event.ViewportEvent$RenderFog", (event) => {
     if (event.camera.entity.level.dimension != "mierno:misty_forest") return;
 

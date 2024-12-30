@@ -196,7 +196,7 @@ ItemEvents.tooltip((event) => {
     event.add(["minecraft:clay_ball", "botania:clayconia"], Text.translate("tooltip.mierno.clay_ball").gold());
 
     event.add("botania:alfheim_portal", Text.translate("tooltip.mierno.alfheim_portal").darkRed());
-    event.add("ars_nouveau:imbuement_chamber", Text.translate("tooltip.mierno.imbuement_chamber").gold());
+    event.add("ars_nouveau:imbuement_chamber", Text.translate("tooltip.mierno.imbuement_chamber").red());
     event.add(
         "mierno:modular_alfheim_portal_core",
         Text.translate("tooltip.mierno.modular_alfheim_portal_core").gold()

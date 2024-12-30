@@ -245,7 +245,7 @@
     "tooltip.mierno.ae2_press": "Obtained by breaking Mysterious Blocks",
     "tooltip.mierno.clay_ball": "Clay Balls are produced by placing sand near a Clay Flower",
     "tooltip.mierno.alfheim_portal": "Warning: Don't use Time in a Bottle on the Alfheim Portal Core, it may cause lag",
-    "tooltip.mierno.imbuement_chamber": "The Imbuement Chamber now consumes materials on the pedestal",
+    "tooltip.mierno.imbuement_chamber": "The Infusion Chamber now consumes items on the pedestal after completing the infusion, this is intentional and not a bug",
     "tooltip.mierno.modular_alfheim_portal_core": "Can attach sparks, try replacing if connection fails",
     "tooltip.mierno.eternal_water": "An infinite water source that can automatically output water to fluid containers",
     "tooltip.mierno.spring": "An infinite water source that can be extracted using fluid pipes",

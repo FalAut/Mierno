@@ -245,7 +245,7 @@
     "tooltip.mierno.ae2_press": "通過破壞神秘方塊獲得",
     "tooltip.mierno.clay_ball": "在粘土花附近放置沙子來産生黏土球",
     "tooltip.mierno.alfheim_portal": "警告：不要用時間之瓶加速精靈門核心，會造成卡頓",
-    "tooltip.mierno.imbuement_chamber": "灌注室現在會消耗基座上的材料",
+    "tooltip.mierno.imbuement_chamber": "現在灌註室在完成灌註後會消耗掉基座上的物品，這是有意為之的，並不是bug",
     "tooltip.mierno.modular_alfheim_portal_core": "可附加火花，若連不上請嘗試重新放置",
     "tooltip.mierno.eternal_water": "壹個無限的水源，可以自動向液體容器輸出水",
     "tooltip.mierno.spring": "壹個無限的水源，可以使用流體管道抽取",

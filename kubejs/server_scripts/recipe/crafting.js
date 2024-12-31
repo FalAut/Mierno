@@ -87,7 +87,7 @@ ServerEvents.recipes((event) => {
         .shapeless("bloodmagic:ritualdivinerdusk", ["bloodmagic:ritualdiviner", "bloodmagic:duskscribetool"])
         .keepIngredient("bloodmagic:duskscribetool");
 
-    kubejs.shapeless("4x ae2:not_so_mysterious_cube", "ae2:mysterious_cube");
+    kubejs.shapeless("4x ae2:not_so_mysterious_cube", "ae2:mysterious_cube").keepIngredient("ae2:mysterious_cube");
     kubejs.shapeless("naturesaura:gold_leaf", ["gold_ingot", "#leaves"]);
     kubejs.shapeless("mierno:futura_block", "ae2:controller").keepIngredient("ae2:controller");
     kubejs.shapeless("2x botania:blacker_lotus", "botania:blacker_lotus");
@@ -628,7 +628,7 @@ ServerEvents.recipes((event) => {
         A: "ae2:logic_processor",
         B: "minecraft:iron_block",
         C: "ae2:engineering_processor",
-        D: "thermal:copper_gear",
+        D: "minecraft:piston",
         E: "thermal:machine_frame",
         F: "thermal:rf_coil",
         G: "thermal:redstone_servo",
@@ -770,4 +770,13 @@ ServerEvents.recipes((event) => {
         .keepIngredient("bloodmagic:airscribetool")
         .keepIngredient("bloodmagic:waterscribetool")
         .keepIngredient("bloodmagic:earthscribetool");
+
+    kubejs.shaped(
+        Item.of("expatternprovider:infinity_cell", '{record:{"#c":"ae2:i",id:"minecraft:cobblestone"}}'),
+        ["AAA", "ABA", "AAA"],
+        {
+            A: "mierno:cobble_gen_tier5",
+            B: "ae2:item_cell_housing",
+        }
+    );
 });

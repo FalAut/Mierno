@@ -2,8 +2,6 @@
 
 ServerEvents.recipes((event) => {
     event.remove({ mod: "projecte" });
-    event.remove({ mod: "mekanism" });
-    event.remove({ mod: "mekanismgenerators" });
     event.remove({ type: "occultism:miner" });
 
     let recipesToRemoveID = [
@@ -236,9 +234,9 @@ ServerEvents.recipes((event) => {
         "bloodmagic:altar/earth_tool",
         "bloodmagic:ritual_diviner_0",
         "bloodmagic:ritual_diviner_1",
-        "",
-        "",
-        "",
+        "mekanismgenerators:generator/wind",
+        "expatternprovider:cobblestone_cell",
+        "naturesaura:animal_spawner/ghast",
         "",
         "",
         "",

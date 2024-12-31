@@ -770,4 +770,13 @@ ServerEvents.recipes((event) => {
         .keepIngredient("bloodmagic:airscribetool")
         .keepIngredient("bloodmagic:waterscribetool")
         .keepIngredient("bloodmagic:earthscribetool");
+
+    kubejs.shaped(
+        Item.of("expatternprovider:infinity_cell", '{record:{"#c":"ae2:i",id:"minecraft:cobblestone"}}'),
+        ["AAA", "ABA", "AAA"],
+        {
+            A: "mierno:cobble_gen_tier5",
+            B: "ae2:item_cell_housing",
+        }
+    );
 });

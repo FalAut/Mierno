@@ -235,7 +235,7 @@ ServerEvents.recipes((event) => {
         "bloodmagic:ritual_diviner_0",
         "bloodmagic:ritual_diviner_1",
         "mekanismgenerators:generator/wind",
-        "",
+        "expatternprovider:cobblestone_cell",
         "",
         "",
         "",

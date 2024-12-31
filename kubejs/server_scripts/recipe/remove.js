@@ -234,7 +234,7 @@ ServerEvents.recipes((event) => {
         "bloodmagic:altar/earth_tool",
         "bloodmagic:ritual_diviner_0",
         "bloodmagic:ritual_diviner_1",
-        "",
+        "mekanismgenerators:generator/wind",
         "",
         "",
         "",

@@ -48,7 +48,7 @@ jobs:
                   echo "VERSION=$LATEST_VERSION" >> $GITHUB_OUTPUT
                   echo "ZIP_NAME=Mierno-$LATEST_VERSION.zip" >> $GITHUB_OUTPUT
                   echo "SERVER_ZIP_NAME=Mierno-$LATEST_VERSION-server.zip" >> $GITHUB_OUTPUT
-                  echo "SERVER_NO_MODS_ZIP_NAME=Mierno-$LATEST_VERSION-server-no_mods.zip" >> $GITHUB_OUTPUT
+                  echo "SERVER_WITHOUT_MODS_ZIP_NAME=Mierno-$LATEST_VERSION-server-without_mods.zip" >> $GITHUB_OUTPUT
 
             - name: Update manifest.json version
               run: |
@@ -73,13 +73,13 @@ jobs:
 
             - name: Create and package server pack without mods
               run: |
-                  mkdir server_pack_no_mods_dir
+                  mkdir server_pack_without_mods_dir
 
-                  cp -r server_pack_dir/* server_pack_no_mods_dir/
+                  cp -r server_pack_dir/* server_pack_without_mods_dir/
 
-                  rm -rf server_pack_no_mods_dir/mods
+                  rm -rf server_pack_without_mods_dir/mods
 
-                  zip -r "${{ steps.setup.outputs.SERVER_NO_MODS_ZIP_NAME }}" server_pack_no_mods_dir/*
+                  zip -r "${{ steps.setup.outputs.SERVER_WITHOUT_MODS_ZIP_NAME }}" server_pack_without_mods_dir/*
 
             - name: Extract CHANGELOG for current version
               run: |
@@ -124,6 +124,6 @@ jobs:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               with:
                   upload_url: ${{ steps.create_release.outputs.upload_url }}
-                  asset_path: ./${{ steps.setup.outputs.SERVER_NO_MODS_ZIP_NAME }}
-                  asset_name: ${{ steps.setup.outputs.SERVER_NO_MODS_ZIP_NAME }}
+                  asset_path: ./${{ steps.setup.outputs.SERVER_WITHOUT_MODS_ZIP_NAME }}
+                  asset_name: ${{ steps.setup.outputs.SERVER_WITHOUT_MODS_ZIP_NAME }}
                   asset_content_type: application/zip

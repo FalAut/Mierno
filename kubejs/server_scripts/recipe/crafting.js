@@ -628,7 +628,7 @@ ServerEvents.recipes((event) => {
         A: "ae2:logic_processor",
         B: "minecraft:iron_block",
         C: "ae2:engineering_processor",
-        D: "thermal:copper_gear",
+        D: "minecraft:piston",
         E: "thermal:machine_frame",
         F: "thermal:rf_coil",
         G: "thermal:redstone_servo",

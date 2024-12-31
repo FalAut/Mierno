@@ -1,3 +1,8 @@
+## v0.0.7
+
+-   修复装配室胶囊需求物品不正确的问题
+-   修复冲压机配方循环的问题
+
 ## v0.0.6
 
 -   为巨型熔炉的搭建添加了条件，现在会检测搭建范围内是否有生物或方块存在，会提示框架数量是否足够
@@ -8,6 +13,15 @@
 -   客户端类现在放在了正确的位置
 -   制作了服务端
 -   更改 FTB 区块默认配置
+
+-   Added conditions to Mega Furnace builds, now detects if there are creatures or cubes present within the build range and will indicate if the number of frames is sufficient
+-   Fixed an issue where Etheric Memory Source recipes were not being added correctly
+-   Added Stormbringer generation to Misty Woods
+-   Gale Man, Rock Man, and Blizzard Man can now be summoned through the Altar of Descent
+-   Fixed missing recipes for Steel Ingots and Steel Blocks
+-   Client class is now in the correct place
+-   Create Server Pack
+-   Changed default configuration of FTB blocks
 
 ## v0.0.5
 

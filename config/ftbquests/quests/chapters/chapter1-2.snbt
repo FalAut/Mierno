@@ -654,6 +654,11 @@
 		{
 			dependencies: ["5C3DC7501542C952"]
 			id: "4EABAF556D363CA9"
+			rewards: [{
+				id: "03741CA210BCDCD1"
+				item: "pipez:wrench"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "1241ED5CC60D1270"

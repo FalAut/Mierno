@@ -144,6 +144,17 @@ BlockEvents.rightClicked((event) => {
     }
 });
 
+BlockEvents.rightClicked("botania:terra_plate", (event) => {
+    const { hand, block, player, level } = event;
+    if (hand != "MAIN_HAND") return;
+
+    let TAA = $PatchouliAPI.getMultiblock("mierno:terrestrial_agglomeration_altar");
+
+    if (!TAA.validate(level, block.pos.below(), "none")) {
+        player.tell(Text.translate("message.mierno.terra_plate_error").red());
+    }
+});
+
 ItemEvents.rightClicked("mierno:whos_gift", (event) => {
     const { item, player } = event;
 

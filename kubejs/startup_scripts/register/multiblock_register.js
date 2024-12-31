@@ -182,4 +182,52 @@ StartupEvents.postInit((event) => {
             Block.getBlock("minecraft:redstone_wire")
         )
     );
+
+    $PatchouliAPI.registerMultiblock(
+        "mierno:terrestrial_agglomeration_altar",
+        $PatchouliAPI.makeMultiblock(
+            [
+                ["___Z___", "_______", "_______", "Z_____Z", "_______", "_______", "___Z___"],
+                ["___E___", "_______", "_______", "E_____E", "_______", "_______", "___E___"],
+                ["___D___", "_______", "_______", "N_____O", "_______", "_______", "___T___"],
+                ["___C___", "_______", "_______", "K_____M", "_______", "_______", "___S___"],
+                ["___C___", "_______", "_______", "K__L__M", "_______", "_______", "___S___"],
+                ["__AAA__", "_AGGGA_", "AHGGIIA", "AHH0IIA", "AHHRRIA", "_ARRRA_", "__AAA__"],
+            ],
+            new $Character("0"),
+            $PatchouliAPI.anyMatcher(),
+            new $Character("N"),
+            Block.getBlock("ars_nouveau:purple_archwood_leaves"),
+            new $Character("K"),
+            Block.getBlock("ars_nouveau:purple_archwood_log"),
+            new $Character("O"),
+            Block.getBlock("ars_nouveau:blue_archwood_leaves"),
+            new $Character("M"),
+            Block.getBlock("ars_nouveau:blue_archwood_log"),
+            new $Character("T"),
+            Block.getBlock("ars_nouveau:red_archwood_leaves"),
+            new $Character("S"),
+            Block.getBlock("ars_nouveau:red_archwood_log"),
+            new $Character("D"),
+            Block.getBlock("ars_nouveau:green_archwood_leaves"),
+            new $Character("C"),
+            Block.getBlock("ars_nouveau:green_archwood_log"),
+            new $Character("A"),
+            Block.getBlock("botania:pattern_framed_livingwood"),
+            new $Character("E"),
+            Block.getBlock("botania:mana_pylon"),
+            new $Character("L"),
+            Block.getBlock("botania:terra_plate"),
+            new $Character("I"),
+            Block.getBlock("botania:infused_grass"),
+            new $Character("H"),
+            Block.getBlock("botania:mutated_grass"),
+            new $Character("R"),
+            Block.getBlock("botania:scorched_grass"),
+            new $Character("G"),
+            Block.getBlock("botania:vivid_grass"),
+            new $Character("Z"),
+            Block.getBlock("botania:light_relay")
+        )
+    );
 });

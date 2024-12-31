@@ -148,6 +148,7 @@
     "message.mierno.colossal_furnace_core_no_clear": "請保證巨型熔爐搭建範圍內沒有§c生物§r存在",
     "message.mierno.colossal_furnace_core_no_space": "請保證巨型熔爐搭建範圍內沒有除核心外的§c其他方塊§r存在",
     "message.mierno.colossal_furnace_core_no_enough_item": "巨型熔爐框架不足，需要 §a26§r 個，還差 %s 個",
+    "message.mierno.terra_plate_error": "當前泰拉凝聚板的結構不正確，請查看泰拉凝聚板的任務獲取更多信息",
 
     "death.attack.mistDamage": "%1$s 迷失了",
 

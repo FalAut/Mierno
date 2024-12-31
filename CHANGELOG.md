@@ -5,6 +5,11 @@
 -   现在若泰拉凝聚板的结构不正确时会警告玩家
 -   ME 无限圆石元件现在改为使用 5 级造石机合成
 
+-   Fix incorrect item requirement for assembly room capsules
+-   Fixed an issue with the recipe cycle in the Press
+-   Players are now warned if the Terra Cohesion Plate is not constructed correctly.
+-   ME Unlimited Roundstone Components are now synthesised using a Level 5 Stone Maker.
+
 ## v0.0.6
 
 -   为巨型熔炉的搭建添加了条件，现在会检测搭建范围内是否有生物或方块存在，会提示框架数量是否足够

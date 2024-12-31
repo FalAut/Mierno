@@ -1,6 +1,6 @@
-# How to Start/Run the Server
+# How to Start / Run the Server
 
-You can start or run the server using the methods below.
+**Of course you can use your own way of starting/running the server**
 
 ## Preparation
 

@@ -87,7 +87,7 @@ ServerEvents.recipes((event) => {
         .shapeless("bloodmagic:ritualdivinerdusk", ["bloodmagic:ritualdiviner", "bloodmagic:duskscribetool"])
         .keepIngredient("bloodmagic:duskscribetool");
 
-    kubejs.shapeless("4x ae2:not_so_mysterious_cube", "ae2:mysterious_cube");
+    kubejs.shapeless("4x ae2:not_so_mysterious_cube", "ae2:mysterious_cube").keepIngredient("ae2:mysterious_cube");
     kubejs.shapeless("naturesaura:gold_leaf", ["gold_ingot", "#leaves"]);
     kubejs.shapeless("mierno:futura_block", "ae2:controller").keepIngredient("ae2:controller");
     kubejs.shapeless("2x botania:blacker_lotus", "botania:blacker_lotus");

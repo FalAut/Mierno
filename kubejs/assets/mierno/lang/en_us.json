@@ -397,7 +397,7 @@
 
     "mierno.welcome.backup.title": "Backup",
     "mierno.welcome.backup.subtitle": "Save your world",
-    "mierno.welcome.backup.desc1": "Automatic backup occurs every 1 hour (real time)",
+    "mierno.welcome.backup.desc1": "Automatic backup occurs every 30 minutes (real time)",
     "mierno.welcome.backup.desc2": "Maximum of 10 backups will be kept",
     "mierno.welcome.backup.desc3": "When exceeded, the oldest backup will be automatically deleted in sequence",
     "mierno.welcome.backup.desc4": "You can also use the command /simplebackups backup start to create a backup",

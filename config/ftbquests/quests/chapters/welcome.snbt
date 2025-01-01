@@ -33,7 +33,7 @@
 					type: "item"
 				}
 				{
-					count: 16
+					count: 64
 					id: "73212191B5845ABD"
 					item: "ae2:black_glass_cable"
 					team_reward: true

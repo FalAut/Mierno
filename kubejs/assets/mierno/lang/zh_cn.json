@@ -397,7 +397,7 @@
 
     "mierno.welcome.backup.title": "备份",
     "mierno.welcome.backup.subtitle": "拯救你的存档",
-    "mierno.welcome.backup.desc1": "每 1 个小时（现实时间）会自动进行一次备份",
+    "mierno.welcome.backup.desc1": "每 30 分钟（现实时间）会自动进行一次备份",
     "mierno.welcome.backup.desc2": "最多会保留 10 个备份",
     "mierno.welcome.backup.desc3": "超过后会自动依次删除最早的备份",
     "mierno.welcome.backup.desc4": "你也可以输入指令 /simplebackups backup start 进行备份",

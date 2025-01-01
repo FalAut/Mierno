@@ -24,3 +24,4 @@ const $Integer = Java.loadClass("java.lang.Integer");
 const $BlockHitResult = Java.loadClass("net.minecraft.world.phys.BlockHitResult");
 const $UseOnContext = Java.loadClass("net.minecraft.world.item.context.UseOnContext");
 const $DummyTooltipItem = Java.loadClass("com.klikli_dev.occultism.common.item.DummyTooltipItem");
+const $TagKey = Java.loadClass("net.minecraft.tags.TagKey");

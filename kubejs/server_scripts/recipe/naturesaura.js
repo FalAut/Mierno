@@ -68,14 +68,25 @@ ServerEvents.recipes((event) => {
     ]);
 
     naturesaura.tree_ritual("naturesaura:conversion_catalyst", [
-        "mierno:sun_crystal_full",
-        "naturesaura:gold_brick",
-        "naturesaura:gold_leaf",
         "naturesaura:token_euphoria",
-        "naturesaura:calling_spirit",
-        "naturesaura:infused_iron",
-        "naturesaura:sky_ingot",
-        Item.of("naturesaura:aura_bottle", '{stored_type:"naturesaura:overworld"}').weakNBT(),
+        "minecraft:gold_block",
+        "naturesaura:infused_stone",
+        "naturesaura:infused_stone",
+        "naturesaura:gold_brick",
+        "naturesaura:gold_brick",
+        "naturesaura:gold_brick",
+        "naturesaura:gold_brick",
+    ]);
+
+    naturesaura.tree_ritual("naturesaura:crushing_catalyst", [
+        "minecraft:flint",
+        "minecraft:piston",
+        "naturesaura:infused_stone",
+        "naturesaura:infused_stone",
+        "naturesaura:gold_brick",
+        "naturesaura:gold_brick",
+        "naturesaura:gold_brick",
+        "naturesaura:gold_brick",
     ]);
 
     naturesaura.tree_ritual("mierno:nether_catalyst", [

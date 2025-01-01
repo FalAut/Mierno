@@ -33,8 +33,9 @@
 				id: "ae2wtlib:wireless_universal_terminal"
 				tag: {
 					crafting: 1b
+					ex_pattern_access: 1b
 					internalCurrentPower: Infinityd
-					internalMaxPower: 4800000.0d
+					internalMaxPower: 6400000.0d
 					pattern_access: 1b
 					pattern_encoding: 1b
 				}

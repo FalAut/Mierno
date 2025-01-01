@@ -10,6 +10,15 @@
 	quest_links: [ ]
 	quests: [
 		{
+			description: [
+				"{mierno.welcome.main.desc1}"
+				""
+				"{mierno.welcome.main.desc2}"
+				""
+				"{mierno.welcome.main.desc3}"
+				""
+				"{mierno.welcome.main.desc4}"
+			]
 			disable_toast: true
 			icon: {
 				Count: 1
@@ -28,14 +37,14 @@
 				}
 				{
 					id: "47221960C76FE6FE"
-					item: "ae2:drive"
+					item: "expatternprovider:ex_drive"
 					team_reward: true
 					type: "item"
 				}
 				{
 					count: 64
 					id: "73212191B5845ABD"
-					item: "ae2:black_glass_cable"
+					item: "ae2:fluix_glass_cable"
 					team_reward: true
 					type: "item"
 				}
@@ -76,7 +85,7 @@
 					type: "item"
 				}
 				{
-					count: 4
+					count: 10
 					id: "45A01D5B3446DA35"
 					item: {
 						Count: 1
@@ -105,8 +114,9 @@
 						id: "ae2wtlib:wireless_universal_terminal"
 						tag: {
 							crafting: 1b
+							ex_pattern_access: 1b
 							internalCurrentPower: Infinityd
-							internalMaxPower: 4800000.0d
+							internalMaxPower: 6400000.0d
 							pattern_access: 1b
 							pattern_encoding: 1b
 						}

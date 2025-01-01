@@ -98,6 +98,12 @@ ServerEvents.tags("block", (event) => {
         "bloodmagic:accelerationrune2",
         "bloodmagic:chargingrune2",
     ]);
+
+    event.add("mierno:terra_altar_frame", [
+        "botania:pattern_framed_livingwood",
+        "mierno:item_input",
+        "mierno:item_output",
+    ]);
 });
 
 ServerEvents.tags("fluid", (event) => {

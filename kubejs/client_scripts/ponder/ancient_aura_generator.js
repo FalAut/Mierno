@@ -24,5 +24,6 @@ Ponder.registry((event) => {
                 Block.getBlock("naturesaura:generator_limit_remover").defaultBlockState(),
                 false
             );
+            scene.overlay.showOutline("red", 1, [3, 3, 3], 20);
         });
 });

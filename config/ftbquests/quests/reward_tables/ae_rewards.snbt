@@ -1,0 +1,23 @@
+{
+	id: "17412109B9214183"
+	loot_size: 10
+	order_index: 4
+	rewards: [
+		{ item: "ae2:logic_processor", random_bonus: 16, team_reward: true }
+		{ item: "ae2:calculation_processor", random_bonus: 16, team_reward: true }
+		{ item: "ae2:engineering_processor", random_bonus: 16, team_reward: true }
+		{ item: "ae2:fluix_crystal", random_bonus: 16, team_reward: true }
+		{ item: "ae2:certus_quartz_crystal", random_bonus: 32, team_reward: true }
+		{ item: "ae2:formation_core", random_bonus: 16, team_reward: true }
+		{ item: "ae2:annihilation_core", random_bonus: 16, team_reward: true }
+		{ item: "ae2:sky_stone_block", random_bonus: 16, team_reward: true }
+		{ item: "ae2:quartz_glass", random_bonus: 16 }
+		{ item: "ae2:cell_component_1k", weight: 0.1f }
+		{ item: "ae2:cell_component_4k", weight: 0.1f }
+		{ item: "ae2:cell_component_16k", weight: 0.1f }
+		{ item: "ae2:cell_component_64k", weight: 0.1f }
+		{ item: "ae2:cell_component_256k", weight: 0.05f }
+		{ item: "ae2:fluix_glass_cable", random_bonus: 64 }
+	]
+	title: "ae_rewards1"
+}

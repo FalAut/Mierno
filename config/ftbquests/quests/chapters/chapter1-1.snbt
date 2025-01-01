@@ -56,6 +56,13 @@
 				"{mierno.chapter1-1.oak_sapling.desc3}"
 			]
 			id: "0EF181ADCC2BD78C"
+			rewards: [{
+				count: 16
+				id: "27F8A3365672B1F6"
+				item: "minecraft:oak_sapling"
+				team_reward: true
+				type: "item"
+			}]
 			subtitle: "{\"translate\":\"mierno.chapter1-1.oak_sapling.subtitle\",\"color\":\"gold\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/create ponder minecraft:oak_sapling\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}}"
 			tasks: [{
 				id: "2E52F34D24E72BB9"
@@ -100,6 +107,13 @@
 				"2EBCD8DF469CB6FF"
 			]
 			id: "3E9675E1ABC429B9"
+			rewards: [{
+				count: 64
+				id: "0D5CF19127119F55"
+				item: "minecraft:oak_leaves"
+				team_reward: true
+				type: "item"
+			}]
 			tasks: [{
 				id: "3D090DD2B3029FF4"
 				item: "mierno:fiber"
@@ -111,6 +125,13 @@
 		{
 			dependencies: ["3E9675E1ABC429B9"]
 			id: "48D0CC04CEA4742B"
+			rewards: [{
+				count: 16
+				id: "1699762B9F81386C"
+				item: "naturesaura:gold_fiber"
+				team_reward: true
+				type: "item"
+			}]
 			tasks: [{
 				id: "2019A2E4CBDD71BC"
 				item: "naturesaura:gold_fiber"
@@ -125,6 +146,13 @@
 				"33FF1527D1246937"
 			]
 			id: "0F9F0DF0B936E745"
+			rewards: [{
+				count: 64
+				id: "52E367128E344E0E"
+				item: "minecraft:oak_leaves"
+				team_reward: true
+				type: "item"
+			}]
 			tasks: [{
 				id: "279607596E3B7B7A"
 				item: "minecraft:oak_leaves"
@@ -136,6 +164,13 @@
 		{
 			dependencies: ["0F9F0DF0B936E745"]
 			id: "39730AC4D863B6EB"
+			rewards: [{
+				count: 64
+				id: "6005092C95E134A1"
+				item: "minecraft:grass_block"
+				team_reward: true
+				type: "item"
+			}]
 			tasks: [{
 				id: "7709F13C8704FE9C"
 				item: "minecraft:grass_block"
@@ -147,6 +182,13 @@
 		{
 			dependencies: ["0EF181ADCC2BD78C"]
 			id: "2EBCD8DF469CB6FF"
+			rewards: [{
+				count: 32
+				id: "4211C8A01CFDA4FB"
+				item: "minecraft:oak_log"
+				team_reward: true
+				type: "item"
+			}]
 			tasks: [{
 				id: "0E540125FEE8A552"
 				item: "mierno:oak_mortar"
@@ -163,6 +205,13 @@
 				"{mierno.chapter1-1.gold_leaf.desc2}"
 			]
 			id: "0C05E172FDFFC328"
+			rewards: [{
+				count: 16
+				id: "3B78F97D618A51E4"
+				item: "naturesaura:gold_leaf"
+				team_reward: true
+				type: "item"
+			}]
 			subtitle: "{mierno.chapter1-1.gold_leaf.subtitle}"
 			tasks: [{
 				id: "4586848248AD686A"
@@ -175,6 +224,13 @@
 		{
 			dependencies: ["2E52F34D24E72BB9"]
 			id: "5134908BA0FD9758"
+			rewards: [{
+				count: 32
+				id: "6A6B270C173E544F"
+				item: "naturesaura:gold_powder"
+				team_reward: true
+				type: "item"
+			}]
 			shape: "square"
 			subtitle: "{\"translate\":\"mierno.chapter1-1.tree_ritual.subtitle\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"373C0544245F9AA0\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}}"
 			tasks: [{
@@ -196,16 +252,19 @@
 					count: 2
 					id: "51675D9A3003520A"
 					item: "functionalstorage:oak_1"
+					team_reward: true
 					type: "item"
 				}
 				{
 					id: "5695091937838EA3"
 					item: "functionalstorage:puller_upgrade"
+					team_reward: true
 					type: "item"
 				}
 				{
 					id: "07E18E0B0E9B537B"
 					item: "functionalstorage:pusher_upgrade"
+					team_reward: true
 					type: "item"
 				}
 			]
@@ -222,6 +281,13 @@
 		{
 			dependencies: ["560E6468D1517943"]
 			id: "70E13569FD61AD48"
+			rewards: [{
+				count: 64
+				id: "213D309D60C91C7C"
+				item: "naturesaura:infused_stone"
+				team_reward: true
+				type: "item"
+			}]
 			tasks: [{
 				id: "2AFD5F4DF375CECD"
 				item: "naturesaura:infused_stone"
@@ -233,6 +299,13 @@
 		{
 			dependencies: ["560E6468D1517943"]
 			id: "434993810E238E86"
+			rewards: [{
+				count: 64
+				id: "368CFDCA2BFD8D2F"
+				item: "mierno:infused_wood"
+				team_reward: true
+				type: "item"
+			}]
 			tasks: [{
 				id: "57510219A8BB0207"
 				item: "mierno:infused_wood"
@@ -244,6 +317,13 @@
 		{
 			dependencies: ["434993810E238E86"]
 			id: "74378BE2AA785BF9"
+			rewards: [{
+				count: 16
+				id: "6943721F0D2CFC74"
+				item: "mierno:token_base"
+				team_reward: true
+				type: "item"
+			}]
 			tasks: [{
 				id: "4B9D289C60F71CBE"
 				item: "mierno:token_base"
@@ -269,6 +349,13 @@
 				"7D334F1CB554A94B"
 			]
 			id: "27992DB89B7BC29D"
+			rewards: [{
+				count: 32
+				id: "7FD0DE7F1DA94D0A"
+				item: "naturesaura:token_joy"
+				team_reward: true
+				type: "item"
+			}]
 			tasks: [{
 				id: "1B39274BB454F5CB"
 				item: "naturesaura:token_joy"
@@ -299,6 +386,13 @@
 		{
 			dependencies: ["05534E447EAA66A0"]
 			id: "0FA113CABE84D85E"
+			rewards: [{
+				count: 64
+				id: "5DCCE25A47CA5676"
+				item: "minecraft:sand"
+				team_reward: true
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "3CBE97D132AD468B"
@@ -317,6 +411,19 @@
 		{
 			dependencies: ["0FA113CABE84D85E"]
 			id: "4648D64F506FF6B4"
+			rewards: [{
+				count: 16
+				id: "4781231025DCDD27"
+				item: {
+					Count: 1
+					id: "naturesaura:aura_bottle"
+					tag: {
+						stored_type: "naturesaura:overworld"
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "244369E1BF70F320"
@@ -342,6 +449,13 @@
 		{
 			dependencies: ["70E13569FD61AD48"]
 			id: "75126E430EFF395D"
+			rewards: [{
+				count: 16
+				id: "0B4DA60E04DEC673"
+				item: "naturesaura:token_euphoria"
+				team_reward: true
+				type: "item"
+			}]
 			shape: "square"
 			subtitle: "{\"translate\":\"mierno.chapter1-1.offering_table.subtitle\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"1893AAF3ED9994A3\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}}"
 			tasks: [{
@@ -355,6 +469,13 @@
 		{
 			dependencies: ["4586848248AD686A"]
 			id: "63862C0D00CD48EE"
+			rewards: [{
+				count: 32
+				id: "3AC1D2734334994C"
+				item: "naturesaura:calling_spirit"
+				team_reward: true
+				type: "item"
+			}]
 			tasks: [{
 				id: "0422673B6ACFC30F"
 				item: "naturesaura:calling_spirit"
@@ -366,6 +487,13 @@
 		{
 			dependencies: ["2E52F34D24E72BB9"]
 			id: "74D6E424020C14E4"
+			rewards: [{
+				count: 16
+				id: "77C4AFB005B7A13A"
+				item: "naturesaura:token_joy"
+				team_reward: true
+				type: "item"
+			}]
 			tasks: [{
 				id: "55171B6354478A86"
 				item: "mierno:wrapped_gift"
@@ -381,6 +509,21 @@
 				"63862C0D00CD48EE"
 			]
 			id: "4C6F3892B4F38E0B"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6E189203EFC2588A"
+					table_id: 1320735954632056874L
+					type: "loot"
+				}
+				{
+					count: 16
+					id: "50F617AAC174935C"
+					item: "naturesaura:token_euphoria"
+					team_reward: true
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "1E49CF308215F018"
 				item: "mierno:whos_gift"
@@ -392,6 +535,12 @@
 		{
 			dependencies: ["4C6F3892B4F38E0B"]
 			id: "7C2D6C62922FB508"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "69078C8D12E092EA"
+				table_id: 1320735954632056874L
+				type: "loot"
+			}]
 			tasks: [
 				{
 					id: "23BAD924A381435F"
@@ -440,6 +589,21 @@
 		{
 			dependencies: ["7C2D6C62922FB508"]
 			id: "78E11B0D446D4103"
+			rewards: [
+				{
+					count: 16
+					id: "75DA2BF3CBB73F11"
+					item: "naturesaura:infused_iron"
+					team_reward: true
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "66457022ACAE211B"
+					table_id: 1320735954632056874L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "4BA802B7ED4C3AB6"
 				item: "naturesaura:infused_iron"
@@ -454,6 +618,12 @@
 				"340D9CC5D115AD42"
 			]
 			id: "650A934E657C4828"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "60009ABB04D87F01"
+				table_id: 1320735954632056874L
+				type: "loot"
+			}]
 			shape: "gear"
 			size: 2.0d
 			tasks: [{
@@ -467,6 +637,21 @@
 		{
 			dependencies: ["78E11B0D446D4103"]
 			id: "6C95247ADE07020A"
+			rewards: [
+				{
+					count: 16
+					id: "713962BAC099D753"
+					item: "naturesaura:sky_ingot"
+					team_reward: true
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "56806F46E3B2A9D2"
+					table_id: 1320735954632056874L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "42B285FCA5183519"
 				item: "naturesaura:sky_ingot"
@@ -478,6 +663,11 @@
 		{
 			dependencies: ["434993810E238E86"]
 			id: "0EAC3867EE29E291"
+			rewards: [{
+				id: "2277C68FB723B6EA"
+				item: "naturesaura:ancient_sapling"
+				type: "item"
+			}]
 			tasks: [{
 				id: "6B14226F5547BC4F"
 				item: "naturesaura:ancient_sapling"
@@ -489,6 +679,12 @@
 		{
 			dependencies: ["6C95247ADE07020A"]
 			id: "33A3DD4A24E4DAAC"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "101001739A2F6F28"
+				table_id: 1320735954632056874L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "250AAEC083DA794B"
 				item: {
@@ -504,6 +700,21 @@
 		{
 			dependencies: ["6C95247ADE07020A"]
 			id: "340D9CC5D115AD42"
+			rewards: [
+				{
+					count: 10
+					id: "6BE4E4FEA07B02B2"
+					item: "mierno:sun_crystal_full"
+					team_reward: true
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7D6E5E4A14620A96"
+					table_id: 1320735954632056874L
+					type: "loot"
+				}
+			]
 			tasks: [{
 				id: "4564CB7789160E6E"
 				item: "mierno:sun_crystal_full"
@@ -515,6 +726,26 @@
 		{
 			dependencies: ["0EAC3867EE29E291"]
 			id: "0D015848E9C02147"
+			rewards: [
+				{
+					id: "684D982FDC2F9960"
+					item: "naturesaura:ancient_sapling"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "310F58B1C079BD27"
+					item: {
+						Count: 1
+						id: "naturesaura:aura_bottle"
+						tag: {
+							stored_type: "naturesaura:overworld"
+						}
+					}
+					team_reward: true
+					type: "item"
+				}
+			]
 			shape: "square"
 			size: 1.5d
 			subtitle: "{\"translate\":\"mierno.chapter1-1.ancient_aura_gen.subtitle\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"0CAAD36B1835ABCD\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}}"
@@ -529,6 +760,12 @@
 		{
 			dependencies: ["7C2D6C62922FB508"]
 			id: "606FBB64A6DF9173"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "10179BCF16F0DAF2"
+				table_id: 1320735954632056874L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "58E0C495F87298D7"
 				item: "naturesaura:conversion_catalyst"
@@ -540,6 +777,12 @@
 		{
 			dependencies: ["606FBB64A6DF9173"]
 			id: "67C6081CE1D32EE0"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "70EA3A8C59EA4185"
+				table_id: 1320735954632056874L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "4AAA808F929BD057"
 				item: "minecraft:quartz"
@@ -551,6 +794,12 @@
 		{
 			dependencies: ["606FBB64A6DF9173"]
 			id: "1428C654D3700C43"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "18C7EA3799F10BFC"
+				table_id: 1320735954632056874L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "7C4910F905911997"
 				item: "minecraft:glowstone_dust"
@@ -562,6 +811,12 @@
 		{
 			dependencies: ["606FBB64A6DF9173"]
 			id: "68A397B833251489"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "421C89A6411C9F86"
+				table_id: 1320735954632056874L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "524395A066CBBB72"
 				item: "minecraft:amethyst_shard"
@@ -573,6 +828,12 @@
 		{
 			dependencies: ["68A397B833251489"]
 			id: "6CF0ED53336664A1"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6870A6735514E7AB"
+				table_id: 1320735954632056874L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "4EC9927098FE33A5"
 				item: "minecraft:ender_pearl"
@@ -584,6 +845,12 @@
 		{
 			dependencies: ["6CF0ED53336664A1"]
 			id: "46D9D55ED66C4CD1"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "63800E14B44D903A"
+				table_id: 1320735954632056874L
+				type: "loot"
+			}]
 			tasks: [
 				{
 					id: "47E940C385826AC0"
@@ -610,6 +877,13 @@
 		{
 			dependencies: ["0EF181ADCC2BD78C"]
 			id: "5E487C4D287044B9"
+			rewards: [{
+				count: 32
+				id: "7D79F00E96CFDD24"
+				item: "minecraft:oak_log"
+				team_reward: true
+				type: "item"
+			}]
 			tasks: [{
 				id: "4152D36EFC767BF6"
 				item: "mierno:oak_crucible"
@@ -632,6 +906,13 @@
 		{
 			dependencies: ["0EF181ADCC2BD78C"]
 			id: "7FDFD39EFD94399D"
+			rewards: [{
+				count: 32
+				id: "3D024DC7911AD725"
+				item: "minecraft:oak_log"
+				team_reward: true
+				type: "item"
+			}]
 			tasks: [{
 				id: "5647571B2350045B"
 				item: {
@@ -663,6 +944,13 @@
 				"6238089818A2926E"
 			]
 			id: "21C48122170841B7"
+			rewards: [{
+				count: 64
+				id: "4EF5D3C6DB10E8F3"
+				item: "minecraft:cobblestone"
+				team_reward: true
+				type: "item"
+			}]
 			tasks: [{
 				id: "3FE586A81B68656C"
 				item: "minecraft:cobblestone"
@@ -703,6 +991,12 @@
 					}
 					type: "item"
 				}
+				{
+					exclude_from_claim_all: true
+					id: "304F1FCAB9BFD4EE"
+					table_id: 1320735954632056874L
+					type: "loot"
+				}
 			]
 			shape: "rsquare"
 			size: 1.1d
@@ -720,6 +1014,12 @@
 				"1A1A7A612BDD9FC7"
 			]
 			id: "6823892A098E3B57"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5625F3848D44AB1D"
+				table_id: 1320735954632056874L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "1DF4B373ECEB9F23"
 				item: "minecraft:raw_iron"
@@ -731,6 +1031,13 @@
 		{
 			dependencies: ["0F9F0DF0B936E745"]
 			id: "46753187677AC325"
+			rewards: [{
+				count: 32
+				id: "1B4F53CD71D50A29"
+				item: "minecraft:bone_meal"
+				team_reward: true
+				type: "item"
+			}]
 			subtitle: "{tooltip.mierno.composter}"
 			tasks: [
 				{
@@ -753,6 +1060,22 @@
 				"39730AC4D863B6EB"
 			]
 			id: "5257F26F98A9FD0D"
+			rewards: [
+				{
+					count: 32
+					id: "71E67279C6E21A20"
+					item: "minecraft:poppy"
+					team_reward: true
+					type: "item"
+				}
+				{
+					count: 32
+					id: "19CFF17AD2D0A365"
+					item: "minecraft:wheat"
+					team_reward: true
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					id: "56FBFEE56B1D33CB"
@@ -785,6 +1108,13 @@
 			]
 			icon: "mierno:colossal_furnace_core"
 			id: "44CF0DA410C3700D"
+			rewards: [{
+				count: 64
+				id: "059F31FE01D9AD46"
+				item: "minecraft:cobblestone"
+				team_reward: true
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "38C47A682F8B46DA"
@@ -804,6 +1134,11 @@
 		{
 			dependencies: ["0FA113CABE84D85E"]
 			id: "110892C49B521C2E"
+			rewards: [{
+				id: "1BF356ECE2BBEB85"
+				item: "mierno:cobble_gen_tier2"
+				type: "item"
+			}]
 			tasks: [{
 				id: "76A738D6C3A32834"
 				item: "mierno:cobble_gen_tier1"
@@ -815,6 +1150,12 @@
 		{
 			dependencies: ["6C95247ADE07020A"]
 			id: "63CBC18A3CC40D45"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5E65D17A6E46B19D"
+				table_id: 1320735954632056874L
+				type: "loot"
+			}]
 			tasks: [{
 				id: "28564951DA61E839"
 				item: "mierno:dream_wings"
@@ -826,6 +1167,11 @@
 		{
 			dependencies: ["63862C0D00CD48EE"]
 			id: "4FAB53C7C3E08613"
+			rewards: [{
+				id: "27913F297A9D0386"
+				item: "naturesaura:birth_spirit"
+				type: "item"
+			}]
 			shape: "square"
 			subtitle: "{\"translate\":\"mierno.chapter1-1.animal_spanwer.subtitle\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"54914242D9770D22\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}}"
 			tasks: [{

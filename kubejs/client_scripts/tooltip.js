@@ -243,4 +243,8 @@ ItemEvents.tooltip((event) => {
     );
     event.add("thermal:blitz_rod", Text.translate("tooltip.mierno.blitz_rod").gold());
     event.add("thermal:basalz_rod", Text.translate("tooltip.mierno.basalz_rod").gold());
+    event.add("naturesaura:gold_fiber", Text.translate("tooltip.mierno.gold_fiber").gold());
+    event.add("ae2:not_so_mysterious_cube", Text.translate("tooltip.mierno.not_so_mysterious_cube").gold());
+    event.add("mierno:futura_block", Text.translate("tooltip.mierno.futura_block").gold());
+    event.add("thermal:rubberwood_sapling", Text.translate("tooltip.mierno.rubberwood_sapling").gold());
 });

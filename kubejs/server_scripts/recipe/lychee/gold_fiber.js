@@ -11,8 +11,8 @@ ServerEvents.recipes((event) => {
             {
                 type: "time",
                 value: {
-                    min: 0,
-                    max: 12000,
+                    min: 5500,
+                    max: 6500,
                 },
             },
             {

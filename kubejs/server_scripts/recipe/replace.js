@@ -80,4 +80,5 @@ ServerEvents.recipes((event) => {
         Item.of("naturesaura:aura_bottle", '{stored_type:"naturesaura:end"}').strongNBT(),
         "fluxnetworks:flux_core"
     );
+    event.replaceInput({ id: "botania:light_relay" }, "botania:dragonstone", "glowstone_dust");
 });

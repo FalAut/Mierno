@@ -1,0 +1,63 @@
+{
+	id: "1254325A69EE202A"
+	loot_size: 3
+	order_index: 6
+	rewards: [
+		{ item: "modularrouters:modular_router", weight: 3.0f }
+		{ item: "modularrouters:activator_module" }
+		{ item: "modularrouters:breaker_module", weight: 2.0f }
+		{ item: "modularrouters:detector_module" }
+		{ item: "modularrouters:distributor_module" }
+		{ item: "modularrouters:dropper_module" }
+		{ item: "modularrouters:extruder_module_1", weight: 1.5f }
+		{ item: "modularrouters:extruder_module_2", weight: 1.5f }
+		{ item: "modularrouters:flinger_module", weight: 2.0f }
+		{ item: "modularrouters:fluid_module" }
+		{ item: "modularrouters:fluid_module_2" }
+		{ item: "modularrouters:placer_module", weight: 2.0f }
+		{ item: "modularrouters:player_module" }
+		{ item: "modularrouters:puller_module_1", weight: 1.5f }
+		{ item: "modularrouters:puller_module_2", weight: 1.5f }
+		{ item: "modularrouters:sender_module_1", weight: 1.5f }
+		{ item: "modularrouters:sender_module_2", weight: 1.5f }
+		{ item: "modularrouters:sender_module_3", weight: 1.5f }
+		{ item: "modularrouters:void_module" }
+		{ item: "modularrouters:vacuum_module" }
+		{ item: "modularrouters:range_up_augment" }
+		{ item: "modularrouters:fast_pickup_augment" }
+		{ item: "modularrouters:stack_augment" }
+		{ item: "modularrouters:speed_upgrade" }
+		{ item: "modularrouters:augment_core" }
+		{ item: "modularrouters:blank_module" }
+		{ item: "modularrouters:blank_upgrade" }
+		{ item: "modularrouters:bulk_item_filter" }
+		{ item: "laserio:laser_node" }
+		{ item: "laserio:card_item" }
+		{ item: "laserio:card_fluid" }
+		{ item: "laserio:card_energy" }
+		{ item: "laserio:card_redstone" }
+		{
+			item: {
+				Count: 1
+				id: "laserio:filter_basic"
+				tag: {
+					inv: {
+						Items: [ ]
+						Size: 15
+					}
+				}
+			}
+		}
+		{ item: "functionalstorage:oak_1" }
+		{ item: "functionalstorage:oak_4" }
+		{ item: "functionalstorage:pusher_upgrade", weight: 3.0f }
+		{ item: "functionalstorage:puller_upgrade", weight: 3.0f }
+		{ item: "functionalstorage:collector_upgrade", weight: 3.0f }
+		{ item: "functionalstorage:copper_upgrade" }
+		{ item: "functionalstorage:gold_upgrade" }
+		{ item: "functionalstorage:diamond_upgrade" }
+		{ item: "functionalstorage:netherite_upgrade", weight: 0.1f }
+		{ item: "functionalstorage:void_upgrade", weight: 0.1f }
+	]
+	title: "automation"
+}

@@ -618,7 +618,6 @@
 			icon: "mierno:assembly_room_controller"
 			id: "16DC6C2BE109C5E8"
 			rewards: [{
-				auto: "enabled"
 				id: "2BC729DA08C6FC3C"
 				item: {
 					Count: 1
@@ -657,7 +656,7 @@
 				{
 					consume_items: true
 					id: "4C528935B13187D2"
-					item: "mierno:energy_input"
+					item: "mierno:item_output"
 					type: "item"
 				}
 				{

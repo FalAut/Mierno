@@ -1,0 +1,13 @@
+{
+	id: "65DF445C417AC54D"
+	loot_size: 5
+	order_index: 3
+	rewards: [
+		{ item: "botania:rune_water" }
+		{ item: "botania:rune_fire" }
+		{ item: "botania:rune_earth" }
+		{ item: "botania:rune_air" }
+		{ item: "botania:rune_mana" }
+	]
+	title: "rune_rewards"
+}

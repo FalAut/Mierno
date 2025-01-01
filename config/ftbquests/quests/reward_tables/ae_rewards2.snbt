@@ -1,0 +1,21 @@
+{
+	id: "4A4F7B794386C8E4"
+	loot_size: 3
+	order_index: 5
+	rewards: [
+		{ item: "ae2:interface", weight: 3.0f }
+		{ item: "expatternprovider:ex_interface", weight: 0.1f }
+		{ item: "ae2:pattern_provider", weight: 5.0f }
+		{ item: "expatternprovider:ex_pattern_provider", weight: 0.1f }
+		{ item: "ae2:molecular_assembler", weight: 2.0f }
+		{ item: "expatternprovider:ex_molecular_assembler", weight: 0.1f }
+		{ item: "expatternprovider:ex_inscriber", weight: 0.1f }
+		{ item: "expatternprovider:ingredient_buffer", weight: 0.1f }
+		{ item: "expatternprovider:wireless_connect", weight: 0.1f }
+		{ item: "ae2:crafting_accelerator", weight: 3.0f }
+		{ item: "ae2:crafting_unit", weight: 3.0f }
+		{ item: "expatternprovider:oversize_interface", weight: 0.05f }
+		{ item: "ae2:speed_card", random_bonus: 16, weight: 2.0f }
+	]
+	title: "ae_rewards2"
+}

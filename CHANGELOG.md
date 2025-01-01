@@ -6,6 +6,14 @@
 -   修复泰拉凝聚要求的多方块与模块化泰拉凝聚要求的结构方向不一样，导致无法直接使用 #9
 -   因玩家受到狂风人攻击时使用指令/spawn 会导致客户端崩溃，故移除了狂风人在迷雾森林中的生成
 
+---
+
+-   Fixed the conflict between middle mouse button and backpack organisation when editing samples.
+-   Added a lot of rewards to the pre-quests
+-   Fixed server crash when connecting AE devices to item input bins #8
+-   Fixed Terra Cohesion requiring multi-cube and Modular Terra Cohesion requiring different structure orientations, making it impossible to use them directly #9
+-   Removed the spawn of the Windrunner in the Misty Forest as using command/spawn when the player is attacked by a Windrunner will cause the client to crash.
+
 ## v0.0.7
 
 -   修复装配室胶囊需求物品不正确的问题

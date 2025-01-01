@@ -150,6 +150,7 @@ ItemEvents.tooltip((event) => {
     event.add("mierno:dark_eyes", Text.translate("tooltip.mierno.dark_eyes").gold());
     event.add("evilcraft:spiked_plate", Text.translate("tooltip.mierno.spiked_plate").gold());
     event.add("evilcraft:hardened_blood_shard", Text.translate("tooltip.mierno.hardened_blood_shard").gold());
+    event.add("naturesaura:fortress_finder", Text.translate("tooltip.mierno.fortress_finder").gold());
 
     event.add(
         "malum:astral_weave",

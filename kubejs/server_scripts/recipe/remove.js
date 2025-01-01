@@ -208,7 +208,6 @@ ServerEvents.recipes((event) => {
         "powah:energizing/nitro_crystal",
         "pneumaticcraft:thermopneumatic_processing_plant",
         "pneumaticcraft:vortex_tube",
-        "pneumaticcraft:refinery_output",
         "pneumaticcraft:refinery",
         "pneumaticcraft:etching_tank",
         "pneumaticcraft:uv_light_box",

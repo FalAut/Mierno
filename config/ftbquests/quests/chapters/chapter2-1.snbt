@@ -1179,6 +1179,12 @@
 					table_id: 5354634242720975076L
 					type: "loot"
 				}
+				{
+					count: 5
+					id: "5023350313846728"
+					item: "minecraft:nether_star"
+					type: "item"
+				}
 			]
 			tasks: [{
 				id: "218F9BE44FACEBBC"

@@ -341,7 +341,7 @@ ServerEvents.recipes((event) => {
         type: "thermal:press",
         ingredients: [
             {
-                tag: "minecraft:diamond",
+                item: "minecraft:diamond",
                 count: 4,
             },
             {

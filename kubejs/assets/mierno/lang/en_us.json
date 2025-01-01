@@ -226,7 +226,7 @@
     "tooltip.mierno.flux_dust": "Obtained by throwing Redstone Dust into a Nether Portal",
     "tooltip.mierno.colorless_gem": "Without Dream Eyes, carrying this will give you darkness and blindness effects",
     "tooltip.mierno.unstable_ingot": "Explodes after 10 seconds when in inventory or dropped",
-    "tooltip.mierno.unstable_singularity": "Extremes meet, the Unstable Singularity won't explode",
+    "tooltip.mierno.unstable_singularity": "the Unstable Singularity won't explode",
     "tooltip.mierno.source_fluidlink_1": "Absorbs §5Source§r from nearby Source Jars to produce §dLiquid Source§r for §aFluid Storage§r §eabove",
     "tooltip.mierno.source_fluidlink_2": "Every §5200 Source§r converts to §d100mb Liquid Source§r",
     "tooltip.mierno.orbital_fluid_retainer_1": "Can convert §bMana§r shot from §eMana Spreaders§r into §3Liquid Mana",

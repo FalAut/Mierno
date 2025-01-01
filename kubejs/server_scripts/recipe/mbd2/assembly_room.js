@@ -34,20 +34,6 @@ ServerEvents.recipes((event) => {
     mierno
         .assembly_room()
         .inputItems([
-            "6x pneumaticcraft:reinforced_stone_slab",
-            "2x pneumaticcraft:transistor",
-            "4x pneumaticcraft:pressure_tube",
-            "pneumaticcraft:small_tank",
-            "4x mierno:reinforced_stone_frame",
-            "ae2:logic_processor",
-            "ae2:engineering_processor",
-        ])
-        .inputFE(10000)
-        .outputItems("pneumaticcraft:refinery_output");
-
-    mierno
-        .assembly_room()
-        .inputItems([
             "2x powah:thermoelectric_plate",
             "4x mierno:reinforced_stone_frame",
             "2x pneumaticcraft:transistor",

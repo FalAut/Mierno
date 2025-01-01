@@ -74,6 +74,7 @@ ServerEvents.recipes((event) => {
         .shapeless("bloodmagic:ritualdivinerdusk", ["bloodmagic:ritualdiviner", "bloodmagic:duskscribetool"])
         .keepIngredient("bloodmagic:duskscribetool");
 
+    kubejs.shapeless("flint", ["gravel", "gravel", "gravel"]);
     kubejs.shapeless("ae2:not_so_mysterious_cube", "ae2:mysterious_cube").keepIngredient("ae2:mysterious_cube");
     kubejs.shapeless("naturesaura:gold_leaf", ["gold_ingot", "#leaves"]);
     kubejs.shapeless("mierno:futura_block", "ae2:controller").keepIngredient("ae2:controller");
@@ -427,7 +428,7 @@ ServerEvents.recipes((event) => {
     });
 
     kubejs.shaped("64x naturesaura:depth_ingot", ["ABA", "CDC", "ABA"], {
-        A: "minecraft:netherite_scrap",
+        A: "minecraft:netherite_ingot",
         B: "naturesaura:sky_ingot",
         C: "botania:terrasteel_ingot",
         D: "mierno:unstable_singularity",

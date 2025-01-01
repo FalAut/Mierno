@@ -226,7 +226,7 @@
     "tooltip.mierno.flux_dust": "將紅石粉扔入下界傳送門獲得",
     "tooltip.mierno.colorless_gem": "如果沒有夢之眼，帶著它會獲得黑暗和失明效果",
     "tooltip.mierno.unstable_ingot": "帶在身上或扔在地上 10 秒後會爆炸",
-    "tooltip.mierno.unstable_singularity": "物極必反，不穩定奇點不會爆炸",
+    "tooltip.mierno.unstable_singularity": "不穩定奇點不會爆炸",
     "tooltip.mierno.source_fluidlink_1": "吸收周圍魔源罐中的§5魔源§r來為§e上方§r的§a流體存儲器§r產生§d液態魔源",
     "tooltip.mierno.source_fluidlink_2": "每§5 200 魔源§r可轉化為 §d100mb 液態魔源§r",
     "tooltip.mierno.orbital_fluid_retainer_1": "可將§e魔力發射器§r發射的§b魔力§r轉化為§3液態魔力",

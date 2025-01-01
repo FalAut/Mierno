@@ -10,6 +10,18 @@
 -   无论铁砧是否损坏，都可以压铁板和金板
 -   添加迷你太阳与幻想质生成荧石
 
+---
+
+-   Changed Lower Realm Alloy Shards to Lower Realm Alloy Ingots in the Abyssal Ingot Synthesis Recipe, please be careful to change your samples
+-   Changed pressure requirement for oil drilling to 3.0
+-   Removed clutter of modular plugins from quest rewards, leaving only blank ones
+-   Fixed recipe conflict between Thermal Aerodynamic Processors and Refinery Outputs #10
+-   Removed recipe for Mordor Pearl Burning Resonance Mordor
+-   Redstone Flux Coil and Redstone Server Induction Furnace recipes no longer require Matter Orbs, please note changes to your samples
+-   Reduced the number of loot quest rewards per claim
+-   Press iron and gold plates regardless of anvil damage
+-   Added mini suns with fantasy mass generating fluorescent stones
+
 ## v0.0.8
 
 -   修复编辑样板时鼠标中键与背包整理冲突的问题

@@ -31,20 +31,6 @@
 		{ item: "minecraft:melon_seeds" }
 		{ item: "minecraft:snowball" }
 		{ item: "minecraft:spider_eye" }
-		{
-			item: {
-				Count: 1
-				id: "ae2wtlib:wireless_universal_terminal"
-				tag: {
-					crafting: 1b
-					ex_pattern_access: 1b
-					internalCurrentPower: Infinityd
-					internalMaxPower: 6400000.0d
-					pattern_access: 1b
-					pattern_encoding: 1b
-				}
-			}
-		}
 	]
 	title: "market"
 }

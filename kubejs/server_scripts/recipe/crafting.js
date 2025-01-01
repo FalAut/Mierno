@@ -57,19 +57,6 @@ ServerEvents.recipes((event) => {
         .shapeless("mierno:token_base", ["mierno:infused_wood", "#axes", "#forge:shears"])
         .damageIngredient(["#axes", "#forge:shears"]);
 
-    kubejs
-        .shapeless("botania:spark", ["mierno:dream_lantern", "#botania:petals", "#botania:petals", "gold_nugget"])
-        .keepIngredient("mierno:dream_lantern");
-
-    kubejs
-        .shapeless("botania:light_relay", [
-            "mierno:dream_lantern",
-            "#botania:petals",
-            "#botania:petals",
-            "botania:spark",
-        ])
-        .keepIngredient("mierno:dream_lantern");
-
     kubejs.shapeless("2x ars_nouveau:magebloom_fiber", "ars_nouveau:magebloom");
     kubejs.shapeless(
         Item.of(
@@ -87,7 +74,7 @@ ServerEvents.recipes((event) => {
         .shapeless("bloodmagic:ritualdivinerdusk", ["bloodmagic:ritualdiviner", "bloodmagic:duskscribetool"])
         .keepIngredient("bloodmagic:duskscribetool");
 
-    kubejs.shapeless("4x ae2:not_so_mysterious_cube", "ae2:mysterious_cube").keepIngredient("ae2:mysterious_cube");
+    kubejs.shapeless("ae2:not_so_mysterious_cube", "ae2:mysterious_cube").keepIngredient("ae2:mysterious_cube");
     kubejs.shapeless("naturesaura:gold_leaf", ["gold_ingot", "#leaves"]);
     kubejs.shapeless("mierno:futura_block", "ae2:controller").keepIngredient("ae2:controller");
     kubejs.shapeless("2x botania:blacker_lotus", "botania:blacker_lotus");
@@ -168,18 +155,6 @@ ServerEvents.recipes((event) => {
     kubejs.shaped("botania:fertilizer", ["ABB", "BB "], {
         A: "bone_meal",
         B: "#botania:petals",
-    });
-
-    kubejs.shaped("mierno:wrapped_gift", ["ABC", "DEF", "GHI"], {
-        A: "stone",
-        B: "minecraft:oak_sapling",
-        C: "naturesaura:gold_fiber",
-        D: "naturesaura:gold_leaf",
-        E: "mierno:gift_box",
-        F: Item.of("naturesaura:aura_bottle", '{stored_type:"naturesaura:overworld"}').weakNBT(),
-        G: "naturesaura:ancient_sapling",
-        H: "naturesaura:token_joy",
-        I: "naturesaura:calling_spirit",
     });
 
     kubejs.shaped("4x botania:livingwood_log", ["AA", "AA"], {

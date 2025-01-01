@@ -183,6 +183,8 @@ StartupEvents.postInit((event) => {
         )
     );
 
+    let BLOCK = $ResourceKey.createRegistryKey("block");
+
     $PatchouliAPI.registerMultiblock(
         "mierno:terrestrial_agglomeration_altar",
         $PatchouliAPI.makeMultiblock(
@@ -213,7 +215,7 @@ StartupEvents.postInit((event) => {
             new $Character("C"),
             Block.getBlock("ars_nouveau:green_archwood_log"),
             new $Character("A"),
-            Block.getBlock("botania:pattern_framed_livingwood"),
+            $PatchouliAPI.tagMatcher($TagKey.create(BLOCK, "mierno:terra_altar_frame")),
             new $Character("E"),
             Block.getBlock("botania:mana_pylon"),
             new $Character("L"),

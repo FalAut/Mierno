@@ -139,4 +139,14 @@ ServerEvents.recipes((event) => {
             item: "ae2:printed_silicon",
         },
     });
+
+    event.custom({
+        type: "ae2:charger",
+        ingredient: {
+            item: "mierno:sun_crystal",
+        },
+        result: {
+            item: "mierno:sun_crystal_full",
+        },
+    });
 });

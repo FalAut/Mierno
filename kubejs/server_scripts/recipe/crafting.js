@@ -755,4 +755,9 @@ ServerEvents.recipes((event) => {
             B: "ae2:item_cell_housing",
         }
     );
+
+    kubejs.shaped("mierno:mini_sun", ["AAA", "ABA", "AAA"], {
+        A: "glowstone",
+        B: "mierno:sun_crystal_full",
+    });
 });

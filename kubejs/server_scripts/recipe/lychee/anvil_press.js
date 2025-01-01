@@ -18,8 +18,6 @@ ServerEvents.recipes((event) => {
                 item: "minecraft:iron_ingot",
             },
         ],
-        falling_block: "anvil",
-        landing_block: "*",
     });
 
     event.custom({
@@ -41,7 +39,5 @@ ServerEvents.recipes((event) => {
                 item: "minecraft:gold_ingot",
             },
         ],
-        falling_block: "anvil",
-        landing_block: "*",
     });
 });

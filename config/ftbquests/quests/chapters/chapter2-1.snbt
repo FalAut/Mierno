@@ -477,6 +477,11 @@
 					table_id: 5354634242720975076L
 					type: "loot"
 				}
+				{
+					id: "00AAF7D7FF9CE683"
+					item: "pneumaticcraft:security_upgrade"
+					type: "item"
+				}
 			]
 			tasks: [
 				{
@@ -880,6 +885,11 @@
 					table_id: 5354634242720975076L
 					type: "loot"
 				}
+				{
+					id: "78AD4B5540A90326"
+					item: "pneumaticcraft:speed_upgrade"
+					type: "item"
+				}
 			]
 			tasks: [{
 				id: "074FF4CC7EC362A8"
@@ -965,6 +975,11 @@
 					table_id: 5354634242720975076L
 					type: "loot"
 				}
+				{
+					id: "7B992EB0D839D214"
+					item: "pneumaticcraft:security_upgrade"
+					type: "item"
+				}
 			]
 			tasks: [{
 				id: "58A1D3DF0B5F43F9"
@@ -1001,6 +1016,11 @@
 					id: "1E07BFC28F548FF9"
 					table_id: 5354634242720975076L
 					type: "loot"
+				}
+				{
+					id: "2AB5BBD972ED9FB1"
+					item: "pneumaticcraft:security_upgrade"
+					type: "item"
 				}
 			]
 			tasks: [{

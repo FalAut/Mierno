@@ -120,10 +120,6 @@ ServerEvents.recipes((event) => {
                 item: "thermal:iron_plate",
                 count: 8,
             },
-            {
-                item: "ae2:matter_ball",
-                count: 64,
-            },
         ],
         result: [
             {
@@ -144,10 +140,6 @@ ServerEvents.recipes((event) => {
             {
                 item: "thermal:gold_plate",
                 count: 8,
-            },
-            {
-                item: "ae2:matter_ball",
-                count: 64,
             },
         ],
         result: [

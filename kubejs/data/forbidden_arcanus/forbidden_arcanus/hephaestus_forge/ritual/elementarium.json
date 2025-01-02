@@ -12,7 +12,7 @@
         {
             "amount": 1,
             "ingredient": {
-                "item": "forbidden_arcanus:whirlwind_prism"
+                "item": "ars_nouveau:air_essence"
             }
         },
         {
@@ -24,7 +24,7 @@
         {
             "amount": 1,
             "ingredient": {
-                "item": "forbidden_arcanus:smelter_prism"
+                "item": "ars_nouveau:fire_essence"
             }
         },
         {
@@ -36,7 +36,7 @@
         {
             "amount": 1,
             "ingredient": {
-                "item": "forbidden_arcanus:sea_prism"
+                "item": "ars_nouveau:earth_essence"
             }
         },
         {
@@ -48,7 +48,7 @@
         {
             "amount": 1,
             "ingredient": {
-                "item": "forbidden_arcanus:terrastomp_prism"
+                "item": "ars_nouveau:water_essence"
             }
         },
         {

@@ -13,6 +13,16 @@ ServerEvents.recipes((event) => {
 
     event.custom({
         type: "evilcraft:environmental_accumulator",
+        item: "evilcraft:inverted_potentia",
+        weather: "ANY",
+        result: {
+            item: "evilcraft:inverted_potentia_empowered",
+            weather: "ANY",
+        },
+    });
+
+    event.custom({
+        type: "evilcraft:environmental_accumulator",
         item: "mierno:spirit_attuned_gem_block",
         weather: "ANY",
         result: {

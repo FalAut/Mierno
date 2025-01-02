@@ -37,7 +37,7 @@
 		sortRange = ""
 
 	[[sorting.containerOverrides]]
-		containerClass = "de.mari_023.ae2wtlib.wct.*Screen"
+		containerClass = "de.mari_023.ae2wtlib.*"
 		sortRange = ""
 
 	[[sorting.containerOverrides]]
@@ -85,31 +85,11 @@
 		sortRange = ""
 
 	[[sorting.containerOverrides]]
-		containerClass = "de.mari_023.ae2wtlib.wct.WCTScreen"
-		sortRange = ""
-
-	[[sorting.containerOverrides]]
-		containerClass = "de.mari_023.ae2wtlib.wet.WETScreen"
-		sortRange = ""
-
-	[[sorting.containerOverrides]]
-		containerClass = "de.mari_023.ae2wtlib.wat.WATScreen"
+		containerClass = "me.desht.modularrouters.client.gui.*"
 		sortRange = ""
 
 	[[sorting.containerOverrides]]
 		containerClass = "com.glodblock.github.extendedae.xmod.wt.GuiUWirelessExPAT"
-		sortRange = ""
-
-	[[sorting.containerOverrides]]
-		containerClass = "appeng.client.gui.me.items.CraftingTermScreen"
-		sortRange = ""
-
-	[[sorting.containerOverrides]]
-		containerClass = "com.glodblock.github.extendedae.client.gui.GuiExPatternTerminal"
-		sortRange = ""
-
-	[[sorting.containerOverrides]]
-		containerClass = "appeng.client.gui.me.items.PatternEncodingTermScreen"
 		sortRange = ""
 
 	#Categor(y/ies) for sorting

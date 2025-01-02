@@ -20,23 +20,6 @@ StartupEvents.registry("block", (event) => {
                 }
 
                 level.destroyBlock(coords, false);
-
-                $NaturesAuraAPI
-                    .instance()
-                    .spawnMagicParticle(
-                        coords.x + 0.5,
-                        coords.y + 1,
-                        coords.z + 0.5,
-                        0,
-                        0,
-                        0,
-                        0x9acd32,
-                        5,
-                        40,
-                        0,
-                        false,
-                        true
-                    );
             }
         });
     });

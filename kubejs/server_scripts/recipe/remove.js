@@ -239,7 +239,7 @@ ServerEvents.recipes((event) => {
         "naturesaura:tree_ritual/crushing_catalyst",
         "ae2:shaped/not_so_mysterious_cube",
         "thermal:machines/crucible/crucible_ender_pearl",
-        "",
+        "powah:crafting/capacitor_basic_large",
         "",
         "",
         "",

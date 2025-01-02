@@ -243,7 +243,7 @@
     "tooltip.mierno.ftbquests_book": "也可以按下 [%s] 键打开任务",
     "tooltip.mierno.dark_power_gem": "将暗黑宝石投入至少5格的流动血液中可获得",
     "tooltip.mierno.vengeance_ring_1": "Shift+右键开启后带在身上，你就可以看见复仇之魂了",
-    "tooltip.mierno.vengeance_ring_2": "§c§l警告：不要将此物品长时间带在身上，会随机地导致游戏崩溃！用完记得扔AE或箱子里",
+    "tooltip.mierno.vengeance_ring_2": "§c§l若激活后仍然看不到复仇之魂，请尝试戴上幽冥眼镜",
     "tooltip.mierno.ae2_press": "通过破坏神秘方块获得",
     "tooltip.mierno.clay_ball": "在粘土花附近放置沙子来产生黏土球",
     "tooltip.mierno.alfheim_portal": "警告：不要用时间之瓶加速精灵门核心，会造成卡顿",

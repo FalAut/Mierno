@@ -706,6 +706,17 @@
 		{
 			dependencies: ["2A700F246060C907"]
 			id: "2A8F3BF9830035ED"
+			rewards: [{
+				id: "27AB853ED9B69D63"
+				item: {
+					Count: 1
+					id: "evilcraft:spectral_glasses"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
 			tasks: [{
 				id: "1BB008A1382BC1EF"
 				item: "evilcraft:vengeance_ring"

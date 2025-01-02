@@ -81,4 +81,9 @@ ServerEvents.recipes((event) => {
         "fluxnetworks:flux_core"
     );
     event.replaceInput({ id: "botania:light_relay" }, "botania:dragonstone", "glowstone_dust");
+    event.replaceInput(
+        { id: "evilcraft:crafting/spectral_glasses" },
+        "evilcraft:garmonbozia",
+        "evilcraft:dark_power_gem"
+    );
 });

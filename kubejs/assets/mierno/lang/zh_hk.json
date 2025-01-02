@@ -270,7 +270,7 @@
     "tooltip.mierno.moon_stone_full": "將未充滿的月之石扔在§5午夜的月亮§r底下 100 秒",
     "tooltip.mierno.time_changer_1": "移時日晷可以操縱時間，使其快進到白天和夜晚的任何時刻",
     "tooltip.mierno.time_changer_2": "在移時日晷放一個物品展示框，再在展示框裏放一個時間之手",
-    "tooltip.mierno.time_changer_3": "時間之手的轉角輝決定快進到哪個時刻，指向最上方對應午夜",
+    "tooltip.mierno.time_changer_3": "時間之手的轉角會決定快進到哪個時刻，指向最上方對應午夜",
     "tooltip.mierno.time_changer_4": "設定完成後，在移時日晷上扔下一個鐘，時間就會開始快進",
     "tooltip.mierno.time_changer_5": "作為代價，這會消耗大量的靈氣--跳過的時間越多，消耗的靈氣就越多",
     "tooltip.mierno.condensed_blood": "可放入赫菲斯托斯鍛爐中來為其提供 500 血液",

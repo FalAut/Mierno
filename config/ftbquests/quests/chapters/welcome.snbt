@@ -169,7 +169,7 @@
 			icon: "akashictome:tome"
 			id: "03407C903157428A"
 			rewards: [{
-				id: "23CDF5DE97A306E5"
+				id: "652F13B50F67699F"
 				item: {
 					Count: 1
 					id: "akashictome:tome"
@@ -196,6 +196,10 @@
 								tag: {
 									"botania:elven_unlock": 1b
 								}
+							}
+							evilcraft: {
+								Count: 1b
+								id: "evilcraft:origins_of_darkness"
 							}
 							ftbquests: {
 								Count: 1b

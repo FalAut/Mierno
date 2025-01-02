@@ -91,7 +91,7 @@ ServerEvents.recipes((event) => {
                 item: "evilcraft:vengeance_ring",
             },
         })
-        .id("mierno:occultism_ritual/vengeance_ring");
+        .id("mierno:vengeance_ring/blood_pact_of_asmodeus");
 
     event
         .custom({

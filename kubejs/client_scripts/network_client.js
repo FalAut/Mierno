@@ -18,7 +18,7 @@ NetworkEvents.dataReceived("display_item_activation", (event) => {
 });
 
 ClientEvents.tick((event) => {
-    if (global.PortableCrafting.consumeClick() && !Client.screen) {
+    if (global.portableCrafting.consumeClick() && !Client.screen) {
         event.player.sendData("portable_crafting", { portable_crafting: true });
     }
 });

@@ -72,13 +72,23 @@ ItemEvents.tooltip((event) => {
         ]);
     });
 
-    event.add("mierno:portable_crafting_table", [
-        Text.translate("tooltip.mierno.portable_crafting_table_1").gold(),
-        Text.translate(
-            "tooltip.mierno.portable_crafting_table_2",
-            Text.keybind("key.mierno.portable_crafting").green()
-        ).gold(),
-    ]);
+    // event.add("mierno:portable_crafting_table", [
+    //     Text.translate("tooltip.mierno.portable_crafting_table_1").gold(),
+    //     Text.translate(
+    //         "tooltip.mierno.portable_crafting_table_2",
+    //         Text.keybind("key.mierno.portable_crafting").green()
+    //     ).gold(),
+    // ]);
+
+    event.addAdvanced("mierno:portable_crafting_table", (item, advanced, text) => {
+        text.addLast(Text.translate("tooltip.mierno.portable_crafting_table_1").gold());
+        text.addLast(
+            Text.translate(
+                "tooltip.mierno.portable_crafting_table_2",
+                Text.keybind("key.mierno.portable_crafting").green()
+            ).gold()
+        );
+    });
 
     event.add(
         [

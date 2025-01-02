@@ -36,6 +36,7 @@ ItemEvents.modification((event) => {
             "minecraft:egg",
             "minecraft:honey_bottle",
             "forbidden_arcanus:xpetrified_orb",
+            "evilcraft:dark_power_gem",
         ],
         (item) => {
             item.setMaxStackSize(64);

@@ -325,8 +325,6 @@ ServerEvents.recipes((event) => {
         "",
         "",
         "",
-        "",
-        "",
     ];
 
     recipesToRemoveID.forEach((recipe) => {

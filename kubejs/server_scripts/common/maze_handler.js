@@ -32,8 +32,7 @@ ItemEvents.rightClicked((event) => {
         .min((a, b) => {
             const distA = Math.sqrt(Math.pow(a.center.x() - playerPos.x, 2) + Math.pow(a.center.z() - playerPos.z, 2));
             const distB = Math.sqrt(Math.pow(b.center.x() - playerPos.x, 2) + Math.pow(b.center.z() - playerPos.z, 2));
-            console.log(distA);
-            console.log(distB);
+
             return distA - distB;
         })
         .orElse(null);

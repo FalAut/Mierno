@@ -18,7 +18,7 @@ NetworkEvents.dataReceived("display_item_activation", (event) => {
 });
 
 ClientEvents.tick((event) => {
-    if (Client.isKeyDown(67) && !Client.screen) {
+    if (global.PortableCrafting.consumeClick() && !Client.screen) {
         event.player.sendData("portable_crafting", { portable_crafting: true });
     }
 });

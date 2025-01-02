@@ -406,4 +406,83 @@ ServerEvents.recipes((event) => {
         },
         weight: 100,
     });
+
+    event
+        .custom({
+            type: "occultism:ritual",
+            ritual_type: "occultism:craft_miner_spirit",
+            activation_item: {
+                item: "occultism:book_of_binding_bound_afrit",
+            },
+            pentacle_id: "occultism:craft_afrit",
+            duration: 120,
+            ritual_dummy: {
+                item: "occultism:ritual_dummy/craft_miner_afrit_deeps",
+            },
+            ingredients: [
+                {
+                    item: "occultism:miner_djinni_ores",
+                },
+                {
+                    item: "occultism:iesnium_pickaxe",
+                },
+                {
+                    item: "occultism:spirit_attuned_crystal",
+                },
+                {
+                    item: "occultism:afrit_essence",
+                },
+                {
+                    item: "mierno:memory_source_gem",
+                },
+                {
+                    item: "minecraft:crying_obsidian",
+                },
+            ],
+            result: {
+                item: "occultism:miner_afrit_deeps",
+            },
+        })
+        .id("occultism:ritual/craft_miner_afrit_deeps");
+
+    event
+        .custom({
+            type: "occultism:ritual",
+            ritual_type: "occultism:craft_miner_spirit",
+            activation_item: {
+                item: "occultism:book_of_binding_bound_marid",
+            },
+            pentacle_id: "occultism:craft_marid",
+            duration: 120,
+            ritual_dummy: {
+                item: "occultism:ritual_dummy/craft_miner_marid_master",
+            },
+            ingredients: [
+                {
+                    item: "occultism:miner_afrit_deeps",
+                },
+                {
+                    item: "occultism:iesnium_pickaxe",
+                },
+                {
+                    item: "occultism:spirit_attuned_crystal",
+                },
+                {
+                    item: "minecraft:netherite_pickaxe",
+                },
+                {
+                    item: "mierno:unstable_singularity",
+                },
+                {
+                    item: "minecraft:totem_of_undying",
+                },
+                {
+                    item: "minecraft:nether_star",
+                },
+            ],
+            result: {
+                item: "occultism:miner_marid_master",
+            },
+        })
+        .id("occultism:ritual/craft_miner_marid_master");
 });

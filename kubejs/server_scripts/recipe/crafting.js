@@ -411,6 +411,15 @@ ServerEvents.recipes((event) => {
         F: "ae2:printed_silicon",
     });
 
+    kubejs.shaped("mierno:mana_output", ["ABA", "CDE", "AFA"], {
+        A: "mekanism:block_steel",
+        B: "ae2:printed_silicon",
+        C: "ae2:engineering_processor",
+        D: "botania:mana_pool",
+        E: "ae2:logic_processor",
+        F: "ae2:cell_component_1k",
+    });
+
     kubejs.shaped("mierno:pressure_input", ["ABA", "CDE", "AFA"], {
         A: "pneumaticcraft:pressure_chamber_wall",
         B: "pneumaticcraft:pressure_gauge",
@@ -775,5 +784,32 @@ ServerEvents.recipes((event) => {
     kubejs.shaped("mierno:mini_sun", ["AAA", "ABA", "AAA"], {
         A: "glowstone",
         B: "mierno:sun_crystal_full",
+    });
+
+    kubejs.shaped("mierno:modular_mana_pool_core", ["ABA", "BCB", "ABA"], {
+        A: "botania:livingrock",
+        B: "botania:rune_mana",
+        C: "botania:terrasteel_ingot",
+    });
+
+    kubejs.shaped("mierno:upgrade_augment_signalum", ["ABA", "CDC", "ABA"], {
+        A: "thermal:signalum_ingot",
+        B: "thermal:obsidian_glass",
+        C: "thermal:signalum_gear",
+        D: "thermal:upgrade_augment_3",
+    });
+
+    kubejs.shaped("mierno:upgrade_augment_lumium", ["ABA", "CDC", "ABA"], {
+        A: "thermal:lumium_ingot",
+        B: "thermal:obsidian_glass",
+        C: "thermal:lumium_gear",
+        D: "mierno:upgrade_augment_signalum",
+    });
+
+    kubejs.shaped("mierno:upgrade_augment_compressed_iron", ["ABA", "CDC", "ABA"], {
+        A: "pneumaticcraft:compressed_iron_block",
+        B: "thermal:obsidian_glass",
+        C: "pneumaticcraft:compressed_iron_gear",
+        D: "mierno:upgrade_augment_lumium",
     });
 });

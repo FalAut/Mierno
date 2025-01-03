@@ -39,6 +39,10 @@ PlayerEvents.tick((event) => {
                 player.block.createExplosion().explosionMode("none").strength(5).explode();
             }
         }
+
+        if (item == "mierno:unstable_singularity") {
+            player.block.createExplosion().explosionMode("none").strength(5).explode();
+        }
     });
 
     player.setFoodLevel(20);

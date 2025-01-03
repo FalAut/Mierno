@@ -99,6 +99,8 @@
     "block.mierno.nether_catalyst": "下界催化器",
     "block.mierno.end_catalyst": "末地催化器",
     "block.mierno.mini_sun": "迷你太阳",
+    "block.mierno.modular_mana_pool_core": "模块化魔力池核心",
+    "block.mierno.mana_output": "魔力输出仓",
 
     "mierno.oak_crucible": "橡木坩埚",
     "mierno.fired_crucible": "坩埚",
@@ -118,6 +120,7 @@
     "mierno.modular_elven_trade": "模块化精灵交易",
     "mierno.blood_conversion": "血液转换",
     "mierno.spirit_furnace": "灵魂炉",
+    "mierno.modular_mana_infusion": "模块化魔力灌注",
 
     "fluid.mierno.gensousitu": "幻想质",
     "fluid.mierno.liquid_mana": "液态魔力",
@@ -231,7 +234,7 @@
     "tooltip.mierno.flux_dust": "将红石粉扔入下界传送门获得",
     "tooltip.mierno.colorless_gem": "如果没有梦之眼，带着它会获得黑暗和失明效果",
     "tooltip.mierno.unstable_ingot": "带在身上或扔在地上 10 秒后会爆炸",
-    "tooltip.mierno.unstable_singularity": "不稳定奇点不会爆炸",
+    "tooltip.mierno.unstable_singularity": "带在身上或扔在地上 1 秒后会爆炸",
     "tooltip.mierno.source_fluidlink_1": "吸收周围魔源罐中的§5魔源§r来为§e上方§r的§a流体存储器§r产生§d液态魔源",
     "tooltip.mierno.source_fluidlink_2": "每§5 200 魔源§r可转化为 §d100mb 液态魔源§r",
     "tooltip.mierno.orbital_fluid_retainer_1": "可将§e魔力发射器§r发射的§b魔力§r转化为§3液态魔力",
@@ -285,6 +288,9 @@
     "tooltip.mierno.not_so_mysterious_cube": "合成不消耗神秘方块",
     "tooltip.mierno.futura_block": "合成不消耗 ME 控制器",
     "tooltip.mierno.rubberwood_sapling": "可以在迷雾森林中找到橡胶树",
+    "tooltip.mierno.modular_mana_pool_core_1": "模块化魔力池中的任意§a活石§r都可替换为§a物品输入仓§r、§c物品输出仓§r、炼造催化器或炼金催化器",
+    "tooltip.mierno.modular_mana_pool_core_2": "支持黑莲花（扔入结构或输入核心中）",
+    "tooltip.mierno.modular_mana_pool_core_3": "暂不支持魔力石板",
 
     "biome.mierno.black_and_white": "黑与白",
     "biome.mierno.misty_forest": "迷雾森林",

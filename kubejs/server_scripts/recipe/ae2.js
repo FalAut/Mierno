@@ -1,19 +1,19 @@
 ServerEvents.recipes((event) => {
     event.custom({
-        type: "ae2:transform",
-        circumstance: {
-            type: "explosion",
-        },
-        ingredients: [
-            {
-                item: "mierno:unstable_singularity",
-            },
-            {
+        type: "ae2:inscriber",
+        ingredients: {
+            top: {
                 item: "naturesaura:token_anger",
             },
-        ],
+            middle: {
+                item: "mierno:unstable_singularity",
+            },
+            bottom: {
+                item: "naturesaura:token_anger",
+            },
+        },
+        mode: "press",
         result: {
-            count: 1,
             item: "naturesaura:token_rage",
         },
     });

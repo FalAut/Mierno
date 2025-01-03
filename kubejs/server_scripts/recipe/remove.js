@@ -241,7 +241,7 @@ ServerEvents.recipes((event) => {
         "thermal:machines/crucible/crucible_ender_pearl",
         "powah:crafting/capacitor_basic_large",
         "evilcraft:environmental_accumulator/inverted_potentia_empowered",
-        "",
+        "botania:mana_infusion/mana_powder_dust",
         "",
         "",
         "",

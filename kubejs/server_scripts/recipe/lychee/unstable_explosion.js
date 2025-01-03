@@ -18,4 +18,21 @@ ServerEvents.recipes((event) => {
         ],
         block_in: "*",
     });
+
+    event.custom({
+        type: "lychee:item_inside",
+        hide_in_viewer: true,
+        post: [
+            {
+                type: "custom",
+                id: "explosion",
+            },
+        ],
+        item_in: [
+            {
+                item: "mierno:unstable_singularity",
+            },
+        ],
+        block_in: "*",
+    });
 });

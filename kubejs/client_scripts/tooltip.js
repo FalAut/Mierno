@@ -1,3 +1,5 @@
+// priority: -99
+
 ItemEvents.tooltip((event) => {
     let shiftTooltipItems = [
         { item: "mierno:fired_crucible", lines: 5 },
@@ -11,6 +13,7 @@ ItemEvents.tooltip((event) => {
         { item: "mierno:memory_source_drawing_crystal_core", lines: 5 },
         { item: "occultism:divination_rod", lines: 4 },
         { item: "naturesaura:time_changer", lines: 5 },
+        { item: "mierno:modular_mana_pool_core", lines: 3 },
     ];
 
     shiftTooltipItems.forEach((shiftTooltipItem) => {

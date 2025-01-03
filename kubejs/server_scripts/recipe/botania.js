@@ -239,6 +239,14 @@ ServerEvents.recipes((event) => {
                 item: output,
             },
         });
+
+        mierno
+            .modular_mana_infusion()
+            .inputItems(input)
+            .blocksInStructure(1, 100, "botania:alchemy_catalyst")
+            .outputItems(Item.of(output).withCount(2))
+            .inputMana(mana ? mana : 2000)
+            .duration(1);
     }
 
     alchemyMana("minecraft:glowstone_dust", "minecraft:redstone");
@@ -270,6 +278,14 @@ ServerEvents.recipes((event) => {
                 count: 2,
             },
         });
+
+        mierno
+            .modular_mana_infusion()
+            .inputItems(input)
+            .blocksInStructure(1, 100, "botania:conjuration_catalyst")
+            .outputItems(Item.of(output).withCount(2))
+            .inputMana(mana ? mana : 2000)
+            .duration(1);
     }
 
     conjurationMana("string", "string");
@@ -284,6 +300,17 @@ ServerEvents.recipes((event) => {
         mana: 2000,
         output: {
             item: "botania:infused_seeds",
+        },
+    });
+
+    event.custom({
+        type: "botania:mana_infusion",
+        input: {
+            item: "minecraft:redstone",
+        },
+        mana: 500,
+        output: {
+            item: "botania:mana_powder",
         },
     });
 

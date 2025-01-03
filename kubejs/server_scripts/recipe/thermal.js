@@ -152,6 +152,25 @@ ServerEvents.recipes((event) => {
     });
 
     event.custom({
+        type: "thermal:bottler",
+        ingredients: [
+            {
+                item: "mierno:upgrade_augment_compressed_iron",
+            },
+            {
+                fluid: "mierno:ether_memory_source",
+                amount: 4000,
+            },
+        ],
+        result: [
+            {
+                item: "mierno:upgrade_augment_ether",
+            },
+        ],
+        experience: 0.1,
+    });
+
+    event.custom({
         type: "thermal:smelter",
         ingredients: [
             {

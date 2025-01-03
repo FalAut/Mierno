@@ -40,6 +40,10 @@
     "item.mierno.source_emerald": "Source Emerald",
     "item.mierno.moon_stone": "Moon Stone (Empty)",
     "item.mierno.moon_stone_full": "Moon Stone (Full)",
+    "item.mierno.upgrade_augment_signalum": "Signalum Integral Components",
+    "item.mierno.upgrade_augment_lumium": "Lumium Integral Components",
+    "item.mierno.upgrade_augment_compressed_iron": "Compressed Iron Integral Components",
+    "item.mierno.upgrade_augment_ether": "Ether Integral Components",
 
     "block.mierno.infused_wood": "Infused Wood",
     "block.mierno.misty_forest_portal": "Misty Forest Portal",
@@ -95,6 +99,8 @@
     "block.mierno.nether_catalyst": "Nether Catalyst",
     "block.mierno.end_catalyst": "End Catalyst",
     "block.mierno.mini_sun": "Mini Sun",
+    "block.mierno.modular_mana_pool_core": "Modular Mana Pool Core",
+    "block.mierno.mana_output": "Mana Output",
 
     "mierno.oak_crucible": "Oak Crucible",
     "mierno.fired_crucible": "Crucible",
@@ -114,6 +120,7 @@
     "mierno.modular_elven_trade": "Modular Elven Trade",
     "mierno.blood_conversion": "Blood Conversion",
     "mierno.spirit_furnace": "Spirit Furnace",
+    "mierno.modular_mana_infusion": "Modular Mana Infusion",
 
     "fluid.mierno.gensousitu": "Phantasmal Essence",
     "fluid.mierno.liquid_mana": "Liquid Mana",
@@ -227,7 +234,7 @@
     "tooltip.mierno.flux_dust": "Obtained by throwing Redstone Dust into a Nether Portal",
     "tooltip.mierno.colorless_gem": "Without Dream Eyes, carrying this will give you darkness and blindness effects",
     "tooltip.mierno.unstable_ingot": "Explodes after 10 seconds when in inventory or dropped",
-    "tooltip.mierno.unstable_singularity": "the Unstable Singularity won't explode",
+    "tooltip.mierno.unstable_singularity": "Explodes after 1 second when in inventory or dropped",
     "tooltip.mierno.source_fluidlink_1": "Absorbs §5Source§r from nearby Source Jars to produce §dLiquid Source§r for §aFluid Storage§r §eabove",
     "tooltip.mierno.source_fluidlink_2": "Every §5200 Source§r converts to §d100mb Liquid Source§r",
     "tooltip.mierno.orbital_fluid_retainer_1": "Can convert §bMana§r shot from §eMana Spreaders§r into §3Liquid Mana",
@@ -281,6 +288,9 @@
     "tooltip.mierno.not_so_mysterious_cube": "Craft does not consume Mysterious Cube",
     "tooltip.mierno.futura_block": "Craft does not consume ME Controller",
     "tooltip.mierno.rubberwood_sapling": "You can find the Rubber Tree in the Misty Forest.",
+    "tooltip.mierno.modular_mana_pool_core_1": "Any §a Livingrock§r in the Modular Mana Pool can be replaced with an §a Item Input§r, a §c Item Output§r, Conjuration Catalyst or an Alchemy Catalyst.",
+    "tooltip.mierno.modular_mana_pool_core_2": "Support Black Lotus (throw into structure or input core)",
+    "tooltip.mierno.modular_mana_pool_core_3": "No support for Mana Tablet at this time",
 
     "biome.mierno.black_and_white": "Black and White",
     "biome.mierno.misty_forest": "Misty Forest",

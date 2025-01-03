@@ -1,6 +1,6 @@
-ForgeEvents.onEvent("net.minecraftforge.event.entity.EntityTravelToDimensionEvent", (event) => {
-    const { entity, dimension } = event;
-    if (!entity.isPlayer() || dimension.location() != "minecraft:the_nether") return;
+ForgeEvents.onEvent("net.minecraftforge.event.entity.player.PlayerEvent$PlayerChangedDimensionEvent", (event) => {
+    const { entity, to } = event;
+    if (to.location() != "minecraft:the_nether") return;
 
     let /**@type {Internal.Player} */ player = entity;
 

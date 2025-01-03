@@ -1,0 +1,963 @@
+{
+	"recipes": [
+		{
+			"input": "minecraft:peony",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:dandelion",
+			"outputCount": 1,
+			"mana": 400
+		},
+		{
+			"input": "minecraft:ochre_froglight",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:verdant_froglight",
+			"outputCount": 1,
+			"mana": 40
+		},
+		{
+			"input": "minecraft:jungle_log",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:acacia_log",
+			"outputCount": 1,
+			"mana": 40
+		},
+		{
+			"input": "minecraft:cod",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:salmon",
+			"outputCount": 1,
+			"mana": 200
+		},
+		{
+			"input": "minecraft:glowstone_dust",
+			"catalyst": "botania:conjuration_catalyst",
+			"output": "minecraft:glowstone_dust",
+			"outputCount": 2,
+			"mana": 5000
+		},
+		{
+			"input": "minecraft:salmon",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:tropical_fish",
+			"outputCount": 1,
+			"mana": 200
+		},
+		{
+			"input": "minecraft:poppy",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:blue_orchid",
+			"outputCount": 1,
+			"mana": 400
+		},
+		{
+			"input": "minecraft:cocoa_beans",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:wheat_seeds",
+			"outputCount": 1,
+			"mana": 6000
+		},
+		{
+			"input": "minecraft:glowstone",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:glowstone_dust",
+			"outputCount": 4,
+			"mana": 25
+		},
+		{
+			"input": "minecraft:sweet_berries",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:glow_berries",
+			"outputCount": 1,
+			"mana": 240
+		},
+		{
+			"input": "minecraft:calcite",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:deepslate",
+			"outputCount": 1,
+			"mana": 200
+		},
+		{
+			"input": "minecraft:glowstone_dust",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:redstone",
+			"outputCount": 1,
+			"mana": 300
+		},
+		{
+			"input": "minecraft:snowball",
+			"catalyst": "botania:conjuration_catalyst",
+			"output": "minecraft:snowball",
+			"outputCount": 2,
+			"mana": 200
+		},
+		{
+			"input": "minecraft:red_tulip",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:orange_tulip",
+			"outputCount": 1,
+			"mana": 400
+		},
+		{
+			"input": "minecraft:mangrove_log",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:cherry_log",
+			"outputCount": 1,
+			"mana": 40
+		},
+		{
+			"input": "minecraft:clay",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:clay_ball",
+			"outputCount": 4,
+			"mana": 25
+		},
+		{
+			"input": "minecraft:netherrack",
+			"catalyst": "botania:conjuration_catalyst",
+			"output": "minecraft:netherrack",
+			"outputCount": 2,
+			"mana": 200
+		},
+		{
+			"input": "minecraft:acacia_leaves",
+			"catalyst": "botania:conjuration_catalyst",
+			"output": "minecraft:acacia_leaves",
+			"outputCount": 2,
+			"mana": 2000
+		},
+		{
+			"input": "minecraft:oak_sapling",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:spruce_sapling",
+			"outputCount": 1,
+			"mana": 120
+		},
+		{
+			"input": "minecraft:pumpkin_seeds",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:cocoa_beans",
+			"outputCount": 1,
+			"mana": 6000
+		},
+		{
+			"input": "botania:mana_quartz",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "botania:quartz_mana",
+			"outputCount": 4,
+			"mana": 25
+		},
+		{
+			"input": "botania:hopperhock",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "botania:hopperhock_chibi",
+			"outputCount": 1,
+			"mana": 2500
+		},
+		{
+			"input": "minecraft:red_mushroom",
+			"catalyst": "null",
+			"output": "botania:mycelium_seeds",
+			"outputCount": 1,
+			"mana": 6500
+		},
+		{
+			"input": "minecraft:pufferfish",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:cod",
+			"outputCount": 1,
+			"mana": 200
+		},
+		{
+			"input": "minecraft:fern",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:dead_bush",
+			"outputCount": 1,
+			"mana": 500
+		},
+		{
+			"input": "minecraft:azure_bluet",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:red_tulip",
+			"outputCount": 1,
+			"mana": 400
+		},
+		{
+			"input": "minecraft:beetroot_seeds",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:melon_seeds",
+			"outputCount": 1,
+			"mana": 6000
+		},
+		{
+			"input": "minecraft:carrot",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:beetroot_seeds",
+			"outputCount": 1,
+			"mana": 6000
+		},
+		{
+			"input": "minecraft:diamond_block",
+			"catalyst": "null",
+			"output": "botania:mana_diamond_block",
+			"outputCount": 1,
+			"mana": 90000
+		},
+		{
+			"input": "minecraft:cobblestone",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:sand",
+			"outputCount": 1,
+			"mana": 50
+		},
+		{
+			"input": "minecraft:melon_seeds",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:pumpkin_seeds",
+			"outputCount": 1,
+			"mana": 6000
+		},
+		{
+			"input": "botania:bubbell",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "botania:bubbell_chibi",
+			"outputCount": 1,
+			"mana": 2500
+		},
+		{
+			"input": "minecraft:verdant_froglight",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:pearlescent_froglight",
+			"outputCount": 1,
+			"mana": 40
+		},
+		{
+			"input": "botania:agricarnation",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "botania:agricarnation_chibi",
+			"outputCount": 1,
+			"mana": 2500
+		},
+		{
+			"input": "minecraft:gravel",
+			"catalyst": "botania:conjuration_catalyst",
+			"output": "minecraft:gravel",
+			"outputCount": 2,
+			"mana": 720
+		},
+		{
+			"input": "botania:lavender_quartz",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "botania:quartz_lavender",
+			"outputCount": 4,
+			"mana": 25
+		},
+		{
+			"input": "minecraft:dead_bush",
+			"catalyst": "null",
+			"output": "botania:podzol_seeds",
+			"outputCount": 1,
+			"mana": 2500
+		},
+		{
+			"input": "minecraft:oak_log",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:spruce_log",
+			"outputCount": 1,
+			"mana": 40
+		},
+		{
+			"input": "minecraft:pink_tulip",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:oxeye_daisy",
+			"outputCount": 1,
+			"mana": 400
+		},
+		{
+			"input": "botania:elf_quartz",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "botania:quartz_elven",
+			"outputCount": 4,
+			"mana": 25
+		},
+		{
+			"input": "minecraft:white_wool",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:string",
+			"outputCount": 3,
+			"mana": 100
+		},
+		{
+			"input": "minecraft:acacia_log",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:dark_oak_log",
+			"outputCount": 1,
+			"mana": 40
+		},
+		{
+			"input": "minecraft:mangrove_leaves",
+			"catalyst": "botania:conjuration_catalyst",
+			"output": "minecraft:mangrove_leaves",
+			"outputCount": 2,
+			"mana": 2000
+		},
+		{
+			"input": "minecraft:rose_bush",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:peony",
+			"outputCount": 1,
+			"mana": 400
+		},
+		{
+			"input": "minecraft:quartz",
+			"catalyst": "null",
+			"output": "botania:quartz_mana",
+			"outputCount": 1,
+			"mana": 250
+		},
+		{
+			"input": "minecraft:allium",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:azure_bluet",
+			"outputCount": 1,
+			"mana": 400
+		},
+		{
+			"input": "minecraft:redstone",
+			"catalyst": "botania:conjuration_catalyst",
+			"output": "minecraft:redstone",
+			"outputCount": 2,
+			"mana": 5000
+		},
+		{
+			"input": "minecraft:jungle_sapling",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:acacia_sapling",
+			"outputCount": 1,
+			"mana": 120
+		},
+		{
+			"input": "botania:rannuncarpus",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "botania:rannuncarpus_chibi",
+			"outputCount": 1,
+			"mana": 2500
+		},
+		{
+			"input": "minecraft:lilac",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:rose_bush",
+			"outputCount": 1,
+			"mana": 400
+		},
+		{
+			"input": "minecraft:writable_book",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:name_tag",
+			"outputCount": 1,
+			"mana": 6000
+		},
+		{
+			"input": "minecraft:stone_bricks",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:chiseled_stone_bricks",
+			"outputCount": 1,
+			"mana": 150
+		},
+		{
+			"input": "minecraft:glass_bottle",
+			"catalyst": "null",
+			"output": "botania:mana_bottle",
+			"outputCount": 1,
+			"mana": 5000
+		},
+		{
+			"input": "minecraft:blue_orchid",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:allium",
+			"outputCount": 1,
+			"mana": 400
+		},
+		{
+			"input": "minecraft:iron_ingot",
+			"catalyst": "null",
+			"output": "botania:manasteel_ingot",
+			"outputCount": 1,
+			"mana": 3000
+		},
+		{
+			"input": "minecraft:sunflower",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:lilac",
+			"outputCount": 1,
+			"mana": 400
+		},
+		{
+			"input": "minecraft:terracotta",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:red_sand",
+			"outputCount": 1,
+			"mana": 50
+		},
+		{
+			"input": "minecraft:popped_chorus_fruit",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:chorus_flower",
+			"outputCount": 1,
+			"mana": 10000
+		},
+		{
+			"input": "minecraft:lily_pad",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:vine",
+			"outputCount": 1,
+			"mana": 320
+		},
+		{
+			"input": "botania:clayconia",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "botania:clayconia_chibi",
+			"outputCount": 1,
+			"mana": 2500
+		},
+		{
+			"input": "minecraft:oxeye_daisy",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:cornflower",
+			"outputCount": 1,
+			"mana": 400
+		},
+		{
+			"input": "minecraft:glass",
+			"catalyst": "null",
+			"output": "botania:mana_glass",
+			"outputCount": 1,
+			"mana": 150
+		},
+		{
+			"input": "minecraft:potato",
+			"catalyst": "null",
+			"output": "botania:tiny_potato",
+			"outputCount": 1,
+			"mana": 1337
+		},
+		{
+			"input": "minecraft:rotten_flesh",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:leather",
+			"outputCount": 1,
+			"mana": 600
+		},
+		{
+			"input": "minecraft:soul_sand",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:soul_soil",
+			"outputCount": 1,
+			"mana": 120
+		},
+		{
+			"input": "minecraft:vine",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:lily_pad",
+			"outputCount": 1,
+			"mana": 320
+		},
+		{
+			"input": "minecraft:granite",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:andesite",
+			"outputCount": 1,
+			"mana": 200
+		},
+		{
+			"input": "minecraft:blaze_rod",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:nether_wart",
+			"outputCount": 1,
+			"mana": 4000
+		},
+		{
+			"input": "minecraft:tuff",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:calcite",
+			"outputCount": 1,
+			"mana": 200
+		},
+		{
+			"input": "minecraft:diamond",
+			"catalyst": "null",
+			"output": "botania:mana_diamond",
+			"outputCount": 1,
+			"mana": 10000
+		},
+		{
+			"input": "minecraft:stone",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:andesite",
+			"outputCount": 1,
+			"mana": 200
+		},
+		{
+			"input": "minecraft:azalea_leaves",
+			"catalyst": "botania:conjuration_catalyst",
+			"output": "minecraft:azalea_leaves",
+			"outputCount": 2,
+			"mana": 2000
+		},
+		{
+			"input": "minecraft:dark_oak_log",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:mangrove_log",
+			"outputCount": 1,
+			"mana": 40
+		},
+		{
+			"input": "minecraft:cornflower",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:lily_of_the_valley",
+			"outputCount": 1,
+			"mana": 400
+		},
+		{
+			"input": "minecraft:coal",
+			"catalyst": "botania:conjuration_catalyst",
+			"output": "minecraft:coal",
+			"outputCount": 2,
+			"mana": 2100
+		},
+		{
+			"input": "minecraft:flint",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:gunpowder",
+			"outputCount": 1,
+			"mana": 200
+		},
+		{
+			"input": "minecraft:bricks",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:brick",
+			"outputCount": 4,
+			"mana": 25
+		},
+		{
+			"input": "minecraft:dark_oak_sapling",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:mangrove_propagule",
+			"outputCount": 1,
+			"mana": 120
+		},
+		{
+			"input": "minecraft:andesite",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:diorite",
+			"outputCount": 1,
+			"mana": 200
+		},
+		{
+			"input": "minecraft:spruce_sapling",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:birch_sapling",
+			"outputCount": 1,
+			"mana": 120
+		},
+		{
+			"input": "minecraft:piston",
+			"catalyst": "null",
+			"output": "botania:piston_relay",
+			"outputCount": 1,
+			"mana": 15000
+		},
+		{
+			"input": "minecraft:dead_bush",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:grass",
+			"outputCount": 1,
+			"mana": 500
+		},
+		{
+			"input": "minecraft:quartz",
+			"catalyst": "botania:conjuration_catalyst",
+			"output": "minecraft:quartz",
+			"outputCount": 2,
+			"mana": 2500
+		},
+		{
+			"input": "minecraft:tropical_fish",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:pufferfish",
+			"outputCount": 1,
+			"mana": 200
+		},
+		{
+			"input": "minecraft:oak_leaves",
+			"catalyst": "botania:conjuration_catalyst",
+			"output": "minecraft:oak_leaves",
+			"outputCount": 2,
+			"mana": 2000
+		},
+		{
+			"input": "minecraft:grass",
+			"catalyst": "null",
+			"output": "botania:grass_seeds",
+			"outputCount": 1,
+			"mana": 2500
+		},
+		{
+			"input": "minecraft:string",
+			"catalyst": "null",
+			"output": "botania:mana_string",
+			"outputCount": 1,
+			"mana": 1250
+		},
+		{
+			"input": "minecraft:ghast_tear",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:ender_pearl",
+			"outputCount": 1,
+			"mana": 28000
+		},
+		{
+			"input": "minecraft:grass",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:fern",
+			"outputCount": 1,
+			"mana": 500
+		},
+		{
+			"input": "botania:solegnolia",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "botania:solegnolia_chibi",
+			"outputCount": 1,
+			"mana": 2500
+		},
+		{
+			"input": "minecraft:cookie",
+			"catalyst": "null",
+			"output": "botania:mana_cookie",
+			"outputCount": 1,
+			"mana": 20000
+		},
+		{
+			"input": "minecraft:apple",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:sweet_berries",
+			"outputCount": 1,
+			"mana": 240
+		},
+		{
+			"input": "minecraft:mangrove_propagule",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:cherry_sapling",
+			"outputCount": 1,
+			"mana": 120
+		},
+		{
+			"input": "minecraft:jungle_leaves",
+			"catalyst": "botania:conjuration_catalyst",
+			"output": "minecraft:jungle_leaves",
+			"outputCount": 2,
+			"mana": 2000
+		},
+		{
+			"input": "minecraft:dark_oak_leaves",
+			"catalyst": "botania:conjuration_catalyst",
+			"output": "minecraft:dark_oak_leaves",
+			"outputCount": 2,
+			"mana": 2000
+		},
+		{
+			"input": "minecraft:pearlescent_froglight",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:ochre_froglight",
+			"outputCount": 1,
+			"mana": 40
+		},
+		{
+			"input": "minecraft:acacia_sapling",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:dark_oak_sapling",
+			"outputCount": 1,
+			"mana": 120
+		},
+		{
+			"input": "minecraft:soul_sand",
+			"catalyst": "botania:conjuration_catalyst",
+			"output": "minecraft:soul_sand",
+			"outputCount": 2,
+			"mana": 1500
+		},
+		{
+			"input": "minecraft:birch_leaves",
+			"catalyst": "botania:conjuration_catalyst",
+			"output": "minecraft:birch_leaves",
+			"outputCount": 2,
+			"mana": 2000
+		},
+		{
+			"input": "minecraft:snow_block",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:ice",
+			"outputCount": 1,
+			"mana": 2250
+		},
+		{
+			"input": "minecraft:gunpowder",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:flint",
+			"outputCount": 1,
+			"mana": 200
+		},
+		{
+			"input": "botania:hydroangeas",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "botania:hydroangeas_motif",
+			"outputCount": 1,
+			"mana": 2500
+		},
+		{
+			"input": "minecraft:potato",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:carrot",
+			"outputCount": 1,
+			"mana": 6000
+		},
+		{
+			"input": "botania:red_quartz",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "botania:quartz_red",
+			"outputCount": 4,
+			"mana": 25
+		},
+		{
+			"input": "minecraft:birch_sapling",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:jungle_sapling",
+			"outputCount": 1,
+			"mana": 120
+		},
+		{
+			"input": "minecraft:lily_of_the_valley",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:sunflower",
+			"outputCount": 1,
+			"mana": 400
+		},
+		{
+			"input": "minecraft:cactus",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:slime_ball",
+			"outputCount": 1,
+			"mana": 1200
+		},
+		{
+			"input": "botania:tangleberrie",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "botania:tangleberrie_chibi",
+			"outputCount": 1,
+			"mana": 2500
+		},
+		{
+			"input": "minecraft:deepslate",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:tuff",
+			"outputCount": 1,
+			"mana": 200
+		},
+		{
+			"input": "minecraft:white_tulip",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:pink_tulip",
+			"outputCount": 1,
+			"mana": 400
+		},
+		{
+			"input": "minecraft:iron_block",
+			"catalyst": "null",
+			"output": "botania:manasteel_block",
+			"outputCount": 1,
+			"mana": 27000
+		},
+		{
+			"input": "botania:blaze_quartz",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "botania:quartz_blaze",
+			"outputCount": 4,
+			"mana": 25
+		},
+		{
+			"input": "botania:marimorphosis",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "botania:marimorphosis_chibi",
+			"outputCount": 1,
+			"mana": 2500
+		},
+		{
+			"input": "minecraft:spruce_leaves",
+			"catalyst": "botania:conjuration_catalyst",
+			"output": "minecraft:spruce_leaves",
+			"outputCount": 2,
+			"mana": 2000
+		},
+		{
+			"input": "minecraft:big_dripleaf",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:small_dripleaf",
+			"outputCount": 1,
+			"mana": 500
+		},
+		{
+			"input": "botania:jiyuulia",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "botania:jiyuulia_chibi",
+			"outputCount": 1,
+			"mana": 2500
+		},
+		{
+			"input": "minecraft:orange_tulip",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:white_tulip",
+			"outputCount": 1,
+			"mana": 400
+		},
+		{
+			"input": "minecraft:redstone",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:glowstone_dust",
+			"outputCount": 1,
+			"mana": 300
+		},
+		{
+			"input": "botania:sunny_quartz",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "botania:quartz_sunny",
+			"outputCount": 4,
+			"mana": 25
+		},
+		{
+			"input": "botania:bellethorn",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "botania:bellethorn_chibi",
+			"outputCount": 1,
+			"mana": 2500
+		},
+		{
+			"input": "minecraft:quartz_block",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:quartz",
+			"outputCount": 4,
+			"mana": 25
+		},
+		{
+			"input": "minecraft:ender_pearl",
+			"catalyst": "null",
+			"output": "botania:mana_pearl",
+			"outputCount": 1,
+			"mana": 6000
+		},
+		{
+			"input": "minecraft:slime_ball",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:cactus",
+			"outputCount": 1,
+			"mana": 1200
+		},
+		{
+			"input": "minecraft:dirt",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:coarse_dirt",
+			"outputCount": 1,
+			"mana": 120
+		},
+		{
+			"input": "minecraft:cherry_log",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:oak_log",
+			"outputCount": 1,
+			"mana": 40
+		},
+		{
+			"input": "minecraft:dandelion",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:poppy",
+			"outputCount": 1,
+			"mana": 400
+		},
+		{
+			"input": "minecraft:wheat_seeds",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:potato",
+			"outputCount": 1,
+			"mana": 6000
+		},
+		{
+			"input": "minecraft:glow_berries",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:apple",
+			"outputCount": 1,
+			"mana": 240
+		},
+		{
+			"input": "minecraft:birch_log",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:jungle_log",
+			"outputCount": 1,
+			"mana": 40
+		},
+		{
+			"input": "minecraft:cherry_sapling",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:oak_sapling",
+			"outputCount": 1,
+			"mana": 120
+		},
+		{
+			"input": "minecraft:poisonous_potato",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:potato",
+			"outputCount": 1,
+			"mana": 1200
+		},
+		{
+			"input": "minecraft:flowering_azalea_leaves",
+			"catalyst": "botania:conjuration_catalyst",
+			"output": "minecraft:flowering_azalea_leaves",
+			"outputCount": 2,
+			"mana": 2000
+		},
+		{
+			"input": "botania:dark_quartz",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "botania:quartz_dark",
+			"outputCount": 4,
+			"mana": 25
+		},
+		{
+			"input": "minecraft:spruce_log",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:birch_log",
+			"outputCount": 1,
+			"mana": 40
+		},
+		{
+			"input": "minecraft:cherry_leaves",
+			"catalyst": "botania:conjuration_catalyst",
+			"output": "minecraft:cherry_leaves",
+			"outputCount": 2,
+			"mana": 2000
+		},
+		{
+			"input": "minecraft:diorite",
+			"catalyst": "botania:alchemy_catalyst",
+			"output": "minecraft:granite",
+			"outputCount": 1,
+			"mana": 200
+		},
+		{
+			"input": "minecraft:grass",
+			"catalyst": "botania:conjuration_catalyst",
+			"output": "minecraft:grass",
+			"outputCount": 2,
+			"mana": 800
+		}
+	]
+}

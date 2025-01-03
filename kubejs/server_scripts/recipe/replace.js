@@ -81,6 +81,10 @@ ServerEvents.recipes((event) => {
         "fluxnetworks:flux_core"
     );
     event.replaceInput({ id: "botania:light_relay" }, "botania:dragonstone", "glowstone_dust");
+    event.replaceInput({ id: "thermal:augments/upgrade_augment_2" }, "thermal:signalum_gear", "thermal:electrum_gear");
+    event.replaceInput({ id: "thermal:augments/upgrade_augment_3" }, "thermal:lumium_gear", "thermal:enderium_gear");
+    event.replaceInput({ id: "thermal:augments/upgrade_augment_1" }, "redstone", "thermal:invar_gear");
+    event.replaceInput({ id: "thermal:augments/upgrade_augment_1" }, "thermal:gold_gear", "redstone_block");
     event.replaceInput(
         { id: "evilcraft:crafting/spectral_glasses" },
         "evilcraft:garmonbozia",

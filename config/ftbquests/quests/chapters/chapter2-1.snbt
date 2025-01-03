@@ -1278,6 +1278,14 @@
 					table_id: 5354634242720975076L
 					type: "loot"
 				}
+				{
+					auto: "no_toast"
+					count: 32
+					id: "4F46502BD9AA3325"
+					item: "forbidden_arcanus:dark_nether_star_block"
+					team_reward: true
+					type: "item"
+				}
 			]
 			shape: "square"
 			size: 1.5d

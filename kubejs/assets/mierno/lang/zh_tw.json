@@ -40,6 +40,10 @@
     "item.mierno.source_emerald": "魔源綠寶石",
     "item.mierno.moon_stone": "月之石（未充滿）",
     "item.mierno.moon_stone_full": "月之石（已充滿）",
+    "item.mierno.upgrade_augment_signalum": "信素整合組件",
+    "item.mierno.upgrade_augment_lumium": "流明整合組件",
+    "item.mierno.upgrade_augment_compressed_iron": "壓縮鐵整合組件",
+    "item.mierno.upgrade_augment_ether": "以太整合組件",
 
     "block.mierno.infused_wood": "灌註之木",
     "block.mierno.misty_forest_portal": "迷霧森林傳送門",
@@ -95,6 +99,8 @@
     "block.mierno.nether_catalyst": "下界催化器",
     "block.mierno.end_catalyst": "末地催化器",
     "block.mierno.mini_sun": "迷你太陽",
+    "block.mierno.modular_mana_pool_core": "模塊化魔力池核心",
+    "block.mierno.mana_output": "魔力輸出倉",
 
     "mierno.oak_crucible": "橡木坩堝",
     "mierno.fired_crucible": "坩堝",
@@ -114,6 +120,7 @@
     "mierno.modular_elven_trade": "模塊化精靈交易",
     "mierno.blood_conversion": "血液轉換",
     "mierno.spirit_furnace": "靈魂爐",
+    "mierno.modular_mana_infusion": "模塊化魔力灌註",
 
     "fluid.mierno.gensousitu": "幻想質",
     "fluid.mierno.liquid_mana": "液態魔力",
@@ -227,7 +234,7 @@
     "tooltip.mierno.flux_dust": "將紅石粉扔入下界傳送門獲得",
     "tooltip.mierno.colorless_gem": "如果沒有夢之眼，帶著它會獲得黑暗和失明效果",
     "tooltip.mierno.unstable_ingot": "帶在身上或扔在地上 10 秒後會爆炸",
-    "tooltip.mierno.unstable_singularity": "不穩定奇點不會爆炸",
+    "tooltip.mierno.unstable_singularity": "帶在身上或扔在地上 1 秒後會爆炸",
     "tooltip.mierno.source_fluidlink_1": "吸收周圍魔源罐中的§5魔源§r來為§e上方§r的§a流體存儲器§r產生§d液態魔源",
     "tooltip.mierno.source_fluidlink_2": "每§5 200 魔源§r可轉化為 §d100mb 液態魔源§r",
     "tooltip.mierno.orbital_fluid_retainer_1": "可將§e魔力發射器§r發射的§b魔力§r轉化為§3液態魔力",
@@ -281,6 +288,9 @@
     "tooltip.mierno.not_so_mysterious_cube": "合成不消耗神秘方塊",
     "tooltip.mierno.futura_block": "合成不消耗 ME 控製器",
     "tooltip.mierno.rubberwood_sapling": "可以在迷霧森林中找到橡膠樹",
+    "tooltip.mierno.modular_mana_pool_core_1": "模塊化魔力池中的任意§a活石§r都可替換為§a物品輸入倉§r、§c物品輸出倉§r、煉造催化器或煉金催化器",
+    "tooltip.mierno.modular_mana_pool_core_2": "支持黑蓮花（扔入結構或輸入核心中）",
+    "tooltip.mierno.modular_mana_pool_core_3": "暫不支持魔力石板",
 
     "biome.mierno.black_and_white": "黑與白",
     "biome.mierno.misty_forest": "迷霧森林",

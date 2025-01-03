@@ -11,6 +11,10 @@ BlockEvents.modification((event) => {
             block.setExplosionResistance(1200);
         }
     );
+
+    event.modify(["mierno:molten_lumium", "mierno:molten_signalum"], (block) => {
+        block.setLightEmission(15);
+    });
 });
 
 ItemEvents.modification((event) => {

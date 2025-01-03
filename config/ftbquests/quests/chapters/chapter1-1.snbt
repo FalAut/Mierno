@@ -1182,6 +1182,26 @@
 			x: 10.5d
 			y: 1.5d
 		}
+		{
+			dependencies: ["7C2D6C62922FB508"]
+			hide_dependency_lines: true
+			id: "5061131EF01083C5"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0C5C7DCDE2FD5602"
+				table_id: 1320735954632056874L
+				type: "loot"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "592037C7A064160F"
+				item: "functionalstorage:max_storage_upgrade"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.5d
+		}
 	]
 	title: "{mierno.chapter1-1.title}"
 }

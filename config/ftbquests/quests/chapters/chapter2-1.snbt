@@ -1614,6 +1614,34 @@
 			x: 10.0d
 			y: -1.5d
 		}
+		{
+			dependencies: ["5AEE147CC808BE52"]
+			hide_dependency_lines: true
+			id: "22EE58408D677214"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "5ACDD2D9C2F2E3C4"
+				item: "pneumaticcraft:creative_compressed_iron_block"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.25d
+		}
+		{
+			dependencies: ["317E1E879C1AFCD4"]
+			hide_dependency_lines: true
+			id: "4A4B08FAB20DCF7A"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "1ECF4068369B96B2"
+				item: "pneumaticcraft:creative_compressor"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.0d
+		}
 	]
 	title: "{mierno.chapter2-1.title}"
 }

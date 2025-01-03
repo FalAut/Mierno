@@ -1024,6 +1024,37 @@
 			x: 13.5d
 			y: -2.5d
 		}
+		{
+			dependencies: ["07D40C8E0F39FE83"]
+			hide_dependency_lines: true
+			id: "4E85D8FAA7A1D6AE"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "6429F90B7F91F105"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Amount: 500
+							FluidName: "evilcraft:blood"
+							capacity: 1000
+						}
+					}
+					id: "evilcraft:creative_blood_drop"
+					tag: {
+						Fluid: {
+							Amount: 500
+							FluidName: "evilcraft:blood"
+						}
+						capacity: 1000
+					}
+				}
+				type: "item"
+			}]
+			x: 10.5d
+			y: 3.0d
+		}
 	]
 	title: "{mierno.chapter2-2.title}"
 }

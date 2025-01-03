@@ -43,7 +43,24 @@ ServerEvents.recipes((event) => {
 
     fullShaped("mierno:mana_string_block", "botania:mana_string");
     fullShaped("mierno:spirit_attuned_gem_block", "occultism:spirit_attuned_gem");
+    fullShaped("functionalstorage:max_storage_upgrade", "functionalstorage:netherite_upgrade");
 
+    function copySelf(item) {
+        kubejs.shapeless(Item.of(item).withCount(2), item);
+    }
+
+    copySelf("botania:blacker_lotus");
+    copySelf("botania:creative_pool");
+    copySelf("ars_nouveau:creative_source_jar");
+    copySelf("functionalstorage:max_storage_upgrade");
+    copySelf("pneumaticcraft:creative_compressed_iron_block");
+    copySelf("pneumaticcraft:creative_compressor");
+    copySelf("evilcraft:creative_blood_drop");
+
+    kubejs.shapeless(
+        Item.of("botania:mana_tablet", 2, "{creative:1b,mana:500000}"),
+        Item.of("botania:mana_tablet", "{creative:1b,mana:500000}").weakNBT()
+    );
     kubejs.shapeless("forbidden_arcanus:aurum_chest_boat", ["forbidden_arcanus:aurum_boat", "#forge:chests/wooden"]);
     kubejs.shapeless("forbidden_arcanus:edelwood_chest_boat", [
         "forbidden_arcanus:edelwood_boat",
@@ -78,7 +95,6 @@ ServerEvents.recipes((event) => {
     kubejs.shapeless("ae2:not_so_mysterious_cube", "ae2:mysterious_cube").keepIngredient("ae2:mysterious_cube");
     kubejs.shapeless("naturesaura:gold_leaf", ["gold_ingot", "#leaves"]);
     kubejs.shapeless("mierno:futura_block", "ae2:controller").keepIngredient("ae2:controller");
-    kubejs.shapeless("2x botania:blacker_lotus", "botania:blacker_lotus");
     kubejs.shapeless("4x forbidden_arcanus:dark_nether_star", "forbidden_arcanus:dark_nether_star_block");
     kubejs.shapeless("2x powah:capacitor_basic", "2x powah:capacitor_basic_tiny");
     kubejs.shapeless("2x powah:capacitor_basic_large", "2x powah:capacitor_basic");

@@ -97,6 +97,12 @@ ServerEvents.recipes((event) => {
         50000
     );
 
+    runicAltar(
+        Item.of("botania:mana_tablet", "{creative:1b,mana:500000}").strongNBT(),
+        Array(9).fill(Item.of("botania:mana_tablet", "{mana:500000}").weakNBT()),
+        100000
+    );
+
     /**
      * 泰拉凝聚
      * @param {OutputItem_} output
@@ -113,6 +119,12 @@ ServerEvents.recipes((event) => {
 
         mierno.modular_terrestrial_agglomeration().outputItems(output).inputItems(input).duration(20).inputMana(mana);
     }
+
+    terriaAgglomeration(
+        "botania:creative_pool",
+        Array(8).fill("botania:terrasteel_block").concat("botania:fabulous_pool"),
+        1000000
+    );
 
     terriaAgglomeration("botania:alfheim_portal", [
         "botania:rune_mana",

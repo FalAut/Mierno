@@ -25,7 +25,8 @@ ServerEvents.recipes((event) => {
             .outputItems(output)
             .inputItems(input)
             .inputItems("botania:livingrock")
-            .inputMana(mana ? mana : 5200);
+            .inputMana(mana ? mana : 5200)
+            .duration(20);
     }
 
     runicAltar("2x botania:rune_air", [
@@ -107,16 +108,10 @@ ServerEvents.recipes((event) => {
 
         botania.terra_plate(output, input, mana);
 
-        let duration = mana / 2000;
-        let inputMana = mana / duration;
+        // let duration = mana / 2000;
+        // let inputMana = mana / duration;
 
-        mierno
-            .modular_terrestrial_agglomeration()
-            .outputItems(output)
-            .inputItems(input)
-            .duration(duration)
-            .perTick(true)
-            .inputMana(inputMana);
+        mierno.modular_terrestrial_agglomeration().outputItems(output).inputItems(input).duration(20).inputMana(mana);
     }
 
     terriaAgglomeration("botania:alfheim_portal", [

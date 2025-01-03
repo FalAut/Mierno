@@ -1,6 +1,6 @@
 ServerEvents.recipes((event) => {
     const { mierno } = event.recipes;
-    const DURATION = 20;
+    const DURATION = 1;
 
     mierno
         .modular_elven_trade()
@@ -14,6 +14,13 @@ ServerEvents.recipes((event) => {
         .inputItems("botania:livingwood")
         .inputMana(1000)
         .outputItems("botania:dreamwood")
+        .duration(DURATION);
+
+    mierno
+        .modular_elven_trade()
+        .inputItems("botania:mana_quartz")
+        .inputMana(1000)
+        .outputItems("ae2:quartz_block")
         .duration(DURATION);
 
     mierno

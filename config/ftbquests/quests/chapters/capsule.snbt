@@ -1580,6 +1580,129 @@
 			x: 1.5d
 			y: 8.5d
 		}
+		{
+			can_repeat: true
+			icon: "mierno:modular_imbuement_chamber_core"
+			id: "1F491BACA611F535"
+			rewards: [{
+				id: "0F5AC0F4E557FEF8"
+				item: {
+					Count: 1
+					id: "capsule:capsule"
+					tag: {
+						author: "?"
+						canRotate: 0b
+						color: 9819623
+						display: {
+							color: 13421772
+						}
+						isReward: 1b
+						label: "Modular Imbuement Chamber.nbt"
+						oneUse: 1b
+						size: 9
+						state: 5
+						structureName: "config/capsule/rewards/modular_imbuement_chamber.nbt"
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					id: "17E16F9B0392B3D0"
+					item: "mierno:modular_imbuement_chamber_core"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 54L
+					id: "6AC76FEFC7B30959"
+					item: { Count: 54, id: "minecraft:gold_block" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 21L
+					id: "1B7EE7F018B90FB9"
+					item: { Count: 21, id: "ars_nouveau:archwood_planks" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 20L
+					id: "7EA539F409936791"
+					item: { Count: 20, id: "ars_nouveau:archwood_stairs" }
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			can_repeat: true
+			icon: "mierno:modular_mana_pool_core"
+			id: "5C4FDA49A2FBA3C0"
+			rewards: [{
+				id: "3324DA8DE2EBCA2D"
+				item: {
+					Count: 1
+					id: "capsule:capsule"
+					tag: {
+						author: "?"
+						canRotate: 0b
+						color: 9819623
+						display: {
+							color: 13421772
+						}
+						isReward: 1b
+						label: "Modular Mana Pool.nbt"
+						oneUse: 1b
+						size: 7
+						state: 5
+						structureName: "config/capsule/rewards/modular_mana_pool.nbt"
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					id: "56DEDC663F4FADD1"
+					item: "mierno:modular_mana_pool_core"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 64L
+					id: "6E18473A6DE90EA8"
+					item: { Count: 64, id: "botania:livingrock" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 30L
+					id: "05825099A0DAC55D"
+					item: { Count: 30, id: "botania:livingrock" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "594BD70EC3A3F47D"
+					item: "mierno:item_input"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "5ED61774A323659C"
+					item: "mierno:item_output"
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: 2.0d
+		}
 	]
 	title: "{mierno.capsule.title}"
 }

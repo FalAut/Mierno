@@ -1626,6 +1626,26 @@
 			dependencies: ["5AEE147CC808BE52"]
 			hide_dependency_lines: true
 			id: "22EE58408D677214"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6FF76369A67AEC94"
+					table_id: 1320735954632056874L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "57F54DEB17795056"
+					table_id: 1675656862002921859L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "08F8F44A770636F3"
+					table_id: 5354634242720975076L
+					type: "loot"
+				}
+			]
 			shape: "gear"
 			size: 1.5d
 			tasks: [{
@@ -1640,6 +1660,26 @@
 			dependencies: ["317E1E879C1AFCD4"]
 			hide_dependency_lines: true
 			id: "4A4B08FAB20DCF7A"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1DFEC15CA7D68304"
+					table_id: 1320735954632056874L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2FFDD33433D7881C"
+					table_id: 1675656862002921859L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "4DFD054E0CACF1F4"
+					table_id: 5354634242720975076L
+					type: "loot"
+				}
+			]
 			shape: "gear"
 			size: 1.5d
 			tasks: [{

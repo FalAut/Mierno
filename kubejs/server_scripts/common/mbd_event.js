@@ -85,6 +85,28 @@ MBDMachineEvents.onTick("mierno:memory_source_drawing_crystal_core", (event) => 
     }
 });
 
+MBDMachineEvents.onTick("mierno:modular_imbuement_chamber_core", (event) => {
+    const { machine } = event.event;
+    const { level, pos } = machine;
+
+    if (!$IMultiController.ofController(level, pos).orElse(null).isFormed()) return;
+
+    machine.triggerGeckolibAnim("formed");
+});
+
+MBDMachineEvents.onBeforeRecipeModify("mierno:modular_imbuement_chamber_core", (event) => {
+    const info = event.event;
+    const { machine, recipe } = info;
+
+    if ($SourceUtil.takeSourceWithParticles(machine.pos, machine.level, 6, 100) != null) {
+        let copyRecipe = recipe.copy();
+
+        copyRecipe.duration = 1;
+
+        info.setRecipe(copyRecipe);
+    }
+});
+
 MBDMachineEvents.onTick("mierno:modular_mana_pool_core", (event) => {
     const { machine } = event.event;
     const { level, pos } = machine;
@@ -99,7 +121,7 @@ MBDMachineEvents.onTick("mierno:modular_mana_pool_core", (event) => {
         manaCap.receiveMana(8000);
         manaItem.count--;
     } else if (manaItem == "botania:blacker_lotus") {
-        manaCap.receiveMana(10000);
+        manaCap.receiveMana(100000);
         manaItem.count--;
     }
 

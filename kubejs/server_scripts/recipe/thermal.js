@@ -316,7 +316,7 @@ ServerEvents.recipes((event) => {
         type: "thermal:press",
         ingredients: [
             {
-                tag: "pneumaticcraft:ingot_iron_compressed",
+                item: "pneumaticcraft:ingot_iron_compressed",
                 count: 4,
             },
             {
@@ -334,7 +334,7 @@ ServerEvents.recipes((event) => {
         type: "thermal:press",
         ingredients: [
             {
-                tag: "minecraft:lapis_lazuli",
+                item: "minecraft:lapis_lazuli",
                 count: 4,
             },
             {

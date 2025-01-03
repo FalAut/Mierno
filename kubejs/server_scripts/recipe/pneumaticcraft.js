@@ -95,7 +95,7 @@ ServerEvents.recipes((event) => {
                 item: "mierno:unstable_singularity",
             },
         ],
-        pressure: 6.6,
+        pressure: 5.0,
         results: [
             {
                 item: "pneumaticcraft:creative_compressor",

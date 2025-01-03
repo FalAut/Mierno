@@ -1,0 +1,196 @@
+{
+    "recipes": [
+        {
+            "input": "minecraft:crimson_fungus",
+            "catalyst": "naturesaura:conversion_catalyst",
+            "output": "minecraft:nether_wart",
+            "aura": 30000
+        },
+        {
+            "input": "minecraft:rabbit_stew",
+            "catalyst": "naturesaura:conversion_catalyst",
+            "output": "minecraft:rabbit_foot",
+            "aura": 15000
+        },
+        {
+            "input": "minecraft:amethyst_block",
+            "catalyst": "naturesaura:crushing_catalyst",
+            "output": "minecraft:amethyst_shard",
+            "aura": 25000
+        },
+        {
+            "input": "minecraft:glowstone",
+            "catalyst": "naturesaura:crushing_catalyst",
+            "output": "minecraft:glowstone_dust",
+            "aura": 3000
+        },
+        {
+            "input": "minecraft:red_mushroom",
+            "catalyst": "naturesaura:conversion_catalyst",
+            "output": "minecraft:crimson_fungus",
+            "aura": 30000
+        },
+        {
+            "input": "minecraft:spider_eye",
+            "catalyst": "naturesaura:conversion_catalyst",
+            "output": "minecraft:fermented_spider_eye",
+            "aura": 10000
+        },
+        {
+            "input": "minecraft:iron_ingot",
+            "catalyst": "null",
+            "output": "naturesaura:infused_iron",
+            "aura": 15000
+        },
+        {
+            "input": "minecraft:packed_mud",
+            "catalyst": "naturesaura:crushing_catalyst",
+            "output": "minecraft:mud",
+            "aura": 2000
+        },
+        {
+            "input": "minecraft:cobblestone",
+            "catalyst": "naturesaura:crushing_catalyst",
+            "output": "minecraft:sand",
+            "aura": 3000
+        },
+        {
+            "input": "minecraft:quartz",
+            "catalyst": "naturesaura:conversion_catalyst",
+            "output": "minecraft:prismarine_shard",
+            "aura": 55000
+        },
+        {
+            "input": "minecraft:popped_chorus_fruit",
+            "catalyst": "naturesaura:conversion_catalyst",
+            "output": "minecraft:chorus_flower",
+            "aura": 15000
+        },
+        {
+            "input": "minecraft:poisonous_potato",
+            "catalyst": "naturesaura:conversion_catalyst",
+            "output": "minecraft:potato",
+            "aura": 10000
+        },
+        {
+            "input": "minecraft:arrow",
+            "catalyst": "naturesaura:conversion_catalyst",
+            "output": "minecraft:spectral_arrow",
+            "aura": 10000
+        },
+        {
+            "input": "minecraft:nether_wart_block",
+            "catalyst": "naturesaura:crushing_catalyst",
+            "output": "minecraft:nether_wart",
+            "aura": 25000
+        },
+        {
+            "input": "minecraft:charcoal",
+            "catalyst": "naturesaura:conversion_catalyst",
+            "output": "minecraft:coal",
+            "aura": 30000
+        },
+        {
+            "input": "minecraft:soul_soil",
+            "catalyst": "naturesaura:conversion_catalyst",
+            "output": "minecraft:ghast_tear",
+            "aura": 90000
+        },
+        {
+            "input": "minecraft:bone",
+            "catalyst": "naturesaura:crushing_catalyst",
+            "output": "minecraft:bone_meal",
+            "aura": 3000
+        },
+        {
+            "input": "minecraft:rotten_flesh",
+            "catalyst": "naturesaura:conversion_catalyst",
+            "output": "minecraft:leather",
+            "aura": 10000
+        },
+        {
+            "input": "minecraft:iron_block",
+            "catalyst": "null",
+            "output": "naturesaura:infused_iron_block",
+            "aura": 135000
+        },
+        {
+            "input": "naturesaura:gold_leaf",
+            "catalyst": "naturesaura:crushing_catalyst",
+            "output": "naturesaura:gold_powder",
+            "aura": 2000
+        },
+        {
+            "input": "minecraft:water_bucket",
+            "catalyst": "naturesaura:conversion_catalyst",
+            "output": "minecraft:milk_bucket",
+            "aura": 80000
+        },
+        {
+            "input": "minecraft:brown_mushroom",
+            "catalyst": "naturesaura:conversion_catalyst",
+            "output": "minecraft:warped_fungus",
+            "aura": 30000
+        },
+        {
+            "input": "minecraft:glass_bottle",
+            "catalyst": "naturesaura:conversion_catalyst",
+            "output": "minecraft:potion",
+            "aura": 25000
+        },
+        {
+            "input": "minecraft:sand",
+            "catalyst": "naturesaura:conversion_catalyst",
+            "output": "minecraft:soul_sand",
+            "aura": 5000
+        },
+        {
+            "input": "minecraft:apple",
+            "catalyst": "naturesaura:conversion_catalyst",
+            "output": "minecraft:egg",
+            "aura": 5000
+        },
+        {
+            "input": "minecraft:string",
+            "catalyst": "naturesaura:conversion_catalyst",
+            "output": "minecraft:lead",
+            "aura": 10000
+        },
+        {
+            "input": "minecraft:amethyst_shard",
+            "catalyst": "naturesaura:conversion_catalyst",
+            "output": "minecraft:ender_pearl",
+            "aura": 90000
+        },
+        {
+            "input": "minecraft:blackstone",
+            "catalyst": "naturesaura:conversion_catalyst",
+            "output": "minecraft:gilded_blackstone",
+            "aura": 50000
+        },
+        {
+            "input": "minecraft:sugar_cane",
+            "catalyst": "naturesaura:crushing_catalyst",
+            "output": "minecraft:sugar",
+            "aura": 3000
+        },
+        {
+            "input": "minecraft:prismarine_shard",
+            "catalyst": "naturesaura:conversion_catalyst",
+            "output": "minecraft:prismarine_crystals",
+            "aura": 55000
+        },
+        {
+            "input": "minecraft:soul_soil",
+            "catalyst": "naturesaura:crushing_catalyst",
+            "output": "minecraft:soul_sand",
+            "aura": 6000
+        },
+        {
+            "input": "minecraft:blaze_rod",
+            "catalyst": "naturesaura:crushing_catalyst",
+            "output": "minecraft:blaze_powder",
+            "aura": 5000
+        }
+    ]
+}

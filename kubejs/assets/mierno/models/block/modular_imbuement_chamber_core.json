@@ -1,0 +1,7 @@
+{
+    "parent": "mierno:block/blockmodel_overlay_all",
+    "textures": {
+        "bg_all": "ars_nouveau:block/sourcestone",
+        "ov_all": "ars_nouveau:item/source_gem"
+    }
+}

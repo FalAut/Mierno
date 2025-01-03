@@ -101,6 +101,8 @@
     "block.mierno.mini_sun": "迷你太陽",
     "block.mierno.modular_mana_pool_core": "模塊化魔力池核心",
     "block.mierno.mana_output": "魔力輸出倉",
+    "block.mierno.modular_nature_altar_core": "模塊化自然祭壇核心",
+    "block.mierno.modular_imbuement_chamber_core": "模塊化灌註室核心",
 
     "mierno.oak_crucible": "橡木坩堝",
     "mierno.fired_crucible": "坩堝",
@@ -121,6 +123,8 @@
     "mierno.blood_conversion": "血液轉換",
     "mierno.spirit_furnace": "靈魂爐",
     "mierno.modular_mana_infusion": "模塊化魔力灌註",
+    "mierno.modular_nature_altar": "模塊化自然祭壇",
+    "mierno.modular_imbuement_chamber": "模塊化灌註室",
 
     "fluid.mierno.gensousitu": "幻想質",
     "fluid.mierno.liquid_mana": "液態魔力",
@@ -291,6 +295,9 @@
     "tooltip.mierno.modular_mana_pool_core_1": "模塊化魔力池中的任意§a活石§r都可替換為§a物品輸入倉§r、§c物品輸出倉§r、煉造催化器或煉金催化器",
     "tooltip.mierno.modular_mana_pool_core_2": "支持黑蓮花（扔入結構或輸入核心中）",
     "tooltip.mierno.modular_mana_pool_core_3": "暫不支持魔力石板",
+    "tooltip.mierno.ghast_tear": "惡魂可以用降生祭壇召喚",
+    "tooltip.mierno.modular_imbuement_chamber_core_1": "模塊化中的至高木木板（基座位置）可替換為物品輸入倉和物品輸出倉",
+    "tooltip.mierno.modular_imbuement_chamber_core_2": "默認製作速度很慢，可吸收核心6格範圍內的魔源罐來加速到0.05秒",
 
     "biome.mierno.black_and_white": "黑與白",
     "biome.mierno.misty_forest": "迷霧森林",

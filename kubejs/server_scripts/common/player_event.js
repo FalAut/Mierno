@@ -42,6 +42,7 @@ PlayerEvents.tick((event) => {
 
         if (item == "mierno:unstable_singularity") {
             player.block.createExplosion().explosionMode("none").strength(5).explode();
+            item.count--;
         }
     });
 

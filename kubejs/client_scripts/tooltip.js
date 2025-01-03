@@ -14,6 +14,7 @@ ItemEvents.tooltip((event) => {
         { item: "occultism:divination_rod", lines: 4 },
         { item: "naturesaura:time_changer", lines: 5 },
         { item: "mierno:modular_mana_pool_core", lines: 3 },
+        { item: "mierno:modular_imbuement_chamber_core", lines: 2 },
     ];
 
     shiftTooltipItems.forEach((shiftTooltipItem) => {
@@ -261,4 +262,5 @@ ItemEvents.tooltip((event) => {
     event.add("ae2:not_so_mysterious_cube", Text.translate("tooltip.mierno.not_so_mysterious_cube").gold());
     event.add("mierno:futura_block", Text.translate("tooltip.mierno.futura_block").gold());
     event.add("thermal:rubberwood_sapling", Text.translate("tooltip.mierno.rubberwood_sapling").gold());
+    event.add("minecraft:ghast_tear", Text.translate("tooltip.mierno.ghast_tear").gold());
 });

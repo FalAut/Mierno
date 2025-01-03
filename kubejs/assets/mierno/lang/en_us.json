@@ -101,6 +101,8 @@
     "block.mierno.mini_sun": "Mini Sun",
     "block.mierno.modular_mana_pool_core": "Modular Mana Pool Core",
     "block.mierno.mana_output": "Mana Output",
+    "block.mierno.modular_nature_altar_core": "Modular Natural Altar Core",
+    "block.mierno.modular_imbuement_chamber_core": "Modular Imbuement Chamber Core",
 
     "mierno.oak_crucible": "Oak Crucible",
     "mierno.fired_crucible": "Crucible",
@@ -121,6 +123,8 @@
     "mierno.blood_conversion": "Blood Conversion",
     "mierno.spirit_furnace": "Spirit Furnace",
     "mierno.modular_mana_infusion": "Modular Mana Infusion",
+    "mierno.modular_nature_altar": "Modular Natural Altar",
+    "mierno.modular_imbuement_chamber": "Modular Imbuement Chamber",
 
     "fluid.mierno.gensousitu": "Phantasmal Essence",
     "fluid.mierno.liquid_mana": "Liquid Mana",
@@ -291,6 +295,9 @@
     "tooltip.mierno.modular_mana_pool_core_1": "Any §a Livingrock§r in the Modular Mana Pool can be replaced with an §a Item Input§r, a §c Item Output§r, Conjuration Catalyst or an Alchemy Catalyst.",
     "tooltip.mierno.modular_mana_pool_core_2": "Support Black Lotus (throw into structure or input core)",
     "tooltip.mierno.modular_mana_pool_core_3": "No support for Mana Tablet at this time",
+    "tooltip.mierno.ghast_tear": "Ghast can be summoned by the Altar of Birthing.",
+    "tooltip.mierno.modular_imbuement_chamber_core_1": "The ArchWood Planks (base positions) in the modularisation can be replaced with the Item Input and Item Output.",
+    "tooltip.mierno.modular_imbuement_chamber_core_2": "The default production speed is slow, and can be accelerated to 0.05 seconds by source jar within 6 blocks of the core.",
 
     "biome.mierno.black_and_white": "Black and White",
     "biome.mierno.misty_forest": "Misty Forest",

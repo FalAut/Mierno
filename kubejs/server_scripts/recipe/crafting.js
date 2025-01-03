@@ -44,6 +44,7 @@ ServerEvents.recipes((event) => {
     fullShaped("mierno:mana_string_block", "botania:mana_string");
     fullShaped("mierno:spirit_attuned_gem_block", "occultism:spirit_attuned_gem");
     fullShaped("functionalstorage:max_storage_upgrade", "functionalstorage:netherite_upgrade");
+    fullShaped("minecraft:skeleton_skull", "minecraft:bone_block");
 
     function copySelf(item) {
         kubejs.shapeless(Item.of(item).withCount(2), item);
@@ -811,5 +812,22 @@ ServerEvents.recipes((event) => {
         B: "thermal:obsidian_glass",
         C: "pneumaticcraft:compressed_iron_gear",
         D: "mierno:upgrade_augment_lumium",
+    });
+
+    kubejs.shaped("mierno:modular_imbuement_chamber_core", ["ABA", "BCB", "ABA"], {
+        A: "ars_nouveau:sourcestone",
+        B: "ars_nouveau:source_gem",
+        C: "ars_nouveau:imbuement_chamber",
+    });
+
+    kubejs.shaped("mierno:modular_nature_altar_core", ["ABA", "BCB", "ABA"], {
+        A: "minecraft:stone_bricks",
+        B: Item.of("naturesaura:aura_bottle", '{stored_type:"naturesaura:overworld"}').weakNBT(),
+        C: "naturesaura:nature_altar",
+    });
+
+    kubejs.shaped("ae2:flawless_budding_quartz", ["AAA", "ABA", "AAA"], {
+        A: "botania:terrasteel_nugget",
+        B: "ae2:quartz_block",
     });
 });

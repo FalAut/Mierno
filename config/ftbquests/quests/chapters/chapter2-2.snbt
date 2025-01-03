@@ -510,6 +510,12 @@
 				"70938F0A04A527F3"
 			]
 			id: "700D9C84414AD2C3"
+			rewards: [{
+				count: 3
+				id: "284697485B962DC6"
+				item: "evilcraft:box_of_eternal_closure"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7591937F40A64A0A"
 				item: "evilcraft:box_of_eternal_closure"
@@ -575,6 +581,23 @@
 				"700D9C84414AD2C3"
 			]
 			id: "56D7C8F6B88A4D66"
+			rewards: [{
+				count: 3
+				id: "7278A3E1A36ECE39"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Amount: 0
+							FluidName: "minecraft:empty"
+							capacity: 10000
+						}
+					}
+					id: "evilcraft:spirit_furnace"
+					tag: { }
+				}
+				type: "item"
+			}]
 			shape: "square"
 			size: 1.5d
 			tasks: [{
@@ -605,6 +628,12 @@
 		{
 			dependencies: ["022EA1A9ED309FF6"]
 			id: "2A700F246060C907"
+			rewards: [{
+				count: 64
+				id: "62A71C77D7D41689"
+				item: "evilcraft:dark_gem"
+				type: "item"
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "5255351D2ED64D1C"
@@ -659,6 +688,12 @@
 		{
 			dependencies: ["2A700F246060C907"]
 			id: "0C02B10D39685512"
+			rewards: [{
+				count: 64
+				id: "7196E11EB4AD7705"
+				item: "evilcraft:dark_power_gem"
+				type: "item"
+			}]
 			shape: "diamond"
 			tasks: [{
 				id: "637B99DD1BDC5204"
@@ -706,17 +741,25 @@
 		{
 			dependencies: ["2A700F246060C907"]
 			id: "2A8F3BF9830035ED"
-			rewards: [{
-				id: "27AB853ED9B69D63"
-				item: {
-					Count: 1
-					id: "evilcraft:spectral_glasses"
-					tag: {
-						Damage: 0
+			rewards: [
+				{
+					id: "27AB853ED9B69D63"
+					item: {
+						Count: 1
+						id: "evilcraft:spectral_glasses"
+						tag: {
+							Damage: 0
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					count: 2
+					id: "2C4F41D9BDF379B4"
+					item: "evilcraft:vengeance_ring"
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "1BB008A1382BC1EF"
 				item: "evilcraft:vengeance_ring"
@@ -1028,6 +1071,26 @@
 			dependencies: ["07D40C8E0F39FE83"]
 			hide_dependency_lines: true
 			id: "4E85D8FAA7A1D6AE"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "13518BB996E300B9"
+					table_id: 1320735954632056874L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "03EAD6F4053F7A50"
+					table_id: 1675656862002921859L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "30CA0D6A2B783607"
+					table_id: 5354634242720975076L
+					type: "loot"
+				}
+			]
 			shape: "gear"
 			size: 1.5d
 			tasks: [{

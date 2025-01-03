@@ -49,6 +49,34 @@ ServerEvents.loaded((event) => {
 // });
 
 // ServerEvents.recipes((event) => {
+
+// let natureAltarRecipes = [];
+
+// event.forEachRecipe({ type: "naturesaura:altar" }, (recipes) => {
+//     let output = recipes.json.get("output").get("item");
+//     let input = recipes.json.get("input");
+
+//     let catalyst;
+
+//     if (recipes.json.get("catalyst")) {
+//         catalyst = recipes.json.get("catalyst").get("item");
+//     }
+
+//     let inputItem = input.has("item") ? input.get("item") : null;
+//     let inputTag = input.has("tag") ? input.get("tag") : null;
+
+//     natureAltarRecipes.push({
+//         input: inputItem ? inputItem : inputTag,
+//         catalyst: catalyst ? catalyst : "null",
+//         output: output,
+//         aura: recipes.json.get("aura"),
+//     });
+// });
+
+// JsonIO.write("kubejs/nature_altar.json", { recipes: natureAltarRecipes });
+// });
+
+// ServerEvents.recipes((event) => {
 //     let manaInfusions = [];
 
 //     event.forEachRecipe({ type: "botania:mana_infusion" }, (recipe) => {

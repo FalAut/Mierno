@@ -429,7 +429,7 @@ ServerEvents.recipes((event) => {
 
     kubejs.shaped("64x naturesaura:depth_ingot", ["ABA", "CDC", "ABA"], {
         A: "minecraft:netherite_ingot",
-        B: "naturesaura:sky_ingot",
+        B: "naturesaura:sky_ingot_block",
         C: "botania:terrasteel_ingot",
         D: "mierno:unstable_singularity",
     });

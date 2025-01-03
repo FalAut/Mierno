@@ -14,6 +14,25 @@
 -   添加自定义热力组件升级
 -   在完成忆源汲取水晶任务后会赠送 32 个暗黑下界之星块，为了方便做另一个水晶
 -   不稳定奇点现在放在身上或扔在地上 1 秒会立即爆炸，修改狂怒印记的配方
+-   添加模块化魔力池
+
+---
+
+-   Modify maze generation interval to avoid generating connected mazes
+-   Middlebutton Organiser conflicts with Modular Router's Middlebutton Edit Module #11
+-   Fixed the issue where the Vein Lords can't be crafted #12
+-   Fixed Portable Workbench not triggering after shortcut key change
+-   Added Dark Origins to Akashic Treasures #15
+-   Removed weather requirement from default recipe for Charged Dark Orb #16
+-   Fix issue where basic elements could not be crafted #17
+-   Changed recipe requirement time to 1 second for Modular Rune Altar, Modular Terra Cohesion Altar, Modular Sacrificial Table, Matter Mixer and Printing Room
+-   Changed the maximum magic storage capacity of Terra Coagulation Crystals to 10 million
+-   Changed Cthulhu Ingot to Cthulhu Block in the Abyssal Ingot Synthesis recipe, please be careful to change your samples
+-   Added creation items that can be crafted in each chapter, all creation items can be duplicated through synthesis
+-   Added custom heat component upgrades
+-   32 Dark Lowerworld Star Blocks are given after completing the Amnesia Source Drawing Crystal quest, to make it easier to make another crystal
+-   Unstable Singularity now explodes immediately when placed on the body or thrown on the ground for 1 second, changed the recipe for the Mark of Rage.
+-   Added Modular Magic Pool
 
 ## v0.0.9
 

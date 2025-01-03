@@ -25,7 +25,8 @@ ServerEvents.recipes((event) => {
             .outputItems(output)
             .inputItems(input)
             .inputItems("botania:livingrock")
-            .inputMana(mana ? mana : 5200);
+            .inputMana(mana ? mana : 5200)
+            .duration(20);
     }
 
     runicAltar("2x botania:rune_air", [
@@ -96,6 +97,12 @@ ServerEvents.recipes((event) => {
         50000
     );
 
+    runicAltar(
+        Item.of("botania:mana_tablet", "{creative:1b,mana:500000}").strongNBT(),
+        Array(9).fill(Item.of("botania:mana_tablet", "{mana:500000}").weakNBT()),
+        100000
+    );
+
     /**
      * 泰拉凝聚
      * @param {OutputItem_} output
@@ -107,17 +114,17 @@ ServerEvents.recipes((event) => {
 
         botania.terra_plate(output, input, mana);
 
-        let duration = mana / 2000;
-        let inputMana = mana / duration;
+        // let duration = mana / 2000;
+        // let inputMana = mana / duration;
 
-        mierno
-            .modular_terrestrial_agglomeration()
-            .outputItems(output)
-            .inputItems(input)
-            .duration(duration)
-            .perTick(true)
-            .inputMana(inputMana);
+        mierno.modular_terrestrial_agglomeration().outputItems(output).inputItems(input).duration(20).inputMana(mana);
     }
+
+    terriaAgglomeration(
+        "botania:creative_pool",
+        Array(8).fill("botania:terrasteel_block").concat("botania:fabulous_pool"),
+        1000000
+    );
 
     terriaAgglomeration("botania:alfheim_portal", [
         "botania:rune_mana",
@@ -232,6 +239,14 @@ ServerEvents.recipes((event) => {
                 item: output,
             },
         });
+
+        mierno
+            .modular_mana_infusion()
+            .inputItems(input)
+            .blocksInStructure(1, 100, "botania:alchemy_catalyst")
+            .outputItems(Item.of(output).withCount(2))
+            .inputMana(mana ? mana : 2000)
+            .duration(1);
     }
 
     alchemyMana("minecraft:glowstone_dust", "minecraft:redstone");
@@ -263,6 +278,14 @@ ServerEvents.recipes((event) => {
                 count: 2,
             },
         });
+
+        mierno
+            .modular_mana_infusion()
+            .inputItems(input)
+            .blocksInStructure(1, 100, "botania:conjuration_catalyst")
+            .outputItems(Item.of(output).withCount(2))
+            .inputMana(mana ? mana : 2000)
+            .duration(1);
     }
 
     conjurationMana("string", "string");
@@ -277,6 +300,17 @@ ServerEvents.recipes((event) => {
         mana: 2000,
         output: {
             item: "botania:infused_seeds",
+        },
+    });
+
+    event.custom({
+        type: "botania:mana_infusion",
+        input: {
+            item: "minecraft:redstone",
+        },
+        mana: 500,
+        output: {
+            item: "botania:mana_powder",
         },
     });
 

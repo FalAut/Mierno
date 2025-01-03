@@ -1,5 +1,6 @@
 ServerEvents.recipes((event) => {
     const { mierno } = event.recipes;
+    const DURATION = 20;
 
     mierno
         .modular_runic_altar()
@@ -10,7 +11,8 @@ ServerEvents.recipes((event) => {
         .inputItems("botania:livingrock")
         .chance(0)
         .inputItems("botania:rune_autumn")
-        .inputItems("botania:rune_air");
+        .inputItems("botania:rune_air")
+        .duration(DURATION);
 
     mierno
         .modular_runic_altar()
@@ -21,7 +23,8 @@ ServerEvents.recipes((event) => {
         .inputItems("botania:livingrock")
         .chance(0)
         .inputItems("botania:rune_winter")
-        .inputItems("botania:rune_fire");
+        .inputItems("botania:rune_fire")
+        .duration(DURATION);
 
     mierno
         .modular_runic_altar()
@@ -32,7 +35,8 @@ ServerEvents.recipes((event) => {
         .inputItems("botania:livingrock")
         .chance(0)
         .inputItems("botania:rune_summer")
-        .inputItems("botania:rune_air");
+        .inputItems("botania:rune_air")
+        .duration(DURATION);
 
     mierno
         .modular_runic_altar()
@@ -43,7 +47,8 @@ ServerEvents.recipes((event) => {
         .inputItems("botania:livingrock")
         .chance(0)
         .inputItems("botania:rune_winter")
-        .inputItems("botania:rune_water");
+        .inputItems("botania:rune_water")
+        .duration(DURATION);
 
     mierno
         .modular_runic_altar()
@@ -54,7 +59,8 @@ ServerEvents.recipes((event) => {
         .inputItems("botania:livingrock")
         .chance(0)
         .inputItems("botania:rune_summer")
-        .inputItems("botania:rune_fire");
+        .inputItems("botania:rune_fire")
+        .duration(DURATION);
 
     mierno
         .modular_runic_altar()
@@ -65,7 +71,8 @@ ServerEvents.recipes((event) => {
         .inputItems("botania:livingrock")
         .chance(0)
         .inputItems("botania:rune_winter")
-        .inputItems("botania:rune_earth");
+        .inputItems("botania:rune_earth")
+        .duration(DURATION);
 
     mierno
         .modular_runic_altar()
@@ -76,7 +83,8 @@ ServerEvents.recipes((event) => {
         .inputItems("botania:livingrock")
         .chance(0)
         .inputItems("botania:rune_spring")
-        .inputItems("botania:rune_water");
+        .inputItems("botania:rune_water")
+        .duration(DURATION);
 
     mierno
         .modular_runic_altar()
@@ -89,7 +97,8 @@ ServerEvents.recipes((event) => {
         .inputItems("botania:livingrock")
         .chance(0)
         .inputItems("botania:rune_water")
-        .inputItems("botania:rune_fire");
+        .inputItems("botania:rune_fire")
+        .duration(DURATION);
 
     mierno
         .modular_runic_altar()
@@ -102,7 +111,8 @@ ServerEvents.recipes((event) => {
         .inputItems("botania:livingrock")
         .chance(0)
         .inputItems("botania:rune_earth")
-        .inputItems("botania:rune_air");
+        .inputItems("botania:rune_air")
+        .duration(DURATION);
 
     mierno
         .modular_runic_altar()
@@ -115,7 +125,8 @@ ServerEvents.recipes((event) => {
         .inputItems("botania:livingrock")
         .chance(0)
         .inputItems("botania:rune_fire")
-        .inputItems("botania:rune_air");
+        .inputItems("botania:rune_air")
+        .duration(DURATION);
 
     mierno
         .modular_runic_altar()
@@ -128,5 +139,6 @@ ServerEvents.recipes((event) => {
         .inputItems("botania:livingrock")
         .chance(0)
         .inputItems("botania:rune_water")
-        .inputItems("botania:rune_earth");
+        .inputItems("botania:rune_earth")
+        .duration(DURATION);
 });

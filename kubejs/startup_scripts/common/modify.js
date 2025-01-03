@@ -11,6 +11,10 @@ BlockEvents.modification((event) => {
             block.setExplosionResistance(1200);
         }
     );
+
+    event.modify(["mierno:molten_lumium", "mierno:molten_signalum"], (block) => {
+        block.setLightEmission(15);
+    });
 });
 
 ItemEvents.modification((event) => {
@@ -36,6 +40,7 @@ ItemEvents.modification((event) => {
             "minecraft:egg",
             "minecraft:honey_bottle",
             "forbidden_arcanus:xpetrified_orb",
+            "evilcraft:dark_power_gem",
         ],
         (item) => {
             item.setMaxStackSize(64);

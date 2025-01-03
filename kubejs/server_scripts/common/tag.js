@@ -103,6 +103,7 @@ ServerEvents.tags("block", (event) => {
         "botania:pattern_framed_livingwood",
         "mierno:item_input",
         "mierno:item_output",
+        "mierno:mana_input",
     ]);
 });
 

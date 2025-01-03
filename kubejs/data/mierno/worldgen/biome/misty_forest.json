@@ -98,12 +98,6 @@
                 "maxCount": 10,
                 "minCount": 4,
                 "weight": 100
-            },
-            {
-                "type": "thermal:blitz",
-                "maxCount": 3,
-                "minCount": 1,
-                "weight": 100
             }
         ]
     }

@@ -76,6 +76,38 @@ ServerEvents.recipes((event) => {
         inputs: [
             {
                 type: "pneumaticcraft:stacked_item",
+                count: 64,
+                item: "pneumaticcraft:reinforced_stone",
+            },
+            {
+                type: "pneumaticcraft:stacked_item",
+                count: 32,
+                item: "pneumaticcraft:transistor",
+            },
+            {
+                type: "pneumaticcraft:stacked_item",
+                count: 16,
+                item: "pneumaticcraft:capacitor",
+            },
+            {
+                type: "pneumaticcraft:stacked_item",
+                count: 8,
+                item: "mierno:unstable_singularity",
+            },
+        ],
+        pressure: 6.6,
+        results: [
+            {
+                item: "pneumaticcraft:creative_compressor",
+            },
+        ],
+    });
+
+    event.custom({
+        type: "pneumaticcraft:pressure_chamber",
+        inputs: [
+            {
+                type: "pneumaticcraft:stacked_item",
                 count: 16,
                 item: "pneumaticcraft:ingot_iron_compressed",
             },
@@ -120,5 +152,44 @@ ServerEvents.recipes((event) => {
         result: {
             item: "naturesaura:token_terror",
         },
+    });
+
+    event.custom({
+        type: "pneumaticcraft:thermo_plant",
+        air_use_multiplier: 9.9,
+        exothermic: false,
+        fluid_input: {
+            type: "pneumaticcraft:fluid",
+            amount: 9999,
+            fluid: "pneumaticcraft:etching_acid",
+        },
+        item_input: {
+            item: "pneumaticcraft:compressed_iron_block",
+        },
+        item_output: {
+            item: "pneumaticcraft:creative_compressed_iron_block",
+        },
+        pressure: 9.9,
+        speed: 0.25,
+        temperature: {
+            min_temp: 1272,
+        },
+    });
+
+    event.custom({
+        type: "pneumaticcraft:amadron",
+        id: "pneumaticcraft:amadron/advanced_pressure_tube",
+        input: {
+            type: "ITEM",
+            amount: 8,
+            id: "pneumaticcraft:reinforced_pressure_tube",
+        },
+        level: 0,
+        output: {
+            type: "ITEM",
+            amount: 1,
+            id: "pneumaticcraft:advanced_pressure_tube",
+        },
+        static: true,
     });
 });

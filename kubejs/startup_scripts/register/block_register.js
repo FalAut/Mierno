@@ -8,7 +8,7 @@ StartupEvents.registry("block", (event) => {
     event.create("mierno:spirit_attuned_gem_block").hardness(1).defaultTranslucent().requiresTool().soundType("metal");
     event.create("mierno:nether_catalyst").hardness(1).stoneSoundType().requiresTool();
     event.create("mierno:end_catalyst").hardness(1).stoneSoundType().requiresTool();
-    event.create("mierno:mini_sun").hardness(0).glassSoundType();
+    event.create("mierno:mini_sun").hardness(0).glassSoundType().lightLevel(1);
 
     event.createCustom(
         "mierno:misty_forest_portal",

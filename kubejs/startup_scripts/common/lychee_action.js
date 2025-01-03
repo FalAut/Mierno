@@ -155,6 +155,15 @@ LycheeEvents.customAction("unstable_ingot_explosion", (event) => {
     };
 });
 
+LycheeEvents.customAction("explosion", (event) => {
+    event.action.applyFunc = (recipe, ctx, times) => {
+        /**@type {Internal.ItemEntity} */
+        let itemEntity = ctx.getParam("this_entity");
+
+        itemEntity.block.createExplosion().explosionMode("none").strength(5).explode();
+    };
+});
+
 LycheeEvents.customAction("add_lunar", (event) => {
     event.action.applyFunc = (recipe, ctx, times) => {
         /**@type {Internal.ItemEntity} */

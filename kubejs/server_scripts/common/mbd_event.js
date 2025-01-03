@@ -85,6 +85,43 @@ MBDMachineEvents.onTick("mierno:memory_source_drawing_crystal_core", (event) => 
     }
 });
 
+MBDMachineEvents.onTick("mierno:modular_mana_pool_core", (event) => {
+    const { machine } = event.event;
+    const { level, pos } = machine;
+
+    if (!$IMultiController.ofController(level, pos).orElse(null).isFormed()) return;
+
+    let manaCap = machine.getCapability(BotaniaCapabilities.MANA_RECEIVER).orElse(null);
+    let itemCap = machine.getCapability(ForgeCapabilities.ITEM_HANDLER).orElse(null);
+    let manaItem = itemCap.getStackInSlot(0);
+
+    if (manaItem == "botania:black_lotus") {
+        manaCap.receiveMana(8000);
+        manaItem.count--;
+    } else if (manaItem == "botania:blacker_lotus") {
+        manaCap.receiveMana(10000);
+        manaItem.count--;
+    }
+
+    // const { x, y, z } = pos;
+    // let aabb = AABB.of(x - 2, y, z - 2, x + 2, y + 3, z + 2);
+    // let entities = level.getEntitiesWithin(aabb);
+
+    // for (let entity of entities) {
+    //     if (entity.type != "minecraft:item") return;
+
+    //     if (!manaCap.isFull()) {
+    //         if (entity.item == "botania:black_lotus") {
+    //             manaCap.receiveMana(entity.item.count * 8000);
+    //             entity.discard();
+    //         } else if (entity.item == "botania:blacker_lotus") {
+    //             manaCap.receiveMana(entity.item.count * 100000);
+    //             entity.discard();
+    //         }
+    //     }
+    // }
+});
+
 // let cobbleGens = [
 //     "mierno:cobble_gen_tier1",
 //     "mierno:cobble_gen_tier2",

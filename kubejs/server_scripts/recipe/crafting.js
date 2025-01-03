@@ -43,7 +43,24 @@ ServerEvents.recipes((event) => {
 
     fullShaped("mierno:mana_string_block", "botania:mana_string");
     fullShaped("mierno:spirit_attuned_gem_block", "occultism:spirit_attuned_gem");
+    fullShaped("functionalstorage:max_storage_upgrade", "functionalstorage:netherite_upgrade");
 
+    function copySelf(item) {
+        kubejs.shapeless(Item.of(item).withCount(2), item);
+    }
+
+    copySelf("botania:blacker_lotus");
+    copySelf("botania:creative_pool");
+    copySelf("ars_nouveau:creative_source_jar");
+    copySelf("functionalstorage:max_storage_upgrade");
+    copySelf("pneumaticcraft:creative_compressed_iron_block");
+    copySelf("pneumaticcraft:creative_compressor");
+    copySelf("evilcraft:creative_blood_drop");
+
+    kubejs.shapeless(
+        Item.of("botania:mana_tablet", 2, "{creative:1b,mana:500000}"),
+        Item.of("botania:mana_tablet", "{creative:1b,mana:500000}").weakNBT()
+    );
     kubejs.shapeless("forbidden_arcanus:aurum_chest_boat", ["forbidden_arcanus:aurum_boat", "#forge:chests/wooden"]);
     kubejs.shapeless("forbidden_arcanus:edelwood_chest_boat", [
         "forbidden_arcanus:edelwood_boat",
@@ -78,7 +95,6 @@ ServerEvents.recipes((event) => {
     kubejs.shapeless("ae2:not_so_mysterious_cube", "ae2:mysterious_cube").keepIngredient("ae2:mysterious_cube");
     kubejs.shapeless("naturesaura:gold_leaf", ["gold_ingot", "#leaves"]);
     kubejs.shapeless("mierno:futura_block", "ae2:controller").keepIngredient("ae2:controller");
-    kubejs.shapeless("2x botania:blacker_lotus", "botania:blacker_lotus");
     kubejs.shapeless("4x forbidden_arcanus:dark_nether_star", "forbidden_arcanus:dark_nether_star_block");
     kubejs.shapeless("2x powah:capacitor_basic", "2x powah:capacitor_basic_tiny");
     kubejs.shapeless("2x powah:capacitor_basic_large", "2x powah:capacitor_basic");
@@ -395,6 +411,15 @@ ServerEvents.recipes((event) => {
         F: "ae2:printed_silicon",
     });
 
+    kubejs.shaped("mierno:mana_output", ["ABA", "CDE", "AFA"], {
+        A: "mekanism:block_steel",
+        B: "ae2:printed_silicon",
+        C: "ae2:engineering_processor",
+        D: "botania:mana_pool",
+        E: "ae2:logic_processor",
+        F: "ae2:cell_component_1k",
+    });
+
     kubejs.shaped("mierno:pressure_input", ["ABA", "CDE", "AFA"], {
         A: "pneumaticcraft:pressure_chamber_wall",
         B: "pneumaticcraft:pressure_gauge",
@@ -429,7 +454,7 @@ ServerEvents.recipes((event) => {
 
     kubejs.shaped("64x naturesaura:depth_ingot", ["ABA", "CDC", "ABA"], {
         A: "minecraft:netherite_ingot",
-        B: "naturesaura:sky_ingot",
+        B: "naturesaura:sky_ingot_block",
         C: "botania:terrasteel_ingot",
         D: "mierno:unstable_singularity",
     });
@@ -759,5 +784,32 @@ ServerEvents.recipes((event) => {
     kubejs.shaped("mierno:mini_sun", ["AAA", "ABA", "AAA"], {
         A: "glowstone",
         B: "mierno:sun_crystal_full",
+    });
+
+    kubejs.shaped("mierno:modular_mana_pool_core", ["ABA", "BCB", "ABA"], {
+        A: "botania:livingrock",
+        B: "botania:rune_mana",
+        C: "botania:terrasteel_ingot",
+    });
+
+    kubejs.shaped("mierno:upgrade_augment_signalum", ["ABA", "CDC", "ABA"], {
+        A: "thermal:signalum_ingot",
+        B: "thermal:obsidian_glass",
+        C: "thermal:signalum_gear",
+        D: "thermal:upgrade_augment_3",
+    });
+
+    kubejs.shaped("mierno:upgrade_augment_lumium", ["ABA", "CDC", "ABA"], {
+        A: "thermal:lumium_ingot",
+        B: "thermal:obsidian_glass",
+        C: "thermal:lumium_gear",
+        D: "mierno:upgrade_augment_signalum",
+    });
+
+    kubejs.shaped("mierno:upgrade_augment_compressed_iron", ["ABA", "CDC", "ABA"], {
+        A: "pneumaticcraft:compressed_iron_block",
+        B: "thermal:obsidian_glass",
+        C: "pneumaticcraft:compressed_iron_gear",
+        D: "mierno:upgrade_augment_lumium",
     });
 });

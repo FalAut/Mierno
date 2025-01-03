@@ -1776,6 +1776,73 @@
 			x: 7.5d
 			y: 4.5d
 		}
+		{
+			dependencies: ["62399F5DF57F5561"]
+			hide_dependency_lines: true
+			id: "3981493ABA7446CF"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "662CBA30224CC7AA"
+				table_id: 1320735954632056874L
+				type: "loot"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "033644E886834AFB"
+				item: "ars_nouveau:creative_source_jar"
+				type: "item"
+			}]
+			x: 11.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4842CC82C1CF0559"]
+			hide_dependency_lines: true
+			id: "13BEB8324283C9AD"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "39643A11D59AD1E2"
+				table_id: 1320735954632056874L
+				type: "loot"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "78FA37216AE0B6FC"
+				item: "botania:creative_pool"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["62399F5DF57F5561"]
+			hide_dependency_lines: true
+			id: "0D31BA104C7A3DB5"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7D96E0916E056170"
+				table_id: 1320735954632056874L
+				type: "loot"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "7DD89A90CFBC14D2"
+				item: {
+					Count: 1
+					id: "botania:mana_tablet"
+					tag: {
+						creative: 1b
+						mana: 500000
+					}
+				}
+				type: "item"
+			}]
+			x: 9.0d
+			y: -3.0d
+		}
 	]
 	title: "{mierno.chapter1-2.title}"
 }

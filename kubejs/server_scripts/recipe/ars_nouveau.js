@@ -458,4 +458,19 @@ ServerEvents.recipes((event) => {
         ],
         source: 1000,
     });
+
+    event.custom({
+        type: "ars_nouveau:enchanting_apparatus",
+        output: {
+            item: "ars_nouveau:creative_source_jar",
+        },
+        pedestalItems: Array(8).fill({
+            item: Item.of(
+                "ars_nouveau:source_jar",
+                '{BlockEntityTag:{Items:[],id:"ars_nouveau:source_jar",source:10000}}'
+            ).weakNBT(),
+        }),
+        reagent: [{ item: "ars_nouveau:summon_focus" }],
+        sourceCost: 10000,
+    });
 });

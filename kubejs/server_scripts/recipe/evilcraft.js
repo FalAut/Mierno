@@ -13,6 +13,16 @@ ServerEvents.recipes((event) => {
 
     event.custom({
         type: "evilcraft:environmental_accumulator",
+        item: "evilcraft:inverted_potentia",
+        weather: "ANY",
+        result: {
+            item: "evilcraft:inverted_potentia_empowered",
+            weather: "ANY",
+        },
+    });
+
+    event.custom({
+        type: "evilcraft:environmental_accumulator",
         item: "mierno:spirit_attuned_gem_block",
         weather: "ANY",
         result: {
@@ -78,5 +88,23 @@ ServerEvents.recipes((event) => {
         duration: 100,
         xp: 2.2,
         tier: 1,
+    });
+
+    event.custom({
+        type: "evilcraft:blood_infuser",
+        item: "mierno:colorless_gem",
+        fluid: {
+            fluid: "evilcraft:blood",
+            amount: 640000,
+        },
+        result: {
+            item: Item.of(
+                "evilcraft:creative_blood_drop",
+                '{Fluid:{Amount:500,FluidName:"evilcraft:blood"},capacity:1000}'
+            ),
+        },
+        duration: 19980,
+        xp: 2.2,
+        tier: 3,
     });
 });

@@ -68,6 +68,7 @@ ServerEvents.recipes((event) => {
     pulverizer("ae2:fluix_dust", "ae2:fluix_crystal");
     pulverizer("ae2:sky_dust", "ae2:sky_stone_block");
     pulverizer("ae2:ender_dust", "minecraft:ender_pearl");
+    pulverizer("forbidden_arcanus:arcane_crystal_dust", "forbidden_arcanus:arcane_crystal");
 
     event.custom({
         type: "thermal:refinery",

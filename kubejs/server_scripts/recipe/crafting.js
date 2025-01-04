@@ -821,7 +821,7 @@ ServerEvents.recipes((event) => {
     });
 
     kubejs.shaped("mierno:modular_nature_altar_core", ["ABA", "BCB", "ABA"], {
-        A: "minecraft:stone_bricks",
+        A: "mekanism:block_steel",
         B: Item.of("naturesaura:aura_bottle", '{stored_type:"naturesaura:overworld"}').weakNBT(),
         C: "naturesaura:nature_altar",
     });

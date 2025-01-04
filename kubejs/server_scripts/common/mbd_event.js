@@ -85,14 +85,14 @@ MBDMachineEvents.onTick("mierno:memory_source_drawing_crystal_core", (event) => 
     }
 });
 
-MBDMachineEvents.onTick("mierno:modular_imbuement_chamber_core", (event) => {
-    const { machine } = event.event;
-    const { level, pos } = machine;
+// MBDMachineEvents.onTick("mierno:modular_imbuement_chamber_core", (event) => {
+//     const { machine } = event.event;
+//     const { level, pos } = machine;
 
-    if (!$IMultiController.ofController(level, pos).orElse(null).isFormed()) return;
+//     if (!$IMultiController.ofController(level, pos).orElse(null).isFormed()) return;
 
-    machine.triggerGeckolibAnim("formed");
-});
+//     machine.triggerGeckolibAnim("formed");
+// });
 
 MBDMachineEvents.onBeforeRecipeModify("mierno:modular_imbuement_chamber_core", (event) => {
     const info = event.event;

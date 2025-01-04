@@ -22,6 +22,47 @@ ServerEvents.recipes((event) => {
 
     mierno
         .modular_nature_altar()
+        .inputItems("minecraft:stone")
+        .outputItems("naturesaura:infused_stone")
+        .inputAura(1000)
+        .duration(1);
+
+    mierno.modular_nature_altar().inputItems("#logs").outputItems("mierno:infused_wood").inputAura(1000).duration(1);
+
+    mierno
+        .modular_nature_altar()
+        .inputItems("redstone")
+        .blocksInStructure(1, 100, "naturesaura:conversion_catalyst")
+        .outputItems("minecraft:glowstone_dust")
+        .inputAura(1000)
+        .duration(1);
+
+    mierno
+        .modular_nature_altar()
+        .inputItems("emerald")
+        .blocksInStructure(1, 100, "naturesaura:conversion_catalyst")
+        .outputItems("minecraft:amethyst_shard")
+        .inputAura(1000)
+        .duration(1);
+
+    mierno
+        .modular_nature_altar()
+        .inputItems("lapis_lazuli")
+        .blocksInStructure(1, 100, "naturesaura:conversion_catalyst")
+        .outputItems("minecraft:quartz")
+        .inputAura(1000)
+        .duration(1);
+
+    mierno
+        .modular_nature_altar()
+        .inputItems("botania:grass_seeds")
+        .blocksInStructure(1, 100, "naturesaura:conversion_catalyst")
+        .outputItems("botania:vivid_seeds")
+        .inputAura(1000)
+        .duration(1);
+
+    mierno
+        .modular_nature_altar()
         .inputItems("gold_ingot")
         .blocksInStructure(1, 100, "mierno:nether_catalyst")
         .outputItems("naturesaura:tainted_gold")
@@ -40,14 +81,14 @@ ServerEvents.recipes((event) => {
         .modular_nature_altar()
         .inputItems("naturesaura:bottle_two_the_rebottling")
         .blocksInStructure(1, 100, "mierno:nether_catalyst")
-        .outputItems(Item.of("naturesaura:aura_bottle", '{stored_type:"naturesaura:nether"}'))
+        .outputItems(Item.of("naturesaura:aura_bottle", '{stored_type:"naturesaura:nether"}').strongNBT())
         .inputAura(1000)
         .duration(1);
 
     mierno
         .modular_nature_altar()
         .inputItems("naturesaura:bottle_two_the_rebottling")
-        .outputItems(Item.of("naturesaura:aura_bottle", '{stored_type:"naturesaura:overworld"}'))
+        .outputItems(Item.of("naturesaura:aura_bottle", '{stored_type:"naturesaura:overworld"}').strongNBT())
         .inputAura(1000)
         .duration(1);
 
@@ -55,7 +96,7 @@ ServerEvents.recipes((event) => {
         .modular_nature_altar()
         .inputItems("naturesaura:bottle_two_the_rebottling")
         .blocksInStructure(1, 100, "mierno:end_catalyst")
-        .outputItems(Item.of("naturesaura:aura_bottle", '{stored_type:"naturesaura:end"}'))
+        .outputItems(Item.of("naturesaura:aura_bottle", '{stored_type:"naturesaura:end"}').strongNBT())
         .inputAura(1000)
         .duration(1);
 

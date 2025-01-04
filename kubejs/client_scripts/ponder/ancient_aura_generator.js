@@ -11,7 +11,7 @@ Ponder.registry((event) => {
             scene.world.setBlock([3, 4, 2], Blocks.OAK_LEAVES.defaultBlockState(), false);
 
             scene.idle(60);
-            scene.text(100, "树叶会被核心吸收，从而转化为灵气，每个树叶可转化 10000 灵气").attachKeyFrame();
+            scene.text(100, "树叶会被核心吸收，从而转化为灵气，每个树叶可转化 50000 灵气").attachKeyFrame();
             scene.world.destroyBlock([3, 4, 2]);
 
             scene.idle(120);

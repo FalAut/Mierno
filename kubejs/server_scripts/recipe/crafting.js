@@ -830,4 +830,10 @@ ServerEvents.recipes((event) => {
         A: "botania:terrasteel_nugget",
         B: "ae2:quartz_block",
     });
+
+    kubejs.shaped("naturesaura:generator_limit_remover", ["ABA", "BCB", "ABA"], {
+        A: "naturesaura:infused_stone",
+        B: Item.of("naturesaura:aura_bottle", '{stored_type:"naturesaura:overworld"}').weakNBT(),
+        C: "naturesaura:infused_iron_block",
+    });
 });

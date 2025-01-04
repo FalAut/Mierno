@@ -128,8 +128,10 @@ ServerEvents.recipes((event) => {
     naturesaura.altar("minecraft:amethyst_shard", "minecraft:emerald", "naturesaura:conversion_catalyst");
     naturesaura.altar("minecraft:quartz", "minecraft:lapis_lazuli", "naturesaura:conversion_catalyst");
     naturesaura.altar("botania:vivid_seeds", "botania:grass_seeds");
-    naturesaura.altar("naturesaura:tainted_gold", "gold_ingot", "mierno:nether_catalyst", 2000);
-    naturesaura.altar("naturesaura:tainted_gold_block", "gold_block", "mierno:nether_catalyst", 18000);
+    naturesaura.altar("naturesaura:infused_iron", "iron_ingot");
+    naturesaura.altar("naturesaura:infused_iron_block", "iron_block");
+    naturesaura.altar("naturesaura:tainted_gold", "gold_ingot", "mierno:nether_catalyst", 1000);
+    naturesaura.altar("naturesaura:tainted_gold_block", "gold_block", "mierno:nether_catalyst", 9000);
     naturesaura.altar(
         Item.of("naturesaura:aura_bottle", '{stored_type:"naturesaura:nether"}'),
         "naturesaura:bottle_two_the_rebottling",

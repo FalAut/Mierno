@@ -27,6 +27,20 @@ ServerEvents.recipes((event) => {
         .inputAura(1000)
         .duration(1);
 
+    mierno
+        .modular_nature_altar()
+        .inputItems("iron_block")
+        .outputItems("naturesaura:infused_iron_block")
+        .inputAura(9000)
+        .duration(1);
+
+    mierno
+        .modular_nature_altar()
+        .inputItems("iron_ingot")
+        .outputItems("naturesaura:infused_iron")
+        .inputAura(1000)
+        .duration(1);
+
     mierno.modular_nature_altar().inputItems("#logs").outputItems("mierno:infused_wood").inputAura(1000).duration(1);
 
     mierno
@@ -66,7 +80,7 @@ ServerEvents.recipes((event) => {
         .inputItems("gold_ingot")
         .blocksInStructure(1, 100, "mierno:nether_catalyst")
         .outputItems("naturesaura:tainted_gold")
-        .inputAura(2000)
+        .inputAura(1000)
         .duration(1);
 
     mierno
@@ -74,7 +88,7 @@ ServerEvents.recipes((event) => {
         .inputItems("gold_block")
         .blocksInStructure(1, 100, "mierno:nether_catalyst")
         .outputItems("naturesaura:tainted_gold_block")
-        .inputAura(18000)
+        .inputAura(9000)
         .duration(1);
 
     mierno

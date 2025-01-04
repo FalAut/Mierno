@@ -37,12 +37,6 @@
             "aura": 10000
         },
         {
-            "input": "minecraft:iron_ingot",
-            "catalyst": "null",
-            "output": "naturesaura:infused_iron",
-            "aura": 15000
-        },
-        {
             "input": "minecraft:packed_mud",
             "catalyst": "naturesaura:crushing_catalyst",
             "output": "minecraft:mud",
@@ -107,12 +101,6 @@
             "catalyst": "naturesaura:conversion_catalyst",
             "output": "minecraft:leather",
             "aura": 10000
-        },
-        {
-            "input": "minecraft:iron_block",
-            "catalyst": "null",
-            "output": "naturesaura:infused_iron_block",
-            "aura": 135000
         },
         {
             "input": "naturesaura:gold_leaf",

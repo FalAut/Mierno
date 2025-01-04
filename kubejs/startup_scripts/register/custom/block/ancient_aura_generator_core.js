@@ -2,7 +2,7 @@ StartupEvents.registry("block", (event) => {
     event.create("mierno:ancient_aura_generator_core").blockEntity((info) => {
         info.enableSync();
         info.serverTick(20, 0, (be) => {
-            const AURA_OUTPUT = 10000;
+            const AURA_OUTPUT = 50000;
             const { level, blockPos } = be;
             if (!$PatchouliAPI.getMultiblock("mierno:ancient_aura_generator").validate(level, blockPos, "none")) return;
 

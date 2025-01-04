@@ -1,9 +1,12 @@
 ## v0.1.3
 
 -   简化了制造催化器的配方
--   为模块化自然祭坛添加缺失的配方
 -   远古灵气制造核心现在消耗每个树叶所能产生的灵气从 10000 提升到了 50000
 -   将灌注铁锭和污染黄金制作所需灵气将为 1000
+
+-   Simplified the recipe for making catalysts
+-   Ancient Aura Crafting Cores now produce 50,000 Auras per leaf consumed, up from 10,000.
+-   Infused Iron Ingot and Tainted Gold crafting will now require 1000 Aura.
 
 ## v0.1.2
 

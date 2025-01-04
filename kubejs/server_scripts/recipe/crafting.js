@@ -43,8 +43,12 @@ ServerEvents.recipes((event) => {
 
     fullShaped("mierno:mana_string_block", "botania:mana_string");
     fullShaped("mierno:spirit_attuned_gem_block", "occultism:spirit_attuned_gem");
-    fullShaped("functionalstorage:max_storage_upgrade", "functionalstorage:netherite_upgrade");
+    // fullShaped("functionalstorage:max_storage_upgrade", "functionalstorage:netherite_upgrade");
     fullShaped("minecraft:skeleton_skull", "minecraft:bone_block");
+
+    kubejs.shaped("functionalstorage:max_storage_upgrade", ["AAA", "AAA", "AAA"], {
+        A: "functionalstorage:netherite_upgrade",
+    });
 
     function copySelf(item) {
         kubejs.shapeless(Item.of(item).withCount(2), item);

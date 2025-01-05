@@ -753,9 +753,8 @@
 				}
 				{
 					consume_items: true
-					count: 2L
 					id: "73C1C6F3DC92DA20"
-					item: { Count: 2, id: "mierno:item_input" }
+					item: "mierno:item_input"
 					type: "item"
 				}
 				{
@@ -780,16 +779,16 @@
 				}
 				{
 					consume_items: true
-					count: 63L
+					count: 65L
 					id: "34C0A06A823D98BC"
-					item: { Count: 63, id: "mekanism:block_steel" }
+					item: "mekanism:block_steel"
 					type: "item"
 				}
 				{
 					consume_items: true
-					count: 54L
+					count: 53L
 					id: "52CEAD7B7D58B983"
-					item: { Count: 54, id: "ae2:quartz_vibrant_glass" }
+					item: "ae2:quartz_vibrant_glass"
 					type: "item"
 				}
 				{

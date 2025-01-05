@@ -433,7 +433,7 @@ ServerEvents.recipes((event) => {
                     item: "occultism:afrit_essence",
                 },
                 {
-                    item: "mierno:memory_source_gem",
+                    item: "occultism:otherworld_essence",
                 },
                 {
                     item: "minecraft:crying_obsidian",
@@ -471,7 +471,7 @@ ServerEvents.recipes((event) => {
                     item: "minecraft:netherite_pickaxe",
                 },
                 {
-                    item: "mierno:unstable_singularity",
+                    item: "mierno:memory_source_gem",
                 },
                 {
                     item: "minecraft:totem_of_undying",

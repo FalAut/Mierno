@@ -263,4 +263,5 @@ ItemEvents.tooltip((event) => {
     event.add("mierno:futura_block", Text.translate("tooltip.mierno.futura_block").gold());
     event.add("thermal:rubberwood_sapling", Text.translate("tooltip.mierno.rubberwood_sapling").gold());
     event.add("minecraft:ghast_tear", Text.translate("tooltip.mierno.ghast_tear").gold());
+    event.add("botania:blacker_lotus", Text.translate("tooltip.mierno.blacker_lotus").gold());
 });

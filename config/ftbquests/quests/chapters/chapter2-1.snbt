@@ -123,8 +123,8 @@
 				item: "minecraft:ancient_debris"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -1.0d
+			x: 2.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["1252BBA8CDBBDE22"]
@@ -293,13 +293,10 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: -0.5d
+			y: 0.5d
 		}
 		{
-			dependencies: [
-				"377477475E25BA6F"
-				"68B481162D3D8510"
-			]
+			dependencies: ["377477475E25BA6F"]
 			id: "58D74210D6ADBA24"
 			rewards: [
 				{
@@ -502,37 +499,6 @@
 			]
 			x: 3.5d
 			y: 1.0d
-		}
-		{
-			dependencies: ["0C74AC4CB2A839A0"]
-			id: "68B481162D3D8510"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "4666D2BF7242FDFF"
-					table_id: 1320735954632056874L
-					type: "loot"
-				}
-				{
-					exclude_from_claim_all: true
-					id: "697449FED2B2AE24"
-					table_id: 1675656862002921859L
-					type: "loot"
-				}
-				{
-					exclude_from_claim_all: true
-					id: "4DBA3A91EA02F26E"
-					table_id: 5354634242720975076L
-					type: "loot"
-				}
-			]
-			tasks: [{
-				id: "5CD427A11F881731"
-				item: "mierno:unstable_singularity"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 0.5d
 		}
 		{
 			dependencies: [

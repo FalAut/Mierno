@@ -787,6 +787,7 @@
 		}
 		{
 			dependencies: ["4A2B7E68773E4ADB"]
+			icon: "mierno:unstable_singularity"
 			id: "0C74AC4CB2A839A0"
 			rewards: [
 				{
@@ -811,10 +812,10 @@
 			shape: "gear"
 			size: 2.0d
 			tasks: [{
-				id: "1A091C8D7D37A2BC"
-				item: "mierno:unstable_singularity"
-				type: "item"
+				id: "34C9A2055A1AF0F1"
+				type: "checkmark"
 			}]
+			title: "{item.mierno.unstable_singularity}"
 			x: 12.2d
 			y: 0.0d
 		}

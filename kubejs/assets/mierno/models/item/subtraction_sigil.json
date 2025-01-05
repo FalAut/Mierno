@@ -1,0 +1,14 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "mierno:item/subtraction_sigil"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "mierno:activate": 1
+            },
+            "model": "mierno:item/subtraction_sigil_activate"
+        }
+    ]
+}

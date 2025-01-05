@@ -298,6 +298,7 @@
     "tooltip.mierno.ghast_tear": "Ghast can be summoned by the Altar of Birthing.",
     "tooltip.mierno.modular_imbuement_chamber_core_1": "The ArchWood Planks (base positions) in the modularisation can be replaced with the Item Input and Item Output.",
     "tooltip.mierno.modular_imbuement_chamber_core_2": "The default production speed is slow, and can be accelerated to 0.05 seconds by source jar within 6 blocks of the core.",
+    "tooltip.mierno.blacker_lotus": "Can be duplicated by crafting",
 
     "biome.mierno.black_and_white": "Black and White",
     "biome.mierno.misty_forest": "Misty Forest",
@@ -478,7 +479,7 @@
     "mierno.chapter2-1.memory_source_drawing_crystal.subtitle": "§6→【Click Me】← View the Memory Source Drawing Crystal capsule",
 
     "mierno.chapter2-2.enter_otherworld.title": "§6Enter the Otherworld",
-    "mierno.chapter2-2.enter_otherworld.subtitle": "§6Wear the Dream Eye and use the Horror Sigil to right-click a bed in the Nether to enter the Otherworld",
+    "mierno.chapter2-2.enter_otherworld.subtitle": "§6Wear the Dream Eye and use the Token of Terror to right-click a bed in the Nether to enter the Otherworld",
     "mierno.chapter2-2.iesnium_ore.subtitle": "§cNaturally generated Iesnium Ore must be mined with an §aInfused Pickaxe§r or §aIesnium Pickaxe§r",
     "mierno.chapter2-2.found_dark_temple.title": "§4Discover the Dark Temple",
     "mierno.chapter2-2.check_environmental_accumulator.title": "§eObserve the Environmental Accumulator",

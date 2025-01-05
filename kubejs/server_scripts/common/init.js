@@ -49,31 +49,36 @@ ServerEvents.loaded((event) => {
 // });
 
 // ServerEvents.recipes((event) => {
+//     let natureAltarRecipes = [];
 
-// let natureAltarRecipes = [];
+//     event.forEachRecipe({ type: "naturesaura:altar" }, (recipes) => {
+//         let output = recipes.json.get("output").get("item");
+//         let input = recipes.json.get("input");
 
-// event.forEachRecipe({ type: "naturesaura:altar" }, (recipes) => {
-//     let output = recipes.json.get("output").get("item");
-//     let input = recipes.json.get("input");
+//         let outputCount;
+//         if (recipes.json.get("output").get("count")) {
+//             outputCount = recipes.json.get("output").get("count");
+//         }
 
-//     let catalyst;
+//         let catalyst;
 
-//     if (recipes.json.get("catalyst")) {
-//         catalyst = recipes.json.get("catalyst").get("item");
-//     }
+//         if (recipes.json.get("catalyst")) {
+//             catalyst = recipes.json.get("catalyst").get("item");
+//         }
 
-//     let inputItem = input.has("item") ? input.get("item") : null;
-//     let inputTag = input.has("tag") ? input.get("tag") : null;
+//         let inputItem = input.has("item") ? input.get("item") : null;
+//         let inputTag = input.has("tag") ? input.get("tag") : null;
 
-//     natureAltarRecipes.push({
-//         input: inputItem ? inputItem : inputTag,
-//         catalyst: catalyst ? catalyst : "null",
-//         output: output,
-//         aura: recipes.json.get("aura"),
+//         natureAltarRecipes.push({
+//             input: inputItem ? inputItem : inputTag,
+//             catalyst: catalyst ? catalyst : "null",
+//             output: output,
+//             outputCount: outputCount ? outputCount : 1,
+//             aura: recipes.json.get("aura"),
+//         });
 //     });
-// });
 
-// JsonIO.write("kubejs/nature_altar.json", { recipes: natureAltarRecipes });
+//     JsonIO.write("kubejs/nature_altar.json", { recipes: natureAltarRecipes });
 // });
 
 // ServerEvents.recipes((event) => {

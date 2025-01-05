@@ -27,7 +27,7 @@
     "item.mierno.fire_starter": "引火器",
     "item.mierno.addition_sigil": "聚合徽章",
     "item.mierno.subtraction_sigil": "削减徽章",
-    "item.mierno.multiplication_sigil": "",
+    "item.mierno.multiplication_sigil": "融合徽章",
     "item.mierno.division_sigil": "分割徽章",
     "item.mierno.pseudo_inversion_sigil": "伪逆徽章",
     "item.mierno.portable_crafting_table": "便携式工作台",
@@ -298,6 +298,7 @@
     "tooltip.mierno.ghast_tear": "恶魂可以用降生祭坛召唤",
     "tooltip.mierno.modular_imbuement_chamber_core_1": "模块化中的至高木木板（基座位置）可替换为物品输入仓和物品输出仓",
     "tooltip.mierno.modular_imbuement_chamber_core_2": "默认制作速度很慢，可吸收核心6格范围内的魔源罐来加速到0.05秒",
+    "tooltip.mierno.blacker_lotus": "可通过合成复制",
 
     "biome.mierno.black_and_white": "黑与白",
     "biome.mierno.misty_forest": "迷雾森林",

@@ -1,0 +1,14 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "mierno:item/division_sigil"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "mierno:activate": 1
+            },
+            "model": "mierno:item/division_sigil_activate"
+        }
+    ]
+}

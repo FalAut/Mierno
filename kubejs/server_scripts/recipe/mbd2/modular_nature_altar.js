@@ -7,14 +7,14 @@ ServerEvents.recipes((event) => {
                 .modular_nature_altar()
                 .inputItems(recipeData.input)
                 .blocksInStructure(1, 100, recipeData.catalyst)
-                .outputItems(recipeData.output)
+                .outputItems(Item.of(recipeData.output).withCount(recipeData.outputCount))
                 .inputAura(recipeData.aura)
                 .duration(1);
         } else {
             mierno
                 .modular_nature_altar()
                 .inputItems(recipeData.input)
-                .outputItems(recipeData.output)
+                .outputItems(Item.of(recipeData.output).withCount(recipeData.outputCount))
                 .inputAura(recipeData.aura)
                 .duration(1);
         }

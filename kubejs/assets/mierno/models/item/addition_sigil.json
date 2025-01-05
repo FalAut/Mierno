@@ -1,0 +1,14 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "mierno:item/addition_sigil"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "mierno:activate": 1
+            },
+            "model": "mierno:item/addition_sigil_activate"
+        }
+    ]
+}

@@ -17,7 +17,7 @@ StartupEvents.registry("item", (event) => {
     event.create("mierno:subtraction_sigil").unstackable();
     event.create("mierno:multiplication_sigil").unstackable();
     event.create("mierno:division_sigil").unstackable();
-    event.create("mierno:pseudo_inversion_sigil").unstackable().rarity("epic").glow(true);
+    event.create("mierno:pseudo_inversion_sigil").unstackable().rarity("epic");
     event.create("mierno:colorless_gem").rarity("epic");
     event.create("mierno:unstable_singularity").rarity("epic");
     event.create("mierno:source_emerald");

@@ -1,0 +1,14 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "mierno:item/pseudo_inversion_sigil"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "mierno:activate": 1
+            },
+            "model": "mierno:item/pseudo_inversion_sigil_activate"
+        }
+    ]
+}

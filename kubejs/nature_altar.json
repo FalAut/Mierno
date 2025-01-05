@@ -1,13 +1,6 @@
 {
     "recipes": [
         {
-            "input": "forge:ingots/gold",
-            "catalyst": "null",
-            "output": "naturesaura:tainted_gold",
-            "outputCount": 1,
-            "aura": 3000
-        },
-        {
             "input": "minecraft:crimson_fungus",
             "catalyst": "naturesaura:conversion_catalyst",
             "output": "minecraft:nether_wart",
@@ -188,13 +181,6 @@
             "output": "minecraft:lead",
             "outputCount": 1,
             "aura": 10000
-        },
-        {
-            "input": "forge:storage_blocks/gold",
-            "catalyst": "null",
-            "output": "naturesaura:tainted_gold_block",
-            "outputCount": 1,
-            "aura": 27000
         },
         {
             "input": "minecraft:amethyst_shard",

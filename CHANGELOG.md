@@ -8,6 +8,16 @@
 -   神灯的制作不再需要不稳定奇点
 -   现在 5 种徽章会在激活后切换材质
 
+---
+
+-   Fix incorrect quest requirements for Matter Mixer capsule quests
+-   Fix incorrect number of items output from Modular Nature Altar
+-   Fix unstable singularity quests not completing
+-   Drawer Maximum Storage upgrade is no longer craftable, as placing it in a compressed drawer can copy items
+-   Modular Magic Pools no longer consume Black Lotus when full
+-   Unstable Singularity is no longer required to craft Divine Lamps.
+-   The 5 sigils now switch textures when activated.
+
 ## v0.1.4
 
 -   修复抽屉最大存储升级无法复制

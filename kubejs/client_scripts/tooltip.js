@@ -264,4 +264,8 @@ ItemEvents.tooltip((event) => {
     event.add("thermal:rubberwood_sapling", Text.translate("tooltip.mierno.rubberwood_sapling").gold());
     event.add("minecraft:ghast_tear", Text.translate("tooltip.mierno.ghast_tear").gold());
     event.add("botania:blacker_lotus", Text.translate("tooltip.mierno.blacker_lotus").gold());
+    event.add(
+        ["thermal:apatite_ore", "thermal:cinnabar_ore", "thermal:niter_ore", "thermal:sulfur_ore"],
+        Text.translate("tooltip.mierno.mistyforest_ore").gold()
+    );
 });

@@ -277,6 +277,7 @@
     "tooltip.mierno.blood_converter": "將血液轉換為生命源質",
     "tooltip.mierno.blood_test_tube": "可放入赫菲斯托斯鍛爐中來為其提供血液",
     "tooltip.mierno.otherworld_ore": "可使用§b虛空礦物采掘機§r在§5異界§r中開采獲得",
+    "tooltip.mierno.mistyforest_ore": "可使用§b虛空礦物采掘機§r在§f迷霧森林§r中開采獲得",
     "tooltip.mierno.sun_crystal_full": "將未充滿的太陽晶體扔在§e正午的太陽§r底下 100 秒",
     "tooltip.mierno.moon_stone_full": "將未充滿的月之石扔在§5午夜的月亮§r底下 100 秒",
     "tooltip.mierno.time_changer_1": "移時日晷可以操縱時間，使其快進到白天和夜晚的任何時刻",

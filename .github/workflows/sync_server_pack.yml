@@ -26,31 +26,21 @@ jobs:
                   git fetch origin server_pack
                   git checkout server_pack
 
-            - name: Copy .gitignore from server_pack branch
+            - name: Sync white-listed files
               run: |
-                  git checkout server_pack .gitignore
+                  # 获取白名单文件
+                  git ls-tree -r --name-only HEAD > file_list.txt
 
-            - name: Sync main changes to server_pack
-              run: |
-                  git merge origin/main --allow-unrelated-histories --no-commit --no-ff || true
-
-                  git status --ignored --short | grep '^!! ' | awk '{print $2}' | xargs -I{} rm -rf {}
-
-            # - name: Manually filter files (if needed)
-            #   run: |
-            #       FILTER_PATHS=(
-            #           "path/to/exclude1"
-            #           "path/to/exclude2"
-            #       )
-            #       for path in "${FILTER_PATHS[@]}"; do
-            #           rm -rf "$path"
-            #       done
+                  # 排除 .gitignore 和 README.md
+                  grep -vE '^(.gitignore|README.md)$' file_list.txt | while read file; do
+                      cp --parents "$file" .
+                  done
 
             - name: Commit and Push changes
               run: |
                   if ! git diff-index --quiet HEAD; then
                       git add .
-                      git commit -m "Sync changes from main to server_pack"
+                      git commit -m "Sync server_pack from main"
                       git push origin server_pack
                   else
                       echo "No changes to commit."

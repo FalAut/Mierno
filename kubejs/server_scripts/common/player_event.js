@@ -35,14 +35,14 @@ PlayerEvents.tick((event) => {
             item.nbt.putInt("Stable", stable - 10);
 
             if (stable <= 10) {
-                item.count--;
+                item.shrink(item.count);
                 player.block.createExplosion().explosionMode("none").strength(5).explode();
             }
         }
 
         if (item == "mierno:unstable_singularity") {
+            item.shrink(item.count);
             player.block.createExplosion().explosionMode("none").strength(5).explode();
-            item.count--;
         }
     });
 

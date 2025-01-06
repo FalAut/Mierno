@@ -536,7 +536,7 @@
     "tooltip.bloodmagic.experienceTome.exp": "经验值：%0.3f",
     "tooltip.bloodmagic.experienceTome.expLevel": "等级：%d",
     "tooltip.bloodmagic.extraInfo": "&9——按住 Shift 获取更多信息——",
-    "tooltip.bloodmagic.filter.all": "All: %s",
+    "tooltip.bloodmagic.filter.all": "所有: %s",
     "tooltip.bloodmagic.filter.anytag": "Any Tag of %s",
     "tooltip.bloodmagic.filter.blacklist": "Deny:",
     "tooltip.bloodmagic.filter.count": "%sx %s",

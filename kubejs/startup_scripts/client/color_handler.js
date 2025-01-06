@@ -19,7 +19,6 @@ StartupEvents.postInit((event) => {
     Client.itemColors.register((stack, index) => (index == 1 ? 4159204 : -1), cobbleGens);
 });
 
-// TEST
 // ForgeEvents.onEvent("net.minecraftforge.client.event.RegisterColorHandlersEvent$Block", (event) => {
 //     event.register(
 //         (state, env, pos, tintIndex) =>

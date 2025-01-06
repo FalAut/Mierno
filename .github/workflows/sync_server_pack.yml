@@ -28,20 +28,22 @@ jobs:
 
             - name: Sync white-listed files
               run: |
-                  git checkout main
-                  git ls-tree -r --name-only HEAD > file_list.txt
-
-                  grep -vE '^(.gitignore|README.md)$' file_list.txt > filtered_file_list.txt
-
                   git checkout server_pack
 
-                  cat filtered_file_list.txt | while read file; do
-                      if [ -f "$file" ]; then
-                          git checkout main -- "$file"
+                  if [ ! -f .gitignore ]; then
+                      echo "Error: .gitignore not found in server_pack branch"
+                      exit 1
+                  fi
+
+                  git ls-tree -r --name-only HEAD > file_list.txt
+
+                  grep -vE '^(.gitignore|README.md)$' file_list.txt | while read file; do
+                      if ! git check-ignore -q "$file"; then
+                          echo "$file" >> filtered_file_list.txt
                       fi
+                  done
 
                   rm -f file_list.txt filtered_file_list.txt
-                  done
 
             - name: Commit and Push changes
               run: |

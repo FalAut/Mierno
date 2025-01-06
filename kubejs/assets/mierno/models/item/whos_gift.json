@@ -1,7 +1,0 @@
-{
-    "parent": "mierno:item/gift_box",
-    "textures": {
-        "0": "mierno:item/whos_gift",
-        "particle": "mierno:item/whos_gift"
-    }
-}

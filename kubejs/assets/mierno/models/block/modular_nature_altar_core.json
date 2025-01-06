@@ -1,7 +1,0 @@
-{
-    "parent": "mierno:block/blockmodel_overlay_all",
-    "textures": {
-        "bg_all": "mekanism:block/block_steel",
-        "ov_all": "mierno:block/modular_nature_altar_core_overlay"
-    }
-}

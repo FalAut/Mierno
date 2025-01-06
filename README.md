@@ -1,2 +1,0 @@
-# Mierno
-Minecraft Modpack

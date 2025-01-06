@@ -1,6 +1,0 @@
-{
-    "parent": "mierno:block/cobble_gen_base",
-    "textures": {
-        "material": "block/diamond_block"
-    }
-}

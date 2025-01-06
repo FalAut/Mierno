@@ -1,7 +1,0 @@
-{
-	chapter_groups: [
-		{ id: "7299F76F5EAD0EDE", title: "{mierno.chapter1.title}" }
-		{ id: "25B116B1000F1A1E", title: "{mierno.chapter2.title}" }
-		{ id: "54B1F1163EE92D1C", title: "{mierno.chapter3.title}" }
-	]
-}

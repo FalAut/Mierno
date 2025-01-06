@@ -1,9 +1,0 @@
-{
-    "parent": "block/cube_all",
-    "textures": {
-        "all": "evilcraft:block/blood_infuser_side",
-        "up": "evilcraft:block/spirit_reanimator_north_on",
-        "down": "evilcraft:block/blood_infuser_up",
-        "north": "evilcraft:block/blood_infuser_north_on"
-    }
-}

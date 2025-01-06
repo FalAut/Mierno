@@ -39,6 +39,8 @@ jobs:
                       if [ -f "$file" ]; then
                           git checkout main -- "$file"
                       fi
+
+                  rm -f file_list.txt filtered_file_list.txt
                   done
 
             - name: Commit and Push changes
@@ -50,7 +52,3 @@ jobs:
                   else
                       echo "No changes to commit."
                   fi
-
-            - name: Cleanup temporary files
-              run: |
-                  rm -f file_list.txt filtered_file_list.txt

@@ -32,9 +32,10 @@ jobs:
                   git ls-tree -r --name-only HEAD > file_list.txt
 
                   # 排除 .gitignore 和 README.md
-                  grep -vE '^(.gitignore|README.md)$' file_list.txt | while read file; do
-                      cp --parents "$file" .
-                  done
+                  grep -vE '^(.gitignore|README.md)$' file_list.txt > filtered_file_list.txt
+
+                  # 使用 rsync 同步文件
+                  rsync -av --files-from=filtered_file_list.txt ./ ./
 
             - name: Commit and Push changes
               run: |

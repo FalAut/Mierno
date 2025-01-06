@@ -26,6 +26,11 @@ jobs:
                   ref: server_pack
                   path: server_pack_dir
 
+            - name: Set UTF-8 locale
+              run: |
+                  export LC_ALL=C.UTF-8
+                  export LANG=C.UTF-8
+
             - name: Set up environment and determine version
               id: setup
               run: |

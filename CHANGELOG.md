@@ -6,6 +6,14 @@
 -   虚空矿物采掘机现在可以在迷雾森林中采掘磷灰石矿石、朱砂矿石、硝石矿石和硫矿石
 -   修复堆叠后的不稳定金属锭和不稳定奇点爆炸后只消耗 1 个的问题
 
+---
+
+-   Add probability hints to Anvil Pressure Plate Recipe JEI
+-   Change default white grid size to 13x13
+-   Removed invalid duplicate Tainted Gold recipes
+-   Void Mineral Miner can now mine Apatite Ore, Cinnabar Ore, Nitrate Ore and Sulfur Ore in Misty Forests
+-   Fixed an issue where stacked Unstable Ingots and Unstable Singularities would only consume 1 when exploded
+
 ## v0.1.5
 
 -   修复物质混合机胶囊任务需求不正确的问题

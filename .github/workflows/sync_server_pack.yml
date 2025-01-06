@@ -1,0 +1,44 @@
+name: Sync main to server_pack
+
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+    sync:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout main branch
+              uses: actions/checkout@v3
+              with:
+                  ref: main
+
+            - name: Set Git User
+              run: |
+                  git config --global user.name "github-actions[bot]"
+                  git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+            - name: Checkout server_pack branch
+              run: |
+                  git fetch origin server_pack
+                  git checkout server_pack
+
+            - name: Merge changes from main to server_pack
+              run: |
+                  git merge origin/main --no-commit --no-ff || true
+
+            - name: Apply .gitignore rules
+              run: |
+                  git checkout server_pack .gitignore
+                  git status --ignored --short | grep '^!! ' | awk '{print $2}' | xargs -I{} rm -rf {}
+
+            - name: Commit and Push changes
+              run: |
+                  if ! git diff-index --quiet HEAD; then
+                    git commit -m "Sync changes from main to server_pack"
+                    git push origin server_pack
+                  else
+                    echo "No changes to commit."
+                  fi

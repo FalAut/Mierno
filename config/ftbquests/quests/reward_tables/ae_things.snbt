@@ -1,0 +1,47 @@
+{
+	id: "366A9E28046C2EFC"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{
+			item: {
+				Count: 1
+				id: "expatternprovider:infinity_cell"
+				tag: {
+					record: {
+						"#c": "ae2:i"
+						id: "minecraft:white_concrete"
+					}
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "expatternprovider:infinity_cell"
+				tag: {
+					record: {
+						"#c": "ae2:i"
+						id: "minecraft:gray_concrete"
+					}
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "ae2wtlib:wireless_universal_terminal"
+				tag: {
+					crafting: 1b
+					currentTerminal: "crafting"
+					ex_pattern_access: 1b
+					internalCurrentPower: 6400000.0d
+					internalMaxPower: 6400000.0d
+					pattern_access: 1b
+					pattern_encoding: 1b
+				}
+			}
+		}
+	]
+	title: "ae_things"
+}

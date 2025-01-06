@@ -1,0 +1,8 @@
+{
+    "feature": "mierno:simple_poppy",
+    "placement": [
+        {
+            "type": "minecraft:biome"
+        }
+    ]
+}

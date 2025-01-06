@@ -1,0 +1,34 @@
+{
+    "essences": {
+        "aureal": 1000,
+        "blood": 10000,
+        "experience": 900,
+        "souls": 10
+    },
+    "inputs": [
+        {
+            "amount": 4,
+            "ingredient": {
+                "item": "forbidden_arcanus:corrupted_arcane_crystal"
+            }
+        },
+        {
+            "amount": 4,
+            "ingredient": {
+                "item": "forbidden_arcanus:deorum_ingot"
+            }
+        }
+    ],
+    "magic_circle": {
+        "inner_texture": "forbidden_arcanus:textures/effect/magic_circle/inner/origin.png",
+        "outer_texture": "forbidden_arcanus:textures/effect/magic_circle/outer/corrupt_interpolate.png"
+    },
+    "main_ingredient": {
+        "item": "bloodmagic:masterritualstone"
+    },
+    "result": {
+        "type": "forbidden_arcanus:upgrade_tier",
+        "required_tier": 1,
+        "upgraded_tier": 2
+    }
+}

@@ -1,0 +1,22 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter3-1"
+	group: "54B1F1163EE92D1C"
+	id: "29ACB127CBDF4927"
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		id: "237F58B246EF31BE"
+		shape: "gear"
+		size: 2.0d
+		tasks: [{
+			id: "4ED76956DDF2C6A2"
+			item: "mekanism:steel_casing"
+			type: "item"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "{mierno.tobecontinue}"
+}

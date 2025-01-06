@@ -1,0 +1,28 @@
+{
+    "parent": "mierno:oak_mortar",
+    "display": {
+        "icon": {
+            "item": "naturesaura:gold_fiber"
+        },
+        "title": {
+            "translate": "advancement.mierno.gold_fiber.title"
+        },
+        "description": {
+            "translate": "advancement.mierno.gold_fiber.desc"
+        },
+        "hidden": false
+    },
+    "criteria": {
+        "gold_fiber": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": ["naturesaura:gold_fiber"]
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [["gold_fiber"]]
+}

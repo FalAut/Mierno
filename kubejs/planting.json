@@ -1,0 +1,538 @@
+{
+    "recipes": [
+        {
+            "seed": "minecraft:fern",
+            "outputs": ["minecraft:fern"]
+        },
+        {
+            "seed": "minecraft:brown_mushroom",
+            "outputs": ["minecraft:brown_mushroom"]
+        },
+        {
+            "seed": "minecraft:cornflower",
+            "outputs": ["minecraft:cornflower"]
+        },
+        {
+            "seed": "minecraft:crimson_roots",
+            "outputs": ["minecraft:crimson_roots"]
+        },
+        {
+            "seed": "minecraft:small_dripleaf",
+            "outputs": ["minecraft:small_dripleaf"]
+        },
+        {
+            "seed": "minecraft:pink_tulip",
+            "outputs": ["minecraft:pink_tulip"]
+        },
+        {
+            "seed": "minecraft:sugar_cane",
+            "outputs": ["minecraft:sugar_cane"]
+        },
+        {
+            "seed": "botania:yellow_mystical_flower",
+            "outputs": ["botania:yellow_mystical_flower"]
+        },
+        {
+            "seed": "botania:light_gray_double_flower",
+            "outputs": ["botania:light_gray_double_flower"]
+        },
+        {
+            "seed": "botania:lime_double_flower",
+            "outputs": ["botania:lime_double_flower"]
+        },
+        {
+            "seed": "minecraft:brain_coral_fan",
+            "outputs": ["minecraft:brain_coral_fan"]
+        },
+        {
+            "seed": "minecraft:tube_coral_fan",
+            "outputs": ["minecraft:tube_coral_fan"]
+        },
+        {
+            "seed": "minecraft:red_mushroom",
+            "outputs": ["minecraft:red_mushroom"]
+        },
+        {
+            "seed": "minecraft:melon_seeds",
+            "outputs": ["minecraft:melon", "minecraft:melon_seeds"]
+        },
+        {
+            "seed": "minecraft:pumpkin_seeds",
+            "outputs": ["minecraft:pumpkin", "minecraft:pumpkin_seeds"]
+        },
+        {
+            "seed": "minecraft:kelp",
+            "outputs": ["minecraft:kelp"]
+        },
+        {
+            "seed": "botania:lime_mystical_flower",
+            "outputs": ["botania:lime_mystical_flower"]
+        },
+        {
+            "seed": "minecraft:sweet_berries",
+            "outputs": ["minecraft:sweet_berries", "minecraft:sweet_berries"]
+        },
+        {
+            "seed": "botania:light_blue_mystical_flower",
+            "outputs": ["botania:light_blue_mystical_flower"]
+        },
+        {
+            "seed": "minecraft:brain_coral_block",
+            "outputs": ["minecraft:brain_coral_block"]
+        },
+        {
+            "seed": "botania:purple_mushroom",
+            "outputs": ["botania:purple_mushroom"]
+        },
+        {
+            "seed": "minecraft:crimson_fungus",
+            "outputs": [
+                "minecraft:crimson_fungus",
+                "minecraft:crimson_stem",
+                "minecraft:nether_wart_block",
+                "minecraft:shroomlight"
+            ]
+        },
+        {
+            "seed": "botania:gray_mystical_flower",
+            "outputs": ["botania:gray_mystical_flower"]
+        },
+        {
+            "seed": "botania:brown_mushroom",
+            "outputs": ["botania:brown_mushroom"]
+        },
+        {
+            "seed": "ars_nouveau:sourceberry_bush",
+            "outputs": ["ars_nouveau:sourceberry_bush"]
+        },
+        {
+            "seed": "minecraft:tube_coral_block",
+            "outputs": ["minecraft:tube_coral_block"]
+        },
+        {
+            "seed": "minecraft:cocoa_beans",
+            "outputs": ["minecraft:cocoa_beans", "minecraft:cocoa_beans"]
+        },
+        {
+            "seed": "minecraft:carrot",
+            "outputs": ["minecraft:carrot", "minecraft:carrot"]
+        },
+        {
+            "seed": "minecraft:brain_coral",
+            "outputs": ["minecraft:brain_coral"]
+        },
+        {
+            "seed": "botania:white_double_flower",
+            "outputs": ["botania:white_double_flower"]
+        },
+        {
+            "seed": "minecraft:lilac",
+            "outputs": ["minecraft:lilac"]
+        },
+        {
+            "seed": "ars_nouveau:frostaya_pod",
+            "outputs": ["ars_nouveau:frostaya_pod", "ars_nouveau:frostaya_pod"]
+        },
+        {
+            "seed": "minecraft:weeping_vines",
+            "outputs": ["minecraft:weeping_vines"]
+        },
+        {
+            "seed": "minecraft:horn_coral_fan",
+            "outputs": ["minecraft:horn_coral_fan"]
+        },
+        {
+            "seed": "botania:green_double_flower",
+            "outputs": ["botania:green_double_flower"]
+        },
+        {
+            "seed": "botania:magenta_mystical_flower",
+            "outputs": ["botania:magenta_mystical_flower"]
+        },
+        {
+            "seed": "minecraft:grass",
+            "outputs": ["minecraft:grass"]
+        },
+        {
+            "seed": "botania:black_mushroom",
+            "outputs": ["botania:black_mushroom"]
+        },
+        {
+            "seed": "minecraft:blue_orchid",
+            "outputs": ["minecraft:blue_orchid"]
+        },
+        {
+            "seed": "botania:green_mushroom",
+            "outputs": ["botania:green_mushroom"]
+        },
+        {
+            "seed": "minecraft:warped_fungus",
+            "outputs": [
+                "minecraft:warped_fungus",
+                "minecraft:warped_stem",
+                "minecraft:warped_wart_block",
+                "minecraft:shroomlight"
+            ]
+        },
+        {
+            "seed": "botania:pink_mystical_flower",
+            "outputs": ["botania:pink_mystical_flower"]
+        },
+        {
+            "seed": "botania:pink_double_flower",
+            "outputs": ["botania:pink_double_flower"]
+        },
+        {
+            "seed": "ars_nouveau:mendosteen_pod",
+            "outputs": ["ars_nouveau:mendosteen_pod", "ars_nouveau:mendosteen_pod"]
+        },
+        {
+            "seed": "minecraft:lily_pad",
+            "outputs": ["minecraft:lily_pad"]
+        },
+        {
+            "seed": "botania:light_blue_double_flower",
+            "outputs": ["botania:light_blue_double_flower"]
+        },
+        {
+            "seed": "botania:black_mystical_flower",
+            "outputs": ["botania:black_mystical_flower"]
+        },
+        {
+            "seed": "botania:purple_double_flower",
+            "outputs": ["botania:purple_double_flower"]
+        },
+        {
+            "seed": "minecraft:lily_of_the_valley",
+            "outputs": ["minecraft:lily_of_the_valley"]
+        },
+        {
+            "seed": "botania:red_mushroom",
+            "outputs": ["botania:red_mushroom"]
+        },
+        {
+            "seed": "botania:black_double_flower",
+            "outputs": ["botania:black_double_flower"]
+        },
+        {
+            "seed": "minecraft:allium",
+            "outputs": ["minecraft:allium"]
+        },
+        {
+            "seed": "minecraft:moss_block",
+            "outputs": ["minecraft:moss_block"]
+        },
+        {
+            "seed": "botania:red_double_flower",
+            "outputs": ["botania:red_double_flower"]
+        },
+        {
+            "seed": "minecraft:cactus",
+            "outputs": ["minecraft:cactus"]
+        },
+        {
+            "seed": "minecraft:nether_wart",
+            "outputs": ["minecraft:nether_wart"]
+        },
+        {
+            "seed": "minecraft:sea_pickle",
+            "outputs": ["minecraft:sea_pickle"]
+        },
+        {
+            "seed": "minecraft:fire_coral_fan",
+            "outputs": ["minecraft:fire_coral_fan"]
+        },
+        {
+            "seed": "botania:blue_mushroom",
+            "outputs": ["botania:blue_mushroom"]
+        },
+        {
+            "seed": "botania:green_mystical_flower",
+            "outputs": ["botania:green_mystical_flower"]
+        },
+        {
+            "seed": "minecraft:vine",
+            "outputs": ["minecraft:vine"]
+        },
+        {
+            "seed": "botania:orange_mushroom",
+            "outputs": ["botania:orange_mushroom"]
+        },
+        {
+            "seed": "minecraft:wheat_seeds",
+            "outputs": ["minecraft:wheat", "minecraft:wheat_seeds"]
+        },
+        {
+            "seed": "botania:cyan_double_flower",
+            "outputs": ["botania:cyan_double_flower"]
+        },
+        {
+            "seed": "minecraft:spore_blossom",
+            "outputs": ["minecraft:spore_blossom"]
+        },
+        {
+            "seed": "botania:pink_mushroom",
+            "outputs": ["botania:pink_mushroom"]
+        },
+        {
+            "seed": "botania:yellow_mushroom",
+            "outputs": ["botania:yellow_mushroom"]
+        },
+        {
+            "seed": "minecraft:red_tulip",
+            "outputs": ["minecraft:red_tulip"]
+        },
+        {
+            "seed": "minecraft:horn_coral",
+            "outputs": ["minecraft:horn_coral"]
+        },
+        {
+            "seed": "botania:white_mushroom",
+            "outputs": ["botania:white_mushroom"]
+        },
+        {
+            "seed": "botania:gray_double_flower",
+            "outputs": ["botania:gray_double_flower"]
+        },
+        {
+            "seed": "minecraft:wither_rose",
+            "outputs": ["minecraft:wither_rose"]
+        },
+        {
+            "seed": "minecraft:nether_sprouts",
+            "outputs": ["minecraft:nether_sprouts"]
+        },
+        {
+            "seed": "minecraft:seagrass",
+            "outputs": ["minecraft:seagrass"]
+        },
+        {
+            "seed": "botania:blue_double_flower",
+            "outputs": ["botania:blue_double_flower"]
+        },
+        {
+            "seed": "minecraft:bubble_coral_fan",
+            "outputs": ["minecraft:bubble_coral_fan"]
+        },
+        {
+            "seed": "minecraft:bubble_coral",
+            "outputs": ["minecraft:bubble_coral"]
+        },
+        {
+            "seed": "minecraft:large_fern",
+            "outputs": ["minecraft:large_fern"]
+        },
+        {
+            "seed": "forbidden_arcanus:yellow_orchid",
+            "outputs": ["forbidden_arcanus:yellow_orchid"]
+        },
+        {
+            "seed": "minecraft:poppy",
+            "outputs": ["minecraft:poppy"]
+        },
+        {
+            "seed": "minecraft:tall_grass",
+            "outputs": ["minecraft:tall_grass"]
+        },
+        {
+            "seed": "botania:orange_double_flower",
+            "outputs": ["botania:orange_double_flower"]
+        },
+        {
+            "seed": "botania:light_blue_mushroom",
+            "outputs": ["botania:light_blue_mushroom"]
+        },
+        {
+            "seed": "minecraft:bubble_coral_block",
+            "outputs": ["minecraft:bubble_coral_block"]
+        },
+        {
+            "seed": "minecraft:twisting_vines",
+            "outputs": ["minecraft:twisting_vines"]
+        },
+        {
+            "seed": "botania:magenta_double_flower",
+            "outputs": ["botania:magenta_double_flower"]
+        },
+        {
+            "seed": "botania:brown_double_flower",
+            "outputs": ["botania:brown_double_flower"]
+        },
+        {
+            "seed": "botania:purple_mystical_flower",
+            "outputs": ["botania:purple_mystical_flower"]
+        },
+        {
+            "seed": "minecraft:white_tulip",
+            "outputs": ["minecraft:white_tulip"]
+        },
+        {
+            "seed": "botania:lime_mushroom",
+            "outputs": ["botania:lime_mushroom"]
+        },
+        {
+            "seed": "minecraft:glow_berries",
+            "outputs": ["minecraft:glow_berries", "minecraft:glow_berries"]
+        },
+        {
+            "seed": "minecraft:bamboo",
+            "outputs": ["minecraft:bamboo", "minecraft:bamboo"]
+        },
+        {
+            "seed": "minecraft:tube_coral",
+            "outputs": ["minecraft:tube_coral"]
+        },
+        {
+            "seed": "minecraft:fire_coral",
+            "outputs": ["minecraft:fire_coral"]
+        },
+        {
+            "seed": "minecraft:rose_bush",
+            "outputs": ["minecraft:rose_bush"]
+        },
+        {
+            "seed": "botania:light_gray_mystical_flower",
+            "outputs": ["botania:light_gray_mystical_flower"]
+        },
+        {
+            "seed": "botania:orange_mystical_flower",
+            "outputs": ["botania:orange_mystical_flower"]
+        },
+        {
+            "seed": "minecraft:hanging_roots",
+            "outputs": ["minecraft:hanging_roots"]
+        },
+        {
+            "seed": "minecraft:warped_roots",
+            "outputs": ["minecraft:warped_roots"]
+        },
+        {
+            "seed": "botania:yellow_double_flower",
+            "outputs": ["botania:yellow_double_flower"]
+        },
+        {
+            "seed": "botania:brown_mystical_flower",
+            "outputs": ["botania:brown_mystical_flower"]
+        },
+        {
+            "seed": "botania:red_mystical_flower",
+            "outputs": ["botania:red_mystical_flower"]
+        },
+        {
+            "seed": "botania:cyan_mushroom",
+            "outputs": ["botania:cyan_mushroom"]
+        },
+        {
+            "seed": "minecraft:beetroot_seeds",
+            "outputs": ["minecraft:beetroot", "minecraft:beetroot", "minecraft:beetroot_seeds"]
+        },
+        {
+            "seed": "minecraft:dandelion",
+            "outputs": ["minecraft:dandelion"]
+        },
+        {
+            "seed": "ars_nouveau:bombegranate_pod",
+            "outputs": ["ars_nouveau:bombegranate_pod", "ars_nouveau:bombegranate_pod"]
+        },
+        {
+            "seed": "minecraft:azure_bluet",
+            "outputs": ["minecraft:azure_bluet"]
+        },
+        {
+            "seed": "minecraft:big_dripleaf",
+            "outputs": ["minecraft:big_dripleaf"]
+        },
+        {
+            "seed": "minecraft:oxeye_daisy",
+            "outputs": ["minecraft:oxeye_daisy"]
+        },
+        {
+            "seed": "minecraft:peony",
+            "outputs": ["minecraft:peony"]
+        },
+        {
+            "seed": "botania:magenta_mushroom",
+            "outputs": ["botania:magenta_mushroom"]
+        },
+        {
+            "seed": "occultism:datura_seeds",
+            "outputs": ["occultism:datura", "occultism:datura_seeds"]
+        },
+        {
+            "seed": "botania:light_gray_mushroom",
+            "outputs": ["botania:light_gray_mushroom"]
+        },
+        {
+            "seed": "minecraft:horn_coral_block",
+            "outputs": ["minecraft:horn_coral_block"]
+        },
+        {
+            "seed": "minecraft:potato",
+            "outputs": ["minecraft:potato", "minecraft:potato"]
+        },
+        {
+            "seed": "botania:white_mystical_flower",
+            "outputs": ["botania:white_mystical_flower"]
+        },
+        {
+            "seed": "minecraft:fire_coral_block",
+            "outputs": ["minecraft:fire_coral_block"]
+        },
+        {
+            "seed": "minecraft:sunflower",
+            "outputs": ["minecraft:sunflower"]
+        },
+        {
+            "seed": "minecraft:glow_lichen",
+            "outputs": ["minecraft:glow_lichen"]
+        },
+        {
+            "seed": "ars_nouveau:bastion_pod",
+            "outputs": ["ars_nouveau:bastion_pod", "ars_nouveau:bastion_pod"]
+        },
+        {
+            "seed": "botania:cyan_mystical_flower",
+            "outputs": ["botania:cyan_mystical_flower"]
+        },
+        {
+            "seed": "minecraft:pink_petals",
+            "outputs": ["minecraft:pink_petals"]
+        },
+        {
+            "seed": "botania:gray_mushroom",
+            "outputs": ["botania:gray_mushroom"]
+        },
+        {
+            "seed": "forbidden_arcanus:nipa",
+            "outputs": ["forbidden_arcanus:arcane_crystal_dust_speck"]
+        },
+        {
+            "seed": "botania:blue_mystical_flower",
+            "outputs": ["botania:blue_mystical_flower"]
+        },
+        {
+            "seed": "minecraft:orange_tulip",
+            "outputs": ["minecraft:orange_tulip"]
+        },
+        {
+            "seed": "forbidden_arcanus:golden_orchid_seeds",
+            "outputs": ["forbidden_arcanus:deorum_nugget", "forbidden_arcanus:golden_orchid_seeds"]
+        },
+        {
+            "seed": "minecraft:pitcher_pod",
+            "outputs": ["minecraft:pitcher_plant"]
+        },
+        {
+            "seed": "minecraft:torchflower_seeds",
+            "outputs": ["minecraft:torchflower"]
+        },
+        {
+            "seed": "minecraft:torchflower_seeds",
+            "outputs": ["minecraft:torchflower"]
+        },
+        {
+            "seed": "minecraft:chorus_flower",
+            "outputs": ["minecraft:chorus_fruit"]
+        }
+    ]
+}

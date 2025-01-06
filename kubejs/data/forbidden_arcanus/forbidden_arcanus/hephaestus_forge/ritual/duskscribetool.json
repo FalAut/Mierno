@@ -1,0 +1,52 @@
+{
+    "additional_requirements": {
+        "enhancers": ["forbidden_arcanus:crescent_moon"],
+        "forge_tier": 2
+    },
+    "essences": {
+        "aureal": 100,
+        "blood": 10000,
+        "experience": 1350,
+        "souls": 50
+    },
+    "inputs": [
+        {
+            "amount": 1,
+            "ingredient": {
+                "item": "mierno:moon_stone_full"
+            }
+        },
+        {
+            "amount": 1,
+            "ingredient": {
+                "item": "minecraft:nether_star"
+            }
+        },
+        {
+            "amount": 1,
+            "ingredient": {
+                "item": "botania:rune_mana"
+            }
+        },
+        {
+            "amount": 5,
+            "ingredient": {
+                "item": "bloodmagic:infusedslate"
+            }
+        }
+    ],
+    "main_ingredient": {
+        "item": "occultism:chalk_purple"
+    },
+    "magic_circle": {
+        "inner_texture": "forbidden_arcanus:textures/effect/magic_circle/inner/union.png",
+        "outer_texture": "forbidden_arcanus:textures/effect/magic_circle/outer/hecate.png"
+    },
+    "result": {
+        "type": "forbidden_arcanus:create_item",
+        "result_item": {
+            "Count": 1,
+            "id": "bloodmagic:duskscribetool"
+        }
+    }
+}

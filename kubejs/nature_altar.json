@@ -1,0 +1,228 @@
+{
+    "recipes": [
+        {
+            "input": "minecraft:crimson_fungus",
+            "catalyst": "naturesaura:conversion_catalyst",
+            "output": "minecraft:nether_wart",
+            "outputCount": 1,
+            "aura": 30000
+        },
+        {
+            "input": "minecraft:rabbit_stew",
+            "catalyst": "naturesaura:conversion_catalyst",
+            "output": "minecraft:rabbit_foot",
+            "outputCount": 1,
+            "aura": 15000
+        },
+        {
+            "input": "minecraft:amethyst_block",
+            "catalyst": "naturesaura:crushing_catalyst",
+            "output": "minecraft:amethyst_shard",
+            "outputCount": 1,
+            "aura": 25000
+        },
+        {
+            "input": "minecraft:glowstone",
+            "catalyst": "naturesaura:crushing_catalyst",
+            "output": "minecraft:glowstone_dust",
+            "outputCount": 4,
+            "aura": 3000
+        },
+        {
+            "input": "minecraft:stone",
+            "catalyst": "null",
+            "output": "naturesaura:infused_stone",
+            "outputCount": 1,
+            "aura": 7500
+        },
+        {
+            "input": "minecraft:red_mushroom",
+            "catalyst": "naturesaura:conversion_catalyst",
+            "output": "minecraft:crimson_fungus",
+            "outputCount": 1,
+            "aura": 30000
+        },
+        {
+            "input": "minecraft:spider_eye",
+            "catalyst": "naturesaura:conversion_catalyst",
+            "output": "minecraft:fermented_spider_eye",
+            "outputCount": 1,
+            "aura": 10000
+        },
+        {
+            "input": "naturesaura:aura_bottle",
+            "catalyst": "naturesaura:conversion_catalyst",
+            "output": "minecraft:dragon_breath",
+            "outputCount": 1,
+            "aura": 20000
+        },
+        {
+            "input": "minecraft:packed_mud",
+            "catalyst": "naturesaura:crushing_catalyst",
+            "output": "minecraft:mud",
+            "outputCount": 1,
+            "aura": 2000
+        },
+        {
+            "input": "minecraft:cobblestone",
+            "catalyst": "naturesaura:crushing_catalyst",
+            "output": "minecraft:sand",
+            "outputCount": 1,
+            "aura": 3000
+        },
+        {
+            "input": "minecraft:quartz",
+            "catalyst": "naturesaura:conversion_catalyst",
+            "output": "minecraft:prismarine_shard",
+            "outputCount": 1,
+            "aura": 55000
+        },
+        {
+            "input": "minecraft:popped_chorus_fruit",
+            "catalyst": "naturesaura:conversion_catalyst",
+            "output": "minecraft:chorus_flower",
+            "outputCount": 1,
+            "aura": 15000
+        },
+        {
+            "input": "minecraft:poisonous_potato",
+            "catalyst": "naturesaura:conversion_catalyst",
+            "output": "minecraft:potato",
+            "outputCount": 1,
+            "aura": 10000
+        },
+        {
+            "input": "minecraft:arrow",
+            "catalyst": "naturesaura:conversion_catalyst",
+            "output": "minecraft:spectral_arrow",
+            "outputCount": 1,
+            "aura": 10000
+        },
+        {
+            "input": "minecraft:nether_wart_block",
+            "catalyst": "naturesaura:crushing_catalyst",
+            "output": "minecraft:nether_wart",
+            "outputCount": 1,
+            "aura": 25000
+        },
+        {
+            "input": "minecraft:charcoal",
+            "catalyst": "naturesaura:conversion_catalyst",
+            "output": "minecraft:coal",
+            "outputCount": 1,
+            "aura": 30000
+        },
+        {
+            "input": "minecraft:soul_soil",
+            "catalyst": "naturesaura:conversion_catalyst",
+            "output": "minecraft:ghast_tear",
+            "outputCount": 1,
+            "aura": 90000
+        },
+        {
+            "input": "minecraft:bone",
+            "catalyst": "naturesaura:crushing_catalyst",
+            "output": "minecraft:bone_meal",
+            "outputCount": 6,
+            "aura": 3000
+        },
+        {
+            "input": "minecraft:rotten_flesh",
+            "catalyst": "naturesaura:conversion_catalyst",
+            "output": "minecraft:leather",
+            "outputCount": 1,
+            "aura": 10000
+        },
+        {
+            "input": "naturesaura:gold_leaf",
+            "catalyst": "naturesaura:crushing_catalyst",
+            "output": "naturesaura:gold_powder",
+            "outputCount": 4,
+            "aura": 2000
+        },
+        {
+            "input": "minecraft:water_bucket",
+            "catalyst": "naturesaura:conversion_catalyst",
+            "output": "minecraft:milk_bucket",
+            "outputCount": 1,
+            "aura": 80000
+        },
+        {
+            "input": "minecraft:brown_mushroom",
+            "catalyst": "naturesaura:conversion_catalyst",
+            "output": "minecraft:warped_fungus",
+            "outputCount": 1,
+            "aura": 30000
+        },
+        {
+            "input": "minecraft:glass_bottle",
+            "catalyst": "naturesaura:conversion_catalyst",
+            "output": "minecraft:potion",
+            "outputCount": 1,
+            "aura": 25000
+        },
+        {
+            "input": "minecraft:sand",
+            "catalyst": "naturesaura:conversion_catalyst",
+            "output": "minecraft:soul_sand",
+            "outputCount": 1,
+            "aura": 5000
+        },
+        {
+            "input": "minecraft:apple",
+            "catalyst": "naturesaura:conversion_catalyst",
+            "output": "minecraft:egg",
+            "outputCount": 1,
+            "aura": 5000
+        },
+        {
+            "input": "minecraft:string",
+            "catalyst": "naturesaura:conversion_catalyst",
+            "output": "minecraft:lead",
+            "outputCount": 1,
+            "aura": 10000
+        },
+        {
+            "input": "minecraft:amethyst_shard",
+            "catalyst": "naturesaura:conversion_catalyst",
+            "output": "minecraft:ender_pearl",
+            "outputCount": 1,
+            "aura": 90000
+        },
+        {
+            "input": "minecraft:blackstone",
+            "catalyst": "naturesaura:conversion_catalyst",
+            "output": "minecraft:gilded_blackstone",
+            "outputCount": 1,
+            "aura": 50000
+        },
+        {
+            "input": "minecraft:sugar_cane",
+            "catalyst": "naturesaura:crushing_catalyst",
+            "output": "minecraft:sugar",
+            "outputCount": 3,
+            "aura": 3000
+        },
+        {
+            "input": "minecraft:prismarine_shard",
+            "catalyst": "naturesaura:conversion_catalyst",
+            "output": "minecraft:prismarine_crystals",
+            "outputCount": 1,
+            "aura": 55000
+        },
+        {
+            "input": "minecraft:soul_soil",
+            "catalyst": "naturesaura:crushing_catalyst",
+            "output": "minecraft:soul_sand",
+            "outputCount": 1,
+            "aura": 6000
+        },
+        {
+            "input": "minecraft:blaze_rod",
+            "catalyst": "naturesaura:crushing_catalyst",
+            "output": "minecraft:blaze_powder",
+            "outputCount": 4,
+            "aura": 5000
+        }
+    ]
+}

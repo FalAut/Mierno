@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:jigsaw",
+    "biomes": "mierno:misty_forest",
+    "step": "underground_structures",
+    "spawn_overrides": {},
+    "start_pool": "mierno:maze",
+    "size": 81,
+    "start_height": {
+        "absolute": 20
+    },
+    "max_distance_from_center": 80,
+    "use_expansion_hack": false
+}

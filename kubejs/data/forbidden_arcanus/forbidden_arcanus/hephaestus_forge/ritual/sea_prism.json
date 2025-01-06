@@ -1,0 +1,61 @@
+{
+    "additional_requirements": {
+        "enhancers": ["forbidden_arcanus:elementarium"],
+        "forge_tier": 2
+    },
+    "essences": {
+        "aureal": 200,
+        "blood": 1250,
+        "experience": 1350,
+        "souls": 10
+    },
+    "inputs": [
+        {
+            "amount": 3,
+            "ingredient": {
+                "item": "minecraft:water_bucket"
+            }
+        },
+        {
+            "amount": 1,
+            "ingredient": {
+                "item": "minecraft:prismarine_shard"
+            }
+        },
+        {
+            "amount": 1,
+            "ingredient": {
+                "item": "ars_nouveau:water_essence"
+            }
+        },
+        {
+            "amount": 1,
+            "ingredient": {
+                "item": "minecraft:prismarine_crystals"
+            }
+        },
+        {
+            "amount": 2,
+            "ingredient": {
+                "item": "minecraft:water_bucket"
+            }
+        }
+    ],
+    "magic_circle": {
+        "inner_texture": "forbidden_arcanus:textures/effect/magic_circle/inner/invocation.png",
+        "outer_texture": "forbidden_arcanus:textures/effect/magic_circle/outer/attract.png"
+    },
+    "main_ingredient": {
+        "item": "forbidden_arcanus:arcane_crystal_block"
+    },
+    "result": {
+        "type": "forbidden_arcanus:create_item",
+        "result_item": {
+            "Count": 1,
+            "id": "forbidden_arcanus:sea_prism",
+            "tag": {
+                "Damage": 0
+            }
+        }
+    }
+}

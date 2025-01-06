@@ -1,0 +1,28 @@
+{
+    "parent": "mierno:oak_sapling",
+    "display": {
+        "icon": {
+            "item": "mierno:fire_starter"
+        },
+        "title": {
+            "translate": "advancement.mierno.fire_starter.title"
+        },
+        "description": {
+            "translate": "advancement.mierno.fire_starter.desc"
+        },
+        "hidden": false
+    },
+    "criteria": {
+        "fire_starter": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": ["mierno:fire_starter"]
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [["fire_starter"]]
+}

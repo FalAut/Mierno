@@ -1,0 +1,14 @@
+{
+    "feature": "mierno:black_lines/south",
+    "placement": [
+        {
+            "type": "minecraft:heightmap",
+            "heightmap": "MOTION_BLOCKING"
+        },
+        {
+            "type": "minecraft:random_offset",
+            "xz_spread": 15,
+            "y_spread": -1
+        }
+    ]
+}

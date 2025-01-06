@@ -1,0 +1,104 @@
+{
+    "temperature": 0.7,
+    "downfall": 0.8,
+    "has_precipitation": false,
+    "carvers": {},
+    "effects": {
+        "fog_color": 12638463,
+        "foliage_color": 2210437,
+        "grass_color": 2031567,
+        "sky_color": 7978751,
+        "water_color": 7978751,
+        "water_fog_color": 329011
+    },
+    "features": [
+        [],
+        [],
+        ["minecraft:forest_rock", "ars_nouveau:placed_lights"],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            "minecraft:forest_flowers",
+            "minecraft:patch_large_fern",
+            "minecraft:trees_plains",
+            "minecraft:patch_pumpkin",
+            "mierno:placed_dense_tree_misty_forest",
+            "ars_nouveau:mojang_grass",
+            "ars_nouveau:mojang_flowers",
+            "botania:mystical_flowers",
+            "ars_nouveau:placed_berry_bush"
+        ],
+        ["minecraft:freeze_top_layer"]
+    ],
+    "spawn_costs": {},
+    "spawners": {
+        "creature": [
+            {
+                "type": "ars_nouveau:starbuncle",
+                "maxCount": 5,
+                "minCount": 3,
+                "weight": 100
+            },
+            {
+                "type": "ars_nouveau:drygmy",
+                "maxCount": 3,
+                "minCount": 1,
+                "weight": 100
+            },
+            {
+                "type": "ars_nouveau:whirlisprig",
+                "maxCount": 3,
+                "minCount": 1,
+                "weight": 100
+            },
+            {
+                "type": "ars_nouveau:blazing_weald_walker",
+                "maxCount": 1,
+                "minCount": 1,
+                "weight": 100
+            },
+            {
+                "type": "ars_nouveau:cascading_weald_walker",
+                "maxCount": 1,
+                "minCount": 1,
+                "weight": 100
+            },
+            {
+                "type": "ars_nouveau:flourishing_weald_walker",
+                "maxCount": 1,
+                "minCount": 1,
+                "weight": 100
+            },
+            {
+                "type": "ars_nouveau:vexing_weald_walker",
+                "maxCount": 1,
+                "minCount": 1,
+                "weight": 100
+            }
+        ],
+        "monster": [
+            {
+                "type": "ars_nouveau:wilden_stalker",
+                "maxCount": 10,
+                "minCount": 4,
+                "weight": 100
+            },
+            {
+                "type": "ars_nouveau:wilden_guardian",
+                "maxCount": 10,
+                "minCount": 4,
+                "weight": 100
+            },
+            {
+                "type": "ars_nouveau:wilden_hunter",
+                "maxCount": 10,
+                "minCount": 4,
+                "weight": 100
+            }
+        ]
+    }
+}

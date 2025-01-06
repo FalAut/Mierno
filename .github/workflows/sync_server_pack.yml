@@ -28,19 +28,14 @@ jobs:
 
             - name: Sync white-listed files
               run: |
-                  # 切换到 main 分支，获取白名单文件列表
                   git checkout main
                   git ls-tree -r --name-only HEAD > file_list.txt
 
-                  # 排除不需要同步的文件
                   grep -vE '^(.gitignore|README.md)$' file_list.txt > filtered_file_list.txt
 
-                  # 切换回 server_pack 分支
                   git checkout server_pack
 
-                  # 从 main 同步文件到 server_pack
                   cat filtered_file_list.txt | while read file; do
-                      # 确保 server_pack 中不存在特有文件的冲突
                       if [ -f "$file" ]; then
                           git checkout main -- "$file"
                       fi
@@ -48,7 +43,6 @@ jobs:
 
             - name: Commit and Push changes
               run: |
-                  # 提交更改
                   if ! git diff-index --quiet HEAD; then
                       git add .
                       git commit -m "Sync changes from main to server_pack"
@@ -56,3 +50,7 @@ jobs:
                   else
                       echo "No changes to commit."
                   fi
+
+            - name: Cleanup temporary files
+              run: |
+                  rm -f file_list.txt filtered_file_list.txt

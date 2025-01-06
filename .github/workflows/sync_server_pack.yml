@@ -1,9 +1,6 @@
 name: Sync main to server_pack
 
 on:
-    push:
-        branches:
-            - main
     workflow_dispatch:
 
 jobs:

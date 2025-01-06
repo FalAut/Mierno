@@ -73,8 +73,6 @@ jobs:
                       Mierno-${{ steps.changelog.outputs.version }}.zip
                       Mierno-${{ steps.changelog.outputs.version }}-server.zip
 
-                  name: "Mierno v${{ steps.changelog.outputs.version }}"
-
                   version: ${{ steps.changelog.outputs.version }}
 
                   version-type: ${{ github.event.inputs.version_type }}

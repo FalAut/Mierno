@@ -13,21 +13,6 @@
 			id: "5D69ACDC565C4370"
 			rewards: [
 				{
-					id: "2B43E5DCAB412A21"
-					item: {
-						Count: 1
-						id: "botania:elementium_axe"
-						tag: {
-							Damage: 0
-							Enchantments: [{
-								id: "minecraft:looting"
-								lvl: 3s
-							}]
-						}
-					}
-					type: "item"
-				}
-				{
 					count: 4
 					id: "3DA3E0F1CE34EF98"
 					item: "naturesaura:fortress_finder"
@@ -50,6 +35,27 @@
 					id: "0D18B3C87A830F72"
 					table_id: 5354634242720975076L
 					type: "loot"
+				}
+				{
+					id: "63F650535F74902F"
+					item: {
+						Count: 1
+						id: "botania:elementium_axe"
+						tag: {
+							Damage: 0
+							Enchantments: [
+								{
+									id: "minecraft:fortune"
+									lvl: 3
+								}
+								{
+									id: "minecraft:looting"
+									lvl: 3s
+								}
+							]
+						}
+					}
+					type: "item"
 				}
 			]
 			tasks: [{

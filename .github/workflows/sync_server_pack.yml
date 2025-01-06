@@ -26,24 +26,32 @@ jobs:
                   git fetch origin server_pack
                   git checkout server_pack
 
-            - name: Apply .gitignore rules
+            - name: Copy .gitignore from server_pack branch
               run: |
+                  git checkout server_pack .gitignore
+
+            - name: Sync main changes to server_pack
+              run: |
+                  git merge origin/main --allow-unrelated-histories --no-commit --no-ff || true
+
                   git status --ignored --short | grep '^!! ' | awk '{print $2}' | xargs -I{} rm -rf {}
 
-            - name: Merge changes from main to server_pack
-              run: |
-                  git merge origin/main --strategy-option=theirs --allow-unrelated-histories || true
-                  if git diff --name-only --diff-filter=U; then
-                    echo "Conflicts detected, auto-resolving using 'theirs' strategy"
-                    git checkout --theirs .
-                    git add .
-                  fi
+            # - name: Manually filter files (if needed)
+            #   run: |
+            #       FILTER_PATHS=(
+            #           "path/to/exclude1"
+            #           "path/to/exclude2"
+            #       )
+            #       for path in "${FILTER_PATHS[@]}"; do
+            #           rm -rf "$path"
+            #       done
 
             - name: Commit and Push changes
               run: |
                   if ! git diff-index --quiet HEAD; then
-                    git commit -m "Sync changes from main to server_pack"
-                    git push origin server_pack
+                      git add .
+                      git commit -m "Sync changes from main to server_pack"
+                      git push origin server_pack
                   else
-                    echo "No changes to commit."
+                      echo "No changes to commit."
                   fi

@@ -1,50 +1,35 @@
-name: Sync main to server_pack
+name: Rebuild server_pack branch
 
 on:
     push:
         branches:
             - main
-    workflow_dispatch:
-        inputs:
-            ref:
-                description: "Mierno repository reference (branch/tag)"
-                default: "main"
-                required: true
 
 jobs:
-    sync:
+    rebuild:
         runs-on: ubuntu-latest
 
         steps:
             - name: Checkout main branch
               uses: actions/checkout@v3
-              with:
-                  ref: main
 
             - name: Set Git User
               run: |
                   git config --global user.name "github-actions[bot]"
                   git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-            - name: Checkout server_pack branch
+            - name: Rebuild server_pack branch
               run: |
-                  git fetch origin server_pack
-                  git checkout server_pack
+                  git checkout --orphan server_pack
+                  git reset --hard
+                  git clean -fdx
 
-            - name: Merge changes from main to server_pack
-              run: |
-                  git merge origin/main --allow-unrelated-histories --no-commit --no-ff || true
+                  git checkout main -- .
 
-            - name: Apply .gitignore rules
-              run: |
                   git checkout server_pack .gitignore
+
                   git status --ignored --short | grep '^!! ' | awk '{print $2}' | xargs -I{} rm -rf {}
 
-            - name: Commit and Push changes
-              run: |
-                  if ! git diff-index --quiet HEAD; then
-                    git commit -m "Sync changes from main to server_pack"
-                    git push origin server_pack
-                  else
-                    echo "No changes to commit."
-                  fi
+                  git add .
+                  git commit -m "Rebuild server_pack branch from main"
+                  git push origin server_pack --force

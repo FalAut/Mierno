@@ -44,7 +44,7 @@ LycheeEvents.customAction("place_misty_forest_portal", (event) => {
         let itemEntity = ctx.getParam("this_entity");
         const { level, block } = itemEntity;
 
-        $PortalPlacer.attemptPortalLight(level, block.pos, $PortalIgnitionSource.ItemUseSource("barrier"));
+        $PortalPlacer.attemptPortalLight(level, block.pos, $PortalIgnitionSource.ItemUseSource("debug_stick"));
         let lightningBoltEntity = block.createEntity("lightning_bolt");
 
         lightningBoltEntity.setVisualOnly(true);

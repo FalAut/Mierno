@@ -4,6 +4,12 @@ on:
     push:
         branches:
             - main
+    workflow_dispatch:
+        inputs:
+            ref:
+                description: "Mierno repository reference (branch/tag)"
+                default: "main"
+                required: true
 
 jobs:
     sync:

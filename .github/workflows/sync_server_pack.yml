@@ -33,7 +33,7 @@ jobs:
 
             - name: Merge changes from main to server_pack
               run: |
-                  git merge origin/main --no-commit --no-ff || true
+                  git merge origin/main --no-commit --no-ff --allow-unrelated-history || true
 
             - name: Apply .gitignore rules
               run: |

@@ -8,15 +8,12 @@ ServerEvents.recipes((event) => {
                 weather: "clear",
             },
             {
-                type: "time",
-                value: {
-                    min: 17500,
-                    max: 18500,
-                },
+                type: "custom",
+                id: "can_see_sky",
             },
             {
                 type: "custom",
-                id: "can_see_sky",
+                id: "is_midnight",
             },
         ],
         post: [
@@ -47,15 +44,12 @@ ServerEvents.recipes((event) => {
                 weather: "clear",
             },
             {
-                type: "time",
-                value: {
-                    min: 17500,
-                    max: 18500,
-                },
+                type: "custom",
+                id: "can_see_sky",
             },
             {
                 type: "custom",
-                id: "can_see_sky",
+                id: "is_midnight",
             },
         ],
         post: [

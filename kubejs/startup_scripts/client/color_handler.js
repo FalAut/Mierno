@@ -1,5 +1,4 @@
 StartupEvents.postInit((event) => {
-    if (!Platform.isClientEnvironment()) return;
     const $BiomeColors = Java.loadClass("net.minecraft.client.renderer.BiomeColors");
 
     let cobbleGens = [

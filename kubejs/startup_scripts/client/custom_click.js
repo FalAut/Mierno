@@ -19,8 +19,6 @@ function openPentaclesEntry(id) {
 }
 
 function openPatchouliBook(/**@type {Internal.CustomClickEvent} */ event) {
-    if (!Platform.isClientEnvironment()) return;
-
     switch (event.id()) {
         case "mierno:open_blood_pact_of_asmodeus":
             openPentaclesEntry("blood_pact_of_asmodeus");

@@ -20,7 +20,7 @@ StartupEvents.postInit((event) => {
         .tintColor(255, 255, 255)
         .flatPortal()
         .forcedSize(2, 2)
-        .lightWithItem("barrier")
+        .lightWithItem("debug_stick")
         .onlyLightInOverworld()
         .registerPortal();
 });

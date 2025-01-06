@@ -538,7 +538,7 @@
     "tooltip.bloodmagic.extraInfo": "&9——按住 Shift 获取更多信息——",
     "tooltip.bloodmagic.filter.all": "所有: %s",
     "tooltip.bloodmagic.filter.anytag": "Any Tag of %s",
-    "tooltip.bloodmagic.filter.blacklist": "Deny:",
+    "tooltip.bloodmagic.filter.blacklist": "拒绝:",
     "tooltip.bloodmagic.filter.count": "%sx %s",
     "tooltip.bloodmagic.filter.enchant_combination": "%s: %s",
     "tooltip.bloodmagic.filter.from_mod": "From: %s",

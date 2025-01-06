@@ -1,9 +1,3 @@
-// ForgeEvents.onEvent("dev.ftb.mods.ftblibrary.ui.CustomClickEvent", (event) => {
-//     if (event.id() != "mierno:open_blood_pact_of_asmodeus") return;
-
-//     $BookGuiManager.get().openEntry("occultism:dictionary_of_spirits", "occultism:pentacles/blood_pact_of_asmodeus", 1);
-// });
-
 const $BookGuiManager = Java.loadClass("com.klikli_dev.modonomicon.client.gui.BookGuiManager");
 const $EventActor = Java.loadClass("dev.architectury.event.EventActor");
 const $CustomClickEvent = Java.loadClass("dev.ftb.mods.ftblibrary.ui.CustomClickEvent").EVENT;

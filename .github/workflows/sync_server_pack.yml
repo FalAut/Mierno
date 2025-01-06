@@ -18,18 +18,26 @@ jobs:
                   git config --global user.name "github-actions[bot]"
                   git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-            - name: Rebuild server_pack branch
+            - name: Create new server_pack branch
               run: |
                   git checkout --orphan server_pack
                   git reset --hard
                   git clean -fdx
 
+                  # 从 main 分支检出所有文件
                   git checkout main -- .
 
-                  git checkout server_pack .gitignore
+                  # 确保 .gitignore 文件存在
+                  if [ -f ".gitignore" ]; then
+                    git checkout main .gitignore
+                  fi
 
+            - name: Remove ignored files
+              run: |
                   git status --ignored --short | grep '^!! ' | awk '{print $2}' | xargs -I{} rm -rf {}
 
+            - name: Commit and Push changes
+              run: |
                   git add .
                   git commit -m "Rebuild server_pack branch from main"
                   git push origin server_pack --force

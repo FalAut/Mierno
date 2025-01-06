@@ -13,7 +13,14 @@
     "carvers": {},
     "features": [
         ["mierno:white_ground"],
-        ["mierno:black_lines/west", "mierno:black_lines/north", "mierno:black_lines/east", "mierno:black_lines/south"],
+        [
+            "mierno:black_lines/west",
+            "mierno:black_lines/west_outer",
+            "mierno:black_lines/north",
+            "mierno:black_lines/north_outer",
+            "mierno:black_lines/east",
+            "mierno:black_lines/south"
+        ],
         [],
         [],
         [],

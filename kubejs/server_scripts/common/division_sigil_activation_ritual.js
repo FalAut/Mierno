@@ -11,7 +11,7 @@ function checkCondition(condition, messageKey, player) {
 function checkAllConditions(level, block, player) {
     const multiblock = $PatchouliAPI.getMultiblock("mierno:division_sigil_activation_ritual");
     const brightness = level.getBrightness("block", block.pos);
-    const time = level.getDayTime();
+    const time = level.getDayTime() % 24000;
 
     ritualConditions = [
         checkCondition(multiblock.validate(level, block.pos, "none"), "multiblock", player),

@@ -4,6 +4,24 @@ LycheeEvents.customCondition("can_see_sky", (event) => {
     };
 });
 
+LycheeEvents.customCondition("is_noon", (event) => {
+    event.condition.testFunc = (recipe, ctx, times) => {
+        const timeOfDay = ctx.level.getDayTime() % 24000;
+        const isNoon = timeOfDay >= 5500 && timeOfDay <= 6500;
+
+        return isNoon ? times : 0;
+    };
+});
+
+LycheeEvents.customCondition("is_midnight", (event) => {
+    event.condition.testFunc = (recipe, ctx, times) => {
+        const timeOfDay = ctx.level.getDayTime() % 24000;
+        const isMidnight = timeOfDay >= 17500 && timeOfDay <= 18500;
+
+        return isMidnight ? times : 0;
+    };
+});
+
 LycheeEvents.customCondition("beacon_condition", (event) => {
     event.condition.testFunc = (recipe, ctx, times) => {
         /**@type {Internal.ItemEntity} */

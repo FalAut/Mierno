@@ -1,43 +1,49 @@
-name: Rebuild server_pack branch
+name: Sync main to server_pack
 
 on:
     push:
         branches:
             - main
+    workflow_dispatch:
 
 jobs:
-    rebuild:
+    sync:
         runs-on: ubuntu-latest
 
         steps:
             - name: Checkout main branch
               uses: actions/checkout@v3
+              with:
+                  ref: main
 
             - name: Set Git User
               run: |
                   git config --global user.name "github-actions[bot]"
                   git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-            - name: Create new server_pack branch
+            - name: Checkout server_pack branch
               run: |
-                  git checkout --orphan server_pack
-                  git reset --hard
-                  git clean -fdx
+                  git fetch origin server_pack
+                  git checkout server_pack
 
-                  # 从 main 分支检出所有文件
-                  git checkout main -- .
-
-                  # 确保 .gitignore 文件存在
-                  if [ -f ".gitignore" ]; then
-                    git checkout main .gitignore
-                  fi
-
-            - name: Remove ignored files
+            - name: Apply .gitignore rules
               run: |
                   git status --ignored --short | grep '^!! ' | awk '{print $2}' | xargs -I{} rm -rf {}
 
+            - name: Merge changes from main to server_pack
+              run: |
+                  git merge origin/main --strategy-option=theirs --allow-unrelated-histories || true
+                  if git diff --name-only --diff-filter=U; then
+                    echo "Conflicts detected, auto-resolving using 'theirs' strategy"
+                    git checkout --theirs .
+                    git add .
+                  fi
+
             - name: Commit and Push changes
               run: |
-                  git add .
-                  git commit -m "Rebuild server_pack branch from main"
-                  git push origin server_pack --force
+                  if ! git diff-index --quiet HEAD; then
+                    git commit -m "Sync changes from main to server_pack"
+                    git push origin server_pack
+                  else
+                    echo "No changes to commit."
+                  fi

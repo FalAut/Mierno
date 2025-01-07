@@ -43,6 +43,8 @@
 !kubejs/server_scripts/**
 !kubejs/startup_scripts
 !kubejs/startup_scripts/**
+kubejs/startup_scripts/client
+kubejs/startup_scripts/client/**
 !kubejs/fuel_items.json
 !kubejs/mana_infusion.json
 !kubejs/nature_altar.json

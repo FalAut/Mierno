@@ -27,6 +27,8 @@ jobs:
               run: |
                   DIRECTORIES="config defaultconfigs hotai kubejs ldlib"
 
+                  EXCLUDED_SUBDIRS="kubejs/assets kubejs/client_scripts kubejs/config"
+
                   git checkout main
 
                   for DIR in $DIRECTORIES; do
@@ -42,14 +44,6 @@ jobs:
                   done
 
                   git checkout server_pack
-
-                  if ! git diff-index --quiet HEAD; then
-                      git add .
-                      git commit -m "Sync changes from main to server_pack"
-                      git push origin server_pack
-                  else
-                      echo "No changes to commit."
-                  fi
 
             - name: Commit and Push changes
               run: |

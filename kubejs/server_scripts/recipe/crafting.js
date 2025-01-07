@@ -109,6 +109,7 @@ ServerEvents.recipes((event) => {
         "ae2:fluid_cell_housing",
         "evilcraft:eternal_water",
     ]);
+    kubejs.shapeless("occultism:soul_gem", "mierno:soul_gem");
 
     kubejs.shapeless("naturesaura:birth_spirit", "naturesaura:calling_spirit").modifyResult((grid, result) => {
         if (!grid.player || grid.player.isFake() || grid.menu instanceof $AssemblyHaloContainer) return Item.empty;
@@ -523,7 +524,7 @@ ServerEvents.recipes((event) => {
         .shaped("mierno:colorless_gem", ["   ", "ABC", "   "], {
             A: "evilcraft:inverted_potentia_empowered",
             B: Item.of("mierno:division_sigil").enchant("mierno:activate", 1).weakNBT(),
-            C: Item.of("occultism:soul_gem").weakNBT(),
+            C: "mierno:soul_gem",
         })
         .keepIngredient("mierno:division_sigil");
 

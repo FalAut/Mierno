@@ -244,11 +244,11 @@ ServerEvents.recipes((event) => {
         input: {
             item: "occultism:spirit_attuned_gem",
         },
-        output: "occultism:soul_gem",
+        output: "mierno:soul_gem",
         pedestalItems: [
             {
                 item: {
-                    item: "occultism:iesnium_ingot",
+                    item: "occultism:otherworld_essence",
                 },
             },
             {
@@ -258,7 +258,27 @@ ServerEvents.recipes((event) => {
             },
             {
                 item: {
+                    item: "occultism:otherworld_essence",
+                },
+            },
+            {
+                item: {
                     item: "occultism:iesnium_ingot",
+                },
+            },
+            {
+                item: {
+                    item: "occultism:otherworld_essence",
+                },
+            },
+            {
+                item: {
+                    item: "occultism:iesnium_ingot",
+                },
+            },
+            {
+                item: {
+                    item: "occultism:otherworld_essence",
                 },
             },
             {

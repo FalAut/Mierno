@@ -1,4 +1,4 @@
-name: Sync main to server_pack
+name: Sync Server Pack
 
 on:
     workflow_dispatch:

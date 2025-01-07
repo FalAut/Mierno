@@ -40,7 +40,6 @@
 !config/fluffy_fur-client.toml
 !config/simplebackups-common.toml
 !config/evilcraft-common.toml
-!config/test_config.txt
 
 ## Defaultconfigs
 !defaultconfigs/

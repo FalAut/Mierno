@@ -2,11 +2,6 @@ name: Create Modpack Release
 
 on:
     workflow_dispatch:
-        inputs:
-            ref:
-                description: "Mierno repository reference (branch/tag)"
-                default: "main"
-                required: true
 
 jobs:
     create-release:
@@ -17,7 +12,7 @@ jobs:
               uses: actions/checkout@v4
               with:
                   fetch-depth: 2
-                  ref: ${{ github.event.inputs.ref }}
+                  ref: main
                   path: main_repo
 
             - name: Checkout server_pack branch
@@ -25,6 +20,41 @@ jobs:
               with:
                   ref: server_pack
                   path: server_pack_dir
+
+            - name: Sync specific directories from main to server_pack
+              run: |
+                  cd main_repo
+
+                  DIRECTORIES="config defaultconfigs hotai kubejs ldlib"
+                  EXCLUDED_SUBDIRS="kubejs/assets kubejs/client_scripts kubejs/config"
+
+                  # Sync directories
+                  for DIR in $DIRECTORIES; do
+                      if [ "$DIR" = "kubejs" ]; then
+                          rsync -a --exclude "assets" --exclude "client_scripts" --exclude "config" "$DIR/" ../temp_kubejs/
+                          cd ../server_pack_dir
+                          mkdir -p "$DIR"
+                          cp -r ../temp_kubejs/* "$DIR/"
+                          rm -rf ../temp_kubejs
+                          cd ../main_repo
+                      else
+                          rsync -a --delete "$DIR/" "../server_pack_dir/$DIR/"
+                      fi
+                  done
+
+            - name: Commit and Push server_pack branch updates
+              run: |
+                  cd ../server_pack_dir
+                  git config --global user.name "github-actions[bot]"
+                  git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+                  if ! git diff-index --quiet HEAD; then
+                      git add .
+                      git commit -m "Sync changes from main to server_pack"
+                      git push origin server_pack
+                  else
+                      echo "No changes to commit."
+                  fi
 
             - name: Set up environment and determine version
               id: setup

@@ -26,25 +26,29 @@ jobs:
             - name: Sync white-listed files based on .gitignore
               run: |
                   git checkout main
-
                   git ls-files > file_list.txt
-
                   grep -vE '^(\.gitignore|README.md)$' file_list.txt | git check-ignore --stdin --verbose | grep -v '^::' | awk '{print $NF}' > filtered_file_list.txt
 
                   git checkout server_pack
 
                   cat filtered_file_list.txt | while read file; do
                       if [ -f "$file" ]; then
-                          git checkout main -- "$file"
+                          git checkout main --force -- "$file"
                       fi
                   done
+
+                  git status
+
+                  git log
+
+                  git diff
 
                   rm -f file_list.txt filtered_file_list.txt
 
             - name: Commit and Push changes
               run: |
                   if ! git diff-index --quiet HEAD; then
-                      git add .
+                      git add --all
                       git commit -m "Sync changes from main to server_pack"
                       git push origin server_pack
                   else

@@ -27,19 +27,19 @@ jobs:
               run: |
                   git checkout main
 
-                  git ls-files | git check-ignore --stdin --non-matching > filtered_file_list.txt
+                  git ls-files > file_list.txt
 
-                  grep -vE '^(\.gitignore|README.md)$' filtered_file_list.txt > adjusted_file_list.txt
+                  grep -vE '^(\.gitignore|README.md)$' file_list.txt | git check-ignore --stdin --verbose | grep -v '^::' | awk '{print $NF}' > filtered_file_list.txt
 
                   git checkout server_pack
 
-                  cat adjusted_file_list.txt | while read file; do
+                  cat filtered_file_list.txt | while read file; do
                       if [ -f "$file" ]; then
                           git checkout main -- "$file"
                       fi
                   done
 
-                  rm -f filtered_file_list.txt adjusted_file_list.txt
+                  rm -f file_list.txt filtered_file_list.txt
 
             - name: Commit and Push changes
               run: |

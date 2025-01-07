@@ -45,6 +45,12 @@ jobs:
 
                   git checkout server_pack
 
+                  git diff --name-status main server_pack | while read status file; do
+                      if [ "$status" = "D" ]; then
+                          git rm --cached "$file"
+                      fi
+                  done
+
             - name: Commit and Push changes
               run: |
                   if ! git diff-index --quiet HEAD; then

@@ -23,14 +23,22 @@ jobs:
                   git fetch origin server_pack
                   git checkout server_pack
 
-            - name: Sync specific directories
+            - name: Sync specific directories with exclusions
               run: |
                   DIRECTORIES="config defaultconfigs hotai kubejs ldlib"
+
+                  EXCLUDED_SUBDIRS="kubejs/assets kubejs/client_scripts kubejs/config"
 
                   git checkout main
 
                   for DIR in $DIRECTORIES; do
-                      if [ -d "$DIR" ]; then
+                      if [ "$DIR" = "kubejs" ]; then
+                          rsync -a --exclude "assets" --exclude "client_scripts" --exclude "config" "$DIR/" ../temp_kubejs/
+                          git checkout server_pack
+                          mkdir -p "$DIR"
+                          cp -r ../temp_kubejs/* "$DIR/"
+                          rm -rf ../temp_kubejs
+                      else
                           git checkout main -- "$DIR"
                       fi
                   done
@@ -39,7 +47,6 @@ jobs:
 
             - name: Commit and Push changes
               run: |
-                  # Check if there are changes to commit
                   if ! git diff-index --quiet HEAD; then
                       git add .
                       git commit -m "Sync changes from main to server_pack"

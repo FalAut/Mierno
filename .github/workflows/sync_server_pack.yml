@@ -1,4 +1,4 @@
-name: Sync main to server_pack
+name: Sync main to server_pack with Debug
 
 on:
     workflow_dispatch:
@@ -15,39 +15,57 @@ jobs:
 
             - name: Set Git User
               run: |
+                  echo "Setting up Git user..."
                   git config --global user.name "github-actions[bot]"
                   git config --global user.email "github-actions[bot]@users.noreply.github.com"
+                  git config --list
 
             - name: Checkout server_pack branch
               run: |
+                  echo "Fetching and checking out server_pack branch..."
                   git fetch origin server_pack
-                  git checkout server_pack
+                  git checkout server_pack || git checkout -b server_pack origin/server_pack
+                  git branch
 
             - name: Sync white-listed files based on .gitignore
               run: |
+                  echo "Syncing files from main to server_pack..."
                   git checkout main
+                  echo "Listing tracked files from main branch..."
                   git ls-files > file_list.txt
+                  echo "Filtering files using .gitignore..."
                   grep -vE '^(\.gitignore|README.md)$' file_list.txt | git check-ignore --stdin --verbose | grep -v '^::' | awk '{print $NF}' > filtered_file_list.txt
+                  echo "Filtered files to sync:"
+                  cat filtered_file_list.txt
 
                   git checkout server_pack
 
+                  echo "Checking out filtered files from main branch..."
                   cat filtered_file_list.txt | while read file; do
                       if [ -f "$file" ]; then
+                          echo "Syncing file: $file"
                           git checkout main --force -- "$file"
+                      else
+                          echo "File not found: $file"
                       fi
                   done
 
+                  echo "Git status after sync:"
                   git status
 
-                  git log
+                  echo "Git log (last 3 commits):"
+                  git log -3
 
+                  echo "Git diff:"
                   git diff
 
                   rm -f file_list.txt filtered_file_list.txt
 
             - name: Commit and Push changes
               run: |
+                  echo "Checking for changes to commit..."
                   if ! git diff-index --quiet HEAD; then
+                      echo "Changes detected. Committing and pushing..."
                       git add --all
                       git commit -m "Sync changes from main to server_pack"
                       git push origin server_pack

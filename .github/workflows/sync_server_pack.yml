@@ -33,13 +33,13 @@ jobs:
 
                   for DIR in $DIRECTORIES; do
                       if [ "$DIR" = "kubejs" ]; then
-                          rsync -a --exclude "assets" --exclude "client_scripts" --exclude "config" "$DIR/" ../temp_kubejs/
+                          rsync -a --delete --exclude "assets" --exclude "client_scripts" --exclude "config" "$DIR/" ../temp_kubejs/
                           git checkout server_pack
                           mkdir -p "$DIR"
-                          cp -r ../temp_kubejs/* "$DIR/"
+                          rsync -a --delete ../temp_kubejs/ "$DIR/"
                           rm -rf ../temp_kubejs
                       else
-                          git checkout main -- "$DIR"
+                          rsync -a --delete "$DIR/" "$DIR/"
                       fi
                   done
 

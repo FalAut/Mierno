@@ -16,7 +16,6 @@ ServerEvents.loaded((event) => {
     }
 });
 
-// ce1
 // ProbeJSEvents.generateDoc((event) => {
 //     event.customSnippet(
 //         "test",

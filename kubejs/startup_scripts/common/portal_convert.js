@@ -1,6 +1,7 @@
 ForgeEvents.onEvent("net.minecraftforge.event.entity.EntityTravelToDimensionEvent", (event) => {
     const { entity, dimension } = event;
     if (!entity.item || dimension.location() != "minecraft:the_nether") return;
+
     let itemCount = entity.item.count;
 
     if (entity.item == "minecraft:redstone") {

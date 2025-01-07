@@ -29,7 +29,6 @@ function getCoordsToPut(level, blockPos, range, condition) {
 }
 
 /**
- *
  * @param {Internal.Player} player
  * @param {boolean} enable
  * @returns

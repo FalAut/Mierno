@@ -196,3 +196,12 @@ ItemEvents.rightClicked("mierno:portable_crafting_table", (event) => {
     openCraftingMenu(player);
     player.swing();
 });
+
+BlockEvents.rightClicked("bloodmagic:altar", (event) => {
+    const { item, block } = event;
+    if (item != "evilcraft:creative_blood_drop") return;
+
+    let fluidCap = block.entity.getCapability(ForgeCapabilities.FLUID_HANDLER).orElse(null);
+
+    fluidCap.getFluidInTank(0).setAmount(fluidCap.getTankCapacity(0));
+});

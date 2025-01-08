@@ -67,11 +67,6 @@ ServerEvents.recipes((event) => {
     event.replaceInput({ id: "botania:super_travel_belt" }, "botania:life_essence", "evilcraft:dark_power_gem");
     event.replaceInput({ id: "forbidden_arcanus:deorum_ingot" }, "gold_ingot", "thermal:electrum_ingot");
     event.replaceInput({ id: "forbidden_arcanus:deorum_ingot" }, "charcoal", "forbidden_arcanus:rune");
-    event.replaceInput(
-        { id: "forbidden_arcanus:arcane_polished_darkstone" },
-        "forbidden_arcanus:deorum_ingot",
-        "forbidden_arcanus:deorum_block"
-    );
     event.replaceInput({ mod: "powah" }, "iron_ingot", "mekanism:ingot_steel");
     event.replaceInput({ id: "evilcraft:crafting/blood_orb_empty" }, "iron_ingot", "forbidden_arcanus:arcane_crystal");
     event.replaceInput({ id: "bloodmagic:ritual_stone_master" }, "obsidian", "bloodmagic:ritualstone");
@@ -85,6 +80,12 @@ ServerEvents.recipes((event) => {
     event.replaceInput({ id: "thermal:augments/upgrade_augment_3" }, "thermal:lumium_gear", "thermal:enderium_gear");
     event.replaceInput({ id: "thermal:augments/upgrade_augment_1" }, "redstone", "thermal:invar_gear");
     event.replaceInput({ id: "thermal:augments/upgrade_augment_1" }, "thermal:gold_gear", "redstone_block");
+    event.replaceInput({ id: "botania:corporea_spark" }, "botania:ender_air_bottle", "botania:pixie_dust");
+    event.replaceInput(
+        { id: "thermal:augments/machine_efficiency_augment" },
+        "thermal:lumium_plate",
+        "thermal:bronze_plate"
+    );
     event.replaceInput(
         { id: "evilcraft:crafting/spectral_glasses" },
         "evilcraft:garmonbozia",

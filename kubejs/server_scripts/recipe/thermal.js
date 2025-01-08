@@ -27,7 +27,6 @@ ServerEvents.recipes((event) => {
                     count: 1,
                 },
             ],
-            energy: energy ? energy : 20000,
         });
     }
 
@@ -35,6 +34,22 @@ ServerEvents.recipes((event) => {
     chiller("thermal:lumium_ingot", "mierno:molten_lumium");
     chiller("thermal:signalum_ingot", "mierno:molten_signalum");
     chiller("evilcraft:condensed_blood", "evilcraft:blood", 500, "thermal:chiller_ball_cast");
+
+    event.custom({
+        type: "thermal:chiller",
+        ingredients: [
+            {
+                fluid: "evilcraft:blood",
+                amount: 1000,
+            },
+        ],
+        result: [
+            {
+                item: "evilcraft:hardened_blood",
+                count: 1,
+            },
+        ],
+    });
 
     /**
      * 磨粉机

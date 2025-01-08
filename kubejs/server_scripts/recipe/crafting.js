@@ -55,6 +55,8 @@ ServerEvents.recipes((event) => {
     copySelf("pneumaticcraft:creative_compressed_iron_block");
     copySelf("pneumaticcraft:creative_compressor");
     copySelf("evilcraft:creative_blood_drop");
+    copySelf("mierno:upgrade_augment_creative");
+    copySelf("thermal:machine_efficiency_creative_augment");
 
     kubejs.shapeless(
         Item.of("botania:mana_tablet", 2, "{creative:1b,mana:500000}"),
@@ -110,6 +112,9 @@ ServerEvents.recipes((event) => {
         "evilcraft:eternal_water",
     ]);
     kubejs.shapeless("occultism:soul_gem", "mierno:soul_gem");
+    kubejs.shapeless("mierno:soul_gem", "occultism:soul_gem");
+    kubejs.shapeless("5x forbidden_arcanus:soul", "forbidden_arcanus:corrupt_soul");
+    kubejs.shapeless("10x forbidden_arcanus:soul", "forbidden_arcanus:enchanted_soul");
 
     kubejs.shapeless("naturesaura:birth_spirit", "naturesaura:calling_spirit").modifyResult((grid, result) => {
         if (!grid.player || grid.player.isFake() || grid.menu instanceof $AssemblyHaloContainer) return Item.empty;
@@ -521,10 +526,11 @@ ServerEvents.recipes((event) => {
     });
 
     kubejs
-        .shaped("mierno:colorless_gem", ["   ", "ABC", "   "], {
-            A: "evilcraft:inverted_potentia_empowered",
+        .shaped("mierno:colorless_gem", [" A ", " B ", "CDC"], {
+            A: "mierno:soul_gem",
             B: Item.of("mierno:division_sigil").enchant("mierno:activate", 1).weakNBT(),
-            C: "mierno:soul_gem",
+            C: "forbidden_arcanus:soul",
+            D: "evilcraft:inverted_potentia_empowered",
         })
         .keepIngredient("mierno:division_sigil");
 
@@ -533,9 +539,14 @@ ServerEvents.recipes((event) => {
         B: "pneumaticcraft:ingot_iron_compressed",
     });
 
-    kubejs.shaped("8x forbidden_arcanus:arcane_chiseled_polished_darkstone", ["AAA", "ABA", "AAA"], {
+    kubejs.shaped("9x forbidden_arcanus:arcane_chiseled_polished_darkstone", ["AAA", "ABA", "AAA"], {
         A: "forbidden_arcanus:chiseled_polished_darkstone",
-        B: "forbidden_arcanus:deorum_block",
+        B: "forbidden_arcanus:deorum_ingot",
+    });
+
+    kubejs.shaped("9x forbidden_arcanus:arcane_polished_darkstone", ["AAA", "ABA", "AAA"], {
+        A: "forbidden_arcanus:polished_darkstone",
+        B: "forbidden_arcanus:deorum_ingot",
     });
 
     kubejs.shaped("mierno:modular_alfheim_portal_core", ["ABA", "CDE", "AFA"], {
@@ -733,7 +744,7 @@ ServerEvents.recipes((event) => {
         C: "powah:capacitor_spirited",
     });
 
-    kubejs.shaped("forbidden_arcanus:aureal_bottle", ["AAA", "ABA", "AAA"], {
+    kubejs.shaped("8x forbidden_arcanus:aureal_bottle", ["AAA", "ABA", "AAA"], {
         A: "forbidden_arcanus:arcane_crystal_dust",
         B: "forbidden_arcanus:xpetrified_orb",
     });
@@ -834,5 +845,70 @@ ServerEvents.recipes((event) => {
         A: "naturesaura:infused_stone",
         B: Item.of("naturesaura:aura_bottle", '{stored_type:"naturesaura:overworld"}').weakNBT(),
         C: "naturesaura:infused_iron_block",
+    });
+
+    kubejs.shaped("mierno:upgrade_augment_creative", ["AAA", "ABA", "AAA"], {
+        A: "mierno:unstable_singularity",
+        B: "mierno:upgrade_augment_ether",
+    });
+
+    kubejs.shaped("thermal:machine_efficiency_creative_augment", ["ABC", "IED", "HGF"], {
+        A: "mierno:machine_speed_augment_ender",
+        B: "mierno:machine_speed_augment_signalum",
+        C: "mierno:machine_speed_augment_lumium",
+        D: "mierno:machine_speed_augment_compressed_iron",
+        E: "mierno:upgrade_augment_creative",
+        F: "mierno:machine_efficiency_augment_ender",
+        G: "mierno:machine_efficiency_augment_signalum",
+        H: "mierno:machine_efficiency_augment_lumium",
+        I: "mierno:machine_efficiency_augment_compressed_iron",
+    });
+
+    kubejs.shaped("mierno:machine_speed_augment_ender", [" A ", "BCB", " A "], {
+        A: "thermal:enderium_gear",
+        B: "thermal:enderium_plate",
+        C: "thermal:machine_speed_augment",
+    });
+
+    kubejs.shaped("mierno:machine_speed_augment_signalum", [" A ", "BCB", " A "], {
+        A: "thermal:signalum_gear",
+        B: "thermal:signalum_plate",
+        C: "mierno:machine_speed_augment_ender",
+    });
+
+    kubejs.shaped("mierno:machine_speed_augment_lumium", [" A ", "BCB", " A "], {
+        A: "thermal:lumium_gear",
+        B: "thermal:lumium_plate",
+        C: "mierno:machine_speed_augment_signalum",
+    });
+
+    kubejs.shaped("mierno:machine_speed_augment_compressed_iron", [" A ", "BCB", " A "], {
+        A: "pneumaticcraft:compressed_iron_gear",
+        B: "pneumaticcraft:ingot_iron_compressed",
+        C: "mierno:machine_speed_augment_lumium",
+    });
+
+    kubejs.shaped("mierno:machine_efficiency_augment_ender", [" A ", "BCB", " A "], {
+        A: "thermal:enderium_gear",
+        B: "thermal:enderium_plate",
+        C: "thermal:machine_efficiency_augment",
+    });
+
+    kubejs.shaped("mierno:machine_efficiency_augment_signalum", [" A ", "BCB", " A "], {
+        A: "thermal:signalum_gear",
+        B: "thermal:signalum_plate",
+        C: "mierno:machine_efficiency_augment_ender",
+    });
+
+    kubejs.shaped("mierno:machine_efficiency_augment_lumium", [" A ", "BCB", " A "], {
+        A: "thermal:lumium_gear",
+        B: "thermal:lumium_plate",
+        C: "mierno:machine_efficiency_augment_signalum",
+    });
+
+    kubejs.shaped("mierno:machine_efficiency_augment_compressed_iron", [" A ", "BCB", " A "], {
+        A: "pneumaticcraft:compressed_iron_gear",
+        B: "pneumaticcraft:ingot_iron_compressed",
+        C: "mierno:machine_efficiency_augment_lumium",
     });
 });

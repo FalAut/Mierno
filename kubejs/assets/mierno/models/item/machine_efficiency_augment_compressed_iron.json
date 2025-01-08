@@ -1,0 +1,7 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+        "layer0": "mierno:item/augments/efficiency/compressed_iron_machine_efficiency_augment_base",
+        "layer1": "mierno:item/augments/efficiency/machine_efficiency_augment_core"
+    }
+}

@@ -478,6 +478,7 @@
 		}
 		{
 			dependencies: ["1515DD884BC0CEDE"]
+			description: ["{mierno.chapter2-2.dark_gem.subtitle}"]
 			id: "022EA1A9ED309FF6"
 			shape: "hexagon"
 			subtitle: "{mierno.chapter2-2.check_environmental_accumulator.subtitle}"
@@ -635,6 +636,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
+			subtitle: "{mierno.chapter2-2.dark_gem.subtitle}"
 			tasks: [{
 				id: "5255351D2ED64D1C"
 				item: "evilcraft:dark_gem"
@@ -1089,6 +1091,36 @@
 					id: "30CA0D6A2B783607"
 					table_id: 5354634242720975076L
 					type: "loot"
+				}
+				{
+					id: "5C24B1322DA5DD45"
+					item: {
+						Count: 1
+						id: "modularrouters:activator_module"
+						tag: {
+							modularrouters: {
+								ActionType2: 0
+								Direction: "FRONT"
+								EntityMode: 0
+								F_blacklist: 1b
+								F_ignoreDamage: 0b
+								F_ignoreNBT: 1b
+								F_ignoreTags: 1b
+								LookDirection: 0
+								MatchAll: 0b
+								RedstoneMode: 0b
+								RegulatorAmount: 0
+								Sneaking: 1b
+								Termination: "NONE"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "290BADFCC8528D6E"
+					item: "modularrouters:modular_router"
+					type: "item"
 				}
 			]
 			shape: "gear"

@@ -8,5 +8,7 @@ ForgeEvents.onEvent("net.minecraftforge.event.entity.EntityTravelToDimensionEven
         entity.discard();
         entity.block.popItem(Item.of("fluxnetworks:flux_dust").withCount(itemCount));
         event.setCanceled(true);
+    } else if (entity.item == "fluxnetworks:flux_dust") {
+        event.setCanceled(true);
     }
 });

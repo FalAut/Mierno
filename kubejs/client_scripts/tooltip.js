@@ -228,7 +228,7 @@ ItemEvents.tooltip((event) => {
         Text.translate("tooltip.mierno.pinkinator_2").gold(),
     ]);
 
-    event.add("bloodmagic:altar", Text.translate("tooltip.mierno.bloodmagic_altar").gold());
+    event.add("bloodmagic:altar", Text.translate("tooltip.mierno.creative_blood_drop").gold());
     event.add("bloodmagic:dislocationrune", Text.translate("tooltip.mierno.dislocationrune").gold());
     event.add("bloodmagic:accelerationrune", Text.translate("tooltip.mierno.accelerationrune").gold());
     event.add("forbidden_arcanus:xpetrified_orb", Text.translate("tooltip.mierno.xpetrified_orb").gold());
@@ -264,6 +264,8 @@ ItemEvents.tooltip((event) => {
     event.add("thermal:rubberwood_sapling", Text.translate("tooltip.mierno.rubberwood_sapling").gold());
     event.add("minecraft:ghast_tear", Text.translate("tooltip.mierno.ghast_tear").gold());
     event.add("botania:blacker_lotus", Text.translate("tooltip.mierno.blacker_lotus").gold());
+    event.add("evilcraft:vengeance_essence", Text.translate("tooltip.mierno.vengeance_essence").gold());
+    event.add("evilcraft:creative_blood_drop", Text.translate("tooltip.mierno.creative_blood_drop").gold());
     event.add(
         ["thermal:apatite_ore", "thermal:cinnabar_ore", "thermal:niter_ore", "thermal:sulfur_ore"],
         Text.translate("tooltip.mierno.mistyforest_ore").gold()

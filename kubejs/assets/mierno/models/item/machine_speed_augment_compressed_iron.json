@@ -1,0 +1,7 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+        "layer0": "mierno:item/augments/speed/compressed_iron_machine_speed_augment_base",
+        "layer1": "mierno:item/augments/speed/machine_speed_augment_core"
+    }
+}

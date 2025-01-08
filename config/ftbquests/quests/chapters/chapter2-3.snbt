@@ -60,6 +60,7 @@
 					type: "item"
 				}
 				{
+					count: 8
 					id: "461AD1AE3EB5D80B"
 					item: "forbidden_arcanus:darkstone_pedestal"
 					type: "item"
@@ -110,14 +111,9 @@
 			dependencies: ["6C17540363263CB9"]
 			id: "297ECB810C918599"
 			rewards: [{
-				id: "57EAD8E00F9A3E63"
-				item: {
-					Count: 1
-					id: "forbidden_arcanus:blood_test_tube"
-					tag: {
-						Blood: 3000
-					}
-				}
+				count: 64
+				id: "02A0BF6DB50E0736"
+				item: "evilcraft:condensed_blood"
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -241,13 +237,24 @@
 			id: "5015D21B9B93A6E7"
 			rewards: [
 				{
-					id: "76D7E692006E041E"
-					item: "bloodmagic:dislocationrune"
+					count: 64
+					id: "4191A99FCC4167D4"
+					item: "bloodmagic:blankrune"
 					type: "item"
 				}
 				{
-					id: "0F73BDF4016CFC76"
-					item: "bloodmagic:accelerationrune"
+					id: "652C262236F8DD10"
+					item: "bloodmagic:speedrune"
+					type: "item"
+				}
+				{
+					id: "0B2FD6303F19B041"
+					item: "bloodmagic:altarcapacityrune"
+					type: "item"
+				}
+				{
+					id: "1A198E4E03ABA309"
+					item: "bloodmagic:bettercapacityrune"
 					type: "item"
 				}
 			]
@@ -292,30 +299,13 @@
 		}
 		{
 			dependencies: ["01660174B3CF5EFA"]
-			icon: "mierno:blood_converter"
-			id: "7D8273A6E34F1025"
-			shape: "hexagon"
-			size: 1.2d
-			subtitle: "{tooltip.mierno.blood_converter}"
-			tasks: [
-				{
-					id: "6562229C8017F2E9"
-					item: "mierno:blood_converter"
-					type: "item"
-				}
-				{
-					id: "0E82B8E168C3ADB0"
-					item: "bloodmagic:life_essence_bucket"
-					optional_task: true
-					type: "item"
-				}
-			]
-			x: 4.0d
-			y: -2.5d
-		}
-		{
-			dependencies: ["01660174B3CF5EFA"]
 			id: "52F66F70138FCC56"
+			rewards: [{
+				count: 64
+				id: "46408F679807C76B"
+				item: "bloodmagic:blankslate"
+				type: "item"
+			}]
 			shape: "hexagon"
 			size: 0.8d
 			tasks: [{
@@ -333,18 +323,17 @@
 				"1DAEF872073C7174"
 			]
 			id: "221E88604970BCA5"
-			tasks: [
-				{
-					id: "08AE247AFC701DDD"
-					item: "bloodmagic:ritualstone"
-					type: "item"
-				}
-				{
-					id: "5A1397F51D800674"
-					item: "bloodmagic:masterritualstone"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 64
+				id: "31054984B8722298"
+				item: "bloodmagic:ritualstone"
+				type: "item"
+			}]
+			tasks: [{
+				id: "08AE247AFC701DDD"
+				item: "bloodmagic:ritualstone"
+				type: "item"
+			}]
 			x: 6.5d
 			y: 0.0d
 		}
@@ -661,6 +650,29 @@
 			title: "{mierno.tobecontinue}"
 			x: 11.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["01660174B3CF5EFA"]
+			icon: "mierno:blood_converter"
+			id: "3B6A3582303B6290"
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "{mierno.chapter2-3.blood_converter.subtitle}"
+			tasks: [
+				{
+					id: "0EEB3D17695F91FA"
+					item: "mierno:blood_converter"
+					type: "item"
+				}
+				{
+					id: "425CBBC21CF9EEFF"
+					item: "bloodmagic:life_essence_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -2.5d
 		}
 	]
 	title: "{mierno.chapter2-3.title}"

@@ -1,6 +1,36 @@
 ## v0.1.8
 
 -   无色彩宝石现在需要另一种灵魂宝石合成
+-   修复在一定情况下通量粉尘转化时会传送到下界的问题
+-   无色彩宝石现在需要灵魂制作
+-   灵魂炉的仪式配方现在不需要痛苦之源
+-   腐化灵魂和附魔灵魂现在可以拆成普通灵魂
+-   辉光瓶现在一次能制作 8 个
+-   两种神秘暗黑石现在只需要圣金锭合成并且一次能制作 9 个
+-   凝结的血块现在可以通过急速冷冻机制作
+-   信素锭、流明锭、末影锭与凝结血液在急速冷冻机制作所需的能量从 20000 降为 4000
+-   不再为血之祭坛提供胶囊，在任务中提供了点击查看血染知书血之祭坛结构页面的按钮
+-   现在使用创造血源右键血之祭坛可为其输入生命源质到最大上限
+-   大幅增加血魔法石板制作速度
+-   添加创造整合组件
+-   添加创造通量提效的配方
+
+---
+
+-   Colourless Gems now require another Soul Gem for crafting
+-   Fixes an issue where flux dust transformation would teleport to the lower realms under certain circumstances
+-   Colourless Gems now require a Soul to craft
+-   Soul Furnace ritual recipes now do not require the Source of Pain.
+-   Corrupted souls and enchanted souls can now be split into normal souls.
+-   Glow Vials can now be crafted 8 at a time
+-   The two Mystic Darkstones now require only Holy Gold Ingots to synthesise and can be crafted 9 at a time.
+-   Congealed Blood Clots can now be crafted with the Rapid Freezer.
+-   Shinsu Ingot, Lumen Ingot, Mordor Ingot, and Coagulated Blood now require 4000 Energy to craft in the Haste Freezer, down from 20000.
+-   Capsules are no longer provided for the Altar of Blood, and a button to view the Altar of Blood structure page is now available in quests.
+-   Right-clicking on an Altar of Blood with the Create Blood Source now feeds it with life essence up to its maximum limit.
+-   Significantly increased the speed of Blood Magic Tablet crafting
+-   Added Creation Integration component
+-   Added a recipe for creating flux boosts.
 
 ## v0.1.7
 

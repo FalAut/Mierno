@@ -2,8 +2,8 @@ ServerEvents.recipes((event) => {
     event.custom({
         type: "bloodmagic:altar",
         altarSyphon: 1000,
-        consumptionRate: 5,
-        drainRate: 5,
+        consumptionRate: 100,
+        drainRate: 100,
         input: {
             item: "forbidden_arcanus:dark_rune",
         },
@@ -15,9 +15,65 @@ ServerEvents.recipes((event) => {
 
     event.custom({
         type: "bloodmagic:altar",
+        altarSyphon: 2000,
+        consumptionRate: 200,
+        drainRate: 200,
+        input: {
+            item: "bloodmagic:blankslate",
+        },
+        output: {
+            item: "bloodmagic:reinforcedslate",
+        },
+        upgradeLevel: 1,
+    });
+
+    event.custom({
+        type: "bloodmagic:altar",
+        altarSyphon: 5000,
+        consumptionRate: 500,
+        drainRate: 500,
+        input: {
+            item: "bloodmagic:reinforcedslate",
+        },
+        output: {
+            item: "bloodmagic:infusedslate",
+        },
+        upgradeLevel: 2,
+    });
+
+    event.custom({
+        type: "bloodmagic:altar",
+        altarSyphon: 15000,
+        consumptionRate: 1500,
+        drainRate: 1500,
+        input: {
+            item: "bloodmagic:infusedslate",
+        },
+        output: {
+            item: "bloodmagic:demonslate",
+        },
+        upgradeLevel: 3,
+    });
+
+    event.custom({
+        type: "bloodmagic:altar",
+        altarSyphon: 30000,
+        consumptionRate: 3000,
+        drainRate: 3000,
+        input: {
+            item: "bloodmagic:demonslate",
+        },
+        output: {
+            item: "bloodmagic:etherealslate",
+        },
+        upgradeLevel: 4,
+    });
+
+    event.custom({
+        type: "bloodmagic:altar",
         altarSyphon: 1000,
-        consumptionRate: 5,
-        drainRate: 5,
+        consumptionRate: 100,
+        drainRate: 100,
         input: {
             item: "forbidden_arcanus:dark_rune_block",
         },

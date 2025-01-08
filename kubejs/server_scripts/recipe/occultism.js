@@ -381,7 +381,7 @@ ServerEvents.recipes((event) => {
                     item: "evilcraft:dark_blood_brick",
                 },
                 {
-                    item: "evilcraft:garmonbozia",
+                    item: "occultism:soul_gem",
                 },
                 {
                     item: "evilcraft:blood_infusion_core",

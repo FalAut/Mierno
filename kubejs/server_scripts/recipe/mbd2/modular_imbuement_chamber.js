@@ -109,14 +109,8 @@ ServerEvents.recipes((event) => {
 
     mierno
         .modular_imbuement_chamber()
-        .inputItems(["4x occultism:iesnium_ingot", "occultism:spirit_attuned_gem"])
-        .outputItems("occultism:soul_gem")
-        .duration(DURATION);
-
-    mierno
-        .modular_imbuement_chamber()
-        .inputItems(["4x occultism:iesnium_ingot", "occultism:spirit_attuned_gem"])
-        .outputItems("occultism:soul_gem")
+        .inputItems(["4x occultism:otherworld_essence", "4x occultism:iesnium_ingot", "occultism:spirit_attuned_gem"])
+        .outputItems("mierno:soul_gem")
         .duration(DURATION);
 
     mierno

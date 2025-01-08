@@ -3,16 +3,16 @@ CapabilityEvents.blockEntity((event) => {
         "wizards_reborn:orbital_fluid_retainer",
         BotaniaCapabilityBuilder.MANA.blockEntity()
             .receiveMana((be, amount) => {
-                let fluid = be.getCapability(ForgeCapabilities.FLUID_HANDLER).orElse(null);
-                fluid.fill(Fluid.of("mierno:liquid_mana", 0.1 * amount), "EXECUTE");
+                let fluidCap = be.getCapability(ForgeCapabilities.FLUID_HANDLER).orElse(null);
+                fluidCap.fill(Fluid.of("mierno:liquid_mana", 0.1 * amount), "EXECUTE");
             })
             .getCurrentMana((be) => {
-                let fluid = be.getCapability(ForgeCapabilities.FLUID_HANDLER).orElse(null);
-                return fluid.getFluidInTank(0).getAmount();
+                let fluidCap = be.getCapability(ForgeCapabilities.FLUID_HANDLER).orElse(null);
+                return fluidCap.getFluidInTank(0).getAmount();
             })
             .isFull((be) => {
-                let fluid = be.getCapability(ForgeCapabilities.FLUID_HANDLER).orElse(null);
-                return fluid.getTankCapacity(0) <= fluid.getFluidInTank(0).getAmount();
+                let fluidCap = be.getCapability(ForgeCapabilities.FLUID_HANDLER).orElse(null);
+                return fluidCap.getTankCapacity(0) <= fluidCap.getFluidInTank(0).getAmount();
             })
     );
 

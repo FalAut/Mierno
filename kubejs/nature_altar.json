@@ -29,13 +29,6 @@
             "aura": 3000
         },
         {
-            "input": "minecraft:stone",
-            "catalyst": "null",
-            "output": "naturesaura:infused_stone",
-            "outputCount": 1,
-            "aura": 7500
-        },
-        {
             "input": "minecraft:red_mushroom",
             "catalyst": "naturesaura:conversion_catalyst",
             "output": "minecraft:crimson_fungus",

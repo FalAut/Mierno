@@ -1,0 +1,11 @@
+{
+    "type": "mierno:misty_forest",
+    "generator": {
+        "type": "minecraft:noise",
+        "settings": "mierno:dream_1",
+        "biome_source": {
+            "type": "minecraft:fixed",
+            "biome": "minecraft:the_void"
+        }
+    }
+}

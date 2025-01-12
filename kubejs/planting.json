@@ -515,10 +515,6 @@
             "outputs": ["minecraft:orange_tulip"]
         },
         {
-            "seed": "forbidden_arcanus:golden_orchid_seeds",
-            "outputs": ["forbidden_arcanus:deorum_nugget", "forbidden_arcanus:golden_orchid_seeds"]
-        },
-        {
             "seed": "minecraft:pitcher_pod",
             "outputs": ["minecraft:pitcher_plant"]
         },

@@ -161,6 +161,7 @@
 			}]
 			shape: "square"
 			size: 1.5d
+			subtitle: "{\"translate\":\"mierno.chapter2-3.blood_altar.subtitle\",\"color\":\"gold\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book Fa1Aut bloodmagic:guide bloodmagic:altar/blood_altar 10\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}}"
 			tasks: [{
 				id: "6661F2A615793D3F"
 				item: "bloodmagic:altar"
@@ -283,7 +284,7 @@
 				type: "item"
 			}]
 			x: 5.5d
-			y: 0.8d
+			y: -0.8d
 		}
 		{
 			dependencies: ["449883B0BE46FF22"]
@@ -314,7 +315,7 @@
 				type: "item"
 			}]
 			x: 5.5d
-			y: -0.8d
+			y: 0.8d
 		}
 		{
 			dependencies: [
@@ -642,13 +643,21 @@
 			y: 0.0d
 		}
 		{
+			dependencies: [
+				"191ACD1E4234C48E"
+				"0D09F2E2D3CFB01C"
+				"3FDE3EF6B72D3969"
+			]
+			icon: "bloodmagic:dungeon_alternator"
 			id: "24FE0AA7D7BD9689"
+			shape: "diamond"
+			size: 1.5d
 			tasks: [{
 				id: "02B447A28AA1E2F7"
 				type: "checkmark"
 			}]
 			title: "{mierno.tobecontinue}"
-			x: 11.0d
+			x: 10.7d
 			y: 0.0d
 		}
 		{
@@ -673,6 +682,367 @@
 			]
 			x: 4.0d
 			y: -2.5d
+		}
+		{
+			id: "103AD1BE6CD3FCF4"
+			tasks: [{
+				id: "66DE8859F7B57A56"
+				item: "forbidden_arcanus:artisan_relic"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 2.5d
+		}
+		{
+			id: "4223C63E12D90CC5"
+			rewards: [{
+				count: 64
+				id: "3F340A49DC55087B"
+				item: "bloodmagic:simplekey"
+				type: "item"
+			}]
+			tasks: [{
+				id: "084F73D8DD78278F"
+				item: "bloodmagic:simplekey"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A5BFF167EF650AB"]
+			id: "3FDE3EF6B72D3969"
+			shape: "diamond"
+			size: 1.2d
+			tasks: [{
+				id: "1333229DAFD83990"
+				item: "bloodmagic:activationcrystalweak"
+				type: "item"
+			}]
+			x: 10.7d
+			y: -1.5d
+		}
+		{
+			id: "766E29427A2C30C4"
+			tasks: [{
+				id: "3EDE53C4D00E6891"
+				item: "bloodmagic:largebloodstonebrick"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4153AC4DAB94AB29"
+				"62219F33D9199A4C"
+			]
+			id: "0AECDBF8C930AE4E"
+			shape: "hexagon"
+			tasks: [{
+				id: "3E0DE6386FFE9A54"
+				item: {
+					Count: 1
+					id: "bloodmagic:lavasigil"
+					tag: {
+						binding: {
+							id: [I;
+								-1176636689
+								-74432454
+								-2003584141
+								1476401073
+							]
+							name: "Fa1Aut"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"0AECDBF8C930AE4E"
+				"7C9F2C220578AA0E"
+				"5C8CF7D55B56EBB7"
+			]
+			id: "7A5BFF167EF650AB"
+			tasks: [{
+				id: "07376061B6101D7F"
+				item: "bloodmagic:lavacrystal"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5135D6891E00113C"]
+			id: "5E70D6774B3806B0"
+			shape: "hexagon"
+			tasks: [{
+				id: "5E8FDEF328B1ED32"
+				item: "bloodmagic:alchemytable"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.5d
+		}
+		{
+			id: "7C9F2C220578AA0E"
+			shape: "hexagon"
+			tasks: [{
+				id: "647EF51B7EFC82BB"
+				item: "bloodmagic:soulforge"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["5E70D6774B3806B0"]
+			id: "4153AC4DAB94AB29"
+			shape: "rsquare"
+			size: 0.8d
+			tasks: [{
+				id: "73C115D643B49C4C"
+				item: {
+					Count: 1
+					id: "bloodmagic:arcaneashes"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 7.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5E70D6774B3806B0"]
+			id: "62219F33D9199A4C"
+			shape: "rsquare"
+			size: 0.8d
+			tasks: [{
+				id: "2722A518A280DDFA"
+				item: "bloodmagic:reagentlava"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -2.0d
+		}
+		{
+			id: "5C8CF7D55B56EBB7"
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "242852F1D1132070"
+					item: "bloodmagic:soulsnare"
+					type: "item"
+				}
+				{
+					id: "376CAC26CFFE2E24"
+					item: "bloodmagic:basemonstersoul"
+					type: "item"
+				}
+			]
+			x: 9.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1DAEF872073C7174"]
+			id: "5135D6891E00113C"
+			shape: "hexagon"
+			size: 0.8d
+			tasks: [{
+				id: "1155F509A9C628AE"
+				item: "forbidden_arcanus:crimson_stone"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			id: "1DF5EF69318E2592"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "5F727A747CECEF79"
+				item: "forbidden_arcanus:soul_crimson_stone"
+				type: "item"
+			}]
+			x: 12.75d
+			y: -3.75d
+		}
+		{
+			id: "734EB0B7C18A21FB"
+			rewards: [
+				{
+					id: "4EE6C15C7E02A038"
+					item: "forbidden_arcanus:golden_orchid_seeds"
+					type: "item"
+				}
+				{
+					id: "47890C7FAB9C94B9"
+					item: "forbidden_arcanus:deorum_nugget"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "6222F5778947216C"
+				item: "forbidden_arcanus:yellow_orchid"
+				type: "item"
+			}]
+			x: 13.0d
+			y: 2.0d
+		}
+		{
+			id: "5F472ED812AA975A"
+			tasks: [
+				{
+					id: "4F9A021046E4C058"
+					item: "bloodmagic:weak_tau"
+					type: "item"
+				}
+				{
+					id: "77DC35949FF1A659"
+					item: "bloodmagic:strong_tau"
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: -0.5d
+		}
+		{
+			id: "355A10A4A1C27961"
+			tasks: [{
+				id: "7796746463014E6F"
+				item: "bloodmagic:weakbloodshard"
+				type: "item"
+			}]
+			x: 13.0d
+			y: 0.5d
+		}
+		{
+			id: "5D594242B13C6947"
+			rewards: [{
+				count: 64
+				id: "1F85F9B2C8F3D09F"
+				item: "bloodmagic:minekey"
+				type: "item"
+			}]
+			tasks: [{
+				id: "092B1274AA4EFCA4"
+				item: "bloodmagic:mineentrancekey"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 1.5d
+		}
+		{
+			id: "0252B809AB8F501A"
+			tasks: [{
+				id: "2D7958A483124ACE"
+				item: "bloodmagic:activationcrystalcreative"
+				type: "item"
+			}]
+			x: 11.5d
+			y: -2.5d
+		}
+		{
+			id: "65DC63DD68BD139A"
+			tasks: [{
+				id: "77FD545D82B1A80C"
+				item: "forbidden_arcanus:clibano_core"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 3.0d
+		}
+		{
+			id: "6E137AA6E145BCC8"
+			tasks: [{
+				id: "63C46EB7BAD82F65"
+				item: "bloodmagic:ingot_hellforged"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 3.5d
+		}
+		{
+			id: "2FEE97D0526894EB"
+			tasks: [{
+				id: "74A8FBFC4EC1E4D8"
+				item: "bloodmagic:alchemicalreactionchamber"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 2.5d
+		}
+		{
+			id: "344985048D232275"
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						id: "forbidden_arcanus:hephaestus_forge"
+						tag: {
+							BlockStateTag: {
+								tier: 3
+							}
+						}
+					}
+					id: "590E5E63DA52A6BA"
+					observe_type: 2
+					timer: 0L
+					to_observe: "forbidden_arcanus:hephaestus_forge[tier=3]"
+					type: "observation"
+				}
+				{
+					id: "2C0FEED8554F392A"
+					item: {
+						Count: 1
+						id: "forbidden_arcanus:hephaestus_forge"
+						tag: {
+							BlockStateTag: {
+								tier: 3
+							}
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			id: "4AA08641165D54A5"
+			tasks: [
+				{
+					id: "2CA1118313271FC7"
+					item: "bloodmagic:dungeon_eye"
+					type: "item"
+				}
+				{
+					id: "6BEB4EAD6520A5FE"
+					item: "bloodmagic:dungeon_alternator"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "5DCEB821BBF1335C"
+					item: { Count: 64, id: "bloodmagic:dungeon_polished" }
+					type: "item"
+				}
+				{
+					id: "18DE4AB17C844F27"
+					item: "evilcraft:spirit_portal"
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: 4.5d
 		}
 	]
 	title: "{mierno.chapter2-3.title}"

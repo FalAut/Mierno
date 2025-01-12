@@ -121,43 +121,10 @@ ServerEvents.recipes((event) => {
             {
                 additionalWeight: 0,
                 fill: {
-                    block: "minecraft:diamond_ore",
-                },
-                minWeight: 0,
-                radius: 2,
-            },
-            {
-                additionalWeight: 0,
-                fill: {
-                    block: "minecraft:cobblestone",
+                    block: "stone",
                 },
                 minWeight: 1000,
-                radius: 5,
-                weightMap: [
-                    {
-                        index: 0,
-                        tag: "forge:ores/sapphire",
-                        weight: 100,
-                    },
-                    {
-                        index: 0,
-                        tag: "forge:ores/ruby",
-                        weight: 100,
-                    },
-                    {
-                        block: "minecraft:diamond_ore",
-                        weight: 100,
-                    },
-                    {
-                        block: "minecraft:emerald_ore",
-                        weight: 75,
-                    },
-                    {
-                        index: 0,
-                        tag: "forge:ores/cinnabar",
-                        weight: 200,
-                    },
-                ],
+                radius: 3,
             },
         ],
         syphon: 0,

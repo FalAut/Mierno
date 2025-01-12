@@ -23,6 +23,17 @@ EntityEvents.spawned("naturesaura:structure_finder", (event) => {
     event.entity.setGlowing(true);
 });
 
+EntityEvents.spawned("bloodmagic:meteor", (event) => {
+    const { entity, level } = event;
+
+    entity.setGlowing(true);
+
+    // let lightningBoltEntity = level.createEntity("lightning_bolt");
+    // lightningBoltEntity.setVisualOnly(true);
+    // lightningBoltEntity.moveTo(Vec3d.atCenterOf(new BlockPos(entity.x, 64, entity.z)));
+    // lightningBoltEntity.spawn();
+});
+
 ItemEvents.crafted("naturesaura:birth_spirit", (event) => {
     const { player, level } = event;
 

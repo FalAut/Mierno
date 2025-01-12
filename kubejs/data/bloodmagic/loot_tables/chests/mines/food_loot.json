@@ -1,0 +1,515 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 22.0,
+                                "min": 15.0
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "bloodmagic:copperfragment",
+                    "quality": -4,
+                    "weight": 25
+                },
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 20.0,
+                                "min": 8.0
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "forbidden_arcanus:yellow_orchid",
+                    "quality": 100,
+                    "weight": 100
+                },
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": 1.0,
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "forbidden_arcanus:artisan_relic",
+                    "quality": 100,
+                    "weight": 100
+                },
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 15.0,
+                                "min": 8.0
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "bloodmagic:ironfragment",
+                    "quality": 1,
+                    "weight": 20
+                },
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 13.0,
+                                "min": 8.0
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "bloodmagic:goldfragment",
+                    "quality": 2,
+                    "weight": 15
+                },
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 5.0,
+                                "min": 2.0
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "bloodmagic:fragment_netherite_scrap",
+                    "quality": 4,
+                    "weight": 3
+                }
+            ],
+            "rolls": {
+                "type": "minecraft:uniform",
+                "max": 2.0,
+                "min": 1.0
+            }
+        },
+        {
+            "bonus_rolls": 0.0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 10.0,
+                                "min": 5.0
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "minecraft:beef",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 10.0,
+                                "min": 5.0
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "minecraft:porkchop",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 10.0,
+                                "min": 5.0
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "minecraft:chicken",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 10.0,
+                                "min": 5.0
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "minecraft:egg",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 10.0,
+                                "min": 5.0
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "minecraft:mutton",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 10.0,
+                                "min": 5.0
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "minecraft:rabbit",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 15.0,
+                                "min": 4.0
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "minecraft:feather",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 15.0,
+                                "min": 4.0
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "minecraft:leather",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 15.0,
+                                "min": 4.0
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "minecraft:white_wool",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 15.0,
+                                "min": 4.0
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "minecraft:black_wool",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 15.0,
+                                "min": 4.0
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "minecraft:rabbit_hide",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 10.0,
+                                "min": 5.0
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "minecraft:melon_seeds",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 10.0,
+                                "min": 5.0
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "minecraft:pumpkin_seeds",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 10.0,
+                                "min": 5.0
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "minecraft:wheat_seeds",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 10.0,
+                                "min": 5.0
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "minecraft:beetroot_seeds",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 5.0,
+                                "min": 2.0
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "minecraft:lead",
+                    "weight": 6
+                },
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 3.0,
+                                "min": 1.0
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "minecraft:rabbit_foot",
+                    "quality": 3,
+                    "weight": 2
+                },
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": 1.0,
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "minecraft:name_tag",
+                    "weight": 3
+                },
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 11.0,
+                                "min": 7.0
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "minecraft:rotten_flesh",
+                    "weight": 6
+                },
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 7.0,
+                                "min": 4.0
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "minecraft:bone",
+                    "weight": 6
+                },
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 11.0,
+                                "min": 6.0
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "bloodmagic:weak_tau",
+                    "weight": 12
+                },
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 11.0,
+                                "min": 6.0
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "bloodmagic:strong_tau",
+                    "weight": 6
+                },
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "max": 11.0,
+                                "min": 6.0
+                            },
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "bloodmagic:plantoil",
+                    "weight": 6
+                },
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": 1.0,
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "bloodmagic:advancedcuttingfluid",
+                    "quality": 5,
+                    "weight": 3
+                },
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "add": false,
+                            "count": 1.0,
+                            "function": "minecraft:set_count"
+                        }
+                    ],
+                    "name": "bloodmagic:hellforgedparts",
+                    "quality": 10,
+                    "weight": 3
+                }
+            ],
+            "rolls": {
+                "type": "minecraft:uniform",
+                "max": 5.0,
+                "min": 3.0
+            }
+        }
+    ],
+    "random_sequence": "bloodmagic:chests/mines/food_loot"
+}

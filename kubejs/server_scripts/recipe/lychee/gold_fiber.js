@@ -9,15 +9,12 @@ ServerEvents.recipes((event) => {
                 weather: "clear",
             },
             {
-                type: "time",
-                value: {
-                    min: 5500,
-                    max: 6500,
-                },
+                type: "custom",
+                id: "can_see_sky",
             },
             {
                 type: "custom",
-                id: "can_see_sky",
+                id: "is_noon",
             },
         ],
         post: [

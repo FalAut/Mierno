@@ -108,11 +108,13 @@ MBDMachineEvents.onTick("mierno:modular_mana_pool_core", (event) => {
     let itemCap = machine.getCapability(ForgeCapabilities.ITEM_HANDLER).orElse(null);
     let manaItem = itemCap.getStackInSlot(0);
 
+    let remainingMana = 1000000 - manaCap.getCurrentMana();
+
     if (!manaCap.isFull()) {
-        if (manaItem == "botania:black_lotus") {
+        if (manaItem == "botania:black_lotus" && remainingMana >= 8000) {
             manaCap.receiveMana(8000);
             manaItem.count--;
-        } else if (manaItem == "botania:blacker_lotus") {
+        } else if (manaItem == "botania:blacker_lotus" && remainingMana >= 100000) {
             manaCap.receiveMana(100000);
             manaItem.count--;
         }

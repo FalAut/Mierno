@@ -45,6 +45,42 @@ ServerEvents.recipes((event) => {
     fullShaped("mierno:spirit_attuned_gem_block", "occultism:spirit_attuned_gem");
     fullShaped("minecraft:skeleton_skull", "minecraft:bone_block");
 
+    event.custom({
+        type: "functionalstorage:custom_compacting",
+        higher_input: {
+            count: 1,
+            item: "forbidden_arcanus:corrupt_soul",
+        },
+        lower_input: {
+            count: 5,
+            item: "forbidden_arcanus:soul",
+        },
+    });
+
+    event.custom({
+        type: "functionalstorage:custom_compacting",
+        higher_input: {
+            count: 1,
+            item: "forbidden_arcanus:enchanted_soul",
+        },
+        lower_input: {
+            count: 2,
+            item: "forbidden_arcanus:corrupt_soul",
+        },
+    });
+
+    event.custom({
+        type: "functionalstorage:custom_compacting",
+        higher_input: {
+            count: 1,
+            item: "forbidden_arcanus:enchanted_soul",
+        },
+        lower_input: {
+            count: 10,
+            item: "forbidden_arcanus:soul",
+        },
+    });
+
     function copySelf(item) {
         kubejs.shapeless(Item.of(item).withCount(2), item);
     }
@@ -113,8 +149,6 @@ ServerEvents.recipes((event) => {
     ]);
     kubejs.shapeless("occultism:soul_gem", "mierno:soul_gem");
     kubejs.shapeless("mierno:soul_gem", "occultism:soul_gem");
-    kubejs.shapeless("5x forbidden_arcanus:soul", "forbidden_arcanus:corrupt_soul");
-    kubejs.shapeless("10x forbidden_arcanus:soul", "forbidden_arcanus:enchanted_soul");
 
     kubejs.shapeless("naturesaura:birth_spirit", "naturesaura:calling_spirit").modifyResult((grid, result) => {
         if (!grid.player || grid.player.isFake() || grid.menu instanceof $AssemblyHaloContainer) return Item.empty;

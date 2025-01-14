@@ -1,5 +1,6 @@
 {
     "additional_requirements": {
+        "enhancers": ["forbidden_arcanus:crimson_stone", "forbidden_arcanus:maledictus_pact"],
         "forge_tier": 1
     },
     "essences": {
@@ -12,54 +13,54 @@
         {
             "amount": 1,
             "ingredient": {
-                "item": "forbidden_arcanus:dark_nether_star"
+                "item": "forbidden_arcanus:smelter_prism"
             }
         },
         {
             "amount": 1,
             "ingredient": {
-                "item": "forbidden_arcanus:dark_rune"
+                "item": "bloodmagic:reagentlava"
             }
         },
         {
             "amount": 1,
             "ingredient": {
-                "item": "evilcraft:dark_power_gem"
+                "item": "bloodmagic:lavasigil"
             }
         },
         {
             "amount": 1,
             "ingredient": {
-                "item": "evilcraft:inverted_potentia_empowered"
+                "item": "bloodmagic:blankrune"
             }
         },
         {
             "amount": 1,
             "ingredient": {
-                "item": "forbidden_arcanus:corrupted_arcane_crystal"
+                "item": "bloodmagic:blankrune"
             }
         },
         {
             "amount": 1,
             "ingredient": {
-                "item": "evilcraft:inverted_potentia_empowered"
+                "item": "bloodmagic:blankrune"
             }
         },
         {
             "amount": 1,
             "ingredient": {
-                "item": "evilcraft:dark_power_gem"
+                "item": "bloodmagic:lavasigil"
             }
         },
         {
             "amount": 1,
             "ingredient": {
-                "item": "forbidden_arcanus:dark_rune"
+                "item": "bloodmagic:reagentlava"
             }
         }
     ],
     "main_ingredient": {
-        "item": "evilcraft:garmonbozia"
+        "item": "evilcraft:spirit_furnace"
     },
     "magic_circle": {
         "inner_texture": "forbidden_arcanus:textures/effect/magic_circle/inner/damnare.png",
@@ -69,7 +70,7 @@
         "type": "forbidden_arcanus:create_item",
         "result_item": {
             "Count": 1,
-            "id": "forbidden_arcanus:maledictus_pact"
+            "id": "bloodmagic:soulforge"
         }
     }
 }

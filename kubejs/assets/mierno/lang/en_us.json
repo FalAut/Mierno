@@ -113,6 +113,7 @@
     "block.mierno.mana_output": "Mana Output",
     "block.mierno.modular_nature_altar_core": "Modular Natural Altar Core",
     "block.mierno.modular_imbuement_chamber_core": "Modular Imbuement Chamber Core",
+    "block.mierno.glowing_obsidian": "Glowing Obsidian",
 
     "mierno.oak_crucible": "Oak Crucible",
     "mierno.fired_crucible": "Crucible",
@@ -171,6 +172,7 @@
     "message.mierno.colossal_furnace_core_no_space": "Please ensure that there are no §cblocks other than the core§r within the construction area of the Colossal Furnace.",
     "message.mierno.colossal_furnace_core_no_enough_item": "The Colossal Furnace frame is incomplete. §a26§r are required, but %s are missing.",
     "message.mierno.terra_plate_error": "The current structure of the Terra Cohesive Plate is incorrect, please check the Terra Cohesive Plate mission for more information.",
+    "message.mierno.nothing_happened": "Nothing happened",
 
     "death.attack.mistDamage": "%1$s got lost in the mist",
 

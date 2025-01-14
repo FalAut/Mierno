@@ -1288,9 +1288,9 @@
 			tasks: [{
 				id: "33D2FC34AC68359E"
 				structure: "mierno:maze"
+				title: "{mierno.chapter1-2.find_maze.title}"
 				type: "structure"
 			}]
-			title: "{mierno.chapter1-2.find_maze.title}"
 			x: -2.5d
 			y: 0.0d
 		}

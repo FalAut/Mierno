@@ -657,7 +657,7 @@
 				type: "checkmark"
 			}]
 			title: "{mierno.tobecontinue}"
-			x: 10.7d
+			x: 11.0d
 			y: 0.0d
 		}
 		{
@@ -690,8 +690,8 @@
 				item: "forbidden_arcanus:artisan_relic"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 2.5d
+			x: 8.5d
+			y: 3.0d
 		}
 		{
 			id: "4223C63E12D90CC5"
@@ -719,8 +719,8 @@
 				item: "bloodmagic:activationcrystalweak"
 				type: "item"
 			}]
-			x: 10.7d
-			y: -1.5d
+			x: 11.0d
+			y: -1.2d
 		}
 		{
 			id: "766E29427A2C30C4"
@@ -789,7 +789,22 @@
 			y: -2.5d
 		}
 		{
+			dependencies: [
+				"0AECDBF8C930AE4E"
+				"0AECDBF8C930AE4E"
+			]
 			id: "7C9F2C220578AA0E"
+			rewards: [{
+				id: "529129F1C4E2DBFE"
+				item: {
+					Count: 1
+					id: "bloodmagic:soulsword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
 			shape: "hexagon"
 			tasks: [{
 				id: "647EF51B7EFC82BB"
@@ -832,6 +847,7 @@
 			y: -2.0d
 		}
 		{
+			dependencies: ["7C9F2C220578AA0E"]
 			id: "5C8CF7D55B56EBB7"
 			shape: "hexagon"
 			tasks: [
@@ -843,6 +859,15 @@
 				{
 					id: "376CAC26CFFE2E24"
 					item: "bloodmagic:basemonstersoul"
+					type: "item"
+				}
+				{
+					id: "38C9B625D234B678"
+					item: {
+						Count: 1
+						id: "bloodmagic:soulgempetty"
+						tag: { }
+					}
 					type: "item"
 				}
 			]
@@ -871,7 +896,7 @@
 				item: "forbidden_arcanus:soul_crimson_stone"
 				type: "item"
 			}]
-			x: 12.75d
+			x: 12.0d
 			y: -3.75d
 		}
 		{
@@ -910,8 +935,8 @@
 					type: "item"
 				}
 			]
-			x: 13.0d
-			y: -0.5d
+			x: 15.0d
+			y: -1.0d
 		}
 		{
 			id: "355A10A4A1C27961"
@@ -920,8 +945,8 @@
 				item: "bloodmagic:weakbloodshard"
 				type: "item"
 			}]
-			x: 13.0d
-			y: 0.5d
+			x: 13.5d
+			y: 1.0d
 		}
 		{
 			id: "5D594242B13C6947"
@@ -936,8 +961,8 @@
 				item: "bloodmagic:mineentrancekey"
 				type: "item"
 			}]
-			x: 11.0d
-			y: 1.5d
+			x: 13.0d
+			y: 3.0d
 		}
 		{
 			id: "0252B809AB8F501A"
@@ -946,8 +971,8 @@
 				item: "bloodmagic:activationcrystalcreative"
 				type: "item"
 			}]
-			x: 11.5d
-			y: -2.5d
+			x: 12.0d
+			y: -2.0d
 		}
 		{
 			id: "65DC63DD68BD139A"
@@ -956,8 +981,8 @@
 				item: "forbidden_arcanus:clibano_core"
 				type: "item"
 			}]
-			x: 7.0d
-			y: 3.0d
+			x: 8.0d
+			y: 4.0d
 		}
 		{
 			id: "6E137AA6E145BCC8"
@@ -966,7 +991,7 @@
 				item: "bloodmagic:ingot_hellforged"
 				type: "item"
 			}]
-			x: 12.0d
+			x: 14.0d
 			y: 3.5d
 		}
 		{
@@ -976,8 +1001,8 @@
 				item: "bloodmagic:alchemicalreactionchamber"
 				type: "item"
 			}]
-			x: 11.5d
-			y: 2.5d
+			x: 10.0d
+			y: 2.0d
 		}
 		{
 			id: "344985048D232275"
@@ -1017,6 +1042,7 @@
 			y: 3.0d
 		}
 		{
+			icon: "bloodmagic:dungeon_eye"
 			id: "4AA08641165D54A5"
 			tasks: [
 				{
@@ -1030,19 +1056,57 @@
 					type: "item"
 				}
 				{
-					count: 64L
-					id: "5DCEB821BBF1335C"
-					item: { Count: 64, id: "bloodmagic:dungeon_polished" }
-					type: "item"
-				}
-				{
-					id: "18DE4AB17C844F27"
-					item: "evilcraft:spirit_portal"
+					id: "18B24C2F5A9C86B8"
+					item: "bloodmagic:dungeon_polished"
 					type: "item"
 				}
 			]
-			x: 10.5d
-			y: 4.5d
+			x: 10.0d
+			y: 3.0d
+		}
+		{
+			id: "64CBA3546CD7E580"
+			tasks: [{
+				id: "2D44CDB9EEB5CEEC"
+				item: "mierno:glowing_obsidian"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 4.0d
+		}
+		{
+			id: "536848EB2A41950E"
+			tasks: [{
+				id: "503328D1B3925054"
+				item: "forbidden_arcanus:stella_arcanum"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 4.0d
+		}
+		{
+			id: "4B7D9F5BCAA55588"
+			tasks: [{
+				id: "3DD8D3ABF5113D50"
+				item: "forbidden_arcanus:stellarite_piece"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 5.0d
+		}
+		{
+			id: "64082A6FF5A7E822"
+			tasks: [{
+				id: "38D81725005947ED"
+				item: {
+					Count: 1
+					id: "forbidden_arcanus:eternal_stella"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 8.5d
+			y: 6.0d
 		}
 	]
 	title: "{mierno.chapter2-3.title}"

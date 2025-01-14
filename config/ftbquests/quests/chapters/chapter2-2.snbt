@@ -470,9 +470,9 @@
 			tasks: [{
 				id: "4B16D5D8FF37179C"
 				structure: "mierno:dark_temple"
+				title: "{mierno.chapter2-2.found_dark_temple.title}"
 				type: "structure"
 			}]
-			title: "{mierno.chapter2-2.found_dark_temple.title}"
 			x: 4.5d
 			y: -4.0d
 		}

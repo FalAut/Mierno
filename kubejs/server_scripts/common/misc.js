@@ -28,10 +28,10 @@ EntityEvents.spawned("bloodmagic:meteor", (event) => {
 
     entity.setGlowing(true);
 
-    // let lightningBoltEntity = level.createEntity("lightning_bolt");
-    // lightningBoltEntity.setVisualOnly(true);
-    // lightningBoltEntity.moveTo(Vec3d.atCenterOf(new BlockPos(entity.x, 64, entity.z)));
-    // lightningBoltEntity.spawn();
+    let lightningBoltEntity = level.createEntity("lightning_bolt");
+    lightningBoltEntity.setVisualOnly(true);
+    lightningBoltEntity.moveTo(new Vec3d(entity.x, entity.y, entity.z));
+    lightningBoltEntity.spawn();
 });
 
 ItemEvents.crafted("naturesaura:birth_spirit", (event) => {

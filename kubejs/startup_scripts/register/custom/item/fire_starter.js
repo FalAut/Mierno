@@ -9,13 +9,12 @@ StartupEvents.registry("item", (event) => {
         .finishUsing((itemStack, level, entity) => {
             if (!getRayTraceBlock(entity)) return itemStack;
             const block = getRayTraceBlock(entity);
-            const { x, y, z } = block;
 
             Items.FLINT_AND_STEEL.useOn(
-                new $UseOnContext(entity, "MAIN_HAND", new $BlockHitResult(Vec3d.ZERO, "UP", [x, y, z], false))
+                new $UseOnContext(entity, "MAIN_HAND", new $BlockHitResult(Vec3d.ZERO, "UP", block.pos, false))
             );
 
-            level.playSound(null, x, y, z, "item.firecharge.use", "master", 0.3, 1.1);
+            level.playSound(null, block.pos, "item.firecharge.use", "master");
 
             return itemStack;
         });

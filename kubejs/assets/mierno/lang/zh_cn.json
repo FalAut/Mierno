@@ -113,6 +113,7 @@
     "block.mierno.mana_output": "魔力输出仓",
     "block.mierno.modular_nature_altar_core": "模块化自然祭坛核心",
     "block.mierno.modular_imbuement_chamber_core": "模块化灌注室核心",
+    "block.mierno.glowing_obsidian": "发光的黑曜石",
 
     "mierno.oak_crucible": "橡木坩埚",
     "mierno.fired_crucible": "坩埚",
@@ -171,6 +172,7 @@
     "message.mierno.colossal_furnace_core_no_space": "请保证巨型熔炉搭建范围内没有除核心外的§c其他方块§r存在",
     "message.mierno.colossal_furnace_core_no_enough_item": "巨型熔炉框架不足，需要 §a26§r 个，还差 %s 个",
     "message.mierno.terra_plate_error": "当前泰拉凝聚板的结构不正确，请查看泰拉凝聚板的任务获取更多信息",
+    "message.mierno.nothing_happened": "什么都没有发生",
 
     "death.attack.mistDamage": "%1$s 迷失了",
 

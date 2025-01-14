@@ -6,6 +6,7 @@ BlockEvents.modification((event) => {
             "botania:light_relay",
             "forbidden_arcanus:dark_nether_star_block",
             "ae2:quartz_vibrant_glass",
+            "mierno:glowing_obsidian",
         ],
         (block) => {
             block.setExplosionResistance(1200);

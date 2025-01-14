@@ -41,19 +41,20 @@ BlockEvents.rightClicked((event) => {
 
 BlockEvents.rightClicked((event) => {
     const { hand, level, block, item, player, server } = event;
-    if (hand != "MAIN_HAND") return;
+    if (
+        hand != "MAIN_HAND" ||
+        !block.hasTag("minecraft:beds") ||
+        item != "naturesaura:token_terror" ||
+        evel.dimension != "minecraft:the_nether"
+    )
+        return;
 
     let curiosInventory = $CuriosApi.getCuriosInventory(player).resolve().get();
     let foundThirdEye = curiosInventory.equippedCurios.allItems.some((item) => item == "botania:third_eye");
     let structureTemplate = server.structureManager.get("mierno:demons_dream").get();
     let otherworld = server.getLevel("mierno:otherworld");
 
-    if (
-        level.dimension == "minecraft:the_nether" &&
-        block.hasTag("minecraft:beds") &&
-        foundThirdEye &&
-        item == "naturesaura:token_terror"
-    ) {
+    if (foundThirdEye) {
         player.swing();
         structureTemplate.placeInWorld(
             otherworld,
@@ -199,9 +200,85 @@ ItemEvents.rightClicked("mierno:portable_crafting_table", (event) => {
 
 BlockEvents.rightClicked("bloodmagic:altar", (event) => {
     const { item, block } = event;
-    if (item != "evilcraft:creative_blood_drop") return;
+    if (hand != "MAIN_HAND" || item != "evilcraft:creative_blood_drop") return;
 
     let fluidCap = block.entity.getCapability(ForgeCapabilities.FLUID_HANDLER).orElse(null);
 
     fluidCap.getFluidInTank(0).setAmount(fluidCap.getTankCapacity(0));
+});
+
+BlockEvents.rightClicked("bloodmagic:dungeon_eye", (event) => {
+    const { hand, block, player, level, server } = event;
+    if (hand != "MAIN_HAND") return;
+
+    let demonReactor = $PatchouliAPI.getMultiblock("mierno:demon_reactor");
+    if (!demonReactor.validate(level, block.pos, "none")) return;
+
+    let lightningBoltEntity = block.createEntity("lightning_bolt");
+    lightningBoltEntity.setVisualOnly(true);
+    lightningBoltEntity.moveTo(Vec3d.atCenterOf(block.pos));
+    lightningBoltEntity.spawn();
+
+    level.destroyBlock(block.pos, false);
+    block.set("bloodmagic:dungeon_controller");
+
+    let direction = ["east", "south", "west", "north"];
+    direction.forEach((dire) => block[dire].set("evilcraft:spirit_portal"));
+
+    player.potionEffects.add("darkness");
+    player.swing();
+
+    server.scheduleInTicks(40, (callback) => {
+        demonReactor.simulate(level, block.pos, "none", false).second.forEach((result) => {
+            if (result.character == "B") {
+                level.destroyBlock(result.worldPosition, false);
+                level.getBlock(result.worldPosition).set("mierno:glowing_obsidian");
+            }
+        });
+        player.tell(Text.darkRed("???????????????????????").obfuscated());
+
+        server.scheduleInTicks(40, (callback) => {
+            demonReactor.simulate(level, block.pos, "none", false).second.forEach((result) => {
+                if (result.character == "C") {
+                    level.destroyBlock(result.worldPosition, false);
+                    level.getBlock(result.worldPosition).set("mierno:glowing_obsidian");
+                }
+            });
+            player.tell(Text.darkRed("???????????????????????????????????").obfuscated());
+
+            server.scheduleInTicks(40, (callback) => {
+                demonReactor.simulate(level, block.pos, "none", false).second.forEach((result) => {
+                    if (result.character == "D") {
+                        level.destroyBlock(result.worldPosition, false);
+                        level.getBlock(result.worldPosition).set("mierno:glowing_obsidian");
+                    }
+                });
+                player.tell(Text.darkRed("???????????????????????????????").obfuscated());
+
+                server.scheduleInTicks(40, (callback) => {
+                    demonReactor.simulate(level, block.pos, "none", false).second.forEach((result) => {
+                        if (result.character == "A") {
+                            level.destroyBlock(result.worldPosition.below(2), false);
+                            level.getBlock(result.worldPosition.below(2)).set("mierno:glowing_obsidian");
+                        }
+                    });
+                    player.tell(Text.darkRed("??????????????????????????").obfuscated());
+
+                    server.scheduleInTicks(40, (callback) => {
+                        demonReactor.simulate(level, block.pos, "none", false).second.forEach((result) => {
+                            if (result.character == "0") {
+                                level.destroyBlock(result.worldPosition, false);
+                                level.getBlock(result.worldPosition).set("mierno:glowing_obsidian");
+                                player.tell(Text.darkRed("???????????????").obfuscated());
+                                player.tell(Text.red("..."));
+                                player.tell(Text.translate("message.mierno.nothing_happened").red());
+                                block.createExplosion().explosionMode("none").strength(100).explode();
+                                level.playSound(null, block.pos, "block.beacon.deactivate", "master");
+                            }
+                        });
+                    });
+                });
+            });
+        });
+    });
 });

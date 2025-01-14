@@ -3,7 +3,7 @@ ServerEvents.recipes((event) => {
         type: "forbidden_arcanus:clibano_combustion",
         cooking_time: 300,
         experience: 1.0,
-        fire_type: "soul_fire",
+        fire_type: "enchanted_fire",
         ingredient: {
             item: "forbidden_arcanus:stella_arcanum",
         },

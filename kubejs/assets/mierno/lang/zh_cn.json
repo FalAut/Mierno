@@ -273,7 +273,6 @@
     "tooltip.mierno.imbuement_chamber": "现在灌注室在完成灌注后会消耗掉基座上的物品，这是有意为之的，并不是bug",
     "tooltip.mierno.modular_alfheim_portal_core": "可附加火花，若连不上请尝试重新放置",
     "tooltip.mierno.eternal_water": "一个无限的水源，可以自动向液体容器输出水",
-    "tooltip.mierno.spring": "一个无限的水源，可以使用流体管道抽取",
     "tooltip.mierno.condenser_1": "每 125 mb流体也可算作 1 物品。",
     "tooltip.mierno.condenser_2": "§6在网络里放一个ME无限水元件，然后写一个比如「32000B水->1奇点」的样板给物质聚合器，下单可以直接秒做，非常简单",
     "tooltip.mierno.pinkinator_1": "使用装满粉红色光通染色球的物质炮合成",

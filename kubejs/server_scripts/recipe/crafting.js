@@ -945,4 +945,9 @@ ServerEvents.recipes((event) => {
         B: "pneumaticcraft:ingot_iron_compressed",
         C: "mierno:machine_efficiency_augment_lumium",
     });
+
+    kubejs.shaped("evilcraft:eternal_water", [" A ", "ABA", " A "], {
+        A: "fluxnetworks:flux_block",
+        B: "water_bucket",
+    });
 });

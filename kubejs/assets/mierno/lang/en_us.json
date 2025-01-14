@@ -273,7 +273,6 @@
     "tooltip.mierno.imbuement_chamber": "The Infusion Chamber now consumes items on the pedestal after completing the infusion, this is intentional and not a bug",
     "tooltip.mierno.modular_alfheim_portal_core": "Can attach sparks, try replacing if connection fails",
     "tooltip.mierno.eternal_water": "An infinite water source that can automatically output water to fluid containers",
-    "tooltip.mierno.spring": "An infinite water source that can be extracted using fluid pipes",
     "tooltip.mierno.condenser_1": "Every 125 mB of fluid counts as 1 item.",
     "tooltip.mierno.condenser_2": "§6Put an ME Infinite Water Component in the network, then create a pattern like '32000B water->1 singularity' for the Matter Condenser, orders can be completed instantly, very simple",
     "tooltip.mierno.pinkinator_1": "Crafted using a Matter Cannon loaded with Pink Paint Balls",

@@ -1,3 +1,5 @@
+// priority: 9
+
 ServerEvents.recipes((event) => {
     const { mierno } = event.recipes;
 

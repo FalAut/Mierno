@@ -1,0 +1,34 @@
+{
+    "essences": {
+        "aureal": 5000,
+        "blood": 30000,
+        "experience": 2500,
+        "souls": 100
+    },
+    "inputs": [
+        {
+            "amount": 4,
+            "ingredient": {
+                "item": "bloodmagic:weakbloodshard"
+            }
+        },
+        {
+            "amount": 4,
+            "ingredient": {
+                "item": "bloodmagic:dungeon_metal"
+            }
+        }
+    ],
+    "magic_circle": {
+        "inner_texture": "forbidden_arcanus:textures/effect/magic_circle/inner/origin.png",
+        "outer_texture": "forbidden_arcanus:textures/effect/magic_circle/outer/pure.png"
+    },
+    "main_ingredient": {
+        "item": "forbidden_arcanus:artisan_relic"
+    },
+    "result": {
+        "type": "forbidden_arcanus:upgrade_tier",
+        "required_tier": 2,
+        "upgraded_tier": 3
+    }
+}

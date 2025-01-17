@@ -1,0 +1,34 @@
+{
+    "essences": {
+        "aureal": 20000,
+        "blood": 100000,
+        "experience": 7500,
+        "souls": 1000
+    },
+    "inputs": [
+        {
+            "amount": 4,
+            "ingredient": {
+                "item": "forbidden_arcanus:ferrognetic_mixture"
+            }
+        },
+        {
+            "amount": 4,
+            "ingredient": {
+                "item": "forbidden_arcanus:dark_nether_star_block"
+            }
+        }
+    ],
+    "magic_circle": {
+        "inner_texture": "forbidden_arcanus:textures/effect/magic_circle/inner/origin.png",
+        "outer_texture": "forbidden_arcanus:textures/effect/magic_circle/outer/pactum.png"
+    },
+    "main_ingredient": {
+        "item": "forbidden_arcanus:stellarite_block"
+    },
+    "result": {
+        "type": "forbidden_arcanus:upgrade_tier",
+        "required_tier": 4,
+        "upgraded_tier": 5
+    }
+}

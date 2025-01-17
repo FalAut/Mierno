@@ -199,7 +199,7 @@ ItemEvents.rightClicked("mierno:portable_crafting_table", (event) => {
 });
 
 BlockEvents.rightClicked("bloodmagic:altar", (event) => {
-    const { item, block } = event;
+    const { hand, item, block } = event;
     if (hand != "MAIN_HAND" || item != "evilcraft:creative_blood_drop") return;
 
     let fluidCap = block.entity.getCapability(ForgeCapabilities.FLUID_HANDLER).orElse(null);

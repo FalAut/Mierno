@@ -1,0 +1,35 @@
+{
+    "additional_requirements": {
+        "forge_tier": 4
+    },
+    "essences": {
+        "aureal": 100,
+        "blood": 1250,
+        "experience": 1000,
+        "souls": 2
+    },
+    "inputs": [
+        {
+            "amount": 4,
+            "ingredient": {
+                "item": "forbidden_arcanus:stellarite_piece"
+            }
+        },
+        {
+            "amount": 4,
+            "ingredient": {
+                "item": "bloodmagic:etherealslate"
+            }
+        }
+    ],
+    "main_ingredient": {
+        "item": "minecraft:lodestone"
+    },
+    "result": {
+        "type": "forbidden_arcanus:create_item",
+        "result_item": {
+            "Count": 8,
+            "id": "forbidden_arcanus:ferrognetic_mixture"
+        }
+    }
+}

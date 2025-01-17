@@ -1,7 +1,7 @@
 ServerEvents.recipes((event) => {
     event.custom({
         type: "forbidden_arcanus:clibano_combustion",
-        cooking_time: 300,
+        cooking_time: 20,
         experience: 1.0,
         fire_type: "enchanted_fire",
         ingredient: {
@@ -11,6 +11,9 @@ ServerEvents.recipes((event) => {
             chance: 0.1,
             name: "deorum",
         },
-        result: "forbidden_arcanus:stellarite_piece",
+        result: {
+            item: "forbidden_arcanus:stellarite_piece",
+            count: 8,
+        },
     });
 });

@@ -19,6 +19,25 @@ ServerEvents.recipes((event) => {
     });
 
     event.custom({
+        type: "pneumaticcraft:pressure_chamber",
+        inputs: [
+            {
+                type: "pneumaticcraft:stacked_item",
+                count: 1,
+                item: "naturesaura:depth_ingot_block",
+            },
+        ],
+        pressure: 3.0,
+        results: [
+            {
+                type: "pneumaticcraft:stacked_item",
+                count: 1,
+                item: "pneumaticcraft:compressed_iron_block",
+            },
+        ],
+    });
+
+    event.custom({
         type: "pneumaticcraft:explosion_crafting",
         input: {
             item: "naturesaura:depth_ingot",
@@ -95,7 +114,7 @@ ServerEvents.recipes((event) => {
                 item: "mierno:unstable_singularity",
             },
         ],
-        pressure: 5.0,
+        pressure: 9.9,
         results: [
             {
                 item: "pneumaticcraft:creative_compressor",

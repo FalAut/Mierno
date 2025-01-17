@@ -71,6 +71,48 @@ ServerEvents.recipes((event) => {
 
     event.custom({
         type: "bloodmagic:altar",
+        altarSyphon: 3000,
+        consumptionRate: 300,
+        drainRate: 300,
+        input: {
+            item: "forbidden_arcanus:darkstone",
+        },
+        output: {
+            item: "bloodmagic:dungeon_stone",
+        },
+        upgradeLevel: 4,
+    });
+
+    event.custom({
+        type: "bloodmagic:altar",
+        altarSyphon: 10000,
+        consumptionRate: 1000,
+        drainRate: 1000,
+        input: {
+            tag: "forge:ores",
+        },
+        output: {
+            item: "bloodmagic:dungeon_ore",
+        },
+        upgradeLevel: 4,
+    });
+
+    event.custom({
+        type: "bloodmagic:altar",
+        altarSyphon: 2147483647,
+        consumptionRate: 2147483647,
+        drainRate: 2147483647,
+        input: {
+            item: "bloodmagic:activationcrystalawakened",
+        },
+        output: {
+            item: "bloodmagic:activationcrystalcreative",
+        },
+        upgradeLevel: 4,
+    });
+
+    event.custom({
+        type: "bloodmagic:altar",
         altarSyphon: 1000,
         consumptionRate: 100,
         drainRate: 100,
@@ -220,10 +262,31 @@ ServerEvents.recipes((event) => {
     });
 
     event.custom({
+        type: "bloodmagic:soulforge",
+        drain: 0,
+        input0: {
+            item: "forbidden_arcanus:darkstone_upgrade_smithing_template",
+        },
+        input1: {
+            item: "bloodmagic:dungeon_metal",
+        },
+        input2: {
+            item: "thermal:enderium_gear",
+        },
+        input3: {
+            tag: "bloodmagic:crystals/demon",
+        },
+        minimumDrain: 0,
+        output: {
+            item: "bloodmagic:hellforgedparts",
+        },
+    });
+
+    event.custom({
         type: "bloodmagic:meteor",
         explosion: 8.0,
         input: {
-            item: "mierno:glowing_obsidian",
+            item: "mierno:falling_star_marker",
         },
         layers: [
             {
@@ -232,7 +295,7 @@ ServerEvents.recipes((event) => {
                     block: "forbidden_arcanus:stella_arcanum",
                 },
                 minWeight: 1000,
-                radius: 10,
+                radius: 100,
             },
         ],
         syphon: 0,

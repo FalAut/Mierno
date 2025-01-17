@@ -9,7 +9,7 @@ ServerEvents.recipes((event) => {
      * 种植站
      * @param {OutputItem_[]} output
      * @param {InputItem_[]} seed
-     * @returns {Special.Recipes.PlantingStationMbd2}
+     * @returns {Special.Recipes.PlantingStationMierno}
      */
     function plantingStation(output, seed) {
         let recipe = mierno.planting_station();

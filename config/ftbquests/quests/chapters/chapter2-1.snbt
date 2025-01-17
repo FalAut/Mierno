@@ -123,6 +123,11 @@
 					table_id: 5354634242720975076L
 					type: "loot"
 				}
+				{
+					id: "5E9E41D91FA1DDCC"
+					item: "minecraft:netherite_upgrade_smithing_template"
+					type: "item"
+				}
 			]
 			tasks: [{
 				id: "092289243CBD333B"
@@ -1625,7 +1630,7 @@
 				item: "pneumaticcraft:creative_compressed_iron_block"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 7.5d
 			y: -2.25d
 		}
 		{
@@ -1660,7 +1665,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 3.0d
+			y: 3.25d
 		}
 	]
 	title: "{mierno.chapter2-1.title}"

@@ -1239,15 +1239,15 @@
 			id: "6BE50FF0F278BE53"
 			rewards: [
 				{
-					id: "79AF591A51A6471C"
-					item: "naturesaura:spring"
-					type: "item"
-				}
-				{
 					exclude_from_claim_all: true
 					id: "6503D2CD8C4A78E1"
 					table_id: 1320735954632056874L
 					type: "loot"
+				}
+				{
+					id: "62E48E818DB98244"
+					item: "evilcraft:eternal_water"
+					type: "item"
 				}
 			]
 			tasks: [{
@@ -1288,9 +1288,9 @@
 			tasks: [{
 				id: "33D2FC34AC68359E"
 				structure: "mierno:maze"
+				title: "{mierno.chapter1-2.find_maze.title}"
 				type: "structure"
 			}]
-			title: "{mierno.chapter1-2.find_maze.title}"
 			x: -2.5d
 			y: 0.0d
 		}

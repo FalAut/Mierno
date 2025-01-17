@@ -60,6 +60,7 @@
 					type: "item"
 				}
 				{
+					count: 8
 					id: "461AD1AE3EB5D80B"
 					item: "forbidden_arcanus:darkstone_pedestal"
 					type: "item"
@@ -110,14 +111,9 @@
 			dependencies: ["6C17540363263CB9"]
 			id: "297ECB810C918599"
 			rewards: [{
-				id: "57EAD8E00F9A3E63"
-				item: {
-					Count: 1
-					id: "forbidden_arcanus:blood_test_tube"
-					tag: {
-						Blood: 3000
-					}
-				}
+				count: 64
+				id: "02A0BF6DB50E0736"
+				item: "evilcraft:condensed_blood"
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -165,6 +161,7 @@
 			}]
 			shape: "square"
 			size: 1.5d
+			subtitle: "{\"translate\":\"mierno.chapter2-3.blood_altar.subtitle\",\"color\":\"gold\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book Fa1Aut bloodmagic:guide bloodmagic:altar/blood_altar 10\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}}"
 			tasks: [{
 				id: "6661F2A615793D3F"
 				item: "bloodmagic:altar"
@@ -241,13 +238,24 @@
 			id: "5015D21B9B93A6E7"
 			rewards: [
 				{
-					id: "76D7E692006E041E"
-					item: "bloodmagic:dislocationrune"
+					count: 64
+					id: "4191A99FCC4167D4"
+					item: "bloodmagic:blankrune"
 					type: "item"
 				}
 				{
-					id: "0F73BDF4016CFC76"
-					item: "bloodmagic:accelerationrune"
+					id: "652C262236F8DD10"
+					item: "bloodmagic:speedrune"
+					type: "item"
+				}
+				{
+					id: "0B2FD6303F19B041"
+					item: "bloodmagic:altarcapacityrune"
+					type: "item"
+				}
+				{
+					id: "1A198E4E03ABA309"
+					item: "bloodmagic:bettercapacityrune"
 					type: "item"
 				}
 			]
@@ -276,7 +284,7 @@
 				type: "item"
 			}]
 			x: 5.5d
-			y: 0.8d
+			y: -0.8d
 		}
 		{
 			dependencies: ["449883B0BE46FF22"]
@@ -292,30 +300,13 @@
 		}
 		{
 			dependencies: ["01660174B3CF5EFA"]
-			icon: "mierno:blood_converter"
-			id: "7D8273A6E34F1025"
-			shape: "hexagon"
-			size: 1.2d
-			subtitle: "{tooltip.mierno.blood_converter}"
-			tasks: [
-				{
-					id: "6562229C8017F2E9"
-					item: "mierno:blood_converter"
-					type: "item"
-				}
-				{
-					id: "0E82B8E168C3ADB0"
-					item: "bloodmagic:life_essence_bucket"
-					optional_task: true
-					type: "item"
-				}
-			]
-			x: 4.0d
-			y: -2.5d
-		}
-		{
-			dependencies: ["01660174B3CF5EFA"]
 			id: "52F66F70138FCC56"
+			rewards: [{
+				count: 64
+				id: "46408F679807C76B"
+				item: "bloodmagic:blankslate"
+				type: "item"
+			}]
 			shape: "hexagon"
 			size: 0.8d
 			tasks: [{
@@ -324,7 +315,7 @@
 				type: "item"
 			}]
 			x: 5.5d
-			y: -0.8d
+			y: 0.8d
 		}
 		{
 			dependencies: [
@@ -333,18 +324,17 @@
 				"1DAEF872073C7174"
 			]
 			id: "221E88604970BCA5"
-			tasks: [
-				{
-					id: "08AE247AFC701DDD"
-					item: "bloodmagic:ritualstone"
-					type: "item"
-				}
-				{
-					id: "5A1397F51D800674"
-					item: "bloodmagic:masterritualstone"
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 64
+				id: "31054984B8722298"
+				item: "bloodmagic:ritualstone"
+				type: "item"
+			}]
+			tasks: [{
+				id: "08AE247AFC701DDD"
+				item: "bloodmagic:ritualstone"
+				type: "item"
+			}]
 			x: 6.5d
 			y: 0.0d
 		}
@@ -653,14 +643,687 @@
 			y: 0.0d
 		}
 		{
+			dependencies: [
+				"191ACD1E4234C48E"
+				"0D09F2E2D3CFB01C"
+				"3FDE3EF6B72D3969"
+			]
+			icon: "bloodmagic:dungeon_alternator"
 			id: "24FE0AA7D7BD9689"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "{\"translate\":\"mierno.chapter2-3.demon_realm.subtitle\",\"color\":\"gold\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/create ponder bloodmagic:dungeon_alternator\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}}"
 			tasks: [{
-				id: "02B447A28AA1E2F7"
-				type: "checkmark"
+				dimension: "bloodmagic:dungeon"
+				id: "7024A0676D83FAB5"
+				title: "{mierno.chapter2-3.enter_demon_realm}"
+				type: "dimension"
 			}]
-			title: "{mierno.tobecontinue}"
 			x: 11.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["01660174B3CF5EFA"]
+			icon: "mierno:blood_converter"
+			id: "3B6A3582303B6290"
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "{mierno.chapter2-3.blood_converter.subtitle}"
+			tasks: [
+				{
+					id: "0EEB3D17695F91FA"
+					item: "mierno:blood_converter"
+					type: "item"
+				}
+				{
+					id: "425CBBC21CF9EEFF"
+					item: "bloodmagic:life_essence_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5D594242B13C6947"]
+			description: [
+				"{mierno.chapter2-3.demon_realm.desc4}"
+				""
+				"{mierno.chapter2-3.demon_realm.desc5}"
+				""
+				"{mierno.chapter2-3.demon_realm.desc3}"
+				""
+				"{image:mierno:textures/image/miner_room.png width:95 height:121 align:center}"
+			]
+			id: "103AD1BE6CD3FCF4"
+			shape: "diamond"
+			tasks: [{
+				id: "66DE8859F7B57A56"
+				item: "forbidden_arcanus:artisan_relic"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["24FE0AA7D7BD9689"]
+			id: "4223C63E12D90CC5"
+			rewards: [{
+				count: 64
+				id: "3F340A49DC55087B"
+				item: "bloodmagic:simplekey"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "084F73D8DD78278F"
+				item: "bloodmagic:simplekey"
+				type: "item"
+			}]
+			x: 12.2d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A5BFF167EF650AB"]
+			id: "3FDE3EF6B72D3969"
+			shape: "diamond"
+			size: 1.2d
+			tasks: [{
+				id: "1333229DAFD83990"
+				item: "bloodmagic:activationcrystalweak"
+				type: "item"
+			}]
+			x: 11.0d
+			y: -1.3d
+		}
+		{
+			dependencies: [
+				"4223C63E12D90CC5"
+				"5F472ED812AA975A"
+				"355A10A4A1C27961"
+			]
+			id: "766E29427A2C30C4"
+			shape: "diamond"
+			tasks: [{
+				id: "3EDE53C4D00E6891"
+				item: "bloodmagic:largebloodstonebrick"
+				type: "item"
+			}]
+			x: 13.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4153AC4DAB94AB29"
+				"62219F33D9199A4C"
+			]
+			id: "0AECDBF8C930AE4E"
+			shape: "hexagon"
+			tasks: [{
+				id: "3E0DE6386FFE9A54"
+				item: {
+					Count: 1
+					id: "bloodmagic:lavasigil"
+					tag: {
+						binding: {
+							id: [I;
+								-1176636689
+								-74432454
+								-2003584141
+								1476401073
+							]
+							name: "Fa1Aut"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"0AECDBF8C930AE4E"
+				"7C9F2C220578AA0E"
+				"5C8CF7D55B56EBB7"
+			]
+			id: "7A5BFF167EF650AB"
+			tasks: [{
+				id: "07376061B6101D7F"
+				item: "bloodmagic:lavacrystal"
+				type: "item"
+			}]
+			x: 9.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5135D6891E00113C"]
+			id: "5E70D6774B3806B0"
+			shape: "hexagon"
+			tasks: [{
+				id: "5E8FDEF328B1ED32"
+				item: "bloodmagic:alchemytable"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"0AECDBF8C930AE4E"
+				"0AECDBF8C930AE4E"
+			]
+			id: "7C9F2C220578AA0E"
+			rewards: [{
+				id: "529129F1C4E2DBFE"
+				item: {
+					Count: 1
+					id: "bloodmagic:soulsword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "647EF51B7EFC82BB"
+				item: "bloodmagic:soulforge"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["5E70D6774B3806B0"]
+			id: "4153AC4DAB94AB29"
+			shape: "rsquare"
+			size: 0.8d
+			tasks: [{
+				id: "73C115D643B49C4C"
+				item: {
+					Count: 1
+					id: "bloodmagic:arcaneashes"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 7.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5E70D6774B3806B0"]
+			id: "62219F33D9199A4C"
+			shape: "rsquare"
+			size: 0.8d
+			tasks: [{
+				id: "2722A518A280DDFA"
+				item: "bloodmagic:reagentlava"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7C9F2C220578AA0E"]
+			id: "5C8CF7D55B56EBB7"
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "242852F1D1132070"
+					item: "bloodmagic:soulsnare"
+					type: "item"
+				}
+				{
+					id: "376CAC26CFFE2E24"
+					item: "bloodmagic:basemonstersoul"
+					type: "item"
+				}
+				{
+					id: "38C9B625D234B678"
+					item: {
+						Count: 1
+						id: "bloodmagic:soulgempetty"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			x: 9.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1DAEF872073C7174"]
+			id: "5135D6891E00113C"
+			shape: "hexagon"
+			size: 0.8d
+			tasks: [{
+				id: "1155F509A9C628AE"
+				item: "forbidden_arcanus:crimson_stone"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0252B809AB8F501A"]
+			id: "1DF5EF69318E2592"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "5F727A747CECEF79"
+				item: "forbidden_arcanus:soul_crimson_stone"
+				type: "item"
+			}]
+			x: 11.0d
+			y: -3.25d
+		}
+		{
+			dependencies: ["4223C63E12D90CC5"]
+			id: "5F472ED812AA975A"
+			shape: "diamond"
+			size: 0.8d
+			tasks: [
+				{
+					id: "4F9A021046E4C058"
+					item: "bloodmagic:weak_tau"
+					type: "item"
+				}
+				{
+					id: "77DC35949FF1A659"
+					item: "bloodmagic:strong_tau"
+					type: "item"
+				}
+			]
+			x: 12.6d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4223C63E12D90CC5"]
+			id: "355A10A4A1C27961"
+			shape: "diamond"
+			size: 0.8d
+			tasks: [{
+				id: "7796746463014E6F"
+				item: "bloodmagic:weakbloodshard"
+				type: "item"
+			}]
+			x: 12.6d
+			y: 0.5d
+		}
+		{
+			dependencies: ["24FE0AA7D7BD9689"]
+			description: [
+				"{mierno.chapter2-3.demon_realm.desc1}"
+				""
+				"{mierno.chapter2-3.demon_realm.desc2}"
+				""
+				"{mierno.chapter2-3.demon_realm.desc3}"
+				"{image:mierno:textures/image/key_room.png width:95 height:121 align:center}"
+				"{@pagebreak}"
+				"{mierno.chapter2-3.demon_realm.desc4}"
+				""
+				"{mierno.chapter2-3.demon_realm.desc5}"
+				""
+				"{mierno.chapter2-3.demon_realm.desc3}"
+				""
+				"{image:mierno:textures/image/miner_room.png width:95 height:121 align:center}"
+			]
+			id: "5D594242B13C6947"
+			min_width: 220
+			rewards: [{
+				count: 64
+				id: "1F85F9B2C8F3D09F"
+				item: "bloodmagic:minekey"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "092B1274AA4EFCA4"
+				item: "bloodmagic:mineentrancekey"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 1.2d
+		}
+		{
+			dependencies: ["3FDE3EF6B72D3969"]
+			id: "0252B809AB8F501A"
+			shape: "gear"
+			tasks: [{
+				id: "2D7958A483124ACE"
+				item: "bloodmagic:activationcrystalcreative"
+				type: "item"
+			}]
+			x: 11.9d
+			y: -2.25d
+		}
+		{
+			dependencies: [
+				"103AD1BE6CD3FCF4"
+				"344985048D232275"
+			]
+			id: "65DC63DD68BD139A"
+			tasks: [{
+				id: "77FD545D82B1A80C"
+				item: "forbidden_arcanus:clibano_core"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5D594242B13C6947"]
+			id: "6E137AA6E145BCC8"
+			rewards: [{
+				id: "41100841BA35D7DB"
+				item: "bloodmagic:hellforgedparts"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "63C46EB7BAD82F65"
+				item: "bloodmagic:ingot_hellforged"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["103AD1BE6CD3FCF4"]
+			id: "344985048D232275"
+			subtitle: "{mierno.chapter2-3.check_hephaestus_forge_tier3.subtitle}"
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						id: "forbidden_arcanus:hephaestus_forge"
+						tag: {
+							BlockStateTag: {
+								tier: 3
+							}
+						}
+					}
+					id: "590E5E63DA52A6BA"
+					observe_type: 2
+					timer: 0L
+					title: "{mierno.chapter2-3.check_hephaestus_forge_tier3.title}"
+					to_observe: "forbidden_arcanus:hephaestus_forge[tier=3]"
+					type: "observation"
+				}
+				{
+					id: "2C0FEED8554F392A"
+					item: {
+						Count: 1
+						id: "forbidden_arcanus:hephaestus_forge"
+						tag: {
+							BlockStateTag: {
+								tier: 3
+							}
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 9.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"6E137AA6E145BCC8"
+				"57EA950397339DF6"
+			]
+			icon: "bloodmagic:dungeon_eye"
+			id: "4AA08641165D54A5"
+			rewards: [{
+				id: "5EA0D2317C3BC35C"
+				item: "bloodmagic:hellforgedparts"
+				type: "item"
+			}]
+			subtitle: "{\"translate\":\"mierno.chapter2-3.demon_reactor.subtitle\",\"color\":\"gold\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/create ponder bloodmagic:dungeon_eye\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}}"
+			tasks: [
+				{
+					id: "2CA1118313271FC7"
+					item: "bloodmagic:dungeon_eye"
+					type: "item"
+				}
+				{
+					id: "6BEB4EAD6520A5FE"
+					item: "bloodmagic:dungeon_alternator"
+					type: "item"
+				}
+				{
+					id: "18B24C2F5A9C86B8"
+					item: "bloodmagic:dungeon_polished"
+					type: "item"
+				}
+			]
+			x: 12.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4AA08641165D54A5"]
+			id: "64CBA3546CD7E580"
+			rewards: [{
+				id: "24D8D8A8067037D4"
+				item: "bloodmagic:hellforgedparts"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2D44CDB9EEB5CEEC"
+				item: "mierno:glowing_obsidian"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["57D2302F52CBC006"]
+			id: "536848EB2A41950E"
+			tasks: [{
+				id: "503328D1B3925054"
+				item: "forbidden_arcanus:stella_arcanum"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"65DC63DD68BD139A"
+				"536848EB2A41950E"
+			]
+			id: "4B7D9F5BCAA55588"
+			tasks: [{
+				id: "3DD8D3ABF5113D50"
+				item: "forbidden_arcanus:stellarite_piece"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4B7D9F5BCAA55588"]
+			id: "64082A6FF5A7E822"
+			tasks: [{
+				id: "38D81725005947ED"
+				item: {
+					Count: 1
+					id: "forbidden_arcanus:eternal_stella"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6E137AA6E145BCC8"]
+			id: "57EA950397339DF6"
+			rewards: [{
+				id: "52725F9A4A40DE0D"
+				item: "bloodmagic:hellforgedparts"
+				type: "item"
+			}]
+			tasks: [{
+				id: "288AA5AC0AF7E9C9"
+				item: "bloodmagic:hellforgedparts"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"64CBA3546CD7E580"
+				"103AD1BE6CD3FCF4"
+				"6E137AA6E145BCC8"
+			]
+			id: "57D2302F52CBC006"
+			shape: "hexagon"
+			tasks: [{
+				id: "7EF6A41EBC29AD4A"
+				item: "mierno:falling_star_marker"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"64082A6FF5A7E822"
+				"4B7D9F5BCAA55588"
+			]
+			icon: {
+				Count: 1
+				id: "forbidden_arcanus:hephaestus_forge"
+				tag: {
+					BlockStateTag: {
+						tier: 4
+					}
+				}
+			}
+			id: "23CE030C9C78494D"
+			subtitle: "{mierno.chapter2-3.check_hephaestus_forge_tier4.subtitle}"
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						id: "forbidden_arcanus:hephaestus_forge"
+						tag: {
+							BlockStateTag: {
+								tier: 4
+							}
+						}
+					}
+					id: "6A1370651139C58D"
+					observe_type: 2
+					timer: 0L
+					title: "{mierno.chapter2-3.check_hephaestus_forge_tier4.title}"
+					to_observe: "forbidden_arcanus:hephaestus_forge[tier=4]"
+					type: "observation"
+				}
+				{
+					id: "680F05219634F868"
+					item: {
+						Count: 1
+						id: "forbidden_arcanus:hephaestus_forge"
+						tag: {
+							BlockStateTag: {
+								tier: 4
+							}
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"23CE030C9C78494D"
+				"64082A6FF5A7E822"
+			]
+			id: "1F0852D1791C39FB"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "7DF7377E03A676D9"
+				item: "forbidden_arcanus:ferrognetic_mixture"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["1F0852D1791C39FB"]
+			icon: {
+				Count: 1
+				id: "forbidden_arcanus:hephaestus_forge"
+				tag: {
+					BlockStateTag: {
+						tier: 5
+					}
+				}
+			}
+			id: "0CABE55169F37034"
+			rewards: [{
+				id: "313886177A9A6D22"
+				item: {
+					Count: 1
+					id: "minecraft:stone"
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"模块化\"}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			subtitle: "{mierno.chapter2-3.check_hephaestus_forge_tier5.subtitle}"
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						id: "forbidden_arcanus:hephaestus_forge"
+						tag: {
+							BlockStateTag: {
+								tier: 5
+							}
+						}
+					}
+					id: "0AB29B68BDB8552C"
+					observe_type: 2
+					timer: 0L
+					title: "{mierno.chapter2-3.check_hephaestus_forge_tier5.title}"
+					to_observe: "forbidden_arcanus:hephaestus_forge[tier=5]"
+					type: "observation"
+				}
+				{
+					id: "199F4FAF0E6116EA"
+					item: {
+						Count: 1
+						id: "forbidden_arcanus:hephaestus_forge"
+						tag: {
+							BlockStateTag: {
+								tier: 5
+							}
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: 2.0d
 		}
 	]
 	title: "{mierno.chapter2-3.title}"

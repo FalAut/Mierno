@@ -1300,6 +1300,34 @@
 			x: 0.0d
 			y: 1.35d
 		}
+		{
+			dependencies: ["0C74AC4CB2A839A0"]
+			hide_dependency_lines: true
+			id: "661F942CC04DF4EF"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "502C65E62835688D"
+				item: "mierno:upgrade_augment_creative"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["661F942CC04DF4EF"]
+			hide_dependency_lines: true
+			id: "0CFBEEF36775B3C0"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "36E34F97B73859AD"
+				item: "thermal:machine_efficiency_creative_augment"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -3.0d
+		}
 	]
 	title: "{mierno.chapter1-3.title}"
 }

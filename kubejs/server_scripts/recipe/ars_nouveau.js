@@ -216,29 +216,6 @@ ServerEvents.recipes((event) => {
     });
 
     event.custom({
-        type: "ars_nouveau:enchanting_apparatus",
-        output: {
-            item: "evilcraft:eternal_water",
-        },
-        pedestalItems: [
-            {
-                item: "fluxnetworks:flux_block",
-            },
-            {
-                item: "fluxnetworks:flux_block",
-            },
-            {
-                item: "fluxnetworks:flux_block",
-            },
-            {
-                item: "fluxnetworks:flux_block",
-            },
-        ],
-        reagent: [{ item: "naturesaura:spring" }],
-        sourceCost: 5000,
-    });
-
-    event.custom({
         type: "ars_nouveau:imbuement",
         count: 1,
         input: {

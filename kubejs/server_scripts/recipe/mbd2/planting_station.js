@@ -9,7 +9,7 @@ ServerEvents.recipes((event) => {
      * 种植站
      * @param {OutputItem_[]} output
      * @param {InputItem_[]} seed
-     * @returns {Special.Recipes.PlantingStationMbd2}
+     * @returns {Special.Recipes.PlantingStationMierno}
      */
     function plantingStation(output, seed) {
         let recipe = mierno.planting_station();
@@ -63,4 +63,18 @@ ServerEvents.recipes((event) => {
     plantingStation("minecraft:leather", "minecraft:leather");
 
     plantingStation(["2x ars_nouveau:magebloom"], "ars_nouveau:magebloom_crop");
+
+    mierno
+        .planting_station()
+        .inputAura(100)
+        .inputFluids(Fluid.of("water", 100))
+        .outputItems("3x forbidden_arcanus:deorum_nugget")
+        .slotName("seed_slot", (builder) => {
+            builder.chance(0).inputItems("forbidden_arcanus:golden_orchid_seeds");
+        })
+        .slotName("soil_slot", (builder) => {
+            builder.chance(0).inputItems("#mierno:planting_soil");
+        })
+        .chance(0.5)
+        .outputItems("5x forbidden_arcanus:deorum_nugget");
 });

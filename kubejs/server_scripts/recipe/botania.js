@@ -250,7 +250,6 @@ ServerEvents.recipes((event) => {
             .duration(1);
     }
 
-    alchemyMana("minecraft:glowstone_dust", "minecraft:redstone");
     alchemyMana("minecraft:amethyst_shard", "minecraft:emerald");
     alchemyMana("minecraft:ender_pearl", "minecraft:amethyst_shard");
     alchemyMana("minecraft:quartz", "minecraft:lapis_lazuli");
@@ -286,6 +285,7 @@ ServerEvents.recipes((event) => {
             .blocksInStructure(1, 100, "botania:conjuration_catalyst")
             .outputItems(Item.of(output).withCount(2))
             .inputMana(mana ? mana : 2000)
+            .priority(-1)
             .duration(1);
     }
 

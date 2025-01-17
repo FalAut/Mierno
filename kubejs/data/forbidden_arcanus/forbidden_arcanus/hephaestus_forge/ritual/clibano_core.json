@@ -1,0 +1,34 @@
+{
+    "additional_requirements": {
+        "enhancers": ["forbidden_arcanus:artisan_relic"],
+        "forge_tier": 3
+    },
+    "essences": {
+        "aureal": 100,
+        "blood": 3000,
+        "experience": 900,
+        "souls": 10
+    },
+    "inputs": [
+        {
+            "amount": 8,
+            "ingredient": {
+                "item": "forbidden_arcanus:darkstone"
+            }
+        }
+    ],
+    "main_ingredient": {
+        "item": "bloodmagic:alchemicalreactionchamber"
+    },
+    "magic_circle": {
+        "inner_texture": "forbidden_arcanus:textures/effect/magic_circle/inner/damnare.png",
+        "outer_texture": "forbidden_arcanus:textures/effect/magic_circle/outer/repel.png"
+    },
+    "result": {
+        "type": "forbidden_arcanus:create_item",
+        "result_item": {
+            "Count": 1,
+            "id": "forbidden_arcanus:clibano_core"
+        }
+    }
+}

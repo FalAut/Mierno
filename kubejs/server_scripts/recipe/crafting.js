@@ -20,6 +20,7 @@ ServerEvents.recipes((event) => {
     }
 
     fourShaped("forbidden_arcanus:dark_nether_star_block", "forbidden_arcanus:dark_nether_star");
+    fourShaped("bloodmagic:dungeon_polished", "bloodmagic:dungeon_stone");
 
     function fullShaped(/**@type  {OutputItem_} */ output, /**@type  {InputItem_} */ input) {
         kubejs.shaped(output, ["AAA", "AAA", "AAA"], {
@@ -44,6 +45,42 @@ ServerEvents.recipes((event) => {
     fullShaped("mierno:mana_string_block", "botania:mana_string");
     fullShaped("mierno:spirit_attuned_gem_block", "occultism:spirit_attuned_gem");
     fullShaped("minecraft:skeleton_skull", "minecraft:bone_block");
+
+    event.custom({
+        type: "functionalstorage:custom_compacting",
+        higher_input: {
+            count: 1,
+            item: "forbidden_arcanus:corrupt_soul",
+        },
+        lower_input: {
+            count: 5,
+            item: "forbidden_arcanus:soul",
+        },
+    });
+
+    event.custom({
+        type: "functionalstorage:custom_compacting",
+        higher_input: {
+            count: 1,
+            item: "forbidden_arcanus:enchanted_soul",
+        },
+        lower_input: {
+            count: 2,
+            item: "forbidden_arcanus:corrupt_soul",
+        },
+    });
+
+    event.custom({
+        type: "functionalstorage:custom_compacting",
+        higher_input: {
+            count: 1,
+            item: "forbidden_arcanus:enchanted_soul",
+        },
+        lower_input: {
+            count: 10,
+            item: "forbidden_arcanus:soul",
+        },
+    });
 
     function copySelf(item) {
         kubejs.shapeless(Item.of(item).withCount(2), item);
@@ -92,6 +129,8 @@ ServerEvents.recipes((event) => {
         .shapeless("bloodmagic:ritualdivinerdusk", ["bloodmagic:ritualdiviner", "bloodmagic:duskscribetool"])
         .keepIngredient("bloodmagic:duskscribetool");
 
+    kubejs.shapeless("2x bloodmagic:simplekey", ["thermal:iron_plate", "bloodmagic:simplekey"]);
+
     kubejs.shapeless("flint", ["gravel", "gravel", "gravel"]);
     kubejs.shapeless("ae2:not_so_mysterious_cube", "ae2:mysterious_cube").keepIngredient("ae2:mysterious_cube");
     kubejs.shapeless("naturesaura:gold_leaf", ["gold_ingot", "#leaves"]);
@@ -113,8 +152,6 @@ ServerEvents.recipes((event) => {
     ]);
     kubejs.shapeless("occultism:soul_gem", "mierno:soul_gem");
     kubejs.shapeless("mierno:soul_gem", "occultism:soul_gem");
-    kubejs.shapeless("5x forbidden_arcanus:soul", "forbidden_arcanus:corrupt_soul");
-    kubejs.shapeless("10x forbidden_arcanus:soul", "forbidden_arcanus:enchanted_soul");
 
     kubejs.shapeless("naturesaura:birth_spirit", "naturesaura:calling_spirit").modifyResult((grid, result) => {
         if (!grid.player || grid.player.isFake() || grid.menu instanceof $AssemblyHaloContainer) return Item.empty;
@@ -910,5 +947,43 @@ ServerEvents.recipes((event) => {
         A: "pneumaticcraft:compressed_iron_gear",
         B: "pneumaticcraft:ingot_iron_compressed",
         C: "mierno:machine_efficiency_augment_lumium",
+    });
+
+    kubejs.shaped("evilcraft:eternal_water", [" A ", "ABA", " A "], {
+        A: "fluxnetworks:flux_block",
+        B: "water_bucket",
+    });
+
+    kubejs.shaped("mierno:falling_star_marker", ["ABA", "BCB", "ABA"], {
+        A: "mierno:glowing_obsidian",
+        B: "forbidden_arcanus:deorum_block",
+        C: "bloodmagic:hellforgedparts",
+    });
+
+    kubejs.shaped("bloodmagic:dungeon_eye", ["ABA", "BCB", "ABA"], {
+        A: "bloodmagic:dungeon_metal",
+        B: "bloodmagic:dungeon_stone",
+        C: "mierno:dark_eyes",
+    });
+
+    kubejs.shaped("4x bloodmagic:dungeon_alternator", ["ABA", "BCB", "ABA"], {
+        A: "bloodmagic:dungeon_metal",
+        B: "bloodmagic:dungeon_polished",
+        C: "bloodmagic:hellforgedparts",
+    });
+
+    kubejs.shaped("8x minecraft:lodestone", ["AAA", "ABA", "AAA"], {
+        A: "pneumaticcraft:reinforced_stone",
+        B: "pneumaticcraft:ingot_iron_compressed",
+    });
+
+    kubejs.shaped("bloodmagic:activationcrystalawakened", ["AAA", "ABA", "AAA"], {
+        A: "bloodmagic:ingot_hellforged",
+        B: "bloodmagic:activationcrystalweak",
+    });
+
+    kubejs.shaped("forbidden_arcanus:soul_crimson_stone", ["AAA", "ABA", "AAA"], {
+        A: "bloodmagic:activationcrystalcreative",
+        B: "forbidden_arcanus:crimson_stone",
     });
 });

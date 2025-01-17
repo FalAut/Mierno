@@ -1,0 +1,34 @@
+{
+    "essences": {
+        "aureal": 10000,
+        "blood": 50000,
+        "experience": 5000,
+        "souls": 500
+    },
+    "inputs": [
+        {
+            "amount": 4,
+            "ingredient": {
+                "item": "forbidden_arcanus:enchanted_soul"
+            }
+        },
+        {
+            "amount": 4,
+            "ingredient": {
+                "item": "forbidden_arcanus:stellarite_piece"
+            }
+        }
+    ],
+    "magic_circle": {
+        "inner_texture": "forbidden_arcanus:textures/effect/magic_circle/inner/origin.png",
+        "outer_texture": "forbidden_arcanus:textures/effect/magic_circle/outer/pure.png"
+    },
+    "main_ingredient": {
+        "item": "forbidden_arcanus:eternal_stella"
+    },
+    "result": {
+        "type": "forbidden_arcanus:upgrade_tier",
+        "required_tier": 3,
+        "upgraded_tier": 4
+    }
+}

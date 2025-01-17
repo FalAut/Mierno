@@ -63,19 +63,6 @@ ServerEvents.tags("block", (event) => {
         "mierno:nether_catalyst",
         "mierno:end_catalyst",
         "mierno:source_fluidlink",
-    ]);
-
-    event.add("minecraft:wither_immune", [
-        "mierno:memory_source_drawing_crystal_core",
-        "botania:bifrost_perm",
-        "botania:light_relay",
-        "forbidden_arcanus:dark_nether_star_block",
-        "ae2:quartz_vibrant_glass",
-    ]);
-
-    event.add("minecraft:saplings", ["naturesaura:ancient_sapling"]);
-
-    event.add("minecraft:mineable/pickaxe", [
         "bloodmagic:speedrune2",
         "bloodmagic:sacrificerune2",
         "bloodmagic:selfsacrificerune2",
@@ -85,6 +72,7 @@ ServerEvents.tags("block", (event) => {
         "bloodmagic:orbcapacityrune2",
         "bloodmagic:accelerationrune2",
         "bloodmagic:chargingrune2",
+        "mierno:glowing_obsidian",
     ]);
 
     event.add("minecraft:needs_diamond_tool", [
@@ -97,7 +85,18 @@ ServerEvents.tags("block", (event) => {
         "bloodmagic:orbcapacityrune2",
         "bloodmagic:accelerationrune2",
         "bloodmagic:chargingrune2",
+        "mierno:glowing_obsidian",
     ]);
+
+    event.add("minecraft:wither_immune", [
+        "mierno:memory_source_drawing_crystal_core",
+        "botania:bifrost_perm",
+        "botania:light_relay",
+        "forbidden_arcanus:dark_nether_star_block",
+        "ae2:quartz_vibrant_glass",
+    ]);
+
+    event.add("minecraft:saplings", ["naturesaura:ancient_sapling"]);
 
     event.add("mierno:terra_altar_frame", [
         "botania:pattern_framed_livingwood",

@@ -127,7 +127,7 @@ ServerEvents.recipes((event) => {
             "ars_nouveau:magebloom",
             "botania:rune_mana",
         ])
-        .outputItems("mierno:source_emerald")
+        .outputItems("ars_nouveau:abjuration_essence")
         .duration(DURATION);
 
     mierno

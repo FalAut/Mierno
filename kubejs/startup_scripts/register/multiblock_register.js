@@ -232,4 +232,25 @@ StartupEvents.postInit((event) => {
             Block.getBlock("botania:light_relay")
         )
     );
+
+    $PatchouliAPI.registerMultiblock(
+        "mierno:demon_reactor",
+        $PatchouliAPI.makeMultiblock(
+            [
+                ["_D_", "DDD", "_D_"],
+                ["C_C", "_0_", "C_C"],
+                ["ABA", "BBB", "ABA"],
+            ],
+            new $Character("0"),
+            Block.getBlock("bloodmagic:dungeon_eye"),
+            new $Character("A"),
+            Block.getBlock("bloodmagic:dungeon_alternator"),
+            new $Character("B"),
+            Block.getBlock("bloodmagic:dungeon_polished"),
+            new $Character("C"),
+            Block.getBlock("bloodmagic:dungeon_polished"),
+            new $Character("D"),
+            Block.getBlock("bloodmagic:dungeon_polished")
+        )
+    );
 });

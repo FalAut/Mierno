@@ -295,7 +295,7 @@ ServerEvents.recipes((event) => {
                     block: "forbidden_arcanus:stella_arcanum",
                 },
                 minWeight: 1000,
-                radius: 100,
+                radius: 10,
             },
         ],
         syphon: 0,

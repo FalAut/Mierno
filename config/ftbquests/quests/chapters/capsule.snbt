@@ -1327,7 +1327,7 @@
 				}
 			]
 			title: "{block.forbidden_arcanus.hephaestus_forge}"
-			x: 0.0d
+			x: -0.5d
 			y: 8.0d
 		}
 		{
@@ -1452,6 +1452,58 @@
 			]
 			x: -1.5d
 			y: 2.0d
+		}
+		{
+			can_repeat: true
+			icon: "forbidden_arcanus:clibano_core"
+			id: "23B5A328544AB8CC"
+			rewards: [{
+				id: "4C0EF774F2682D64"
+				item: {
+					Count: 1
+					id: "capsule:capsule"
+					tag: {
+						author: "?"
+						canRotate: 1b
+						color: 9819623
+						display: {
+							color: 9819623
+						}
+						isReward: 1b
+						label: "Clibano.nbt"
+						oneUse: 1b
+						size: 3
+						state: 5
+						structureName: "config/capsule/rewards/clibano.nbt"
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					id: "6930E8654CDF87B8"
+					item: "forbidden_arcanus:clibano_core"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 17L
+					id: "74476A81240C7307"
+					item: { Count: 17, id: "forbidden_arcanus:polished_darkstone_bricks" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 8L
+					id: "6AB33FE3E53F4696"
+					item: { Count: 8, id: "forbidden_arcanus:polished_darkstone" }
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: 8.0d
 		}
 	]
 	title: "{mierno.capsule.title}"

@@ -68,7 +68,7 @@ ServerEvents.recipes((event) => {
         .planting_station()
         .inputAura(100)
         .inputFluids(Fluid.of("water", 100))
-        .outputItems("3x forbidden_arcanus:deorum_nugget")
+        .outputItems("forbidden_arcanus:deorum_nugget")
         .slotName("seed_slot", (builder) => {
             builder.chance(0).inputItems("forbidden_arcanus:golden_orchid_seeds");
         })
@@ -76,5 +76,5 @@ ServerEvents.recipes((event) => {
             builder.chance(0).inputItems("#mierno:planting_soil");
         })
         .chance(0.5)
-        .outputItems("5x forbidden_arcanus:deorum_nugget");
+        .outputItems("forbidden_arcanus:deorum_nugget");
 });

@@ -121,6 +121,7 @@
     "block.mierno.glowing_obsidian": "Glowing Obsidian",
     "block.mierno.glacio_etrium_ore": "Glacio Etrium Ore",
     "block.mierno.deepslate_etrium_ore": "Deepslate Etrium Ore",
+    "block.mierno.brain_in_a_jar": "Brain in a Jar",
 
     "mierno.oak_crucible": "Oak Crucible",
     "mierno.fired_crucible": "Crucible",
@@ -143,6 +144,7 @@
     "mierno.modular_mana_infusion": "Modular Mana Infusion",
     "mierno.modular_nature_altar": "Modular Natural Altar",
     "mierno.modular_imbuement_chamber": "Modular Imbuement Chamber",
+    "mierno.hephaestus_forge": "Hephaestus Smithing",
 
     "fluid.mierno.gensousitu": "Phantasmal Essence",
     "fluid.mierno.liquid_mana": "Liquid Mana",

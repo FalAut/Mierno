@@ -9,12 +9,14 @@
 	quest_links: [ ]
 	quests: [{
 		id: "4B8370658D2518C0"
+		shape: "gear"
+		size: 2.0d
 		tasks: [{
 			id: "7F84EEB69F615432"
 			type: "checkmark"
 		}]
-		x: -0.5d
-		y: 0.5d
+		x: 0.0d
+		y: 0.0d
 	}]
 	title: "{mierno.chapter4-2.title}"
 }

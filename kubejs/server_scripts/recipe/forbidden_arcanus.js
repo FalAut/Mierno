@@ -13,7 +13,7 @@ ServerEvents.recipes((event) => {
         },
         result: {
             item: "forbidden_arcanus:stellarite_piece",
-            count: 8,
+            count: 64,
         },
     });
 });

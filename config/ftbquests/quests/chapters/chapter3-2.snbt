@@ -12,18 +12,11 @@
 			id: "0896949B2295E0D4"
 			shape: "gear"
 			size: 2.0d
-			tasks: [
-				{
-					id: "5BEB335C5D088F01"
-					item: "ad_astra:etrium_nugget"
-					type: "item"
-				}
-				{
-					id: "02142DD6CC85FC40"
-					item: "mierno:raw_etrium"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "02142DD6CC85FC40"
+				item: "mierno:raw_etrium"
+				type: "item"
+			}]
 			x: 0.0d
 			y: 0.0d
 		}
@@ -44,8 +37,8 @@
 				item: "mekanism:alloy_atomic"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -1.5d
+			x: 2.5d
+			y: -0.5d
 		}
 		{
 			id: "459DBBAD343C692B"
@@ -55,7 +48,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: 0.0d
+			y: 0.5d
 		}
 		{
 			id: "433587FAD60C0506"
@@ -65,7 +58,7 @@
 				type: "item"
 			}]
 			x: 3.5d
-			y: -2.5d
+			y: 0.0d
 		}
 	]
 	title: "{mierno.chapter3-2.title}"

@@ -337,8 +337,8 @@
 				item: "ad_astra:oxygen_loader"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 3.5d
+			x: 3.5d
+			y: 2.5d
 		}
 		{
 			id: "0301D06B379107A3"

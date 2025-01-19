@@ -7,6 +7,15 @@
 -   添加模组 Ad Astra 和 Draconic-Evolution 及其前置
 -   注：因此次涉及模组变更，故不提供热修补
 
+---
+
+-   Completed quest chapter 3-1
+-   Fixed the issue that the Otherworld cannot be entered
+-   Fixed Hephaestus Forge upgrade requiring more Essence than the current level limit.
+-   Added a machine that acts as a proxy for the Hephaestus Forge recipe, which currently only makes ferromagnetic mixtures.
+-   Added modules Ad Astra and Draconic-Evolution and their predecessors.
+-   Note: No hotfixes are available for this module change.
+
 ## v0.2.0
 
 -   修复陨星过大的问题

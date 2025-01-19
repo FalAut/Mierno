@@ -55,6 +55,10 @@
     "item.mierno.machine_efficiency_augment_compressed_iron": "Machine Efficiency Augment Compressed Iron",
     "item.mierno.soul_gem": "Soul Gem",
     "item.mierno.falling_star_marker": "Falling Star Marker",
+    "item.mierno.demon_infused_ingot": "Demon Infused Ingot",
+    "item.mierno.solid_etching_acid": "Solid Etching Acid",
+    "item.mierno.enriched_etching_acid": "Enriched Etching Acid",
+    "item.mierno.raw_etrium": "Raw Etrium",
 
     "block.mierno.infused_wood": "Infused Wood",
     "block.mierno.misty_forest_portal": "Misty Forest Portal",
@@ -115,6 +119,8 @@
     "block.mierno.modular_nature_altar_core": "Modular Natural Altar Core",
     "block.mierno.modular_imbuement_chamber_core": "Modular Imbuement Chamber Core",
     "block.mierno.glowing_obsidian": "Glowing Obsidian",
+    "block.mierno.glacio_etrium_ore": "Glacio Etrium Ore",
+    "block.mierno.deepslate_etrium_ore": "Deepslate Etrium Ore",
 
     "mierno.oak_crucible": "Oak Crucible",
     "mierno.fired_crucible": "Crucible",
@@ -146,6 +152,9 @@
     "fluid.mierno.molten_signalum": "Molten Signalum",
     "fluid.mierno.ether_memory_source": "Ethereal Memory Source",
     "fluid.mierno.pink_memory_source": "Pink Memory Source",
+
+    "infuse_type.mierno.etching_acid": "Etching Acid",
+    "infuse_type.mierno.deorum": "Deorum",
 
     "message.mierno.clickme": "→[Click Me]← ",
     "message.mierno.clickopen": "Click to Open",
@@ -313,6 +322,7 @@
     "tooltip.mierno.blacker_lotus": "Can be duplicated by crafting",
     "tooltip.mierno.vengeance_essence": "Dropped by killing Spirit of Vengeance with the Piercing Vengeance Focus",
     "tooltip.mierno.creative_blood_drop": "Using Creative Blood Dropright right click on the Blood Altar will feed it life essence up to its maximum limit.",
+    "tooltip.mierno.clibano_core": "§e uses the same fuel as a furnace §r, and some recipes require the addition of souls to be fired at the same time",
 
     "biome.mierno.black_and_white": "Black and White",
     "biome.mierno.misty_forest": "Misty Forest",
@@ -401,9 +411,16 @@
     "mierno.chapter2-3.title": "Falling Star Location",
 
     "mierno.chapter3.title": "III. Subtraction",
-    "mierno.chapter3-1.title": "Memory Factory",
+    "mierno.chapter3-1.title": "Where the Stars Lead",
+    "mierno.chapter3-2.title": "Memory Factory",
+    "mierno.chapter3-3.title": "Land of the End",
 
-    "mierno.tobecontinue": "To Be Continued",
+    "mierno.chapter4.title": "IV. Fusion",
+    "mierno.chapter4-1.title": "Weeping Well",
+    "mierno.chapter4-2.title": "City of Tears",
+    "mierno.chapter4-3.title": "Fusion Consciousness",
+
+    "mierno.chapter5.title": "V. Pseudo Inversion",
 
     "mierno.welcome.main.subtitle": "§cThis pack is currently in production phase. If you encounter any issues, please join Discord or post in Github. Thank you for your cooperation",
     "mierno.welcome.main.desc1": "§cThis modpack is designed for players who have a certain understanding of various mods and automation.§r",

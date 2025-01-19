@@ -3,5 +3,7 @@
 		{ id: "7299F76F5EAD0EDE", title: "{mierno.chapter1.title}" }
 		{ id: "25B116B1000F1A1E", title: "{mierno.chapter2.title}" }
 		{ id: "54B1F1163EE92D1C", title: "{mierno.chapter3.title}" }
+		{ id: "5061CC2EE1CE78FA", title: "{mierno.chapter4.title}" }
+		{ id: "33826AC27349FC0B", title: "{mierno.chapter5.title}" }
 	]
 }

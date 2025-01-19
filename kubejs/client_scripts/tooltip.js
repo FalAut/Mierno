@@ -259,6 +259,7 @@ ItemEvents.tooltip((event) => {
     event.add("botania:blacker_lotus", Text.translate("tooltip.mierno.blacker_lotus").gold());
     event.add("evilcraft:vengeance_essence", Text.translate("tooltip.mierno.vengeance_essence").gold());
     event.add("evilcraft:creative_blood_drop", Text.translate("tooltip.mierno.creative_blood_drop").gold());
+    event.add("forbidden_arcanus:clibano_core", Text.translate("tooltip.mierno.clibano_core").gold());
     event.add(
         ["thermal:apatite_ore", "thermal:cinnabar_ore", "thermal:niter_ore", "thermal:sulfur_ore"],
         Text.translate("tooltip.mierno.mistyforest_ore").gold()

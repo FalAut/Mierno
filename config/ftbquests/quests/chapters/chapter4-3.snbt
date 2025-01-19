@@ -1,0 +1,20 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter4-3"
+	group: "5061CC2EE1CE78FA"
+	icon: "malum:fused_consciousness"
+	id: "1419A2E6E4AA6501"
+	order_index: 2
+	quest_links: [ ]
+	quests: [{
+		id: "7C052C19B31A9C97"
+		tasks: [{
+			id: "49D42BF30EC37903"
+			type: "checkmark"
+		}]
+		x: 0.5d
+		y: -0.5d
+	}]
+	title: "{mierno.chapter4-3.title}"
+}

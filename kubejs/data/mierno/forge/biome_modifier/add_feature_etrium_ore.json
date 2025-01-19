@@ -1,0 +1,6 @@
+{
+    "type": "forge:add_features",
+    "biomes": "#mierno:is_glacio",
+    "features": ["mierno:glacio_etrium_ore", "mierno:glacio_deepslate_etrium_ore"],
+    "step": "underground_ores"
+}

@@ -55,6 +55,10 @@
     "item.mierno.machine_efficiency_augment_compressed_iron": "压缩铁通量效率升级",
     "item.mierno.soul_gem": "灵魂宝石",
     "item.mierno.falling_star_marker": "坠星标引",
+    "item.mierno.demon_infused_ingot": "恶魔灌注锭",
+    "item.mierno.solid_etching_acid": "固态蚀刻酸",
+    "item.mierno.enriched_etching_acid": "富集蚀刻酸",
+    "item.mierno.raw_etrium": "粗埃忒恩",
 
     "block.mierno.infused_wood": "灌注之木",
     "block.mierno.misty_forest_portal": "迷雾森林传送门",
@@ -115,6 +119,8 @@
     "block.mierno.modular_nature_altar_core": "模块化自然祭坛核心",
     "block.mierno.modular_imbuement_chamber_core": "模块化灌注室核心",
     "block.mierno.glowing_obsidian": "发光的黑曜石",
+    "block.mierno.glacio_etrium_ore": "霜原星埃忒恩矿石",
+    "block.mierno.deepslate_etrium_ore": "深层埃忒恩矿石",
 
     "mierno.oak_crucible": "橡木坩埚",
     "mierno.fired_crucible": "坩埚",
@@ -146,6 +152,9 @@
     "fluid.mierno.molten_signalum": "熔融信素",
     "fluid.mierno.ether_memory_source": "以太忆源",
     "fluid.mierno.pink_memory_source": "粉红忆源",
+
+    "infuse_type.mierno.etching_acid": "蚀刻酸",
+    "infuse_type.mierno.deorum": "圣金",
 
     "message.mierno.clickme": "→【点我】← ",
     "message.mierno.clickopen": "点我打开",
@@ -313,6 +322,7 @@
     "tooltip.mierno.blacker_lotus": "可通过合成复制",
     "tooltip.mierno.vengeance_essence": "使用复仇刺穿棱镜击杀复仇之魂掉落",
     "tooltip.mierno.creative_blood_drop": "使用创造血源右键血之祭坛可为其输入生命源质到最大上限",
+    "tooltip.mierno.clibano_core": "§e与熔炉一样使用燃料§r，一些配方需要同时添加灵魂进行烧炼",
 
     "biome.mierno.black_and_white": "黑与白",
     "biome.mierno.misty_forest": "迷雾森林",
@@ -401,7 +411,16 @@
     "mierno.chapter2-3.title": "坠星标位",
 
     "mierno.chapter3.title": "III.削减",
-    "mierno.chapter3-1.title": "记忆工厂",
+    "mierno.chapter3-1.title": "星之所向",
+    "mierno.chapter3-2.title": "记忆工厂",
+    "mierno.chapter3-3.title": "终末之地",
+
+    "mierno.chapter4.title": "IV.融合",
+    "mierno.chapter4-1.title": "哭泣之井",
+    "mierno.chapter4-2.title": "泪水之城",
+    "mierno.chapter4-3.title": "融合意识",
+
+    "mierno.chapter5.title": "V.伪逆",
 
     "mierno.welcome.main.subtitle": "§c本包当前仍然处于制作阶段，有任何问题请加QQ测试群490811326，感谢配合",
     "mierno.welcome.main.desc1": "§c本整合包适合对各种模组和自动化有一定了解的玩家。§r",

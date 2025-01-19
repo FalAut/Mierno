@@ -988,4 +988,24 @@ ServerEvents.recipes((event) => {
         A: "bloodmagic:activationcrystalcreative",
         B: "forbidden_arcanus:crimson_stone",
     });
+
+    kubejs.shaped("mekanism:steel_casing", ["ABA", "BCB", "ABA"], {
+        A: "mekanism:ingot_steel",
+        B: "forbidden_arcanus:ferrognetic_mixture",
+        C: "thermal:machine_frame",
+    });
+
+    kubejs.shaped("mekanism:metallurgic_infuser", ["ABA", "BCB", "ADA"], {
+        A: "mekanism:ingot_steel",
+        B: "pneumaticcraft:printed_circuit_board",
+        C: "mekanism:steel_casing",
+        D: "thermal:machine_smelter",
+    });
+
+    kubejs.shaped("mekanism:metallurgic_infuser", ["ABA", "BCB", "ADA"], {
+        A: "mekanism:ingot_steel",
+        B: "mekanism:basic_control_circuit",
+        C: "mekanism:steel_casing",
+        D: "thermal:machine_smelter",
+    });
 });

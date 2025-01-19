@@ -45,7 +45,7 @@ BlockEvents.rightClicked((event) => {
         hand != "MAIN_HAND" ||
         !block.hasTag("minecraft:beds") ||
         item != "naturesaura:token_terror" ||
-        evel.dimension != "minecraft:the_nether"
+        level.dimension != "minecraft:the_nether"
     )
         return;
 

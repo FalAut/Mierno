@@ -691,6 +691,11 @@
 					item: "pneumaticcraft:assembly_laser"
 					type: "item"
 				}
+				{
+					id: "7D223F9B84CD111D"
+					item: "pneumaticcraft:assembly_controller"
+					type: "item"
+				}
 			]
 			x: 7.5d
 			y: 5.0d

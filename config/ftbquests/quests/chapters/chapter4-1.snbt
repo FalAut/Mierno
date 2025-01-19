@@ -1,0 +1,20 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter4-1"
+	group: "5061CC2EE1CE78FA"
+	icon: "wizards_reborn:arcanum_lens"
+	id: "12050EBCE74AD414"
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		id: "27E6D59456B97D7E"
+		tasks: [{
+			id: "52499203326C2FC2"
+			type: "checkmark"
+		}]
+		x: -0.5d
+		y: 0.0d
+	}]
+	title: "{mierno.chapter4-1.title}"
+}

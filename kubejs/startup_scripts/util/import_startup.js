@@ -26,3 +26,5 @@ const $UseOnContext = Java.loadClass("net.minecraft.world.item.context.UseOnCont
 const $DummyTooltipItem = Java.loadClass("com.klikli_dev.occultism.common.item.DummyTooltipItem");
 const $TagKey = Java.loadClass("net.minecraft.tags.TagKey");
 const $AugmentItem = Java.loadClass("cofh.thermal.lib.common.item.AugmentItem");
+const $InfuseType = Java.loadClass("mekanism.api.chemical.infuse.InfuseType");
+const $InfuseTypeBuilder = Java.loadClass("mekanism.api.chemical.infuse.InfuseTypeBuilder");

@@ -23,6 +23,10 @@ StartupEvents.registry("item", (event) => {
     event.create("mierno:source_emerald");
     event.create("mierno:soul_gem").texture("occultism:item/soul_gem").glow(true);
     event.create("mierno:falling_star_marker").unstackable().glow(true).rarity("uncommon");
+    event.create("mierno:demon_infused_ingot").rarity("uncommon");
+    event.create("mierno:solid_etching_acid");
+    event.create("mierno:enriched_etching_acid");
+    event.create("mierno:raw_etrium");
 
     let darkTemple = $ResourceKey.create($ResourceKey.createRegistryKey("worldgen/structure"), "mierno:dark_temple");
     event.createCustom("mierno:dark_eyes", () => new $ItemStructureFinder("dark_eyes", darkTemple, 0x808080, 512));

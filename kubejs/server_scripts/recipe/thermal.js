@@ -34,6 +34,7 @@ ServerEvents.recipes((event) => {
     chiller("thermal:lumium_ingot", "mierno:molten_lumium");
     chiller("thermal:signalum_ingot", "mierno:molten_signalum");
     chiller("evilcraft:condensed_blood", "evilcraft:blood", 500, "thermal:chiller_ball_cast");
+    chiller("mierno:solid_etching_acid", "pneumaticcraft:etching_acid", 100);
 
     event.custom({
         type: "thermal:chiller",
@@ -368,7 +369,7 @@ ServerEvents.recipes((event) => {
         type: "thermal:press",
         ingredients: [
             {
-                item: "minecraft:diamond",
+                item: "minecraft:lapis_lazuli",
                 count: 4,
             },
             {
@@ -377,7 +378,35 @@ ServerEvents.recipes((event) => {
         ],
         result: [
             {
-                item: "thermal:diamond_gear",
+                item: "thermal:lapis_gear",
+            },
+        ],
+    });
+
+    event.custom({
+        type: "thermal:press",
+        ingredients: [
+            {
+                item: "mekanism:ingot_steel",
+            },
+        ],
+        result: [
+            {
+                item: "ad_astra:steel_plate",
+            },
+        ],
+    });
+
+    event.custom({
+        type: "thermal:press",
+        ingredients: [
+            {
+                item: "ad_astra:etrium_ingot",
+            },
+        ],
+        result: [
+            {
+                item: "ad_astra:etrium_plate",
             },
         ],
     });

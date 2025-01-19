@@ -91,4 +91,7 @@ ServerEvents.recipes((event) => {
         "evilcraft:garmonbozia",
         "evilcraft:dark_power_gem"
     );
+    event.replaceInput({ id: "ad_astra:compressor" }, "minecraft:iron_ingot", "ad_astra:steel_plate");
+    event.replaceInput({ id: "ad_astra:cryo_freezer" }, "ad_astra:ostrum_plate", "ad_astra:etrium_plate");
+    event.replaceInput({ id: "ad_astra:oxygen_loader" }, "redstone_block", "mekanism:steel_casing");
 });

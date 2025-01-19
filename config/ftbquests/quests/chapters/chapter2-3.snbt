@@ -1274,20 +1274,6 @@
 				}
 			}
 			id: "0CABE55169F37034"
-			rewards: [{
-				id: "313886177A9A6D22"
-				item: {
-					Count: 1
-					id: "minecraft:stone"
-					tag: {
-						RepairCost: 0
-						display: {
-							Name: "{\"text\":\"模块化\"}"
-						}
-					}
-				}
-				type: "item"
-			}]
 			shape: "gear"
 			subtitle: "{mierno.chapter2-3.check_hephaestus_forge_tier5.subtitle}"
 			tasks: [
@@ -1325,6 +1311,18 @@
 			]
 			x: 6.5d
 			y: 2.0d
+		}
+		{
+			dependencies: ["1F0852D1791C39FB"]
+			id: "23F40ADE5AB54517"
+			shape: "gear"
+			tasks: [{
+				id: "06712E9B02A9D350"
+				item: "mierno:brain_in_a_jar"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 3.5d
 		}
 	]
 	title: "{mierno.chapter2-3.title}"

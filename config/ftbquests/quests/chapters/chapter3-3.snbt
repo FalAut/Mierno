@@ -1,0 +1,22 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter3-3"
+	group: "54B1F1163EE92D1C"
+	icon: "draconicevolution:dragon_heart"
+	id: "2A2728EA260038DD"
+	order_index: 2
+	quest_links: [ ]
+	quests: [{
+		id: "65D6E364C4132106"
+		shape: "gear"
+		size: 2.0d
+		tasks: [{
+			id: "081EF38EF9213078"
+			type: "checkmark"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "{mierno.chapter3-3.title}"
+}

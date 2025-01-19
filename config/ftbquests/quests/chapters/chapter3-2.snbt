@@ -1,0 +1,23 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter3-2"
+	group: "54B1F1163EE92D1C"
+	icon: "mierno:raw_etrium"
+	id: "426AF3E6798D97AE"
+	order_index: 1
+	quest_links: [ ]
+	quests: [{
+		id: "0896949B2295E0D4"
+		shape: "gear"
+		size: 2.0d
+		tasks: [{
+			id: "4C6121A1F3B8881A"
+			item: "ad_astra:etrium_ingot"
+			type: "item"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "{mierno.chapter3-2.title}"
+}

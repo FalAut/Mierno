@@ -1,23 +1,591 @@
 {
-	always_invisible: true
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "chapter3-1"
 	group: "54B1F1163EE92D1C"
+	icon: "ad_astra:earth_globe"
 	id: "29ACB127CBDF4927"
 	order_index: 0
 	quest_links: [ ]
-	quests: [{
-		id: "237F58B246EF31BE"
-		shape: "gear"
-		size: 2.0d
-		tasks: [{
-			id: "4ED76956DDF2C6A2"
-			item: "mekanism:steel_casing"
-			type: "item"
-		}]
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			dependencies: ["1F0852D1791C39FB"]
+			id: "237F58B246EF31BE"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "4ED76956DDF2C6A2"
+				item: "mekanism:steel_casing"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1B01793A0142EBCA"]
+			id: "01AC0C6442C30875"
+			tasks: [{
+				id: "447CE8B896C4832F"
+				item: "mekanism:basic_control_circuit"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["237F58B246EF31BE"]
+			id: "1B01793A0142EBCA"
+			tasks: [{
+				id: "2238174244A34593"
+				item: "mekanism:metallurgic_infuser"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1B01793A0142EBCA"
+				"3B01EB318B15A502"
+			]
+			id: "3261F65D8A50ED23"
+			tasks: [{
+				id: "2654B12F5C8C798D"
+				item: "mekanism:alloy_infused"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["1B01793A0142EBCA"]
+			id: "3B01EB318B15A502"
+			tasks: [{
+				id: "1BD98CB29DE8C4CB"
+				item: "mierno:demon_infused_ingot"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"01AC0C6442C30875"
+				"3261F65D8A50ED23"
+			]
+			id: "3951F0AA59A1961B"
+			tasks: [{
+				id: "046BB5A61A0A79DB"
+				item: "mekanism:advanced_control_circuit"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3951F0AA59A1961B"]
+			id: "5A9EEBF3EC40C84A"
+			tasks: [{
+				id: "56319ECB8B6B7051"
+				item: "ad_astra:nasa_workbench"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5A9EEBF3EC40C84A"]
+			id: "47CA3B7018696273"
+			shape: "square"
+			tasks: [{
+				id: "1D6A8401796A6315"
+				item: {
+					Count: 1
+					id: "ad_astra:tier_1_rocket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["20FEC8DA43340AD4"]
+			id: "2BBA62DD6CAE01CB"
+			tasks: [{
+				id: "7F9CDE62EFC28CF0"
+				item: "ad_astra:launch_pad"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"0301D06B379107A3"
+				"69DFC6D44B236A76"
+			]
+			id: "00347273F3EF5D8C"
+			tasks: [{
+				id: "1CB391DB1C72BF26"
+				item: "ad_astra:cryo_fuel_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["6445A92EC3B14F06"]
+			hide_dependency_lines: true
+			id: "69DFC6D44B236A76"
+			tasks: [{
+				id: "41AF5806EC8CAA3C"
+				item: "ad_astra:ice_shard"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"64F9C1345EBFBDD8"
+				"2BBA62DD6CAE01CB"
+				"47CA3B7018696273"
+			]
+			icon: "ad_astra:moon_globe"
+			id: "6445A92EC3B14F06"
+			tasks: [{
+				dimension: "ad_astra:moon"
+				id: "14C63F9A8F769ACF"
+				type: "dimension"
+			}]
+			title: "{mierno.chapter3-1.reach_moon.title}"
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6445A92EC3B14F06"]
+			id: "70EC0F8DB1463641"
+			tasks: [{
+				id: "4982A8A48589E788"
+				item: "ad_astra:moon_desh_ore"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["237F58B246EF31BE"]
+			hide_dependency_lines: true
+			id: "1CBEFB1C0155097E"
+			tasks: [{
+				id: "40F7CD8250BD6EC9"
+				item: "ad_astra:fuel_refinery"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"1CBEFB1C0155097E"
+				"3AC6DB06BFA06FD1"
+			]
+			icon: "ad_astra:fuel_bucket"
+			id: "64F9C1345EBFBDD8"
+			tasks: [
+				{
+					id: "0D0BC0B2222D0FAC"
+					item: "ad_astra:fuel_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1DF1C23795535B3E"
+					type: "checkmark"
+				}
+			]
+			x: 5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["24F9D51C3F8F2DC7"]
+			icon: "pneumaticcraft:oil_bucket"
+			id: "3AC6DB06BFA06FD1"
+			tasks: [
+				{
+					id: "6F235D513CAC6392"
+					item: "pneumaticcraft:oil_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2B130EB503E125A7"
+					type: "checkmark"
+				}
+			]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6B83BB143E790384"]
+			id: "6F553858930A400D"
+			tasks: [{
+				id: "66BD27E5D3C34846"
+				item: "ad_astra:mars_ostrum_ore"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 2.25d
+		}
+		{
+			dependencies: ["6445A92EC3B14F06"]
+			id: "4763F0E2663DD701"
+			shape: "square"
+			tasks: [{
+				id: "212A0514F87BB6FC"
+				item: {
+					Count: 1
+					id: "ad_astra:tier_2_rocket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 8.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4763F0E2663DD701"]
+			icon: "ad_astra:mars_globe"
+			id: "6B83BB143E790384"
+			tasks: [{
+				dimension: "ad_astra:mars"
+				id: "1F5F027F49600930"
+				type: "dimension"
+			}]
+			title: "{mierno.chapter3-1.reach_mars.title}"
+			x: 8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6F553858930A400D"]
+			id: "30C87E2123D104A0"
+			shape: "square"
+			tasks: [{
+				id: "092A42EACFA72FA2"
+				item: {
+					Count: 1
+					id: "ad_astra:tier_3_rocket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["53ECA2A8A2C962F1"]
+			id: "7032D926BC7B2E45"
+			tasks: [{
+				id: "3668D61D80C71243"
+				item: "ad_astra:venus_calorite_ore"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"7032D926BC7B2E45"
+				"293EB2F62E544A33"
+			]
+			id: "1FB7F7F446733638"
+			shape: "square"
+			tasks: [{
+				id: "0CCB85EBE467074A"
+				item: {
+					Count: 1
+					id: "ad_astra:tier_4_rocket"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 5.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["785E7FC2966D1268"]
+			id: "4E889B5D2B4956D0"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "5DD4F8A0FC162776"
+				item: "mierno:glacio_etrium_ore"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["30C87E2123D104A0"]
+			icon: "ad_astra:mercury_globe"
+			id: "3166FF7CF553727E"
+			tasks: [{
+				dimension: "ad_astra:mercury"
+				id: "731F01FB58CDE46B"
+				type: "dimension"
+			}]
+			title: "{mierno.chapter3-1.reach_mercury.title}"
+			x: 7.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3166FF7CF553727E"]
+			id: "293EB2F62E544A33"
+			tasks: [{
+				id: "7A115F733C0399C6"
+				item: "mekanism:osmium_ore"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["30C87E2123D104A0"]
+			icon: "ad_astra:venus_globe"
+			id: "53ECA2A8A2C962F1"
+			tasks: [{
+				dimension: "ad_astra:venus"
+				id: "5AB5E7C05B1F3495"
+				type: "dimension"
+			}]
+			title: "{mierno.chapter3-1.reach_venus.title}"
+			x: 7.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1FB7F7F446733638"]
+			icon: "ad_astra:glacio_globe"
+			id: "785E7FC2966D1268"
+			tasks: [{
+				dimension: "ad_astra:glacio"
+				id: "38F9119AFDFBAB02"
+				type: "dimension"
+			}]
+			title: "{mierno.chapter3-1.reach_glacio.title}"
+			x: 4.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["75BAD40844484C00"]
+			hide_dependency_lines: true
+			id: "5358771502B34519"
+			shape: "diamond"
+			tasks: [{
+				id: "6AD3993F848BCB11"
+				item: "ad_astra:oxygen_loader"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4E889B5D2B4956D0"]
+			id: "0301D06B379107A3"
+			tasks: [{
+				id: "2F2A0C6F4D496DC3"
+				item: "ad_astra:cryo_freezer"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5358771502B34519"]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "ad_astra:space_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4DD61C5B2EEF138F"
+			shape: "diamond"
+			size: 0.8d
+			tasks: [
+				{
+					id: "3E9B66ECEB34C9B6"
+					item: {
+						Count: 1
+						id: "ad_astra:space_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0F6DE424E7B7A6EE"
+					item: {
+						Count: 1
+						id: "ad_astra:space_suit"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5D897D083933A26E"
+					item: {
+						Count: 1
+						id: "ad_astra:space_pants"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "217C568B99C5027E"
+					item: {
+						Count: 1
+						id: "ad_astra:space_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 3.6d
+			y: 1.6d
+		}
+		{
+			dependencies: ["5358771502B34519"]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "ad_astra:netherite_space_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "21E8DC065B8F292E"
+			shape: "diamond"
+			size: 0.8d
+			tasks: [
+				{
+					id: "39B4AC8C3E6E73C4"
+					item: {
+						Count: 1
+						id: "ad_astra:netherite_space_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4B055F4D23E585F4"
+					item: {
+						Count: 1
+						id: "ad_astra:netherite_space_suit"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0A84AAE4DEED502A"
+					item: {
+						Count: 1
+						id: "ad_astra:netherite_space_pants"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "00BFC0D1BB289719"
+					item: {
+						Count: 1
+						id: "ad_astra:netherite_space_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 4.4d
+			y: 1.6d
+		}
+		{
+			dependencies: ["5358771502B34519"]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				id: "ad_astra:jet_suit_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "32198A3174C8A5AD"
+			shape: "diamond"
+			size: 0.8d
+			tasks: [
+				{
+					id: "3EF307A85A8DC11C"
+					item: {
+						Count: 1
+						id: "ad_astra:jet_suit_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "78FD58CEB03E3598"
+					item: {
+						Count: 1
+						id: "ad_astra:jet_suit"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "50E020535B5331D5"
+					item: {
+						Count: 1
+						id: "ad_astra:jet_suit_pants"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4530EE980739AC6C"
+					item: {
+						Count: 1
+						id: "ad_astra:jet_suit_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 1.2d
+		}
+	]
 	title: "{mierno.chapter3-1.title}"
 }

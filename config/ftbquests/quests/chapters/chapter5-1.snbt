@@ -1,0 +1,24 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter5-1"
+	group: "33826AC27349FC0B"
+	icon: "mierno:pseudo_inversion_sigil"
+	id: "6453A6ACCAD0C5CA"
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		icon: "mierno:pseudo_inversion_sigil"
+		id: "0C6EA8AA4F7FB68C"
+		shape: "gear"
+		size: 2.0d
+		tasks: [{
+			id: "4902D337BB60673F"
+			item: "mierno:pseudo_inversion_sigil"
+			type: "item"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "§k??????"
+}

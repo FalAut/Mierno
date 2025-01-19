@@ -51,6 +51,8 @@ kubejs/startup_scripts/client/**
 !start.ps1
 !start.sh
 !variables.txt
+!manifest.json
+!modlist.html
 
 !.gitignore
 !README.md

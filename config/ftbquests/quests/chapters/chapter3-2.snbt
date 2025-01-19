@@ -3,63 +3,21 @@
 	default_quest_shape: ""
 	filename: "chapter3-2"
 	group: "54B1F1163EE92D1C"
-	icon: "mekanism:steel_casing"
+	icon: "mierno:raw_etrium"
 	id: "426AF3E6798D97AE"
 	order_index: 1
 	quest_links: [ ]
-	quests: [
-		{
-			id: "0896949B2295E0D4"
-			shape: "gear"
-			size: 2.0d
-			tasks: [{
-				id: "02142DD6CC85FC40"
-				item: "mierno:raw_etrium"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 0.0d
-		}
-		{
-			id: "68EE72268EEF737D"
-			tasks: [{
-				id: "0623727D458AE218"
-				item: "mekanism:alloy_reinforced"
-				type: "item"
-			}]
-			x: 1.5d
-			y: 0.0d
-		}
-		{
-			id: "38FA2F36DF4F8458"
-			tasks: [{
-				id: "2107A6B33F28B536"
-				item: "mekanism:alloy_atomic"
-				type: "item"
-			}]
-			x: 2.5d
-			y: -0.5d
-		}
-		{
-			id: "459DBBAD343C692B"
-			tasks: [{
-				id: "532969A724434B57"
-				item: "mekanism:elite_control_circuit"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 0.5d
-		}
-		{
-			id: "433587FAD60C0506"
-			tasks: [{
-				id: "04A6B3302F18CE45"
-				item: "mekanism:ultimate_control_circuit"
-				type: "item"
-			}]
-			x: 3.5d
-			y: 0.0d
-		}
-	]
+	quests: [{
+		id: "0896949B2295E0D4"
+		shape: "gear"
+		size: 2.0d
+		tasks: [{
+			id: "4C6121A1F3B8881A"
+			item: "ad_astra:etrium_ingot"
+			type: "item"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
 	title: "{mierno.chapter3-2.title}"
 }

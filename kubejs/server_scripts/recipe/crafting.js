@@ -1,50 +1,31 @@
 ServerEvents.recipes((event) => {
     const { kubejs, minecraft } = event.recipes;
 
+    minecraft.smelting("ad_astra:etrium_ingot", "mierno:raw_etrium");
+    minecraft.smelting("ad_astra:etrium_ingot", "mierno:glacio_etrium_ore");
+
     function fourShaped(/**@type  {OutputItem_} */ output, /**@type  {InputItem_} */ input) {
         kubejs.shaped(output, ["AA", "AA"], {
             A: input,
-        });
-
-        event.custom({
-            type: "functionalstorage:custom_compacting",
-            higher_input: {
-                count: 1,
-                item: output,
-            },
-            lower_input: {
-                count: 4,
-                item: input,
-            },
         });
     }
 
     fourShaped("forbidden_arcanus:dark_nether_star_block", "forbidden_arcanus:dark_nether_star");
     fourShaped("bloodmagic:dungeon_polished", "bloodmagic:dungeon_stone");
 
-    function fullShaped(/**@type  {OutputItem_} */ output, /**@type  {InputItem_} */ input) {
+    function fullShaped(/**@type  {OutputItem_} */ output, /**@type  {InputItem_} */ input, disassemble) {
         kubejs.shaped(output, ["AAA", "AAA", "AAA"], {
             A: input,
         });
 
-        event.custom({
-            type: "functionalstorage:custom_compacting",
-            higher_input: {
-                count: 1,
-                item: output,
-            },
-            lower_input: {
-                count: 9,
-                item: input,
-            },
-        });
-
-        kubejs.shapeless(Item.of(input).withCount(9), output);
+        if (disassemble) kubejs.shapeless(Item.of(input).withCount(9), output);
     }
 
-    fullShaped("mierno:mana_string_block", "botania:mana_string");
-    fullShaped("mierno:spirit_attuned_gem_block", "occultism:spirit_attuned_gem");
+    fullShaped("mierno:mana_string_block", "botania:mana_string", true);
+    fullShaped("mierno:spirit_attuned_gem_block", "occultism:spirit_attuned_gem", true);
     fullShaped("minecraft:skeleton_skull", "minecraft:bone_block");
+    fullShaped("ad_astra:etrium_ingot", "ad_astra:etrium_nugget", true);
+    fullShaped("ad_astra:etrium_block", "ad_astra:etrium_ingot", true);
 
     event.custom({
         type: "functionalstorage:custom_compacting",
@@ -990,7 +971,7 @@ ServerEvents.recipes((event) => {
     });
 
     kubejs.shaped("mekanism:steel_casing", ["ABA", "BCB", "ABA"], {
-        A: "mekanism:ingot_steel",
+        A: "ad_astra:steel_plate",
         B: "forbidden_arcanus:ferrognetic_mixture",
         C: "thermal:machine_frame",
     });
@@ -1007,5 +988,44 @@ ServerEvents.recipes((event) => {
         B: "mekanism:basic_control_circuit",
         C: "mekanism:steel_casing",
         D: "thermal:machine_smelter",
+    });
+
+    kubejs.shaped("ad_astra:nasa_workbench", ["ABC", "DEF", "GHG"], {
+        A: "pneumaticcraft:assembly_io_unit_import",
+        B: "pneumaticcraft:assembly_controller",
+        C: "pneumaticcraft:assembly_io_unit_export",
+        D: "pneumaticcraft:assembly_laser",
+        E: "pneumaticcraft:assembly_platform",
+        F: "pneumaticcraft:assembly_drill",
+        G: "mekanism:advanced_control_circuit",
+        H: "mekanism:steel_casing",
+    });
+
+    kubejs.shaped("minecraft:wither_skeleton_skull", ["AAA", "ABA", "AAA"], {
+        A: "forbidden_arcanus:dark_matter",
+        B: "minecraft:skeleton_skull",
+    });
+
+    kubejs.shaped("4x ad_astra:etrium_rod", [" A ", " A "], {
+        A: "ad_astra:etrium_plate",
+    });
+
+    kubejs.shaped("ad_astra:fuel_refinery", ["ABA", "BCB"], {
+        A: "ad_astra:etrium_plate",
+    });
+
+    kubejs.shaped("pneumaticcraft:module_expansion_card", [" A ", "BCD", " E "], {
+        A: "ae2:engineering_processor",
+        B: "ae2:logic_processor",
+        C: "forbidden_arcanus:ferrognetic_mixture",
+        D: "ae2:calculation_processor",
+        E: "pneumaticcraft:printed_circuit_board",
+    });
+
+    kubejs.shaped("ad_astra:fuel_refinery", ["AAA", "BCB", "ADA"], {
+        A: "ad_astra:steel_plate",
+        B: "mekanism:advanced_fluid_tank",
+        C: "mekanism:steel_casing",
+        D: "pneumaticcraft:refinery",
     });
 });

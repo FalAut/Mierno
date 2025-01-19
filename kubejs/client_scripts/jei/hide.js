@@ -10,4 +10,5 @@ JEIEvents.hideItems((event) => {
 
 JEIEvents.hideFluids((event) => {
     event.hide("thermal:crude_oil");
+    event.hide("ad_astra:oil");
 });

@@ -553,6 +553,12 @@
     "mierno.chapter2-3.demon_reactor.subtitle": "§6→【Click Me】← View how to activate the Demon Reactor",
     "mierno.chapter2-3.clibano_core.subtitle": "§6→【Click Me】← View how to build the Clibano Core",
 
+    "mierno.chapter3-1.reach_moon.title": "§6Reach Moon",
+    "mierno.chapter3-1.reach_mars.title": "§6Reach Mars",
+    "mierno.chapter3-1.reach_venus.title": "§6Reach Venus",
+    "mierno.chapter3-1.reach_mercury.title": "§6Reach Mercury",
+    "mierno.chapter3-1.reach_glacio.title": "§6Reach Glacio",
+
     "kubejs.ponder.addition_ritual.header": "Addition Ritual",
     "kubejs.ponder.ancient_aura_generator.header": "Aura Generation",
     "kubejs.ponder.ancient_aura_generator.text_1": "Place leaves within 3 blocks radius of the core",

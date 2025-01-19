@@ -2,7 +2,7 @@ ServerEvents.recipes((event) => {
     event.custom({
         type: "mekanism:metallurgic_infusing",
         chemicalInput: { amount: 80, infuse_type: "mierno:etching_acid" },
-        itemInput: { ingredient: { item: "pneumaticcraft:printed_circuit_board" } },
+        itemInput: { ingredient: { item: "pneumaticcraft:module_expansion_card" } },
         output: { item: "mekanism:basic_control_circuit", count: 8 },
     });
 

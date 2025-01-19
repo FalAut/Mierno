@@ -369,7 +369,7 @@ ServerEvents.recipes((event) => {
         type: "thermal:press",
         ingredients: [
             {
-                item: "minecraft:diamond",
+                item: "minecraft:lapis_lazuli",
                 count: 4,
             },
             {
@@ -378,7 +378,35 @@ ServerEvents.recipes((event) => {
         ],
         result: [
             {
-                item: "thermal:diamond_gear",
+                item: "thermal:lapis_gear",
+            },
+        ],
+    });
+
+    event.custom({
+        type: "thermal:press",
+        ingredients: [
+            {
+                item: "mekanism:ingot_steel",
+            },
+        ],
+        result: [
+            {
+                item: "ad_astra:steel_plate",
+            },
+        ],
+    });
+
+    event.custom({
+        type: "thermal:press",
+        ingredients: [
+            {
+                item: "ad_astra:etrium_ingot",
+            },
+        ],
+        result: [
+            {
+                item: "ad_astra:etrium_plate",
             },
         ],
     });

@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "chapter3-3"
 	group: "54B1F1163EE92D1C"
-	icon: "draconicevolution:reactor_core"
+	icon: "draconicevolution:dragon_heart"
 	id: "2A2728EA260038DD"
 	order_index: 2
 	quest_links: [ ]

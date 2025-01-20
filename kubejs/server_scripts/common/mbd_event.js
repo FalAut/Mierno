@@ -98,6 +98,24 @@ MBDMachineEvents.onBeforeRecipeModify("mierno:modular_imbuement_chamber_core", (
     }
 });
 
+MBDMachineEvents.onTick(["mierno:brain_in_a_jar", "mierno:computation_matrix"], (event) => {
+    const { machine } = event.event;
+    const { level, pos } = machine;
+    const controller = $IMultiController.ofController(level, pos).orElse(null);
+
+    if (controller.isFormed()) {
+        machine.triggerGeckolibAnim("formed");
+    } else {
+        machine.triggerGeckolibAnim("idel");
+    }
+
+    //     /**@type {Internal.GeckolibRenderer} */
+    //     const render = machine.machineState.getRenderer();
+    //     const animation = render.getAnimatableFromMachine(machine).getAnimatableInstanceCache().getTriggeredAnimation();
+    // new $AnimationController()
+    //     console.log(animation);
+});
+
 MBDMachineEvents.onTick("mierno:modular_mana_pool_core", (event) => {
     const { machine } = event.event;
     const { level, pos } = machine;

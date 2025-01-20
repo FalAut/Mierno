@@ -130,6 +130,27 @@ ServerEvents.recipes((event) => {
         type: "thermal:smelter",
         ingredients: [
             {
+                item: "ad_astra:ostrum_plate",
+            },
+            {
+                item: "ad_astra:calorite_plate",
+            },
+            {
+                item: "ad_astra:desh_plate",
+            },
+        ],
+        result: [
+            {
+                item: "mierno:milkyway_plate",
+                count: 6,
+            },
+        ],
+    });
+
+    event.custom({
+        type: "thermal:smelter",
+        ingredients: [
+            {
                 item: "minecraft:redstone",
                 count: 16,
             },

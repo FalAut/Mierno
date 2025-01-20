@@ -26,7 +26,21 @@ StartupEvents.registry("item", (event) => {
     event.create("mierno:demon_infused_ingot").rarity("uncommon");
     event.create("mierno:solid_etching_acid");
     event.create("mierno:enriched_etching_acid");
+    event.create("mierno:enriched_etrium");
+    event.create("mierno:enriched_deorum");
     event.create("mierno:raw_etrium");
+    event.create("mierno:milkyway_plate");
+    event.create("mierno:fake_sigil").texture("mierno:item/pseudo_inversion_sigil");
+    event.create("mierno:0").glow(true);
+    event.create("mierno:1").glow(true);
+    event.create("mierno:2").glow(true);
+    event.create("mierno:3").glow(true);
+    event.create("mierno:4").glow(true);
+    event.create("mierno:5").glow(true);
+    event.create("mierno:6").glow(true);
+    event.create("mierno:7").glow(true);
+    event.create("mierno:8").glow(true);
+    event.create("mierno:9").glow(true);
 
     let darkTemple = $ResourceKey.create($ResourceKey.createRegistryKey("worldgen/structure"), "mierno:dark_temple");
     event.createCustom("mierno:dark_eyes", () => new $ItemStructureFinder("dark_eyes", darkTemple, 0x808080, 512));

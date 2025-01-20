@@ -43,6 +43,22 @@ ItemEvents.crafted("naturesaura:birth_spirit", (event) => {
     }
 });
 
+// BlockEvents.placed("mierno:memory_matrix", (event) => {
+//     const { block, level, server } = event;
+
+//     let areas = LoquatAreaManager.of(level).byPosition(block.pos);
+//     areas.forEach((area) => {
+//         if (area.tags.contains("destroyed_end_portal")) {
+//             let centerPos = new BlockPos(area.center.x(), area.center.y(), area.center.z());
+//             let portalPos = centerPos.below().north(2).west(4);
+//             let structureTemplate = server.structureManager.get("mierno:activated_end_portal").get();
+
+//             level.getBlock(centerPos).set("stone");
+//             structureTemplate.placeInWorld(level, portalPos, portalPos, new $StructurePlaceSettings(), level.random, 2);
+//         }
+//     });
+// });
+
 // LoquatEvents.playerEnteredArea((event) => {
 //     const { area, player } = event;
 

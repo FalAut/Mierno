@@ -126,8 +126,8 @@
     "block.mierno.glacio_etrium_ore": "Glacio Etrium Ore",
     "block.mierno.deepslate_etrium_ore": "Deepslate Etrium Ore",
     "block.mierno.brain_in_a_jar": "Brain in a Jar",
-    "block.mierno.computational_matrix": "Computational Matrix",
-    "mierno.memory_matrix": "Memory Matrix",
+    "block.mierno.computation_matrix": "Computation Matrix",
+    "block.mierno.memory_matrix": "Memory Matrix",
 
     "mierno.oak_crucible": "Oak Crucible",
     "mierno.fired_crucible": "Crucible",
@@ -151,6 +151,7 @@
     "mierno.modular_nature_altar": "Modular Natural Altar",
     "mierno.modular_imbuement_chamber": "Modular Imbuement Chamber",
     "mierno.hephaestus_forge": "Hephaestus Smithing",
+    "mierno.computation_matrix": "Computation Matrix",
 
     "fluid.mierno.gensousitu": "Phantasmal Essence",
     "fluid.mierno.liquid_mana": "Liquid Mana",

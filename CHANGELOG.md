@@ -1,6 +1,10 @@
 ## v0.2.2
 
--   完成任务章节 3-2
+-   完成所有的任务章节
+
+---
+
+-   Complete all quests chapters
 
 ## v0.2.1
 

@@ -14,6 +14,8 @@
 !config/modernfix-mixins.properties
 !config/simplebackups-common.toml
 !config/wizards_reborn-common.toml
+!config/Mekanism
+!config/Mekanism/general.toml
 
 !defaultconfigs
 !defaultconfigs/ftbchunks

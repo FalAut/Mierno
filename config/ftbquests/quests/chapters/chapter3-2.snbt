@@ -7,17 +7,213 @@
 	id: "426AF3E6798D97AE"
 	order_index: 1
 	quest_links: [ ]
-	quests: [{
-		id: "0896949B2295E0D4"
-		shape: "gear"
-		size: 2.0d
-		tasks: [{
-			id: "4C6121A1F3B8881A"
-			item: "ad_astra:etrium_ingot"
-			type: "item"
-		}]
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			id: "0896949B2295E0D4"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "4C6121A1F3B8881A"
+				item: "ad_astra:etrium_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0896949B2295E0D4"]
+			id: "37BCACC244EBD3F1"
+			shape: "diamond"
+			tasks: [{
+				id: "0759D4BB9F79C130"
+				item: "mekanism:alloy_reinforced"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["37BCACC244EBD3F1"]
+			id: "134C2FCB6D7A6ACF"
+			shape: "diamond"
+			tasks: [{
+				id: "37BC0B1AB3C4D5D8"
+				item: "mekanism:elite_control_circuit"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["37BCACC244EBD3F1"]
+			id: "349F46603FB6D6E1"
+			shape: "diamond"
+			tasks: [{
+				id: "335D6F06BE1ED0FF"
+				item: "mekanism:alloy_atomic"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"134C2FCB6D7A6ACF"
+				"349F46603FB6D6E1"
+			]
+			id: "2602487711E0A4AD"
+			shape: "diamond"
+			tasks: [{
+				id: "03BC610FFC81DF65"
+				item: "mekanism:ultimate_control_circuit"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			id: "3DA4717085A36ACA"
+			shape: "square"
+			tasks: [{
+				id: "04240654F23C25A8"
+				item: "mierno:1"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.0d
+		}
+		{
+			id: "6FC32551FE26F7D4"
+			shape: "square"
+			tasks: [{
+				id: "58016E21A41A41BA"
+				item: "mierno:2"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -1.0d
+		}
+		{
+			id: "3F99E33CB70E526F"
+			shape: "square"
+			tasks: [{
+				id: "60121F809A30AFB5"
+				item: "mierno:3"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -1.0d
+		}
+		{
+			id: "0C7FB3B97D46374C"
+			shape: "square"
+			tasks: [{
+				id: "74604EDCD1B17BD9"
+				item: "mierno:4"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			id: "7C5ADFE9A23B9727"
+			shape: "square"
+			tasks: [{
+				id: "4B7D86828A82E74D"
+				item: "mierno:5"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			id: "39E68EAF9941FD16"
+			shape: "square"
+			tasks: [{
+				id: "5F6D4F16A54C9527"
+				item: "mierno:6"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			id: "2B545E5C729D418E"
+			shape: "square"
+			tasks: [{
+				id: "22946CFFAF944C03"
+				item: "mierno:7"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.0d
+		}
+		{
+			id: "34A4E805BAB82A77"
+			shape: "square"
+			tasks: [{
+				id: "3DD4ABFCEEF85344"
+				item: "mierno:8"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 1.0d
+		}
+		{
+			id: "2CE2A1490DFAFFD8"
+			shape: "square"
+			tasks: [{
+				id: "7398972DA2C26AB7"
+				item: "mierno:9"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 1.0d
+		}
+		{
+			id: "08836CE15DCD0C62"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "5BC22BA32A573101"
+				item: "mierno:memory_matrix"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2602487711E0A4AD"]
+			id: "6811570107E11DA9"
+			tasks: [{
+				id: "4C8069EB1C21D63B"
+				item: "mekanism:pellet_antimatter"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["08836CE15DCD0C62"]
+			id: "2CEC6B056BDBD288"
+			tasks: [{
+				id: "1903E822A403048D"
+				item: "minecraft:end_portal_frame"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 0.0d
+		}
+		{
+			id: "45C64E6670B61FFC"
+			tasks: [{
+				id: "29255A2E6CC152E2"
+				item: "mierno:computation_matrix"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 1.0d
+		}
+	]
 	title: "{mierno.chapter3-2.title}"
 }

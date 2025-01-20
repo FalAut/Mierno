@@ -111,9 +111,7 @@ ServerEvents.recipes((event) => {
     kubejs
         .shapeless("bloodmagic:ritualdivinerdusk", ["bloodmagic:ritualdiviner", "bloodmagic:duskscribetool"])
         .keepIngredient("bloodmagic:duskscribetool");
-
     kubejs.shapeless("2x bloodmagic:simplekey", ["thermal:iron_plate", "bloodmagic:simplekey"]);
-
     kubejs.shapeless("flint", ["gravel", "gravel", "gravel"]);
     kubejs.shapeless("ae2:not_so_mysterious_cube", "ae2:mysterious_cube").keepIngredient("ae2:mysterious_cube");
     kubejs.shapeless("naturesaura:gold_leaf", ["gold_ingot", "#leaves"]);
@@ -135,7 +133,7 @@ ServerEvents.recipes((event) => {
     ]);
     kubejs.shapeless("occultism:soul_gem", "mierno:soul_gem");
     kubejs.shapeless("mierno:soul_gem", "occultism:soul_gem");
-
+    kubejs.shapeless("minecraft:end_portal_frame", "mierno:memory_matrix");
     kubejs.shapeless("naturesaura:birth_spirit", "naturesaura:calling_spirit").modifyResult((grid, result) => {
         if (!grid.player || grid.player.isFake() || grid.menu instanceof $AssemblyHaloContainer) return Item.empty;
 
@@ -148,6 +146,7 @@ ServerEvents.recipes((event) => {
 
         return result;
     });
+    kubejs.shapeless("mierno:1", "mekanism:pellet_antimatter");
 
     kubejs.shaped("bucket", ["A A", " A "], {
         A: "white_concrete",
@@ -1010,10 +1009,6 @@ ServerEvents.recipes((event) => {
         A: "ad_astra:etrium_plate",
     });
 
-    kubejs.shaped("ad_astra:fuel_refinery", ["ABA", "BCB"], {
-        A: "ad_astra:etrium_plate",
-    });
-
     kubejs.shaped("pneumaticcraft:module_expansion_card", [" A ", "BCD", " E "], {
         A: "ae2:engineering_processor",
         B: "ae2:logic_processor",
@@ -1028,4 +1023,62 @@ ServerEvents.recipes((event) => {
         C: "mekanism:steel_casing",
         D: "pneumaticcraft:refinery",
     });
+
+    kubejs.shaped("mekanism:elite_control_circuit", ["AAA", "BCB", "AAA"], {
+        A: "mierno:milkyway_plate",
+        B: "mekanism:alloy_reinforced",
+        C: "mekanism:advanced_control_circuit",
+    });
+});
+
+ServerEvents.recipes((event) => {
+    const { kubejs } = event.recipes;
+
+    for (let i = 0; i <= 9; i++) {
+        for (let j = 0; j <= 9; j++) {
+            // 加法
+            if (i + j <= 9) {
+                kubejs
+                    .shaped(`mierno:${i + j}`, ["ABC"], {
+                        A: `mierno:${i}`,
+                        B: Item.of("mierno:addition_sigil").enchant("mierno:activate", 1).weakNBT(),
+                        C: `mierno:${j}`,
+                    })
+                    .keepIngredient("mierno:addition_sigil");
+            }
+
+            // 减法
+            if (i - j >= 0) {
+                kubejs
+                    .shaped(`mierno:${i - j}`, ["ABC"], {
+                        A: `mierno:${i}`,
+                        B: Item.of("mierno:subtraction_sigil").enchant("mierno:activate", 1).weakNBT(),
+                        C: `mierno:${j}`,
+                    })
+                    .keepIngredient("mierno:subtraction_sigil");
+            }
+
+            // 乘法
+            if (i * j <= 9) {
+                kubejs
+                    .shaped(`mierno:${i * j}`, ["ABC"], {
+                        A: `mierno:${i}`,
+                        B: Item.of("mierno:multiplication_sigil").enchant("mierno:activate", 1).weakNBT(),
+                        C: `mierno:${j}`,
+                    })
+                    .keepIngredient("mierno:multiplication_sigil");
+            }
+
+            // 除法
+            if (j != 0 && i % j == 0) {
+                kubejs
+                    .shaped(`mierno:${i / j}`, ["ABC"], {
+                        A: `mierno:${i}`,
+                        B: Item.of("mierno:division_sigil").enchant("mierno:activate", 1).weakNBT(),
+                        C: `mierno:${j}`,
+                    })
+                    .keepIngredient("mierno:division_sigil");
+            }
+        }
+    }
 });

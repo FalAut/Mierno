@@ -1505,6 +1505,154 @@
 			x: 0.5d
 			y: 8.0d
 		}
+		{
+			can_repeat: true
+			icon: {
+				Count: 1
+				id: "mekanism:sps_port"
+				tag: {
+					mekData: {
+						EnergyContainers: [ ]
+					}
+				}
+			}
+			id: "73AD4B61011F8467"
+			rewards: [{
+				id: "4D79CAC62AE446AB"
+				item: {
+					Count: 1
+					id: "capsule:capsule"
+					tag: {
+						author: "?"
+						canRotate: 0b
+						color: 8072841
+						display: {
+							color: 16777215
+						}
+						isReward: 1b
+						label: "Sps.nbt"
+						oneUse: 1b
+						size: 7
+						state: 5
+						structureName: "config/capsule/rewards/sps.nbt"
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 3L
+					id: "75410EDE03F7D2FF"
+					item: {
+						Count: 3
+						id: "mekanism:sps_port"
+						tag: {
+							mekData: {
+								EnergyContainers: [ ]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "6B8FBF8B66DD52AE"
+					item: "mekanism:supercharged_coil"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 64L
+					id: "38A9A791A98D77AD"
+					item: { Count: 64, id: "mekanism:sps_casing" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 17L
+					id: "634DA4127CE83B72"
+					item: { Count: 17, id: "mekanism:sps_casing" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 64L
+					id: "6D01BEF2A275ADF8"
+					item: { Count: 64, id: "mekanism:structural_glass" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 38L
+					id: "130DA86F3926EE6B"
+					item: { Count: 38, id: "mekanism:structural_glass" }
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: 9.0d
+		}
+		{
+			can_repeat: true
+			icon: "minecraft:beacon"
+			id: "19E856CE22E1BAE3"
+			rewards: [{
+				id: "1FE8B3687CA968B5"
+				item: {
+					Count: 1
+					id: "capsule:capsule"
+					tag: {
+						author: "?"
+						canRotate: 1b
+						color: 8072841
+						display: {
+							color: 13421772
+						}
+						isReward: 1b
+						label: "Pseudo Inversion Ritual.nbt"
+						oneUse: 1b
+						size: 11
+						state: 5
+						structureName: "config/capsule/rewards/pseudo_inversion_ritual.nbt"
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					id: "18062C3DEAD1FD57"
+					item: "minecraft:beacon"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 4L
+					id: "44A4AC6E258BDF32"
+					item: { Count: 4, id: "minecraft:chest" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 40L
+					id: "0C200C264CD9CBEB"
+					item: { Count: 40, id: "minecraft:redstone" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 40L
+					id: "61777E648053CE7A"
+					item: { Count: 40, id: "minecraft:string" }
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: 9.0d
+		}
 	]
 	title: "{mierno.capsule.title}"
 }

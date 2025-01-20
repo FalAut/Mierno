@@ -6,6 +6,8 @@ JEIEvents.hideItems((event) => {
     });
 
     event.hide("thermal:crude_oil_bucket");
+    event.hide("ad_astra:coal_generator");
+    event.hide("mierno:pseudo_inversion_sigil");
 });
 
 JEIEvents.hideFluids((event) => {

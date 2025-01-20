@@ -58,7 +58,11 @@
     "item.mierno.demon_infused_ingot": "恶魔灌注锭",
     "item.mierno.solid_etching_acid": "固态蚀刻酸",
     "item.mierno.enriched_etching_acid": "富集蚀刻酸",
+    "item.mierno.enriched_etrium": "富集埃忒恩",
+    "item.mierno.enriched_deorum": "富集圣金",
     "item.mierno.raw_etrium": "粗埃忒恩",
+    "item.mierno.milkyway_plate": "银河板",
+    "item.mierno.fake_sigil": "伪逆徽章",
 
     "block.mierno.infused_wood": "灌注之木",
     "block.mierno.misty_forest_portal": "迷雾森林传送门",
@@ -122,6 +126,8 @@
     "block.mierno.glacio_etrium_ore": "霜原星埃忒恩矿石",
     "block.mierno.deepslate_etrium_ore": "深层埃忒恩矿石",
     "block.mierno.brain_in_a_jar": "缸中之脑",
+    "block.mierno.computation_matrix": "计算矩阵",
+    "block.mierno.memory_matrix": "记忆矩阵",
 
     "mierno.oak_crucible": "橡木坩埚",
     "mierno.fired_crucible": "坩埚",
@@ -145,6 +151,7 @@
     "mierno.modular_nature_altar": "模块化自然祭坛",
     "mierno.modular_imbuement_chamber": "模块化灌注室",
     "mierno.hephaestus_forge": "赫菲斯托斯锻造",
+    "mierno.computation_matrix": "计算矩阵",
 
     "fluid.mierno.gensousitu": "幻想质",
     "fluid.mierno.liquid_mana": "液态魔力",
@@ -157,6 +164,7 @@
 
     "infuse_type.mierno.etching_acid": "蚀刻酸",
     "infuse_type.mierno.deorum": "圣金",
+    "infuse_type.mierno.etrium": "埃忒恩",
 
     "message.mierno.clickme": "→【点我】← ",
     "message.mierno.clickopen": "点我打开",
@@ -560,6 +568,8 @@
     "mierno.chapter3-1.reach_venus.title": "§6到达金星",
     "mierno.chapter3-1.reach_mercury.title": "§6到达水星",
     "mierno.chapter3-1.reach_glacio.title": "§6到达霜原星",
+
+    "mierno.chapter3-3.pseudo_inversion_ritual.subtitle": "§6→【点我】← 查看伪逆仪式的胶囊",
 
     "kubejs.ponder.addition_ritual.header": "聚合仪式",
     "kubejs.ponder.ancient_aura_generator.header": "灵气制造",

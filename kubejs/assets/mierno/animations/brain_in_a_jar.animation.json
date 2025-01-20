@@ -6,6 +6,22 @@
             "animation_length": 6,
             "bones": {
                 "brain": {
+                    "position": {
+                        "0.0": {
+                            "vector": [0, 0, 0]
+                        },
+                        "6.0": {
+                            "vector": [0, "math.cos(query.anim_time * 120) * 1", 0]
+                        }
+                    }
+                }
+            }
+        },
+        "formed": {
+            "loop": true,
+            "animation_length": 6,
+            "bones": {
+                "brain": {
                     "rotation": {
                         "0.0": {
                             "vector": [0, 0, 0]

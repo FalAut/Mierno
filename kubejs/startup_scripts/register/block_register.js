@@ -12,6 +12,7 @@ StartupEvents.registry("block", (event) => {
     event.create("mierno:glowing_obsidian").hardness(50).stoneSoundType().lightLevel(0.8).requiresTool();
     event.create("mierno:glacio_etrium_ore").hardness(3).stoneSoundType().requiresTool();
     event.create("mierno:deepslate_etrium_ore").hardness(3).stoneSoundType().requiresTool();
+    event.create("mierno:memory_matrix").hardness(0).soundType("amethyst").lightLevel(1).defaultTranslucent();
     event.createCustom(
         "mierno:misty_forest_portal",
         () =>

@@ -161,7 +161,7 @@
 			}]
 			shape: "square"
 			size: 1.5d
-			subtitle: "{\"translate\":\"mierno.chapter2-3.blood_altar.subtitle\",\"color\":\"gold\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book Fa1Aut bloodmagic:guide bloodmagic:altar/blood_altar 10\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}}"
+			subtitle: "{\"translate\":\"mierno.chapter2-3.blood_altar.subtitle\",\"color\":\"gold\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/open-patchouli-book @p bloodmagic:guide bloodmagic:altar/blood_altar 10\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}}"
 			tasks: [{
 				id: "6661F2A615793D3F"
 				item: "bloodmagic:altar"

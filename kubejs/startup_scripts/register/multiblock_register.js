@@ -253,4 +253,29 @@ StartupEvents.postInit((event) => {
             Block.getBlock("bloodmagic:dungeon_polished")
         )
     );
+
+    $PatchouliAPI.registerMultiblock(
+        "mierno:psu_inver_ritual",
+        $PatchouliAPI.makeMultiblock(
+            [
+                [
+                    "TRRRRRRRR",
+                    "TRTTTTTTT",
+                    "TRTRRRRRT",
+                    "TRTRTTTRT",
+                    "TRTR0RTRT",
+                    "TRTTTRTRT",
+                    "TRRRRRTRT",
+                    "TTTTTTTRT",
+                    "RRRRRRRRT",
+                ],
+            ],
+            new $Character("0"),
+            Blocks.BEACON,
+            new $Character("R"),
+            Blocks.REDSTONE_WIRE,
+            new $Character("T"),
+            Blocks.TRIPWIRE
+        )
+    );
 });

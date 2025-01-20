@@ -58,7 +58,11 @@
     "item.mierno.demon_infused_ingot": "Demon Infused Ingot",
     "item.mierno.solid_etching_acid": "Solid Etching Acid",
     "item.mierno.enriched_etching_acid": "Enriched Etching Acid",
+    "item.mierno.enriched_etrium": "Enriched Etrium",
+    "item.mierno.enriched_deorum": "Enriched Deorum",
     "item.mierno.raw_etrium": "Raw Etrium",
+    "item.mierno.milkyway_plate": "Milkyway Plate",
+    "item.mierno.fake_sigil": "Pseudo Inversion Sigil",
 
     "block.mierno.infused_wood": "Infused Wood",
     "block.mierno.misty_forest_portal": "Misty Forest Portal",
@@ -122,6 +126,8 @@
     "block.mierno.glacio_etrium_ore": "Glacio Etrium Ore",
     "block.mierno.deepslate_etrium_ore": "Deepslate Etrium Ore",
     "block.mierno.brain_in_a_jar": "Brain in a Jar",
+    "block.mierno.computational_matrix": "Computational Matrix",
+    "mierno.memory_matrix": "Memory Matrix",
 
     "mierno.oak_crucible": "Oak Crucible",
     "mierno.fired_crucible": "Crucible",
@@ -157,6 +163,7 @@
 
     "infuse_type.mierno.etching_acid": "Etching Acid",
     "infuse_type.mierno.deorum": "Deorum",
+    "infuse_type.mierno.etrium": "Etrium",
 
     "message.mierno.clickme": "→[Click Me]← ",
     "message.mierno.clickopen": "Click to Open",

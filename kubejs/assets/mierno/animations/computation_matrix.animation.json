@@ -1,7 +1,8 @@
 {
     "format_version": "1.8.0",
     "animations": {
-        "working": {
+        "idel": {},
+        "formed": {
             "loop": true,
             "animation_length": 7,
             "bones": {

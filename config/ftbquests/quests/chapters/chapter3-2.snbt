@@ -204,6 +204,16 @@
 			x: 9.5d
 			y: 0.0d
 		}
+		{
+			id: "45C64E6670B61FFC"
+			tasks: [{
+				id: "29255A2E6CC152E2"
+				item: "mierno:computation_matrix"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 1.0d
+		}
 	]
 	title: "{mierno.chapter3-2.title}"
 }

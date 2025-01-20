@@ -104,4 +104,11 @@ ServerEvents.recipes((event) => {
         input: { ingredient: { item: "forbidden_arcanus:deorum_ingot" } },
         output: { item: "mierno:enriched_deorum" },
     });
+
+    event.custom({
+        type: "mekanism:crystallizing",
+        chemicalType: "gas",
+        input: { amount: 1, gas: "mekanism:antimatter" },
+        output: { item: "mekanism:pellet_antimatter" },
+    });
 });

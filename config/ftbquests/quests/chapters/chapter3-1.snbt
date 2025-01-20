@@ -122,32 +122,6 @@
 		}
 		{
 			dependencies: [
-				"0301D06B379107A3"
-				"69DFC6D44B236A76"
-			]
-			id: "00347273F3EF5D8C"
-			tasks: [{
-				id: "1CB391DB1C72BF26"
-				item: "ad_astra:cryo_fuel_bucket"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 3.5d
-		}
-		{
-			dependencies: ["6445A92EC3B14F06"]
-			hide_dependency_lines: true
-			id: "69DFC6D44B236A76"
-			tasks: [{
-				id: "41AF5806EC8CAA3C"
-				item: "ad_astra:ice_shard"
-				type: "item"
-			}]
-			x: 1.0d
-			y: 3.0d
-		}
-		{
-			dependencies: [
 				"64F9C1345EBFBDD8"
 				"2BBA62DD6CAE01CB"
 				"47CA3B7018696273"
@@ -385,17 +359,6 @@
 			}]
 			x: 4.0d
 			y: 2.0d
-		}
-		{
-			dependencies: ["4E889B5D2B4956D0"]
-			id: "0301D06B379107A3"
-			tasks: [{
-				id: "2F2A0C6F4D496DC3"
-				item: "ad_astra:cryo_freezer"
-				type: "item"
-			}]
-			x: 1.0d
-			y: 4.0d
 		}
 		{
 			dependencies: ["5358771502B34519"]

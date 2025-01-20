@@ -1653,6 +1653,98 @@
 			x: 1.5d
 			y: 9.0d
 		}
+		{
+			can_repeat: true
+			icon: "mierno:computation_matrix"
+			id: "6B96216B48F88D28"
+			rewards: [{
+				id: "429835716426E747"
+				item: {
+					Count: 1
+					id: "capsule:capsule"
+					tag: {
+						author: "?"
+						canRotate: 0b
+						color: 7105644
+						display: {
+							color: 16777215
+						}
+						isReward: 1b
+						label: "Computation Matrix.nbt"
+						oneUse: 1b
+						size: 33
+						state: 5
+						structureName: "config/capsule/rewards/computation_matrix.nbt"
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					id: "5BFDBF1D478C8578"
+					item: "mierno:computation_matrix"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "5A0BEBD835CD660A"
+					item: "mierno:item_output"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "557A7D77959BD2BE"
+					item: "mierno:item_input"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 4L
+					id: "15EB524D7A9F405D"
+					item: { Count: 4, id: "mierno:energy_input" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 84L
+					id: "4244EEF2F2E92D79"
+					item: "ad_astra:encased_etrium_block"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 232L
+					id: "7B14E27F9EA99C36"
+					item: "ad_astra:glowing_iron_pillar"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 48L
+					id: "4C5381DC6085BF5C"
+					item: "mekanism:steel_casing"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 820L
+					id: "2F51D3ECD6C7C1C4"
+					item: "mekanism:block_steel"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 610L
+					id: "019044EE711D5A28"
+					item: "mekanism:block_osmium"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 9.0d
+		}
 	]
 	title: "{mierno.capsule.title}"
 }

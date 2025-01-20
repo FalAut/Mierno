@@ -276,7 +276,7 @@ ServerEvents.recipes((event) => {
         "ad_astra:fuel_refinery",
         "ad_astra:etrium_block",
         "mekanism:control_circuit/elite",
-        "",
+        "mekanism:processing/lategame/antimatter_pellet/from_gas",
         "",
         "",
         "",

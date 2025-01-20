@@ -55,7 +55,9 @@ BlockEvents.rightClicked("beacon", (event) => {
 
         if (counts && Object.values(counts).every((count) => count == 12)) {
             player.tell("\nEverything is prepared.\n");
-            player.tell("§4Sacrifice one who would sacrifice himself.");
+            // player.tell("§4Sacrifice one who would sacrifice himself.");
+            player.tell("§4在信标上献祭一只铁傀儡");
+            player.tell("§4Sacrifice an Iron Golem at the Beacon");
         }
     }
 });
@@ -114,7 +116,7 @@ EntityEvents.death((event) => {
             server.runCommandSilent(`title ${player.username} title "Your Sigil has stabilized"`);
             server.runCommandSilent(`title ${player.username} subtitle "The Siege has ended in 'The End'"`);
 
-            player.give("mierno:pseudo_inversion_sigil");
+            player.give("mierno:fake_sigil");
         }
     }
 });

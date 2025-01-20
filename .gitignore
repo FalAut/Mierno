@@ -40,6 +40,8 @@
 !config/fluffy_fur-client.toml
 !config/simplebackups-common.toml
 !config/evilcraft-common.toml
+!config/Mekanism
+!config/Mekanism/general.toml
 
 ## Defaultconfigs
 !defaultconfigs/

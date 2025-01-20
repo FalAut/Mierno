@@ -147,6 +147,7 @@ ServerEvents.recipes((event) => {
         return result;
     });
     kubejs.shapeless("mierno:1", "mekanism:pellet_antimatter");
+    kubejs.shapeless("mierno:computation_matrix", "mekanism:antiprotonic_nucleosynthesizer");
 
     kubejs.shaped("bucket", ["A A", " A "], {
         A: "white_concrete",

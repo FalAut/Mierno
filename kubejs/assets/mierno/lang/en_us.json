@@ -568,6 +568,10 @@
     "mierno.chapter3-1.reach_mercury.title": "§6Reach Mercury",
     "mierno.chapter3-1.reach_glacio.title": "§6Reach Glacio",
 
+    "mierno.chapter3-2.computation_matrix.subtitle": "§6→【Click Me】← View Computation Matrix capsule",
+
+    "mierno.chapter3-3.pseudo_inversion_ritual.subtitle": "§6→【Click Me】← View Pseudo Inversion Ritual capsule",
+
     "kubejs.ponder.addition_ritual.header": "Addition Ritual",
     "kubejs.ponder.ancient_aura_generator.header": "Aura Generation",
     "kubejs.ponder.ancient_aura_generator.text_1": "Place leaves within 3 blocks radius of the core",

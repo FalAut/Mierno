@@ -361,6 +361,94 @@
 			x: 0.0d
 			y: -2.5d
 		}
+		{
+			id: "31719C703DE36FC8"
+			rewards: [{
+				id: "692B96F6E6D30605"
+				item: {
+					Count: 1
+					id: "minecraft:shulker_box"
+					tag: {
+						BlockEntityTag: {
+							ForgeCaps: { }
+							Items: [
+								{
+									Count: 1b
+									Slot: 0b
+									id: "minecraft:music_disc_strad"
+								}
+								{
+									Count: 1b
+									Slot: 1b
+									id: "minecraft:music_disc_mellohi"
+								}
+								{
+									Count: 1b
+									Slot: 2b
+									id: "minecraft:music_disc_mall"
+								}
+								{
+									Count: 1b
+									Slot: 3b
+									id: "minecraft:music_disc_far"
+								}
+								{
+									Count: 1b
+									Slot: 4b
+									id: "minecraft:music_disc_13"
+								}
+								{
+									Count: 1b
+									Slot: 5b
+									id: "minecraft:music_disc_cat"
+								}
+								{
+									Count: 1b
+									Slot: 6b
+									id: "minecraft:music_disc_chirp"
+								}
+								{
+									Count: 1b
+									Slot: 7b
+									id: "minecraft:music_disc_ward"
+								}
+								{
+									Count: 1b
+									Slot: 8b
+									id: "minecraft:music_disc_11"
+								}
+								{
+									Count: 1b
+									Slot: 9b
+									id: "minecraft:music_disc_blocks"
+								}
+								{
+									Count: 1b
+									Slot: 10b
+									id: "minecraft:music_disc_wait"
+								}
+								{
+									Count: 1b
+									Slot: 11b
+									id: "minecraft:music_disc_stal"
+								}
+							]
+							id: "minecraft:shulker_box"
+						}
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "69DDCB2E880A2550"
+				item: "mierno:memory_matrix"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
 	]
 	title: "{mierno.chapter3-3.title}"
 }

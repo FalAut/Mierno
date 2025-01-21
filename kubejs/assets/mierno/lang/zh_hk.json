@@ -55,6 +55,14 @@
     "item.mierno.machine_efficiency_augment_compressed_iron": "壓縮鐵通量效率升級",
     "item.mierno.soul_gem": "靈魂寶石",
     "item.mierno.falling_star_marker": "墜星標引",
+    "item.mierno.demon_infused_ingot": "惡魔灌註錠",
+    "item.mierno.solid_etching_acid": "固態蝕刻酸",
+    "item.mierno.enriched_etching_acid": "富集蝕刻酸",
+    "item.mierno.enriched_etrium": "富集埃忒恩",
+    "item.mierno.enriched_deorum": "富集聖金",
+    "item.mierno.raw_etrium": "粗埃忒恩",
+    "item.mierno.milkyway_plate": "銀河板",
+    "item.mierno.fake_sigil": "偽逆徽章",
 
     "block.mierno.infused_wood": "灌註之木",
     "block.mierno.misty_forest_portal": "迷霧森林傳送門",
@@ -105,16 +113,21 @@
     "block.mierno.planting_station": "種植站",
     "block.mierno.spirit_attuned_gem_block": "魔靈同調水晶塊",
     "block.mierno.printing_room_controller": "印刷室控製器",
-    "block.mierno.modular_alfheim_portal_core": "模塊化精靈門核心",
+    "block.mierno.modular_alfheim_portal_core": "機械精靈門核心",
     "block.mierno.blood_converter": "血液轉換器",
     "block.mierno.nether_catalyst": "下界催化器",
     "block.mierno.end_catalyst": "末地催化器",
     "block.mierno.mini_sun": "迷你太陽",
     "block.mierno.modular_mana_pool_core": "模塊化魔力池核心",
     "block.mierno.mana_output": "魔力輸出倉",
-    "block.mierno.modular_nature_altar_core": "模塊化自然祭壇核心",
+    "block.mierno.modular_nature_altar_core": "機械自然祭壇核心",
     "block.mierno.modular_imbuement_chamber_core": "模塊化灌註室核心",
     "block.mierno.glowing_obsidian": "發光的黑曜石",
+    "block.mierno.glacio_etrium_ore": "霜原星埃忒恩礦石",
+    "block.mierno.deepslate_etrium_ore": "深層埃忒恩礦石",
+    "block.mierno.brain_in_a_jar": "缸中之腦",
+    "block.mierno.computation_matrix": "計算矩陣",
+    "block.mierno.memory_matrix": "記憶矩陣",
 
     "mierno.oak_crucible": "橡木坩堝",
     "mierno.fired_crucible": "坩堝",
@@ -131,12 +144,14 @@
     "mierno.memory_source_drawing": "憶源汲取",
     "mierno.planting_station": "種植站",
     "mierno.printing_room": "印刷室",
-    "mierno.modular_elven_trade": "模塊化精靈交易",
+    "mierno.modular_elven_trade": "機械精靈交易",
     "mierno.blood_conversion": "血液轉換",
     "mierno.spirit_furnace": "靈魂爐",
     "mierno.modular_mana_infusion": "模塊化魔力灌註",
-    "mierno.modular_nature_altar": "模塊化自然祭壇",
+    "mierno.modular_nature_altar": "機械自然祭壇",
     "mierno.modular_imbuement_chamber": "模塊化灌註室",
+    "mierno.hephaestus_forge": "赫菲斯托斯鍛造",
+    "mierno.computation_matrix": "計算矩陣",
 
     "fluid.mierno.gensousitu": "幻想質",
     "fluid.mierno.liquid_mana": "液態魔力",
@@ -146,6 +161,10 @@
     "fluid.mierno.molten_signalum": "熔融信素",
     "fluid.mierno.ether_memory_source": "以太憶源",
     "fluid.mierno.pink_memory_source": "粉紅憶源",
+
+    "infuse_type.mierno.etching_acid": "蝕刻酸",
+    "infuse_type.mierno.deorum": "聖金",
+    "infuse_type.mierno.etrium": "埃忒恩",
 
     "message.mierno.clickme": "→【點我】← ",
     "message.mierno.clickopen": "點我打開",
@@ -174,6 +193,7 @@
     "message.mierno.colossal_furnace_core_no_enough_item": "巨型熔爐框架不足，需要 §a26§r 個，還差 %s 個",
     "message.mierno.terra_plate_error": "當前泰拉凝聚板的結構不正確，請查看泰拉凝聚板的任務獲取更多信息",
     "message.mierno.nothing_happened": "什麽都沒有發生",
+    "message.mierno.game_pass": "玩家 %s 獲得了偽逆徽章！\n用時 %s！\n感謝你的遊玩！",
 
     "death.attack.mistDamage": "%1$s 迷失了",
 
@@ -238,7 +258,7 @@
     "tooltip.mierno.third_eye_2": "「第三只眼」：免受異界中的黑暗效果",
     "tooltip.mierno.third_eye_3": "可以看清隱藏的艾瑟金屬礦石，異界樹等",
     "tooltip.mierno.third_eye_4": "除此之外，還可以通過消耗魔力來高亮附近的怪物",
-    "tooltip.mierno.market_can_buy": "可在「 歡迎 」章節中的「 小商店 」購買",
+    "tooltip.mierno.market_can_buy": "可在「歡迎」章節中的「小商店」購買",
     "tooltip.mierno.memory_source_drawing_crystal_core_1": "是多方塊機器，將生物放進水晶內部來汲取憶源",
     "tooltip.mierno.memory_source_drawing_crystal_core_2": "需要提供憶源寶石才能工作，每顆憶源寶石可提供 1 分鐘的汲取時間",
     "tooltip.mierno.memory_source_drawing_crystal_core_3": "被汲取憶源的生物將失去AI，並且無法死亡（血量會被控製在一半）",
@@ -274,8 +294,6 @@
     "tooltip.mierno.imbuement_chamber": "現在灌註室在完成灌註後會消耗掉基座上的物品，這是有意為之的，並不是bug",
     "tooltip.mierno.modular_alfheim_portal_core": "可附加火花，若連不上請嘗試重新放置",
     "tooltip.mierno.eternal_water": "一個無限的水源，可以自動向液體容器輸出水",
-    "tooltip.mierno.condenser_1": "每 125 mb流體也可算作 1 物品。",
-    "tooltip.mierno.condenser_2": "§6在網絡裏放一個ME無限水元件，然後寫一個比如「32000B水->1奇點」的樣板給物質聚合器，下單可以直接秒做，非常簡單",
     "tooltip.mierno.pinkinator_1": "使用裝滿粉紅色光通染色球的物質炮合成",
     "tooltip.mierno.pinkinator_2": "使用後把半徑為 16 格球體內的任意一只雕靈變成 粉色雕靈",
     "tooltip.mierno.dislocationrune": "提升血之祭壇在與外部進行生命源質交換時的速度，每個符文提供 20% 的可疊加增量",
@@ -313,6 +331,7 @@
     "tooltip.mierno.blacker_lotus": "可通過合成復製",
     "tooltip.mierno.vengeance_essence": "使用復仇刺穿棱鏡擊殺復仇之魂掉落",
     "tooltip.mierno.creative_blood_drop": "使用創造血源右鍵血之祭壇可為其輸入生命源質到最大上限",
+    "tooltip.mierno.clibano_core": "§e與熔爐一樣使用燃料§r，一些配方需要同時添加靈魂進行燒煉",
 
     "biome.mierno.black_and_white": "黑與白",
     "biome.mierno.misty_forest": "迷霧森林",
@@ -401,7 +420,16 @@
     "mierno.chapter2-3.title": "墜星標位",
 
     "mierno.chapter3.title": "III.削減",
-    "mierno.chapter3-1.title": "記憶工廠",
+    "mierno.chapter3-1.title": "星之所向",
+    "mierno.chapter3-2.title": "記憶工廠",
+    "mierno.chapter3-3.title": "終末之地",
+
+    "mierno.chapter4.title": "IV.融合",
+    "mierno.chapter4-1.title": "哭泣之井",
+    "mierno.chapter4-2.title": "淚水之城",
+    "mierno.chapter4-3.title": "融合意識",
+
+    "mierno.chapter5.title": "V.偽逆",
 
     "mierno.welcome.main.subtitle": "§c本包當前仍然處於製作階段，有任何問題請加QQ測試群490811326，感謝配合",
     "mierno.welcome.main.desc1": "§c本整合包適合對各種模組和自動化有一定了解的玩家。§r",
@@ -479,7 +507,6 @@
     "mierno.chapter1-2.wilden_summon.title": "§e召喚荒野奇美拉",
     "mierno.chapter1-2.wilden_summon.subtitle": "§6激活儀式之前，務必向儀式火盆投入荒野之角、荒野尖刺、荒野膜翼才能召喚出Boss",
     "mierno.chapter1-2.wilden_summon.desc1": "§c友情提示：這個Boss可能會爆炸並摧毀方塊，請勿在基地中召喚！",
-    "mierno.chapter1-2.wilden_summon.desc2": "§a打這個Boss建議用遠程攻擊，比如做一個植物魔法的水晶弓（消耗魔力發射箭矢），戴上夢之翼飛在天上慢慢磨。不過這個Boss有一個形態是會飛的，註意變換思路",
 
     "mierno.chapter1-3.assembly_room.subtitle": "§6→【點我】← 查看裝配室的膠囊",
     "mierno.chapter1-3.matter_mixer.subtitle": "§6→【點我】← 查看物質混合機的膠囊",
@@ -505,7 +532,7 @@
 
     "mierno.chapter2-3.check_hephaestus_forge.title": "觀察赫菲斯托斯鍛爐",
     "mierno.chapter2-3.hephaestus_forge.subtitle": "§6→【點我】← 查看如何激活並使用赫菲斯托斯鍛爐",
-    "mierno.chapter2-3.blood_altar.subtitle": "§6→【點我】← 查看如何升級血之祭壇",
+    "mierno.chapter2-3.blood_altar.subtitle": "§6點我查看如何升級血之祭壇",
     "mierno.chapter2-3.blood_converter.subtitle": "感覺不如創造血源",
     "mierno.chapter2-3.check_hephaestus_forge_tier2.title": "§6觀察 2 級赫菲斯托斯鍛爐",
     "mierno.chapter2-3.check_hephaestus_forge_tier2.subtitle": "§a將赫菲斯托斯鍛爐升到 2 級",
@@ -533,6 +560,16 @@
     "mierno.chapter2-3.demon_realm.desc5": "礦井內的獎勵箱會生成「 §b工匠遺物§r 」和黃蘭花",
     "mierno.chapter2-3.demon_reactor.subtitle": "§6→【點我】← 查看如何激活惡魔反應器",
     "mierno.chapter2-3.clibano_core.subtitle": "§6→【點我】← 查看如何搭建熾爐",
+
+    "mierno.chapter3-1.reach_moon.title": "§6到達月球",
+    "mierno.chapter3-1.reach_mars.title": "§6到達火星",
+    "mierno.chapter3-1.reach_venus.title": "§6到達金星",
+    "mierno.chapter3-1.reach_mercury.title": "§6到達水星",
+    "mierno.chapter3-1.reach_glacio.title": "§6到達霜原星",
+
+    "mierno.chapter3-2.computation_matrix.subtitle": "§6→【點我】← 查看計算矩陣的膠囊",
+
+    "mierno.chapter3-3.pseudo_inversion_ritual.subtitle": "§6→【點我】← 查看偽逆儀式的膠囊",
 
     "kubejs.ponder.addition_ritual.header": "聚合儀式",
     "kubejs.ponder.ancient_aura_generator.header": "靈氣製造",

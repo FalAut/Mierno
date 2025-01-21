@@ -361,6 +361,398 @@
 			x: 0.0d
 			y: -2.5d
 		}
+		{
+			can_repeat: true
+			id: "31719C703DE36FC8"
+			rewards: [{
+				id: "692B96F6E6D30605"
+				item: {
+					Count: 1
+					id: "minecraft:shulker_box"
+					tag: {
+						BlockEntityTag: {
+							ForgeCaps: { }
+							Items: [
+								{
+									Count: 1b
+									Slot: 0b
+									id: "minecraft:music_disc_strad"
+								}
+								{
+									Count: 1b
+									Slot: 1b
+									id: "minecraft:music_disc_mellohi"
+								}
+								{
+									Count: 1b
+									Slot: 2b
+									id: "minecraft:music_disc_mall"
+								}
+								{
+									Count: 1b
+									Slot: 3b
+									id: "minecraft:music_disc_far"
+								}
+								{
+									Count: 1b
+									Slot: 4b
+									id: "minecraft:music_disc_13"
+								}
+								{
+									Count: 1b
+									Slot: 5b
+									id: "minecraft:music_disc_cat"
+								}
+								{
+									Count: 1b
+									Slot: 6b
+									id: "minecraft:music_disc_chirp"
+								}
+								{
+									Count: 1b
+									Slot: 7b
+									id: "minecraft:music_disc_ward"
+								}
+								{
+									Count: 1b
+									Slot: 8b
+									id: "minecraft:music_disc_11"
+								}
+								{
+									Count: 1b
+									Slot: 9b
+									id: "minecraft:music_disc_blocks"
+								}
+								{
+									Count: 1b
+									Slot: 10b
+									id: "minecraft:music_disc_wait"
+								}
+								{
+									Count: 1b
+									Slot: 11b
+									id: "minecraft:music_disc_stal"
+								}
+							]
+							id: "minecraft:shulker_box"
+						}
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "69DDCB2E880A2550"
+				item: "mierno:memory_matrix"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			id: "27D913D6954B98B2"
+			rewards: [{
+				id: "65FC0618D9F7102D"
+				item: {
+					Count: 1
+					id: "minecraft:shulker_box"
+					tag: {
+						BlockEntityTag: {
+							ForgeCaps: { }
+							Items: [
+								{
+									Count: 1b
+									Slot: 0b
+									id: "minecraft:redstone_ore"
+								}
+								{
+									Count: 1b
+									Slot: 1b
+									id: "minecraft:gold_ore"
+								}
+								{
+									Count: 1b
+									Slot: 2b
+									id: "minecraft:grass_block"
+								}
+								{
+									Count: 1b
+									Slot: 3b
+									id: "minecraft:gravel"
+								}
+								{
+									Count: 1b
+									Slot: 4b
+									id: "minecraft:coal_ore"
+								}
+								{
+									Count: 1b
+									Slot: 5b
+									id: "minecraft:sand"
+								}
+								{
+									Count: 1b
+									Slot: 6b
+									id: "minecraft:diamond_ore"
+								}
+								{
+									Count: 1b
+									Slot: 7b
+									id: "minecraft:copper_ore"
+								}
+								{
+									Count: 1b
+									Slot: 8b
+									id: "minecraft:iron_ore"
+								}
+								{
+									Count: 1b
+									Slot: 9b
+									id: "minecraft:emerald_ore"
+								}
+								{
+									Count: 1b
+									Slot: 10b
+									id: "minecraft:clay"
+								}
+								{
+									Count: 1b
+									Slot: 11b
+									id: "minecraft:lapis_ore"
+								}
+							]
+							id: "minecraft:shulker_box"
+						}
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "1A9A84BDF59C88B7"
+				item: "mierno:memory_matrix"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			can_repeat: true
+			id: "291BBCF38654C822"
+			rewards: [{
+				id: "0EC48C78075B5986"
+				item: {
+					Count: 1
+					id: "minecraft:shulker_box"
+					tag: {
+						BlockEntityTag: {
+							ForgeCaps: { }
+							Items: [
+								{
+									Count: 1b
+									Slot: 0b
+									id: "minecraft:potion"
+									tag: {
+										Potion: "minecraft:water_breathing"
+									}
+								}
+								{
+									Count: 1b
+									Slot: 1b
+									id: "minecraft:potion"
+									tag: {
+										Potion: "minecraft:night_vision"
+									}
+								}
+								{
+									Count: 1b
+									Slot: 2b
+									id: "minecraft:potion"
+									tag: {
+										Potion: "minecraft:swiftness"
+									}
+								}
+								{
+									Count: 1b
+									Slot: 3b
+									id: "minecraft:potion"
+									tag: {
+										Potion: "minecraft:fire_resistance"
+									}
+								}
+								{
+									Count: 1b
+									Slot: 4b
+									id: "minecraft:potion"
+									tag: {
+										Potion: "minecraft:slowness"
+									}
+								}
+								{
+									Count: 1b
+									Slot: 5b
+									id: "minecraft:potion"
+									tag: {
+										Potion: "minecraft:weakness"
+									}
+								}
+								{
+									Count: 1b
+									Slot: 6b
+									id: "minecraft:potion"
+									tag: {
+										Potion: "minecraft:healing"
+									}
+								}
+								{
+									Count: 1b
+									Slot: 7b
+									id: "minecraft:potion"
+									tag: {
+										Potion: "minecraft:leaping"
+									}
+								}
+								{
+									Count: 1b
+									Slot: 8b
+									id: "minecraft:potion"
+									tag: {
+										Potion: "minecraft:invisibility"
+									}
+								}
+								{
+									Count: 1b
+									Slot: 9b
+									id: "minecraft:potion"
+									tag: {
+										Potion: "minecraft:poison"
+									}
+								}
+								{
+									Count: 1b
+									Slot: 10b
+									id: "minecraft:potion"
+									tag: {
+										Potion: "minecraft:strength"
+									}
+								}
+								{
+									Count: 1b
+									Slot: 11b
+									id: "minecraft:potion"
+									tag: {
+										Potion: "minecraft:harming"
+									}
+								}
+							]
+							id: "minecraft:shulker_box"
+						}
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "7763A16DF2B23EEB"
+				item: "mierno:memory_matrix"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			can_repeat: true
+			id: "66807C3BDC601A68"
+			rewards: [{
+				id: "1EF153B154005335"
+				item: {
+					Count: 1
+					id: "minecraft:shulker_box"
+					tag: {
+						BlockEntityTag: {
+							ForgeCaps: { }
+							Items: [
+								{
+									Count: 1b
+									Slot: 0b
+									id: "minecraft:cooked_beef"
+								}
+								{
+									Count: 1b
+									Slot: 1b
+									id: "minecraft:terracotta"
+								}
+								{
+									Count: 1b
+									Slot: 2b
+									id: "minecraft:cooked_chicken"
+								}
+								{
+									Count: 1b
+									Slot: 3b
+									id: "minecraft:cooked_cod"
+								}
+								{
+									Count: 1b
+									Slot: 4b
+									id: "minecraft:cooked_porkchop"
+								}
+								{
+									Count: 1b
+									Slot: 5b
+									id: "minecraft:iron_ingot"
+								}
+								{
+									Count: 1b
+									Slot: 6b
+									id: "minecraft:gold_ingot"
+								}
+								{
+									Count: 1b
+									Slot: 7b
+									id: "minecraft:charcoal"
+								}
+								{
+									Count: 1b
+									Slot: 8b
+									id: "minecraft:glass"
+								}
+								{
+									Count: 1b
+									Slot: 9b
+									id: "minecraft:green_dye"
+								}
+								{
+									Count: 1b
+									Slot: 10b
+									id: "minecraft:stone"
+								}
+								{
+									Count: 1b
+									Slot: 11b
+									id: "minecraft:baked_potato"
+								}
+							]
+							id: "minecraft:shulker_box"
+						}
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "137680FAFECB49F1"
+				item: "mierno:memory_matrix"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.5d
+		}
 	]
 	title: "{mierno.chapter3-3.title}"
 }

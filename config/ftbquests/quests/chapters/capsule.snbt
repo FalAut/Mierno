@@ -358,6 +358,19 @@
 		}
 		{
 			can_repeat: true
+			description: [
+				"{tooltip.mierno.ancient_aura_generator_core_1}"
+				""
+				"{tooltip.mierno.ancient_aura_generator_core_2}"
+				""
+				"{tooltip.mierno.ancient_aura_generator_core_3}"
+				""
+				"{tooltip.mierno.ancient_aura_generator_core_4}"
+				""
+				"{tooltip.mierno.ancient_aura_generator_core_5}"
+				""
+				"{tooltip.mierno.ancient_aura_generator_core_6}"
+			]
 			icon: "mierno:ancient_aura_generator_core"
 			id: "0CAAD36B1835ABCD"
 			rewards: [{
@@ -879,6 +892,13 @@
 		}
 		{
 			can_repeat: true
+			description: [
+				"{tooltip.mierno.modular_runic_altar_core_1}"
+				""
+				"{tooltip.mierno.modular_runic_altar_core_2}"
+				""
+				"{tooltip.mierno.modular_runic_altar_core_3}"
+			]
 			icon: "mierno:modular_runic_altar_core"
 			id: "015AD1574ACFDC1A"
 			rewards: [{
@@ -1087,6 +1107,17 @@
 		}
 		{
 			can_repeat: true
+			description: [
+				"{tooltip.mierno.memory_source_drawing_crystal_core_1}"
+				""
+				"{tooltip.mierno.memory_source_drawing_crystal_core_2}"
+				""
+				"{tooltip.mierno.memory_source_drawing_crystal_core_3}"
+				""
+				"{tooltip.mierno.memory_source_drawing_crystal_core_4}"
+				""
+				"{tooltip.mierno.memory_source_drawing_crystal_core_5}"
+			]
 			icon: "mierno:memory_source_drawing_crystal_core"
 			id: "5A3F137CB30E2EF8"
 			rewards: [{
@@ -1332,6 +1363,11 @@
 		}
 		{
 			can_repeat: true
+			description: [
+				"{tooltip.mierno.modular_imbuement_chamber_core_1}"
+				""
+				"{tooltip.mierno.modular_imbuement_chamber_core_2}"
+			]
 			icon: "mierno:modular_imbuement_chamber_core"
 			id: "1F491BACA611F535"
 			rewards: [{
@@ -1391,6 +1427,13 @@
 		}
 		{
 			can_repeat: true
+			description: [
+				"{tooltip.mierno.modular_mana_pool_core_1}"
+				""
+				"{tooltip.mierno.modular_mana_pool_core_2}"
+				""
+				"{tooltip.mierno.modular_mana_pool_core_3}"
+			]
 			icon: "mierno:modular_mana_pool_core"
 			id: "5C4FDA49A2FBA3C0"
 			rewards: [{

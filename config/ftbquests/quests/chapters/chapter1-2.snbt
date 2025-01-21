@@ -964,11 +964,6 @@
 			id: "6ED6EFD4B2E4AE1E"
 			rewards: [
 				{
-					id: "575C70AB7C3C31E9"
-					item: "evilcraft:eternal_water"
-					type: "item"
-				}
-				{
 					exclude_from_claim_all: true
 					id: "6D0B0B75410777CA"
 					table_id: 1320735954632056874L
@@ -985,6 +980,30 @@
 					id: "65B8872869953E44"
 					table_id: 5354634242720975076L
 					type: "loot"
+				}
+				{
+					id: "7CBFED5B6F3D220F"
+					item: "expatternprovider:ex_io_port"
+					type: "item"
+				}
+				{
+					id: "242A035A0B88707B"
+					item: "ae2:storage_bus"
+					type: "item"
+				}
+				{
+					id: "4DE92AE98C115F68"
+					item: {
+						Count: 1
+						id: "expatternprovider:infinity_cell"
+						tag: {
+							record: {
+								"#c": "ae2:f"
+								id: "minecraft:water"
+							}
+						}
+					}
+					type: "item"
 				}
 			]
 			shape: "gear"
@@ -1159,11 +1178,7 @@
 				"0053DDDECA4BCD0D"
 				"3899D7896D69E280"
 			]
-			description: [
-				"{mierno.chapter1-2.wilden_summon.desc1}"
-				""
-				"{mierno.chapter1-2.wilden_summon.desc2}"
-			]
+			description: ["{mierno.chapter1-2.wilden_summon.desc1}"]
 			icon: "ars_nouveau:ritual_wilden_summon"
 			id: "705E3C69A699CF59"
 			rewards: [
@@ -1186,28 +1201,6 @@
 				{
 					id: "2922614AC5FB7B3D"
 					item: "ars_nouveau:wilden_wing"
-					type: "item"
-				}
-				{
-					id: "482BA96BF04145A4"
-					item: {
-						Count: 1
-						id: "botania:crystal_bow"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "1F82004AA3E3462D"
-					item: {
-						Count: 1
-						id: "botania:mana_tablet"
-						tag: {
-							mana: 500000
-						}
-					}
 					type: "item"
 				}
 				{

@@ -123,7 +123,15 @@ EntityEvents.death((event) => {
     }
 });
 
-const $FireworkRocketEntity = Java.loadClass("net.minecraft.world.entity.projectile.FireworkRocketEntity");
+EntityEvents.death("player", (event) => {
+    const { player, server } = event;
+    if (!player.persistentData.get("trial_kill")) return;
+
+    let bar = server.customBossEvents.get("mierno:trial_bar");
+    server.runCommandSilent("kill @e[tag=trial_mob]");
+    player.persistentData.remove("trial_kill");
+    bar.removePlayer(player);
+});
 
 PlayerEvents.inventoryChanged("mierno:fake_sigil", (event) => {
     const { player, level } = event;

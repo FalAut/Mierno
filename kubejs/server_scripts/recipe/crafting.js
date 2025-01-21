@@ -77,6 +77,7 @@ ServerEvents.recipes((event) => {
     copySelf("thermal:machine_efficiency_creative_augment");
     copySelf("forbidden_arcanus:soul_crimson_stone");
     copySelf("bloodmagic:activationcrystalcreative");
+    copySelf("ae2:creative_energy_cell");
 
     kubejs.shapeless(
         Item.of("botania:mana_tablet", 2, "{creative:1b,mana:500000}"),

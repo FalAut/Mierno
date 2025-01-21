@@ -1030,6 +1030,11 @@ ServerEvents.recipes((event) => {
         B: "mekanism:alloy_reinforced",
         C: "mekanism:advanced_control_circuit",
     });
+
+    kubejs.shaped("ad_astra:encased_etrium_block", ["AAA", "BBB", "AAA"], {
+        A: "mekanism:ingot_steel",
+        B: "ad_astra:etrium_plate",
+    });
 });
 
 ServerEvents.recipes((event) => {

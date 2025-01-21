@@ -19,6 +19,27 @@
 -   伪逆仪式现在会在玩家死亡后消失
 -   添加通关庆祝（获得伪逆徽章后放一堆烟花并且全服通告玩家通关用时）
 
+---
+
+-   Reduced the mass of life source required to create activated crystal crafting from 2147483647 to 1
+-   Removed recipes for subtraction and multiplication in Number Synthesis
+-   Added recipe for encapsulating Eterne blocks
+-   Modular Infusion Chamber and Modular Rune Altar capsules now have their own input and output bins.
+-   Quartz Glass can now be crafted 4 at a time
+-   Custom Machines can now be mined faster with a pickaxe or axe
+-   Shimmering Stones can now be crafted with mechanical sprite gates, and sprite trades for meteorites now require Magic Pearls
+-   Fixed an issue with an infinite energy cube in Calculation Matrix capsules
+-   Fixed Calculation Matrix recipes having incorrect energy requirements
+-   Fixed Akira being able to get a transformation table
+-   Modular Faerie Gate and Modular Nature Altar are now Mechanical Faerie Gate Core and Mechanical Nature Altar.
+-   Changed the entry point to quickly view Blood Altar upgrades.
+-   It is recommended to use the ME Expansion IO port to feed the Matter Aggregator during missions.
+-   Speeds up the White Daisy's transformation of Living Stone and Living Wood.
+-   Added a quest to redeem records
+-   Creating energy components can now be copied through synthesis
+-   Pseudo-Reverse Rituals now disappear when the player dies.
+-   Added Passing Celebration (after getting the Pseudo Reverse Badge, set off a bunch of fireworks and notify the whole world when the player passes the level).
+
 ## v0.2.2
 
 -   完成所有的任务章节

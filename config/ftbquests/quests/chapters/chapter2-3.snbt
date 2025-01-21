@@ -9,6 +9,16 @@
 		tag: { }
 	}
 	id: "516E45775E7754C0"
+	images: [{
+		click: "custom:mierno:open_blood_altar"
+		height: 1.0d
+		hover: ["mierno.chapter2-3.blood_altar.subtitle"]
+		image: "bloodmagic:item/sanguine_scientiem_guide_book"
+		rotation: 0.0d
+		width: 1.0d
+		x: 2.0d
+		y: -2.5d
+	}]
 	order_index: 2
 	quest_links: [ ]
 	quests: [

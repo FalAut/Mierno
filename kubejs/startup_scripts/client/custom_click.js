@@ -26,6 +26,10 @@ function openPatchouliBook(/**@type {Internal.CustomClickEvent} */ event) {
             openPentaclesEntry("summon_wild_afrit");
             break;
 
+        case "mierno:open_blood_altar":
+            $PatchouliAPI.openBookEntry("bloodmagic:guide", "bloodmagic:altar/blood_altar", 10);
+            break;
+
         default:
             console.error("Unknown custom click event id: " + event.id());
             break;

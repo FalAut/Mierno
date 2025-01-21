@@ -256,7 +256,7 @@ ServerEvents.recipes((event) => {
         B: "evilcraft:inverted_potentia_empowered",
     });
 
-    kubejs.shaped("ae2:quartz_glass", ["ABA", "BAB", "ABA"], {
+    kubejs.shaped("4x ae2:quartz_glass", ["ABA", "BAB", "ABA"], {
         A: "ae2:certus_quartz_dust",
         B: "botania:mana_glass",
     });

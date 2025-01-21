@@ -258,7 +258,7 @@
     "tooltip.mierno.third_eye_2": "「第三只眼」：免受异界中的黑暗效果",
     "tooltip.mierno.third_eye_3": "可以看清隐藏的艾瑟金属矿石，异界树等",
     "tooltip.mierno.third_eye_4": "除此之外，还可以通过消耗魔力来高亮附近的怪物",
-    "tooltip.mierno.market_can_buy": "可在「 欢迎 」章节中的「 小商店 」购买",
+    "tooltip.mierno.market_can_buy": "可在「欢迎」章节中的「小商店」购买",
     "tooltip.mierno.memory_source_drawing_crystal_core_1": "是多方块机器，将生物放进水晶内部来汲取忆源",
     "tooltip.mierno.memory_source_drawing_crystal_core_2": "需要提供忆源宝石才能工作，每颗忆源宝石可提供 1 分钟的汲取时间",
     "tooltip.mierno.memory_source_drawing_crystal_core_3": "被汲取忆源的生物将失去AI，并且无法死亡（血量会被控制在一半）",

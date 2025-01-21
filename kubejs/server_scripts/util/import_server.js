@@ -17,3 +17,4 @@ const $CraftingMenu = Java.loadClass("net.minecraft.world.inventory.CraftingMenu
 const $Block = Java.loadClass("net.minecraft.world.level.block.Block");
 const $AssemblyHaloContainer = Java.loadClass("vazkii.botania.client.gui.crafting.AssemblyHaloContainer");
 const $SourceUtil = Java.loadClass("com.hollingsworth.arsnouveau.api.util.SourceUtil");
+const $FireworkRocketEntity = Java.loadClass("net.minecraft.world.entity.projectile.FireworkRocketEntity");

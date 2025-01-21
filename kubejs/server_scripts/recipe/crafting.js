@@ -77,6 +77,7 @@ ServerEvents.recipes((event) => {
     copySelf("thermal:machine_efficiency_creative_augment");
     copySelf("forbidden_arcanus:soul_crimson_stone");
     copySelf("bloodmagic:activationcrystalcreative");
+    copySelf("ae2:creative_energy_cell");
 
     kubejs.shapeless(
         Item.of("botania:mana_tablet", 2, "{creative:1b,mana:500000}"),
@@ -256,7 +257,7 @@ ServerEvents.recipes((event) => {
         B: "evilcraft:inverted_potentia_empowered",
     });
 
-    kubejs.shaped("ae2:quartz_glass", ["ABA", "BAB", "ABA"], {
+    kubejs.shaped("4x ae2:quartz_glass", ["ABA", "BAB", "ABA"], {
         A: "ae2:certus_quartz_dust",
         B: "botania:mana_glass",
     });
@@ -1030,6 +1031,11 @@ ServerEvents.recipes((event) => {
         B: "mekanism:alloy_reinforced",
         C: "mekanism:advanced_control_circuit",
     });
+
+    kubejs.shaped("ad_astra:encased_etrium_block", ["AAA", "BBB", "AAA"], {
+        A: "mekanism:ingot_steel",
+        B: "ad_astra:etrium_plate",
+    });
 });
 
 ServerEvents.recipes((event) => {
@@ -1048,28 +1054,6 @@ ServerEvents.recipes((event) => {
                     .keepIngredient("mierno:addition_sigil");
             }
 
-            // 减法
-            if (i - j >= 0) {
-                kubejs
-                    .shaped(`mierno:${i - j}`, ["ABC"], {
-                        A: `mierno:${i}`,
-                        B: Item.of("mierno:subtraction_sigil").enchant("mierno:activate", 1).weakNBT(),
-                        C: `mierno:${j}`,
-                    })
-                    .keepIngredient("mierno:subtraction_sigil");
-            }
-
-            // 乘法
-            if (i * j <= 9) {
-                kubejs
-                    .shaped(`mierno:${i * j}`, ["ABC"], {
-                        A: `mierno:${i}`,
-                        B: Item.of("mierno:multiplication_sigil").enchant("mierno:activate", 1).weakNBT(),
-                        C: `mierno:${j}`,
-                    })
-                    .keepIngredient("mierno:multiplication_sigil");
-            }
-
             // 除法
             if (j != 0 && i % j == 0) {
                 kubejs
@@ -1080,6 +1064,28 @@ ServerEvents.recipes((event) => {
                     })
                     .keepIngredient("mierno:division_sigil");
             }
+
+            // // 减法
+            // if (i - j >= 0) {
+            //     kubejs
+            //         .shaped(`mierno:${i - j}`, ["ABC"], {
+            //             A: `mierno:${i}`,
+            //             B: Item.of("mierno:subtraction_sigil").enchant("mierno:activate", 1).weakNBT(),
+            //             C: `mierno:${j}`,
+            //         })
+            //         .keepIngredient("mierno:subtraction_sigil");
+            // }
+
+            // // 乘法
+            // if (i * j <= 9) {
+            //     kubejs
+            //         .shaped(`mierno:${i * j}`, ["ABC"], {
+            //             A: `mierno:${i}`,
+            //             B: Item.of("mierno:multiplication_sigil").enchant("mierno:activate", 1).weakNBT(),
+            //             C: `mierno:${j}`,
+            //         })
+            //         .keepIngredient("mierno:multiplication_sigil");
+            // }
         }
     }
 });

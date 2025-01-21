@@ -26,7 +26,7 @@ ServerEvents.recipes((event) => {
             .inputItems(input)
             .inputItems("botania:livingrock")
             .inputMana(mana ? mana : 5200)
-            .duration(20);
+            .duration(1);
     }
 
     runicAltar("2x botania:rune_air", [
@@ -82,7 +82,7 @@ ServerEvents.recipes((event) => {
         25000
     );
 
-    runicAltar(
+    botania.terra_plate(
         "botania:terra_plate",
         [
             "mierno:sun_crystal_full",
@@ -96,6 +96,23 @@ ServerEvents.recipes((event) => {
         ],
         50000
     );
+
+    mierno
+        .modular_runic_altar()
+        .outputItems("botania:terra_plate")
+        .inputItems([
+            "mierno:sun_crystal_full",
+            "minecraft:lapis_block",
+            "botania:rune_fire",
+            "botania:rune_earth",
+            "botania:rune_mana",
+            "botania:rune_air",
+            "botania:rune_water",
+            "minecraft:lapis_block",
+        ])
+        .inputItems("botania:livingrock")
+        .inputMana(50000)
+        .duration(1);
 
     runicAltar(
         Item.of("botania:mana_tablet", "{creative:1b,mana:500000}").strongNBT(),
@@ -117,7 +134,7 @@ ServerEvents.recipes((event) => {
         // let duration = mana / 2000;
         // let inputMana = mana / duration;
 
-        mierno.modular_terrestrial_agglomeration().outputItems(output).inputItems(input).duration(20).inputMana(mana);
+        mierno.modular_terrestrial_agglomeration().outputItems(output).inputItems(input).duration(1).inputMana(mana);
     }
 
     terriaAgglomeration(
@@ -217,7 +234,7 @@ ServerEvents.recipes((event) => {
     botania.elven_trade("botania:dragonstone_block", ["botania:mana_diamond_block", "botania:mana_diamond_block"]);
     botania.elven_trade("botania:pixie_dust", ["botania:mana_powder", "botania:mana_powder"]);
     botania.elven_trade("ae2:certus_quartz_crystal", ["botania:quartz_mana", "botania:quartz_mana"]);
-    botania.elven_trade("ae2:sky_stone_block", "botania:livingrock");
+    botania.elven_trade("ae2:sky_stone_block", "botania:mana_pearl");
     botania.elven_trade("ae2:quartz_block", "botania:mana_quartz");
 
     /**
@@ -324,7 +341,7 @@ ServerEvents.recipes((event) => {
         output: {
             name: "botania:livingwood",
         },
-        time: 5,
+        time: 1,
     });
 
     event.custom({
@@ -336,6 +353,6 @@ ServerEvents.recipes((event) => {
         output: {
             name: "botania:livingrock",
         },
-        time: 5,
+        time: 1,
     });
 });

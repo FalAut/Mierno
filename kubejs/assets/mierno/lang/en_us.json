@@ -294,8 +294,6 @@
     "tooltip.mierno.imbuement_chamber": "The Infusion Chamber now consumes items on the pedestal after completing the infusion, this is intentional and not a bug",
     "tooltip.mierno.modular_alfheim_portal_core": "Can attach sparks, try replacing if connection fails",
     "tooltip.mierno.eternal_water": "An infinite water source that can automatically output water to fluid containers",
-    "tooltip.mierno.condenser_1": "Every 125 mB of fluid counts as 1 item.",
-    "tooltip.mierno.condenser_2": "§6Put an ME Infinite Water Component in the network, then create a pattern like '32000B water->1 singularity' for the Matter Condenser, orders can be completed instantly, very simple",
     "tooltip.mierno.pinkinator_1": "Crafted using a Matter Cannon loaded with Pink Paint Balls",
     "tooltip.mierno.pinkinator_2": "When used, transforms any Wither within a 16-block radius sphere into a Pink Wither",
     "tooltip.mierno.dislocationrune": "Increases the speed of Life Essence exchange with external storage, each rune provides a stackable 20% increase",
@@ -509,7 +507,6 @@
     "mierno.chapter1-2.wilden_summon.title": "§eSummon the Wilden Chimera",
     "mierno.chapter1-2.wilden_summon.subtitle": "§6Before activating the ritual, make sure to throw Wilden Horn, Wilden Spike, and Wilden Wing into the ritual brazier to summon the Boss",
     "mierno.chapter1-2.wilden_summon.desc1": "§cFriendly reminder: This Boss may explode and destroy blocks, do not summon it in your base!",
-    "mierno.chapter1-2.wilden_summon.desc2": "§aFor this Boss, it's recommended to use ranged attacks, such as making a Crystal Bow from Botania (uses Mana to shoot arrows), wear Dream Wings and slowly wear it down from the sky. However, note that this Boss has a flying form, so be prepared to change tactics",
 
     "mierno.chapter1-3.assembly_room.subtitle": "§6→【Click Me】← View the Assembly Room capsule",
     "mierno.chapter1-3.matter_mixer.subtitle": "§6→【Click Me】← View the Matter Mixer capsule",

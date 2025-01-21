@@ -5,6 +5,14 @@
 	group: "7299F76F5EAD0EDE"
 	icon: "mierno:unstable_singularity"
 	id: "390976FF234B8E3A"
+	images: [{
+		height: 3.0d
+		image: "mierno:textures/image/condenser_example.png"
+		rotation: 0.0d
+		width: 5.333333333333333d
+		x: 0.0d
+		y: 3.0d
+	}]
 	order_index: 2
 	quest_links: [ ]
 	quests: [
@@ -12,20 +20,6 @@
 			dependencies: ["6ED6EFD4B2E4AE1E"]
 			id: "17B793516831F2C7"
 			rewards: [
-				{
-					id: "45302F387BFF790F"
-					item: {
-						Count: 1
-						id: "expatternprovider:infinity_cell"
-						tag: {
-							record: {
-								"#c": "ae2:f"
-								id: "minecraft:water"
-							}
-						}
-					}
-					type: "item"
-				}
 				{
 					exclude_from_claim_all: true
 					id: "508CE0A65B6B9FFB"
@@ -43,6 +37,30 @@
 					id: "3FBDF3D428D1AB34"
 					table_id: 5354634242720975076L
 					type: "loot"
+				}
+				{
+					id: "6E1B87A9E2DE7EA0"
+					item: "expatternprovider:ex_io_port"
+					type: "item"
+				}
+				{
+					id: "13B7C6D702A48CD9"
+					item: "ae2:storage_bus"
+					type: "item"
+				}
+				{
+					id: "611291F52534AE3E"
+					item: {
+						Count: 1
+						id: "expatternprovider:infinity_cell"
+						tag: {
+							record: {
+								"#c": "ae2:f"
+								id: "minecraft:water"
+							}
+						}
+					}
+					type: "item"
 				}
 			]
 			shape: "gear"
@@ -1282,21 +1300,32 @@
 				}
 			]
 			shape: "gear"
-			subtitle: "{tooltip.mierno.condenser_2}"
-			tasks: [{
-				id: "4F7E98B1A929419C"
-				item: {
-					Count: 1
-					id: "expatternprovider:infinity_cell"
-					tag: {
-						record: {
-							"#c": "ae2:f"
-							id: "minecraft:water"
+			tasks: [
+				{
+					id: "4F7E98B1A929419C"
+					item: {
+						Count: 1
+						id: "expatternprovider:infinity_cell"
+						tag: {
+							record: {
+								"#c": "ae2:f"
+								id: "minecraft:water"
+							}
 						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "0AA530CBF726D419"
+					item: "expatternprovider:ex_io_port"
+					type: "item"
+				}
+				{
+					id: "794339A4B3854F83"
+					item: "ae2:storage_bus"
+					type: "item"
+				}
+			]
 			x: 0.0d
 			y: 1.35d
 		}

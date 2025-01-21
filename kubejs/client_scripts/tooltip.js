@@ -214,10 +214,6 @@ ItemEvents.tooltip((event) => {
         Text.translate("tooltip.mierno.modular_alfheim_portal_core").gold()
     );
     event.add("evilcraft:eternal_water", Text.translate("tooltip.mierno.eternal_water").gold());
-    event.add("ae2:condenser", [
-        Text.translate("tooltip.mierno.condenser_1").gold(),
-        Text.translate("tooltip.mierno.condenser_2").gold(),
-    ]);
 
     event.add("botania:pinkinator", [
         Text.translate("tooltip.mierno.pinkinator_1").gold(),

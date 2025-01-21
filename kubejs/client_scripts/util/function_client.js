@@ -19,3 +19,24 @@ function convertTime(playTime) {
 
     return result || "";
 }
+
+/**
+ * 转化playTime为时分秒
+ * @param {number} playTime
+ * @returns {string}
+ */
+function convertTimeAnother(playTime) {
+    const totalSeconds = Math.floor(playTime / 20);
+
+    const hours = Math.floor(totalSeconds / 3600);
+    const minutes = Math.floor((totalSeconds % 3600) / 60);
+    const seconds = totalSeconds % 60;
+
+    let result = [];
+
+    if (hours > 0) result.push(Text.translate("mierno.time.hours", hours.toFixed(0)).getString());
+    if (minutes > 0) result.push(Text.translate("mierno.time.minutes", minutes.toFixed(0)).getString());
+    if (seconds > 0) result.push(Text.translate("mierno.time.seconds", seconds.toFixed(0)).getString());
+
+    return result.join(" ") || Text.translate("mierno.time.seconds", "0").getString();
+}

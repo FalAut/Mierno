@@ -193,6 +193,7 @@
     "message.mierno.colossal_furnace_core_no_enough_item": "巨型熔炉框架不足，需要 §a26§r 个，还差 %s 个",
     "message.mierno.terra_plate_error": "当前泰拉凝聚板的结构不正确，请查看泰拉凝聚板的任务获取更多信息",
     "message.mierno.nothing_happened": "什么都没有发生",
+    "message.mierno.game_pass": "玩家 %s 获得了伪逆徽章！\n用时 %s！\n感谢你的游玩！",
 
     "death.attack.mistDamage": "%1$s 迷失了",
 

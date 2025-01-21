@@ -193,6 +193,7 @@
     "message.mierno.colossal_furnace_core_no_enough_item": "The Colossal Furnace frame is incomplete. §a26§r are required, but %s are missing.",
     "message.mierno.terra_plate_error": "The current structure of the Terra Cohesive Plate is incorrect, please check the Terra Cohesive Plate mission for more information.",
     "message.mierno.nothing_happened": "Nothing happened",
+    "message.mierno.game_pass": "Player %s has obtained the Pseudo-Inversion Sigil!\nTime taken: %s!\nThank you for playing!",
 
     "death.attack.mistDamage": "%1$s got lost in the mist",
 

@@ -60,6 +60,15 @@ NetworkEvents.dataReceived("display_playtime", (event) => {
     player.paint({ playtime_counter: { text: convertTime(data.playtime) } });
 });
 
+NetworkEvents.dataReceived("game_pass", (event) => {
+    const { player, data } = event;
+
+    player.sendData("converted_time", {
+        converted_time: convertTimeAnother(data.playtime),
+        playerName: player.username,
+    });
+});
+
 // ClientEvents.loggedIn((event) => {
 //     let isFlatField = $ClientLevelData.__javaObject__.getDeclaredField("f_104832_");
 

@@ -94,8 +94,15 @@ ServerEvents.recipes((event) => {
 
     mierno
         .modular_elven_trade()
-        .inputItems("botania:livingrock")
+        .inputItems("botania:mana_pearl")
         .inputMana(1000)
         .outputItems("ae2:sky_stone_block")
+        .duration(DURATION);
+
+    mierno
+        .modular_elven_trade()
+        .inputItems("botania:livingrock")
+        .inputMana(1000)
+        .outputItems("botania:shimmerrock")
         .duration(DURATION);
 });

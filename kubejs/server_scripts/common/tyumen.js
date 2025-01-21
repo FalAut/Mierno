@@ -16,12 +16,13 @@ PlayerEvents.loggedIn((event) => {
 });
 
 FTBQuestsEvents.customReward("065A030FB09ED60E", (event) => {
-    const { player, server } = event;
-    const hostPlayer = server.getPlayers().stream().findFirst().orElse(null);
+    const { server } = event;
 
-    if (hostPlayer.username == "Tyumen_") {
-        player.tell(Text.red("检测到联机房主是秋明，无法通过任务获取转化桌").bold());
-    } else {
-        player.give("projecte:transmutation_tablet");
-    }
+    server.getPlayers().forEach((player) => {
+        if (player.username == "Tyumen_") {
+            player.tell(Text.red("检测到服务器中存在玩家 Tyumen_，无法通过任务获取转化桌").bold());
+        } else {
+            player.give("projecte:transmutation_tablet");
+        }
+    });
 });

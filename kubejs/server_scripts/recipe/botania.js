@@ -234,7 +234,7 @@ ServerEvents.recipes((event) => {
     botania.elven_trade("botania:dragonstone_block", ["botania:mana_diamond_block", "botania:mana_diamond_block"]);
     botania.elven_trade("botania:pixie_dust", ["botania:mana_powder", "botania:mana_powder"]);
     botania.elven_trade("ae2:certus_quartz_crystal", ["botania:quartz_mana", "botania:quartz_mana"]);
-    botania.elven_trade("ae2:sky_stone_block", "botania:livingrock");
+    botania.elven_trade("ae2:sky_stone_block", "botania:mana_pearl");
     botania.elven_trade("ae2:quartz_block", "botania:mana_quartz");
 
     /**
@@ -341,7 +341,7 @@ ServerEvents.recipes((event) => {
         output: {
             name: "botania:livingwood",
         },
-        time: 5,
+        time: 1,
     });
 
     event.custom({
@@ -353,6 +353,6 @@ ServerEvents.recipes((event) => {
         output: {
             name: "botania:livingrock",
         },
-        time: 5,
+        time: 1,
     });
 });

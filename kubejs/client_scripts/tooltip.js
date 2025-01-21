@@ -12,7 +12,6 @@ ItemEvents.tooltip((event) => {
         { item: "occultism:divination_rod", lines: 4 },
         { item: "naturesaura:time_changer", lines: 5 },
         { item: "mierno:modular_mana_pool_core", lines: 3 },
-        { item: "mierno:modular_imbuement_chamber_core", lines: 2 },
     ];
 
     shiftTooltipItems.forEach((shiftTooltipItem) => {
@@ -33,6 +32,10 @@ ItemEvents.tooltip((event) => {
         });
     });
 
+    event.add("mierno:modular_imbuement_chamber_core", [
+        Text.translate("tooltip.mierno.modular_imbuement_chamber_core_1").gold(),
+        Text.translate("tooltip.mierno.modular_imbuement_chamber_core_2").gold(),
+    ]);
     event.add("oak_sapling", Text.translate("tooltip.mierno.oak_sapling").gold());
     event.add("mierno:oak_mortar", Text.translate("tooltip.mierno.oak_mortar").gold());
     event.add("mierno:dream_latern", Text.translate("tooltip.mierno.dream_latern").gold());

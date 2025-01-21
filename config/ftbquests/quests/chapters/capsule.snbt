@@ -1701,14 +1701,14 @@
 			icon: "mierno:computation_matrix"
 			id: "6B96216B48F88D28"
 			rewards: [{
-				id: "429835716426E747"
+				id: "0311095EB713F725"
 				item: {
 					Count: 1
 					id: "capsule:capsule"
 					tag: {
 						author: "?"
 						canRotate: 0b
-						color: 7105644
+						color: 13421772
 						display: {
 							color: 16777215
 						}
@@ -1720,7 +1720,6 @@
 						structureName: "config/capsule/rewards/computation_matrix.nbt"
 					}
 				}
-				team_reward: true
 				type: "item"
 			}]
 			tasks: [

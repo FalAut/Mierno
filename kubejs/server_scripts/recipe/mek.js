@@ -111,4 +111,10 @@ ServerEvents.recipes((event) => {
         input: { amount: 1, gas: "mekanism:antimatter" },
         output: { item: "mekanism:pellet_antimatter" },
     });
+
+    event.custom({
+        type: "mekanism:oxidizing",
+        input: { ingredient: { tag: "forge:pellets/antimatter" } },
+        output: { amount: 1, gas: "mekanism:antimatter" },
+    });
 });

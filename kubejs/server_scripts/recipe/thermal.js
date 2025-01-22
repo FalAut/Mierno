@@ -451,4 +451,198 @@ ServerEvents.recipes((event) => {
             },
         ],
     });
+
+    event.custom({
+        type: "thermal:tree_extractor",
+        trunk: {
+            Name: "minecraft:acacia_log",
+            Properties: {
+                axis: "y",
+            },
+        },
+        leaves: {
+            Name: "minecraft:acacia_leaves",
+            Properties: {
+                persistent: "false",
+            },
+        },
+        sapling: "minecraft:acacia_sapling",
+        min_height: 5,
+        max_height: 10,
+        min_leaves: 8,
+        max_leaves: 12,
+        result: {
+            fluid: "thermal:resin",
+            amount: 150,
+        },
+    });
+
+    event.custom({
+        type: "thermal:tree_extractor",
+        trunk: {
+            Name: "minecraft:birch_log",
+            Properties: {
+                axis: "y",
+            },
+        },
+        leaves: {
+            Name: "minecraft:birch_leaves",
+            Properties: {
+                persistent: "false",
+            },
+        },
+        sapling: "minecraft:birch_sapling",
+        min_height: 5,
+        max_height: 13,
+        min_leaves: 16,
+        max_leaves: 24,
+        result: {
+            fluid: "thermal:sap",
+            amount: 100,
+        },
+    });
+
+    event.custom({
+        type: "thermal:tree_extractor",
+        trunk: {
+            Name: "minecraft:cherry_log",
+        },
+        leaves: {
+            Name: "minecraft:cherry_leaves",
+            Properties: {
+                persistent: "false",
+            },
+        },
+        sapling: "minecraft:cherry_sapling",
+        min_height: 4,
+        max_height: 8,
+        min_leaves: 16,
+        max_leaves: 24,
+        result: {
+            fluid: "thermal:resin",
+            amount: 150,
+        },
+    });
+
+    event.custom({
+        type: "thermal:tree_extractor",
+        trunk: {
+            Name: "minecraft:dark_oak_log",
+            Properties: {
+                axis: "y",
+            },
+        },
+        leaves: {
+            Name: "minecraft:dark_oak_leaves",
+            Properties: {
+                persistent: "false",
+            },
+        },
+        sapling: "minecraft:dark_oak_sapling",
+        min_height: 5,
+        max_height: 8,
+        min_leaves: 16,
+        max_leaves: 24,
+        result: {
+            fluid: "thermal:sap",
+            amount: 200,
+        },
+    });
+
+    event.custom({
+        type: "thermal:tree_extractor",
+        trunk: {
+            Name: "minecraft:jungle_log",
+            Properties: {
+                axis: "y",
+            },
+        },
+        leaves: {
+            Name: "minecraft:jungle_leaves",
+            Properties: {
+                persistent: "false",
+            },
+        },
+        sapling: "minecraft:jungle_sapling",
+        min_height: 5,
+        max_height: 16,
+        min_leaves: 16,
+        max_leaves: 24,
+        result: {
+            fluid: "thermal:latex",
+            amount: 150,
+        },
+    });
+
+    event.custom({
+        type: "thermal:tree_extractor",
+        trunk: {
+            Name: "minecraft:oak_log",
+        },
+        leaves: {
+            Name: "minecraft:oak_leaves",
+            Properties: {
+                persistent: "false",
+            },
+        },
+        sapling: "minecraft:oak_sapling",
+        min_height: 4,
+        max_height: 10,
+        min_leaves: 16,
+        max_leaves: 24,
+        result: {
+            fluid: "thermal:resin",
+            amount: 150,
+        },
+    });
+
+    event.custom({
+        type: "thermal:tree_extractor",
+        trunk: {
+            Name: "minecraft:spruce_log",
+            Properties: {
+                axis: "y",
+            },
+        },
+        leaves: {
+            Name: "minecraft:spruce_leaves",
+            Properties: {
+                persistent: "false",
+            },
+        },
+        sapling: "minecraft:spruce_sapling",
+        min_height: 5,
+        max_height: 16,
+        min_leaves: 8,
+        max_leaves: 12,
+        result: {
+            fluid: "thermal:resin",
+            amount: 250,
+        },
+    });
+
+    event.custom({
+        type: "thermal:tree_extractor",
+        trunk: {
+            Name: "thermal:rubberwood_log",
+            Properties: {
+                axis: "y",
+            },
+        },
+        leaves: {
+            Name: "thermal:rubberwood_leaves",
+            Properties: {
+                persistent: "false",
+            },
+        },
+        sapling: "thermal:rubberwood_sapling",
+        min_height: 4,
+        max_height: 16,
+        min_leaves: 16,
+        max_leaves: 24,
+        result: {
+            fluid: "thermal:latex",
+            amount: 300,
+        },
+    });
 });

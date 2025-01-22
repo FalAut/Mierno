@@ -82,7 +82,7 @@ ServerEvents.recipes((event) => {
         25000
     );
 
-    botania.terra_plate(
+    botania.runic_altar(
         "botania:terra_plate",
         [
             "mierno:sun_crystal_full",
@@ -99,7 +99,14 @@ ServerEvents.recipes((event) => {
 
     mierno
         .modular_runic_altar()
-        .outputItems("botania:terra_plate")
+        .outputItems([
+            "botania:terra_plate",
+            "botania:rune_fire",
+            "botania:rune_earth",
+            "botania:rune_mana",
+            "botania:rune_air",
+            "botania:rune_water",
+        ])
         .inputItems([
             "mierno:sun_crystal_full",
             "minecraft:lapis_block",

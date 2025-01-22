@@ -19,7 +19,7 @@ ForgeEvents.onEvent("net.minecraftforge.client.event.ScreenEvent$Init$Post", (ev
         let margin = 10;
 
         let buttons = [
-            { label: "QQ测试群", link: "https://qm.qq.com/q/YnQwckyuaK" },
+            { label: "QQ交流群", link: "https://qm.qq.com/q/YnQwckyuaK" },
             { label: "QQ频道", link: "https://pd.qq.com/s/48af4i42y" },
             { label: "Github", link: "https://github.com/FalAut/Mierno" },
             { label: "Discord", link: "https://discord.com/invite/dECQZNNngD" },

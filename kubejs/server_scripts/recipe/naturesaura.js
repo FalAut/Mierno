@@ -155,11 +155,21 @@ ServerEvents.recipes((event) => {
     naturesaura.offering("mierno:whos_gift", "mierno:wrapped_gift");
     naturesaura.offering("mierno:dream_wings", "naturesaura:pet_reviver");
 
-    naturesaura.animal_spawner("cow", ["naturesaura:birth_spirit", "botania:rune_earth"]);
-    naturesaura.animal_spawner("chicken", ["naturesaura:birth_spirit", "botania:rune_air"]);
-    naturesaura.animal_spawner("sheep", ["naturesaura:birth_spirit", "botania:rune_water"]);
-    naturesaura.animal_spawner("pig", ["naturesaura:birth_spirit", "botania:rune_fire"]);
-    naturesaura.animal_spawner("ghast", ["naturesaura:birth_spirit", "minecraft:white_dye"]);
+    naturesaura
+        .animal_spawner("cow", ["naturesaura:birth_spirit", "botania:rune_earth"])
+        .id("naturesaura:animal_spawner/cow");
+    naturesaura
+        .animal_spawner("chicken", ["naturesaura:birth_spirit", "botania:rune_air"])
+        .id("naturesaura:animal_spawner/chicken");
+    naturesaura
+        .animal_spawner("sheep", ["naturesaura:birth_spirit", "botania:rune_water"])
+        .id("naturesaura:animal_spawner/sheep");
+    naturesaura
+        .animal_spawner("pig", ["naturesaura:birth_spirit", "botania:rune_fire"])
+        .id("naturesaura:animal_spawner/pig");
+    naturesaura
+        .animal_spawner("ghast", ["naturesaura:birth_spirit", "minecraft:white_dye"])
+        .id("naturesaura:animal_spawner/ghast");
     naturesaura.animal_spawner("thermal:basalz", ["naturesaura:birth_spirit", "ars_nouveau:earth_essence"]);
     naturesaura.animal_spawner("thermal:blitz", ["naturesaura:birth_spirit", "ars_nouveau:air_essence"]);
     naturesaura.animal_spawner("thermal:blizz", ["naturesaura:birth_spirit", "minecraft:blue_ice"]);

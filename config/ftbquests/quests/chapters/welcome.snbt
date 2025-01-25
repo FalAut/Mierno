@@ -314,32 +314,39 @@
 						cs.aquaSkin: 0
 					}
 				}
-				id: "celestisynth:solaris"
+				id: "ae2wtlib:wireless_universal_terminal"
 				tag: {
-					Damage: 0
-					csController: { }
+					crafting: 1b
+					currentTerminal: "crafting"
+					ex_pattern_access: 1b
+					internalCurrentPower: 6400000.0d
+					internalMaxPower: 6400000.0d
+					pattern_access: 1b
+					pattern_encoding: 1b
 				}
 			}
 			id: "3EE9E3DE66E3340D"
 			rewards: [{
-				exclude_from_claim_all: true
-				icon: {
+				id: "51B3AB1ACBE5CE04"
+				item: {
 					Count: 1
 					ForgeCaps: {
 						"celestisynth:celestisynthitemstackcapabilities": {
 							cs.aquaSkin: 0
 						}
 					}
-					id: "celestisynth:solaris"
+					id: "ae2wtlib:wireless_universal_terminal"
 					tag: {
-						Damage: 0
-						csController: { }
+						crafting: 1b
+						currentTerminal: "crafting"
+						ex_pattern_access: 1b
+						internalCurrentPower: 6400000.0d
+						internalMaxPower: 6400000.0d
+						pattern_access: 1b
+						pattern_encoding: 1b
 					}
 				}
-				id: "4297B69B37F665DC"
-				table_id: 3921120320289517308L
-				team_reward: true
-				type: "choice"
+				type: "item"
 			}]
 			tasks: [{
 				id: "57934F2B0BF1223E"
@@ -435,7 +442,7 @@
 			description: [
 				" {mierno.welcome.community.desc1}"
 				""
-				"{\"text\":\" \",\"extra\":[{\"translate\":\"mierno.welcome.community.qq_group\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://qm.qq.com/q/p2XWehuFrM\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":{\"text\":\"490811326\"}}},{\"text\":\"  |  \",\"color\":\"white\"},{\"translate\":\"mierno.welcome.community.qq_channel\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://pd.qq.com/s/48af4i42y\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":{\"translate\":\"message.mierno.clickopen\"}}},{\"text\":\"  |  \",\"color\":\"white\"},{\"translate\":\"mierno.welcome.community.github\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/FalAut/Mierno\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":{\"translate\":\"message.mierno.clickopen\"}}},{\"text\":\"  |  \",\"color\":\"white\"},{\"translate\":\"mierno.welcome.community.discord\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://discord.com/invite/dECQZNNngD\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":{\"translate\":\"message.mierno.clickopen\"}}}],\"color\":\"gold\"}"
+				"{\"text\":\" \",\"extra\":[{\"text\":\"QQ交流群\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://qm.qq.com/q/p2XWehuFrM\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":{\"text\":\"490811326\"}}},{\"text\":\"  |  \",\"color\":\"white\"},{\"text\":\"QQ频道\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://pd.qq.com/s/48af4i42y\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":{\"translate\":\"message.mierno.clickopen\"}}},{\"text\":\"  |  \",\"color\":\"white\"},{\"translate\":\"mierno.welcome.community.github\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/FalAut/Mierno\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":{\"translate\":\"message.mierno.clickopen\"}}},{\"text\":\"  |  \",\"color\":\"white\"},{\"translate\":\"mierno.welcome.community.discord\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://discord.com/invite/dECQZNNngD\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":{\"translate\":\"message.mierno.clickopen\"}}}],\"color\":\"gold\"}"
 			]
 			disable_toast: true
 			icon: {

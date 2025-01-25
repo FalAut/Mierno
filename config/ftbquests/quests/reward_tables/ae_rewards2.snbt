@@ -1,7 +1,7 @@
 {
 	id: "4A4F7B794386C8E4"
 	loot_size: 3
-	order_index: 5
+	order_index: 4
 	rewards: [
 		{ item: "ae2:interface", weight: 3.0f }
 		{ item: "expatternprovider:ex_interface", weight: 0.1f }

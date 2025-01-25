@@ -1,7 +1,7 @@
 {
 	id: "17412109B9214183"
 	loot_size: 3
-	order_index: 4
+	order_index: 3
 	rewards: [
 		{ item: "ae2:logic_processor", random_bonus: 16, team_reward: true }
 		{ item: "ae2:calculation_processor", random_bonus: 16, team_reward: true }

@@ -1,7 +1,7 @@
 {
 	id: "54C2FCAF8FA9B6EC"
 	loot_size: 1
-	order_index: 1
+	order_index: 0
 	rewards: [
 		{ item: "minecraft:sunflower" }
 		{ item: "minecraft:sugar_cane" }

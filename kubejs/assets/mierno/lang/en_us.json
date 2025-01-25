@@ -455,6 +455,7 @@
     "mierno.welcome.community.title": "Community",
     "mierno.welcome.community.subtitle": "Feedback & Communication",
     "mierno.welcome.community.desc1": "Welcome to join our community, click the text below to get links",
+    "mierno.welcome.community.qq_group": "QQ Group",
     "mierno.welcome.community.qq_channel": "QQ Channel",
     "mierno.welcome.community.github": "Github",
     "mierno.welcome.community.discord": "Discord",
@@ -573,7 +574,8 @@
     "mierno.chapter3-2.computation_matrix.subtitle": "§6→【Click Me】← View Computation Matrix capsule",
 
     "mierno.chapter3-3.pseudo_inversion_ritual.subtitle": "§6→【Click Me】← View Pseudo Inversion Ritual capsule",
-    "mierno.chapter3-3.fake_sigil.subtitle": "If you don't want to play the ritual, that's fine. Just redeem it.",
+    "mierno.chapter3-3.pseudo_inversion_ritual.desc1": "Don't know how to make the Pseudo Inversion Sigil? Click on the text below for a link to the tutorial!",
+    "mierno.chapter3-3.fake_sigil.subtitle": "§6If you don't want to play the ritual, that's fine. Just redeem it.",
 
     "kubejs.ponder.addition_ritual.header": "Addition Ritual",
     "kubejs.ponder.ancient_aura_generator.header": "Aura Generation",

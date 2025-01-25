@@ -230,7 +230,10 @@ ItemEvents.tooltip((event) => {
     event.add("forbidden_arcanus:enchanted_soul", Text.translate("tooltip.mierno.enchanted_soul").gold());
     event.add("mierno:blood_converter", Text.translate("tooltip.mierno.blood_converter").gold());
     event.add("forbidden_arcanus:blood_test_tube", Text.translate("tooltip.mierno.blood_test_tube").gold());
-
+    event.add(
+        "naturesaura:bottle_two_the_rebottling",
+        Text.translate("tooltip.mierno.bottle_two_the_rebottling").gold()
+    );
     event.add(
         [
             "forbidden_arcanus:arcane_crystal_ore",

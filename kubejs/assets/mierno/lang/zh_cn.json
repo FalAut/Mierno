@@ -330,7 +330,8 @@
     "tooltip.mierno.blacker_lotus": "可通过合成复制",
     "tooltip.mierno.vengeance_essence": "使用复仇刺穿棱镜击杀复仇之魂掉落",
     "tooltip.mierno.creative_blood_drop": "使用创造血源右键血之祭坛可为其输入生命源质到最大上限",
-    "tooltip.mierno.clibano_core": "§e与熔炉一样使用燃料§r，一些配方需要同时添加灵魂进行烧炼",
+    "tooltip.mierno.clibano_core": "与熔炉一样使用燃料",
+    "tooltip.mierno.bottle_two_the_rebottling": "注意：因灵气失衡而产生的所有效果已被关闭",
 
     "biome.mierno.black_and_white": "黑与白",
     "biome.mierno.misty_forest": "迷雾森林",

@@ -330,7 +330,8 @@
     "tooltip.mierno.blacker_lotus": "Can be duplicated by crafting",
     "tooltip.mierno.vengeance_essence": "Dropped by killing Spirit of Vengeance with the Piercing Vengeance Focus",
     "tooltip.mierno.creative_blood_drop": "Using Creative Blood Dropright right click on the Blood Altar will feed it life essence up to its maximum limit.",
-    "tooltip.mierno.clibano_core": "§e uses the same fuel as a furnace §r, and some recipes require the addition of souls to be fired at the same time",
+    "tooltip.mierno.clibano_core": "uses the same fuel as a furnace",
+    "tooltip.mierno.bottle_two_the_rebottling": "Note: All effects due to aura imbalance have been turned off",
 
     "biome.mierno.black_and_white": "Black and White",
     "biome.mierno.misty_forest": "Misty Forest",

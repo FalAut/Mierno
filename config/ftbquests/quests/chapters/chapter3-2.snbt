@@ -214,6 +214,43 @@
 			x: 3.5d
 			y: 1.0d
 		}
+		{
+			can_repeat: true
+			icon: {
+				Count: 1
+				id: "mierno:subtraction_sigil"
+				tag: {
+					Enchantments: [{
+						id: "mierno:activate"
+						lvl: 1s
+					}]
+				}
+			}
+			id: "66389D922DCE9246"
+			rewards: [{
+				id: "066F4930F2EEA243"
+				item: {
+					Count: 1
+					id: "mierno:subtraction_sigil"
+					tag: {
+						Enchantments: [{
+							id: "mierno:activate"
+							lvl: 1s
+						}]
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "08D1CA0357C1E540"
+				item: "mekanism:pellet_antimatter"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -2.5d
+		}
 	]
 	title: "{mierno.chapter3-2.title}"
 }

@@ -6,11 +6,94 @@
 		{
 			item: {
 				Count: 1
-				id: "expatternprovider:infinity_cell"
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "celestisynth:solaris"
 				tag: {
-					record: {
-						"#c": "ae2:i"
-						id: "minecraft:white_concrete"
+					Damage: 0
+					csController: { }
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "celestisynth:crescentia"
+				tag: {
+					Damage: 0
+					csController: { }
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "celestisynth:breezebreaker"
+				tag: {
+					Damage: 0
+					csController: { }
+					csExtras: { }
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "celestisynth:poltergeist"
+				tag: {
+					Damage: 0
+					csController: { }
+					csExtras: { }
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "celestisynth:aquaflora"
+				tag: {
+					Damage: 0
+					csController: { }
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "celestisynth:rainfall_serenity"
+				tag: {
+					Damage: 0
+					csExtras: {
+						cs.pull: 0.0f
+						cs.pulling: 0.0f
 					}
 				}
 			}
@@ -18,30 +101,35 @@
 		{
 			item: {
 				Count: 1
-				id: "expatternprovider:infinity_cell"
-				tag: {
-					record: {
-						"#c": "ae2:i"
-						id: "minecraft:gray_concrete"
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
 					}
+				}
+				id: "celestisynth:frostbound"
+				tag: {
+					Damage: 0
+					csController: { }
 				}
 			}
 		}
 		{
 			item: {
 				Count: 1
-				id: "ae2wtlib:wireless_universal_terminal"
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "celestisynth:keres"
 				tag: {
-					crafting: 1b
-					currentTerminal: "crafting"
-					ex_pattern_access: 1b
-					internalCurrentPower: 6400000.0d
-					internalMaxPower: 6400000.0d
-					pattern_access: 1b
-					pattern_encoding: 1b
+					Damage: 0
+					csController: {
+						cs.keresStack: 0
+					}
 				}
 			}
 		}
 	]
-	title: "ae_things"
+	title: "celestisynth"
 }

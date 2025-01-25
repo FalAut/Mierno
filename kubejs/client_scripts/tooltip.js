@@ -272,4 +272,9 @@ ItemEvents.tooltip((event) => {
         ["thermal:apatite_ore", "thermal:cinnabar_ore", "thermal:niter_ore", "thermal:sulfur_ore"],
         Text.translate("tooltip.mierno.mistyforest_ore").gold()
     );
+    event.add(
+        ["evilcraft:blood_infuser", "evilcraft:sanguinary_environmental_accumulator", "evilcraft:spirit_furnace"],
+        Text.translate("tooltip.mierno.evilcraft_machine").gold()
+    );
+    event.add("evilcraft:spirit_furnace", Text.translate("tooltip.mierno.spirit_furnace").gold());
 });

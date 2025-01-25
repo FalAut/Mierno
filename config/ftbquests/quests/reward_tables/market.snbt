@@ -31,6 +31,26 @@
 		{ item: "minecraft:melon_seeds" }
 		{ item: "minecraft:snowball" }
 		{ item: "minecraft:spider_eye" }
+		{
+			item: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "ae2wtlib:wireless_universal_terminal"
+				tag: {
+					crafting: 1b
+					currentTerminal: "crafting"
+					ex_pattern_access: 1b
+					internalCurrentPower: 6400000.0d
+					internalMaxPower: 6400000.0d
+					pattern_access: 1b
+					pattern_encoding: 1b
+				}
+			}
+		}
 	]
 	title: "market"
 }

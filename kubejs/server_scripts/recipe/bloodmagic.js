@@ -283,6 +283,28 @@ ServerEvents.recipes((event) => {
     });
 
     event.custom({
+        type: "bloodmagic:soulforge",
+        drain: 10.0,
+        input0: {
+            item: "minecraft:shears",
+        },
+        input1: {
+            tag: "forge:stone",
+        },
+        input2: {
+            item: "bloodmagic:infusedslate",
+        },
+        input3: {
+            tag: "forge:ingots/iron",
+        },
+        minimumDrain: 10.0,
+        output: {
+            item: "bloodmagic:sanguinereverter",
+            nbt: "{Damage:0}",
+        },
+    });
+
+    event.custom({
         type: "bloodmagic:meteor",
         explosion: 8.0,
         input: {

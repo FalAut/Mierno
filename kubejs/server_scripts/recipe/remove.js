@@ -283,7 +283,7 @@ ServerEvents.recipes((event) => {
         "thermal:devices/tree_extractor/tree_extractor_birch",
         "thermal:devices/tree_extractor/tree_extractor_cherry",
         "thermal:devices/tree_extractor/tree_extractor_jungle",
-        "",
+        "bloodmagic:soulforge/sanguine_reverter",
         "",
         "",
         "",

@@ -9,6 +9,13 @@
 	quest_links: [ ]
 	quests: [
 		{
+			description: [
+				"{mierno.chapter3-3.pseudo_inversion_ritual.desc1}"
+				""
+				"{\"text\":\"MC百科\",\"color\":\"gold\",\"bold\":true,\"underlined\":true,\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://www.mcmod.cn/item/10243.html\"}}"
+				""
+				"{\"text\":\"FTB Wiki\",\"color\":\"gold\",\"bold\":true,\"underlined\":true,\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://ftb.fandom.com/wiki/Pseudo-Inversion_Sigil\"}}"
+			]
 			id: "65D6E364C4132106"
 			shape: "gear"
 			size: 2.0d
@@ -752,6 +759,50 @@
 			}]
 			x: 0.0d
 			y: -3.5d
+		}
+		{
+			can_repeat: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "mierno:fake_sigil"
+			}
+			id: "74B3B9E9EBF68260"
+			rewards: [{
+				id: "573230BC95BD0680"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "mierno:fake_sigil"
+				}
+				team_reward: true
+				type: "item"
+			}]
+			subtitle: "{mierno.chapter3-3.fake_sigil.subtitle}"
+			tasks: [{
+				consume_items: true
+				id: "16BBDEEE2C91070F"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "mierno:memory_matrix"
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.0d
 		}
 	]
 	title: "{mierno.chapter3-3.title}"

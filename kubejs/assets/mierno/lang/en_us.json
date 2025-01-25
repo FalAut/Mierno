@@ -333,6 +333,8 @@
     "tooltip.mierno.clibano_core": "uses the same fuel as a furnace",
     "tooltip.mierno.bottle_two_the_rebottling": "Note: breathless and explosion effects due to aura imbalance have been turned off",
     "tooltip.mierno.right_click_to_equip": "Right click to equip",
+    "tooltip.mierno.evilcraft_machine": "Note: Evilcraft machines follow the 'input from the top, output from the bottom' rule—materials must be input from the top, and products output from the bottom.",
+    "tooltip.mierno.spirit_furnace": "Tip: The Spirit Furnace can be bound to an Entangled Block for use.",
 
     "biome.mierno.black_and_white": "Black and White",
     "biome.mierno.misty_forest": "Misty Forest",
@@ -571,6 +573,7 @@
     "mierno.chapter3-2.computation_matrix.subtitle": "§6→【Click Me】← View Computation Matrix capsule",
 
     "mierno.chapter3-3.pseudo_inversion_ritual.subtitle": "§6→【Click Me】← View Pseudo Inversion Ritual capsule",
+    "mierno.chapter3-3.fake_sigil.subtitle": "If you don't want to play the ritual, that's fine. Just redeem it.",
 
     "kubejs.ponder.addition_ritual.header": "Addition Ritual",
     "kubejs.ponder.ancient_aura_generator.header": "Aura Generation",

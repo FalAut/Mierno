@@ -309,17 +309,33 @@
 			disable_toast: true
 			icon: {
 				Count: 1
-				id: "expatternprovider:infinity_cell"
-				tag: {
-					record: {
-						"#c": "ae2:i"
-						id: "minecraft:white_concrete"
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
 					}
+				}
+				id: "celestisynth:solaris"
+				tag: {
+					Damage: 0
+					csController: { }
 				}
 			}
 			id: "3EE9E3DE66E3340D"
 			rewards: [{
 				exclude_from_claim_all: true
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestisynth:solaris"
+					tag: {
+						Damage: 0
+						csController: { }
+					}
+				}
 				id: "4297B69B37F665DC"
 				table_id: 3921120320289517308L
 				team_reward: true

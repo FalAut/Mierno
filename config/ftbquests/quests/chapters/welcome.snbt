@@ -16,8 +16,6 @@
 				"{mierno.welcome.main.desc2}"
 				""
 				"{mierno.welcome.main.desc3}"
-				""
-				"{mierno.welcome.main.desc4}"
 			]
 			disable_toast: true
 			icon: {
@@ -311,17 +309,33 @@
 			disable_toast: true
 			icon: {
 				Count: 1
-				id: "expatternprovider:infinity_cell"
-				tag: {
-					record: {
-						"#c": "ae2:i"
-						id: "minecraft:white_concrete"
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
 					}
+				}
+				id: "celestisynth:solaris"
+				tag: {
+					Damage: 0
+					csController: { }
 				}
 			}
 			id: "3EE9E3DE66E3340D"
 			rewards: [{
 				exclude_from_claim_all: true
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestisynth:solaris"
+					tag: {
+						Damage: 0
+						csController: { }
+					}
+				}
 				id: "4297B69B37F665DC"
 				table_id: 3921120320289517308L
 				team_reward: true
@@ -378,6 +392,7 @@
 			y: -1.5d
 		}
 		{
+			can_repeat: true
 			description: [
 				"{mierno.welcome.backup.desc1}"
 				""
@@ -401,6 +416,11 @@
 				}
 			}
 			id: "0E06636DACBA0779"
+			rewards: [{
+				id: "4EC030720E5B8AC7"
+				type: "xp"
+				xp: 1
+			}]
 			subtitle: "{mierno.welcome.backup.subtitle}"
 			tasks: [{
 				id: "7DDC9678810D119B"
@@ -411,10 +431,11 @@
 			y: 1.5d
 		}
 		{
+			can_repeat: true
 			description: [
-				"{mierno.welcome.community.desc1}"
+				" {mierno.welcome.community.desc1}"
 				""
-				"{\"text\":\"      \",\"extra\":[{\"translate\":\"mierno.welcome.community.qq_channel\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://pd.qq.com/s/48af4i42y\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":{\"translate\":\"message.mierno.clickopen\"}}},{\"text\":\"   |   \",\"color\":\"white\"},{\"translate\":\"mierno.welcome.community.github\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/FalAut/Mierno\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":{\"translate\":\"message.mierno.clickopen\"}}},{\"text\":\"   |   \",\"color\":\"white\"},{\"translate\":\"mierno.welcome.community.discord\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://discord.com/invite/dECQZNNngD\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":{\"translate\":\"message.mierno.clickopen\"}}}],\"color\":\"gold\"}"
+				"{\"text\":\" \",\"extra\":[{\"translate\":\"mierno.welcome.community.qq_group\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://qm.qq.com/q/p2XWehuFrM\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":{\"text\":\"490811326\"}}},{\"text\":\"  |  \",\"color\":\"white\"},{\"translate\":\"mierno.welcome.community.qq_channel\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://pd.qq.com/s/48af4i42y\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":{\"translate\":\"message.mierno.clickopen\"}}},{\"text\":\"  |  \",\"color\":\"white\"},{\"translate\":\"mierno.welcome.community.github\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/FalAut/Mierno\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":{\"translate\":\"message.mierno.clickopen\"}}},{\"text\":\"  |  \",\"color\":\"white\"},{\"translate\":\"mierno.welcome.community.discord\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://discord.com/invite/dECQZNNngD\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":{\"translate\":\"message.mierno.clickopen\"}}}],\"color\":\"gold\"}"
 			]
 			disable_toast: true
 			icon: {
@@ -425,6 +446,11 @@
 				}
 			}
 			id: "0FA0564AC1CAA53D"
+			rewards: [{
+				id: "406B8BDF06B31D40"
+				type: "xp"
+				xp: 1
+			}]
 			subtitle: "{mierno.welcome.community.subtitle}"
 			tasks: [{
 				id: "60AC0D4488A78F3B"

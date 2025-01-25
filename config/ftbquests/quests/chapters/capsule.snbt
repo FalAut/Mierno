@@ -965,6 +965,20 @@
 					item: "mierno:item_input"
 					type: "item"
 				}
+				{
+					consume_items: true
+					id: "68452017E02143BA"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "mierno:item_output"
+					}
+					type: "item"
+				}
 			]
 			x: -1.5d
 			y: 5.0d
@@ -1421,6 +1435,55 @@
 					item: { Count: 20, id: "ars_nouveau:archwood_stairs" }
 					type: "item"
 				}
+				{
+					consume_items: true
+					id: "61EB547FAD9BEEA6"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "mierno:item_input"
+					}
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "7EABFD1FA4BD6F70"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "mierno:item_output"
+					}
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "2184CBFCD4852AF4"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "ars_nouveau:source_jar"
+						tag: {
+							BlockEntityTag: {
+								Items: [ ]
+								id: "ars_nouveau:source_jar"
+								source: 10000
+							}
+						}
+					}
+					type: "item"
+				}
 			]
 			x: 1.5d
 			y: 2.0d
@@ -1701,14 +1764,14 @@
 			icon: "mierno:computation_matrix"
 			id: "6B96216B48F88D28"
 			rewards: [{
-				id: "429835716426E747"
+				id: "0311095EB713F725"
 				item: {
 					Count: 1
 					id: "capsule:capsule"
 					tag: {
 						author: "?"
 						canRotate: 0b
-						color: 7105644
+						color: 13421772
 						display: {
 							color: 16777215
 						}
@@ -1720,7 +1783,6 @@
 						structureName: "config/capsule/rewards/computation_matrix.nbt"
 					}
 				}
-				team_reward: true
 				type: "item"
 			}]
 			tasks: [

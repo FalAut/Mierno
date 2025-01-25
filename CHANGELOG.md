@@ -1,7 +1,7 @@
 ## v0.2.5
 
 -   修复了自然灵气指南在某些地区无法使用的问题
--   修复了创造模式压缩机在某些地区无法使用的问题
+-   修复了创造模式压缩机在某些地区无法使用的问题（将 PNE 从 6.0.18 更新到 6.0.19）
 -   微光石现在可以使用精灵交易制作，不再需要活石放在激活的精灵传送门附近转化
 -   精灵门核心现在允许使用时间之瓶加速，不会再造成卡顿
 -   关闭了灵气失衡而产生的窒息和爆炸效果
@@ -14,6 +14,33 @@
 -   提高虚空矿物采掘机控制器的最大能量接收上限
 -   血染恢复宝具制作所需的恶魔意志降低为 10
 -   修复模块化符文祭坛和模块化灌注室胶囊任务需求不正确的问题
+-   添加创造能量立方的配方
+-   将钋球和钚球制作所需的钋和钚降为 1mb
+-   更新一些模组
+-   将 Forge 更新到 47.3.25
+-   注：因此次涉及模组变更，故不提供热修补
+
+---
+
+-   Fixed the issue where the Natural Aura Guide was unusable in certain regions.
+-   Fixed the issue where the Creative Mode Compressor was unusable in certain regions (updated PNE from 6.0.18 to 6.0.19).
+-   Glimmering Stone can now be crafted through sprite trading and no longer requires Living Rock placed near an activated Elven Gateway for transformation.
+-   The Elven Gateway Core now supports acceleration using the Time Bottle without causing lag.
+-   Disabled suffocation and explosion effects caused by Aura Imbalance.
+-   Slashing Badge, Fusion Badge, and Pseudo-Inversion Badge can now be exchanged through quests.
+-   Restored the recipes for subtraction and multiplication in Digital Synthesis.
+-   Added the Undying Enchantment and Unshakable Enchantment.
+-   All equipment can now be equipped directly by right-clicking in the GUI.
+-   You can now accelerate climbing by looking upward or downward.
+-   Added a new mod – "Celestisynth"
+-   Increased the maximum energy input limit for the Void Ore Miner Controller.
+-   Reduced the Demon Will requirement for crafting the Bloodstained Recovery Relic to 10.
+-   Fixed incorrect capsule quest requirements for the Modular Rune Altar and Modular Infusion Chamber.
+-   Added a recipe for the Creative Energy Cube.
+-   Reduced the Polonium and Plutonium required for crafting Polonium Pellets and Plutonium Pellets to 1mb.
+-   Updated several mods.
+-   Updated Forge to version 47.3.25.
+-   Note: Due to changes involving mods, no hotfixes will be provided for this update.
 
 ## v0.2.4
 

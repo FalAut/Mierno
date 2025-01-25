@@ -117,4 +117,24 @@ ServerEvents.recipes((event) => {
         input: { ingredient: { tag: "forge:pellets/antimatter" } },
         output: { amount: 1, gas: "mekanism:antimatter" },
     });
+
+    event.custom({
+        type: "mekanism:reaction",
+        duration: 100,
+        fluidInput: { amount: 1000, tag: "minecraft:water" },
+        gasInput: { amount: 1, gas: "mekanism:polonium" },
+        gasOutput: { amount: 1, gas: "mekanism:spent_nuclear_waste" },
+        itemInput: { ingredient: { tag: "forge:dusts/fluorite" } },
+        itemOutput: { item: "mekanism:pellet_polonium" },
+    });
+
+    event.custom({
+        type: "mekanism:reaction",
+        duration: 100,
+        fluidInput: { amount: 1000, tag: "minecraft:water" },
+        gasInput: { amount: 1, gas: "mekanism:plutonium" },
+        gasOutput: { amount: 1, gas: "mekanism:spent_nuclear_waste" },
+        itemInput: { ingredient: { tag: "forge:dusts/fluorite" } },
+        itemOutput: { item: "mekanism:pellet_plutonium" },
+    });
 });

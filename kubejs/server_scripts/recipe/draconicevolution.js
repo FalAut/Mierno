@@ -35,6 +35,6 @@ ServerEvents.recipes((event) => {
             nbt: '{mekData:{EnergyContainers:[{Container:0b,stored:"18446744073709551615.9999"}],componentConfig:{config0:{side0:4,side1:4,side2:4,side3:4,side4:4,side5:4}}}}',
         },
         tier: "CHAOTIC",
-        total_energy: 9223372036854775807,
+        total_energy: 2147483647,
     });
 });

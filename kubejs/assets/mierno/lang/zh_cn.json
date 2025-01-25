@@ -431,11 +431,10 @@
 
     "mierno.chapter5.title": "V.伪逆",
 
-    "mierno.welcome.main.subtitle": "§c本包当前仍然处于制作阶段，有任何问题请加QQ交流群490811326，感谢配合",
+    "mierno.welcome.main.subtitle": "§c本包仍处于制作阶段，如有问题可前往社群反馈，感谢配合！",
     "mierno.welcome.main.desc1": "§c本整合包适合对各种模组和自动化有一定了解的玩家。§r",
-    "mierno.welcome.main.desc2": "前期不可避免地需要手搓，前期的任务会赠送大量的材料加速这个过程。",
-    "mierno.welcome.main.desc3": "制作这个整合包纯属个人兴趣爱好。尽管我投入了大量时间和精力，但个人能力有限，无法满足所有玩家的需求。",
-    "mierno.welcome.main.desc4": "如果这个整合包不符合你的喜好，别忘了你随时可以退出游戏，无需勉强。",
+    "mierno.welcome.main.desc2": "制作这个整合包纯属个人兴趣爱好。尽管我投入了大量时间和精力，但个人能力有限，无法满足所有玩家的需求。",
+    "mierno.welcome.main.desc3": "如果这个整合包不符合你的喜好，别忘了你随时可以退出游戏，无需勉强。",
 
     "mierno.welcome.special_thanks.title": "特别感谢",
     "mierno.welcome.special_thanks.falaut": "§6落秋§r - 作者",
@@ -451,6 +450,7 @@
     "mierno.welcome.community.title": "社群",
     "mierno.welcome.community.subtitle": "反馈与交流",
     "mierno.welcome.community.desc1": "欢迎加入我们的社群，点击下面的文字获取链接",
+    "mierno.welcome.community.qq_group": "QQ交流群",
     "mierno.welcome.community.qq_channel": "QQ频道",
     "mierno.welcome.community.github": "Github",
     "mierno.welcome.community.discord": "Discord",

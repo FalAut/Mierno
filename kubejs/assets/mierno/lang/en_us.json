@@ -431,11 +431,10 @@
 
     "mierno.chapter5.title": "V. Pseudo Inversion",
 
-    "mierno.welcome.main.subtitle": "§cThis pack is currently in production phase. If you encounter any issues, please join Discord or post in Github. Thank you for your cooperation",
+    "mierno.welcome.main.subtitle": "§cThis package is still under development. If you encounter any issues, please feel free to provide feedback in the community. Thank you for your cooperation!",
     "mierno.welcome.main.desc1": "§cThis modpack is designed for players who have a certain understanding of various mods and automation.§r",
-    "mierno.welcome.main.desc2": "In the early stages, manual work is inevitable, but early tasks will provide plenty of materials to speed up the process.",
-    "mierno.welcome.main.desc3": "The creation of this modpack is purely a personal hobby. Although I have invested a lot of time and effort, my personal capabilities are limited, so it may not meet the needs of every player.",
-    "mierno.welcome.main.desc4": "If this modpack does not suit your preferences, remember that you can exit the game at any time without any pressure.",
+    "mierno.welcome.main.desc2": "The creation of this modpack is purely a personal hobby. Although I have invested a lot of time and effort, my personal capabilities are limited, so it may not meet the needs of every player.",
+    "mierno.welcome.main.desc3": "If this modpack does not suit your preferences, remember that you can exit the game at any time without any pressure.",
 
     "mierno.welcome.special_thanks.title": "Special Thanks",
     "mierno.welcome.special_thanks.falaut": "§6FalAut§r - Author",

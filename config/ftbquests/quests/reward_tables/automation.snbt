@@ -1,7 +1,7 @@
 {
 	id: "1254325A69EE202A"
 	loot_size: 3
-	order_index: 6
+	order_index: 5
 	rewards: [
 		{ item: "modularrouters:modular_router", weight: 3.0f }
 		{ item: "modularrouters:augment_core" }

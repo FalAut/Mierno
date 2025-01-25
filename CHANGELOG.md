@@ -1,7 +1,17 @@
+## v0.2.6
+
+-   新增模组 - ME Requester
+-   移除模组 - Celestisynth
+-   如果您在上一版本 (0.2.5) 中加载过存档，很遗憾，您的存档可能已经受到污染。Celestisynth 模组可能会导致 AE 的一些自动化问题（ME 物品存储元件被附加了一些奇怪的标签）。您可以尝试使用 ME IO 端口将受污染元件的数据转移到新的元件中，或者恢复最近的备份。对此我深感抱歉！
+
+-   Mod Added - ME Requester
+-   Mod Removed - Celestisynth
+-   If you have loaded a save in the previous version (0.2.5), unfortunately, your save might have been corrupted. The Celestisynth module could cause certain automation issues in AE (ME Item storage components being tagged with unusual labels). You can try transferring the data from the corrupted components to new ones using the ME IO Port or restore your most recent backup. I sincerely apologize for the inconvenience!
+
 ## v0.2.5
 
 -   修复了自然灵气指南在某些地区无法使用的问题
--   修复了创造模式压缩机在某些地区无法使用的问题（将 PNE 从 6.0.18 更新到 6.0.19）
+-   修复了创造模式压缩机在某些地区无 s 法使用的问题（将 PNE 从 6.0.18 更新到 6.0.19）
 -   微光石现在可以使用精灵交易制作，不再需要活石放在激活的精灵传送门附近转化
 -   精灵门核心现在允许使用时间之瓶加速，不会再造成卡顿
 -   关闭了灵气失衡而产生的窒息和爆炸效果

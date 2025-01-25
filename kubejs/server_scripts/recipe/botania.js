@@ -243,6 +243,7 @@ ServerEvents.recipes((event) => {
     botania.elven_trade("ae2:certus_quartz_crystal", ["botania:quartz_mana", "botania:quartz_mana"]);
     botania.elven_trade("ae2:sky_stone_block", "botania:mana_pearl");
     botania.elven_trade("ae2:quartz_block", "botania:mana_quartz");
+    botania.elven_trade("botania:shimmerrock", "botania:livingrock");
 
     /**
      * @param {OutputItem_} output

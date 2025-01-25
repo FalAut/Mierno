@@ -470,4 +470,42 @@ ServerEvents.recipes((event) => {
         reagent: [{ item: "ars_nouveau:summon_focus" }],
         sourceCost: 10000,
     });
+
+    event.custom({
+        type: "ars_nouveau:enchantment",
+        enchantment: "mierno:last_stand",
+        level: 1,
+        pedestalItems: [
+            {
+                item: {
+                    item: "forbidden_arcanus:xpetrified_orb",
+                },
+            },
+            {
+                item: {
+                    item: "evilcraft:creative_blood_drop",
+                },
+            },
+            {
+                item: {
+                    item: "forbidden_arcanus:enchanted_soul",
+                },
+            },
+        ],
+        sourceCost: 10000,
+    });
+
+    event.custom({
+        type: "ars_nouveau:enchantment",
+        enchantment: "mierno:undying",
+        level: 1,
+        pedestalItems: [
+            {
+                item: {
+                    item: "minecraft:totem_of_undying",
+                },
+            },
+        ],
+        sourceCost: 10000,
+    });
 });

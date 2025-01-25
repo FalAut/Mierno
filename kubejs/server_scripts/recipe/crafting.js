@@ -80,6 +80,17 @@ ServerEvents.recipes((event) => {
     copySelf("ae2:creative_energy_cell");
 
     kubejs.shapeless(
+        Item.of(
+            "mekanism:creative_energy_cube",
+            2,
+            '{mekData:{EnergyContainers:[{Container:0b,stored:"18446744073709551615.9999"}],componentConfig:{config0:{side0:4,side1:4,side2:4,side3:4,side4:4,side5:4}}}}'
+        ),
+        Item.of(
+            "mekanism:creative_energy_cube",
+            '{mekData:{EnergyContainers:[{Container:0b,stored:"18446744073709551615.9999"}],componentConfig:{config0:{side0:4,side1:4,side2:4,side3:4,side4:4,side5:4}}}}'
+        ).weakNBT()
+    );
+    kubejs.shapeless(
         Item.of("botania:mana_tablet", 2, "{creative:1b,mana:500000}"),
         Item.of("botania:mana_tablet", "{creative:1b,mana:500000}").weakNBT()
     );
@@ -1065,27 +1076,27 @@ ServerEvents.recipes((event) => {
                     .keepIngredient("mierno:division_sigil");
             }
 
-            // // 减法
-            // if (i - j >= 0) {
-            //     kubejs
-            //         .shaped(`mierno:${i - j}`, ["ABC"], {
-            //             A: `mierno:${i}`,
-            //             B: Item.of("mierno:subtraction_sigil").enchant("mierno:activate", 1).weakNBT(),
-            //             C: `mierno:${j}`,
-            //         })
-            //         .keepIngredient("mierno:subtraction_sigil");
-            // }
+            // 减法
+            if (i - j >= 0) {
+                kubejs
+                    .shaped(`mierno:${i - j}`, ["ABC"], {
+                        A: `mierno:${i}`,
+                        B: Item.of("mierno:subtraction_sigil").enchant("mierno:activate", 1).weakNBT(),
+                        C: `mierno:${j}`,
+                    })
+                    .keepIngredient("mierno:subtraction_sigil");
+            }
 
-            // // 乘法
-            // if (i * j <= 9) {
-            //     kubejs
-            //         .shaped(`mierno:${i * j}`, ["ABC"], {
-            //             A: `mierno:${i}`,
-            //             B: Item.of("mierno:multiplication_sigil").enchant("mierno:activate", 1).weakNBT(),
-            //             C: `mierno:${j}`,
-            //         })
-            //         .keepIngredient("mierno:multiplication_sigil");
-            // }
+            // 乘法
+            if (i * j <= 9) {
+                kubejs
+                    .shaped(`mierno:${i * j}`, ["ABC"], {
+                        A: `mierno:${i}`,
+                        B: Item.of("mierno:multiplication_sigil").enchant("mierno:activate", 1).weakNBT(),
+                        C: `mierno:${j}`,
+                    })
+                    .keepIngredient("mierno:multiplication_sigil");
+            }
         }
     }
 });

@@ -144,3 +144,23 @@ function checkAreaWithAABBIsEmptyBlockWithoutCore(level, aabb, corePos) {
     }
     return true;
 }
+
+/**
+ *
+ * @param {Internal.LivingEntity} entity
+ * @returns
+ */
+function tryRemoveUndyingEnchantment(entity) {
+    for (let item of entity.armorSlots) {
+        let enchantmentTags = item.enchantmentTags;
+
+        for (let i = 0; i < enchantmentTags.size(); i++) {
+            let enchantment = enchantmentTags.get(i);
+            if (enchantment.get("id") == "mierno:undying") {
+                enchantmentTags.remove(i);
+                return true;
+            }
+        }
+    }
+    return false;
+}

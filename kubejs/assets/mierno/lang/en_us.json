@@ -331,13 +331,16 @@
     "tooltip.mierno.vengeance_essence": "Dropped by killing Spirit of Vengeance with the Piercing Vengeance Focus",
     "tooltip.mierno.creative_blood_drop": "Using Creative Blood Dropright right click on the Blood Altar will feed it life essence up to its maximum limit.",
     "tooltip.mierno.clibano_core": "uses the same fuel as a furnace",
-    "tooltip.mierno.bottle_two_the_rebottling": "Note: All effects due to aura imbalance have been turned off",
+    "tooltip.mierno.bottle_two_the_rebottling": "Note: breathless and explosion effects due to aura imbalance have been turned off",
+    "tooltip.mierno.right_click_to_equip": "Right click to equip",
 
     "biome.mierno.black_and_white": "Black and White",
     "biome.mierno.misty_forest": "Misty Forest",
     "biome.mierno.otherworld": "Otherworld",
 
     "enchantment.mierno.activate": "Activate",
+    "enchantment.mierno.undying": "Undying",
+    "enchantment.mierno.last_stand": "Last Stand",
 
     "mierno.startup.time": "Game startup time: §a%s§r seconds",
     "mierno.startup.performance": "Faster than 99% of players",

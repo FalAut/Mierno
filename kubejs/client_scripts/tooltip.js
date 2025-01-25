@@ -32,6 +32,12 @@ ItemEvents.tooltip((event) => {
         });
     });
 
+    event.addAdvancedToAll((itemStack, advanced, text) => {
+        if (itemStack.item instanceof $ArmorItem) {
+            text.addLast(Text.translate("tooltip.mierno.right_click_to_equip").yellow());
+        }
+    });
+
     event.add("mierno:modular_imbuement_chamber_core", [
         Text.translate("tooltip.mierno.modular_imbuement_chamber_core_1").gold(),
         Text.translate("tooltip.mierno.modular_imbuement_chamber_core_2").gold(),

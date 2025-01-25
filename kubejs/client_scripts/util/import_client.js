@@ -11,3 +11,4 @@ const $Block = Java.loadClass("net.minecraft.world.level.block.Block");
 const $Integer = Java.loadClass("java.lang.Integer");
 const $RecipeTypes = Java.loadClass("mezz.jei.api.constants.RecipeTypes");
 const $RenderType = Java.loadClass("net.minecraft.client.renderer.RenderType");
+const $ArmorItem = Java.loadClass("net.minecraft.world.item.ArmorItem");

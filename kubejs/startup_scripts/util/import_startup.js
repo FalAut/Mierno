@@ -28,3 +28,7 @@ const $TagKey = Java.loadClass("net.minecraft.tags.TagKey");
 const $AugmentItem = Java.loadClass("cofh.thermal.lib.common.item.AugmentItem");
 const $InfuseType = Java.loadClass("mekanism.api.chemical.infuse.InfuseType");
 const $InfuseTypeBuilder = Java.loadClass("mekanism.api.chemical.infuse.InfuseTypeBuilder");
+const $EnchantmentHelper = Java.loadClass("net.minecraft.world.item.enchantment.EnchantmentHelper");
+const $EquipmentSlot = Java.loadClass("net.minecraft.world.entity.EquipmentSlot");
+const $ArmorItem = Java.loadClass("net.minecraft.world.item.ArmorItem");
+const $ElytraItem = Java.loadClass("net.minecraft.world.item.ElytraItem");

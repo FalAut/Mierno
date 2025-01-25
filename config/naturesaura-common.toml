@@ -27,27 +27,27 @@
 	#If the chunk loader block should be enabled
 	chunkLoader = true
 	#If the Aura Imbalance effect of grass and trees dying in the area if the Aura levels are too low should occur
-	grassDieEffect = false
+	grassDieEffect = true
 	#If the Aura Imbalance effect of nether blocks degrading in the area if the Aura levels are too low should occur
-	netherDecayEffect = false
+	netherDecayEffect = true
 	#If the Aura Imbalance effect of plant growth being boosted if the Aura levels are high enough should occur
-	plantBoostEffect = false
+	plantBoostEffect = true
 	#If the Aura Imbalance effect of aura containers in players' inventories being filled if the Aura levels are high enough should occur
-	cacheRechargeEffect = false
+	cacheRechargeEffect = true
 	#If the Aura Imbalance effect of explosions happening randomly if Aura levels are too low should occur
 	explosionEffect = false
 	#If the Aura Imbalance effect of breathlessness if Aura levels are too low should occur
 	breathlessEffect = false
 	#If the Aura Imbalance effect of passive mobs being angered if Aura levels are too low should occur
-	angerEffect = false
+	angerEffect = true
 	#If the Aura Imbalance effect of farm animals being affected in positive ways if Aura levels are too high should occur
-	animalEffect = false
+	animalEffect = true
 	#If the Aura Imbalance effect of ores spawning in the area if Aura levels are too high should occur
-	oreEffect = false
+	oreEffect = true
 	#If Aura Blooms and Aura Cacti should generate in the level
-	auraBlooms = false
+	auraBlooms = true
 	#If the Aura Imbalance effect of grass growing on netherrack if the Aura levels are high enough should occur
-	netherGrassEffect = false
+	netherGrassEffect = true
 
 [client]
 	#The percentage of particles that should be displayed, where 1 is 100% and 0 is 0%

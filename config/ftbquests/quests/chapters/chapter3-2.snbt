@@ -72,6 +72,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["6811570107E11DA9"]
 			id: "3DA4717085A36ACA"
 			shape: "square"
 			tasks: [{
@@ -248,7 +249,46 @@
 				item: "mekanism:pellet_antimatter"
 				type: "item"
 			}]
-			x: 4.5d
+			title: "{item.mierno.subtraction_sigil}"
+			x: 5.0d
+			y: -2.5d
+		}
+		{
+			can_repeat: true
+			icon: {
+				Count: 1
+				id: "mierno:multiplication_sigil"
+				tag: {
+					Enchantments: [{
+						id: "mierno:activate"
+						lvl: 1s
+					}]
+				}
+			}
+			id: "2459B101ADBF0BB5"
+			rewards: [{
+				id: "4F21D4B2E846C35A"
+				item: {
+					Count: 1
+					id: "mierno:multiplication_sigil"
+					tag: {
+						Enchantments: [{
+							id: "mierno:activate"
+							lvl: 1s
+						}]
+					}
+				}
+				team_reward: true
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				id: "75C2715CD7B68FF1"
+				item: "mekanism:pellet_antimatter"
+				type: "item"
+			}]
+			title: "{item.mierno.multiplication_sigil}"
+			x: 6.0d
 			y: -2.5d
 		}
 	]

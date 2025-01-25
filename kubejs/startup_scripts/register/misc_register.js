@@ -9,6 +9,8 @@ StartupEvents.postInit((event) => {
 
 StartupEvents.registry("enchantment", (event) => {
     event.create("mierno:activate");
+    event.create("mierno:undying").armor();
+    event.create("mierno:last_stand").armor().maxLevel(2);
 });
 
 StartupEvents.postInit((event) => {

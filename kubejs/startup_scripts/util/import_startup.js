@@ -32,3 +32,4 @@ const $EnchantmentHelper = Java.loadClass("net.minecraft.world.item.enchantment.
 const $EquipmentSlot = Java.loadClass("net.minecraft.world.entity.EquipmentSlot");
 const $ArmorItem = Java.loadClass("net.minecraft.world.item.ArmorItem");
 const $ElytraItem = Java.loadClass("net.minecraft.world.item.ElytraItem");
+const $CuriosApi = Java.loadClass("top.theillusivec4.curios.api.CuriosApi");

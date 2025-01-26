@@ -3,6 +3,7 @@
 ServerEvents.tags("item", (event) => {
     event.add("lychee:fire_immune", ["botania:scorched_seeds", "naturesaura:token_anger"]);
     event.add("curios:dream_lantern", "mierno:dream_lantern");
+    event.add("curios:token_rage", "naturesaura:token_rage");
     event.add("botania:special_floating_flowers", "mierno:flowing_source_flower");
 
     Ingredient.all.itemIds.forEach((itemId) => {

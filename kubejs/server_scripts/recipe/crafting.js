@@ -1047,6 +1047,17 @@ ServerEvents.recipes((event) => {
         A: "mekanism:ingot_steel",
         B: "ad_astra:etrium_plate",
     });
+
+    kubejs.shaped("mierno:slime_boots", ["A A", "B B"], {
+        A: "slime_ball",
+        B: "slime_block",
+    });
+
+    kubejs.shaped("mierno:slime_sling", ["ABA", "C C", " C "], {
+        A: "string",
+        B: "slime_block",
+        C: "slime_ball",
+    });
 });
 
 ServerEvents.recipes((event) => {

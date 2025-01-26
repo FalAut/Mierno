@@ -1,8 +1,14 @@
+## v0.2.7
+
+-   添加史莱姆靴子和史莱姆弹弓
+
 ## v0.2.6
 
 -   新增模组 - ME Requester
 -   移除模组 - Celestisynth
 -   如果您在上一版本 (0.2.5) 中加载过存档，很遗憾，您的存档可能已经受到污染。Celestisynth 模组可能会导致 AE 的一些自动化问题（ME 物品存储元件被附加了一些奇怪的标签）。您可以尝试使用 ME IO 端口将受污染元件的数据转移到新的元件中，或者恢复最近的备份。对此我深感抱歉！
+
+---
 
 -   Mod Added - ME Requester
 -   Mod Removed - Celestisynth

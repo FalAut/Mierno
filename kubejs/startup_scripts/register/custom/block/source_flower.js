@@ -62,7 +62,7 @@ StartupEvents.registry("block", (event) => {
         });
 
         if (be.persistentData.getInt("source") < 10000 && tick % 20 == 0) {
-            if ($SourceUtil.takeSourceWithParticles(block.pos, level, 6, 1000) != null) {
+            if ($SourceUtil.takeSourceWithParticles(block.pos, level, 6, 1000)) {
                 let source = be.persistentData.getInt("source");
                 source += 1000;
                 be.persistentData.putInt("source", source);

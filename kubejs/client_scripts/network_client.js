@@ -69,9 +69,5 @@ NetworkEvents.dataReceived("game_pass", (event) => {
     });
 });
 
-// ClientEvents.loggedIn((event) => {
-//     let isFlatField = $ClientLevelData.__javaObject__.getDeclaredField("f_104832_");
-
-//     isFlatField.setAccessible(true);
-//     isFlatField.setBoolean(event.level.levelData, true);
-// });
+NetworkEvents.dataReceived("show_title", (event) => Client.gui.setTitle(Text.translate(event.data.message)));
+NetworkEvents.dataReceived("show_subtitle", (event) => Client.gui.setSubtitle(Text.translate(event.data.message)));

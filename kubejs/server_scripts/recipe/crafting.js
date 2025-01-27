@@ -76,7 +76,6 @@ ServerEvents.recipes((event) => {
     copySelf("mierno:upgrade_augment_creative");
     copySelf("thermal:machine_efficiency_creative_augment");
     copySelf("forbidden_arcanus:soul_crimson_stone");
-    copySelf("bloodmagic:activationcrystalcreative");
     copySelf("ae2:creative_energy_cell");
 
     kubejs.shapeless(
@@ -975,11 +974,6 @@ ServerEvents.recipes((event) => {
     kubejs.shaped("bloodmagic:activationcrystalawakened", ["AAA", "ABA", "AAA"], {
         A: "bloodmagic:ingot_hellforged",
         B: "bloodmagic:activationcrystalweak",
-    });
-
-    kubejs.shaped("forbidden_arcanus:soul_crimson_stone", ["AAA", "ABA", "AAA"], {
-        A: "bloodmagic:activationcrystalcreative",
-        B: "forbidden_arcanus:crimson_stone",
     });
 
     kubejs.shaped("mekanism:steel_casing", ["ABA", "BCB", "ABA"], {

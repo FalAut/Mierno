@@ -37,6 +37,14 @@ ServerEvents.tags("item", (event) => {
     event.add("minecraft:saplings", ["naturesaura:ancient_sapling"]);
 
     event.add("occultism:otherworld_goggles", "botania:third_eye");
+    event.add("mierno:sigil", [
+        "mierno:addition_sigil",
+        "mierno:subtraction_sigil",
+        "mierno:multiplication_sigil",
+        "mierno:division_sigil",
+        "mierno:fake_sigil",
+        "mierno:pseudo_inversion_sigil",
+    ]);
 });
 
 ServerEvents.tags("block", (event) => {

@@ -164,3 +164,93 @@ function tryRemoveUndyingEnchantment(entity) {
     }
     return false;
 }
+
+/**
+ * 检查祭坛周围四个方向的箱子中是否摆放/放入了正确的物品
+ * @param {Internal.Level} level
+ * @param {BlockPos} blockPos
+ * @returns {Object}
+ */
+function psuInverChestCheck(level, blockPos) {
+    if (!$PatchouliAPI.getMultiblock("mierno:psu_inver_ritual").validate(level, blockPos)) return;
+    // prettier-ignore
+    const requireItems = {
+    east: ['minecraft:water_breathing', 'minecraft:night_vision', 'minecraft:swiftness', 'minecraft:leaping', 'minecraft:strength', 'minecraft:healing', 'minecraft:invisibility', 'minecraft:fire_resistance', 'minecraft:poison', 'minecraft:harming', 'minecraft:weakness', 'minecraft:slowness'],
+    south: ['minecraft:diamond_ore', 'minecraft:lapis_ore', 'minecraft:emerald_ore', 'minecraft:redstone_ore', 'minecraft:gold_ore', 'minecraft:copper_ore', 'minecraft:iron_ore', 'minecraft:coal_ore', 'minecraft:sand', 'minecraft:gravel', 'minecraft:grass_block', 'minecraft:clay'],
+    west: ['minecraft:music_disc_stal', 'minecraft:music_disc_strad', 'minecraft:music_disc_mellohi', 'minecraft:music_disc_mall', 'minecraft:music_disc_far', 'minecraft:music_disc_13', 'minecraft:music_disc_cat', 'minecraft:music_disc_chirp', 'minecraft:music_disc_blocks', 'minecraft:music_disc_ward', 'minecraft:music_disc_11', 'minecraft:music_disc_wait'],
+    north: ['minecraft:glass', 'minecraft:charcoal', 'minecraft:cooked_cod', 'minecraft:cooked_chicken', 'minecraft:terracotta', 'minecraft:cooked_beef', 'minecraft:cooked_porkchop', 'minecraft:iron_ingot', 'minecraft:gold_ingot', 'minecraft:baked_potato', 'minecraft:stone', 'minecraft:green_dye']
+}
+    const counts = { east: 0, south: 0, west: 0, north: 0 };
+    const directions = ["east", "south", "west", "north"];
+
+    directions.forEach((direction) => {
+        let chest = level.getBlock(blockPos).offset(direction, 5);
+        chest?.inventory.allItems.forEach((item) => {
+            if (direction == "east" && item == "potion" && requireItems.east.includes(item.nbt.Potion)) counts.east++;
+            if (requireItems[direction].includes(item.id)) counts[direction]++;
+        });
+    });
+
+    return counts;
+}
+
+/**
+ * 在半径 4 格的范围内，寻找信标方块位置
+ * @param {Internal.Level} level
+ * @param {Internal.BlockContainerJS} originBlock
+ * @returns {BlockPos}
+ */
+function psuInverBeaconCheck(level, block) {
+    const radius = 4;
+    const { x, y, z } = block;
+
+    for (let dx = -radius; dx <= radius; dx++) {
+        for (let dy = -radius; dy <= radius; dy++) {
+            for (let dz = -radius; dz <= radius; dz++) {
+                let blockPos = new BlockPos(x + dx, y + dy, z + dz);
+                let block = level.getBlockState(blockPos).block;
+
+                if (block == Blocks.BEACON) return blockPos;
+            }
+        }
+    }
+}
+
+/**
+ * 生成试炼怪物
+ * @param {Internal.BlockContainerJS} block
+ */
+function spawnTrialMobs(block) {
+    let mobs = [
+        "zombie",
+        "spider",
+        "cave_spider",
+        "witch",
+        "zombie_villager",
+        "blaze",
+        "ars_nouveau:wilden_stalker",
+        "ars_nouveau:wilden_hunter",
+        "ars_nouveau:wilden_guardian",
+        "ad_astra:star_crawler",
+    ];
+
+    for (let i = 0; i < 200; i++) {
+        let mobType = mobs[Utils.random.nextInt(0, mobs.length - 1)];
+        let mobEntity = block.createEntity(mobType);
+
+        let randomX, randomZ, randomPos;
+
+        do {
+            randomX = Utils.random.nextInt(block.x - 50, block.x + 50);
+            randomZ = Utils.random.nextInt(block.z - 50, block.z + 50);
+            randomPos = getFirstBlockAbove(block.level, new BlockPos(randomX, block.level.minBuildHeight, randomZ));
+        } while (!randomPos);
+
+        mobEntity.setPosition(randomX, randomPos.y, randomZ);
+        mobEntity.spawn();
+
+        mobEntity.addTag("trial_mob");
+        mobEntity.addTag("persistent");
+        mobEntity.potionEffects.add("speed", -1, 4);
+    }
+}

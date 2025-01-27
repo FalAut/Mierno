@@ -76,7 +76,6 @@ ServerEvents.recipes((event) => {
     copySelf("mierno:upgrade_augment_creative");
     copySelf("thermal:machine_efficiency_creative_augment");
     copySelf("forbidden_arcanus:soul_crimson_stone");
-    copySelf("bloodmagic:activationcrystalcreative");
     copySelf("ae2:creative_energy_cell");
 
     kubejs.shapeless(
@@ -977,11 +976,6 @@ ServerEvents.recipes((event) => {
         B: "bloodmagic:activationcrystalweak",
     });
 
-    kubejs.shaped("forbidden_arcanus:soul_crimson_stone", ["AAA", "ABA", "AAA"], {
-        A: "bloodmagic:activationcrystalcreative",
-        B: "forbidden_arcanus:crimson_stone",
-    });
-
     kubejs.shaped("mekanism:steel_casing", ["ABA", "BCB", "ABA"], {
         A: "ad_astra:steel_plate",
         B: "forbidden_arcanus:ferrognetic_mixture",
@@ -1046,6 +1040,17 @@ ServerEvents.recipes((event) => {
     kubejs.shaped("ad_astra:encased_etrium_block", ["AAA", "BBB", "AAA"], {
         A: "mekanism:ingot_steel",
         B: "ad_astra:etrium_plate",
+    });
+
+    kubejs.shaped("mierno:slime_boots", ["A A", "B B"], {
+        A: "slime_ball",
+        B: "slime_block",
+    });
+
+    kubejs.shaped("mierno:slime_sling", ["ABA", "C C", " C "], {
+        A: "string",
+        B: "slime_block",
+        C: "slime_ball",
     });
 });
 

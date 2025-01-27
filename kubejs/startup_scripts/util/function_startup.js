@@ -89,3 +89,68 @@ function getExperienceForLevel(level) {
 function getPlayerXP(player) {
     return getExperienceForLevel(player.experienceLevel) + player.totalExperience;
 }
+
+/**
+ *
+ * @param {Internal.ServerPlayer} player
+ * @param {number} bounceY
+ */
+function setBounceData(player, bounceY) {
+    let bounceData = player.persistentData.get("bounceData");
+    if (!bounceData) {
+        bounceData = {
+            bounceTick: 0,
+            bounceY: 0,
+            lastX: 0,
+            lastZ: 0,
+            wasInAir: false,
+            groundTimer: 0,
+        };
+    }
+    bounceData.bounceTick = player.age;
+    bounceData.bounceY = bounceY;
+
+    player.persistentData.put("bounceData", bounceData);
+}
+
+/**
+ *
+ * @param {Internal.LivingFallEvent} event
+ * @returns
+ */
+function onFallWithSlimeBoots(event) {
+    const { entity, distance } = event;
+    if (!entity.isPlayer() || entity.isFake()) return;
+
+    if (entity.getItemBySlot("feet") != "mierno:slime_boots") return;
+
+    if (!entity.crouching && distance > 2) {
+        if (entity.abilities.mayfly) {
+            event.setDistance(distance);
+        } else {
+            event.setDamageMultiplier(0);
+            entity.resetFallDistance();
+        }
+
+        if (entity.level.isClientSide()) {
+            const motion = entity.deltaMovement;
+            entity.setDeltaMovement(new Vec3d(motion.x(), motion.y() * -0.9, motion.z()));
+            entity.hasImpulse = true;
+            entity.setOnGround(false);
+        } else if (event.isCancelable()) {
+            event.setCanceled(true);
+        }
+
+        entity.playSound("minecraft:entity.slime.squish");
+
+        for (let i = 0; i < 8; i++) {
+            const angle = entity.random.nextFloat() * KMath.PI * 2;
+            const radius = 0.5 * (0.5 + entity.random.nextFloat());
+            const xOffset = Math.sin(angle) * radius;
+            const zOffset = Math.cos(angle) * radius;
+            entity.level.addParticle("minecraft:item_slime", entity.x + xOffset, entity.y, entity.z + zOffset, 0, 0, 0);
+        }
+
+        setBounceData(entity, entity.deltaMovement.y());
+    }
+}

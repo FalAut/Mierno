@@ -75,7 +75,7 @@ ServerEvents.recipes((event) => {
             },
         },
         output: {
-            count: 4,
+            count: 9,
             item: "ae2:printed_calculation_processor",
         },
     });
@@ -95,7 +95,7 @@ ServerEvents.recipes((event) => {
             },
         },
         output: {
-            count: 4,
+            count: 9,
             item: "ae2:printed_engineering_processor",
         },
     });
@@ -115,7 +115,7 @@ ServerEvents.recipes((event) => {
             },
         },
         output: {
-            count: 4,
+            count: 9,
             item: "ae2:printed_logic_processor",
         },
     });
@@ -135,7 +135,7 @@ ServerEvents.recipes((event) => {
             },
         },
         output: {
-            count: 4,
+            count: 9,
             item: "ae2:printed_silicon",
         },
     });

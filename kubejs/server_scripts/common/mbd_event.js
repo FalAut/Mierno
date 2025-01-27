@@ -116,46 +116,54 @@ MBDMachineEvents.onTick(["mierno:brain_in_a_jar", "mierno:computation_matrix"], 
     //     console.log(animation);
 });
 
-MBDMachineEvents.onTick("mierno:modular_mana_pool_core", (event) => {
-    const { machine } = event.event;
-    const { level, pos } = machine;
+MBDMachineEvents.onTick(
+    [
+        "mierno:modular_mana_pool_core",
+        "mierno:modular_runic_altar_core",
+        "mierno:terrestrial_agglomeration_crystal",
+        "mierno:modular_alfheim_portal_core",
+        "mierno:mana_input",
+    ],
+    (event) => {
+        const { machine } = event.event;
+        const { level, pos } = machine;
 
-    if (!$IMultiController.ofController(level, pos).orElse(null).isFormed()) return;
+        let manaCap = machine.getCapability(BotaniaCapabilities.MANA_RECEIVER).orElse(null);
+        let itemCap = machine.getCapability(ForgeCapabilities.ITEM_HANDLER).orElse(null);
+        let remainingMana = 1000000 - manaCap.getCurrentMana();
+        let manaItem = itemCap.getStackInSlot(0);
 
-    let manaCap = machine.getCapability(BotaniaCapabilities.MANA_RECEIVER).orElse(null);
-    let itemCap = machine.getCapability(ForgeCapabilities.ITEM_HANDLER).orElse(null);
-    let manaItem = itemCap.getStackInSlot(0);
+        if (manaCap.isFull()) return;
 
-    let remainingMana = 1000000 - manaCap.getCurrentMana();
-
-    if (!manaCap.isFull()) {
-        if (manaItem == "botania:black_lotus" && remainingMana >= 8000) {
-            manaCap.receiveMana(8000);
-            manaItem.count--;
-        } else if (manaItem == "botania:blacker_lotus" && remainingMana >= 100000) {
-            manaCap.receiveMana(100000);
-            manaItem.count--;
+        switch (manaItem) {
+            case "botania:black_lotus":
+                if (remainingMana >= 8000) {
+                    manaCap.receiveMana(8000);
+                    manaItem.count--;
+                }
+                break;
+            case "botania:blacker_lotus":
+                if (remainingMana >= 100000) {
+                    manaCap.receiveMana(100000);
+                    manaItem.count--;
+                }
+                break;
+            case "botania:mana_tablet":
+                if (manaItem.nbt.getBoolean("creative")) {
+                    manaCap.receiveMana(remainingMana);
+                } else if (remainingMana >= 1000) {
+                    manaItem.getCapability(BotaniaCapabilities.MANA_ITEM).orElse(null).addMana(-1000);
+                    manaCap.receiveMana(1000);
+                }
+                break;
+            case "botania:creative_pool":
+                manaCap.receiveMana(remainingMana);
+                break;
+            default:
+                break;
         }
     }
-
-    // const { x, y, z } = pos;
-    // let aabb = AABB.of(x - 2, y, z - 2, x + 2, y + 3, z + 2);
-    // let entities = level.getEntitiesWithin(aabb);
-
-    // for (let entity of entities) {
-    //     if (entity.type != "minecraft:item") return;
-
-    //     if (!manaCap.isFull()) {
-    //         if (entity.item == "botania:black_lotus") {
-    //             manaCap.receiveMana(entity.item.count * 8000);
-    //             entity.discard();
-    //         } else if (entity.item == "botania:blacker_lotus") {
-    //             manaCap.receiveMana(entity.item.count * 100000);
-    //             entity.discard();
-    //         }
-    //     }
-    // }
-});
+);
 
 // let cobbleGens = [
 //     "mierno:cobble_gen_tier1",

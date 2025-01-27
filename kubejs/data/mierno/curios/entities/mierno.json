@@ -1,1 +1,1 @@
-{ "entities": ["player"], "slots": ["portable_crafting_table", "dream_lantern", "dream_wings"] }
+{ "entities": ["player"], "slots": ["portable_crafting_table", "dream_lantern", "dream_wings", "token_rage"] }

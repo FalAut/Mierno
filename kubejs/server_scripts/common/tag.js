@@ -3,6 +3,7 @@
 ServerEvents.tags("item", (event) => {
     event.add("lychee:fire_immune", ["botania:scorched_seeds", "naturesaura:token_anger"]);
     event.add("curios:dream_lantern", "mierno:dream_lantern");
+    event.add("curios:token_rage", "naturesaura:token_rage");
     event.add("botania:special_floating_flowers", "mierno:flowing_source_flower");
 
     Ingredient.all.itemIds.forEach((itemId) => {
@@ -36,6 +37,20 @@ ServerEvents.tags("item", (event) => {
     event.add("minecraft:saplings", ["naturesaura:ancient_sapling"]);
 
     event.add("occultism:otherworld_goggles", "botania:third_eye");
+    event.add("mierno:sigil", [
+        "mierno:addition_sigil",
+        "mierno:subtraction_sigil",
+        "mierno:multiplication_sigil",
+        "mierno:division_sigil",
+        "mierno:fake_sigil",
+        "mierno:pseudo_inversion_sigil",
+    ]);
+    event.add("mierno:mana_input_items", [
+        "botania:black_lotus",
+        "botania:blacker_lotus",
+        "botania:mana_tablet",
+        "botania:creative_pool",
+    ]);
 });
 
 ServerEvents.tags("block", (event) => {

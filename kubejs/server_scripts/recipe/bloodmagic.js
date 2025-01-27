@@ -99,9 +99,9 @@ ServerEvents.recipes((event) => {
 
     event.custom({
         type: "bloodmagic:altar",
-        altarSyphon: 1,
-        consumptionRate: 1,
-        drainRate: 1,
+        altarSyphon: 2147483647,
+        consumptionRate: 2147483647,
+        drainRate: 2147483647,
         input: {
             item: "bloodmagic:activationcrystalawakened",
         },
@@ -301,6 +301,27 @@ ServerEvents.recipes((event) => {
         output: {
             item: "bloodmagic:sanguinereverter",
             nbt: "{Damage:0}",
+        },
+    });
+
+    event.custom({
+        type: "bloodmagic:soulforge",
+        drain: 10.0,
+        input0: {
+            item: "forbidden_arcanus:crimson_stone",
+        },
+        input1: {
+            item: "forbidden_arcanus:enchanted_soul",
+        },
+        input2: {
+            item: "mierno:colorless_gem",
+        },
+        input3: {
+            item: "bloodmagic:basemonstersoul",
+        },
+        minimumDrain: 10.0,
+        output: {
+            item: "forbidden_arcanus:soul_crimson_stone",
         },
     });
 

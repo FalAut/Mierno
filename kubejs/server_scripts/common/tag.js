@@ -45,6 +45,12 @@ ServerEvents.tags("item", (event) => {
         "mierno:fake_sigil",
         "mierno:pseudo_inversion_sigil",
     ]);
+    event.add("mierno:mana_input_items", [
+        "botania:black_lotus",
+        "botania:blacker_lotus",
+        "botania:mana_tablet",
+        "botania:creative_pool",
+    ]);
 });
 
 ServerEvents.tags("block", (event) => {

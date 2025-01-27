@@ -11,7 +11,6 @@ ItemEvents.tooltip((event) => {
         { item: "mierno:memory_source_drawing_crystal_core", lines: 5 },
         { item: "occultism:divination_rod", lines: 4 },
         { item: "naturesaura:time_changer", lines: 5 },
-        { item: "mierno:modular_mana_pool_core", lines: 3 },
     ];
 
     shiftTooltipItems.forEach((shiftTooltipItem) => {
@@ -42,6 +41,7 @@ ItemEvents.tooltip((event) => {
         Text.translate("tooltip.mierno.modular_imbuement_chamber_core_1").gold(),
         Text.translate("tooltip.mierno.modular_imbuement_chamber_core_2").gold(),
     ]);
+    event.add("mierno:modular_mana_pool_core", Text.translate("tooltip.mierno.modular_mana_pool_core_1").gold());
     event.add("oak_sapling", Text.translate("tooltip.mierno.oak_sapling").gold());
     event.add("mierno:oak_mortar", Text.translate("tooltip.mierno.oak_mortar").gold());
     event.add("mierno:dream_latern", Text.translate("tooltip.mierno.dream_latern").gold());
@@ -213,7 +213,6 @@ ItemEvents.tooltip((event) => {
 
     event.add(["minecraft:clay_ball", "botania:clayconia"], Text.translate("tooltip.mierno.clay_ball").gold());
 
-    event.add("botania:alfheim_portal", Text.translate("tooltip.mierno.alfheim_portal").darkRed());
     event.add("ars_nouveau:imbuement_chamber", Text.translate("tooltip.mierno.imbuement_chamber").red());
     event.add(
         "mierno:modular_alfheim_portal_core",

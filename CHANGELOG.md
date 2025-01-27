@@ -6,6 +6,17 @@
 -   添加兑换恶魔领域物品的任务
 -   灵魂绯红之石现在不需要创造激活水晶制作
 -   优化伪逆仪式
+-   模块化魔力池，模块化泰拉凝聚祭坛，模块化符文祭坛、机械精灵门核心和魔力输入仓现在全部支持放入黑莲花、暗黑莲花、魔力石板、创造魔力石板和永恒魔力池来输入魔力
+
+---
+
+-   Added Slime Boots and Slime Slingshot.
+-   The Mark of Rage can now be placed in the trinket bar.
+-   Reward Chests can no longer be opened for Pneumatic Crafting items.
+-   Added quests to redeem items from the Demon Realm
+-   Soul Crimson Stones now do not require a Creation Activation Crystal to craft.
+-   Optimised Pseudo Reverse Rituals
+-   Modular Pools, Modular Terra Cohesion Altars, Modular Rune Altars, Mechanical Elfgate Cores, and Magic Input Bins now all support inputting magic by placing Black Lotus, Dark Lotus, Magic Tablet, Creation Tablet, and Eternal Pool.
 
 ## v0.2.6
 

@@ -1367,12 +1367,6 @@
 			id: "24D38824ADA5B6BE"
 			rewards: [
 				{
-					count: 64
-					id: "50E33D042D4C383F"
-					item: "ae2:pink_lumen_paint_ball"
-					type: "item"
-				}
-				{
 					exclude_from_claim_all: true
 					id: "153495FB911C3D82"
 					table_id: 1320735954632056874L

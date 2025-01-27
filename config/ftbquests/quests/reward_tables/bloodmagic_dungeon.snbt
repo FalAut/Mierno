@@ -1,0 +1,14 @@
+{
+	id: "5450DC61F9F3EAB3"
+	loot_size: 1
+	order_index: 6
+	rewards: [
+		{ item: "bloodmagic:weak_tau" }
+		{ item: "bloodmagic:strong_tau" }
+		{ item: "bloodmagic:mineentrancekey" }
+		{ item: "forbidden_arcanus:artisan_relic" }
+		{ item: "bloodmagic:dungeon_ore" }
+		{ item: "forbidden_arcanus:yellow_orchid" }
+	]
+	title: "bloodmagic_dungeon"
+}

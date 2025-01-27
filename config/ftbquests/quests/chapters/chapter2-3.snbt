@@ -676,12 +676,19 @@
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "{\"translate\":\"mierno.chapter2-3.demon_realm.subtitle\",\"color\":\"gold\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/create ponder bloodmagic:dungeon_alternator\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}}"
-			tasks: [{
-				dimension: "bloodmagic:dungeon"
-				id: "7024A0676D83FAB5"
-				title: "{mierno.chapter2-3.enter_demon_realm}"
-				type: "dimension"
-			}]
+			tasks: [
+				{
+					dimension: "bloodmagic:dungeon"
+					id: "7024A0676D83FAB5"
+					optional_task: true
+					title: "{mierno.chapter2-3.enter_demon_realm}"
+					type: "dimension"
+				}
+				{
+					id: "4F9B7B0BD39DCF56"
+					type: "checkmark"
+				}
+			]
 			x: 11.0d
 			y: 0.0d
 		}
@@ -932,19 +939,6 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["0252B809AB8F501A"]
-			id: "1DF5EF69318E2592"
-			shape: "gear"
-			size: 1.5d
-			tasks: [{
-				id: "5F727A747CECEF79"
-				item: "forbidden_arcanus:soul_crimson_stone"
-				type: "item"
-			}]
-			x: 11.0d
-			y: -3.25d
-		}
-		{
 			dependencies: ["4223C63E12D90CC5"]
 			id: "5F472ED812AA975A"
 			shape: "diamond"
@@ -1011,18 +1005,6 @@
 			}]
 			x: 11.0d
 			y: 1.2d
-		}
-		{
-			dependencies: ["3FDE3EF6B72D3969"]
-			id: "0252B809AB8F501A"
-			shape: "gear"
-			tasks: [{
-				id: "2D7958A483124ACE"
-				item: "bloodmagic:activationcrystalcreative"
-				type: "item"
-			}]
-			x: 11.9d
-			y: -2.25d
 		}
 		{
 			dependencies: [
@@ -1346,6 +1328,42 @@
 			}]
 			x: 5.0d
 			y: 3.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["24FE0AA7D7BD9689"]
+			icon_scale: 0.8d
+			id: "36492F5AA6BB43D4"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2492DD9CCD8E6448"
+				table_id: 6075598210686249651L
+				team_reward: true
+				type: "choice"
+			}]
+			shape: "heart"
+			tasks: [{
+				consume_items: true
+				id: "0F8A238FAEB80616"
+				item: "forbidden_arcanus:deorum_ingot"
+				type: "item"
+			}]
+			title: "{mierno.chapter2-3.dungeon_exchange.title}"
+			x: 12.25d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5C8CF7D55B56EBB7"]
+			id: "1DF5EF69318E2592"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "5F727A747CECEF79"
+				item: "forbidden_arcanus:soul_crimson_stone"
+				type: "item"
+			}]
+			x: 11.0d
+			y: -3.75d
 		}
 	]
 	title: "{mierno.chapter2-3.title}"

@@ -144,7 +144,7 @@ function onFallWithSlimeBoots(event) {
         entity.playSound("minecraft:entity.slime.squish");
 
         for (let i = 0; i < 8; i++) {
-            const angle = entity.random.nextFloat() * KMath.PI * 2;
+            const angle = entity.random.nextFloat() * JavaMath.PI * 2;
             const radius = 0.5 * (0.5 + entity.random.nextFloat());
             const xOffset = Math.sin(angle) * radius;
             const zOffset = Math.cos(angle) * radius;

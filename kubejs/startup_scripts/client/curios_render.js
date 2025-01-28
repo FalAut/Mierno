@@ -25,10 +25,10 @@ StartupEvents.postInit((event) => {
                     matrixStack.pushPose();
 
                     let degrees = i == 0 ? flap : 180 - flap;
-                    matrixStack.mulPose(new Quaternionf().rotateY((degrees / 180) * KMath.PI));
+                    matrixStack.mulPose(new Quaternionf().rotateY((degrees / 180) * JavaMath.PI));
 
                     matrixStack.translate(-1, 0, 0);
-                    matrixStack.mulPose(new Quaternionf().rotateZ((-60 / 180) * KMath.PI));
+                    matrixStack.mulPose(new Quaternionf().rotateZ((-60 / 180) * JavaMath.PI));
                     matrixStack.scale(1.5, -1.5, -1.5);
 
                     Client.itemRenderer.render(

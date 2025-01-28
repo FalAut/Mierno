@@ -13,6 +13,7 @@ StartupEvents.registry("item", (event) => {
     event.create("mierno:sun_crystal_full").unstackable().glow(true).rarity("uncommon");
     event.create("mierno:moon_stone_full").unstackable().glow(true).rarity("epic");
     event.createCustom("mierno:dream_lantern", () => new $ItemAuraCache("dream_lantern", 2560000));
+    event.create("mierno:dark_eyes");
     event.create("mierno:addition_sigil").unstackable();
     event.create("mierno:subtraction_sigil").unstackable();
     event.create("mierno:multiplication_sigil").unstackable();
@@ -41,9 +42,6 @@ StartupEvents.registry("item", (event) => {
     event.create("mierno:7").glow(true);
     event.create("mierno:8").glow(true);
     event.create("mierno:9").glow(true);
-
-    let darkTemple = $ResourceKey.create($ResourceKey.createRegistryKey("worldgen/structure"), "mierno:dark_temple");
-    event.createCustom("mierno:dark_eyes", () => new $ItemStructureFinder("dark_eyes", darkTemple, 0x808080, 512));
     event.createCustom(
         "mierno:ritual_dummy/blood_pact_of_asmodeus",
         () => new $DummyTooltipItem(new $Item$Properties().stacksTo(1))

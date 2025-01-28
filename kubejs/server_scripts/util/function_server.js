@@ -254,3 +254,40 @@ function spawnTrialMobs(block) {
         mobEntity.potionEffects.add("speed", -1, 4);
     }
 }
+
+/**
+ *
+ * @param {Internal.ServerPlayer} player
+ * @param {Internal.InteractionHand} hand
+ * @param {string} structureName
+ * @param {number} range
+ * @returns
+ */
+function spawnStructureFinderEye(player, hand, structureName, range) {
+    let item = player.getHeldItem(hand);
+    let level = player.level;
+    let structureRegistry = level.registryAccess().registryOrThrow($Registries.STRUCTURE);
+    let structureKey = $ResourceKey.create(structureRegistry.key(), structureName);
+    let holder = structureRegistry.getHolder(structureKey);
+    let holderSet = $HolderSet.direct([holder.get()]);
+    let pair = level
+        .getChunkSource()
+        .getGenerator()
+        .findNearestMapStructure(level, holderSet, player.blockPosition(), range, false);
+
+    if (pair) {
+        let structurePos = pair.getFirst();
+
+        /**@type {Internal.EyeOfEnder} */
+        let eye = level.createEntity("eye_of_ender");
+        eye.setPos(player.x, player.y + 1, player.z);
+        eye.setItem(item);
+        eye.signalTo(structurePos);
+        eye.spawn();
+
+        player.swing(hand, true);
+        if (!player.isCreative()) item.count--;
+
+        level.playSound(null, player.blockPosition(), "entity.ender_eye.launch", "master");
+    }
+}

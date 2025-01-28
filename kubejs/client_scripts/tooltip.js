@@ -3,7 +3,7 @@ ItemEvents.tooltip((event) => {
         { item: "mierno:fired_crucible", lines: 5 },
         { item: "mierno:oak_crucible", lines: 3 },
         { item: "mierno:ancient_aura_generator_core", lines: 6 },
-        { item: "mierno:dream_lantern", lines: 4 },
+        { item: "mierno:dream_lantern", lines: 5 },
         { item: "mierno:colossal_furnace_core", lines: 7 },
         { item: "mierno:modular_runic_altar_core", lines: 3 },
         { item: "mierno:terrestrial_agglomeration_crystal", lines: 3 },

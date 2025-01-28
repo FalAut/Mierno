@@ -1153,21 +1153,6 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["4B7D9F5BCAA55588"]
-			id: "64082A6FF5A7E822"
-			tasks: [{
-				id: "38D81725005947ED"
-				item: {
-					Count: 1
-					id: "forbidden_arcanus:eternal_stella"
-					tag: { }
-				}
-				type: "item"
-			}]
-			x: 8.0d
-			y: 4.0d
-		}
-		{
 			dependencies: ["6E137AA6E145BCC8"]
 			id: "57EA950397339DF6"
 			rewards: [{
@@ -1200,62 +1185,7 @@
 			y: 4.0d
 		}
 		{
-			dependencies: [
-				"64082A6FF5A7E822"
-				"4B7D9F5BCAA55588"
-			]
-			icon: {
-				Count: 1
-				id: "forbidden_arcanus:hephaestus_forge"
-				tag: {
-					BlockStateTag: {
-						tier: 4
-					}
-				}
-			}
-			id: "23CE030C9C78494D"
-			subtitle: "{mierno.chapter2-3.check_hephaestus_forge_tier4.subtitle}"
-			tasks: [
-				{
-					icon: {
-						Count: 1
-						id: "forbidden_arcanus:hephaestus_forge"
-						tag: {
-							BlockStateTag: {
-								tier: 4
-							}
-						}
-					}
-					id: "6A1370651139C58D"
-					observe_type: 2
-					timer: 0L
-					title: "{mierno.chapter2-3.check_hephaestus_forge_tier4.title}"
-					to_observe: "forbidden_arcanus:hephaestus_forge[tier=4]"
-					type: "observation"
-				}
-				{
-					id: "680F05219634F868"
-					item: {
-						Count: 1
-						id: "forbidden_arcanus:hephaestus_forge"
-						tag: {
-							BlockStateTag: {
-								tier: 4
-							}
-						}
-					}
-					optional_task: true
-					type: "item"
-				}
-			]
-			x: 8.0d
-			y: 3.0d
-		}
-		{
-			dependencies: [
-				"23CE030C9C78494D"
-				"64082A6FF5A7E822"
-			]
+			dependencies: ["4B7D9F5BCAA55588"]
 			id: "1F0852D1791C39FB"
 			shape: "gear"
 			size: 2.0d
@@ -1264,69 +1194,7 @@
 				item: "forbidden_arcanus:ferrognetic_mixture"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 3.5d
-		}
-		{
-			dependencies: ["1F0852D1791C39FB"]
-			icon: {
-				Count: 1
-				id: "forbidden_arcanus:hephaestus_forge"
-				tag: {
-					BlockStateTag: {
-						tier: 5
-					}
-				}
-			}
-			id: "0CABE55169F37034"
-			shape: "gear"
-			subtitle: "{mierno.chapter2-3.check_hephaestus_forge_tier5.subtitle}"
-			tasks: [
-				{
-					icon: {
-						Count: 1
-						id: "forbidden_arcanus:hephaestus_forge"
-						tag: {
-							BlockStateTag: {
-								tier: 5
-							}
-						}
-					}
-					id: "0AB29B68BDB8552C"
-					observe_type: 2
-					timer: 0L
-					title: "{mierno.chapter2-3.check_hephaestus_forge_tier5.title}"
-					to_observe: "forbidden_arcanus:hephaestus_forge[tier=5]"
-					type: "observation"
-				}
-				{
-					id: "199F4FAF0E6116EA"
-					item: {
-						Count: 1
-						id: "forbidden_arcanus:hephaestus_forge"
-						tag: {
-							BlockStateTag: {
-								tier: 5
-							}
-						}
-					}
-					optional_task: true
-					type: "item"
-				}
-			]
-			x: 6.5d
-			y: 2.0d
-		}
-		{
-			dependencies: ["1F0852D1791C39FB"]
-			id: "23F40ADE5AB54517"
-			shape: "gear"
-			tasks: [{
-				id: "06712E9B02A9D350"
-				item: "mierno:brain_in_a_jar"
-				type: "item"
-			}]
-			x: 5.0d
+			x: 7.5d
 			y: 3.5d
 		}
 		{

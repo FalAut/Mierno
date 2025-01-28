@@ -6,7 +6,7 @@ ServerEvents.recipes((event) => {
             mierno
                 .modular_nature_altar()
                 .inputItems(recipeData.input)
-                .blocksInStructure(1, 100, recipeData.catalyst)
+                .blocksInStructure(1, 1, recipeData.catalyst)
                 .outputItems(Item.of(recipeData.output).withCount(recipeData.outputCount))
                 .inputAura(recipeData.aura)
                 .duration(1);
@@ -46,7 +46,7 @@ ServerEvents.recipes((event) => {
     mierno
         .modular_nature_altar()
         .inputItems("redstone")
-        .blocksInStructure(1, 100, "naturesaura:conversion_catalyst")
+        .blocksInStructure(1, 1, "naturesaura:conversion_catalyst")
         .outputItems("minecraft:glowstone_dust")
         .inputAura(1000)
         .duration(1);
@@ -54,7 +54,7 @@ ServerEvents.recipes((event) => {
     mierno
         .modular_nature_altar()
         .inputItems("emerald")
-        .blocksInStructure(1, 100, "naturesaura:conversion_catalyst")
+        .blocksInStructure(1, 1, "naturesaura:conversion_catalyst")
         .outputItems("minecraft:amethyst_shard")
         .inputAura(1000)
         .duration(1);
@@ -62,7 +62,7 @@ ServerEvents.recipes((event) => {
     mierno
         .modular_nature_altar()
         .inputItems("lapis_lazuli")
-        .blocksInStructure(1, 100, "naturesaura:conversion_catalyst")
+        .blocksInStructure(1, 1, "naturesaura:conversion_catalyst")
         .outputItems("minecraft:quartz")
         .inputAura(1000)
         .duration(1);
@@ -70,7 +70,7 @@ ServerEvents.recipes((event) => {
     mierno
         .modular_nature_altar()
         .inputItems("botania:grass_seeds")
-        .blocksInStructure(1, 100, "naturesaura:conversion_catalyst")
+        .blocksInStructure(1, 1, "naturesaura:conversion_catalyst")
         .outputItems("botania:vivid_seeds")
         .inputAura(1000)
         .duration(1);
@@ -78,7 +78,7 @@ ServerEvents.recipes((event) => {
     mierno
         .modular_nature_altar()
         .inputItems("gold_ingot")
-        .blocksInStructure(1, 100, "mierno:nether_catalyst")
+        .blocksInStructure(1, 1, "mierno:nether_catalyst")
         .outputItems("naturesaura:tainted_gold")
         .inputAura(1000)
         .duration(1);
@@ -86,7 +86,7 @@ ServerEvents.recipes((event) => {
     mierno
         .modular_nature_altar()
         .inputItems("gold_block")
-        .blocksInStructure(1, 100, "mierno:nether_catalyst")
+        .blocksInStructure(1, 1, "mierno:nether_catalyst")
         .outputItems("naturesaura:tainted_gold_block")
         .inputAura(9000)
         .duration(1);
@@ -94,7 +94,7 @@ ServerEvents.recipes((event) => {
     mierno
         .modular_nature_altar()
         .inputItems("naturesaura:bottle_two_the_rebottling")
-        .blocksInStructure(1, 100, "mierno:nether_catalyst")
+        .blocksInStructure(1, 1, "mierno:nether_catalyst")
         .outputItems(Item.of("naturesaura:aura_bottle", '{stored_type:"naturesaura:nether"}').strongNBT())
         .inputAura(1000)
         .duration(1);
@@ -109,7 +109,7 @@ ServerEvents.recipes((event) => {
     mierno
         .modular_nature_altar()
         .inputItems("naturesaura:bottle_two_the_rebottling")
-        .blocksInStructure(1, 100, "mierno:end_catalyst")
+        .blocksInStructure(1, 1, "mierno:end_catalyst")
         .outputItems(Item.of("naturesaura:aura_bottle", '{stored_type:"naturesaura:end"}').strongNBT())
         .inputAura(1000)
         .duration(1);
@@ -117,7 +117,7 @@ ServerEvents.recipes((event) => {
     mierno
         .modular_nature_altar()
         .inputItems(Item.of("naturesaura:aura_bottle", '{stored_type:"naturesaura:end"}').weakNBT())
-        .blocksInStructure(1, 100, "mierno:end_catalyst")
+        .blocksInStructure(1, 1, "mierno:end_catalyst")
         .outputItems("minecraft:dragon_breath")
         .inputAura(1000)
         .duration(1);

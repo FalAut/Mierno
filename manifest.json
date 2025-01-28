@@ -1,7 +1,7 @@
 {
     "minecraft": { "modLoaders": [{ "id": "forge-47.3.25", "primary": true }], "version": "1.20.1" },
     "name": "Mierno",
-    "version": "0.2.7",
+    "version": "0.2.8",
     "author": "FalAut",
     "manifestVersion": 1,
     "manifestType": "minecraftModpack",

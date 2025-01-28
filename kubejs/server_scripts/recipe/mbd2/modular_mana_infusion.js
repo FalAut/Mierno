@@ -8,7 +8,7 @@ ServerEvents.recipes((event) => {
             mierno
                 .modular_mana_infusion()
                 .inputItems(recipeData.input)
-                .blocksInStructure(1, 100, recipeData.catalyst)
+                .blocksInStructure(1, 1, recipeData.catalyst)
                 .outputItems(Item.of(recipeData.output).withCount(recipeData.outputCount))
                 .inputMana(recipeData.mana)
                 .priority(-1)

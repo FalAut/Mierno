@@ -617,6 +617,15 @@
 				"6C95247ADE07020A"
 				"340D9CC5D115AD42"
 			]
+			description: [
+				"{tooltip.mierno.dream_lantern_2}"
+				""
+				"{tooltip.mierno.dream_lantern_3}"
+				""
+				"{tooltip.mierno.dream_lantern_4}"
+				""
+				"{tooltip.mierno.dream_lantern_5}"
+			]
 			id: "650A934E657C4828"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -626,6 +635,7 @@
 			}]
 			shape: "gear"
 			size: 2.0d
+			subtitle: "{tooltip.mierno.dream_lantern_1}"
 			tasks: [{
 				id: "0A1A46FF4F862C8A"
 				item: "mierno:dream_lantern"

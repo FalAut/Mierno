@@ -3,6 +3,14 @@
 -   铁磁性混合物不再需要赫菲斯托斯锻炉制作，而是在感应炉中制作
 -   删除了缸中之脑
 -   提高了石油的产量
+-   修复各种奇怪的问题
+
+---
+
+-   Ferromagnetic mixtures no longer need to be crafted in the Hephaestus Forge, but are instead crafted in the Induction Furnace
+-   Removed Brain in a Vat
+-   Increased oil production
+-   Fixed various strange issues
 
 ## v0.2.7
 

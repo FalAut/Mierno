@@ -7,7 +7,6 @@ const $BasicAuraType = Java.loadClass("de.ellpeck.naturesaura.api.aura.type.Basi
 const $MortarItem = Java.loadClass("mod.maxbogomol.wizards_reborn.common.item.equipment.MortarItem");
 const $Item$Properties = Java.loadClass("net.minecraft.world.item.Item$Properties");
 const $ItemAuraCache = Java.loadClass("de.ellpeck.naturesaura.items.ItemAuraCache");
-const $ItemStructureFinder = Java.loadClass("de.ellpeck.naturesaura.items.ItemStructureFinder");
 const $ResourceKey = Java.loadClass("net.minecraft.resources.ResourceKey");
 const $PatchouliAPI = Java.loadClass("vazkii.patchouli.api.PatchouliAPI").get();
 const $Character = Java.loadClass("java.lang.Character");

@@ -971,11 +971,6 @@ ServerEvents.recipes((event) => {
         B: "pneumaticcraft:ingot_iron_compressed",
     });
 
-    kubejs.shaped("bloodmagic:activationcrystalawakened", ["AAA", "ABA", "AAA"], {
-        A: "bloodmagic:ingot_hellforged",
-        B: "bloodmagic:activationcrystalweak",
-    });
-
     kubejs.shaped("mekanism:steel_casing", ["ABA", "BCB", "ABA"], {
         A: "ad_astra:steel_plate",
         B: "forbidden_arcanus:ferrognetic_mixture",

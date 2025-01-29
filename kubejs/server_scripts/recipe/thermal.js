@@ -304,6 +304,30 @@ ServerEvents.recipes((event) => {
         type: "thermal:smelter",
         ingredients: [
             {
+                item: "forbidden_arcanus:stellarite_piece",
+                count: 4,
+            },
+            {
+                item: "bloodmagic:etherealslate",
+                count: 4,
+            },
+            {
+                item: "minecraft:lodestone",
+                count: 1,
+            },
+        ],
+        result: [
+            {
+                item: "forbidden_arcanus:ferrognetic_mixture",
+                count: 8,
+            },
+        ],
+    });
+
+    event.custom({
+        type: "thermal:smelter",
+        ingredients: [
+            {
                 item: "ae2:matter_ball",
                 count: 64,
             },

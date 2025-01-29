@@ -93,7 +93,7 @@ const handleCrucibleInteraction = (event, crucible, inputItem, outputFluid) => {
         const itemCap = block.entity.getCapability(ForgeCapabilities.ITEM_HANDLER).resolve().get();
         const fluidCap = block.entity.getCapability(ForgeCapabilities.FLUID_HANDLER).resolve().get();
 
-        if (item.hasTag(inputItem)) {
+        if (item.hasTag(inputItem) && !player.isCrouching()) {
             if (itemCap.getStackInSlot(0).count < 64) {
                 itemCap.insertItem(item.withCount(1), false);
                 item.count--;
@@ -252,5 +252,42 @@ function spawnTrialMobs(block) {
         mobEntity.addTag("trial_mob");
         mobEntity.addTag("persistent");
         mobEntity.potionEffects.add("speed", -1, 4);
+    }
+}
+
+/**
+ *
+ * @param {Internal.ServerPlayer} player
+ * @param {Internal.InteractionHand} hand
+ * @param {string} structureName
+ * @param {number} range
+ * @returns
+ */
+function spawnStructureFinderEye(player, hand, structureName, range) {
+    let item = player.getHeldItem(hand);
+    let level = player.level;
+    let structureRegistry = level.registryAccess().registryOrThrow($Registries.STRUCTURE);
+    let structureKey = $ResourceKey.create(structureRegistry.key(), structureName);
+    let holder = structureRegistry.getHolder(structureKey);
+    let holderSet = $HolderSet.direct([holder.get()]);
+    let pair = level
+        .getChunkSource()
+        .getGenerator()
+        .findNearestMapStructure(level, holderSet, player.blockPosition(), range, false);
+
+    if (pair) {
+        let structurePos = pair.getFirst();
+
+        /**@type {Internal.EyeOfEnder} */
+        let eye = level.createEntity("eye_of_ender");
+        eye.setPos(player.x, player.y + 1, player.z);
+        eye.setItem(item);
+        eye.signalTo(structurePos);
+        eye.spawn();
+
+        player.swing(hand, true);
+        if (!player.isCreative()) item.count--;
+
+        level.playSound(null, player.blockPosition(), "entity.ender_eye.launch", "master");
     }
 }

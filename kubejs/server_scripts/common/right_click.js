@@ -32,7 +32,7 @@ BlockEvents.rightClicked("white_concrete", (event) => {
 });
 
 BlockEvents.rightClicked((event) => {
-    const { hand, item } = event;
+    const { hand, item, block, player } = event;
     if (hand != "MAIN_HAND" || item != "mierno:source_flower" || block.hasTag("minecraft:dirt")) return;
 
     player.inventoryMenu.broadcastFullState();
@@ -148,48 +148,6 @@ BlockEvents.rightClicked("botania:terra_plate", (event) => {
     }
 });
 
-ItemEvents.rightClicked("mierno:whos_gift", (event) => {
-    const { item, player } = event;
-
-    player.give("iron_block");
-    player.give("gold_block");
-    player.give("copper_block");
-    player.give("coal_block");
-    player.give("redstone_block");
-    player.give("lapis_block");
-    player.give("diamond_block");
-    player.give("emerald_block");
-
-    item.count--;
-    player.swing();
-});
-
-ItemEvents.rightClicked("mierno:dream_lantern", (event) => {
-    const { player, level } = event;
-
-    if (player.lookAngle.y() == 1) {
-        const /**@type {Internal.ServerPlayer} */ serverPlayer = player;
-
-        if (serverPlayer.respawnPosition) {
-            const { x, y, z } = serverPlayer.getRespawnPosition();
-            const respawnDimension = serverPlayer.getRespawnDimension().location();
-
-            serverPlayer.teleportTo(respawnDimension, x, y, z, 0, 0);
-        } else {
-            const { x, y, z } = level.getSharedSpawnPos();
-
-            serverPlayer.teleportTo("overworld", x, y, z, 0, 0);
-        }
-    }
-});
-
-ItemEvents.rightClicked("mierno:portable_crafting_table", (event) => {
-    const { player } = event;
-
-    openCraftingMenu(player);
-    player.swing();
-});
-
 BlockEvents.rightClicked("bloodmagic:altar", (event) => {
     const { hand, item, block } = event;
     if (hand != "MAIN_HAND" || item != "evilcraft:creative_blood_drop") return;
@@ -273,4 +231,52 @@ BlockEvents.rightClicked("bloodmagic:dungeon_eye", (event) => {
             });
         });
     });
+});
+
+ItemEvents.rightClicked("mierno:whos_gift", (event) => {
+    const { item, player } = event;
+
+    player.give("iron_block");
+    player.give("gold_block");
+    player.give("copper_block");
+    player.give("coal_block");
+    player.give("redstone_block");
+    player.give("lapis_block");
+    player.give("diamond_block");
+    player.give("emerald_block");
+
+    item.count--;
+    player.swing();
+});
+
+ItemEvents.rightClicked("mierno:dream_lantern", (event) => {
+    const { player, level } = event;
+
+    if (player.lookAngle.y() == 1) {
+        const /**@type {Internal.ServerPlayer} */ serverPlayer = player;
+
+        if (serverPlayer.respawnPosition) {
+            const { x, y, z } = serverPlayer.getRespawnPosition();
+            const respawnDimension = serverPlayer.getRespawnDimension().location();
+
+            serverPlayer.teleportTo(respawnDimension, x, y, z, 0, 0);
+        } else {
+            const { x, y, z } = level.getSharedSpawnPos();
+
+            serverPlayer.teleportTo("overworld", x, y, z, 0, 0);
+        }
+    }
+});
+
+ItemEvents.rightClicked("mierno:portable_crafting_table", (event) => {
+    const { player } = event;
+
+    openCraftingMenu(player);
+    player.swing();
+});
+
+ItemEvents.rightClicked("mierno:dark_eyes", (event) => {
+    const { player, hand } = event;
+
+    spawnStructureFinderEye(player, hand, "mierno:dark_temple", 512);
 });

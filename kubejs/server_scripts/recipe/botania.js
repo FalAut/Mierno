@@ -269,7 +269,7 @@ ServerEvents.recipes((event) => {
         mierno
             .modular_mana_infusion()
             .inputItems(input)
-            .blocksInStructure(1, 100, "botania:alchemy_catalyst")
+            .blocksInStructure(1, 1, "botania:alchemy_catalyst")
             .outputItems(Item.of(output).withCount(2))
             .inputMana(mana ? mana : 2000)
             .duration(1);
@@ -307,7 +307,7 @@ ServerEvents.recipes((event) => {
         mierno
             .modular_mana_infusion()
             .inputItems(input)
-            .blocksInStructure(1, 100, "botania:conjuration_catalyst")
+            .blocksInStructure(1, 1, "botania:conjuration_catalyst")
             .outputItems(Item.of(output).withCount(2))
             .inputMana(mana ? mana : 2000)
             .priority(-1)

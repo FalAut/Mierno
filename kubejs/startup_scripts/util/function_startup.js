@@ -120,7 +120,7 @@ function setBounceData(player, bounceY) {
  */
 function onFallWithSlimeBoots(event) {
     const { entity, distance } = event;
-    if (!entity.isPlayer() || entity.isFake()) return;
+    if (!entity.isPlayer()) return;
 
     if (entity.getItemBySlot("feet") != "mierno:slime_boots") return;
 
@@ -141,10 +141,10 @@ function onFallWithSlimeBoots(event) {
             event.setCanceled(true);
         }
 
-        entity.playSound("minecraft:entity.slime.squish");
+        level.playSound(null, entity.blockPosition(), "entity.slime.squish", "master");
 
         for (let i = 0; i < 8; i++) {
-            const angle = entity.random.nextFloat() * KMath.PI * 2;
+            const angle = entity.random.nextFloat() * JavaMath.PI * 2;
             const radius = 0.5 * (0.5 + entity.random.nextFloat());
             const xOffset = Math.sin(angle) * radius;
             const zOffset = Math.cos(angle) * radius;

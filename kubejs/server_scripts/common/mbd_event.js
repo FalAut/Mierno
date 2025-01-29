@@ -1,20 +1,20 @@
 MBDMachineEvents.onBeforeRecipeWorking("mierno:fired_crucible", (event) => {
-    const info = event.event;
-    const { machine } = info;
+    const mbdEvent = event.getEvent();
+    const { machine } = mbdEvent;
     const heatSource = machine.level.getBlock(machine.pos.below());
 
     if (heatSource.hasTag("mierno:crucible_heat_source")) {
         if (heatSource.id == "minecraft:campfire" && heatSource.properties.lit == "false") {
-            info.setCanceled(true);
+            mbdEvent.setCanceled(true);
         }
     } else {
-        info.setCanceled(true);
+        mbdEvent.setCanceled(true);
     }
 });
 
 MBDMachineEvents.onBeforeRecipeModify("mierno:fired_crucible", (event) => {
-    const info = event.event;
-    const { machine, recipe } = info;
+    const mbdEvent = event.getEvent();
+    const { machine, recipe } = mbdEvent;
     const heatSource = machine.level.getBlock(machine.pos.below());
     const copyRecipe = recipe.copy();
 
@@ -38,12 +38,12 @@ MBDMachineEvents.onBeforeRecipeModify("mierno:fired_crucible", (event) => {
             break;
     }
 
-    info.setRecipe(copyRecipe);
+    mbdEvent.setRecipe(copyRecipe);
 });
 
 MBDMachineEvents.onBeforeRecipeModify("mierno:colossal_furnace_core", (event) => {
-    const info = event.event;
-    const { machine, recipe } = info;
+    const mbdEvent = event.getEvent();
+    const { machine, recipe } = mbdEvent;
 
     let cap = machine.getCapability(ForgeCapabilities.ITEM_HANDLER).orElse(null);
     let furnaceCount = cap.getStackInSlot(27).count;
@@ -53,11 +53,11 @@ MBDMachineEvents.onBeforeRecipeModify("mierno:colossal_furnace_core", (event) =>
     let reductionFactor = Math.max(1 - 0.01 * furnaceCount, 0.1);
     copyRecipe.duration = Math.ceil(recipe.duration * reductionFactor);
 
-    info.setRecipe(copyRecipe);
+    mbdEvent.setRecipe(copyRecipe);
 });
 
 MBDMachineEvents.onTick("mierno:memory_source_drawing_crystal_core", (event) => {
-    const { machine } = event.event;
+    const { machine } = event.getEvent();
     const { level, pos } = machine;
 
     if (!$IMultiController.ofController(level, pos).orElse(null).isFormed()) return;
@@ -86,20 +86,20 @@ MBDMachineEvents.onTick("mierno:memory_source_drawing_crystal_core", (event) => 
 });
 
 MBDMachineEvents.onBeforeRecipeModify("mierno:modular_imbuement_chamber_core", (event) => {
-    const info = event.event;
-    const { machine, recipe } = info;
+    const mbdEvent = event.getEvent();
+    const { machine, recipe } = mbdEvent;
 
     if ($SourceUtil.takeSourceWithParticles(machine.pos, machine.level, 6, 100) != null) {
         let copyRecipe = recipe.copy();
 
         copyRecipe.duration = 1;
 
-        info.setRecipe(copyRecipe);
+        mbdEvent.setRecipe(copyRecipe);
     }
 });
 
-MBDMachineEvents.onTick(["mierno:brain_in_a_jar", "mierno:computation_matrix"], (event) => {
-    const { machine } = event.event;
+MBDMachineEvents.onTick("mierno:computation_matrix", (event) => {
+    const { machine } = event.getEvent();
     const { level, pos } = machine;
     const controller = $IMultiController.ofController(level, pos).orElse(null);
 
@@ -108,12 +108,6 @@ MBDMachineEvents.onTick(["mierno:brain_in_a_jar", "mierno:computation_matrix"], 
     } else {
         machine.triggerGeckolibAnim("idel");
     }
-
-    //     /**@type {Internal.GeckolibRenderer} */
-    //     const render = machine.machineState.getRenderer();
-    //     const animation = render.getAnimatableFromMachine(machine).getAnimatableInstanceCache().getTriggeredAnimation();
-    // new $AnimationController()
-    //     console.log(animation);
 });
 
 MBDMachineEvents.onTick(
@@ -125,8 +119,7 @@ MBDMachineEvents.onTick(
         "mierno:mana_input",
     ],
     (event) => {
-        const { machine } = event.event;
-        const { level, pos } = machine;
+        const { machine } = event.getEvent();
 
         let manaCap = machine.getCapability(BotaniaCapabilities.MANA_RECEIVER).orElse(null);
         let itemCap = machine.getCapability(ForgeCapabilities.ITEM_HANDLER).orElse(null);
@@ -175,7 +168,7 @@ MBDMachineEvents.onTick(
 // ];
 
 // MBDMachineEvents.onTick(cobbleGens, (event) => {
-//     const { machine } = event.event;
+//     const { machine } = event.getEvent();
 //     const { pos, customData, level } = machine;
 //     const ticksExisted = (customData.getInt("ticksExisted") || 0) + 1;
 //     customData.putInt("ticksExisted", ticksExisted);

@@ -99,20 +99,6 @@ ServerEvents.recipes((event) => {
 
     event.custom({
         type: "bloodmagic:altar",
-        altarSyphon: 2147483647,
-        consumptionRate: 2147483647,
-        drainRate: 2147483647,
-        input: {
-            item: "bloodmagic:activationcrystalawakened",
-        },
-        output: {
-            item: "bloodmagic:activationcrystalcreative",
-        },
-        upgradeLevel: 4,
-    });
-
-    event.custom({
-        type: "bloodmagic:altar",
         altarSyphon: 1000,
         consumptionRate: 100,
         drainRate: 100,

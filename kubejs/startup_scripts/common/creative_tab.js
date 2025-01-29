@@ -2,6 +2,7 @@ Platform.setModName("mierno", "Mierno");
 
 StartupEvents.modifyCreativeTab("kubejs:tab", (event) => {
     event.setDisplayName("Mierno");
+    event.setIcon(Item.of("mierno:pseudo_inversion_sigil").enchant("mierno:activate", 1));
     event.remove("mierno:unstable_ingot");
     event.add([
         Item.of("mierno:dream_lantern", "{aura:2560000}"),

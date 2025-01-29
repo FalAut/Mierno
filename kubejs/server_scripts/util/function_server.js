@@ -93,7 +93,7 @@ const handleCrucibleInteraction = (event, crucible, inputItem, outputFluid) => {
         const itemCap = block.entity.getCapability(ForgeCapabilities.ITEM_HANDLER).resolve().get();
         const fluidCap = block.entity.getCapability(ForgeCapabilities.FLUID_HANDLER).resolve().get();
 
-        if (item.hasTag(inputItem)) {
+        if (item.hasTag(inputItem) && !player.isCrouching()) {
             if (itemCap.getStackInSlot(0).count < 64) {
                 itemCap.insertItem(item.withCount(1), false);
                 item.count--;

@@ -32,7 +32,7 @@ BlockEvents.rightClicked("white_concrete", (event) => {
 });
 
 BlockEvents.rightClicked((event) => {
-    const { hand, item } = event;
+    const { hand, item, block, player } = event;
     if (hand != "MAIN_HAND" || item != "mierno:source_flower" || block.hasTag("minecraft:dirt")) return;
 
     player.inventoryMenu.broadcastFullState();

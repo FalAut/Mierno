@@ -796,6 +796,21 @@
 					table_id: 5354634242720975076L
 					type: "loot"
 				}
+				{
+					id: "3BFFF1E5160ACC12"
+					item: "expatternprovider:caner"
+					type: "item"
+				}
+				{
+					id: "385F80A1F181D0E9"
+					item: "modularrouters:modular_router"
+					type: "item"
+				}
+				{
+					id: "334C57CAD0064EDC"
+					item: "modularrouters:activator_module"
+					type: "item"
+				}
 			]
 			tasks: [
 				{
@@ -1012,70 +1027,6 @@
 			}]
 			x: 4.0d
 			y: 3.0d
-		}
-		{
-			dependencies: ["58D74210D6ADBA24"]
-			hide_dependency_lines: true
-			id: "678C5EF90340A046"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "037E00F16BA3D2A3"
-					table_id: 1320735954632056874L
-					type: "loot"
-				}
-				{
-					exclude_from_claim_all: true
-					id: "39C52BEA10A2FD8B"
-					table_id: 1675656862002921859L
-					type: "loot"
-				}
-				{
-					exclude_from_claim_all: true
-					id: "3991187887270603"
-					table_id: 5354634242720975076L
-					type: "loot"
-				}
-			]
-			tasks: [{
-				id: "57E4E1EEDC2306D7"
-				item: "pneumaticcraft:heat_frame"
-				type: "item"
-			}]
-			x: 9.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["58D74210D6ADBA24"]
-			hide_dependency_lines: true
-			id: "2F4BAAEA09761E05"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "4586E7D45067659D"
-					table_id: 1320735954632056874L
-					type: "loot"
-				}
-				{
-					exclude_from_claim_all: true
-					id: "68A90D80F7EB6B76"
-					table_id: 1675656862002921859L
-					type: "loot"
-				}
-				{
-					exclude_from_claim_all: true
-					id: "7C369F64E4A765EA"
-					table_id: 5354634242720975076L
-					type: "loot"
-				}
-			]
-			tasks: [{
-				id: "7CCBA2C273098805"
-				item: "pneumaticcraft:vortex_tube"
-				type: "item"
-			}]
-			x: 6.0d
-			y: -1.0d
 		}
 		{
 			dependencies: [
@@ -1629,8 +1580,8 @@
 				item: "pneumaticcraft:creative_compressed_iron_block"
 				type: "item"
 			}]
-			x: 7.5d
-			y: -2.25d
+			x: 6.0d
+			y: 3.25d
 		}
 		{
 			dependencies: ["317E1E879C1AFCD4"]
@@ -1663,8 +1614,8 @@
 				item: "pneumaticcraft:creative_compressor"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 3.25d
+			x: 7.5d
+			y: -1.0d
 		}
 	]
 	title: "{mierno.chapter2-1.title}"

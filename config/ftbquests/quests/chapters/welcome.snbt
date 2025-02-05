@@ -140,7 +140,7 @@
 				"{mierno.welcome.special_thanks.falaut}"
 				""
 				"{mierno.welcome.special_thanks.tyumen}"
-				"{\"translate\":\"mierno.welcome.special_thanks.tyumens\",\"extra\":[{\"translate\":\"mierno.welcome.special_thanks.bilibili\",\"color\":\"green\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://space.bilibili.com/32796946\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}},{\"text\":\" | \",\"color\":\"white\"},{\"translate\":\"mierno.welcome.special_thanks.huya\",\"color\":\"green\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://www.huya.com/raini\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}}]}"
+				"{\"translate\":\"mierno.welcome.special_thanks.tyumens\",\"extra\":[{\"translate\":\"mierno.welcome.special_thanks.bilibili\",\"color\":\"green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/tyumen bilibili\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}},{\"text\":\" | \",\"color\":\"white\"},{\"translate\":\"mierno.welcome.special_thanks.huya\",\"color\":\"green\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/tyumen huya\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}}]}"
 				""
 				"{mierno.welcome.special_thanks.test_players}"
 			]
@@ -167,12 +167,19 @@
 			icon: "akashictome:tome"
 			id: "03407C903157428A"
 			rewards: [{
-				id: "652F13B50F67699F"
+				id: "6C1034C47843127F"
 				item: {
 					Count: 1
 					id: "akashictome:tome"
 					tag: {
 						"akashictome:data": {
+							ad_astra: {
+								Count: 1b
+								id: "patchouli:guide_book"
+								tag: {
+									"patchouli:book": "ad_astra:astrodux"
+								}
+							}
 							ae2: {
 								Count: 1b
 								id: "ae2:guide"
@@ -265,7 +272,6 @@
 						"akashictome:is_morphing": 1b
 					}
 				}
-				team_reward: true
 				type: "item"
 			}]
 			tasks: [{
@@ -282,8 +288,6 @@
 				"{mierno.welcome.projecte.desc1}"
 				""
 				"{mierno.welcome.projecte.desc2}"
-				""
-				"{mierno.welcome.projecte.desc3}"
 			]
 			disable_toast: true
 			icon: "projecte:transmutation_tablet"

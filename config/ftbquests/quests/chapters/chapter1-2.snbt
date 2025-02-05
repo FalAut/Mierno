@@ -240,7 +240,6 @@
 					type: "loot"
 				}
 			]
-			subtitle: "{mierno.chapter1-2.elven_portal_conversion.subtitle}"
 			tasks: [{
 				id: "19BB31D35297C042"
 				item: "botania:shimmerrock"
@@ -553,7 +552,7 @@
 				table_id: 1320735954632056874L
 				type: "loot"
 			}]
-			subtitle: "{mierno.chapter1-1.bottle_mist.subtitle}"
+			subtitle: "{mierno.chapter1-2.bottle_mist.subtitle}"
 			tasks: [{
 				id: "354255C3C3EC889B"
 				item: {
@@ -608,7 +607,7 @@
 			id: "056C442009E33606"
 			rewards: [
 				{
-					count: 32
+					count: 64
 					id: "0C61FB2E15A806F9"
 					item: "ars_nouveau:source_gem"
 					team_reward: true
@@ -1170,7 +1169,7 @@
 					type: "item"
 				}
 			]
-			x: 10.0d
+			x: 10.5d
 			y: 2.5d
 		}
 		{
@@ -1831,6 +1830,7 @@
 						mana: 500000
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: 9.0d

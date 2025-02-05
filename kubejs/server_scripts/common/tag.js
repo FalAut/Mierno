@@ -72,6 +72,7 @@ ServerEvents.tags("block", (event) => {
         "mierno:engraving_table",
         "mierno:oak_crucible",
     ]);
+
     event.add("minecraft:needs_iron_tool", [
         "mierno:reinforced_stone_frame",
         "mierno:futura_block",
@@ -152,8 +153,8 @@ ServerEvents.tags("block", (event) => {
         "mierno:computation_matrix",
         "mierno:assembly_room_controller",
         "mierno:pressure_input",
-        "mierno:brain_in_a_jar",
         "mierno:planting_station",
+        "evilcraft:environmental_accumulator",
     ]);
 
     event.add("minecraft:needs_diamond_tool", [

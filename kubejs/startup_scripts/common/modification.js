@@ -16,6 +16,10 @@ BlockEvents.modification((event) => {
     event.modify(["mierno:molten_lumium", "mierno:molten_signalum"], (block) => {
         block.setLightEmission(15);
     });
+
+    event.modify("minecraft:enchanting_table", (block) => {
+        block.setLightEmission(0);
+    });
 });
 
 ItemEvents.modification((event) => {

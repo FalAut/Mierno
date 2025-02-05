@@ -1,7 +1,7 @@
 // priority: 9
 
 ServerEvents.recipes((event) => {
-    event.remove({ mod: "projecte" });
+    // event.remove({ mod: "projecte" });
     event.remove({ type: "occultism:miner" });
 
     let recipesToRemoveID = [
@@ -286,17 +286,17 @@ ServerEvents.recipes((event) => {
         "bloodmagic:soulforge/sanguine_reverter",
         "mekanism:processing/lategame/plutonium_pellet/from_reaction",
         "mekanism:processing/lategame/polonium_pellet/from_reaction",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
+        "ad_astra:steel_block",
+        "projecte:philosophers_stone",
+        "projecte:philosophers_stone_alt",
+        "projecte:transmutation_table",
+        "projecte:transmutation_tablet",
+        "projecte:dark_matter",
+        "projecte:red_matter",
+        "projecte:red_matter_alt",
+        "projecte:collector_mk1",
+        "projecte:collector_mk2",
+        "projecte:collector_mk3",
         "",
         "",
         "",

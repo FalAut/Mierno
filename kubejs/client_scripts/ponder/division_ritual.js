@@ -9,19 +9,19 @@ Ponder.registry((event) => {
             scene
                 .text(
                     100,
-                    "要激活分割徽章，需要满足一些条件\n1.仪式摆放需要正确\n2.当前时间需要为午夜\n3.祭坛需要露天\n4.祭坛周围亮度需要足够够低"
+                    "要激活分割徽章，需要满足一些条件\n1.仪式摆放需要正确\n2.当前时间需要为午夜\n3.祭坛周围亮度需要足够够低\n4.祭坛需要露天"
                 )
                 .attachKeyFrame();
             scene.text(100, "使用分割徽章右键附魔台来查看条件是否满足", [3.5, 2.5, 3.5]);
             scene.showControls(100, [4, 2.5, 3.5], "right").rightClick().withItem("mierno:division_sigil");
 
-            scene.idle(140);
+            scene.idle(120);
 
             scene.text(60, "在一切条件满足后，将分割徽章扔在附魔台上").attachKeyFrame();
             let sigil = scene.world.createItemEntity([3.5, 4, 3.5], [0, 0, 0], "mierno:division_sigil");
             scene.idle(80);
 
-            scene.text(60, "然后献祭一只生物").attachKeyFrame();
+            scene.text(60, "然后在附魔台上献祭一只生物").attachKeyFrame();
             let pig = scene.world.createEntity("pig", [3.5, 3, 3.5]);
 
             scene.showControls(60, [3.5, 3, 3.5], "left").leftClick().withItem("diamond_sword");

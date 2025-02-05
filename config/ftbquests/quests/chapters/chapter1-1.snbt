@@ -206,7 +206,7 @@
 			]
 			id: "0C05E172FDFFC328"
 			rewards: [{
-				count: 16
+				count: 64
 				id: "3B78F97D618A51E4"
 				item: "naturesaura:gold_leaf"
 				team_reward: true
@@ -225,7 +225,7 @@
 			dependencies: ["2E52F34D24E72BB9"]
 			id: "5134908BA0FD9758"
 			rewards: [{
-				count: 32
+				count: 64
 				id: "6A6B270C173E544F"
 				item: "naturesaura:gold_powder"
 				team_reward: true
@@ -251,7 +251,7 @@
 				{
 					count: 2
 					id: "51675D9A3003520A"
-					item: "functionalstorage:oak_1"
+					item: "functionalstorage:oak_4"
 					team_reward: true
 					type: "item"
 				}
@@ -370,11 +370,20 @@
 				"21C48122170841B7"
 			]
 			id: "05534E447EAA66A0"
-			rewards: [{
-				id: "7E92B5134A82109E"
-				item: "naturesaura:eye"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "7E92B5134A82109E"
+					item: "naturesaura:eye"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "077EE6A90E21FCD8"
+					item: "naturesaura:gold_powder"
+					team_reward: true
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "138286EC2A431740"
 				item: "mierno:aura_grinder"

@@ -5,6 +5,13 @@ StartupEvents.postInit((event) => {
         0xb0c4de,
         0
     ).register();
+
+    new $BasicAuraType(
+        new ResourceLocation("mierno", "heterogeneous"),
+        $ResourceKey.create($ResourceKey.createRegistryKey("dimension_type"), "mierno:otherworld"),
+        0x3e5b6d,
+        0
+    ).register();
 });
 
 StartupEvents.registry("enchantment", (event) => {

@@ -69,24 +69,10 @@ LycheeEvents.customCondition("validate_misty_forest_portal", (event) => {
 
 LycheeEvents.customCondition("addition_sigil_validate", (event) => {
     event.condition.testFunc = (recipe, ctx, times) => {
-        let itemEntity = ctx.getParam("this_entity");
+        /**@type {Internal.ItemEntity} */
+        const itemEntity = ctx.getParam("this_entity");
         const { level, block } = itemEntity;
-        const multiblock = $PatchouliAPI.getMultiblock("mierno:addition_sigil_activation_ritual");
-        if (multiblock.validate(level, block.pos.below(), "none")) {
-            return times;
-        }
-        return 0;
-    };
-});
 
-LycheeEvents.customCondition("addition_sigil_validate", (event) => {
-    event.condition.testFunc = (recipe, ctx, times) => {
-        let itemEntity = ctx.getParam("this_entity");
-        const { level, block } = itemEntity;
-        const multiblock = $PatchouliAPI.getMultiblock("mierno:addition_sigil_activation_ritual");
-        if (multiblock.validate(level, block.pos.below(), "none")) {
-            return times;
-        }
-        return 0;
+        return global.additionSigilValidate(level, block, times);
     };
 });

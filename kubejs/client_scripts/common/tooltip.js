@@ -54,8 +54,6 @@ ItemEvents.tooltip((event) => {
         ]
     );
     event.add("mierno:dream_wings", Text.translate("tooltip.mierno.dream_wings").gold());
-    event.add("mierno:addition_sigil", Text.translate("tooltip.mierno.addition_sigil").gold());
-    event.add("mierno:division_sigil", Text.translate("tooltip.mierno.division_sigil").gold());
     event.add("mierno:fire_starter", Text.translate("tooltip.mierno.fire_starter").gold());
 
     event.add("mierno:gensousitu_bucket", [
@@ -276,4 +274,6 @@ ItemEvents.tooltip((event) => {
         Text.translate("tooltip.mierno.evilcraft_machine").gold()
     );
     event.add("evilcraft:spirit_furnace", Text.translate("tooltip.mierno.spirit_furnace").gold());
+    event.add("forbidden_arcanus:stella_arcanum", Text.translate("tooltip.mierno.stella_arcanum").gold());
+    event.add("mierno:tyumen_ingot", "§eEMC§r: 9,223,372,036,854,775,807");
 });

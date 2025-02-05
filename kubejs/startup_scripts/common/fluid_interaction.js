@@ -64,4 +64,5 @@ StartupEvents.postInit((event) => {
     blockGen("ancient_debris", "netherite_block", "mierno:gensousitu");
     blockGen("obsidian", "crying_obsidian", "mierno:gensousitu");
     blockGen("glowstone", "mierno:mini_sun", "mierno:gensousitu");
+    blockGen("nether_quartz_ore", "quartz_block", "mierno:gensousitu");
 });

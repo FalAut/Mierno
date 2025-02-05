@@ -73,7 +73,7 @@ LycheeEvents.customAction("addition_sigil_activation", (event) => {
             if (result.character == "A") {
                 level.setBlock(
                     result.worldPosition.below(),
-                    Block.getBlock("botania:infused_grass").defaultBlockState(),
+                    Block.getBlock("botania:vivid_grass").defaultBlockState(),
                     2
                 );
             }

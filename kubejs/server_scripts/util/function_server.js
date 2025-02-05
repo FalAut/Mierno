@@ -1,3 +1,5 @@
+// priority: 1
+
 /**
  * 处理梦之灯
  * @param {Internal.ItemStack_} item
@@ -290,4 +292,28 @@ function spawnStructureFinderEye(player, hand, structureName, range) {
 
         level.playSound(null, player.blockPosition(), "entity.ender_eye.launch", "master");
     }
+}
+
+/**
+ * 徽章激活条件检查器
+ * @param {string} multiblockId
+ * @param {(level: Internal.ServerLevel, block: Internal.BlockContainerJS) => Array<[boolean, string]>} conditionProvider
+ * @returns {(level: Internal.ServerLevel, block: Internal.BlockContainerJS, player: Internal.ServerPlayer) => boolean}
+ */
+function createRitualChecker(ritualType, conditionProvider) {
+    return (level, block, player) => {
+        const multiblock = $PatchouliAPI.getMultiblock(`mierno:${ritualType}_sigil_activation_ritual`);
+        const conditions = conditionProvider(level, block, multiblock);
+
+        const results = conditions.map(([condition, messageKey]) => {
+            if (player) {
+                const status = condition ? "§a✅" : "§4❌";
+                player.tell(Text.translate(`message.mierno.activation_ritual.condition.${messageKey}`, status).gold());
+            }
+
+            return condition;
+        });
+
+        return results.every(Boolean);
+    };
 }

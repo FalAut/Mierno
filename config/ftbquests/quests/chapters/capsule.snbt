@@ -161,9 +161,9 @@
 				}
 				{
 					consume_items: true
-					count: 64L
+					count: 72L
 					id: "687CB4FDC73FFC37"
-					item: { Count: 64, id: "naturesaura:infused_brick" }
+					item: "naturesaura:infused_brick"
 					type: "item"
 				}
 				{
@@ -178,13 +178,6 @@
 					count: 36L
 					id: "58D1229099A551C7"
 					item: { Count: 36, id: "naturesaura:infused_brick_stairs" }
-					type: "item"
-				}
-				{
-					consume_items: true
-					count: 8L
-					id: "6D78E4DB740ADA84"
-					item: { Count: 8, id: "naturesaura:infused_brick" }
 					type: "item"
 				}
 				{
@@ -947,16 +940,9 @@
 				}
 				{
 					consume_items: true
-					count: 64L
+					count: 104L
 					id: "4881A8112B13D1C3"
-					item: { Count: 64, id: "botania:livingrock_bricks" }
-					type: "item"
-				}
-				{
-					consume_items: true
-					count: 40L
-					id: "65C0CBF8B1858379"
-					item: { Count: 40, id: "botania:livingrock_bricks" }
+					item: "botania:livingrock_bricks"
 					type: "item"
 				}
 				{
@@ -1173,15 +1159,8 @@
 				}
 				{
 					consume_items: true
-					count: 64L
+					count: 122L
 					id: "3EE707DE91A5D721"
-					item: "ae2:quartz_vibrant_glass"
-					type: "item"
-				}
-				{
-					consume_items: true
-					count: 58L
-					id: "63341FE4B0C04CDC"
 					item: "ae2:quartz_vibrant_glass"
 					type: "item"
 				}
@@ -1490,13 +1469,7 @@
 		}
 		{
 			can_repeat: true
-			description: [
-				"{tooltip.mierno.modular_mana_pool_core_1}"
-				""
-				"{tooltip.mierno.modular_mana_pool_core_2}"
-				""
-				"{tooltip.mierno.modular_mana_pool_core_3}"
-			]
+			description: ["{tooltip.mierno.modular_mana_pool_core_1}"]
 			icon: "mierno:modular_mana_pool_core"
 			id: "5C4FDA49A2FBA3C0"
 			rewards: [{
@@ -1531,16 +1504,9 @@
 				}
 				{
 					consume_items: true
-					count: 64L
+					count: 94L
 					id: "6E18473A6DE90EA8"
-					item: { Count: 64, id: "botania:livingrock" }
-					type: "item"
-				}
-				{
-					consume_items: true
-					count: 30L
-					id: "05825099A0DAC55D"
-					item: { Count: 30, id: "botania:livingrock" }
+					item: "botania:livingrock"
 					type: "item"
 				}
 				{
@@ -1670,30 +1636,16 @@
 				}
 				{
 					consume_items: true
-					count: 64L
+					count: 81L
 					id: "38A9A791A98D77AD"
-					item: { Count: 64, id: "mekanism:sps_casing" }
+					item: "mekanism:sps_casing"
 					type: "item"
 				}
 				{
 					consume_items: true
-					count: 17L
-					id: "634DA4127CE83B72"
-					item: { Count: 17, id: "mekanism:sps_casing" }
-					type: "item"
-				}
-				{
-					consume_items: true
-					count: 64L
+					count: 94L
 					id: "6D01BEF2A275ADF8"
-					item: { Count: 64, id: "mekanism:structural_glass" }
-					type: "item"
-				}
-				{
-					consume_items: true
-					count: 38L
-					id: "130DA86F3926EE6B"
-					item: { Count: 38, id: "mekanism:structural_glass" }
+					item: "mekanism:structural_glass"
 					type: "item"
 				}
 			]

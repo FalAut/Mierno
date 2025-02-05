@@ -33,5 +33,6 @@ JEIAddedEvents.registerRecipes((event) => {
         .add({ input: "oxidized_copper", output: "copper_ore", also: "raw_copper" })
         .add({ input: "netherite_block", output: "ancient_debris", also: "netherite_scrap" })
         .add({ input: "crying_obsidian", output: "obsidian", also: "obsidian" })
-        .add({ input: "mierno:mini_sun", output: "glowstone", also: "glowstone_dust" });
+        .add({ input: "mierno:mini_sun", output: "glowstone", also: "glowstone_dust" })
+        .add({ input: "quartz_block", output: "nether_quartz_ore", also: "quartz" });
 });

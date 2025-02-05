@@ -1,8 +1,12 @@
 {
-    "entries": [
-        {
-            "item": "#mierno:all_items",
-            "emc": 1
-        }
-    ]
+  "entries": [
+    {
+      "item": "#mierno:all_items",
+      "emc": 1
+    },
+    {
+      "item": "mierno:tyumen_ingot",
+      "emc": 9223372036854775807
+    }
+  ]
 }

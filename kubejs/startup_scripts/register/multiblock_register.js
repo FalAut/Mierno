@@ -152,6 +152,22 @@ StartupEvents.postInit((event) => {
     );
 
     $PatchouliAPI.registerMultiblock(
+        "mierno:addition_sigil_activation_ritual",
+        $PatchouliAPI.makeMultiblock(
+            [
+                ["_____", "_BBB_", "_B0B_", "_BBB_", "_____"],
+                ["AAAAA", "AAAAA", "AAAAA", "AAAAA", "AAAAA"],
+            ],
+            new $Character("0"),
+            Block.getBlock("minecraft:crafting_table"),
+            new $Character("A"),
+            Block.getBlock("minecraft:dirt"),
+            new $Character("B"),
+            Block.getBlock("minecraft:redstone_wire")
+        )
+    );
+
+    $PatchouliAPI.registerMultiblock(
         "mierno:division_sigil_activation_ritual",
         $PatchouliAPI.makeMultiblock(
             [
@@ -168,7 +184,23 @@ StartupEvents.postInit((event) => {
     );
 
     $PatchouliAPI.registerMultiblock(
-        "mierno:addition_sigil_activation_ritual",
+        "mierno:subtraction_sigil_activation_ritual",
+        $PatchouliAPI.makeMultiblock(
+            [
+                ["_____", "_BBB_", "_B0B_", "_BBB_", "_____"],
+                ["AAAAA", "AAAAA", "AAAAA", "AAAAA", "AAAAA"],
+            ],
+            new $Character("0"),
+            Block.getBlock("minecraft:crafting_table"),
+            new $Character("A"),
+            Block.getBlock("minecraft:dirt"),
+            new $Character("B"),
+            Block.getBlock("minecraft:redstone_wire")
+        )
+    );
+
+    $PatchouliAPI.registerMultiblock(
+        "mierno:multiplication_sigil_activation_ritual",
         $PatchouliAPI.makeMultiblock(
             [
                 ["_____", "_BBB_", "_B0B_", "_BBB_", "_____"],

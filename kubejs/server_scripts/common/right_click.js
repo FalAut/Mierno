@@ -1,5 +1,8 @@
 BlockEvents.rightClicked((event) => {
     handleCrucibleInteraction(event, "mierno:oak_crucible", "leaves", "water");
+});
+
+BlockEvents.rightClicked((event) => {
     handleCrucibleInteraction(event, "mierno:fired_crucible", "mierno:fired_crucible_fuel", "lava");
 });
 
@@ -41,6 +44,7 @@ BlockEvents.rightClicked((event) => {
 
 BlockEvents.rightClicked((event) => {
     const { hand, level, block, item, player, server } = event;
+
     if (
         hand != "MAIN_HAND" ||
         !block.hasTag("minecraft:beds") ||
@@ -53,17 +57,11 @@ BlockEvents.rightClicked((event) => {
     let foundThirdEye = curiosInventory.equippedCurios.allItems.some((item) => item == "botania:third_eye");
     let structureTemplate = server.structureManager.get("mierno:demons_dream").get();
     let otherworld = server.getLevel("mierno:otherworld");
+    let blockPos = block.pos;
 
     if (foundThirdEye) {
         player.swing();
-        structureTemplate.placeInWorld(
-            otherworld,
-            block.pos,
-            block.pos,
-            new $StructurePlaceSettings(),
-            level.random,
-            2
-        );
+        structureTemplate.placeInWorld(otherworld, blockPos, blockPos, new $StructurePlaceSettings(), level.random, 2);
         player.teleportTo("mierno:otherworld", block.pos.x + 2, block.pos.y + 2, block.pos.z + 2, 0, 0);
         player.potionEffects.add("darkness", 100);
         player.potionEffects.add("nausea", 200);

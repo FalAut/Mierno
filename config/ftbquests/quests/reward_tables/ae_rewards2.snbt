@@ -16,6 +16,7 @@
 		{ item: "ae2:crafting_unit", weight: 3.0f }
 		{ item: "expatternprovider:oversize_interface", weight: 0.05f }
 		{ item: "ae2:speed_card", random_bonus: 16, weight: 2.0f }
+		{ item: "merequester:requester" }
 	]
 	title: "ae_rewards2"
 }

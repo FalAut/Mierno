@@ -130,6 +130,46 @@ ServerEvents.recipes((event) => {
         type: "thermal:smelter",
         ingredients: [
             {
+                item: "naturesaura:infused_iron",
+                count: 16,
+            },
+            {
+                item: "naturesaura:calling_spirit",
+                count: 1,
+            },
+        ],
+        result: [
+            {
+                item: "naturesaura:sky_ingot",
+                count: 16,
+            },
+        ],
+    });
+
+    event.custom({
+        type: "thermal:smelter",
+        ingredients: [
+            {
+                item: "naturesaura:tainted_gold",
+                count: 16,
+            },
+            {
+                item: "naturesaura:calling_spirit",
+                count: 1,
+            },
+        ],
+        result: [
+            {
+                item: "naturesaura:sky_ingot",
+                count: 32,
+            },
+        ],
+    });
+
+    event.custom({
+        type: "thermal:smelter",
+        ingredients: [
+            {
                 item: "ad_astra:ostrum_plate",
             },
             {

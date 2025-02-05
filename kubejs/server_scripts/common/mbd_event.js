@@ -61,7 +61,6 @@ MBDMachineEvents.onTick("mierno:memory_source_drawing_crystal_core", (event) => 
     const { level, pos } = machine;
 
     if (!$IMultiController.ofController(level, pos).orElse(null).isFormed()) return;
-    machine.triggerGeckolibAnim("formed");
 
     const { x, y, z } = pos;
     let aabb = AABB.of(x - 2, y + 6 - 2, z - 2, x + 2, y + 6 + 2, z + 2);
@@ -155,6 +154,20 @@ MBDMachineEvents.onTick(
             default:
                 break;
         }
+    }
+);
+
+MBDMachineEvents.onBeforeRecipeWorking(
+    ["mierno:aura_grinder", "mierno:engraving_table", "mierno:planting_station", "mierno:modular_nature_altar_core"],
+    (event) => {
+        const mbdEvent = event.getEvent();
+        const { machine } = mbdEvent;
+        const level = machine.level;
+
+        const chunkAuraCap = level.getChunkAt(machine.pos).getCapability($NaturesAuraAPI.CAP_AURA_CHUNK).orElse(null);
+        const aura = chunkAuraCap.getAuraInArea(level, machine.pos, 20);
+
+        if (aura <= 0) mbdEvent.setCanceled(true);
     }
 );
 

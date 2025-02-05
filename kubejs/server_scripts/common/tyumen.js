@@ -26,3 +26,38 @@ FTBQuestsEvents.customReward("065A030FB09ED60E", (event) => {
         }
     });
 });
+
+ServerEvents.commandRegistry((event) => {
+    const { commands: Commands } = event;
+
+    event.register(
+        Commands.literal("tyumen")
+            .then(
+                Commands.literal("bilibili").executes((ctx) => {
+                    const { player } = ctx.source;
+
+                    player.sendData("open_tyumen", { url: "https://space.bilibili.com/32796946" });
+
+                    return 1;
+                })
+            )
+            .then(
+                Commands.literal("huya").executes((ctx) => {
+                    const { player } = ctx.source;
+
+                    player.sendData("open_tyumen", { url: "https://www.huya.com/raini" });
+
+                    return 1;
+                })
+            )
+    );
+});
+
+NetworkEvents.dataReceived("give_tyumen_ingot", (event) => {
+    const { player, level } = event;
+
+    player.give("mierno:tyumen_ingot");
+    player.tell(Text.translate("message.mierno.tyumen_gift").gold());
+    level.broadcastEntityEvent(player, 35);
+    player.sendData("display_item_activation", { displayItem: "mierno:tyumen_ingot" });
+});

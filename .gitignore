@@ -51,6 +51,7 @@
 !defaultconfigs/ftbchunks/ftbchunks-world.snbt
 !defaultconfigs/ftbquests
 !defaultconfigs/ftbquests/client-config.snbt
+!defaultconfigs/ftbessentials-server.snbt
 !defaultconfigs/fluxnetworks-server.toml
 
 ## KubeJS

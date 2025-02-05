@@ -125,12 +125,16 @@ ServerEvents.recipes((event) => {
     kubejs.shapeless("2x bloodmagic:simplekey", ["thermal:iron_plate", "bloodmagic:simplekey"]);
     kubejs.shapeless("flint", ["gravel", "gravel", "gravel"]);
     kubejs.shapeless("ae2:not_so_mysterious_cube", "ae2:mysterious_cube").keepIngredient("ae2:mysterious_cube");
-    kubejs.shapeless("naturesaura:gold_leaf", ["gold_ingot", "#leaves"]);
+    kubejs.shapeless("8x naturesaura:gold_leaf", ["gold_ingot", "#leaves"]);
     kubejs.shapeless("mierno:futura_block", "ae2:controller").keepIngredient("ae2:controller");
     kubejs.shapeless("4x forbidden_arcanus:dark_nether_star", "forbidden_arcanus:dark_nether_star_block");
     kubejs.shapeless("2x powah:capacitor_basic", "2x powah:capacitor_basic_tiny");
     kubejs.shapeless("2x powah:capacitor_basic_large", "2x powah:capacitor_basic");
-    kubejs.shapeless("mierno:dark_eyes", ["minecraft:ender_eye", "occultism:otherworld_essence"]);
+    kubejs.shapeless("mierno:dark_eyes", [
+        "minecraft:ender_eye",
+        "occultism:otherworld_essence",
+        Item.of("naturesaura:aura_bottle", '{stored_type:"mierno:heterogeneous"}').weakNBT(),
+    ]);
     kubejs.shapeless(
         "botania:pinkinator",
         Item.of(
@@ -159,6 +163,7 @@ ServerEvents.recipes((event) => {
     });
     kubejs.shapeless("mierno:1", "mekanism:pellet_antimatter");
     kubejs.shapeless("mierno:computation_matrix", "mekanism:antiprotonic_nucleosynthesizer");
+    kubejs.shapeless("8x naturesaura:gold_powder", ["thermal:gold_dust", "#leaves"]);
 
     kubejs.shaped("bucket", ["A A", " A "], {
         A: "white_concrete",
@@ -526,14 +531,6 @@ ServerEvents.recipes((event) => {
         A: "mekanism:block_steel",
         B: "ae2:fluix_pearl",
         C: "ae2:singularity",
-    });
-
-    kubejs.shaped("mierno:modular_offering_table_controller", ["ABA", "CDC", "AEA"], {
-        A: "naturesaura:infused_stone",
-        B: "minecraft:poppy",
-        C: "naturesaura:color_changer",
-        D: "naturesaura:aura_trove",
-        E: "naturesaura:calling_spirit",
     });
 
     kubejs.shaped("occultism:chalk_purple_impure", ["AAA", "ABA", "AAA"], {
@@ -1046,6 +1043,11 @@ ServerEvents.recipes((event) => {
         A: "string",
         B: "slime_block",
         C: "slime_ball",
+    });
+
+    kubejs.shaped("ae2:creative_energy_cell", ["AAA", "ABA", "AAA"], {
+        A: "ae2:dense_energy_cell",
+        B: "ae2:singularity",
     });
 });
 

@@ -6,7 +6,6 @@ Ponder.tags((event) => {
         "naturesaura:offering_table",
         "naturesaura:animal_spawner",
         "naturesaura:calling_spirit",
-        "botania:alfheim_portal",
         "mierno:division_sigil",
         "mierno:gensousitu_bucket",
         "mierno:addition_sigil",

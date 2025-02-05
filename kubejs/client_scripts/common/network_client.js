@@ -57,16 +57,37 @@ ClientEvents.loggedIn((event) => {
 NetworkEvents.dataReceived("display_playtime", (event) => {
     const { player, data } = event;
 
-    player.paint({ playtime_counter: { text: convertTime(data.playtime) } });
+    player.paint({
+        playtime_counter: { text: convertTime(data.playtime, false) },
+    });
 });
 
 NetworkEvents.dataReceived("game_pass", (event) => {
     const { player, data } = event;
 
     player.sendData("converted_time", {
-        converted_time: convertTimeAnother(data.playtime),
+        converted_time: convertTime(data.playtime, true),
         playerName: player.username,
     });
+});
+
+NetworkEvents.dataReceived("open_tyumen", (event) => {
+    const { data, player } = event;
+    const curScreen = Client.currentScreen;
+
+    Client.setScreen(
+        new $ConfirmLinkScreen(
+            (accepted) => {
+                if (accepted) {
+                    $Util.getPlatform().openUri(data.url);
+                    player.sendData("give_tyumen_ingot");
+                }
+                Client.setScreen(curScreen);
+            },
+            data.url,
+            false
+        )
+    );
 });
 
 NetworkEvents.dataReceived("show_title", (event) => Client.gui.setTitle(Text.translate(event.data.message)));

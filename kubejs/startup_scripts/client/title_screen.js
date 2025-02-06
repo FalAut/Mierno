@@ -70,53 +70,32 @@ if (Platform.isClientEnvironment()) {
                 )
             );
 
-            let currentModpackVersion = $MpucApi.getInstance().getCurrentModpackVersion();
-            Client.setTitle(`Mierno v${currentModpackVersion}`);
+            let currentVer = $MpucApi.getInstance().getCurrentModpackVersion();
+            Client.setTitle(`Mierno v${currentVer}`);
 
             let brandingControl = new $BrandingControl();
             let brandingsField = $BrandingControl.__javaObject__.getDeclaredField('brandings');
             brandingsField.setAccessible(true);
+
             let computeBranding = $BrandingControl.__javaObject__.getDeclaredMethod('computeBranding');
             computeBranding.setAccessible(true);
             computeBranding.invoke(null);
 
             let brandings = brandingsField.get(brandingControl);
-
             let newBrandings = new $ArrayList();
             newBrandings.addAll(brandings);
 
-            let lastestModpackVersion = $MpucApi.getInstance().getLatestModpackVersion();
-
-            let noUpdate = currentModpackVersion == lastestModpackVersion;
-            let updateMessage;
-
-            if (Client.languageManager.selected == 'zh_cn') {
-                newBrandings.add(`游戏启动用时：§a${gameStartTimeSeconds}§r 秒`);
-                updateMessage = noUpdate ? '' : `§c存在新版本 §e${lastestModpackVersion}！`;
-                newBrandings.add(`当前整合包版本：§a${currentModpackVersion}§r ${updateMessage}`);
-            } else {
-                newBrandings.add(`Game took §a${gameStartTimeSeconds}§r seconds to start`);
-                updateMessage = noUpdate ? '' : `§cNew version §e${lastestModpackVersion} exists!`;
-                newBrandings.add(`Current modpack version：§a${currentModpackVersion}§r ${updateMessage}`);
-            }
+            let lastestVer = $MpucApi.getInstance().getLatestModpackVersion() ?? currentVer;
+            let hasUpdate = currentVer != lastestVer;
+            let updateMessage = hasUpdate ? Text.translate('mierno.startup.new_version', lastestVer).getString() : '';
+            newBrandings.add(Text.translate('mierno.startup.time', gameStartTimeSeconds).getString());
+            newBrandings.add(Text.translate('mierno.startup.modpack_version', currentVer, updateMessage).getString());
 
             brandingsField.set(brandingControl, newBrandings);
 
+            let randomSource = $SoundInstance.createUnseededRandom();
             Client.soundManager.play(
-                new $SimpleSoundInstance(
-                    'entity.experience_orb.pickup',
-                    'master',
-                    0.25,
-                    1.0,
-                    $SoundInstance.createUnseededRandom(),
-                    false,
-                    0,
-                    'none',
-                    0,
-                    0,
-                    0,
-                    true
-                )
+                new $SimpleSoundInstance('entity.experience_orb.pickup', 'master', 0.25, 1.0, randomSource, 0, 0, 0)
             );
 
             isStartup = true;

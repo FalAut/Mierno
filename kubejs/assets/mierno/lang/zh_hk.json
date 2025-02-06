@@ -363,6 +363,8 @@
 
     "mierno.startup.time": "遊戲啟動用時：§a%s§r 秒",
     "mierno.startup.performance": "打敗了全國99%的玩家",
+    "mierno.startup.modpack_version": "當前整合包版本：§a%s§r %s",
+    "mierno.startup.new_version": "§c存在新版本 §e%s",
 
     "curios.identifier.portable_crafting_table": "便攜式工作臺",
     "curios.identifier.dream_lantern": "夢之燈",

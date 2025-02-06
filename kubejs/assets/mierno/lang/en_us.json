@@ -363,6 +363,8 @@
 
     "mierno.startup.time": "Game startup time: §a%s§r seconds",
     "mierno.startup.performance": "Faster than 99% of players",
+    "mierno.startup.modpack_version": "Current modpack version: §a%s§r %s",
+    "mierno.startup.new_version": "§cNew version §e%s§c exists!",
 
     "curios.identifier.portable_crafting_table": "Portable Crafting Table",
     "curios.identifier.dream_lantern": "Dream Lantern",

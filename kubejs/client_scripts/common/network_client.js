@@ -1,15 +1,15 @@
-NetworkEvents.dataReceived("has_dream_lantern", (event) => {
+NetworkEvents.dataReceived('has_dream_lantern', (event) => {
     const { data, player } = event;
-    const hasDreamLantern = data.getBoolean("hasDreamLantern");
+    const hasDreamLantern = data.getBoolean('hasDreamLantern');
 
     if (hasDreamLantern) {
-        player.persistentData.putBoolean("has_dream_lantern", true);
+        player.persistentData.putBoolean('has_dream_lantern', true);
     } else {
-        player.persistentData.putBoolean("has_dream_lantern", false);
+        player.persistentData.putBoolean('has_dream_lantern', false);
     }
 });
 
-NetworkEvents.dataReceived("display_item_activation", (event) => {
+NetworkEvents.dataReceived('display_item_activation', (event) => {
     const { data } = event;
 
     if (data.displayItem) {
@@ -19,27 +19,27 @@ NetworkEvents.dataReceived("display_item_activation", (event) => {
 
 ClientEvents.tick((event) => {
     if (global.portableCrafting.consumeClick() && !Client.screen) {
-        event.player.sendData("portable_crafting", { portable_crafting: true });
+        event.player.sendData('portable_crafting', { portable_crafting: true });
     }
 });
 
-NetworkEvents.dataReceived("display_third_eye", (event) => {
+NetworkEvents.dataReceived('display_third_eye', (event) => {
     const { data, player } = event;
 
-    if (data.getBoolean("hasThirdEye")) {
+    if (data.getBoolean('hasThirdEye')) {
         player.paint({
             third_eye: {
-                type: "item",
-                item: "botania:third_eye",
+                type: 'item',
+                item: 'botania:third_eye',
                 w: 32,
                 h: 32,
-                alignX: "top",
-                alignY: "top",
+                alignX: 'top',
+                alignY: 'top',
                 x: 20,
                 y: 20,
             },
         });
-    } else if (Painter.getObject("third_eye")) {
+    } else if (Painter.getObject('third_eye')) {
         player.paint({ third_eye: { remove: true } });
     }
 });
@@ -47,14 +47,14 @@ NetworkEvents.dataReceived("display_third_eye", (event) => {
 ClientEvents.loggedIn((event) => {
     event.player.paint({
         playtime_counter: {
-            type: "text",
-            color: "gray",
-            alignY: "bottom",
+            type: 'text',
+            color: 'gray',
+            alignY: 'bottom',
         },
     });
 });
 
-NetworkEvents.dataReceived("display_playtime", (event) => {
+NetworkEvents.dataReceived('display_playtime', (event) => {
     const { player, data } = event;
 
     player.paint({
@@ -62,16 +62,16 @@ NetworkEvents.dataReceived("display_playtime", (event) => {
     });
 });
 
-NetworkEvents.dataReceived("game_pass", (event) => {
+NetworkEvents.dataReceived('game_pass', (event) => {
     const { player, data } = event;
 
-    player.sendData("converted_time", {
+    player.sendData('converted_time', {
         converted_time: convertTime(data.playtime, true),
         playerName: player.username,
     });
 });
 
-NetworkEvents.dataReceived("open_tyumen", (event) => {
+NetworkEvents.dataReceived('open_tyumen', (event) => {
     const { data, player } = event;
     const curScreen = Client.currentScreen;
 
@@ -80,7 +80,7 @@ NetworkEvents.dataReceived("open_tyumen", (event) => {
             (accepted) => {
                 if (accepted) {
                     $Util.getPlatform().openUri(data.url);
-                    player.sendData("give_tyumen_ingot");
+                    player.sendData('give_tyumen_ingot');
                 }
                 Client.setScreen(curScreen);
             },
@@ -90,5 +90,5 @@ NetworkEvents.dataReceived("open_tyumen", (event) => {
     );
 });
 
-NetworkEvents.dataReceived("show_title", (event) => Client.gui.setTitle(Text.translate(event.data.message)));
-NetworkEvents.dataReceived("show_subtitle", (event) => Client.gui.setSubtitle(Text.translate(event.data.message)));
+NetworkEvents.dataReceived('show_title', (event) => Client.gui.setTitle(Text.translate(event.data.message)));
+NetworkEvents.dataReceived('show_subtitle', (event) => Client.gui.setSubtitle(Text.translate(event.data.message)));

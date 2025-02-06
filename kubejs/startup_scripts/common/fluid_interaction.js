@@ -1,8 +1,8 @@
 StartupEvents.postInit((event) => {
-    let $FluidInteractionRegistry = Java.loadClass("net.minecraftforge.fluids.FluidInteractionRegistry");
-    let II = Java.loadClass("net.minecraftforge.fluids.FluidInteractionRegistry$InteractionInformation").__javaObject__;
-    let FI = Java.loadClass("net.minecraftforge.fluids.FluidInteractionRegistry$FluidInteraction").__javaObject__;
-    let HI = Java.loadClass("net.minecraftforge.fluids.FluidInteractionRegistry$HasFluidInteraction").__javaObject__;
+    let $FluidInteractionRegistry = Java.loadClass('net.minecraftforge.fluids.FluidInteractionRegistry');
+    let II = Java.loadClass('net.minecraftforge.fluids.FluidInteractionRegistry$InteractionInformation').__javaObject__;
+    let FI = Java.loadClass('net.minecraftforge.fluids.FluidInteractionRegistry$FluidInteraction').__javaObject__;
+    let HI = Java.loadClass('net.minecraftforge.fluids.FluidInteractionRegistry$HasFluidInteraction').__javaObject__;
     let context = $KubeJS.getStartupScriptManager().context;
 
     /**
@@ -50,19 +50,19 @@ StartupEvents.postInit((event) => {
         );
     }
 
-    blockGen("iron_ore", "iron_block", "mierno:gensousitu");
-    blockGen("gold_ore", "gold_block", "mierno:gensousitu");
-    blockGen("diamond_ore", "diamond_block", "mierno:gensousitu");
-    blockGen("lapis_ore", "lapis_block", "mierno:gensousitu");
-    blockGen("emerald_ore", "emerald_block", "mierno:gensousitu");
-    blockGen("coal_ore", "coal_block", "mierno:gensousitu");
-    blockGen("redstone_ore", "redstone_block", "mierno:gensousitu");
-    blockGen("copper_ore", "copper_block", "mierno:gensousitu");
-    blockGen("copper_ore", "exposed_copper", "mierno:gensousitu");
-    blockGen("copper_ore", "weathered_copper", "mierno:gensousitu");
-    blockGen("copper_ore", "oxidized_copper", "mierno:gensousitu");
-    blockGen("ancient_debris", "netherite_block", "mierno:gensousitu");
-    blockGen("obsidian", "crying_obsidian", "mierno:gensousitu");
-    blockGen("glowstone", "mierno:mini_sun", "mierno:gensousitu");
-    blockGen("nether_quartz_ore", "quartz_block", "mierno:gensousitu");
+    blockGen('iron_ore', 'iron_block', 'mierno:gensousitu');
+    blockGen('gold_ore', 'gold_block', 'mierno:gensousitu');
+    blockGen('diamond_ore', 'diamond_block', 'mierno:gensousitu');
+    blockGen('lapis_ore', 'lapis_block', 'mierno:gensousitu');
+    blockGen('emerald_ore', 'emerald_block', 'mierno:gensousitu');
+    blockGen('coal_ore', 'coal_block', 'mierno:gensousitu');
+    blockGen('redstone_ore', 'redstone_block', 'mierno:gensousitu');
+    blockGen('copper_ore', 'copper_block', 'mierno:gensousitu');
+    blockGen('copper_ore', 'exposed_copper', 'mierno:gensousitu');
+    blockGen('copper_ore', 'weathered_copper', 'mierno:gensousitu');
+    blockGen('copper_ore', 'oxidized_copper', 'mierno:gensousitu');
+    blockGen('ancient_debris', 'netherite_block', 'mierno:gensousitu');
+    blockGen('obsidian', 'crying_obsidian', 'mierno:gensousitu');
+    blockGen('glowstone', 'mierno:mini_sun', 'mierno:gensousitu');
+    blockGen('nether_quartz_ore', 'quartz_block', 'mierno:gensousitu');
 });

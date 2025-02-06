@@ -1,19 +1,19 @@
 ServerEvents.recipes((event) => {
     event.custom({
-        type: "lychee:item_inside",
+        type: 'lychee:item_inside',
         post: [
             {
-                type: "drop_item",
-                item: "naturesaura:token_fear",
+                type: 'drop_item',
+                item: 'naturesaura:token_fear',
             },
         ],
         item_in: [
             {
-                item: "naturesaura:token_joy",
+                item: 'naturesaura:token_joy',
             },
         ],
         block_in: {
-            blocks: ["pneumaticcraft:etching_acid"],
+            blocks: ['pneumaticcraft:etching_acid'],
             state: {
                 level: 0,
             },

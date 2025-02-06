@@ -1,32 +1,32 @@
 JEIAddedEvents.registerCategories((event) => {
-    event.custom("mierno:nether_portal_convert", (category) => {
+    event.custom('mierno:nether_portal_convert', (category) => {
         const {
             jeiHelpers: { guiHelper },
         } = category;
 
         category
-            .title(Text.translate("jei.mierno.category.nether_portal_convert"))
+            .title(Text.translate('jei.mierno.category.nether_portal_convert'))
             .background(guiHelper.createBlankDrawable(145, 95))
-            .icon(guiHelper.createDrawableItemStack("obsidian"))
+            .icon(guiHelper.createDrawableItemStack('obsidian'))
             .handleLookup((layOut, recipe, focuses) => {
-                layOut.addSlot("INPUT", 65, 0).addItemStack(recipe.data.input);
-                layOut.addSlot("OUTPUT", 112, 42).addItemStack(recipe.data.output);
+                layOut.addSlot('INPUT', 65, 0).addItemStack(recipe.data.input);
+                layOut.addSlot('OUTPUT', 112, 42).addItemStack(recipe.data.output);
             })
             .setDrawHandler((recipe, recipeSlotsView, guiGraphics, mouseX, mouseY) => {
-                let overlay = guiHelper.createDrawable("botania:textures/gui/elven_trade_overlay.png", 0, 15, 140, 90);
+                let overlay = guiHelper.createDrawable('botania:textures/gui/elven_trade_overlay.png', 0, 15, 140, 90);
                 overlay.draw(guiGraphics, 20, 4);
 
-                renderDynamicTexture(guiGraphics, "block/nether_portal", 42, 25, 90, 73);
+                renderDynamicTexture(guiGraphics, 'block/nether_portal', 42, 25, 90, 73);
             });
     });
 });
 
 JEIAddedEvents.registerRecipes((event) => {
-    event.custom("mierno:nether_portal_convert").add({ output: "fluxnetworks:flux_dust", input: "minecraft:redstone" });
+    event.custom('mierno:nether_portal_convert').add({ output: 'fluxnetworks:flux_dust', input: 'minecraft:redstone' });
 });
 
 function renderDynamicTexture(guiGraphics, resourceLocation, startX, startY, stopX, stopY) {
-    let sprite = Client.getTextureAtlas("textures/atlas/blocks.png").apply(new ResourceLocation(resourceLocation));
+    let sprite = Client.getTextureAtlas('textures/atlas/blocks.png').apply(new ResourceLocation(resourceLocation));
     let bufferSource = guiGraphics.bufferSource();
     let vertexConsumer = bufferSource.getBuffer($RenderType.solid());
     let matrix4f = guiGraphics.pose().last().pose();

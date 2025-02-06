@@ -1,15 +1,15 @@
 if (Platform.isClientEnvironment()) {
-    let $CuriosRendererRegistry = Java.loadClass("top.theillusivec4.curios.api.client.CuriosRendererRegistry");
-    let $RendererCurios = Java.loadClass("com.prunoideae.powerfuljs.capabilities.forge.mods.curios.RendererCurios");
-    let $OverlayTexture = Java.loadClass("net.minecraft.client.renderer.texture.OverlayTexture");
+    let $CuriosRendererRegistry = Java.loadClass('top.theillusivec4.curios.api.client.CuriosRendererRegistry');
+    let $RendererCurios = Java.loadClass('com.prunoideae.powerfuljs.capabilities.forge.mods.curios.RendererCurios');
+    let $OverlayTexture = Java.loadClass('net.minecraft.client.renderer.texture.OverlayTexture');
 
     StartupEvents.postInit((event) => {
         $CuriosRendererRegistry.register(
-            "mierno:dream_wings",
+            'mierno:dream_wings',
             () =>
                 new $RendererCurios((ctx) => {
                     const { matrixStack, renderTypeBuffer, slotContext, light, partialTicks } = ctx;
-                    const model = Client.modelManager.getModel("botania:icon/tiara_wing_1");
+                    const model = Client.modelManager.getModel('botania:icon/tiara_wing_1');
 
                     const living = slotContext.entity();
                     const flying = living.isPlayer() && living.getAbilities().flying;
@@ -33,8 +33,8 @@ if (Platform.isClientEnvironment()) {
                         matrixStack.scale(1.5, -1.5, -1.5);
 
                         Client.itemRenderer.render(
-                            "mierno:dream_wings",
-                            "none",
+                            'mierno:dream_wings',
+                            'none',
                             false,
                             matrixStack,
                             renderTypeBuffer,

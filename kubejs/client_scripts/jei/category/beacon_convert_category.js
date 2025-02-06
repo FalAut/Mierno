@@ -1,22 +1,22 @@
 JEIAddedEvents.registerCategories((event) => {
-    event.custom("mierno:beacon_convert", (category) => {
+    event.custom('mierno:beacon_convert', (category) => {
         const {
             jeiHelpers: { guiHelper },
         } = category;
 
         category
-            .title(Text.translate("jei.mierno.category.beacon_convert"))
+            .title(Text.translate('jei.mierno.category.beacon_convert'))
             .background(guiHelper.createBlankDrawable(145, 95))
-            .icon(guiHelper.createDrawableItemStack("minecraft:beacon"))
+            .icon(guiHelper.createDrawableItemStack('minecraft:beacon'))
             .handleLookup((layOut, recipe, focuses) => {
-                layOut.addSlot("INPUT", 31, 21).addItemStack(recipe.data.input);
-                layOut.addSlot("OUTPUT", 90, 26).addItemStack(recipe.data.output);
+                layOut.addSlot('INPUT', 31, 21).addItemStack(recipe.data.input);
+                layOut.addSlot('OUTPUT', 90, 26).addItemStack(recipe.data.output);
             })
             .setDrawHandler((recipe, recipeSlotsView, guiGraphics, mouseX, mouseY) => {
                 let bufferSource = guiGraphics.bufferSource();
                 let pose = guiGraphics.pose();
 
-                let overlay = guiHelper.createDrawable("botania:textures/gui/pure_daisy_overlay.png", 0, 0, 64, 44);
+                let overlay = guiHelper.createDrawable('botania:textures/gui/pure_daisy_overlay.png', 0, 0, 64, 44);
                 $RenderSystem.enableBlend();
                 overlay.draw(guiGraphics, 38, 10);
                 $RenderSystem.disableBlend();
@@ -42,7 +42,7 @@ JEIAddedEvents.registerCategories((event) => {
                 $BeaconRenderer.renderBeaconBeam(
                     pose,
                     bufferSource,
-                    "textures/entity/beacon_beam.png",
+                    'textures/entity/beacon_beam.png',
                     Client.partialTick,
                     1,
                     Client.level.time,
@@ -75,5 +75,5 @@ JEIAddedEvents.registerCategories((event) => {
 });
 
 JEIAddedEvents.registerRecipes((event) => {
-    event.custom("mierno:beacon_convert").add({ output: "minecraft:nether_star", input: "mierno:empty_nether_star" });
+    event.custom('mierno:beacon_convert').add({ output: 'minecraft:nether_star', input: 'mierno:empty_nether_star' });
 });

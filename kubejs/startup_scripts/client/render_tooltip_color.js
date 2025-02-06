@@ -1,10 +1,10 @@
 if (Platform.isClientEnvironment()) {
-    let $Color = Java.loadClass("java.awt.Color");
+    let $Color = Java.loadClass('java.awt.Color');
     let PERIOD = 3600;
     let PHASE_OFFSET = PERIOD * 0.9;
 
-    ForgeEvents.onEvent("net.minecraftforge.client.event.RenderTooltipEvent$Color", (event) => {
-        if (event.itemStack != "mierno:memory_matrix") return;
+    ForgeEvents.onEvent('net.minecraftforge.client.event.RenderTooltipEvent$Color', (event) => {
+        if (event.itemStack != 'mierno:memory_matrix') return;
         const systemTime = Utils.systemTime;
 
         const calculateHue = (timeOffset) => ((systemTime + timeOffset) % PERIOD) / PERIOD;

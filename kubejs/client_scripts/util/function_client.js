@@ -14,14 +14,14 @@ function convertTime(playTime, expanded) {
     let result = [];
 
     if (expanded) {
-        if (hours > 0) result.push(Text.translate("mierno.time.hours", hours.toFixed(0)).getString());
-        if (minutes > 0) result.push(Text.translate("mierno.time.minutes", minutes.toFixed(0)).getString());
-        if (seconds > 0) result.push(Text.translate("mierno.time.seconds", seconds.toFixed(0)).getString());
+        if (hours > 0) result.push(Text.translate('mierno.time.hours', hours.toFixed(0)).getString());
+        if (minutes > 0) result.push(Text.translate('mierno.time.minutes', minutes.toFixed(0)).getString());
+        if (seconds > 0) result.push(Text.translate('mierno.time.seconds', seconds.toFixed(0)).getString());
     } else {
-        if (hours > 0) return Text.translate("mierno.time.hours", hours.toFixed(0)).getString();
-        if (minutes > 0) return Text.translate("mierno.time.minutes", minutes.toFixed(0)).getString();
-        return Text.translate("mierno.time.seconds", seconds.toFixed(0)).getString();
+        if (hours > 0) return Text.translate('mierno.time.hours', hours.toFixed(0)).getString();
+        if (minutes > 0) return Text.translate('mierno.time.minutes', minutes.toFixed(0)).getString();
+        return Text.translate('mierno.time.seconds', seconds.toFixed(0)).getString();
     }
 
-    return result.join(" ") || Text.translate("mierno.time.seconds", "0").getString();
+    return result.join(' ') || Text.translate('mierno.time.seconds', '0').getString();
 }

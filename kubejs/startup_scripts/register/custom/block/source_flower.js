@@ -1,4 +1,4 @@
-StartupEvents.registry("block", (event) => {
+StartupEvents.registry('block', (event) => {
     const POSITIONS = [
         [-1, 0, -1],
         [-1, 0, 0],
@@ -11,8 +11,8 @@ StartupEvents.registry("block", (event) => {
     ];
 
     const RECIPES = [
-        { input: "botania:shimmerrock", output: "ars_nouveau:sourcestone", cost: 100, time: 60 },
-        { input: "mierno:mana_string_block", output: "ars_nouveau:magebloom_block", cost: 300, time: 80 },
+        { input: 'botania:shimmerrock', output: 'ars_nouveau:sourcestone', cost: 100, time: 60 },
+        { input: 'mierno:mana_string_block', output: 'ars_nouveau:magebloom_block', cost: 300, time: 80 },
     ];
 
     function sourceFlower(/**@type {Internal.BlockEntityJS} */ be) {
@@ -27,7 +27,7 @@ StartupEvents.registry("block", (event) => {
             const timerKey = `conversionTimer_${x}_${y}_${z}`;
             const recipeKey = `currentRecipe_${x}_${y}_${z}`;
 
-            let source = be.persistentData.getInt("source");
+            let source = be.persistentData.getInt('source');
             let conversionTimer = be.persistentData.getInt(timerKey);
             let currentRecipeIndex = be.persistentData.getInt(recipeKey);
 
@@ -52,7 +52,7 @@ StartupEvents.registry("block", (event) => {
                     level.destroyBlock(targetPos, false);
                     level.setBlock(targetPos, Block.getBlock(matchedRecipe.output).defaultBlockState(), 11);
                     source -= matchedRecipe.cost;
-                    be.persistentData.putInt("source", source);
+                    be.persistentData.putInt('source', source);
                     be.persistentData.putInt(timerKey, 0);
                 }
             } else if (!matchedRecipe) {
@@ -61,18 +61,18 @@ StartupEvents.registry("block", (event) => {
             }
         });
 
-        if (be.persistentData.getInt("source") <= 10000 - 1000 && tick % 20 == 0) {
+        if (be.persistentData.getInt('source') <= 10000 - 1000 && tick % 20 == 0) {
             if ($SourceUtil.takeSourceWithParticles(block.pos, level, 6, 1000)) {
-                let source = be.persistentData.getInt("source");
+                let source = be.persistentData.getInt('source');
                 source += 1000;
-                be.persistentData.putInt("source", source);
+                be.persistentData.putInt('source', source);
             }
         }
     }
 
     event
-        .create("mierno:source_flower")
-        .tag("minecraft:flowers")
+        .create('mierno:source_flower')
+        .tag('minecraft:flowers')
         .box(4.8, 0, 4.8, 12.8, 16, 12.8)
         .grassSoundType()
         .hardness(0)
@@ -85,7 +85,7 @@ StartupEvents.registry("block", (event) => {
         });
 
     event
-        .create("mierno:flowing_source_flower")
+        .create('mierno:flowing_source_flower')
         .grassSoundType()
         .hardness(0.5)
         .defaultCutout()
@@ -97,13 +97,13 @@ StartupEvents.registry("block", (event) => {
         });
 });
 
-ForgeEvents.onEvent("net.minecraftforge.event.level.BlockEvent$NeighborNotifyEvent", (event) => {
+ForgeEvents.onEvent('net.minecraftforge.event.level.BlockEvent$NeighborNotifyEvent', (event) => {
     const { pos, level } = event;
     let blockState = level.getBlockState(pos.above());
 
     if (
-        blockState == Block.getBlock("mierno:source_flower").defaultBlockState() ||
-        blockState == Block.getBlock("mierno:datura").defaultBlockState()
+        blockState == Block.getBlock('mierno:source_flower').defaultBlockState() ||
+        blockState == Block.getBlock('mierno:datura').defaultBlockState()
     ) {
         level.destroyBlock(pos.above(), true);
     }

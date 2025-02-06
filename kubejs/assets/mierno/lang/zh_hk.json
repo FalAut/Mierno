@@ -586,7 +586,7 @@
 
     "mierno.welcome.projecte.title": "【可選】簡單模式",
     "mierno.welcome.projecte.subtitle": "你可以自行選擇是否需要轉化桌",
-    "mierno.welcome.projecte.desc1": "註意：所有物品的 EMC 被設置為 1（除了秋明錠），只是 EMC 不會顯示在物品提示上",
+    "mierno.welcome.projecte.desc1": "註意：所有物品的 EMC 被設置為 1，只是 EMC 不會顯示在物品提示上（除了秋明錠）",
     "mierno.welcome.projecte.desc2": "註意：轉換桌不記錄 NBT，因此一些特殊的物品（例如：瓶裝陽光、ME無限混凝土元件）無法正常轉化",
 
     "mierno.capsule.misty_forest_portal_subtitle": "§6點擊查看如何激活迷霧森林傳送門",

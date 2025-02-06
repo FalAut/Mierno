@@ -586,7 +586,7 @@
 
     "mierno.welcome.projecte.title": "[Optional] Simple Mode",
     "mierno.welcome.projecte.subtitle": "You can choose whether you need the Transmutation Table",
-    "mierno.welcome.projecte.desc1": "§6Note: All items' EMC is set to 1 (except for the Qiuming Ingot), but EMC will not show in item tooltips",
+    "mierno.welcome.projecte.desc1": "§6Note: All items' EMC is set to 1, but EMC will not show in item tooltips. (except for the Qiuming Ingot)",
     "mierno.welcome.projecte.desc2": "§cNote: Transmutation Table does not record NBT, so some special items (e.g., Bottled Sunlight, ME Infinite Concrete Component) cannot be transmuted normally",
 
     "mierno.capsule.misty_forest_portal_subtitle": "§6Click to View how to activate the Misty Forest Portal",

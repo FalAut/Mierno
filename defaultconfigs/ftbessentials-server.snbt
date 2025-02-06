@@ -11,26 +11,24 @@
 # }
 
 { 
-    misc: {
-        teleportation: {
-            back: {
-                cooldown: 0
-		    }
-            home: {
-                cooldown: 0
-		    }
-            rtp: {
-                cooldown: 0
-            }
-            spawn: {
-                cooldown: 0
-            }
-            tpa: {
-                cooldown: 0
-            }
-            warp: {
-                cooldown: 0
-            }
+    teleportation: {
+        back: {
+            cooldown: 0
+		}
+        home: {
+            cooldown: 0
+		}
+        rtp: {
+            cooldown: 0
+        }
+        spawn: {
+            cooldown: 0
+        }
+        tpa: {
+            cooldown: 0
+        }
+        warp: {
+            cooldown: 0
         }
     }
 }

@@ -586,7 +586,7 @@
 
     "mierno.welcome.projecte.title": "【可选】简单模式",
     "mierno.welcome.projecte.subtitle": "你可以自行选择是否需要转化桌",
-    "mierno.welcome.projecte.desc1": "注意：所有物品的 EMC 被设置为 1（除了秋明锭），只是 EMC 不会显示在物品提示上",
+    "mierno.welcome.projecte.desc1": "注意：所有物品的 EMC 被设置为 1，只是 EMC 不会显示在物品提示上（除了秋明锭）",
     "mierno.welcome.projecte.desc2": "注意：转换桌不记录 NBT，因此一些特殊的物品（例如：瓶装阳光、ME无限混凝土元件）无法正常转化",
 
     "mierno.capsule.misty_forest_portal_subtitle": "§6点击查看如何激活迷雾森林传送门",

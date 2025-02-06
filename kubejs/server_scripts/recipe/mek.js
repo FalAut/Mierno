@@ -137,4 +137,16 @@ ServerEvents.recipes((event) => {
         itemInput: { ingredient: { tag: "forge:dusts/fluorite" } },
         itemOutput: { item: "mekanism:pellet_plutonium" },
     });
+
+    event.custom({
+        type: "mekanism:activating",
+        input: { amount: 1, gas: "mekanism:nuclear_waste" },
+        output: { amount: 1, gas: "mekanism:polonium" },
+    });
+
+    event.custom({
+        type: "mekanism:centrifuging",
+        input: { amount: 1, gas: "mekanism:nuclear_waste" },
+        output: { amount: 1, gas: "mekanism:plutonium" },
+    });
 });

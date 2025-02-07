@@ -23,6 +23,14 @@ EntityEvents.spawned('naturesaura:structure_finder', (event) => {
     event.entity.setGlowing(true);
 });
 
+EntityEvents.spawned('tiab:time_accelerator_entity_type', (event) => {
+    const { entity } = event;
+
+    if (entity.block.hasTag('mierno:tiab_blacklist_block')) {
+        event.cancel();
+    }
+});
+
 EntityEvents.spawned('bloodmagic:meteor', (event) => {
     const { entity, level } = event;
 

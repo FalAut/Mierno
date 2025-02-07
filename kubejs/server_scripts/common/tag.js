@@ -189,6 +189,8 @@ ServerEvents.tags('block', (event) => {
         'mierno:item_output',
         'mierno:mana_input',
     ]);
+
+    event.add('mierno:tiab_blacklist_block', ['bloodmagic:alchemyarray']);
 });
 
 ServerEvents.tags('fluid', (event) => {

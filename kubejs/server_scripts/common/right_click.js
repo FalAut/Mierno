@@ -7,12 +7,15 @@ BlockEvents.rightClicked((event) => {
 });
 
 BlockEvents.rightClicked('composter', (event) => {
-    const { block, hand } = event;
+    const { block, hand, player, item } = event;
     if (hand != 'MAIN_HAND') return;
 
     const compostLevel = block.blockState.getValue(BlockProperties.LEVEL_COMPOSTER);
+    if (compostLevel != 8) return;
 
-    if (compostLevel == 8) {
+    if (!player.isCrouching()) {
+        block.popItemFromFace('7x bone_meal', 'up');
+    } else if (item.isEmpty()) {
         block.popItemFromFace('7x bone_meal', 'up');
     }
 });
@@ -278,3 +281,14 @@ ItemEvents.rightClicked('mierno:dark_eyes', (event) => {
 
     spawnStructureFinderEye(player, hand, 'mierno:dark_temple', 512);
 });
+
+// ItemEvents.rightClicked((event) => {
+//     const { item } = event;
+
+//     // [{"#c":"ae2:i",caps:{"celestisynth:celestisynthitemstackcapabilities":{cs.aquaSkin:0}},id:"minecraft:oak_planks"}] [net.minecraft.nbt.ListTag]
+//     let keys = item.nbt.keys;
+
+//     keys.forEach((key) => {
+//         key.remove('caps')
+//     });
+// });

@@ -66,3 +66,17 @@ EntityEvents.death('player', (event) => {
         player.unlockAdvancement('mierno:mist_die');
     }
 });
+
+PlayerEvents.loggedIn((event) => {
+    const { player } = event;
+
+    if (!player.persistentData.getBoolean('first_joined')) {
+        player.give(
+            Item.of(
+                'ftbquests:book',
+                '{"akashictome:data":{ad_astra:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"ad_astra:astrodux"}},ae2:{Count:1b,id:"ae2:guide"},ars_nouveau:{Count:1b,id:"ars_nouveau:worn_notebook"},bloodmagic:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"bloodmagic:guide"}},botania:{Count:1b,id:"botania:lexicon",tag:{"botania:elven_unlock":1b}},evilcraft:{Count:1b,id:"evilcraft:origins_of_darkness"},malum:{Count:1b,id:"malum:encyclopedia_arcana"},modularrouters:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"modularrouters:book"}},naturesaura:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"naturesaura:book"}},occultism:{Count:1b,id:"occultism:dictionary_of_spirits",tag:{"modonomicon:book_id":"occultism:dictionary_of_spirits"}},pneumaticcraft:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"pneumaticcraft:book"}},powah:{Count:1b,id:"powah:book"},wizards_reborn:{Count:1b,id:"wizards_reborn:arcanemicon",tag:{"akashictome:displayName":{text:\'{"translate":"item.wizards_reborn.arcanemicon"}\'},"akashictome:is_morphing":1b,display:{Name:\'{"translate":"akashictome.sudo_name","with":[{"color":"green","translate":"item.wizards_reborn.arcanemicon"}]}\'}}}},"akashictome:displayName":{text:\'{"translate":"item.ftbquests.book"}\'},"akashictome:is_morphing":1b,display:{Name:\'{"translate":"akashictome.sudo_name","with":[{"color":"green","translate":"item.ftbquests.book"}]}\'}}'
+            )
+        );
+        player.persistentData.putBoolean('first_joined', true);
+    }
+});

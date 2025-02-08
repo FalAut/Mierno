@@ -17,7 +17,7 @@ Ponder.registry((event) => {
             scene.idle(120);
 
             scene.text(60, '在一切条件满足后，将聚合徽章扔在工作台上').attachKeyFrame();
-            let sigil = scene.world.createItemEntity([3.5, 4, 3.5], [0, 0, 0], 'mierno:division_sigil');
+            let sigil = scene.world.createItemEntity([3.5, 4, 3.5], [0, 0, 0], 'mierno:addition_sigil');
             scene.idle(80);
 
             scene.text(40, '然后在工作台上落下一个铁砧').attachKeyFrame();

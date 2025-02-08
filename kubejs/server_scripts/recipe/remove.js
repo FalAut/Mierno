@@ -44,7 +44,6 @@ ServerEvents.recipes((event) => {
         'botania:elven_trade/dragonstone',
         'ae2:network/blocks/crystal_processing_charger',
         'ae2:network/blocks/inscribers',
-        'botania:shimmerrock',
         'ars_nouveau:magebloom_fiber',
         'ars_nouveau:enchanting_apparatus',
         'ars_nouveau:arcane_core',

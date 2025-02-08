@@ -12,6 +12,21 @@
 -   修复聚合徽章激活仪式的思索中，聚合徽章显示成了分割徽章的问题
 -   添加饰品“麒麟臂” - 装备后将玩家的挖掘等级提升到最大值，并将玩家的挖掘速度提升至原来的十倍
 
+---
+
+-   The text content for this changelog was translated into English using machine translation. Apologies for any inaccuracies!
+-   Note: No hotfixes are available for this module change.
+-   Added modules AdvancedAE, PackagedAuto and Compact Machines.
+-   The amount of nuclear waste needed to produce polonium and plutonium has been reduced to 1mb.
+-   Players now get a quest book when they first enter the game.
+-   Vial of Time no longer accelerates Arcane Powder.
+-   Fixed an issue where players could swipe Bone Powder from a full compost bucket by right clicking on the item when sneaking around
+-   Restored the recipe for Shimmering Stone to the default recipe
+-   Meteorite now requires Living Stone to craft
+-   Experience orbs now do not drop after mining Lower World Quartz Ore
+-   Fixed an issue where the Convergence Badge was displayed as a Split Badge during the Pondering of the Convergence Badge Activation Ceremony.
+-   Added ‘Kirin's Arm’ - Raises the player's digging level to the maximum and increases the player's digging speed to ten times its original level.
+
 ## v0.2.9
 
 -   删除了模块化祭祀，苍穹锭现在可以在感应炉中制作

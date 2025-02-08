@@ -1201,6 +1201,18 @@
 			x: 10.5d
 			y: 1.5d
 		}
+		{
+			dependencies: ["7624D2AE8B2D42CE"]
+			id: "64D14AC4AC8BDA00"
+			shape: "diamond"
+			tasks: [{
+				id: "5FF769DF85826A17"
+				item: "mierno:kylin_arm"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
 	]
 	title: "{mierno.chapter1-1.title}"
 }

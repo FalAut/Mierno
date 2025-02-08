@@ -4,7 +4,7 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.EntityTravelToDimensionEven
 
     /**@type {Internal.Player} */
     const player = entity;
-    const hasTokenInCurios = hasCurios('naturesaura:token_rage');
+    const hasTokenInCurios = hasCurios(player, 'naturesaura:token_rage');
     const hasTokenInInventory = player.inventory.allItems.some((item) => item == 'naturesaura:token_rage');
 
     if (!hasTokenInInventory && !hasTokenInCurios) {

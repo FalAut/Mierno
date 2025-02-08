@@ -1,10 +1,10 @@
-MBDMachineEvents.onBeforeRecipeWorking("mierno:fired_crucible", (event) => {
+MBDMachineEvents.onBeforeRecipeWorking('mierno:fired_crucible', (event) => {
     const mbdEvent = event.getEvent();
     const { machine } = mbdEvent;
     const heatSource = machine.level.getBlock(machine.pos.below());
 
-    if (heatSource.hasTag("mierno:crucible_heat_source")) {
-        if (heatSource.id == "minecraft:campfire" && heatSource.properties.lit == "false") {
+    if (heatSource.hasTag('mierno:crucible_heat_source')) {
+        if (heatSource.id == 'minecraft:campfire' && heatSource.properties.lit == 'false') {
             mbdEvent.setCanceled(true);
         }
     } else {
@@ -12,26 +12,26 @@ MBDMachineEvents.onBeforeRecipeWorking("mierno:fired_crucible", (event) => {
     }
 });
 
-MBDMachineEvents.onBeforeRecipeModify("mierno:fired_crucible", (event) => {
+MBDMachineEvents.onBeforeRecipeModify('mierno:fired_crucible', (event) => {
     const mbdEvent = event.getEvent();
     const { machine, recipe } = mbdEvent;
     const heatSource = machine.level.getBlock(machine.pos.below());
     const copyRecipe = recipe.copy();
 
     switch (heatSource.id) {
-        case "minecraft:campfire":
+        case 'minecraft:campfire':
             copyRecipe.duration = 80;
             break;
-        case "minecraft:lava":
+        case 'minecraft:lava':
             copyRecipe.duration = 60;
             break;
-        case "botania:blaze_block":
+        case 'botania:blaze_block':
             copyRecipe.duration = 40;
             break;
-        case "minecraft:magma_block":
+        case 'minecraft:magma_block':
             copyRecipe.duration = 20;
             break;
-        case "powah:blazing_crystal_block":
+        case 'powah:blazing_crystal_block':
             copyRecipe.duration = 1;
             break;
         default:
@@ -41,7 +41,7 @@ MBDMachineEvents.onBeforeRecipeModify("mierno:fired_crucible", (event) => {
     mbdEvent.setRecipe(copyRecipe);
 });
 
-MBDMachineEvents.onBeforeRecipeModify("mierno:colossal_furnace_core", (event) => {
+MBDMachineEvents.onBeforeRecipeModify('mierno:colossal_furnace_core', (event) => {
     const mbdEvent = event.getEvent();
     const { machine, recipe } = mbdEvent;
 
@@ -56,7 +56,7 @@ MBDMachineEvents.onBeforeRecipeModify("mierno:colossal_furnace_core", (event) =>
     mbdEvent.setRecipe(copyRecipe);
 });
 
-MBDMachineEvents.onTick("mierno:memory_source_drawing_crystal_core", (event) => {
+MBDMachineEvents.onTick('mierno:memory_source_drawing_crystal_core', (event) => {
     const { machine } = event.getEvent();
     const { level, pos } = machine;
 
@@ -67,10 +67,10 @@ MBDMachineEvents.onTick("mierno:memory_source_drawing_crystal_core", (event) => 
     let entities = level.getEntitiesWithin(aabb);
 
     for (let entity of entities) {
-        if (entity.type == "minecraft:wither" || entity.type == "botania:pink_wither") {
+        if (entity.type == 'minecraft:wither' || entity.type == 'botania:pink_wither') {
             level.getPlayers().forEach((player) => entity.stopSeenByPlayer(player));
 
-            if (machine.machineStateName == "working") {
+            if (machine.machineStateName == 'working') {
                 entity.setNoAi(true);
                 if (entity.getHealth() >= 150) {
                     entity.attack(entity.damageSources().generic(), 5);
@@ -84,7 +84,7 @@ MBDMachineEvents.onTick("mierno:memory_source_drawing_crystal_core", (event) => 
     }
 });
 
-MBDMachineEvents.onBeforeRecipeModify("mierno:modular_imbuement_chamber_core", (event) => {
+MBDMachineEvents.onBeforeRecipeModify('mierno:modular_imbuement_chamber_core', (event) => {
     const mbdEvent = event.getEvent();
     const { machine, recipe } = mbdEvent;
 
@@ -97,25 +97,25 @@ MBDMachineEvents.onBeforeRecipeModify("mierno:modular_imbuement_chamber_core", (
     }
 });
 
-MBDMachineEvents.onTick("mierno:computation_matrix", (event) => {
+MBDMachineEvents.onTick('mierno:computation_matrix', (event) => {
     const { machine } = event.getEvent();
     const { level, pos } = machine;
     const controller = $IMultiController.ofController(level, pos).orElse(null);
 
     if (controller.isFormed()) {
-        machine.triggerGeckolibAnim("formed");
+        machine.triggerGeckolibAnim('formed');
     } else {
-        machine.triggerGeckolibAnim("idel");
+        machine.triggerGeckolibAnim('idel');
     }
 });
 
 MBDMachineEvents.onTick(
     [
-        "mierno:modular_mana_pool_core",
-        "mierno:modular_runic_altar_core",
-        "mierno:terrestrial_agglomeration_crystal",
-        "mierno:modular_alfheim_portal_core",
-        "mierno:mana_input",
+        'mierno:modular_mana_pool_core',
+        'mierno:modular_runic_altar_core',
+        'mierno:terrestrial_agglomeration_crystal',
+        'mierno:modular_alfheim_portal_core',
+        'mierno:mana_input',
     ],
     (event) => {
         const { machine } = event.getEvent();
@@ -128,27 +128,27 @@ MBDMachineEvents.onTick(
         if (manaCap.isFull()) return;
 
         switch (manaItem) {
-            case "botania:black_lotus":
+            case 'botania:black_lotus':
                 if (remainingMana >= 8000) {
                     manaCap.receiveMana(8000);
                     manaItem.count--;
                 }
                 break;
-            case "botania:blacker_lotus":
+            case 'botania:blacker_lotus':
                 if (remainingMana >= 100000) {
                     manaCap.receiveMana(100000);
                     manaItem.count--;
                 }
                 break;
-            case "botania:mana_tablet":
-                if (manaItem.nbt.getBoolean("creative")) {
+            case 'botania:mana_tablet':
+                if (manaItem.nbt.getBoolean('creative')) {
                     manaCap.receiveMana(remainingMana);
                 } else if (remainingMana >= 1000) {
                     manaItem.getCapability(BotaniaCapabilities.MANA_ITEM).orElse(null).addMana(-1000);
                     manaCap.receiveMana(1000);
                 }
                 break;
-            case "botania:creative_pool":
+            case 'botania:creative_pool':
                 manaCap.receiveMana(remainingMana);
                 break;
             default:
@@ -158,7 +158,7 @@ MBDMachineEvents.onTick(
 );
 
 MBDMachineEvents.onBeforeRecipeWorking(
-    ["mierno:aura_grinder", "mierno:engraving_table", "mierno:planting_station", "mierno:modular_nature_altar_core"],
+    ['mierno:aura_grinder', 'mierno:engraving_table', 'mierno:planting_station', 'mierno:modular_nature_altar_core'],
     (event) => {
         const mbdEvent = event.getEvent();
         const { machine } = mbdEvent;
@@ -172,19 +172,19 @@ MBDMachineEvents.onBeforeRecipeWorking(
 );
 
 // let cobbleGens = [
-//     "mierno:cobble_gen_tier1",
-//     "mierno:cobble_gen_tier2",
-//     "mierno:cobble_gen_tier3",
-//     "mierno:cobble_gen_tier4",
-//     "mierno:cobble_gen_tier5",
-//     "mierno:cobble_gen_tier6",
+//     'mierno:cobble_gen_tier1',
+//     'mierno:cobble_gen_tier2',
+//     'mierno:cobble_gen_tier3',
+//     'mierno:cobble_gen_tier4',
+//     'mierno:cobble_gen_tier5',
+//     'mierno:cobble_gen_tier6',
 // ];
 
 // MBDMachineEvents.onTick(cobbleGens, (event) => {
 //     const { machine } = event.getEvent();
 //     const { pos, customData, level } = machine;
-//     const ticksExisted = (customData.getInt("ticksExisted") || 0) + 1;
-//     customData.putInt("ticksExisted", ticksExisted);
+//     const ticksExisted = (customData.getInt('ticksExisted') || 0) + 1;
+//     customData.putInt('ticksExisted', ticksExisted);
 //     if (ticksExisted % 20 != 0) return;
 
 //     const upBlock = level.getBlock(pos.above());

@@ -4,7 +4,7 @@ let scheduledUpdates = [];
 const MinimumDecayTime = 4;
 const MaximumDecayTime = 11;
 
-ForgeEvents.onEvent("net.minecraftforge.event.level.BlockEvent$NeighborNotifyEvent", (event) => {
+ForgeEvents.onEvent('net.minecraftforge.event.level.BlockEvent$NeighborNotifyEvent', (event) => {
     const { level, pos, state, notifiedSides } = event;
     if (level.isClientSide() || !state.isAir()) return;
 
@@ -28,8 +28,8 @@ ForgeEvents.onEvent("net.minecraftforge.event.level.BlockEvent$NeighborNotifyEve
     }
 });
 
-ForgeEvents.onEvent("net.minecraftforge.event.TickEvent$ServerTickEvent", (event) => {
-    if (event.side != "SERVER" && event.phase != "END") return;
+ForgeEvents.onEvent('net.minecraftforge.event.TickEvent$ServerTickEvent', (event) => {
+    if (event.side != 'SERVER' && event.phase != 'END') return;
     if (plannedUpdates.length > 0) {
         Array.prototype.push.apply(scheduledUpdates, plannedUpdates);
         plannedUpdates = [];

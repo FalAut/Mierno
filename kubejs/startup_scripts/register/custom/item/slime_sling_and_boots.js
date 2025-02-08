@@ -1,11 +1,11 @@
-StartupEvents.registry("item", (event) => {
-    event.create("mierno:slime_boots", "boots");
+StartupEvents.registry('item', (event) => {
+    event.create('mierno:slime_boots', 'boots');
 
     event
-        .create("mierno:slime_sling")
+        .create('mierno:slime_sling')
         .unstackable()
         .use(() => true)
-        .useAnimation("bow")
+        .useAnimation('bow')
         .useDuration(() => 72000)
         .releaseUsing((itemStack, level, entity, timeLeft) => {
             if (!entity.onGround()) return;
@@ -25,16 +25,16 @@ StartupEvents.registry("item", (event) => {
             }
 
             if (power > 1) {
-                entity.playSound("entity.slime.jump_small", 1, 1);
+                entity.playSound('entity.slime.jump_small', 1, 1);
             }
         });
 });
 
-ForgeEvents.onEvent("net.minecraftforge.event.TickEvent$PlayerTickEvent", (event) => {
+ForgeEvents.onEvent('net.minecraftforge.event.TickEvent$PlayerTickEvent', (event) => {
     const { player, phase } = event;
-    if (phase != "END") return;
+    if (phase != 'END') return;
 
-    let bounceData = player.persistentData.get("bounceData");
+    let bounceData = player.persistentData.get('bounceData');
     if (!bounceData) return;
 
     if (
@@ -45,7 +45,7 @@ ForgeEvents.onEvent("net.minecraftforge.event.TickEvent$PlayerTickEvent", (event
         player.isSpectator() ||
         player.isFallFlying()
     ) {
-        player.persistentData.remove("bounceData");
+        player.persistentData.remove('bounceData');
         return;
     }
 
@@ -73,7 +73,7 @@ ForgeEvents.onEvent("net.minecraftforge.event.TickEvent$PlayerTickEvent", (event
             bounceData.groundTimer = player.age;
         } else {
             if (player.age - bounceData.groundTimer > 5) {
-                player.persistentData.remove("bounceData");
+                player.persistentData.remove('bounceData');
                 return;
             }
         }
@@ -82,13 +82,13 @@ ForgeEvents.onEvent("net.minecraftforge.event.TickEvent$PlayerTickEvent", (event
         bounceData.groundTimer = 0;
     }
 
-    player.persistentData.put("bounceData", bounceData);
+    player.persistentData.put('bounceData', bounceData);
 });
 
-ForgeEvents.onEvent("net.minecraftforge.event.entity.living.LivingFallEvent", (event) => {
+ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingFallEvent', (event) => {
     onFallWithSlimeBoots(event);
 });
 
-ForgeEvents.onEvent("net.minecraftforge.event.entity.player.PlayerFlyableFallEvent", (event) => {
+ForgeEvents.onEvent('net.minecraftforge.event.entity.player.PlayerFlyableFallEvent', (event) => {
     onFallWithSlimeBoots(event);
 });

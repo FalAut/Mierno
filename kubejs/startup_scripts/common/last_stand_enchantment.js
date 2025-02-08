@@ -1,8 +1,8 @@
-ForgeEvents.onEvent("net.minecraftforge.event.entity.living.LivingHurtEvent", (event) => {
+ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingHurtEvent', (event) => {
     const { entity, amount } = event;
     if (!entity.isPlayer()) return;
 
-    const enchantmentLevels = $EnchantmentHelper.getEnchantmentLevel("mierno:last_stand", entity);
+    const enchantmentLevels = $EnchantmentHelper.getEnchantmentLevel('mierno:last_stand', entity);
 
     if (enchantmentLevels > 0 && entity.health - amount < 1) {
         const xpRequired = Math.max(1, (50 * (1 - (entity.health - amount))) / enchantmentLevels);

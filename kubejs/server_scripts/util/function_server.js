@@ -7,11 +7,11 @@
  * @returns
  */
 function processDreamLantern(item, player) {
-    if (item == "mierno:dream_lantern") {
+    if (item == 'mierno:dream_lantern') {
         let dreamLantern = item.getCapability($NaturesAuraAPI.CAP_AURA_CONTAINER).resolve().get();
         if (dreamLantern.storedAura >= 1000) {
             dreamLantern.drainAura(1000, false);
-            player.sendData("has_dream_lantern", { hasDreamLantern: true });
+            player.sendData('has_dream_lantern', { hasDreamLantern: true });
             return true;
         }
     }
@@ -63,7 +63,7 @@ function openCraftingMenu(player) {
                     func.apply(player.level, player.blockPosition());
                     return $Optional.empty();
                 }),
-            Component.translatable("container.crafting")
+            Component.translatable('container.crafting')
         )
     );
 }
@@ -89,7 +89,7 @@ function hasCurios(player, itemStack) {
  */
 const handleCrucibleInteraction = (event, crucible, inputItem, outputFluid) => {
     const { hand, block, item, player } = event;
-    if (hand != "MAIN_HAND") return;
+    if (hand != 'MAIN_HAND') return;
 
     if (block == crucible) {
         const itemCap = block.entity.getCapability(ForgeCapabilities.ITEM_HANDLER).resolve().get();
@@ -110,8 +110,8 @@ const handleCrucibleInteraction = (event, crucible, inputItem, outputFluid) => {
             player.swing();
         }
 
-        if (item == "bucket" && fluidCap.getFluidInTank(0).amount >= 1000) {
-            fluidCap.drain(Fluid.of(outputFluid), "execute");
+        if (item == 'bucket' && fluidCap.getFluidInTank(0).amount >= 1000) {
+            fluidCap.drain(Fluid.of(outputFluid), 'execute');
             player.give(Fluid.of(outputFluid).fluid.bucket);
             item.count--;
             player.swing();
@@ -158,7 +158,7 @@ function tryRemoveUndyingEnchantment(entity) {
 
         for (let i = 0; i < enchantmentTags.size(); i++) {
             let enchantment = enchantmentTags.get(i);
-            if (enchantment.get("id") == "mierno:undying") {
+            if (enchantment.get('id') == 'mierno:undying') {
                 enchantmentTags.remove(i);
                 return true;
             }
@@ -174,7 +174,7 @@ function tryRemoveUndyingEnchantment(entity) {
  * @returns {Object}
  */
 function psuInverChestCheck(level, blockPos) {
-    if (!$PatchouliAPI.getMultiblock("mierno:psu_inver_ritual").validate(level, blockPos)) return;
+    if (!$PatchouliAPI.getMultiblock('mierno:psu_inver_ritual').validate(level, blockPos)) return;
     // prettier-ignore
     const requireItems = {
     east: ['minecraft:water_breathing', 'minecraft:night_vision', 'minecraft:swiftness', 'minecraft:leaping', 'minecraft:strength', 'minecraft:healing', 'minecraft:invisibility', 'minecraft:fire_resistance', 'minecraft:poison', 'minecraft:harming', 'minecraft:weakness', 'minecraft:slowness'],
@@ -183,12 +183,12 @@ function psuInverChestCheck(level, blockPos) {
     north: ['minecraft:glass', 'minecraft:charcoal', 'minecraft:cooked_cod', 'minecraft:cooked_chicken', 'minecraft:terracotta', 'minecraft:cooked_beef', 'minecraft:cooked_porkchop', 'minecraft:iron_ingot', 'minecraft:gold_ingot', 'minecraft:baked_potato', 'minecraft:stone', 'minecraft:green_dye']
 }
     const counts = { east: 0, south: 0, west: 0, north: 0 };
-    const directions = ["east", "south", "west", "north"];
+    const directions = ['east', 'south', 'west', 'north'];
 
     directions.forEach((direction) => {
         let chest = level.getBlock(blockPos).offset(direction, 5);
         chest?.inventory.allItems.forEach((item) => {
-            if (direction == "east" && item == "potion" && requireItems.east.includes(item.nbt.Potion)) counts.east++;
+            if (direction == 'east' && item == 'potion' && requireItems.east.includes(item.nbt.Potion)) counts.east++;
             if (requireItems[direction].includes(item.id)) counts[direction]++;
         });
     });
@@ -224,16 +224,16 @@ function psuInverBeaconCheck(level, block) {
  */
 function spawnTrialMobs(block) {
     let mobs = [
-        "zombie",
-        "spider",
-        "cave_spider",
-        "witch",
-        "zombie_villager",
-        "blaze",
-        "ars_nouveau:wilden_stalker",
-        "ars_nouveau:wilden_hunter",
-        "ars_nouveau:wilden_guardian",
-        "ad_astra:star_crawler",
+        'zombie',
+        'spider',
+        'cave_spider',
+        'witch',
+        'zombie_villager',
+        'blaze',
+        'ars_nouveau:wilden_stalker',
+        'ars_nouveau:wilden_hunter',
+        'ars_nouveau:wilden_guardian',
+        'ad_astra:star_crawler',
     ];
 
     for (let i = 0; i < 200; i++) {
@@ -251,9 +251,9 @@ function spawnTrialMobs(block) {
         mobEntity.setPosition(randomX, randomPos.y, randomZ);
         mobEntity.spawn();
 
-        mobEntity.addTag("trial_mob");
-        mobEntity.addTag("persistent");
-        mobEntity.potionEffects.add("speed", -1, 4);
+        mobEntity.addTag('trial_mob');
+        mobEntity.addTag('persistent');
+        mobEntity.potionEffects.add('speed', -1, 4);
     }
 }
 
@@ -281,7 +281,7 @@ function spawnStructureFinderEye(player, hand, structureName, range) {
         let structurePos = pair.getFirst();
 
         /**@type {Internal.EyeOfEnder} */
-        let eye = level.createEntity("eye_of_ender");
+        let eye = level.createEntity('eye_of_ender');
         eye.setPos(player.x, player.y + 1, player.z);
         eye.setItem(item);
         eye.signalTo(structurePos);
@@ -290,7 +290,7 @@ function spawnStructureFinderEye(player, hand, structureName, range) {
         player.swing(hand, true);
         if (!player.isCreative()) item.count--;
 
-        level.playSound(null, player.blockPosition(), "entity.ender_eye.launch", "master");
+        level.playSound(null, player.blockPosition(), 'entity.ender_eye.launch', 'master');
     }
 }
 
@@ -307,7 +307,7 @@ function createRitualChecker(ritualType, conditionProvider) {
 
         const results = conditions.map(([condition, messageKey]) => {
             if (player) {
-                const status = condition ? "§a✅" : "§4❌";
+                const status = condition ? '§a✅' : '§4❌';
                 player.tell(Text.translate(`message.mierno.activation_ritual.condition.${messageKey}`, status).gold());
             }
 

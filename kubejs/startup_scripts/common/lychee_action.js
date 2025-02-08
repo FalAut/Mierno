@@ -1,14 +1,14 @@
-LycheeEvents.customAction("add_solar", (event) => {
+LycheeEvents.customAction('add_solar', (event) => {
     event.action.applyFunc = (recipe, ctx, times) => {
         /**@type {Internal.ItemEntity} */
-        let itemEntity = ctx.getParam("this_entity");
+        let itemEntity = ctx.getParam('this_entity');
         let count = itemEntity.item.count;
 
         if (!itemEntity.nbt.Item.tag) {
             itemEntity.mergeNbt({
                 Item: {
                     Count: count,
-                    id: "mierno:sun_crystal",
+                    id: 'mierno:sun_crystal',
                     tag: {
                         Solar: 0,
                     },
@@ -21,7 +21,7 @@ LycheeEvents.customAction("add_solar", (event) => {
             itemEntity.mergeNbt({
                 Item: {
                     Count: count,
-                    id: "mierno:sun_crystal_full",
+                    id: 'mierno:sun_crystal_full',
                 },
             });
             return;
@@ -30,7 +30,7 @@ LycheeEvents.customAction("add_solar", (event) => {
         itemEntity.mergeNbt({
             Item: {
                 Count: count,
-                id: "mierno:sun_crystal",
+                id: 'mierno:sun_crystal',
                 tag: {
                     Solar: amount + 1,
                 },
@@ -39,13 +39,13 @@ LycheeEvents.customAction("add_solar", (event) => {
     };
 });
 
-LycheeEvents.customAction("place_misty_forest_portal", (event) => {
+LycheeEvents.customAction('place_misty_forest_portal', (event) => {
     event.action.applyFunc = (recipe, ctx, times) => {
-        let itemEntity = ctx.getParam("this_entity");
+        let itemEntity = ctx.getParam('this_entity');
         const { level, block } = itemEntity;
 
-        $PortalPlacer.attemptPortalLight(level, block.pos, $PortalIgnitionSource.ItemUseSource("debug_stick"));
-        let lightningBoltEntity = block.createEntity("lightning_bolt");
+        $PortalPlacer.attemptPortalLight(level, block.pos, $PortalIgnitionSource.ItemUseSource('debug_stick'));
+        let lightningBoltEntity = block.createEntity('lightning_bolt');
 
         lightningBoltEntity.setVisualOnly(true);
         lightningBoltEntity.moveTo(Vec3d.atCenterOf(block.pos));
@@ -53,13 +53,13 @@ LycheeEvents.customAction("place_misty_forest_portal", (event) => {
     };
 });
 
-LycheeEvents.customAction("addition_sigil_activation", (event) => {
+LycheeEvents.customAction('addition_sigil_activation', (event) => {
     event.action.applyFunc = (recipe, ctx, times) => {
-        let anvilEntity = ctx.getParam("this_entity");
+        let anvilEntity = ctx.getParam('this_entity');
         const { level, block } = anvilEntity;
 
-        const resultEntity = block.createEntity("item");
-        resultEntity.setItem(Item.of("mierno:addition_sigil").enchant("mierno:activate", 1));
+        const resultEntity = block.createEntity('item');
+        resultEntity.setItem(Item.of('mierno:addition_sigil').enchant('mierno:activate', 1));
         resultEntity.moveTo(Vec3d.atCenterOf(block.pos.above()));
         resultEntity.setDeltaMovement(new Vec3d(0, 0.01, 0));
         resultEntity.setNoGravity(true);
@@ -68,35 +68,35 @@ LycheeEvents.customAction("addition_sigil_activation", (event) => {
 
         level.broadcastEntityEvent(resultEntity, 35);
 
-        const multiblock = $PatchouliAPI.getMultiblock("mierno:addition_sigil_activation_ritual");
-        multiblock.simulate(level, block.pos.below(), "none", false).second.forEach((result) => {
-            if (result.character == "A") {
+        const multiblock = $PatchouliAPI.getMultiblock('mierno:addition_sigil_activation_ritual');
+        multiblock.simulate(level, block.pos.below(), 'none', false).second.forEach((result) => {
+            if (result.character == 'A') {
                 level.setBlock(
                     result.worldPosition.below(),
-                    Block.getBlock("botania:vivid_grass").defaultBlockState(),
+                    Block.getBlock('botania:vivid_grass').defaultBlockState(),
                     2
                 );
             }
-            if (result.character == "B") {
+            if (result.character == 'B') {
                 level.setBlock(
                     result.worldPosition.above(),
-                    Blocks.REDSTONE_WIRE.defaultBlockState().setValue(BlockProperties.POWER, new $Integer("15")),
+                    Blocks.REDSTONE_WIRE.defaultBlockState().setValue(BlockProperties.POWER, new $Integer('15')),
                     2
                 );
             }
         });
 
-        const lightningBoltEntity = block.createEntity("lightning_bolt");
+        const lightningBoltEntity = block.createEntity('lightning_bolt');
         lightningBoltEntity.setVisualOnly(true);
         lightningBoltEntity.moveTo(Vec3d.atCenterOf(block.pos));
         lightningBoltEntity.spawn();
     };
 });
 
-LycheeEvents.customAction("beacon_action", (event) => {
+LycheeEvents.customAction('beacon_action', (event) => {
     event.action.applyFunc = (recipe, ctx, times) => {
         /**@type {Internal.ItemEntity} */
-        let itemEntity = ctx.getParam("this_entity");
+        let itemEntity = ctx.getParam('this_entity');
 
         let random = Utils.getRandom();
         let deltaMovement = new Vec3d(
@@ -107,7 +107,7 @@ LycheeEvents.customAction("beacon_action", (event) => {
 
         let oldCount = itemEntity.item.count;
 
-        itemEntity.setItem("minecraft:nether_star");
+        itemEntity.setItem('minecraft:nether_star');
         itemEntity.item.setCount(oldCount);
         itemEntity.setDeltaMovement(deltaMovement);
         itemEntity.setNoGravity(true);
@@ -115,21 +115,21 @@ LycheeEvents.customAction("beacon_action", (event) => {
 
         const { x, y, z } = itemEntity;
 
-        itemEntity.level.spawnParticles("end_rod", true, x, y, z, 0, 0, 0, 20, 0.1);
+        itemEntity.level.spawnParticles('end_rod', true, x, y, z, 0, 0, 0, 20, 0.1);
     };
 });
 
-LycheeEvents.customAction("unstable_ingot_explosion", (event) => {
+LycheeEvents.customAction('unstable_ingot_explosion', (event) => {
     event.action.applyFunc = (recipe, ctx, times) => {
         /**@type {Internal.ItemEntity} */
-        let itemEntity = ctx.getParam("this_entity");
+        let itemEntity = ctx.getParam('this_entity');
         let count = itemEntity.item.count;
 
         if (!itemEntity.nbt.Item.tag) {
             itemEntity.mergeNbt({
                 Item: {
                     Count: count,
-                    id: "mierno:unstable_ingot",
+                    id: 'mierno:unstable_ingot',
                     tag: {
                         Stable: 100,
                     },
@@ -139,14 +139,14 @@ LycheeEvents.customAction("unstable_ingot_explosion", (event) => {
 
         let amount = itemEntity.nbt.Item.tag.Stable;
         if (amount <= 10) {
-            itemEntity.block.createExplosion().explosionMode("none").strength(5).explode();
+            itemEntity.block.createExplosion().explosionMode('none').strength(5).explode();
             return;
         }
 
         itemEntity.mergeNbt({
             Item: {
                 Count: count,
-                id: "mierno:unstable_ingot",
+                id: 'mierno:unstable_ingot',
                 tag: {
                     Stable: amount - 10,
                 },
@@ -155,26 +155,26 @@ LycheeEvents.customAction("unstable_ingot_explosion", (event) => {
     };
 });
 
-LycheeEvents.customAction("explosion", (event) => {
+LycheeEvents.customAction('explosion', (event) => {
     event.action.applyFunc = (recipe, ctx, times) => {
         /**@type {Internal.ItemEntity} */
-        let itemEntity = ctx.getParam("this_entity");
+        let itemEntity = ctx.getParam('this_entity');
 
-        itemEntity.block.createExplosion().explosionMode("none").strength(5).explode();
+        itemEntity.block.createExplosion().explosionMode('none').strength(5).explode();
     };
 });
 
-LycheeEvents.customAction("add_lunar", (event) => {
+LycheeEvents.customAction('add_lunar', (event) => {
     event.action.applyFunc = (recipe, ctx, times) => {
         /**@type {Internal.ItemEntity} */
-        let itemEntity = ctx.getParam("this_entity");
+        let itemEntity = ctx.getParam('this_entity');
         let count = itemEntity.item.count;
 
         if (!itemEntity.nbt.Item.tag) {
             itemEntity.mergeNbt({
                 Item: {
                     Count: count,
-                    id: "mierno:moon_stone",
+                    id: 'mierno:moon_stone',
                     tag: {
                         Lunar: 0,
                     },
@@ -187,7 +187,7 @@ LycheeEvents.customAction("add_lunar", (event) => {
             itemEntity.mergeNbt({
                 Item: {
                     Count: count,
-                    id: "mierno:moon_stone_full",
+                    id: 'mierno:moon_stone_full',
                 },
             });
             return;
@@ -196,7 +196,7 @@ LycheeEvents.customAction("add_lunar", (event) => {
         itemEntity.mergeNbt({
             Item: {
                 Count: count,
-                id: "mierno:moon_stone",
+                id: 'mierno:moon_stone',
                 tag: {
                     Lunar: amount + 1,
                 },

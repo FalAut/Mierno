@@ -1,8 +1,8 @@
-StartupEvents.registry("item", (event) => {
+StartupEvents.registry('item', (event) => {
     event
-        .create("mierno:dream_wings")
-        .rarity("epic")
-        .tag("curios:dream_wings")
+        .create('mierno:dream_wings')
+        .rarity('epic')
+        .tag('curios:dream_wings')
         .unstackable()
         .attachCapability(
             CuriosCapabilityBuilder.CURIOS.itemStack()

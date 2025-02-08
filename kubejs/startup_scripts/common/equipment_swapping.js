@@ -1,7 +1,7 @@
-ForgeEvents.onEvent("net.minecraftforge.event.ItemStackedOnOtherEvent", (event) => {
+ForgeEvents.onEvent('net.minecraftforge.event.ItemStackedOnOtherEvent', (event) => {
     const { player, carriedItem, slot, clickAction, stackedOnItem } = event;
 
-    if (!stackedOnItem.empty || clickAction != "SECONDARY" || carriedItem.empty) return;
+    if (!stackedOnItem.empty || clickAction != 'SECONDARY' || carriedItem.empty) return;
 
     const { item } = carriedItem;
     const equipSlot =

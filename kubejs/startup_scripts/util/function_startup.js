@@ -52,7 +52,7 @@ function toggleFlying(player, enable) {
  */
 function getRayTraceBlock(entity) {
     const block = entity.rayTrace().block;
-    if (block?.blockState?.fluidState?.fluidType == "minecraft:empty") {
+    if (block?.blockState?.fluidState?.fluidType == 'minecraft:empty') {
         return block;
     }
     return null;
@@ -96,7 +96,7 @@ function getPlayerXP(player) {
  * @param {number} bounceY
  */
 function setBounceData(player, bounceY) {
-    let bounceData = player.persistentData.get("bounceData");
+    let bounceData = player.persistentData.get('bounceData');
     if (!bounceData) {
         bounceData = {
             bounceTick: 0,
@@ -110,7 +110,7 @@ function setBounceData(player, bounceY) {
     bounceData.bounceTick = player.age;
     bounceData.bounceY = bounceY;
 
-    player.persistentData.put("bounceData", bounceData);
+    player.persistentData.put('bounceData', bounceData);
 }
 
 /**
@@ -122,7 +122,7 @@ function onFallWithSlimeBoots(event) {
     const { entity, distance } = event;
     if (!entity.isPlayer()) return;
 
-    if (entity.getItemBySlot("feet") != "mierno:slime_boots") return;
+    if (entity.getItemBySlot('feet') != 'mierno:slime_boots') return;
 
     if (!entity.crouching && distance > 2) {
         if (entity.abilities.mayfly) {
@@ -141,16 +141,27 @@ function onFallWithSlimeBoots(event) {
             event.setCanceled(true);
         }
 
-        level.playSound(null, entity.blockPosition(), "entity.slime.squish", "master");
+        level.playSound(null, entity.blockPosition(), 'entity.slime.squish', 'master');
 
         for (let i = 0; i < 8; i++) {
             const angle = entity.random.nextFloat() * JavaMath.PI * 2;
             const radius = 0.5 * (0.5 + entity.random.nextFloat());
             const xOffset = Math.sin(angle) * radius;
             const zOffset = Math.cos(angle) * radius;
-            entity.level.addParticle("minecraft:item_slime", entity.x + xOffset, entity.y, entity.z + zOffset, 0, 0, 0);
+            entity.level.addParticle('minecraft:item_slime', entity.x + xOffset, entity.y, entity.z + zOffset, 0, 0, 0);
         }
 
         setBounceData(entity, entity.deltaMovement.y());
     }
+}
+
+/**@type {Internal.Player} */
+function hasCurios(player, curiosItem) {
+    let curioInv = $CuriosApi.getCuriosInventory(player).resolve();
+    if (curioInv.isEmpty()) {
+        return false;
+    }
+    let itemHandler = curioInv.get().getEquippedCurios();
+
+    return itemHandler.allItems.some((item) => item == curiosItem);
 }

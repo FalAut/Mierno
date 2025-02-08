@@ -276,4 +276,8 @@ ItemEvents.tooltip((event) => {
     event.add('evilcraft:spirit_furnace', Text.translate('tooltip.mierno.spirit_furnace').gold());
     event.add('forbidden_arcanus:stella_arcanum', Text.translate('tooltip.mierno.stella_arcanum').gold());
     event.add('mierno:tyumen_ingot', '§eEMC§r: 9,223,372,036,854,775,807');
+    event.add('mierno:kylin_arm', [
+        Text.translate('tooltip.mierno.kylin_arm_1').gold(),
+        Text.translate('tooltip.mierno.kylin_arm_2').gold(),
+    ]);
 });

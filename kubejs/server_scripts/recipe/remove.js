@@ -298,6 +298,7 @@ ServerEvents.recipes((event) => {
         'mekanism:processing/lategame/plutonium',
         'mekanism:processing/lategame/polonium',
         'advanced_ae:quantum_processor_print_eae',
+        'compactmachines:wall',
     ];
 
     recipesToRemoveID.forEach((recipe) => {

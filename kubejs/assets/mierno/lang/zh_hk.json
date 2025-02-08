@@ -66,6 +66,7 @@
     "item.mierno.fake_sigil": "偽逆徽章",
     "item.mierno.slime_boots": "史萊姆靴子",
     "item.mierno.slime_sling": "史萊姆彈弓",
+    "item.mierno.kylin_arm": "麒麟臂",
 
     "block.mierno.infused_wood": "灌註之木",
     "block.mierno.misty_forest_portal": "迷霧森林傳送門",
@@ -351,6 +352,8 @@
     "tooltip.mierno.evilcraft_machine": "註意：邪惡工業的機器遵循「上進下出」規則——材料需從頂部輸入，產物從底部輸出",
     "tooltip.mierno.spirit_furnace": "提示：靈魂爐可以綁定到糾纏方塊上使用",
     "tooltip.mierno.stella_arcanum": "直接挖掘會產生爆炸，但使用物品路由器或數字型采礦機之類的機器進行挖掘不會爆炸",
+    "tooltip.mierno.kylin_arm_1": "裝備後將玩家的挖掘等級提升到最大值",
+    "tooltip.mierno.kylin_arm_2": "並將玩家的挖掘速度提升至原來的十倍",
 
     "biome.mierno.black_and_white": "黑與白",
     "biome.mierno.misty_forest": "迷霧森林",
@@ -369,6 +372,7 @@
     "curios.identifier.dream_lantern": "夢之燈",
     "curios.identifier.dream_wings": "夢之翼",
     "curios.identifier.token_rage": "狂怒印記",
+    "curios.identifier.kylin_arm": "麒麟臂",
 
     "key.mierno.portable_crafting": "打開便攜式工作臺",
 

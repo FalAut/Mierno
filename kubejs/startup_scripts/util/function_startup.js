@@ -154,3 +154,14 @@ function onFallWithSlimeBoots(event) {
         setBounceData(entity, entity.deltaMovement.y());
     }
 }
+
+/**@type {Internal.Player} */
+function hasCurios(player, curiosItem) {
+    let curioInv = $CuriosApi.getCuriosInventory(player).resolve();
+    if (curioInv.isEmpty()) {
+        return false;
+    }
+    let itemHandler = curioInv.get().getEquippedCurios();
+
+    return itemHandler.allItems.some((item) => item == curiosItem);
+}

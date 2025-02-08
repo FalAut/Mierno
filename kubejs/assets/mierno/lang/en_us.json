@@ -66,6 +66,7 @@
     "item.mierno.fake_sigil": "Pseudo Inversion Sigil",
     "item.mierno.slime_boots": "Slime Boots",
     "item.mierno.slime_sling": "Slime Sling",
+    "item.mierno.kylin_arm": "Kylin Arm",
 
     "block.mierno.infused_wood": "Infused Wood",
     "block.mierno.misty_forest_portal": "Misty Forest Portal",
@@ -351,6 +352,8 @@
     "tooltip.mierno.evilcraft_machine": "Note: Evilcraft machines follow the 'input from the top, output from the bottom' rule—materials must be input from the top, and products output from the bottom.",
     "tooltip.mierno.spirit_furnace": "Tip: The Spirit Furnace can be bound to an Entangled Block for use.",
     "tooltip.mierno.stella_arcanum": "Direct digging produces an explosion, but digging with a machine such as an item router or digital miner does not",
+    "tooltip.mierno.kylin_arm_1": "Raises the player's digging level to the maximum when equipped",
+    "tooltip.mierno.kylin_arm_2": "and increase the player's digging speed to ten times the original speed",
 
     "biome.mierno.black_and_white": "Black and White",
     "biome.mierno.misty_forest": "Misty Forest",
@@ -369,6 +372,7 @@
     "curios.identifier.dream_lantern": "Dream Lantern",
     "curios.identifier.dream_wings": "Dream Wings",
     "curios.identifier.token_rage": "Token Rage",
+    "curios.identifier.kylin_arm": "Kylin Arm",
 
     "key.mierno.portable_crafting": "Open Portable Crafting Table",
 

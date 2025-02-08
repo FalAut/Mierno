@@ -149,4 +149,24 @@ ServerEvents.recipes((event) => {
             item: 'mierno:sun_crystal_full',
         },
     });
+
+    event.custom({
+        type: 'expatternprovider:circuit_cutter',
+        fluid_input: {
+            amount: 100,
+            ingredient: {
+                fluid: 'pneumaticcraft:etching_acid',
+            },
+        },
+        item_input: {
+            amount: 1,
+            ingredient: {
+                item: 'advanced_ae:quantum_alloy_block',
+            },
+        },
+        output: {
+            count: 9,
+            item: 'advanced_ae:printed_quantum_processor',
+        },
+    });
 });

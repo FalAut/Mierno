@@ -8,7 +8,10 @@ if (Platform.isClientEnvironment()) {
         'key.categories.inventory'
     );
 
+    global.toggleZoom = new $KeyMapping('key.mierno.toggle_zoom', $GLFWkey.GLFW_KEY_Z, 'key.categories.gameplay');
+
     ForgeModEvents.onEvent('net.minecraftforge.client.event.RegisterKeyMappingsEvent', (event) => {
         event.register(global.portableCrafting);
+        event.register(global.toggleZoom);
     });
 }

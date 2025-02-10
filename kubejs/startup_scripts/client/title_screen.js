@@ -60,45 +60,44 @@ if (Platform.isClientEnvironment()) {
         if (event.phase != 'END' || isStartup) return;
 
         let gameStartTimeSeconds = $ModernFixClient.gameStartTimeSeconds.toFixed(1);
+        if (gameStartTimeSeconds == -1) return;
 
-        if (gameStartTimeSeconds != -1) {
-            Client.toasts.addToast(
-                new $SystemToast(
-                    'narrator_toggle',
-                    Text.translate('mierno.startup.time', gameStartTimeSeconds),
-                    Text.translate('mierno.startup.performance')
-                )
-            );
+        Client.toasts.addToast(
+            new $SystemToast(
+                'narrator_toggle',
+                Text.translate('mierno.startup.time', gameStartTimeSeconds),
+                Text.translate('mierno.startup.performance')
+            )
+        );
 
-            let currentVer = $MpucApi.getInstance().getCurrentModpackVersion();
-            Client.setTitle(`Mierno v${currentVer}`);
+        let currentVer = $MpucApi.getInstance().getCurrentModpackVersion();
+        Client.setTitle(`Mierno v${currentVer}`);
 
-            let brandingControl = new $BrandingControl();
-            let brandingsField = $BrandingControl.__javaObject__.getDeclaredField('brandings');
-            brandingsField.setAccessible(true);
+        let brandingControl = new $BrandingControl();
+        let brandingsField = $BrandingControl.__javaObject__.getDeclaredField('brandings');
+        brandingsField.setAccessible(true);
 
-            let computeBranding = $BrandingControl.__javaObject__.getDeclaredMethod('computeBranding');
-            computeBranding.setAccessible(true);
-            computeBranding.invoke(null);
+        let computeBranding = $BrandingControl.__javaObject__.getDeclaredMethod('computeBranding');
+        computeBranding.setAccessible(true);
+        computeBranding.invoke(null);
 
-            let brandings = brandingsField.get(brandingControl);
-            let newBrandings = new $ArrayList();
-            newBrandings.addAll(brandings);
+        let brandings = brandingsField.get(brandingControl);
+        let newBrandings = new $ArrayList();
+        newBrandings.addAll(brandings);
 
-            let lastestVer = $MpucApi.getInstance().getLatestModpackVersion() ?? currentVer;
-            let hasUpdate = currentVer != lastestVer;
-            let updateMessage = hasUpdate ? Text.translate('mierno.startup.new_version', lastestVer).getString() : '';
-            newBrandings.add(Text.translate('mierno.startup.time', gameStartTimeSeconds).getString());
-            newBrandings.add(Text.translate('mierno.startup.modpack_version', currentVer, updateMessage).getString());
+        let lastestVer = $MpucApi.getInstance().getLatestModpackVersion() ?? currentVer;
+        let hasUpdate = currentVer != lastestVer;
+        let updateMessage = hasUpdate ? Text.translate('mierno.startup.new_version', lastestVer).getString() : '';
+        newBrandings.add(Text.translate('mierno.startup.time', gameStartTimeSeconds).getString());
+        newBrandings.add(Text.translate('mierno.startup.modpack_version', currentVer, updateMessage).getString());
 
-            brandingsField.set(brandingControl, newBrandings);
+        brandingsField.set(brandingControl, newBrandings);
 
-            let randomSource = $SoundInstance.createUnseededRandom();
-            Client.soundManager.play(
-                new $SimpleSoundInstance('entity.experience_orb.pickup', 'master', 0.25, 1.0, randomSource, 0, 0, 0)
-            );
+        let randomSource = $SoundInstance.createUnseededRandom();
+        Client.soundManager.play(
+            new $SimpleSoundInstance('entity.experience_orb.pickup', 'master', 0.25, 1.0, randomSource, 0, 0, 0)
+        );
 
-            isStartup = true;
-        }
+        isStartup = true;
     });
 }

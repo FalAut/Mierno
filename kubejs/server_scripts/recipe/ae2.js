@@ -169,4 +169,40 @@ ServerEvents.recipes((event) => {
             item: 'advanced_ae:printed_quantum_processor',
         },
     });
+
+    event.custom({
+        type: 'advanced_ae:reaction',
+        energy: 200000,
+        fluid: {
+            fluidStack: {
+                Amount: 500,
+                FluidName: 'minecraft:water',
+            },
+        },
+        input_items: [
+            {
+                amount: 16,
+                ingredient: {
+                    item: 'ae2:charged_certus_quartz_crystal',
+                },
+            },
+            {
+                amount: 16,
+                ingredient: {
+                    item: 'botania:elf_glass',
+                },
+            },
+            {
+                amount: 16,
+                ingredient: {
+                    item: 'botania:pixie_dust',
+                },
+            },
+        ],
+        output: {
+            '#': 64,
+            '#c': 'ae2:i',
+            id: 'ae2:fluix_crystal',
+        },
+    });
 });

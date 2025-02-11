@@ -1,0 +1,5 @@
+renderDistance:6
+simulationDistance:6
+bobView:false
+key_key.sprint:key.keyboard.r
+key_key.ftbquests.quests:key.keyboard.k

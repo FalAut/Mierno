@@ -164,6 +164,7 @@ ServerEvents.recipes((event) => {
     kubejs.shapeless('mierno:1', 'mekanism:pellet_antimatter');
     kubejs.shapeless('mierno:computation_matrix', 'mekanism:antiprotonic_nucleosynthesizer');
     kubejs.shapeless('8x naturesaura:gold_powder', ['thermal:gold_dust', '#leaves']);
+    kubejs.shapeless('evilcraft:bucket_eternal_water', ['evilcraft:eternal_water', 'minecraft:bucket']);
 
     kubejs.shaped('bucket', ['A A', ' A '], {
         A: 'white_concrete',

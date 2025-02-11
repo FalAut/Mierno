@@ -225,8 +225,6 @@
     "tooltip.mierno.meteorite_compass3": "若罗盘快速旋转，则代表当前区块存在迷宫（迷宫生成在地下Y20处）",
     "tooltip.mierno.black_lotus": "将神秘花扔入虚空转化而来",
     "tooltip.mierno.dream_wings": "戴上可获得创造式飞行",
-    "tooltip.mierno.addition_sigil": "由荒野奇美拉掉落",
-    "tooltip.mierno.division_sigil": "由凋灵掉落",
     "tooltip.mierno.fire_starter": "对着方块长按右键引火",
     "tooltip.mierno.fired_crucible_1": "将§7灰色混凝土§r右键放进去，也可以丢进去",
     "tooltip.mierno.fired_crucible_2": "当坩埚下方有热源的时候就会开始产生熔岩",
@@ -352,8 +350,9 @@
     "tooltip.mierno.evilcraft_machine": "注意：邪恶工业的机器遵循“上进下出”规则——材料需从顶部输入，产物从底部输出",
     "tooltip.mierno.spirit_furnace": "提示：灵魂炉可以绑定到纠缠方块上使用",
     "tooltip.mierno.stella_arcanum": "直接挖掘会产生爆炸，但使用物品路由器或数字型采矿机之类的机器进行挖掘不会爆炸",
-    "tooltip.mierno.kylin_arm_1": "装备后将玩家的挖掘等级提升到最大值",
-    "tooltip.mierno.kylin_arm_2": "并将玩家的挖掘速度提升至原来的十倍",
+    "tooltip.mierno.kylin_arm_1": "装备后可徒手挖掉方块",
+    "tooltip.mierno.kylin_arm_2": "挖掘速度提升至原来的十倍",
+    "tooltip.mierno.kylin_arm_3": "无视空中与水下的挖掘减速影响",
 
     "biome.mierno.black_and_white": "黑与白",
     "biome.mierno.misty_forest": "迷雾森林",
@@ -381,6 +380,9 @@
 
     "desc.mierno.source_flower.cost": "魔源: %s",
     "desc.mierno.source_flower.time": "时间: %s秒",
+
+    "jei.information.mierno.addition_sigil": "由荒野奇美拉掉落，合成后不会消耗，请查看思索来了解如何激活徽章",
+    "jei.information.mierno.division_sigil": "由凋灵掉落，合成后不会消耗，请查看思索来了解如何激活徽章",
 
     "jei.mierno.category.beacon_convert": "信标转化",
     "jei.mierno.category.ore_gen": "矿石生成",

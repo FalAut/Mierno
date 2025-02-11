@@ -11,6 +11,7 @@ ItemEvents.tooltip((event) => {
         { item: 'mierno:memory_source_drawing_crystal_core', lines: 5 },
         { item: 'occultism:divination_rod', lines: 4 },
         { item: 'naturesaura:time_changer', lines: 5 },
+        { item: 'mierno:kylin_arm', lines: 3 },
     ];
 
     shiftTooltipItems.forEach((shiftTooltipItem) => {
@@ -276,8 +277,4 @@ ItemEvents.tooltip((event) => {
     event.add('evilcraft:spirit_furnace', Text.translate('tooltip.mierno.spirit_furnace').gold());
     event.add('forbidden_arcanus:stella_arcanum', Text.translate('tooltip.mierno.stella_arcanum').gold());
     event.add('mierno:tyumen_ingot', '§eEMC§r: 9,223,372,036,854,775,807');
-    event.add('mierno:kylin_arm', [
-        Text.translate('tooltip.mierno.kylin_arm_1').gold(),
-        Text.translate('tooltip.mierno.kylin_arm_2').gold(),
-    ]);
 });

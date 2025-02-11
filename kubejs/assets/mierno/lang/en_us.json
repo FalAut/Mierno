@@ -225,8 +225,6 @@
     "tooltip.mierno.meteorite_compass3": "If the compass spins rapidly, there's a maze in the current chunk (mazes generate at Y20 underground)",
     "tooltip.mierno.black_lotus": "Created by throwing a Mystical Flower into the void",
     "tooltip.mierno.dream_wings": "Grants creative flight when worn",
-    "tooltip.mierno.addition_sigil": "Dropped by the Wild Chimera",
-    "tooltip.mierno.division_sigil": "Dropped by the Wither",
     "tooltip.mierno.fire_starter": "Hold right-click on a block to start a fire",
     "tooltip.mierno.fired_crucible_1": "Right-click or throw §7Gray Concrete§r into it",
     "tooltip.mierno.fired_crucible_2": "Will produce lava when there's a heat source below",
@@ -352,8 +350,9 @@
     "tooltip.mierno.evilcraft_machine": "Note: Evilcraft machines follow the 'input from the top, output from the bottom' rule—materials must be input from the top, and products output from the bottom.",
     "tooltip.mierno.spirit_furnace": "Tip: The Spirit Furnace can be bound to an Entangled Block for use.",
     "tooltip.mierno.stella_arcanum": "Direct digging produces an explosion, but digging with a machine such as an item router or digital miner does not",
-    "tooltip.mierno.kylin_arm_1": "Raises the player's digging level to the maximum when equipped",
-    "tooltip.mierno.kylin_arm_2": "and increase the player's digging speed to ten times the original speed",
+    "tooltip.mierno.kylin_arm_1": "Allows mining blocks with bare hands when equipped",
+    "tooltip.mierno.kylin_arm_2": "Mining speed increased tenfold",
+    "tooltip.mierno.kylin_arm_3": "Ignores mining slowdowns in air and underwater",
 
     "biome.mierno.black_and_white": "Black and White",
     "biome.mierno.misty_forest": "Misty Forest",
@@ -381,6 +380,9 @@
 
     "desc.mierno.source_flower.cost": "Source: %s",
     "desc.mierno.source_flower.time": "Time: %s seconds",
+
+    "jei.information.mierno.addition_sigil": "Dropped by the Wild Chimera, not consumed after crafting, check ponder to know how to activate",
+    "jei.information.mierno.division_sigil": "Dropped by the Wither, not consumed after crafting, check ponder to know how to activate",
 
     "jei.mierno.category.beacon_convert": "Beacon Conversion",
     "jei.mierno.category.ore_gen": "Ore Generation",

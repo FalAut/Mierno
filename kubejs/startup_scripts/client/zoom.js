@@ -26,7 +26,7 @@ if (Platform.isClientEnvironment()) {
         const baseFov = Client.options.fov().get();
         const newTarget = Zoom.target + event.getScrollDelta() * Zoom.SENSITIVITY;
         // 限制缩放值范围
-        Zoom.target = JavaMath.clamp(newTarget, 0, baseFov - Zoom.MIN_FOV);
+        Zoom.target = Math.max(0, Math.min(newTarget, baseFov - Zoom.MIN_FOV));
 
         event.setCanceled(true);
     });

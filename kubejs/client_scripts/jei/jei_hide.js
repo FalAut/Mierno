@@ -9,6 +9,7 @@ JEIEvents.hideItems((event) => {
     event.hide('projecte:philosophers_stone');
     event.hide('projecte:transmutation_table');
     event.hide('projecte:transmutation_tablet');
+    event.hide('thermal:machine_crafter');
 });
 
 JEIEvents.hideFluids((event) => {

@@ -128,6 +128,11 @@
 					item: "minecraft:netherite_upgrade_smithing_template"
 					type: "item"
 				}
+				{
+					id: "26759AFC75CD69FF"
+					item: "minecraft:netherite_block"
+					type: "item"
+				}
 			]
 			tasks: [{
 				id: "092289243CBD333B"

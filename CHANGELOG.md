@@ -4,6 +4,24 @@
 -   现在可以使用 Z 键缩放（可用鼠标滚轮调节）
 -   现在戴上麒麟臂后，在空中或水下挖掘不会再减速
 -   永恒水桶现在可以使用永恒水方块制作
+-   因连锁炽炉会产生问题，故将炽炉核心、磨制暗黑石和磨制暗黑石砖加入连锁黑名单
+-   禁用了村民的生成
+-   禁用了辐射的产生
+-   因序列装配台存在无视 NBT 合成、不保留物品的 NBT 以及会消耗合成时应该保留的物品等各种问题，故将其禁用
+-   添加 1M、4M、16M、64M、256M 的 ME 存储组件
+
+---
+
+-   _The text content for this changelog was translated into English using machine translation. Apologies for any inaccuracies!_
+-   Fixed an issue where the reaction bin recipe for Fruix crystals was not modified
+-   You can now use the Z key to zoom (adjustable with the mouse wheel)
+-   Digging in the air or underwater will now not slow down when wearing the unicorn arm
+-   Eternal Buckets can now be crafted with Eternal Water Cubes.
+-   Added Blazing Furnace Cores, Ground Darkstones and Ground Darkstones Tiles to the chain blacklist as chaining Blazing Furnaces was causing problems
+-   Disabled villager generation
+-   Disabled radiation generation
+-   Disabled Sequence Assembly Table due to issues with it ignoring NBT synthesis, not keeping NBTs for items, and consuming items that should be kept during synthesis.
+-   Add 1M, 4M, 16M, 64M, 256M ME storage components
 
 ## v0.3.0
 

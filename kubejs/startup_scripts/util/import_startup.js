@@ -32,3 +32,5 @@ const $EquipmentSlot = Java.loadClass('net.minecraft.world.entity.EquipmentSlot'
 const $ArmorItem = Java.loadClass('net.minecraft.world.item.ArmorItem');
 const $ElytraItem = Java.loadClass('net.minecraft.world.item.ElytraItem');
 const $CuriosApi = Java.loadClass('top.theillusivec4.curios.api.CuriosApi');
+const $BasicStorageCell = Java.loadClass('appeng.items.storage.BasicStorageCell');
+const $AEKeyType = Java.loadClass('appeng.api.stacks.AEKeyType');

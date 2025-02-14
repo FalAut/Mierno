@@ -51,6 +51,21 @@ ServerEvents.tags('item', (event) => {
         'botania:mana_tablet',
         'botania:creative_pool',
     ]);
+
+    event.add('forge:ingots', [
+        'mierno:meteorite_steel_ingot',
+        'mierno:tyumen_ingot',
+        'mierno:unstable_ingot',
+        'mierno:demon_infused_ingot',
+    ]);
+
+    event.add('forge:raw_materials', 'mierno:raw_etrium');
+    event.add('mekanism:enriched', [
+        'mierno:enriched_etrium',
+        'mierno:enriched_deorum',
+        'mierno:enriched_etching_acid',
+    ]);
+    event.add('forge:armors/boots', 'mierno:slime_boots');
 });
 
 ServerEvents.tags('block', (event) => {

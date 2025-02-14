@@ -31,6 +31,7 @@ StartupEvents.registry('item', (event) => {
     event.create('mierno:enriched_deorum');
     event.create('mierno:raw_etrium');
     event.create('mierno:milkyway_plate');
+    event.create('mierno:meteorite_steel_ingot');
     event.create('mierno:fake_sigil').texture('mierno:item/pseudo_inversion_sigil').unstackable();
     event.create('mierno:0').glow(true);
     event.create('mierno:1').glow(true);

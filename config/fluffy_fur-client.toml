@@ -13,6 +13,10 @@
 		itemGuiParticle = true
 		#Enable blood particles in case of damage.
 		bloodParticle = false
+		#Enable custom effect of lightning bolt.
+		lightningBoltEffect = true
+		#Enable custom effect of explosion.
+		explosionEffect = true
 
 #Menu
 [menu]
@@ -29,4 +33,8 @@
 	menuButtonXOffset = 0
 	#Fluffy Fur menu button Y offset.
 	menuButtonYOffset = 0
+	#Enable logo in Fluffy Fur Panorama.
+	panoramaLogo = true
+	#Enable music in Fluffy Fur Panorama.
+	panoramaMusic = true
 

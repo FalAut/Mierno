@@ -300,6 +300,7 @@ ServerEvents.recipes((event) => {
         'advanced_ae:quantum_processor_print_eae',
         'compactmachines:wall',
         'advanced_ae:fluixcrystals',
+        'mekanism:formulaic_assemblicator',
     ];
 
     recipesToRemoveID.forEach((recipe) => {

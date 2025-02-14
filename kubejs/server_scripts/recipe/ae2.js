@@ -45,6 +45,29 @@ ServerEvents.recipes((event) => {
         type: 'ae2:transform',
         circumstance: {
             type: 'fluid',
+            tag: 'minecraft:lava',
+        },
+        ingredients: [
+            {
+                item: 'ae2:charged_certus_quartz_crystal',
+            },
+            {
+                item: 'mekanism:ingot_steel',
+            },
+            {
+                item: 'ae2:sky_dust',
+            },
+        ],
+        result: {
+            count: 2,
+            item: 'mierno:meteorite_steel_ingot',
+        },
+    });
+
+    event.custom({
+        type: 'ae2:transform',
+        circumstance: {
+            type: 'fluid',
             tag: 'minecraft:water',
         },
         ingredients: [
@@ -167,6 +190,78 @@ ServerEvents.recipes((event) => {
         output: {
             count: 9,
             item: 'advanced_ae:printed_quantum_processor',
+        },
+    });
+
+    event.custom({
+        type: 'advanced_ae:reaction',
+        energy: 200000,
+        fluid: {
+            fluidStack: {
+                Amount: 500,
+                FluidName: 'minecraft:water',
+            },
+        },
+        input_items: [
+            {
+                amount: 16,
+                ingredient: {
+                    item: 'ae2:charged_certus_quartz_crystal',
+                },
+            },
+            {
+                amount: 16,
+                ingredient: {
+                    item: 'botania:elf_glass',
+                },
+            },
+            {
+                amount: 16,
+                ingredient: {
+                    item: 'botania:pixie_dust',
+                },
+            },
+        ],
+        output: {
+            '#': 64,
+            '#c': 'ae2:i',
+            id: 'ae2:fluix_crystal',
+        },
+    });
+
+    event.custom({
+        type: 'advanced_ae:reaction',
+        energy: 200000,
+        fluid: {
+            fluidStack: {
+                Amount: 500,
+                FluidName: 'minecraft:lava',
+            },
+        },
+        input_items: [
+            {
+                amount: 16,
+                ingredient: {
+                    item: 'ae2:charged_certus_quartz_crystal',
+                },
+            },
+            {
+                amount: 16,
+                ingredient: {
+                    item: 'mekanism:ingot_steel',
+                },
+            },
+            {
+                amount: 16,
+                ingredient: {
+                    item: 'ae2:sky_dust',
+                },
+            },
+        ],
+        output: {
+            '#': 64,
+            '#c': 'ae2:i',
+            id: 'mierno:meteorite_steel_ingot',
         },
     });
 });

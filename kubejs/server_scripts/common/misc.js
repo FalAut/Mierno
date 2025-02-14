@@ -31,6 +31,10 @@ EntityEvents.spawned('tiab:time_accelerator_entity_type', (event) => {
     }
 });
 
+EntityEvents.spawned('villager', (event) => {
+    event.cancel();
+});
+
 EntityEvents.spawned('bloodmagic:meteor', (event) => {
     const { entity, level } = event;
 

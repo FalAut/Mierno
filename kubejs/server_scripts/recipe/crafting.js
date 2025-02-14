@@ -164,6 +164,15 @@ ServerEvents.recipes((event) => {
     kubejs.shapeless('mierno:1', 'mekanism:pellet_antimatter');
     kubejs.shapeless('mierno:computation_matrix', 'mekanism:antiprotonic_nucleosynthesizer');
     kubejs.shapeless('8x naturesaura:gold_powder', ['thermal:gold_dust', '#leaves']);
+    kubejs.shapeless('evilcraft:bucket_eternal_water', ['evilcraft:eternal_water', 'minecraft:bucket']);
+    kubejs.shapeless('mierno:item_storage_cell_1m', ['mierno:cell_component_1m', 'mierno:advance_item_cell_housing']);
+    kubejs.shapeless('mierno:item_storage_cell_4m', ['mierno:cell_component_4m', 'mierno:advance_item_cell_housing']);
+    kubejs.shapeless('mierno:item_storage_cell_16m', ['mierno:cell_component_16m', 'mierno:advance_item_cell_housing']);
+    kubejs.shapeless('mierno:item_storage_cell_64m', ['mierno:cell_component_64m', 'mierno:advance_item_cell_housing']);
+    kubejs.shapeless('mierno:item_storage_cell_256m', [
+        'mierno:cell_component_256m',
+        'mierno:advance_item_cell_housing',
+    ]);
 
     kubejs.shaped('bucket', ['A A', ' A '], {
         A: 'white_concrete',
@@ -744,7 +753,7 @@ ServerEvents.recipes((event) => {
         G: 'thermal:redstone_servo',
     });
 
-    kubejs.shaped('thermal:machine_crafter', ['ABC', 'DED', 'FGF'], {
+    kubejs.shaped('mekanism:formulaic_assemblicator', ['ABC', 'DED', 'FGF'], {
         A: 'ae2:logic_processor',
         B: 'minecraft:crafting_table',
         C: 'ae2:engineering_processor',
@@ -1059,5 +1068,81 @@ ServerEvents.recipes((event) => {
         A: 'minecraft:white_concrete',
         B: 'minecraft:gray_concrete',
         C: 'minecraft:lava_bucket',
+    });
+
+    kubejs.shaped('mierno:cell_component_1m', ['ABA', 'CDC', 'ACA'], {
+        A: 'ae2:sky_dust',
+        B: 'advanced_ae:quantum_processor',
+        C: 'ae2:cell_component_256k',
+        D: 'ae2:quartz_vibrant_glass',
+    });
+
+    kubejs.shaped('mierno:cell_component_4m', ['ABA', 'CDC', 'ACA'], {
+        A: 'ae2:singularity',
+        B: 'advanced_ae:quantum_processor',
+        C: 'mierno:cell_component_1m',
+        D: 'ae2:quartz_vibrant_glass',
+    });
+
+    kubejs.shaped('mierno:cell_component_16m', ['ABA', 'CDC', 'ACA'], {
+        A: 'ae2:singularity',
+        B: 'advanced_ae:quantum_processor',
+        C: 'mierno:cell_component_4m',
+        D: 'ae2:quartz_vibrant_glass',
+    });
+
+    kubejs.shaped('mierno:cell_component_64m', ['ABA', 'CDC', 'ACA'], {
+        A: 'mierno:unstable_singularity',
+        B: 'advanced_ae:quantum_processor',
+        C: 'mierno:cell_component_16m',
+        D: 'ae2:quartz_vibrant_glass',
+    });
+
+    kubejs.shaped('mierno:cell_component_256m', ['ABA', 'CDC', 'ACA'], {
+        A: 'mierno:unstable_singularity',
+        B: 'advanced_ae:quantum_processor',
+        C: 'mierno:cell_component_64m',
+        D: 'ae2:quartz_vibrant_glass',
+    });
+
+    kubejs.shaped('mierno:advance_item_cell_housing', ['ABA', 'B B', 'CCC'], {
+        A: 'ae2:quartz_vibrant_glass',
+        B: 'ae2:sky_dust',
+        C: 'mierno:meteorite_steel_ingot',
+    });
+
+    kubejs.shaped('mierno:item_storage_cell_1m', ['ABA', 'BDB', 'CCC'], {
+        A: 'ae2:quartz_vibrant_glass',
+        B: 'ae2:sky_dust',
+        C: 'mierno:meteorite_steel_ingot',
+        D: 'mierno:cell_component_1m',
+    });
+
+    kubejs.shaped('mierno:item_storage_cell_4m', ['ABA', 'BDB', 'CCC'], {
+        A: 'ae2:quartz_vibrant_glass',
+        B: 'ae2:sky_dust',
+        C: 'mierno:meteorite_steel_ingot',
+        D: 'mierno:cell_component_4m',
+    });
+
+    kubejs.shaped('mierno:item_storage_cell_16m', ['ABA', 'BDB', 'CCC'], {
+        A: 'ae2:quartz_vibrant_glass',
+        B: 'ae2:sky_dust',
+        C: 'mierno:meteorite_steel_ingot',
+        D: 'mierno:cell_component_16m',
+    });
+
+    kubejs.shaped('mierno:item_storage_cell_64m', ['ABA', 'BDB', 'CCC'], {
+        A: 'ae2:quartz_vibrant_glass',
+        B: 'ae2:sky_dust',
+        C: 'mierno:meteorite_steel_ingot',
+        D: 'mierno:cell_component_64m',
+    });
+
+    kubejs.shaped('mierno:item_storage_cell_256m', ['ABA', 'BDB', 'CCC'], {
+        A: 'ae2:quartz_vibrant_glass',
+        B: 'ae2:sky_dust',
+        C: 'mierno:meteorite_steel_ingot',
+        D: 'mierno:cell_component_256m',
     });
 });

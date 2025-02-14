@@ -141,7 +141,7 @@ function onFallWithSlimeBoots(event) {
             event.setCanceled(true);
         }
 
-        level.playSound(null, entity.blockPosition(), 'entity.slime.squish', 'master');
+        entity.level.playSound(null, entity.blockPosition(), 'entity.slime.squish', 'master');
 
         for (let i = 0; i < 8; i++) {
             const angle = entity.random.nextFloat() * JavaMath.PI * 2;

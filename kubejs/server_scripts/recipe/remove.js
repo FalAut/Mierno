@@ -301,6 +301,8 @@ ServerEvents.recipes((event) => {
         'compactmachines:wall',
         'advanced_ae:fluixcrystals',
         'mekanism:formulaic_assemblicator',
+        'ars_nouveau:sourcestone',
+        'ars_nouveau:magebloom_crop',
     ];
 
     recipesToRemoveID.forEach((recipe) => {

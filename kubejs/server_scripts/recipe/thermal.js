@@ -130,6 +130,30 @@ ServerEvents.recipes((event) => {
         type: 'thermal:smelter',
         ingredients: [
             {
+                item: 'minecraft:stone',
+                count: 8,
+            },
+            {
+                item: 'ars_nouveau:magebloom_fiber',
+                count: 1,
+            },
+            {
+                item: 'ars_nouveau:source_gem',
+                count: 1,
+            },
+        ],
+        result: [
+            {
+                item: 'ars_nouveau:sourcestone',
+                count: 8,
+            },
+        ],
+    });
+
+    event.custom({
+        type: 'thermal:smelter',
+        ingredients: [
+            {
                 item: 'naturesaura:infused_iron',
                 count: 16,
             },

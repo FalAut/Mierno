@@ -13,10 +13,15 @@
 			icon: "mierno:dream_lantern"
 			id: "341A543368E45E54"
 			rewards: [{
-				exclude_from_claim_all: true
-				id: "32BA5D7A2325529A"
-				table_id: 1320735954632056874L
-				type: "loot"
+				id: "3C6F9B0F553AAE12"
+				item: {
+					Count: 1
+					id: "ftbquests:lootcrate"
+					tag: {
+						type: "automation"
+					}
+				}
+				type: "item"
 			}]
 			shape: "gear"
 			size: 2.0d
@@ -34,10 +39,15 @@
 			dependencies: ["341A543368E45E54"]
 			id: "1ED6C61F7420F418"
 			rewards: [{
-				exclude_from_claim_all: true
-				id: "7A16CDF665029701"
-				table_id: 1320735954632056874L
-				type: "loot"
+				id: "0E6CD5DADA79B3F6"
+				item: {
+					Count: 1
+					id: "ftbquests:lootcrate"
+					tag: {
+						type: "automation"
+					}
+				}
+				type: "item"
 			}]
 			tasks: [{
 				icon: "botania:white_mystical_flower"
@@ -60,10 +70,15 @@
 					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "1A27FEAD520E05AB"
-					table_id: 1320735954632056874L
-					type: "loot"
+					id: "38398B441AEE9E90"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "automation"
+						}
+					}
+					type: "item"
 				}
 			]
 			tasks: [{
@@ -84,10 +99,15 @@
 					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "375D500DC91B0333"
-					table_id: 1320735954632056874L
-					type: "loot"
+					id: "3259116E652BF2E1"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "automation"
+						}
+					}
+					type: "item"
 				}
 			]
 			tasks: [{
@@ -110,10 +130,15 @@
 					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "2E1C80EFB0C87D9B"
-					table_id: 1320735954632056874L
-					type: "loot"
+					id: "124E379BAF665EF3"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "automation"
+						}
+					}
+					type: "item"
 				}
 			]
 			tasks: [{
@@ -136,10 +161,15 @@
 					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "4D5643EE1A95B08C"
-					table_id: 1320735954632056874L
-					type: "loot"
+					id: "0ED2352FE06DA13B"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "automation"
+						}
+					}
+					type: "item"
 				}
 			]
 			tasks: [{
@@ -160,10 +190,15 @@
 					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "5014583894CAB958"
-					table_id: 1320735954632056874L
-					type: "loot"
+					id: "0186D71D11723E26"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "automation"
+						}
+					}
+					type: "item"
 				}
 			]
 			tasks: [{
@@ -192,17 +227,26 @@
 					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "6A354264883CCFE0"
-					table_id: 7340661080663442765L
-					team_reward: true
-					type: "loot"
+					id: "0B9F7443529297CA"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "rune_rewards"
+						}
+					}
+					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "5DFAD895FFDCCD13"
-					table_id: 1320735954632056874L
-					type: "loot"
+					id: "0943A2839B46EA86"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "automation"
+						}
+					}
+					type: "item"
 				}
 			]
 			shape: "square"
@@ -234,10 +278,15 @@
 					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "34C2BAF090AB9756"
-					table_id: 1320735954632056874L
-					type: "loot"
+					id: "74C304ABD63AD2EF"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "automation"
+						}
+					}
+					type: "item"
 				}
 			]
 			tasks: [{
@@ -274,10 +323,15 @@
 					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "5C32F6DEE560C692"
-					table_id: 1320735954632056874L
-					type: "loot"
+					id: "67CB75EB7A214426"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "automation"
+						}
+					}
+					type: "item"
 				}
 			]
 			tasks: [
@@ -311,10 +365,15 @@
 					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "28FB0961EC3AB72A"
-					table_id: 1320735954632056874L
-					type: "loot"
+					id: "61BE485C710E7F7D"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "automation"
+						}
+					}
+					type: "item"
 				}
 			]
 			tasks: [{
@@ -336,10 +395,15 @@
 					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "343E2523793893E5"
-					table_id: 1320735954632056874L
-					type: "loot"
+					id: "33A4678DDB687F27"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "automation"
+						}
+					}
+					type: "item"
 				}
 			]
 			tasks: [{
@@ -365,17 +429,26 @@
 					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "3D49E8ABB7327045"
-					table_id: 7340661080663442765L
-					team_reward: true
-					type: "loot"
+					id: "51726AB18D733CA5"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "rune_rewards"
+						}
+					}
+					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "1B46BFA8243CA975"
-					table_id: 1320735954632056874L
-					type: "loot"
+					id: "3376889FB4AF93A5"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "automation"
+						}
+					}
+					type: "item"
 				}
 			]
 			shape: "square"
@@ -401,17 +474,26 @@
 					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "088B7991DE22E3CA"
-					table_id: 7340661080663442765L
-					team_reward: true
-					type: "loot"
+					id: "5082C18E32F7942A"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "rune_rewards"
+						}
+					}
+					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "02833ACDB8C3C95A"
-					table_id: 1320735954632056874L
-					type: "loot"
+					id: "6B752D31F1AEA1F3"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "automation"
+						}
+					}
+					type: "item"
 				}
 			]
 			tasks: [{
@@ -448,10 +530,15 @@
 					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "52BCA04769F680B5"
-					table_id: 1320735954632056874L
-					type: "loot"
+					id: "55F819B5FFD68441"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "automation"
+						}
+					}
+					type: "item"
 				}
 			]
 			tasks: [
@@ -479,17 +566,26 @@
 			id: "62399F5DF57F5561"
 			rewards: [
 				{
-					exclude_from_claim_all: true
-					id: "6299F9A62C0744C4"
-					table_id: 7340661080663442765L
-					team_reward: true
-					type: "loot"
+					id: "4437445E712A9806"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "rune_rewards"
+						}
+					}
+					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "470AE2902D02B027"
-					table_id: 1320735954632056874L
-					type: "loot"
+					id: "7F535DEFAF347798"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "automation"
+						}
+					}
+					type: "item"
 				}
 			]
 			tasks: [{
@@ -504,10 +600,15 @@
 			dependencies: ["1ED6C61F7420F418"]
 			id: "6F23AB7DA432A5CE"
 			rewards: [{
-				exclude_from_claim_all: true
-				id: "123568B7CC3849C2"
-				table_id: 1320735954632056874L
-				type: "loot"
+				id: "4A7A4C29C2513908"
+				item: {
+					Count: 1
+					id: "ftbquests:lootcrate"
+					tag: {
+						type: "automation"
+					}
+				}
+				type: "item"
 			}]
 			tasks: [{
 				id: "389068EC84966E8A"
@@ -529,10 +630,15 @@
 					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "04A12FC74415D5CD"
-					table_id: 1320735954632056874L
-					type: "loot"
+					id: "76A293D753B043A1"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "automation"
+						}
+					}
+					type: "item"
 				}
 			]
 			tasks: [{
@@ -547,10 +653,15 @@
 			dependencies: ["341A543368E45E54"]
 			id: "678EFB78B1959946"
 			rewards: [{
-				exclude_from_claim_all: true
-				id: "679CAC83DCF0E9E9"
-				table_id: 1320735954632056874L
-				type: "loot"
+				id: "4E8C5866A1A267C8"
+				item: {
+					Count: 1
+					id: "ftbquests:lootcrate"
+					tag: {
+						type: "automation"
+					}
+				}
+				type: "item"
 			}]
 			subtitle: "{mierno.chapter1-2.bottle_mist.subtitle}"
 			tasks: [{
@@ -572,22 +683,37 @@
 			id: "6F79995AF59A5557"
 			rewards: [
 				{
-					exclude_from_claim_all: true
-					id: "1E0C00AA47581B52"
-					table_id: 1320735954632056874L
-					type: "loot"
+					id: "177E41AA6E081DB0"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "automation"
+						}
+					}
+					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "2EEECF80A557D930"
-					table_id: 1675656862002921859L
-					type: "loot"
+					id: "6B12901250971ACB"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "ae_rewards1"
+						}
+					}
+					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "6BA7496AD1DD2632"
-					table_id: 5354634242720975076L
-					type: "loot"
+					id: "52EB0BDAE323AA9E"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "ae_rewards2"
+						}
+					}
+					type: "item"
 				}
 			]
 			tasks: [{
@@ -614,10 +740,15 @@
 					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "4D6D7648EF58E732"
-					table_id: 1320735954632056874L
-					type: "loot"
+					id: "786EBF21E6741A10"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "automation"
+						}
+					}
+					type: "item"
 				}
 			]
 			tasks: [{
@@ -647,10 +778,15 @@
 					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "6D04313A99AB156E"
-					table_id: 1320735954632056874L
-					type: "loot"
+					id: "4597E13BF3F4D630"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "automation"
+						}
+					}
+					type: "item"
 				}
 			]
 			tasks: [
@@ -672,10 +808,15 @@
 			dependencies: ["678EFB78B1959946"]
 			id: "039DEBDCAF68B14D"
 			rewards: [{
-				exclude_from_claim_all: true
-				id: "7203C0BA49DFF61A"
-				table_id: 1320735954632056874L
-				type: "loot"
+				id: "31A9BC9875222C4F"
+				item: {
+					Count: 1
+					id: "ftbquests:lootcrate"
+					tag: {
+						type: "automation"
+					}
+				}
+				type: "item"
 			}]
 			tasks: [{
 				id: "6561072C2908CAD7"
@@ -702,10 +843,15 @@
 			dependencies: ["198B6F92CB7F3082"]
 			id: "245DC334FDA4AB00"
 			rewards: [{
-				exclude_from_claim_all: true
-				id: "75790D0E85516BE0"
-				table_id: 1320735954632056874L
-				type: "loot"
+				id: "15F31C45084DC19A"
+				item: {
+					Count: 1
+					id: "ftbquests:lootcrate"
+					tag: {
+						type: "automation"
+					}
+				}
+				type: "item"
 			}]
 			tasks: [{
 				id: "751866613C786927"
@@ -719,10 +865,15 @@
 			dependencies: ["198B6F92CB7F3082"]
 			id: "3A57FAF02C0F3714"
 			rewards: [{
-				exclude_from_claim_all: true
-				id: "021E83CCFA100B86"
-				table_id: 1320735954632056874L
-				type: "loot"
+				id: "27124ADEF0C01CDF"
+				item: {
+					Count: 1
+					id: "ftbquests:lootcrate"
+					tag: {
+						type: "automation"
+					}
+				}
+				type: "item"
 			}]
 			shape: "heart"
 			tasks: [{
@@ -748,22 +899,37 @@
 			id: "368690E9474BB079"
 			rewards: [
 				{
-					exclude_from_claim_all: true
-					id: "70636E96CDBBB75D"
-					table_id: 1320735954632056874L
-					type: "loot"
+					id: "15C9714319E8D53A"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "automation"
+						}
+					}
+					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "72B61B284C2E0E62"
-					table_id: 1675656862002921859L
-					type: "loot"
+					id: "4DB8DDA6F93154F0"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "ae_rewards1"
+						}
+					}
+					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "77A193C275AE089C"
-					table_id: 5354634242720975076L
-					type: "loot"
+					id: "0EE857ADEFC06EAF"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "ae_rewards2"
+						}
+					}
+					type: "item"
 				}
 			]
 			tasks: [{
@@ -785,22 +951,37 @@
 			id: "6641707922E5AB63"
 			rewards: [
 				{
-					exclude_from_claim_all: true
-					id: "463C116D25B49671"
-					table_id: 1320735954632056874L
-					type: "loot"
+					id: "151400F62EAB5A47"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "automation"
+						}
+					}
+					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "1EB63DF6CA71C2AB"
-					table_id: 1675656862002921859L
-					type: "loot"
+					id: "7F0D1B02027C1A1F"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "ae_rewards1"
+						}
+					}
+					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "410A650FED983B4A"
-					table_id: 5354634242720975076L
-					type: "loot"
+					id: "5ABCB2D7CE642379"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "ae_rewards2"
+						}
+					}
+					type: "item"
 				}
 			]
 			shape: "gear"
@@ -818,22 +999,37 @@
 			id: "09E9A9FF0A178C94"
 			rewards: [
 				{
-					exclude_from_claim_all: true
-					id: "27DD8719395423AF"
-					table_id: 1320735954632056874L
-					type: "loot"
+					id: "5806198D7A544675"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "automation"
+						}
+					}
+					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "2B0437EE0E5CDC37"
-					table_id: 1675656862002921859L
-					type: "loot"
+					id: "602830D4CCFCD80F"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "ae_rewards1"
+						}
+					}
+					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "7CF8E9ADC73E0448"
-					table_id: 5354634242720975076L
-					type: "loot"
+					id: "60CA4541E6DF1E03"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "ae_rewards2"
+						}
+					}
+					type: "item"
 				}
 			]
 			tasks: [{
@@ -849,22 +1045,37 @@
 			id: "1607F136A1C1E367"
 			rewards: [
 				{
-					exclude_from_claim_all: true
-					id: "0DF6002A801D0907"
-					table_id: 1320735954632056874L
-					type: "loot"
+					id: "28B3D4C5CDBAD0D0"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "automation"
+						}
+					}
+					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "35E2C9F0CB1DA56C"
-					table_id: 1675656862002921859L
-					type: "loot"
+					id: "296FB23D7DCE2B6C"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "ae_rewards1"
+						}
+					}
+					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "23EAC0EE7FA3BA06"
-					table_id: 5354634242720975076L
-					type: "loot"
+					id: "474BA10A8B81E75B"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "ae_rewards2"
+						}
+					}
+					type: "item"
 				}
 			]
 			tasks: [{
@@ -884,22 +1095,37 @@
 			id: "5FFA822EE1E8BE7E"
 			rewards: [
 				{
-					exclude_from_claim_all: true
-					id: "12266823A02102F2"
-					table_id: 1320735954632056874L
-					type: "loot"
+					id: "01B8B8D48D4667CF"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "automation"
+						}
+					}
+					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "0A6054065B0D8F1E"
-					table_id: 1675656862002921859L
-					type: "loot"
+					id: "5EEB99BEA0E5D518"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "ae_rewards1"
+						}
+					}
+					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "5967792ADF5498AF"
-					table_id: 5354634242720975076L
-					type: "loot"
+					id: "4DD0D358DC206D4D"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "ae_rewards2"
+						}
+					}
+					type: "item"
 				}
 			]
 			tasks: [{
@@ -928,22 +1154,37 @@
 					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "23A2FA329223B3AF"
-					table_id: 1320735954632056874L
-					type: "loot"
+					id: "621EEEAB7C1FB775"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "automation"
+						}
+					}
+					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "14674C96E167CAAE"
-					table_id: 1675656862002921859L
-					type: "loot"
+					id: "519F53BB1188878D"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "ae_rewards1"
+						}
+					}
+					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "602471CB1F29A24F"
-					table_id: 5354634242720975076L
-					type: "loot"
+					id: "632FADE74B889F6C"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "ae_rewards2"
+						}
+					}
+					type: "item"
 				}
 			]
 			tasks: [{
@@ -962,24 +1203,6 @@
 			]
 			id: "6ED6EFD4B2E4AE1E"
 			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "6D0B0B75410777CA"
-					table_id: 1320735954632056874L
-					type: "loot"
-				}
-				{
-					exclude_from_claim_all: true
-					id: "154E6B5D0F603FF7"
-					table_id: 1675656862002921859L
-					type: "loot"
-				}
-				{
-					exclude_from_claim_all: true
-					id: "65B8872869953E44"
-					table_id: 5354634242720975076L
-					type: "loot"
-				}
 				{
 					id: "7CBFED5B6F3D220F"
 					item: "expatternprovider:ex_io_port"
@@ -1000,6 +1223,39 @@
 								"#c": "ae2:f"
 								id: "minecraft:water"
 							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "03AFC8FB1897B9A8"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "automation"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0F3BAAA5935BE19E"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "ae_rewards1"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "58047F77D18EDA89"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "ae_rewards2"
 						}
 					}
 					type: "item"
@@ -1027,10 +1283,15 @@
 					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "650A2269F7E73237"
-					table_id: 1320735954632056874L
-					type: "loot"
+					id: "1268B8FFF6C6417A"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "automation"
+						}
+					}
+					type: "item"
 				}
 			]
 			tasks: [{
@@ -1053,10 +1314,15 @@
 					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "15B4BE60ABC043B6"
-					table_id: 1320735954632056874L
-					type: "loot"
+					id: "471792FC0E748259"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "automation"
+						}
+					}
+					type: "item"
 				}
 			]
 			tasks: [{
@@ -1071,10 +1337,15 @@
 			dependencies: ["341A543368E45E54"]
 			id: "0AD660FC52E12B9C"
 			rewards: [{
-				exclude_from_claim_all: true
-				id: "0F431AC47E4A7073"
-				table_id: 1320735954632056874L
-				type: "loot"
+				id: "6560DA3C9C2CC379"
+				item: {
+					Count: 1
+					id: "ftbquests:lootcrate"
+					tag: {
+						type: "automation"
+					}
+				}
+				type: "item"
 			}]
 			tasks: [
 				{
@@ -1136,10 +1407,15 @@
 					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "396F52B0A63A6261"
-					table_id: 1320735954632056874L
-					type: "loot"
+					id: "62DAE524031E04B5"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "automation"
+						}
+					}
+					type: "item"
 				}
 			]
 			tasks: [
@@ -1169,7 +1445,7 @@
 					type: "item"
 				}
 			]
-			x: 10.5d
+			x: 10.0d
 			y: 2.5d
 		}
 		{
@@ -1203,10 +1479,15 @@
 					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "269B982154303164"
-					table_id: 1320735954632056874L
-					type: "loot"
+					id: "09684F50B8ED362A"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "automation"
+						}
+					}
+					type: "item"
 				}
 			]
 			subtitle: "{mierno.chapter1-2.wilden_summon.subtitle}"
@@ -1231,14 +1512,19 @@
 			id: "6BE50FF0F278BE53"
 			rewards: [
 				{
-					exclude_from_claim_all: true
-					id: "6503D2CD8C4A78E1"
-					table_id: 1320735954632056874L
-					type: "loot"
-				}
-				{
 					id: "62E48E818DB98244"
 					item: "evilcraft:eternal_water"
+					type: "item"
+				}
+				{
+					id: "254E0291C7D93B41"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "automation"
+						}
+					}
 					type: "item"
 				}
 			]
@@ -1254,10 +1540,15 @@
 			dependencies: ["341A543368E45E54"]
 			id: "3103B4047304E3CC"
 			rewards: [{
-				exclude_from_claim_all: true
-				id: "0AD144C9E07411E2"
-				table_id: 1320735954632056874L
-				type: "loot"
+				id: "5D0033AB4496BA5C"
+				item: {
+					Count: 1
+					id: "ftbquests:lootcrate"
+					tag: {
+						type: "automation"
+					}
+				}
+				type: "item"
 			}]
 			tasks: [{
 				id: "5217DA90FEA05B6D"
@@ -1272,10 +1563,15 @@
 			icon: "mierno:maze_block"
 			id: "198B6F92CB7F3082"
 			rewards: [{
-				exclude_from_claim_all: true
-				id: "446403EA96D8F580"
-				table_id: 1320735954632056874L
-				type: "loot"
+				id: "50090C1CD05FA7D6"
+				item: {
+					Count: 1
+					id: "ftbquests:lootcrate"
+					tag: {
+						type: "automation"
+					}
+				}
+				type: "item"
 			}]
 			tasks: [{
 				id: "33D2FC34AC68359E"
@@ -1296,10 +1592,15 @@
 					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "00C44881FAC7491C"
-					table_id: 1320735954632056874L
-					type: "loot"
+					id: "0704E193DEE230C1"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "automation"
+						}
+					}
+					type: "item"
 				}
 			]
 			tasks: [{
@@ -1325,10 +1626,15 @@
 					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "096C47B4CB60A9A8"
-					table_id: 1320735954632056874L
-					type: "loot"
+					id: "4ABC560448603380"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "automation"
+						}
+					}
+					type: "item"
 				}
 			]
 			tasks: [{
@@ -1351,10 +1657,15 @@
 					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "581C84433D4F2883"
-					table_id: 1320735954632056874L
-					type: "loot"
+					id: "237A8D272A15D340"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "automation"
+						}
+					}
+					type: "item"
 				}
 			]
 			tasks: [{
@@ -1396,10 +1707,15 @@
 					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "0F0DC14CA33A4F6D"
-					table_id: 1320735954632056874L
-					type: "loot"
+					id: "66C9DC7156BFDAD5"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "automation"
+						}
+					}
+					type: "item"
 				}
 			]
 			tasks: [
@@ -1437,10 +1753,15 @@
 					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "1511AFB7B1184769"
-					table_id: 1320735954632056874L
-					type: "loot"
+					id: "2D69031C70155F57"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "automation"
+						}
+					}
+					type: "item"
 				}
 			]
 			tasks: [
@@ -1459,7 +1780,7 @@
 			y: 0.5d
 		}
 		{
-			dependencies: ["0053DDDECA4BCD0D"]
+			dependencies: ["056C442009E33606"]
 			id: "7B32EB98BBB2E402"
 			rewards: [
 				{
@@ -1477,10 +1798,15 @@
 					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "750E7F67D38134B7"
-					table_id: 1320735954632056874L
-					type: "loot"
+					id: "412CE614312E69F3"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "automation"
+						}
+					}
+					type: "item"
 				}
 			]
 			tasks: [
@@ -1495,7 +1821,7 @@
 					type: "item"
 				}
 			]
-			x: 10.0d
+			x: 9.0d
 			y: 1.5d
 		}
 		{
@@ -1552,10 +1878,15 @@
 					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "43E698712B16E04C"
-					table_id: 1320735954632056874L
-					type: "loot"
+					id: "7275B1008AFBC72C"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "automation"
+						}
+					}
+					type: "item"
 				}
 			]
 			tasks: [
@@ -1578,17 +1909,26 @@
 			id: "603A9579C1E43A5E"
 			rewards: [
 				{
-					exclude_from_claim_all: true
-					id: "2B9003188A3D9BEB"
-					table_id: 7340661080663442765L
-					team_reward: true
-					type: "loot"
+					id: "5FC014DD4968F34C"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "rune_rewards"
+						}
+					}
+					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "730B03C146A086E4"
-					table_id: 1320735954632056874L
-					type: "loot"
+					id: "00F5F4C79552F471"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "automation"
+						}
+					}
+					type: "item"
 				}
 			]
 			tasks: [{
@@ -1626,10 +1966,15 @@
 					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "6C850E8AFE8B561C"
-					table_id: 1320735954632056874L
-					type: "loot"
+					id: "3A4B580F6B1053F4"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "automation"
+						}
+					}
+					type: "item"
 				}
 			]
 			subtitle: "{mierno.chapter1-2.mana_to_source.subtitle}"
@@ -1646,22 +1991,37 @@
 			id: "50B0CC93E4CFE5D6"
 			rewards: [
 				{
-					exclude_from_claim_all: true
-					id: "418200E4491ADF9D"
-					table_id: 1320735954632056874L
-					type: "loot"
+					id: "4954EEF12F837006"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "automation"
+						}
+					}
+					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "2DE530C0F3A352E1"
-					table_id: 1675656862002921859L
-					type: "loot"
+					id: "513E69AE6AC66585"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "ae_rewards1"
+						}
+					}
+					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "11D21C4773BB30D1"
-					table_id: 5354634242720975076L
-					type: "loot"
+					id: "39FAC815A8FC237B"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "ae_rewards2"
+						}
+					}
+					type: "item"
 				}
 			]
 			tasks: [
@@ -1683,10 +2043,15 @@
 			dependencies: ["705E3C69A699CF59"]
 			id: "4D733A88621454BE"
 			rewards: [{
-				exclude_from_claim_all: true
-				id: "16285DA2D1181581"
-				table_id: 1320735954632056874L
-				type: "loot"
+				id: "2BD661D85D742B8D"
+				item: {
+					Count: 1
+					id: "ftbquests:lootcrate"
+					tag: {
+						type: "automation"
+					}
+				}
+				type: "item"
 			}]
 			tasks: [{
 				id: "1D528D13CB512A9E"
@@ -1701,15 +2066,20 @@
 			id: "361F553475AC6C8F"
 			rewards: [
 				{
-					id: "2CB98E8E598DA236"
-					item: "botania:blacker_lotus"
+					id: "4248795E9BA98721"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "automation"
+						}
+					}
 					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "3F3F1593B1097392"
-					table_id: 1320735954632056874L
-					type: "loot"
+					id: "5324C0F5CCC3ADA6"
+					item: "botania:blacker_lotus"
+					type: "item"
 				}
 			]
 			tasks: [{
@@ -1725,22 +2095,37 @@
 			id: "2B96419F4DD86B22"
 			rewards: [
 				{
-					exclude_from_claim_all: true
-					id: "34A81BDA16D12E40"
-					table_id: 1320735954632056874L
-					type: "loot"
+					id: "7A9F1237DEDB6102"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "automation"
+						}
+					}
+					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "0DD28BDA591AD330"
-					table_id: 1675656862002921859L
-					type: "loot"
+					id: "0381272AA318D97B"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "ae_rewards1"
+						}
+					}
+					type: "item"
 				}
 				{
-					exclude_from_claim_all: true
-					id: "5177EF5854D19060"
-					table_id: 5354634242720975076L
-					type: "loot"
+					id: "6417E902AE715EF5"
+					item: {
+						Count: 1
+						id: "ftbquests:lootcrate"
+						tag: {
+							type: "ae_rewards2"
+						}
+					}
+					type: "item"
 				}
 			]
 			tasks: [
@@ -1773,10 +2158,15 @@
 			hide_dependency_lines: true
 			id: "3981493ABA7446CF"
 			rewards: [{
-				exclude_from_claim_all: true
-				id: "662CBA30224CC7AA"
-				table_id: 1320735954632056874L
-				type: "loot"
+				id: "25AE2CE3B5C45000"
+				item: {
+					Count: 1
+					id: "ftbquests:lootcrate"
+					tag: {
+						type: "automation"
+					}
+				}
+				type: "item"
 			}]
 			shape: "gear"
 			size: 1.5d
@@ -1793,10 +2183,15 @@
 			hide_dependency_lines: true
 			id: "13BEB8324283C9AD"
 			rewards: [{
-				exclude_from_claim_all: true
-				id: "39643A11D59AD1E2"
-				table_id: 1320735954632056874L
-				type: "loot"
+				id: "04890E6808D628A1"
+				item: {
+					Count: 1
+					id: "ftbquests:lootcrate"
+					tag: {
+						type: "automation"
+					}
+				}
+				type: "item"
 			}]
 			shape: "gear"
 			size: 1.5d
@@ -1813,10 +2208,15 @@
 			hide_dependency_lines: true
 			id: "0D31BA104C7A3DB5"
 			rewards: [{
-				exclude_from_claim_all: true
-				id: "7D96E0916E056170"
-				table_id: 1320735954632056874L
-				type: "loot"
+				id: "520DCE2159320B7A"
+				item: {
+					Count: 1
+					id: "ftbquests:lootcrate"
+					tag: {
+						type: "automation"
+					}
+				}
+				type: "item"
 			}]
 			shape: "gear"
 			size: 1.5d

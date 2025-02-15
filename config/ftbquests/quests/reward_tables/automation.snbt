@@ -1,5 +1,15 @@
 {
 	id: "1254325A69EE202A"
+	loot_crate: {
+		color: 43520
+		drops: {
+			boss: 0
+			monster: 0
+			passive: 0
+		}
+		glow: 1b
+		string_id: "automation"
+	}
 	loot_size: 3
 	order_index: 5
 	rewards: [

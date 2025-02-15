@@ -508,4 +508,36 @@ ServerEvents.recipes((event) => {
         ],
         sourceCost: 10000,
     });
+
+    event.custom({
+        type: 'ars_nouveau:imbuement',
+        count: 1,
+        input: {
+            tag: 'forge:seeds',
+        },
+        output: 'ars_nouveau:magebloom_crop',
+        pedestalItems: [
+            {
+                item: {
+                    item: 'ars_nouveau:source_gem',
+                },
+            },
+            {
+                item: {
+                    item: 'ars_nouveau:source_gem',
+                },
+            },
+            {
+                item: {
+                    item: 'ars_nouveau:source_gem',
+                },
+            },
+            {
+                item: {
+                    item: 'ars_nouveau:source_gem',
+                },
+            },
+        ],
+        source: 1000,
+    });
 });

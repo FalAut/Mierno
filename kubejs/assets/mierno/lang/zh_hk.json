@@ -213,7 +213,7 @@
     "message.mierno.psu_inver_ritual.north": "- 北面，火之子嗣: %s / 12",
     "message.mierno.psu_inver_ritual.south": "- 南面，大地之贈: %s / 12",
     "message.mierno.psu_inver_ritual.east": "- 東面，水之後代: %s / 12",
-    "message.mierno.psu_inver_ritual.west": "- 南面，風之馨香: %s / 12",
+    "message.mierno.psu_inver_ritual.west": "- 西面，風之馨香: %s / 12",
     "message.mierno.psu_inver_ritual.markings": "\n儀式擺放： 已完成",
     "message.mierno.psu_inver_ritual.prepared": "一切準備就緒",
     "message.mierno.psu_inver_ritual.sacrifice": "在儀式範圍內獻祭一只鐵傀儡來開啟儀式",

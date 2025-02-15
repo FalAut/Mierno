@@ -6,6 +6,18 @@
 -   魔源石现在可以使用感应炉制作
 -   法师之花种子现在需要在灌注室制作
 -   将任务中的“战利品奖励”全部替换为“战利品箱”，以便快速全部领取
+-   修复伪逆仪式中的文案错误问题
+
+---
+
+-   _The text content for this changelog was translated into English using machine translation. Apologies for any inaccuracies!_
+-   Fixes a crash when using the scroll wheel after zooming with the Z key
+-   Fixed Slime Shoes crashing when they fall to the ground
+-   Removed the default recipe for Magic Stones
+-   Magic Stones can now be crafted using the Induction Furnace
+-   Mage Flower Seeds can now be crafted in the Infusion Chamber.
+-   Replaced all ‘Loot Rewards’ in quests with ‘Loot Chests’ for quicker access to them all
+-   Fixed a typo in Pseudo Reverse Rituals.
 
 ## v0.3.1
 

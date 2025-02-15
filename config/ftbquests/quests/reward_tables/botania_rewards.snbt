@@ -1,5 +1,15 @@
 {
 	id: "65DF445C417AC54D"
+	loot_crate: {
+		color: 11141120
+		drops: {
+			boss: 0
+			monster: 0
+			passive: 0
+		}
+		glow: 1b
+		string_id: "rune_rewards"
+	}
 	loot_size: 5
 	order_index: 2
 	rewards: [

@@ -1,5 +1,15 @@
 {
 	id: "17412109B9214183"
+	loot_crate: {
+		color: 5636095
+		drops: {
+			boss: 0
+			monster: 0
+			passive: 0
+		}
+		glow: 1b
+		string_id: "ae_rewards1"
+	}
 	loot_size: 3
 	order_index: 3
 	rewards: [

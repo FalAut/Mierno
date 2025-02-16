@@ -31,6 +31,23 @@ const SIGIL_RITUAL_CONFIGS = [
             ];
         }),
     },
+    {
+        ritualType: 'subtraction',
+        blockType: 'respawn_anchor',
+        check: createRitualChecker('subtraction', (level, block, multiblock) => {
+            const isNether = level.dimension == 'minecraft:the_nether';
+            const maxCharge = block.blockState.getValue(BlockProperties.RESPAWN_ANCHOR_CHARGES) >= 4;
+            const chunkAuraCap = level.getChunkAt(block.pos).getCapability($NaturesAuraAPI.CAP_AURA_CHUNK).orElse(null);
+            const aura = chunkAuraCap.getAuraInArea(level, block.pos, 35);
+
+            return [
+                [multiblock.validate(level, block.pos, 'none'), 'multiblock'],
+                [isNether, 'nether'],
+                [aura <= 0, 'low_aura'],
+                [maxCharge, 'max_charge'],
+            ];
+        }),
+    },
 ];
 
 SIGIL_RITUAL_CONFIGS.forEach((config) => {
@@ -50,15 +67,21 @@ SIGIL_RITUAL_CONFIGS.forEach((config) => {
     });
 });
 
-global.additionSigilValidate = (level, block, times) => {
+// 聚合徽章激活
+global.additionSigilActivation = (/**@type {Internal.FallingBlockEntity} */ anvilEntity) => {
+    const { level, block } = anvilEntity;
     const ritualConfig = SIGIL_RITUAL_CONFIGS.find((config) => config.ritualType == 'addition');
 
-    if (ritualConfig.check(level, block.down)) {
-        return times;
-    }
-    return 0;
+    if (!ritualConfig.check(level, block.down)) return;
+
+    level.getEntitiesWithin(AABB.ofBlock(block.pos)).forEach((entity) => {
+        if (entity?.item != 'mierno:addition_sigil') return;
+
+        sigilRitualActivationEffect('addition', entity, level, block.down, 'botania:vivid_grass');
+    });
 };
 
+// 分割徽章激活
 EntityEvents.death((event) => {
     const { entity, level } = event;
     const block = entity.block;
@@ -66,39 +89,36 @@ EntityEvents.death((event) => {
 
     if (!ritualConfig.check(level, block)) return;
 
-    const multiblock = $PatchouliAPI.getMultiblock('mierno:division_sigil_activation_ritual');
-    multiblock.simulate(level, block.pos, 'none', false).second.forEach((result) => {
-        if (result.character == 'A') {
-            level.setBlock(
-                result.worldPosition.below(),
-                Block.getBlock('botania:mutated_grass').defaultBlockState(),
-                2
-            );
-        }
-        if (result.character == 'B') {
-            level.setBlock(
-                result.worldPosition.above(),
-                Blocks.REDSTONE_WIRE.defaultBlockState().setValue(BlockProperties.POWER, new $Integer('15')),
-                2
-            );
-        }
-    });
-
-    let lightningBoltEntity = block.createEntity('lightning_bolt');
-    lightningBoltEntity.setVisualOnly(true);
-    lightningBoltEntity.moveTo(Vec3d.atCenterOf(block.pos));
-    lightningBoltEntity.spawn();
-
     level.getEntitiesWithin(AABB.ofBlock(block.pos)).forEach((entity) => {
         if (entity?.item != 'mierno:division_sigil') return;
 
-        /**@type {Internal.ItemEntity} */
-        let itemEntity = entity;
-        itemEntity.setItem(Item.of('mierno:division_sigil').enchant('mierno:activate', 1));
-        itemEntity.moveTo(Vec3d.atCenterOf(block.pos.above()));
-        itemEntity.setDeltaMovement(new Vec3d(0, 0.01, 0));
-        itemEntity.setNoGravity(true);
-        itemEntity.setGlowing(true);
-        level.broadcastEntityEvent(entity, 35);
+        sigilRitualActivationEffect('division', entity, level, block, 'botania:mutated_grass');
+    });
+});
+
+// 削减徽章激活
+LevelEvents.beforeExplosion((event) => {
+    const { block, level } = event;
+    if (block.down != 'minecraft:respawn_anchor') return;
+
+    const ritualConfig = SIGIL_RITUAL_CONFIGS.find((config) => config.ritualType == 'subtraction');
+
+    if (!ritualConfig.check(level, block.down)) return;
+
+    level.getEntitiesWithin(AABB.ofBlock(block.pos)).forEach((entity) => {
+        if (entity?.item != 'mierno:subtraction_sigil') return;
+
+        sigilRitualActivationEffect('subtraction', entity, level, block.down, 'botania:scorched_grass');
+
+        level.setBlock(
+            block.pos.below(),
+            Blocks.RESPAWN_ANCHOR.defaultBlockState().setValue(
+                BlockProperties.RESPAWN_ANCHOR_CHARGES,
+                new $Integer('0')
+            ),
+            2
+        );
+
+        event.cancel();
     });
 });

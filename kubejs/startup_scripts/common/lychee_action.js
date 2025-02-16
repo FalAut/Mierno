@@ -56,40 +56,7 @@ LycheeEvents.customAction('place_misty_forest_portal', (event) => {
 LycheeEvents.customAction('addition_sigil_activation', (event) => {
     event.action.applyFunc = (recipe, ctx, times) => {
         let anvilEntity = ctx.getParam('this_entity');
-        const { level, block } = anvilEntity;
-
-        const resultEntity = block.createEntity('item');
-        resultEntity.setItem(Item.of('mierno:addition_sigil').enchant('mierno:activate', 1));
-        resultEntity.moveTo(Vec3d.atCenterOf(block.pos.above()));
-        resultEntity.setDeltaMovement(new Vec3d(0, 0.01, 0));
-        resultEntity.setNoGravity(true);
-        resultEntity.setGlowing(true);
-        resultEntity.spawn();
-
-        level.broadcastEntityEvent(resultEntity, 35);
-
-        const multiblock = $PatchouliAPI.getMultiblock('mierno:addition_sigil_activation_ritual');
-        multiblock.simulate(level, block.pos.below(), 'none', false).second.forEach((result) => {
-            if (result.character == 'A') {
-                level.setBlock(
-                    result.worldPosition.below(),
-                    Block.getBlock('botania:vivid_grass').defaultBlockState(),
-                    2
-                );
-            }
-            if (result.character == 'B') {
-                level.setBlock(
-                    result.worldPosition.above(),
-                    Blocks.REDSTONE_WIRE.defaultBlockState().setValue(BlockProperties.POWER, new $Integer('15')),
-                    2
-                );
-            }
-        });
-
-        const lightningBoltEntity = block.createEntity('lightning_bolt');
-        lightningBoltEntity.setVisualOnly(true);
-        lightningBoltEntity.moveTo(Vec3d.atCenterOf(block.pos));
-        lightningBoltEntity.spawn();
+        global.additionSigilActivation(anvilEntity);
     };
 });
 

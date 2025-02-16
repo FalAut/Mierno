@@ -55,6 +55,19 @@ ItemEvents.crafted('naturesaura:birth_spirit', (event) => {
     }
 });
 
+EntityEvents.drops('ender_dragon', (event) => {
+    const { level } = event;
+
+    const center = level.getBlock(0, 72, 0);
+
+    /**@type {Internal.ItemEntity} */
+    let itemEntity = center.createEntity('item');
+    itemEntity.setItem('mierno:subtraction_sigil');
+    itemEntity.moveTo(Vec3d.atCenterOf(center.pos));
+    itemEntity.setNoGravity(true);
+    itemEntity.spawn();
+});
+
 // BlockEvents.placed('mierno:memory_matrix', (event) => {
 //     const { block, level, server } = event;
 

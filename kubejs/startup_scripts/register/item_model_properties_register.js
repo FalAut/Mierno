@@ -22,4 +22,11 @@ ItemEvents.modelProperties((event) => {
         'mierno:activate',
         (stack, world, living, seed) => (stack.hasEnchantment('mierno:activate', 1) ? 1 : 0)
     );
+
+    event.register(
+        ['potion', 'splash_potion', 'lingering_potion'],
+        'mierno:crazy_cocktails',
+        (stack, world, living, seed) =>
+            stack.nbt && stack.nbt.contains('Potion') && stack.nbt.Potion == 'mierno:crazy_cocktails' ? 1 : 0
+    );
 });

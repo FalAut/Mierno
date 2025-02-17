@@ -79,6 +79,9 @@
     "item.mierno.item_storage_cell_16m": "16M ME Storage Cell",
     "item.mierno.item_storage_cell_64m": "64M ME Storage Cell",
     "item.mierno.item_storage_cell_256m": "256M ME Storage Cell",
+    "item.minecraft.potion.effect.crazy_cocktails": "Crazy Cocktails",
+    "item.minecraft.splash_potion.effect.crazy_cocktails": "Splash Crazy Cocktails",
+    "item.minecraft.lingering_potion.effect.crazy_cocktails": "Lingering Crazy Cocktails",
 
     "block.mierno.infused_wood": "Infused Wood",
     "block.mierno.misty_forest_portal": "Misty Forest Portal",
@@ -383,6 +386,8 @@
     "enchantment.mierno.activate": "Activate",
     "enchantment.mierno.undying": "Undying",
     "enchantment.mierno.last_stand": "Last Stand",
+
+    "effect.mierno.crazy_cocktails": "Crazy",
 
     "mierno.startup.time": "Game startup time: §a%s§r seconds",
     "mierno.startup.performance": "Faster than 99% of players",

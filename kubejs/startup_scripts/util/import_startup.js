@@ -34,3 +34,4 @@ const $ElytraItem = Java.loadClass('net.minecraft.world.item.ElytraItem');
 const $CuriosApi = Java.loadClass('top.theillusivec4.curios.api.CuriosApi');
 const $BasicStorageCell = Java.loadClass('appeng.items.storage.BasicStorageCell');
 const $AEKeyType = Java.loadClass('appeng.api.stacks.AEKeyType');
+const $PotionBuilder = Java.loadClass('dev.latvian.mods.kubejs.misc.PotionBuilder');

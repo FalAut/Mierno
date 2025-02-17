@@ -48,6 +48,25 @@ const SIGIL_RITUAL_CONFIGS = [
             ];
         }),
     },
+    {
+        ritualType: 'multiplication',
+        blockType: ['cauldron', 'water_cauldron'],
+        check: createRitualChecker('multiplication', (level, block, multiblock) => {
+            const isTearsCity = true;
+            const isThundering = level.isThundering();
+            const maxLevel =
+                block == 'minecraft:water_cauldron'
+                    ? block.blockState.getValue(BlockProperties.LEVEL_CAULDRON) >= 3
+                    : false;
+
+            return [
+                [multiblock.validate(level, block.pos, 'none'), 'multiblock'],
+                [isTearsCity, 'city_of_tears'],
+                [isThundering, 'thundering'],
+                [maxLevel, 'max_level'],
+            ];
+        }),
+    },
 ];
 
 SIGIL_RITUAL_CONFIGS.forEach((config) => {
@@ -68,7 +87,7 @@ SIGIL_RITUAL_CONFIGS.forEach((config) => {
 });
 
 // 聚合徽章激活
-global.additionSigilActivation = (/**@type {Internal.FallingBlockEntity} */ anvilEntity) => {
+global.additionSigilActivation = (anvilEntity) => {
     const { level, block } = anvilEntity;
     const ritualConfig = SIGIL_RITUAL_CONFIGS.find((config) => config.ritualType == 'addition');
 
@@ -121,4 +140,22 @@ LevelEvents.beforeExplosion((event) => {
 
         event.cancel();
     });
+});
+
+// 融合徽章激活
+global.multiplicationSigilActivation = (level, block) => {
+    let ritualConfig = SIGIL_RITUAL_CONFIGS.find((config) => config.ritualType == 'multiplication');
+    if (!ritualConfig.check(level, block)) return;
+
+    level.getEntitiesWithin(AABB.ofBlock(block.pos)).forEach((entity) => {
+        if (entity?.item != 'mierno:multiplication_sigil') return;
+
+        sigilRitualActivationEffect('multiplication', entity, level, block, 'botania:infused_grass');
+
+        level.setBlock(block.pos, Blocks.CAULDRON.defaultBlockState(), 2);
+    });
+};
+
+EntityEvents.spawned((event) => {
+    console.log(event.entity.nbt);
 });

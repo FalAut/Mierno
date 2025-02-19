@@ -6,7 +6,9 @@
 !config/ftbquests
 !config/ftbquests/**
 !config/ProjectE
-!config/ProjectE/**
+!config/ProjectE/custom_emc.json
+!config/ProjectE/mapping.toml
+!config/ProjectE/processing.toml
 !config/ars_nouveau-common.toml
 !config/capsule-common.toml
 !config/evilcraft-common.toml

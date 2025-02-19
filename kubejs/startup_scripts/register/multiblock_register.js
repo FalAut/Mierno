@@ -1,4 +1,6 @@
 StartupEvents.postInit((event) => {
+    let BLOCK = $ResourceKey.createRegistryKey('block');
+
     $PatchouliAPI.registerMultiblock(
         'mierno:first_tree',
         $PatchouliAPI.makeMultiblock(
@@ -191,7 +193,7 @@ StartupEvents.postInit((event) => {
                 ['AAAAA', 'AAAAA', 'AAAAA', 'AAAAA', 'AAAAA'],
             ],
             new $Character('0'),
-            Block.getBlock('minecraft:crafting_table'),
+            Block.getBlock('minecraft:respawn_anchor'),
             new $Character('A'),
             Block.getBlock('minecraft:dirt'),
             new $Character('B'),
@@ -207,15 +209,13 @@ StartupEvents.postInit((event) => {
                 ['AAAAA', 'AAAAA', 'AAAAA', 'AAAAA', 'AAAAA'],
             ],
             new $Character('0'),
-            Block.getBlock('minecraft:crafting_table'),
+            $PatchouliAPI.tagMatcher($TagKey.create(BLOCK, 'minecraft:cauldrons')),
             new $Character('A'),
             Block.getBlock('minecraft:dirt'),
             new $Character('B'),
             Block.getBlock('minecraft:redstone_wire')
         )
     );
-
-    let BLOCK = $ResourceKey.createRegistryKey('block');
 
     $PatchouliAPI.registerMultiblock(
         'mierno:terrestrial_agglomeration_altar',

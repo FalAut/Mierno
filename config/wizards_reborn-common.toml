@@ -112,3 +112,71 @@
 		#Damage of Curse Aura spell.
 		curseAuraDamage = 0.0
 
+	#Self
+	[spells.self]
+		#Power of Heart of Nature spell.
+		heartOfNaturePower = 0.0
+		#Heal of Heart of Nature spell.
+		heartOfNatureHeal = 0.0
+		#Power of Water Breathing spell.
+		waterBreathingPower = 0.0
+		#Power of Air Flow spell.
+		airFlowPower = 0.0
+		#Damage of Fire Shield spell.
+		fireShieldDamage = 0.0
+
+	#Target
+	[spells.target]
+		#Power of Air Impact spell.
+		airImpactPower = 0.0
+		#Damage of Snowflake spell.
+		snowflakeDamage = 0.0
+		#Damage of Holy Cross spell.
+		holyCrossDamage = 0.0
+		#Damage of Curse Cross spell.
+		curseCrossDamage = 0.0
+		#Power of Poison spell.
+		poisonDamage = 0.0
+		#Power of Withering spell.
+		witheringDamage = 0.0
+		#Power of Irritation spell.
+		irritationPower = 0.0
+
+	#Blink
+	[spells.blink]
+		#Power of Blink spell.
+		blinkPower = 0.0
+		#Power of Sharp Blink spell.
+		sharpBlinkPower = 0.0
+		#Damage of Sharp Blink spell.
+		sharpBlinkDamage = 0.0
+
+	#Cloud
+	[spells.cloud]
+		#Power Rain Cloud spell.
+		rainCloudPower = 0.0
+		#Power of Toxic Rain spell.
+		toxicRainPower = 0.0
+		#Damage of Toxic Rain spell.
+		toxicRainDamage = 0.0
+
+	#Fog
+	[spells.fog]
+		#Power of Mor Swarm spell.
+		morSwarmPower = 0.0
+		#Damage of Mor Swarm spell.
+		morSwarmDamage = 0.0
+
+	#Strike
+	[spells.strike]
+		#Damage of Incineration spell.
+		incinerationDamage = 0.0
+		#Damage of Repentance spell.
+		repentanceDamage = 0.0
+		#Heal of Repentance spell.
+		repentanceHeal = 0.0
+		#Damage of Renunciation spell.
+		renunciationDamage = 0.0
+		#Heal of Renunciation spell.
+		renunciationHeal = 0.0
+

@@ -66,13 +66,3 @@ LycheeEvents.customCondition('validate_misty_forest_portal', (event) => {
         return 0;
     };
 });
-
-LycheeEvents.customCondition('addition_sigil_validate', (event) => {
-    event.condition.testFunc = (recipe, ctx, times) => {
-        /**@type {Internal.ItemEntity} */
-        const itemEntity = ctx.getParam('this_entity');
-        const { level, block } = itemEntity;
-
-        return global.additionSigilValidate(level, block, times);
-    };
-});

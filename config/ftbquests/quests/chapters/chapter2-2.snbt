@@ -1079,24 +1079,6 @@
 			id: "4E85D8FAA7A1D6AE"
 			rewards: [
 				{
-					exclude_from_claim_all: true
-					id: "13518BB996E300B9"
-					table_id: 1320735954632056874L
-					type: "loot"
-				}
-				{
-					exclude_from_claim_all: true
-					id: "03EAD6F4053F7A50"
-					table_id: 1675656862002921859L
-					type: "loot"
-				}
-				{
-					exclude_from_claim_all: true
-					id: "30CA0D6A2B783607"
-					table_id: 5354634242720975076L
-					type: "loot"
-				}
-				{
 					id: "5C24B1322DA5DD45"
 					item: {
 						Count: 1

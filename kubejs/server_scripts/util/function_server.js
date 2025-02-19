@@ -317,3 +317,39 @@ function createRitualChecker(ritualType, conditionProvider) {
         return results.every(Boolean);
     };
 }
+
+/**
+ * 仪式激活效果
+ * @param {string} ritualType
+ * @param {Internal.ItemEntity} itemEntity
+ * @param {Internal.ServerLevel} level
+ * @param {Internal.BlockContainerJS} block
+ * @param {string} grass
+ */
+function sigilRitualActivationEffect(ritualType, itemEntity, level, block, grass) {
+    itemEntity.setItem(Item.of(`mierno:${ritualType}_sigil`).enchant('mierno:activate', 1));
+    itemEntity.moveTo(Vec3d.atCenterOf(itemEntity.blockPosition().above()));
+    itemEntity.setDeltaMovement(new Vec3d(0, 0.01, 0));
+    itemEntity.setNoGravity(true);
+    itemEntity.setGlowing(true);
+    level.broadcastEntityEvent(itemEntity, 35);
+
+    const lightningBoltEntity = block.createEntity('lightning_bolt');
+    lightningBoltEntity.setVisualOnly(true);
+    lightningBoltEntity.moveTo(Vec3d.atCenterOf(block.pos));
+    lightningBoltEntity.spawn();
+
+    const multiblock = $PatchouliAPI.getMultiblock(`mierno:${ritualType}_sigil_activation_ritual`);
+    multiblock.simulate(level, block.pos, 'none', false).second.forEach((result) => {
+        if (result.character == 'A') {
+            level.setBlock(result.worldPosition.below(), Block.getBlock(grass).defaultBlockState(), 2);
+        }
+        if (result.character == 'B') {
+            level.setBlock(
+                result.worldPosition.above(),
+                Blocks.REDSTONE_WIRE.defaultBlockState().setValue(BlockProperties.POWER, new $Integer('15')),
+                2
+            );
+        }
+    });
+}

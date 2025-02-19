@@ -12,43 +12,52 @@ jobs:
               uses: actions/checkout@v3
               with:
                   ref: main
+                  path: main
+
+            - name: Checkout server_pack branch
+              uses: actions/checkout@v3
+              with:
+                  ref: server_pack
+                  path: server_pack
 
             - name: Set Git User
               run: |
                   git config --global user.name "github-actions[bot]"
                   git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-            - name: Checkout server_pack branch
+            - name: Sync directories from main to server_pack
               run: |
-                  git fetch origin server_pack
-                  git checkout server_pack
+                  rsync -a --delete \
+                      --exclude 'kubejs/assets' \
+                      --exclude 'kubejs/client_scripts' \
+                      --exclude 'kubejs/config' \
+                      main/config/ server_pack/config/
 
-            - name: Sync specific directories with exclusions
+                  rsync -a --delete \
+                      main/defaultconfigs/ server_pack/defaultconfigs/
+
+                  rsync -a --delete \
+                      main/hotai/ server_pack/hotai/
+
+                  rsync -a --delete \
+                      --exclude 'assets' \
+                      --exclude 'client_scripts' \
+                      --exclude 'config' \
+                      main/kubejs/ server_pack/kubejs/
+
+                  rsync -a --delete \
+                      main/ldlib/ server_pack/ldlib/
+
+            - name: Clean ignored files in server_pack
               run: |
-                  DIRECTORIES="config defaultconfigs hotai kubejs ldlib"
-
-                  EXCLUDED_SUBDIRS="kubejs/assets kubejs/client_scripts kubejs/config"
-
-                  git checkout main
-
-                  for DIR in $DIRECTORIES; do
-                      if [ "$DIR" = "kubejs" ]; then
-                          rsync -a --delete --exclude "assets" --exclude "client_scripts" --exclude "config" "$DIR/" ../temp_kubejs/
-                          git checkout server_pack
-                          mkdir -p "$DIR"
-                          rsync -a --delete ../temp_kubejs/ "$DIR/"
-                          rm -rf ../temp_kubejs
-                      else
-                          rsync -a --delete "$DIR/" "$DIR/"
-                      fi
-                  done
-
-                  git checkout server_pack
+                  cd server_pack
+                  git clean -dfX --exclude=!.gitignore
 
             - name: Commit and Push changes
               run: |
+                  cd server_pack
+                  git add .
                   if ! git diff-index --quiet HEAD; then
-                      git add .
                       git commit -m "Sync changes from main to server_pack"
                       git push origin server_pack
                   else

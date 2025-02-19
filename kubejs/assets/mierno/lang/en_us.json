@@ -378,6 +378,7 @@
     "tooltip.mierno.kylin_arm_1": "Allows mining blocks with bare hands when equipped",
     "tooltip.mierno.kylin_arm_2": "Mining speed increased tenfold",
     "tooltip.mierno.kylin_arm_3": "Ignores mining slowdowns in air and underwater",
+    "tooltip.mierno.ingot_steel": "Steel Nugget can be made with Matter Condenser",
 
     "biome.mierno.black_and_white": "Black and White",
     "biome.mierno.misty_forest": "Misty Forest",

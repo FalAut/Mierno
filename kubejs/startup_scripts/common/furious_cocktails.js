@@ -179,7 +179,7 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.living.MobEffectEvent$Expir
     const player = entity;
 
     if (effectInstance.getDescriptionId() == 'effect.mierno.furious') {
-        player.sendData('load_shader', { path: '' });
+        player.sendData('shutdown_shader');
     }
 });
 
@@ -191,6 +191,6 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.living.MobEffectEvent$Remov
     const player = entity;
 
     if (effectInstance.getDescriptionId() == 'effect.mierno.furious') {
-        player.sendData('load_shader', { path: '' });
+        player.sendData('shutdown_shader');
     }
 });

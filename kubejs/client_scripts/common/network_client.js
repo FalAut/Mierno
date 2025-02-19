@@ -1,3 +1,7 @@
+ClientEvents.loggedIn((event) => {
+    event.player.runCommandSilent('/kjs reload client_scripts');
+});
+
 NetworkEvents.dataReceived('has_dream_lantern', (event) => {
     const { data, player } = event;
     const hasDreamLantern = data.getBoolean('hasDreamLantern');
@@ -96,6 +100,10 @@ NetworkEvents.dataReceived('load_shader', (event) => {
     let loadEffect = Client.gameRenderer.class.getMethod('m_109128_', ResourceLocation);
 
     loadEffect.invoke(Client.gameRenderer, new ResourceLocation(data.path));
+});
+
+NetworkEvents.dataReceived('shutdown_shader', (event) => {
+    Client.gameRenderer.shutdownEffect();
 });
 
 NetworkEvents.dataReceived('show_title', (event) => Client.gui.setTitle(Text.translate(event.data.message)));

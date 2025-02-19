@@ -20,37 +20,6 @@ StartupEvents.registry('enchantment', (event) => {
     event.create('mierno:last_stand').armor().maxLevel(2);
 });
 
-StartupEvents.registry('mob_effect', (event) => {
-    event
-        .create('mierno:crazy_cocktails')
-        .category('neutral')
-        .effectTick((entity, lvl) => {
-            if (entity.level.isClientSide()) return;
-            let effects = entity.server.registryAccess().registryOrThrow($ResourceKey.createRegistryKey('mob_effect'));
-
-            effects.forEach((/**@type {Internal.MobEffect} */ effect) => {
-                if (!effect.class.toString().includes('minecraft')) return;
-
-                entity.potionEffects.add(effect, 100);
-            });
-        });
-});
-
-StartupEvents.registry('potion', (event) => {
-    // event.create('mierno:crazy_cocktails').effect(crazyCocktailsEffect, 60).createObject();
-    event.createCustom('mierno:crazy_cocktails', () =>
-        new $PotionBuilder('mierno:crazy_cocktails').effect('mierno:crazy_cocktails', 300).createObject()
-    );
-});
-
-StartupEvents.postInit((event) => {
-    $BrewingRecipeRegistry.addRecipe(
-        Item.of('minecraft:potion', '{Potion:"minecraft:thick"}').strongNBT(),
-        'malum:fused_consciousness',
-        Item.of('minecraft:potion', '{Potion:"mierno:crazy_cocktails"}')
-    );
-});
-
 StartupEvents.postInit((event) => {
     $CustomPortalBuilder
         .beginPortal()

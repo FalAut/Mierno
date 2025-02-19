@@ -155,7 +155,3 @@ global.multiplicationSigilActivation = (level, block) => {
         level.setBlock(block.pos, Blocks.CAULDRON.defaultBlockState(), 2);
     });
 };
-
-EntityEvents.spawned((event) => {
-    console.log(event.entity.nbt);
-});

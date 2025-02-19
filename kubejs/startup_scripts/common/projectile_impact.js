@@ -6,7 +6,7 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.ProjectileImpactEvent', (ev
     const potion = projectile.item.nbt.Potion;
     const block = level.getBlock(rayTraceResult.blockPos);
 
-    if (potion == 'mierno:crazy_cocktails' || block == 'minecraft:cauldron') {
+    if (potion == 'mierno:furious' || block == 'minecraft:cauldron') {
         global.multiplicationSigilActivation(level, block);
     }
 });

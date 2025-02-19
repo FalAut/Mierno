@@ -1145,4 +1145,10 @@ ServerEvents.recipes((event) => {
         C: 'mierno:meteorite_steel_ingot',
         D: 'mierno:cell_component_256m',
     });
+
+    kubejs.shaped('minecraft:totem_of_undying', ['ABA', 'BCB', ' B '], {
+        A: 'minecraft:emerald',
+        B: 'thermal:lumium_ingot',
+        C: 'mierno:memory_source_gem',
+    });
 });

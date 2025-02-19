@@ -7,9 +7,9 @@
     "overrides": [
         {
             "predicate": {
-                "mierno:crazy_cocktails": 1
+                "mierno:furious_cocktails": 1
             },
-            "model": "mierno:item/crazy_cocktails_lingering_potion"
+            "model": "mierno:item/furious_cocktails_lingering_potion"
         }
     ]
 }

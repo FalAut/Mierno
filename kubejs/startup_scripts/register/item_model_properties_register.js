@@ -25,8 +25,8 @@ ItemEvents.modelProperties((event) => {
 
     event.register(
         ['potion', 'splash_potion', 'lingering_potion'],
-        'mierno:crazy_cocktails',
+        'mierno:furious_cocktails',
         (stack, world, living, seed) =>
-            stack.nbt && stack.nbt.contains('Potion') && stack.nbt.Potion == 'mierno:crazy_cocktails' ? 1 : 0
+            stack.nbt && stack.nbt.contains('Potion') && stack.nbt.Potion == 'mierno:furious' ? 1 : 0
     );
 });

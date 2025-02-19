@@ -24,7 +24,7 @@ Ponder.registry((event) => {
             scene
                 .showControls(60, [4, 2.5, 3.5], 'right')
                 .rightClick()
-                .withItem(Item.of('minecraft:splash_potion', '{Potion:"mierno:crazy_cocktails"}'));
+                .withItem(Item.of('minecraft:splash_potion', '{Potion:"mierno:furious"}'));
             scene.idle(80);
 
             scene.text(100, '若一切顺利，融合徽章会被激活').attachKeyFrame();

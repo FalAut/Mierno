@@ -204,7 +204,6 @@ ServerEvents.recipes((event) => {
         'pneumaticcraft:refinery',
         'pneumaticcraft:etching_tank',
         'pneumaticcraft:uv_light_box',
-        'botania:gaia_pylon',
         'evilcraft:crafting/piercing_vengeance_focus',
         'evilcraft:blood_infuser/base/blood_orb_filled',
         'forbidden_arcanus:aureal_bottle',

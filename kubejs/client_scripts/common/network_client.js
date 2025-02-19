@@ -90,5 +90,13 @@ NetworkEvents.dataReceived('open_tyumen', (event) => {
     );
 });
 
+NetworkEvents.dataReceived('load_shader', (event) => {
+    const { data } = event;
+
+    let loadEffect = Client.gameRenderer.class.getMethod('m_109128_', ResourceLocation);
+
+    loadEffect.invoke(Client.gameRenderer, new ResourceLocation(data.path));
+});
+
 NetworkEvents.dataReceived('show_title', (event) => Client.gui.setTitle(Text.translate(event.data.message)));
 NetworkEvents.dataReceived('show_subtitle', (event) => Client.gui.setSubtitle(Text.translate(event.data.message)));

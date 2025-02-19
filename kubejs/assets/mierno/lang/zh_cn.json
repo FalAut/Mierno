@@ -79,9 +79,9 @@
     "item.mierno.item_storage_cell_16m": "16M ME物品存储元件",
     "item.mierno.item_storage_cell_64m": "64M ME物品存储元件",
     "item.mierno.item_storage_cell_256m": "256M ME物品存储元件",
-    "item.minecraft.potion.effect.crazy_cocktails": "狂乱的鸡尾酒",
-    "item.minecraft.splash_potion.effect.crazy_cocktails": "喷溅型狂乱的鸡尾酒",
-    "item.minecraft.lingering_potion.effect.crazy_cocktails": "滞留型狂乱的鸡尾酒",
+    "item.minecraft.potion.effect.furious": "狂乱的鸡尾酒",
+    "item.minecraft.splash_potion.effect.furious": "喷溅型狂乱的鸡尾酒",
+    "item.minecraft.lingering_potion.effect.furious": "滞留型狂乱的鸡尾酒",
 
     "block.mierno.infused_wood": "灌注之木",
     "block.mierno.misty_forest_portal": "迷雾森林传送门",
@@ -387,7 +387,7 @@
     "enchantment.mierno.undying": "不死",
     "enchantment.mierno.last_stand": "屹立不倒",
 
-    "effect.mierno.crazy_cocktails": "狂乱",
+    "effect.mierno.furious": "狂乱",
 
     "mierno.startup.time": "游戏启动用时：§a%s§r 秒",
     "mierno.startup.performance": "打败了全国99%的玩家",

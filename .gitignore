@@ -23,8 +23,29 @@
 !defaultconfigs/ftbchunks/ftbchunks-world.snbt
 !defaultconfigs/fluxnetworks-server.toml
 
-!hotai
-!hotai/**
+!hotai/appeng/api/config/CondenserOutput.badiff
+!hotai/appeng/blockentity/misc/CondenserBlockEntity$1.badiff
+!hotai/appeng/blockentity/misc/CondenserBlockEntity.badiff
+!hotai/appeng/core/AEConfig$CommonConfig.badiff
+!hotai/appeng/core/AEConfig.badiff
+!hotai/com/brandon3055/draconicevolution/integration/equipment/CuriosIntegration.badiff
+!hotai/com/hollingsworth/arsnouveau/common/block/tile/ImbuementTile.badiff
+!hotai/com/jab125/mpuc/Hotfixes.badiff
+!hotai/com/klikli_dev/occultism/common/block/otherworld/IesniumOreNaturalBlock.badiff
+!hotai/com/klikli_dev/occultism/common/item/tool/DivinationRodItem.badiff
+!hotai/com/stal111/forbidden_arcanus/common/network/clientbound/UpdateResidueTypesPacket.badiff
+!hotai/de/ellpeck/naturesaura/blocks/tiles/BlockEntityOfferingTable.badiff
+!hotai/me/desht/pneumaticcraft/common/block/entity/EtchingTankBlockEntity.badiff
+!hotai/me/desht/pneumaticcraft/common/block/entity/PressureChamberValveBlockEntity.badiff
+!hotai/mekanism/api/Upgrade.badiff
+!hotai/mekanism/api/recipes/cache/CachedRecipe.badiff
+!hotai/mekanism/common/tile/machine/TileEntityDigitalMiner.badiff
+!hotai/mekanism/common/tile/machine/TileEntityElectricPump.badiff
+!hotai/mekanism/common/util/MekanismUtils.badiff
+!hotai/mekanism/common/util/UpgradeUtils.badiff
+!hotai/vazkii/botania/common/block/block_entity/TerrestrialAgglomerationPlateBlockEntity.badiff
+!hotai/vazkii/botania/common/item/BlackLotusItem.badiff
+!hotai/wayoftime/bloodmagic/compat/CuriosCompat.badiff
 
 !kubejs
 !kubejs/data

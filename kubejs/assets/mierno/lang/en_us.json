@@ -330,7 +330,7 @@
     "tooltip.mierno.vengeance_ring_1": "Shift+right-click to activate, allows you to see Vengeful Spirits while wearing",
     "tooltip.mierno.vengeance_ring_2": "§c§lIf you still can't see the spirit of Vengeance after activating, try wearing Spectral glasses",
     "tooltip.mierno.ae2_press": "Obtained by breaking Mysterious Blocks",
-    "tooltip.mierno.clay_ball": "Clay Balls are produced by placing sand near a Clay Flower",
+    "tooltip.mierno.clay_ball": "Clay Balls are produced by placing sand near a Clay Flower, need to consume mana",
     "tooltip.mierno.imbuement_chamber": "The Infusion Chamber now consumes items on the pedestal after completing the infusion, this is intentional and not a bug",
     "tooltip.mierno.modular_alfheim_portal_core": "See JEI for the exact structure, which requires the Alfheim Portal below to remain open",
     "tooltip.mierno.eternal_water": "An infinite water source that can automatically output water to fluid containers",

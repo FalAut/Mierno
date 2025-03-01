@@ -330,7 +330,7 @@
     "tooltip.mierno.vengeance_ring_1": "Shift+右鍵開啟後帶在身上，你就可以看見復仇之魂了",
     "tooltip.mierno.vengeance_ring_2": "§c§l若激活後仍然看不到復仇之魂，請嘗試戴上幽冥眼鏡",
     "tooltip.mierno.ae2_press": "通過破壞神秘方塊獲得",
-    "tooltip.mierno.clay_ball": "在粘土花附近放置沙子來產生黏土球",
+    "tooltip.mierno.clay_ball": "在粘土花附近放置沙子來產生黏土球，需要消耗魔力",
     "tooltip.mierno.imbuement_chamber": "現在灌註室在完成灌註後會消耗掉基座上的物品，這是有意為之的，並不是bug",
     "tooltip.mierno.modular_alfheim_portal_core": "具體結構請查看JEI，需要下方的精靈門保持開啟狀態",
     "tooltip.mierno.eternal_water": "一個無限的水源，可以自動向液體容器輸出水",

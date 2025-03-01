@@ -154,6 +154,7 @@
 						}]
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: 13.5d
@@ -1150,6 +1151,7 @@
 						stored_type: "mierno:heterogeneous"
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: 2.0d

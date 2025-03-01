@@ -16,6 +16,8 @@
 				"{mierno.welcome.main.desc2}"
 				""
 				"{mierno.welcome.main.desc3}"
+				""
+				"{mierno.welcome.main.desc4}"
 			]
 			disable_toast: true
 			icon: {

@@ -673,6 +673,7 @@
 						stored_type: "mierno:mist"
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: -0.5d
@@ -886,6 +887,7 @@
 						totalAccumulatedTime: 622080000
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: -3.5d

@@ -81,97 +81,13 @@
 				type: "item"
 			}]
 			x: 4.5d
-			y: -1.0d
+			y: -0.5d
 		}
 		{
-			id: "6FC32551FE26F7D4"
-			shape: "square"
-			tasks: [{
-				id: "58016E21A41A41BA"
-				item: "mierno:2"
-				type: "item"
-			}]
-			x: 5.5d
-			y: -1.0d
-		}
-		{
-			id: "3F99E33CB70E526F"
-			shape: "square"
-			tasks: [{
-				id: "60121F809A30AFB5"
-				item: "mierno:3"
-				type: "item"
-			}]
-			x: 6.5d
-			y: -1.0d
-		}
-		{
-			id: "0C7FB3B97D46374C"
-			shape: "square"
-			tasks: [{
-				id: "74604EDCD1B17BD9"
-				item: "mierno:4"
-				type: "item"
-			}]
-			x: 4.5d
-			y: 0.0d
-		}
-		{
-			id: "7C5ADFE9A23B9727"
-			shape: "square"
-			tasks: [{
-				id: "4B7D86828A82E74D"
-				item: "mierno:5"
-				type: "item"
-			}]
-			x: 5.5d
-			y: 0.0d
-		}
-		{
-			id: "39E68EAF9941FD16"
-			shape: "square"
-			tasks: [{
-				id: "5F6D4F16A54C9527"
-				item: "mierno:6"
-				type: "item"
-			}]
-			x: 6.5d
-			y: 0.0d
-		}
-		{
-			id: "2B545E5C729D418E"
-			shape: "square"
-			tasks: [{
-				id: "22946CFFAF944C03"
-				item: "mierno:7"
-				type: "item"
-			}]
-			x: 4.5d
-			y: 1.0d
-		}
-		{
-			id: "34A4E805BAB82A77"
-			shape: "square"
-			tasks: [{
-				id: "3DD4ABFCEEF85344"
-				item: "mierno:8"
-				type: "item"
-			}]
-			x: 5.5d
-			y: 1.0d
-		}
-		{
-			id: "2CE2A1490DFAFFD8"
-			shape: "square"
-			tasks: [{
-				id: "7398972DA2C26AB7"
-				item: "mierno:9"
-				type: "item"
-			}]
-			x: 6.5d
-			y: 1.0d
-		}
-		{
+			dependencies: [
+				"3DA4717085A36ACA"
+				"45C64E6670B61FFC"
+			]
 			id: "08836CE15DCD0C62"
 			shape: "gear"
 			size: 2.0d
@@ -180,7 +96,7 @@
 				item: "mierno:memory_matrix"
 				type: "item"
 			}]
-			x: 8.0d
+			x: 6.0d
 			y: 0.0d
 		}
 		{
@@ -202,18 +118,21 @@
 				item: "minecraft:end_portal_frame"
 				type: "item"
 			}]
-			x: 9.5d
+			x: 7.5d
 			y: 0.0d
 		}
 		{
+			dependencies: ["6811570107E11DA9"]
 			id: "45C64E6670B61FFC"
+			shape: "square"
+			subtitle: "{\"translate\":\"mierno.chapter3-2.computation_matrix.subtitle\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"6B96216B48F88D28\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}}"
 			tasks: [{
 				id: "29255A2E6CC152E2"
 				item: "mierno:computation_matrix"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 1.0d
+			x: 4.5d
+			y: 0.5d
 		}
 		{
 			can_repeat: true
@@ -250,8 +169,8 @@
 				type: "item"
 			}]
 			title: "{item.mierno.subtraction_sigil}"
-			x: 5.0d
-			y: -2.5d
+			x: 5.5d
+			y: -2.0d
 		}
 		{
 			can_repeat: true
@@ -288,8 +207,8 @@
 				type: "item"
 			}]
 			title: "{item.mierno.multiplication_sigil}"
-			x: 6.0d
-			y: -2.5d
+			x: 6.5d
+			y: -2.0d
 		}
 	]
 	title: "{mierno.chapter3-2.title}"

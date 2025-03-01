@@ -3,8 +3,8 @@
 ServerEvents.recipes((event) => {
     const { mierno } = event.recipes;
 
-    JsonIO.read("kubejs/mana_infusion.json").recipes.forEach((recipeData) => {
-        if (recipeData.catalyst != "null") {
+    JsonIO.read('kubejs/mana_infusion.json').recipes.forEach((recipeData) => {
+        if (recipeData.catalyst != 'null') {
             mierno
                 .modular_mana_infusion()
                 .inputItems(recipeData.input)
@@ -23,5 +23,5 @@ ServerEvents.recipes((event) => {
         }
     });
 
-    mierno.modular_mana_infusion().inputItems("redstone").outputItems("botania:mana_powder").inputMana(500).duration(1);
+    mierno.modular_mana_infusion().inputItems('redstone').outputItems('botania:mana_powder').inputMana(500).duration(1);
 });

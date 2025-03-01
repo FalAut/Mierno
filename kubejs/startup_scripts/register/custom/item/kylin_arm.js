@@ -21,20 +21,20 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.player.PlayerEvent$HarvestC
 
 ForgeEvents.onEvent('net.minecraftforge.event.entity.player.PlayerEvent$BreakSpeed', (event) => {
     const { entity, originalSpeed } = event;
-    if (!hasCurios(entity, 'mierno:kylin_arm')) return;
 
-    let newSpeed = originalSpeed * 10;
+    const hasKylin = hasCurios(entity, 'mierno:kylin_arm');
+    const hasQuantum = !hasKylin && entity.getItemBySlot('chest') == 'advanced_ae:quantum_chestplate';
+
+    if (!hasKylin && !hasQuantum) return;
 
     const isInWater = entity.isEyeInFluidType(Fluid.of('water').getFluid().getFluidType());
     const isInAir = !entity.onGround();
 
-    if (isInWater || isInAir) {
-        newSpeed *= 5;
-    }
+    let baseSpeed = originalSpeed * (hasKylin ? 10 : 1);
+    let multiplier = 1;
 
-    if (isInWater && isInAir) {
-        newSpeed *= 5;
-    }
+    if (isInWater || isInAir) multiplier *= 5;
+    if (isInWater && isInAir) multiplier *= 5;
 
-    event.setNewSpeed(newSpeed);
+    event.setNewSpeed(baseSpeed * multiplier);
 });

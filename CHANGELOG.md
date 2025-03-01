@@ -7,6 +7,21 @@
 -   添加狂乱的鸡尾酒
 -   将巨型熔炉加入连锁黑名单
 -   修复量子胸甲与麒麟臂冲突的问题
+-   1 个魔力石英现在可以制作 8 个赛特斯石英
+-   艾瑟金属矿、神秘水晶矿、符文石矿现在可以在感应炉中增产
+
+---
+
+-   _The text content for this changelog was translated into English using machine translation. Apologies for any inaccuracies!_
+-   Note: No hotfixes are available for the mod change.
+-   Added modules: RFTools, Xnet and Super Factory Manager.
+-   Added activation rituals for the Reduction Badge and Fusion Badge.
+-   Added Immortal Totem synthesis recipe
+-   Added Cocktail of Frenzy
+-   Added Mega Furnace to the chain blacklist.
+-   Fixed Quantum Chest Armour conflict with Gryphon Arm
+-   1 Mana Quartz now crafts 8 Cetus Quartz
+-   Ethel Metal Ore, Mystic Crystal Ore, and Rune Stone Ore can now be multiplied in Induction Furnace
 
 ## v0.3.2
 

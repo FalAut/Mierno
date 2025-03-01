@@ -20,7 +20,7 @@ ServerEvents.recipes((event) => {
         .modular_elven_trade()
         .inputItems('botania:mana_quartz')
         .inputMana(500)
-        .outputItems('ae2:quartz_block')
+        .outputItems('8x ae2:quartz_block')
         .duration(DURATION);
 
     mierno
@@ -80,9 +80,9 @@ ServerEvents.recipes((event) => {
 
     mierno
         .modular_elven_trade()
-        .inputItems('2x botania:quartz_mana')
+        .inputItems('botania:quartz_mana')
         .inputMana(500)
-        .outputItems('ae2:certus_quartz_crystal')
+        .outputItems('8x ae2:certus_quartz_crystal')
         .duration(DURATION);
 
     mierno

@@ -733,4 +733,100 @@ ServerEvents.recipes((event) => {
             amount: 300,
         },
     });
+
+    event.custom({
+        type: 'thermal:smelter',
+        ingredient: {
+            item: 'forbidden_arcanus:runic_stone',
+        },
+        result: [
+            {
+                item: 'forbidden_arcanus:rune',
+                count: 5,
+                chance: 1.0,
+            },
+            {
+                item: 'forbidden_arcanus:rune',
+                count: 3,
+                chance: 0.8,
+            },
+            {
+                item: 'forbidden_arcanus:rune',
+                count: 2,
+                chance: 0.5,
+            },
+        ],
+    });
+
+    event.custom({
+        type: 'thermal:smelter',
+        ingredient: {
+            item: 'forbidden_arcanus:arcane_crystal_ore',
+        },
+        result: [
+            {
+                item: 'forbidden_arcanus:arcane_crystal',
+                count: 5,
+                chance: 1.0,
+            },
+            {
+                item: 'forbidden_arcanus:arcane_crystal',
+                count: 3,
+                chance: 0.8,
+            },
+            {
+                item: 'forbidden_arcanus:arcane_crystal',
+                count: 2,
+                chance: 0.5,
+            },
+        ],
+    });
+
+    event.custom({
+        type: 'thermal:smelter',
+        ingredient: {
+            item: 'occultism:raw_iesnium',
+        },
+        result: [
+            {
+                item: 'occultism:iesnium_ingot',
+                count: 5,
+                chance: 1.0,
+            },
+            {
+                item: 'occultism:iesnium_ingot',
+                count: 3,
+                chance: 0.8,
+            },
+            {
+                item: 'occultism:iesnium_ingot',
+                count: 2,
+                chance: 0.5,
+            },
+        ],
+    });
+
+    event.custom({
+        type: 'thermal:smelter',
+        ingredient: {
+            item: 'occultism:iesnium_ore',
+        },
+        result: [
+            {
+                item: 'occultism:iesnium_ingot',
+                count: 5,
+                chance: 1.0,
+            },
+            {
+                item: 'occultism:iesnium_ingot',
+                count: 3,
+                chance: 0.8,
+            },
+            {
+                item: 'occultism:iesnium_ingot',
+                count: 2,
+                chance: 0.5,
+            },
+        ],
+    });
 });

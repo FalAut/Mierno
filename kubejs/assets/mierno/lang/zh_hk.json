@@ -595,10 +595,11 @@
 
     "mierno.chapter5.title": "V.偽逆",
 
-    "mierno.welcome.main.subtitle": "§c本包仍處於製作階段，如有問題可前往社群反饋，感謝配合！",
+    "mierno.welcome.main.subtitle": "§e本整合包完全免費，如果是付費獲取的，那麽你肯定被騙了。",
     "mierno.welcome.main.desc1": "§c本整合包適合對各種模組和自動化有一定了解的玩家。§r",
-    "mierno.welcome.main.desc2": "製作這個整合包純屬個人興趣愛好。盡管我投入了大量時間和精力，但個人能力有限，無法滿足所有玩家的需求。",
-    "mierno.welcome.main.desc3": "如果這個整合包不符合你的喜好，別忘了你隨時可以退出遊戲，無需勉強。",
+    "mierno.welcome.main.desc2": "§a有任何問題可前往社群反饋，感謝配合！",
+    "mierno.welcome.main.desc3": "製作這個整合包純屬個人興趣愛好。盡管我投入了大量時間和精力，但個人能力有限，無法滿足所有玩家的需求。",
+    "mierno.welcome.main.desc4": "如果這個整合包不符合你的喜好，別忘了你隨時可以退出遊戲，無需勉強。",
 
     "mierno.welcome.special_thanks.title": "特別感謝",
     "mierno.welcome.special_thanks.falaut": "§6落秋§r - 作者",

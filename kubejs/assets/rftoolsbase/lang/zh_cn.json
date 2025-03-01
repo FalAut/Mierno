@@ -1,0 +1,73 @@
+{
+    "item.rftoolsbase.network_monitor": "RF网络监视器",
+    "item.rftoolsbase.teleport_probe": "传送探针",
+    "item.rftoolsbase.filter_module": "过滤模块",
+    "item.rftoolsbase.developers_delight": "开发者之悦",
+    "item.rftoolsbase.shard_wand": "维度碎片魔杖",
+    "item.rftoolsbase.orphaning_card": "孤立卡",
+    "item.rftoolsbase.security_card": "安全卡",
+    "item.rftoolsbase.infused_diamond": "灌注钻石",
+    "item.rftoolsbase.infused_enderpearl": "灌注末影珍珠",
+    "item.rftoolsbase.smartwrench": "智能扳手",
+    "item.rftoolsbase.smartwrench_select": "智能扳手（选择模式）",
+    "item.rftoolsbase.dimensionalshard": "维度碎片",
+    "item.rftoolsbase.machine_frame": "机器框架",
+    "item.rftoolsbase.machine_base": "机器基座",
+    "item.rftoolsbase.crafting_card": "合成卡",
+    "item.rftoolsbase.tablet": "信息板（空）",
+    "item.rftoolsbase.tablet_filled": "信息板（已存储）",
+    "item.rftoolsbase.manual": "技术指南",
+
+    "block.rftoolsbase.machine_infuser": "机器灌注机",
+    "block.rftoolsbase.security_manager": "安全管理器",
+    "block.rftoolsbase.dimensionalshard_overworld": "维度碎片矿石",
+    "block.rftoolsbase.dimensionalshard_nether": "下界维度碎片矿石",
+    "block.rftoolsbase.dimensionalshard_end": "末地维度碎片矿石",
+    "block.rftoolsbase.information_screen": "信息显示屏",
+
+    "_comment1": "创造模式分类",
+    "itemGroup.rftoolsbase": "RFTools基础",
+
+    "_comment2": "快捷键",
+    "key.categories.rftools": "RFTools",
+    "key.debugDumpNBTItem": "输出手持物品的NBT数据",
+    "key.debugDumpNBTBlock": "输出选中方块的NBT数据",
+    "key.nextDestination": "切换至下一个目标",
+    "key.prevDestination": "切换至上一个目标",
+
+    "_comment3": "提示信息",
+    "message.rftoolsbase.shiftmessage": "<按住Shift>",
+
+    "message.rftoolsbase.crafting_card.header": "此物品可用于合成。它能存储配方原料和结果",
+    "message.rftoolsbase.crafting_card.info": "物品：",
+
+    "message.rftoolsbase.information_screen.header": "将此方块放置于能源核心上以显示信息。用扳手右键切换模式",
+    "message.rftoolsbase.information_screen.gold": "此方块亦可显示任何支持RF/FE的能源信息",
+
+    "message.rftoolsbase.machine_infuser.header": "此机器可通过维度碎片强化RFTools各类机器的性能",
+    "message.rftoolsbase.machine_infuser.gold": "灌注增益：降低能耗",
+
+    "message.rftoolsbase.filter_module.header": "此过滤模块可用于多种场景（XNet、存储、建筑机、合成器等），限制方块仅接受特定物品",
+    "message.rftoolsbase.filter_module.gold": "潜行右键容器根据内容配置过滤，或潜行右键方块将其加入过滤列表",
+    "message.rftoolsbase.filter_module.info": "模式：",
+
+    "message.rftoolsbase.manual.header": "本指南涵盖所有基于RFTools的科技模组说明",
+
+    "message.rftoolsbase.tablet.header": "可用于远程访问界面与信息的平板",
+    "message.rftoolsbase.tablet.gold": "空平板：打开界面与信息存储设备组合",
+
+    "message.rftoolsbase.tablet_filled.header": "存储信息的平板",
+    "message.rftoolsbase.tablet_filled.gold": "右键查看信息界面，潜行右键打开平板管理界面",
+
+    "message.rftoolsbase.smartwrench.header": "通用智能扳手。右键空气切换模式",
+    "message.rftoolsbase.smartwrench.gold": "常规扳手功能：潜行右键拾取，右键旋转方块",
+    "message.rftoolsbase.smartwrench.info1": "模式：",
+    "message.rftoolsbase.smartwrench.info2": "方块：",
+
+    "message.rftoolsbase.smartwrench_select.header": "通用智能扳手。右键空气切换模式",
+    "message.rftoolsbase.smartwrench_select.gold": "方块选择功能：潜行右键标记主方块，右键关联其他方块",
+    "message.rftoolsbase.smartwrench_select.info1": "模式：",
+    "message.rftoolsbase.smartwrench_select.info2": "方块：",
+
+    "message.rftoolsbase.security_manager": "@a内容物：%s组\n@f此方块管理您的安全卡"
+}

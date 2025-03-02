@@ -210,6 +210,23 @@
 			x: 6.5d
 			y: -2.0d
 		}
+		{
+			id: "5A7D70CE0C4B87E3"
+			tasks: [
+				{
+					id: "2CCCABC5C933D2E1"
+					type: "checkmark"
+				}
+				{
+					id: "63CCE246C54E8891"
+					item: "minecraft:oak_log"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 8.5d
+			y: -1.5d
+		}
 	]
 	title: "{mierno.chapter3-2.title}"
 }

@@ -1,3 +1,8 @@
+## v0.3.4
+
+-   添加模组 Applied-Botanics、Applied-Mekanistics、Ars Énergistique 和 PackagedDraconic
+-   修复破坏炽炉后有概率崩溃的问题
+
 ## v0.3.3
 
 -   注：因此次涉及模组变更，故不提供热修补

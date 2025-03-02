@@ -1,0 +1,36 @@
+{
+  "name": "空气格栅模块",
+  "icon": "pneumaticcraft:air_grate_module",
+  "category": "pneumaticcraft:tubes",
+  "advancement": "pneumaticcraft:pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "此模块用于吸引/排斥实体。通过正 $(l:base_concepts/pressure)压力/$，管道将推动实体远离；通过 $(thing)负/$ 压力，它将吸引实体。负压力是通过 $(l:machines/vacuum_pump)真空泵/$ 实现的。当物品实体足够接近时，它们将自动插入任何相邻的存储器，同时尊重其边界存储器（如熔炉）。"
+    },
+    {
+      "type": "text",
+      "text": "模块的范围可以用以下公式表示：$(p)使用正压力：$(p)  $(#272)范围 = 4 x 压力（bar)/$$(p)使用负压力：$(p)  $(#272)范围 = -16 x 压力（bar)/$$(p)例如，在2 bar时，推动范围为4x2=8格。在-0.5 bar时，吸引范围为-16x-0.5=8格。"
+    },
+    {
+      "type": "text",
+      "text": "空气格栅将只影响其面对方向上的立方体区域内的实体。该模块还必须与实体保持视线联系。$(p)您可以右键点击模块，使其显示受影响范围几秒钟。"
+    },
+    {
+      "type": "text",
+      "title": "散热器冷却",
+      "anchor": "active_cooling",
+      "text": "空气格栅模块也可以用于主动冷却 $(l:machines/heat_sink)散热器/$。散热器冷却的范围是在空气格栅前方的一个3x3x3立方体。当模块放置时，此范围会可视化。$(p)当空气格栅的范围达到3块或更多（即0.75 bar）时，才会对散热器进行冷却。"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:module_expansion_card",
+      "text": "当您应用 $(l:tubes/module_expansion_card)模块扩展卡/$ 时，可以控制哪个实体受模块影响。$(p)例如，您可以设置为仅对某个玩家、仅对爬行者或仅对物品有效。通过右键单击升级的模块以打开GUI，可以定义 $(l:base_concepts/entity_filter)实体过滤器/$。"
+    },
+    {
+      "type": "crafting",
+      "text": "制作空气格栅模块",
+      "recipe": "pneumaticcraft:air_grate_module"
+    }
+  ]
+}

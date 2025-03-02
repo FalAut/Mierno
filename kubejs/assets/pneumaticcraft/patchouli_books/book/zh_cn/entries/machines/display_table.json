@@ -1,0 +1,21 @@
+{
+  "name": "展示桌",
+  "icon": "pneumaticcraft:display_table",
+  "category": "pneumaticcraft:machines",
+  "advancement": "pneumaticcraft:root",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)展示桌/$ 是一个简单的库存，可以存储（和展示）单个物品。它部分用于装饰目的，但对于自动化也可能很有用，因为桌子的库存可以通过漏斗、无人机和其他管道系统进行互动。"
+    },
+    {
+      "type": "text",
+      "text": "当展示桌相互放置时，它们会视觉上连接，并且不会渲染相邻的腿部，从而形成一个更大的单一桌子。这要求两个方块的旋转完全相同；如果旋转不同，则不会以这种方式连接。$(p)视觉上连接的桌子仍然为每个桌子有一个独立的1物品库存。"
+    },
+    {
+      "type": "crafting",
+      "text": "制作展示桌",
+      "recipe": "pneumaticcraft:display_table"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "前往地点小部件",
+  "icon": "pneumaticcraft:textures/progwidgets/goto_piece.png",
+  "category": "pneumaticcraft:widget_interact",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(thing)前往地点/$ 相当简单： $(l:tools/drone)无人机/$ 将前往指定 $(l:programming/area)区域/$ 内的最近可达位置。$(p)当无人机到达该区域/$ 或者该区域不可达时，这个小部件会被标记为 $(ttcolor)$(t:您可以将小部件配置为立即“完成”；右键点击打开设置 GUI)。/$"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/progwidgets/goto_piece.png"
+      ],
+      "text": "$(italic)前往地点小部件/$"
+    }
+  ]
+}

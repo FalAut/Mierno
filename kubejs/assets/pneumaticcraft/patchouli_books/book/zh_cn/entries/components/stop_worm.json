@@ -1,0 +1,17 @@
+{
+  "name": "停！蠕虫",
+  "icon": "pneumaticcraft:stop_worm",
+  "category": "pneumaticcraft:components",
+  "advancement": "pneumaticcraft:root",
+  "pages": [
+    {
+      "type": "text",
+      "text": "这是一个特殊的组件，仅在尝试破解 $(l:machines/security_station)安检站/$ 时使用。它不可制作，只能在地牢战利品中找到，或者（很少）作为村民交易。"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:stop_worm",
+      "text": "应用$(thing)停!蠕虫/$，而入侵攻击将暂时冻结空间站的$(l:components/network_components#diagnostic)诊断子程序/$ 无法追踪您。"
+    }
+  ]
+}

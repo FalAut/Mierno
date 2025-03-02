@@ -1,0 +1,45 @@
+{
+  "name": "守卫无人机",
+  "icon": "pneumaticcraft:guard_drone[pneumaticcraft:air=120000]",
+  "category": "pneumaticcraft:tools",
+  "advancement": "pneumaticcraft:pressure_chamber",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)守卫无人机/$ 是一种专用的不可编程 $(l:tools/drone)无人机/$，应针对任何有库存的方块进行部署。它会导入一个物品作为武器，并用它攻击任何范围内的生物。"
+    },
+    {
+      "type": "spotlight",
+      "title": "自动充电",
+      "item": "pneumaticcraft:charging_station",
+      "text": "与所有类型的无人机一样，这些无人机需要 $(l:base_concepts/pressure)压力/$ 来操作，并会自动寻找带有喷出器升级的 $(l:tools/drone#charging)充电站/$ 如果空气不足。"
+    },
+    {
+      "type": "text",
+      "title": "范围",
+      "text": "$(thing)守卫无人机/$ 将目标锁定在部署位置横向 16 块、向上 8 块和向下 5 块内的任何敌对生物。$(p)较小的垂直范围是为了减少对深洞中生物的探测以及传送至它们，从而节省空气，避免让你困惑无人机发生了什么。"
+    },
+    {
+      "type": "spotlight",
+      "title": "武器",
+      "item": "minecraft:netherite_sword",
+      "text": "$(thing)守卫无人机/$ 对库存中的物品不在乎，因此请确保放入一个有用的近战武器。如果武器损坏并且库存中没有替代品，无人机将继续无武装作战，这非常无效。"
+    },
+    {
+      "type": "spotlight",
+      "title": "远程战斗",
+      "item": "pneumaticcraft:minigun_upgrade",
+      "text": "无人机也可以装备 $(l:base_concepts/upgrades#minigun)迷你枪升级/$，在这种情况下，你应当往库存中添加 $(l:tools/minigun_ammo)迷你枪弹药/$。"
+    },
+    {
+      "type": "entity",
+      "entity": "pneumaticcraft:guard_drone",
+      "offset": -0.3
+    },
+    {
+      "type": "crafting",
+      "text": "制作守卫无人机",
+      "recipe": "pneumaticcraft:guard_drone"
+    }
+  ]
+}

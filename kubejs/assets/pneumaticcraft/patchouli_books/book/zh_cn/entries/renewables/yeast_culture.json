@@ -1,0 +1,43 @@
+{
+  "name": "酵母培养液",
+  "icon": "pneumaticcraft:yeast_culture_bucket",
+  "category": "pneumaticcraft:renewables",
+  "advancement": "pneumaticcraft:tp_plant",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(thing)酵母培养液/$ 是生产 $(l:renewables/ethanol)乙醇/$ 和 $(l:renewables/sourdough)酸面团/$ 的必需品，可以通过几种方式生产："
+    },
+    {
+      "type": "spotlight",
+      "item": "minecraft:red_mushroom",
+      "title": "方法 1",
+      "text": "这将是你最初唯一可用的方法。将 $(thing)水/$ 加入一个 $(l:manufacturing/thermopneumatic_processing_plant)热气动加工厂/$，然后加入一些蘑菇。这个方法稍显缓慢（需要充足的蘑菇供应），但将轻松生产出初始的酵母培养液。"
+    },
+    {
+      "type": "text",
+      "title": "方法 1 （续）",
+      "text": "这个过程对温度很敏感：你需要将热气动加工厂的温度保持在 30°C 到 60°C 之间。在较温暖的生物群落中这很简单，但在较凉的地区可能需要一些努力 - 值得注意的是，随着挖掘的深入，环境温度往往会上升，因此，如果在较低的 Y 轴高度进行加工，温带生物群落可能适合。"
+    },
+    {
+      "type": "pneumaticcraft:thermo_plant",
+      "recipe": "pneumaticcraft:thermo_plant/yeast_culture"
+    },
+    {
+      "type": "text",
+      "flag": "!pneumaticcraft:inWorldYeastCrafting",
+      "title": "重要提示",
+      "text": "$(italic)在本实例的配置中，以下页面中描述的在世界内酵母制作功能已被禁用。/$"
+    },
+    {
+      "type": "text",
+      "title": "方法 2",
+      "text": "$(thing)酵母培养液/$ 作为一种生物体，能够自我复制。为此，将一桶培养液倒入一个池塘中，然后向池塘中投放一些 $(thing)糖/$。$(p)现在，将一桶 $(thing)水/$ 倒入邻近培养液的方块空间；过一秒钟或两秒后，你将看到水转化为更多培养液。"
+    },
+    {
+      "type": "text",
+      "title": "方法 2 （续）",
+      "text": "需要注意的是，只有在放置水时，培养液才会扩散，而不是在添加糖时。$(p)通过一些思考和设计，即使在游戏早期，这个方法也可以实现自动化（提示：$(l:machines/omnidirectional_hopper)全向/$ 和 $(l:machines/liquid_hopper)液体/$ 漏斗带有 $(l:base_concepts/upgrades#dispenser)发射器升级/$ 可能会非常有用）。"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "世界交互部件",
+  "description": "以某种方式与世界交互的部件。",
+  "icon": "pneumaticcraft:textures/progwidgets/dig_piece.png",
+  "parent": "pneumaticcraft:programming",
+  "sortnum": 2
+}

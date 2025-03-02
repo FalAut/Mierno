@@ -1,0 +1,17 @@
+{
+  "name": "涡轮转子",
+  "icon": "pneumaticcraft:turbine_rotor",
+  "category": "pneumaticcraft:components",
+  "advancement": "pneumaticcraft:pressure_chamber",
+  "pages": [
+    {
+      "type": "text",
+      "text": "这是其他设备的制作组件。它本身没有用处。"
+    },
+    {
+      "type": "crafting",
+      "text": "制作涡轮转子",
+      "recipe": "pneumaticcraft:turbine_rotor"
+    }
+  ]
+}

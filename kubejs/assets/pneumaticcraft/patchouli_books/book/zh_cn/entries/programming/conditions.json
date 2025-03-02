@@ -1,0 +1,73 @@
+{
+  "name": "条件",
+  "icon": "minecraft:comparator",
+  "category": "pneumaticcraft:programming",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(thing)条件/$ 是一组小部件，允许您检查某些内容，并在检查成功时跳转到程序的另一个部分。$(p)每个 $(thing)条件/$ 小部件都需要一个 $(l:programming/text)文本/$ 小部件参数（总是在底部的参数）， 配置有一个 $(thing)标签名称/$。"
+    },
+    {
+      "type": "text",
+      "text": "当条件评估为 $(thing)true/$ 时， $(l:programming/flow_control)程序执行/$ 将跳转到右侧与该 $(thing)文本/$ 参数同名的 $(l:programming/label)标签/$ 小部件。当条件为 $(thing)false/$ 时，它将跳转到左侧与 $(thing)文本/$ 参数同名的 $(thing)标签/$。$(p)如果 $(thing)条件/$ 小部件找不到有效的 $(thing)文本/$ 参数，它将直接进入下一个小部件（连接的 $(italic)下方/$）。"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/patchouli/condition_widget.png"
+      ],
+      "border": "true",
+      "text": "$(italic)一个红石条件小部件，当信号 >= 10 时杀死无人机/$"
+    },
+    {
+      "type": "text",
+      "text": "大多数 $(thing)条件/$ 小部件可以被 $(thing)右键点击/$ 以打开配置 GUI。GUI 通常包含 '='/ '>=' 选项，以及一个文本框，您可以在其中输入一个数字。$(p)通过这项功能，您可以设置条件（例如箱子中的物品数量），如：精确为 10（'=' 模式，文本框为 10），大于 20（'>=' 模式，文本框为 '21'），或少于 12（'>=' 模式，文本框为 '12'，但检查条件为 $(thing)false/$）。"
+    },
+    {
+      "type": "text",
+      "title": "测量",
+      "text": "所有 $(thing)条件/$ 小部件的 GUI（除了 $(l:programming/condition_item)物品过滤器条件/$）都有一个 $(thing)测量/$ 文本框，您可以在其中输入一个 $(l:programming/variables)变量/$ 名称。如果这里提供了一个变量名称，由无人机进行的任何测量都将存储在变量的 X 字段中。$(p)这可以在后续成为任何其他变量，举个例子，您可以测量液体罐的液位，然后将其写在标牌上。"
+    },
+    {
+      "type": "text",
+      "title": "测量（续）",
+      "text": "如果提供了测量变量名称，那么在条件小部件上没有分支的文本小部件将不再是错误（正常情况下至少需要一个分支）。这意味着条件小部件可以纯粹用于测量一个量；执行将按常规向下进行。$(p)注意：压力测量条件将测量的压力以毫巴存储（例如，5.5 巴为 5500）。"
+    },
+    {
+      "type": "text",
+      "title": "条件类型",
+      "text": "条件可以分为两类： $(thing)世界条件/$ 和 $(thing)无人机条件/$。$(p)世界条件用于检查世界中的事物，例如一个 $(item)箱子/$ 中有多少物品，或某个地方是否存在一个方块？$(p)$(thing)无人机条件/$ 专门针对 $(l:tools/drone)无人机/$，例如无人机是否有某个物品，或是否拥有某个压力？"
+    },
+    {
+      "type": "text",
+      "text": "所有基于方块的 $(thing)世界条件/$ 都具有 $(thing)任意/全部/$ 方块选项。这在你同时检查多个方块时使用。$(li)在 $(thing)任意/$ 模式下，只需要选定的 $(l:programming/area)区域/$ 中的 $(italic)一个/$ 方块匹配即可使条件为 $(thing)true/$。$(li)在 $(thing)全部/$ 模式下，$(italic)所有/$ 方块必须匹配，否则条件为 $(thing)true/$。"
+    },
+    {
+      "type": "relations",
+      "title": "世界条件",
+      "entries": [
+        "pneumaticcraft:programming/condition_block",
+        "pneumaticcraft:programming/condition_coordinate",
+        "pneumaticcraft:programming/condition_entity",
+        "pneumaticcraft:programming/condition_item",
+        "pneumaticcraft:programming/condition_item_inventory",
+        "pneumaticcraft:programming/condition_liquid_inventory",
+        "pneumaticcraft:programming/condition_pressure",
+        "pneumaticcraft:programming/condition_redstone",
+        "pneumaticcraft:programming/condition_rf"
+      ]
+    },
+    {
+      "type": "relations",
+      "title": "无人机条件",
+      "entries": [
+        "pneumaticcraft:programming/drone_condition_item",
+        "pneumaticcraft:programming/drone_condition_liquid",
+        "pneumaticcraft:programming/drone_condition_entity",
+        "pneumaticcraft:programming/drone_condition_pressure",
+        "pneumaticcraft:programming/drone_condition_rf"
+      ]
+    }
+  ]
+}

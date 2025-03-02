@@ -1,0 +1,67 @@
+{
+  "name": "压力室",
+  "icon": "pneumaticcraft:pressure_chamber_wall",
+  "category": "pneumaticcraft:manufacturing",
+  "advancement": "pneumaticcraft:pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(thing)压力室/$ 是一个多方块结构，用于将各种材料压缩成其他材料。由于其巨大的空气存储容量，它还可以作为一个有用的“电池”。$(p)以下是多方块结构构建的规则：$(li)整体多方块结构必须是一个空心的 3x3x3、4x4x4 或 5x5x5 结构。"
+    },
+    {
+      "type": "text",
+      "text": "$(li)$(thing)边缘/$ 和 $(thing)角落/$ 必须是 $(item)压力室墙/$ 或 $(item)压力室玻璃/$。$(li)$(thing)面/$ 必须是 $(item)压力室墙/$、 $(item)压力室玻璃/$、 $(item)压力室阀/$ 或 $(l:manufacturing/pressure_chamber#interface)压力室接口/$。$(li)至少需要一个 $(item)压力室阀/$。$(li)建议至少有两个 $(item)压力室接口/$（一个应面向内，一个应面向外）。"
+    },
+    {
+      "type": "multiblock",
+      "name": "压力室",
+      "multiblock_id": "pneumaticcraft:pressure_chamber_3",
+      "text": "一个可能的 3x3x3 压力室，带有 1 个 $(item)阀/$ 和 2 个 $(item)接口/$"
+    },
+    {
+      "type": "multiblock",
+      "name": "压力室",
+      "multiblock_id": "pneumaticcraft:pressure_chamber_4",
+      "text": "一个可能的 4x4x4 压力室，带有 2 个 $(item)阀/$ 和 2 个 $(item)接口/$"
+    },
+    {
+      "type": "multiblock",
+      "name": "压力室",
+      "multiblock_id": "pneumaticcraft:pressure_chamber_5",
+      "text": "一个可能的 5x5x5 压力室，带有 4 个 $(item)阀/$ 和 4 个 $(item)接口/$"
+    },
+    {
+      "type": "spotlight",
+      "anchor": "interface",
+      "item": "pneumaticcraft:pressure_chamber_interface",
+      "text": "$(item)压力室接口/$ 用于自动插入和提取物品到 $(thing)压力室/$。物品 $(italic)必须/$ 通过 $(item)漏斗/$ 或其他模组的管道系统输送。你应该至少拥有两个接口：一个 'I' 面向外（即 $(thing)输入接口/$），一个 'O' 面向外（即 $(thing)输出接口/$）。"
+    },
+    {
+      "type": "text",
+      "text": "输入模式接口仅接受作为压力室配方的原料的物品。输出模式接口（默认为）仅导出制作的物品，但在 GUI 中有一个按钮可以允许导出 $(italic)所有/$ 物品，如果你需要。$(p)$(italic)请注意，此行为自 1.12.2 以来发生了变化，现在更加用户友好。/$"
+    },
+    {
+      "type": "text",
+      "text": "输出模式 $(item)接口/$ 会自动弹出到相邻的库存中；这可能会或可能不会包括其他模组的管道，具体取决于它们是否被接口视为库存。$(p)每传输一个物品需要 1000mL 的 $(l:base_concepts/pressure)空气/$。这意味着，要传输整整一堆物品，$(item)接口/$ 需要 64000mL（对于一个基本的 3x3x3 室来说是 4 bar）。如果接口似乎“卡住”，只是等待更多压力建立。"
+    },
+    {
+      "type": "text",
+      "text": "$(bold)小贴士/$$(li)当压缩 $(item)铁/$ 时，压缩 $(item)铁块/$，因为这会只使用 1/9 的空气来移动物品进出压力室。$(li)如果你需要快速对大压缩室加压，额外的阀门可能会很有帮助（前提是你有足够的压缩机来产生必要的空气）。"
+    },
+    {
+      "type": "crafting",
+      "recipe": "pneumaticcraft:pressure_chamber_wall",
+      "recipe2": "pneumaticcraft:pressure_chamber_glass"
+    },
+    {
+      "type": "crafting",
+      "recipe": "pneumaticcraft:pressure_chamber_interface",
+      "recipe2": "pneumaticcraft:pressure_chamber_valve_x1"
+    },
+    {
+      "type": "crafting",
+      "recipe": "pneumaticcraft:pressure_chamber_valve_x4",
+      "recipe2": "pneumaticcraft:pressure_chamber_valve"
+    }
+  ]
+}

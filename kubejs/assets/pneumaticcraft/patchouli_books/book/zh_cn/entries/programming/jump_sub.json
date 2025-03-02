@@ -1,0 +1,19 @@
+{
+  "name": "跳转子程序小部件",
+  "icon": "pneumaticcraft:textures/progwidgets/jump_sub_piece.png",
+  "category": "pneumaticcraft:widget_flow",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "此小部件的行为类似于 $(thing)跳转/$，但在子程序完成后，执行将继续在连接到 $(thing)跳转子程序/$ 小部件底部的另一个小部件中。 $(thing)跳转子程序/$ 小部件对于重用常见代码和通过在跳转到子程序之前分配变量来调用带有任意参数的子程序非常有用。"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/progwidgets/jump_sub_piece.png"
+      ],
+      "text": "$(italic)跳转子程序小部件/$"
+    }
+  ]
+}

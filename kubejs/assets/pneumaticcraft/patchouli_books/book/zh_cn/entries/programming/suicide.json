@@ -1,0 +1,19 @@
+{
+  "name": "自毁小部件",
+  "icon": "pneumaticcraft:textures/progwidgets/suicide_piece.png",
+  "category": "pneumaticcraft:widget_flow",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(l:tools/drone)无人机/$ 将立即转变为其物品形式，在地面上以物品实体的形式掉落。程序执行当然会立刻终止。"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/progwidgets/suicide_piece.png"
+      ],
+      "text": "$(italic)就这些，朋友们/$"
+    }
+  ]
+}

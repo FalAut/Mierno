@@ -1,0 +1,38 @@
+{
+  "name": "生物柴油概述",
+  "icon": "minecraft:book",
+  "category": "pneumaticcraft:renewables",
+  "priority": "true",
+  "advancement": "pneumaticcraft:tp_plant",
+  "pages": [
+    {
+      "type": "text",
+      "text": "这是一个非常简洁的可再生 $(thing)生物柴油/$ 的生产指南。按照此处的步骤操作，并参考本节中的其他页面以获取特定主题的更多详细信息（其他页面可能被成就锁定，但在您完成先决条件步骤后会解锁）。"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:yeast_culture_bucket",
+      "text": "步骤 1a：制作一些 $(thing)酵母培养液/$：获取一些蘑菇和水，并将它们组合在 $(l:manufacturing/thermopneumatic_processing_plant)热气动处理厂/$ 中。您需要确保 TPP 的温度在 30°C 到 60°C 之间，具体情况可能会根据您的生物群落和海拔高度而变得容易或困难。"
+    },
+    {
+      "type": "spotlight",
+      "item": "minecraft:sugar",
+      "text": "步骤 1b（可选）：一旦您至少有一个桶的酵母培养液，您可以通过将其倒入世界中的一个池塘，向池塘中放入一些糖，然后将一桶水倒入与培养液相邻的方块空间中，以更快的方式生产更多；培养液会复制到您倒出的水中。"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:ethanol_bucket",
+      "text": "步骤 2：通过将 $(thing)酵母培养液/$ 和一些 $(thing)糖/$ 加入 $(l:manufacturing/thermopneumatic_processing_plant)热气动处理厂/$ 中来制作一些 $(thing)乙醇/$。这在很大程度上与步骤1a的温度依赖性相似。"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:vegetable_oil_bucket",
+      "text": "步骤 3：通过在 $(l:manufacturing/thermopneumatic_processing_plant)热气动处理厂/$ 中用少量压力挤压 $(thing)种子/$ 或 $(thing)作物/$ 来制作一些 $(thing)植物油/$。"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:biodiesel_bucket",
+      "text": "步骤 4：在 $(l:manufacturing/fluid_mixer)流体混合器/$ 中结合您的 $(thing)乙醇/$ 和 $(thing)植物油/$。恭喜您，您已经制作了一些可再生燃料！"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "加农炮炮筒",
+  "icon": "pneumaticcraft:cannon_barrel",
+  "category": "pneumaticcraft:components",
+  "advancement": "pneumaticcraft:pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "这是其他设备的制作组件。它本身没有用处。"
+    },
+    {
+      "type": "crafting",
+      "text": "制作加农炮",
+      "recipe": "pneumaticcraft:cannon_barrel"
+    }
+  ]
+}

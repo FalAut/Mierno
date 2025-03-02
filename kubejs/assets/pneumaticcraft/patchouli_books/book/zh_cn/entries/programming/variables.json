@@ -1,0 +1,79 @@
+{
+  "name": "变量",
+  "icon": "minecraft:paper",
+  "category": "pneumaticcraft:programming",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(thing)变量/$ 允许无人机程序存储和操作区块位置（即坐标），以提供一些高级的无人机功能。$(p)要从无人机程序内创建或操作变量，请使用 $(l:programming/coordinate_operator)坐标运算符/$ 和 $(l:programming/coordinate)坐标/$ 组件，若要对变量进行测试，请使用 $(l:programming/condition_coordinate)条件：坐标/$ 组件。"
+    },
+    {
+      "type": "text",
+      "text": "在 $(l:programming/area)区域/$ 组件中，您可以使用 $(thing)变量/$ 名称，而不是使用 GPS 坐标。$(p)这些 $(thing)变量/$ 在世界重载之间持久存在，因此可以用于创建一个无尽的挖掘程序，例如，无人机的挖掘位置由 $(thing)变量/$ 跟踪。$(p)要查看一个旧但仍然相关的教程，请参见 $(l:https://www.youtube.com/watch?v=FIjEdD_Yj9Y)MineMaarten 的这个 YouTube 视频/$。"
+    },
+    {
+      "type": "text",
+      "text": "虽然 $(thing)变量/$ 仅存储坐标（X/Y/Z 三元组），但如果您仔细想想，您会意识到您也可以使用 $(thing)整数/$ 和 $(thing)布尔值/$。只需对整数使用一个轴，对于布尔值，定义类似 '0' = 假，其他一切 = 真。玩得开心！"
+    },
+    {
+      "type": "text",
+      "title": "物品变量",
+      "text": "在上一页中，我们提到变量只能存储坐标。这其实是一个小谎言：还有一种 $(thing)物品变量/$，可以存储（你猜对了）物品值。这些变量使用 $(l:programming/item_assign)物品分配/$ 和 $(l:programming/for_each_item)对每个物品/$ 组件创建，并由 $(l:programming/item_filter)物品过滤器/$ 组件使用。"
+    },
+    {
+      "type": "text",
+      "title": "变量类型",
+      "text": "变量有三种类型：$(li)$(thing)局部变量/$：这些变量按无人机存储，并简单地引用为 'varname'。$(li)$(thing)全局变量/$：这些变量对所有无人机全局可用，可用于共享数据。它们的引用为 '#varname' 或 '%varname'（见后面的页面）。$(li)$(thing)特殊变量/$ 可用于检索有关无人机的一些元数据，并引用为 '$varname'。"
+    },
+    {
+      "type": "text",
+      "anchor": "global",
+      "title": "全局变量",
+      "text": "普通变量是每个 $(l:tools/drone)无人机/$ 独有的；它们无法共享。$(thing)全局变量/$，然而，$(italic)可以/$ 被共享。这允许无人机之间进行通信。$(p)此外，$(l:tools/gps_tool)GPS 工具/$ 可以链接并修改它们，$(l:machines/universal_sensor)通用传感器/$ 可以基于它们发出 $(#f00)红石信号/$，而 $(l:tools/remote)遥控器/$ 可以显示和修改它们。"
+    },
+    {
+      "type": "text",
+      "title": "全局变量（续）",
+      "text": "$(ttcolor)$(t:玩家全局变量已在 PNC:R 3.0.0，MC 1.18.1 中添加)有两种类型的全局变量/$： $(thing)玩家全局/$ 和 $(thing)服务器全局/$。$(li)玩家全局变量以 '#' 开头。这些变量在玩家的无人机之间共享，但对每个玩家是私有的。$(li)服务器全局变量以 '%' 开头。这些变量在服务器上 $(italic)所有/$ 玩家之间共享。$(p)注意：在早期版本的 mod 中只有服务器全局变量存在，其前缀为 '#'。"
+    },
+    {
+      "type": "text",
+      "title": "变量命令",
+      "text": "存在几个命令（任何玩家可用）来操作全局变量：$(li)/pncr global_var set <varname> <x> <y> <z>$(li)/pncr global_var set <varname> <item-registry-id>$(li)/pncr global_var get <varname>$(li)/pncr global_var list$(li)/pncr global_var delete <varname>"
+    },
+    {
+      "type": "text",
+      "anchor": "special",
+      "title": "特殊变量",
+      "text": "以下特殊变量被识别：$(li)$(thing)$owner_pos/$：拥有 $(l:tools/drone)无人机/$ 的玩家的（头部）块位置，如果拥有者离线，则为 (0,0,0)。$(li)$(thing)$drone_pos/$：无人机自身的块位置。$(li)$(thing)$player_pos=<name>/$：玩家 '<name>' 的（头部）块位置（不区分大小写），如果无效或离线的玩家名称则为 (0,0,0)。"
+    },
+    {
+      "type": "text",
+      "anchor": "special",
+      "title": "特殊变量（续）",
+      "text": "$(li)$(thing)$owner_look/$：表示拥有玩家在每个轴上朝向的一个向量；每个值将为 -1、0 或 1。$(li)$(thing)$controller_pos/$：控制 $(l:programming/programmable_controller)可编程控制器/$ 块的块位置，如果无人机是实际的无人机而非可编程控制器，则为 (0,0,0)。"
+    },
+    {
+      "type": "text",
+      "anchor": "special",
+      "title": "特殊变量（续）",
+      "text": "为了兼容性原因，还存在一些旧变量（但建议使用上一页中的变量）：$(li)$(thing)$owner/$：$(thing)$owner_pos/$ 的别名。$(li)$(thing)$drone/$：出于历史原因，获取无人机 $(italic)上面/$ 的块位置。$(li)$(thing)$player=<name>/$：$(thing)$player_pos/$ 的别名。"
+    },
+    {
+      "type": "text",
+      "title": "调试",
+      "text": "有时，显示变量的值对于调试而言非常有用。您可以通过几种方式显示变量的值：$(li)使用 $(l:programming/rename)重命名/$ 组件将变量显示为无人机的名称牌 $(li)使用 $(l:programming/edit_sign)编辑标牌/$ 组件写入文本 $(li)在 $(l:tools/remote#label)标签/$ 中使用 $(l:tools/remote)遥控器/$。"
+    },
+    {
+      "type": "text",
+      "title": "调试（续）",
+      "text": "要将变量插入到通过上述方法之一显示的文本中，请使用语法 $(thing)${varname}/$。$(p)请注意，特殊变量和全局变量前缀仍在此适用，因此要插入无人机的位置，您将使用 $(thing)${$drone_pos}/$，要插入全局变量，您将使用 $(thing)${#globalvarname}/$ 或 $(thing)${%globalvarname}/$。"
+    },
+    {
+      "type": "text",
+      "title": "调试（续）",
+      "text": "您还可以通过在变量名称后加上 $(thing).x/$、 $(thing).y/$ 或 $(thing).z/$ 后缀来仅显示坐标的 X、Y 或 Z 组件。例如，要显示无人机拥有者的 Y 坐标，请使用 $(thing)${$owner_pos.y}/$。$(p)如果变量是 $(thing)物品变量/$，则使用 $(thing).id/$ 后缀会获取物品的注册 ID，而不是其显示名称（这是默认值）。这在 $(l:machines/aphorism_tile#items)名言块/$ 上显示物品时尤其有用。"
+    }
+  ]
+}

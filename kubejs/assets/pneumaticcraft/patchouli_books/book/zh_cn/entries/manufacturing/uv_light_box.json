@@ -1,0 +1,26 @@
+{
+  "name": "紫外线光箱",
+  "icon": "pneumaticcraft:uv_light_box",
+  "category": "pneumaticcraft:manufacturing",
+  "advancement": "pneumaticcraft:pcb_blueprint",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)紫外线光箱/$ 是一种机器，您可以将 $(l:components/pcb)PCB/$ 暴露在紫外线下，暴露的位置由位于 PCB 上方的 $(l:components/pcb_blueprint)蓝图/$ 确定。$(p)暴露过程最多需要 10 分钟；如果您向机器添加 $(l:base_concepts/upgrades#speed)速度升级/$，则所需时间会更短。"
+    },
+    {
+      "type": "text",
+      "text": "经过完整的 10 分钟后，您将有 100% 的机会成功在 $(l:manufacturing/etching_acid)蚀刻酸/中蚀刻 $(item)PCB/$。但是，您可以选择短时间暴露 PCB，这样将导致 PCB 成功蚀刻的几率降低。$(p)请注意，当总进度较低时，暴露进度较快，而在接近尾声时则会变得较慢。"
+    },
+    {
+      "type": "text",
+      "title": "阈值自动化",
+      "text": "您可以通过 GUI 滑块手动调整完成阈值，但也可以通过红石信号进行设置；将红石模式设置为 $(thing)插值阈值/$. 在此模式下，阈值固定为 25% + 每个信号级别 5%（虽然信号为 0 时禁用机器，因此实际上在 30%-100% 之间）。$(p)如果您想同时设置多个光箱的阈值，这将非常方便。"
+    },
+    {
+      "type": "crafting",
+      "text": "制作紫外线光箱",
+      "recipe": "pneumaticcraft:uv_light_box"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "区块加载",
+  "icon": "minecraft:ender_eye",
+  "category": "pneumaticcraft:base_concepts",
+  "pages": [
+    {
+      "type": "text",
+      "text": "Minecraft 的一个基本机制是，世界的只有部分区域会同时加载到内存中。这对于性能至关重要；没有任何经济实惠的计算机可以同时保持整个世界（尤其是经过修改的世界）加载并运行。因此，世界被划分为 16x16 的 $(thing)区块/$，同时加载的区块数量很少。"
+    },
+    {
+      "type": "text",
+      "text": "这对设计可靠的模组构建有重要影响；如果您希望在不在基地时进行处理，您需要 $(thing)区块加载/$ 相关的机器。以下信息主要旨在提供实现可靠 $(pncr) 构建的提示，但其中很多内容也适用于其他模组。"
+    },
+    {
+      "type": "text",
+      "title": "区块加载方法",
+      "text": "$(li)原版游戏提供了一个 $(thing)/forceload/$ 命令，可以强制一个或多个区块始终保持加载，但这需要操作权限$(li)许多模组提供玩家可用的区块加载解决方案，例如 $(thing)FTB Chunks/$、$(thing)Chicken Chunks/$、$(thing)Weirding Gadgets/$ 等等。$(li)本模组的 $(l:programming/programmable_controller)可编程控制器/$ 也提供一些有限的区块加载功能。"
+    },
+    {
+      "type": "text",
+      "title": "区块加载安全性",
+      "text": "以下提示将帮助您构建可靠的区块加载系统：$(li)$(thing)尽量保持构建在区块边界内/$。如果您的构建部分区域被加载而部分区域没有，结果可能非常不可预测。确保要么全部加载，要么全部不加载。$(li)$(thing)在机器中使用安全升级/$。这可以防止爆炸；即使有良好的红石控制，区块加载或服务器性能问题也可能会造成问题。"
+    },
+    {
+      "type": "text",
+      "title": "区块加载安全性（续）",
+      "text": "$(li)$(thing)如果可能，保持多方块结构在一个区块内/$。即使所有相关区块都被加载，将像 $(l:manufacturing/pressure_chamber)压力室/$ 这样的多方块结构跨越两个或更多区块也不是理想的。"
+    }
+  ]
+}

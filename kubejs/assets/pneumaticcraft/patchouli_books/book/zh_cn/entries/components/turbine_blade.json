@@ -1,0 +1,16 @@
+{
+  "name": "涡轮叶片",
+  "icon": "pneumaticcraft:turbine_blade",
+  "category": "pneumaticcraft:components",
+  "advancement": "pneumaticcraft:pressure_chamber",
+  "pages": [
+    {
+      "type": "text",
+      "text": "这是其他设备的制作组件。它本身没有用处。"
+    },
+    {
+      "type": "pneumaticcraft:pressure_chamber",
+      "recipe": "pneumaticcraft:pressure_chamber/turbine_blade"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "右键点击小部件",
+  "icon": "pneumaticcraft:textures/progwidgets/block_right_click_piece.png",
+  "category": "pneumaticcraft:widget_interact",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "无人机将会 $(thing)右键点击/$ 其第一个物品栏中的物品，针对其连接的 $(l:programming/area)区域/$ 小部件中的每一个方块位置。这可以用于耕地、种下种子、施加骨粉、投掷药水、部署无人机、用扳手旋转方块……可能性无穷无尽。"
+    },
+    {
+      "type": "text",
+      "text": "此小部件以两种模式之一操作，可通过程序员中的小部件 GUI 进行选择：$(li)物品模式 - 使用 $(thing)持有物品/$ 的右键逻辑，例如将 $(item)打火石和铁/$ 用于某个方块$(li)方块模式 - 激活 $(thing)方块/$ 的右键逻辑，例如翻转 $(item)拉杆/$$(p)在 $(thing)物品模式/$ 下，任何附加的过滤器适用于正在使用的 $(italic)物品/$；在 $(thing)方块模式/$ 下，过滤器适用于被激活的 $(italic)方块/$。"
+    },
+    {
+      "type": "text",
+      "text": "您可以使用此小部件放置常规方块。然而，这 $(italic)不/$ 推荐，因为当无人机在已存在方块的位置右键点击时，它将右键点击该方块，从而在此方块 $(italic)旁边/$ 放置一个新方块。$(p)因此，建议使用 $(l:programming/place)放置/$ 小部件。然而，在某些情况下（例如尝试种植 $(item)种子/$），需要使用 $(thing)右键点击方块/$ 小部件。"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/progwidgets/block_right_click_piece.png"
+      ],
+      "text": "$(italic)右键点击小部件/$"
+    }
+  ]
+}

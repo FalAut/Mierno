@@ -1,0 +1,57 @@
+{
+  "name": "基础无人机教程 #1",
+  "icon": "minecraft:knowledge_book",
+  "category": "pneumaticcraft:programming",
+  "priority": "true",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "在本教程中，我们将设置一个简单的程序，让一个 $(l:tools/drone)无人机/$ 挖掘出一个区域。在开始之前，你需要："
+    },
+    {
+      "type": "text",
+      "text": "$(li)一个 $(l:programming/programmer)程序编程器/$（当然）$(li)（如果你不在创造模式下）一个 $(item)箱子/$ 紧邻程序编程器，里面至少包含六个 $(l:programming/puzzle_pieces)拼图块/$ $(li)一个 $(item)箱子/$ 或任何其他存储，包含一个 $(item)铲子/$（任何类型）$(li)一个基本的 $(l:tools/gps_tool)GPS工具/$ $(li)一个 $(l:tools/gps_area_tool)GPS区域工具/$"
+    },
+    {
+      "type": "text",
+      "text": "打开 $(l:programming/programmer)程序编程器/$ GUI。在右侧，你会看到一个 $(thing)托盘/$，其中有 $(ttcolor)$(t:GUI中的拼图块的虚拟表示被称为编程小部件)编程小部件/$. 这里有多个页面；你可以通过托盘下方的箭头按钮进行翻页，或者按 $(thing)空格/$ 或 $(thing)Tab/$ 来扩展托盘。$(p)当托盘扩展时，托盘上方会出现一个文本框，你可以在其中输入一个 $(thing)过滤器/$ 来搜索小部件。现在输入 'start'：你会看到只有一个小部件没有 $(7)灰化/$。"
+    },
+    {
+      "type": "text",
+      "text": "现在将 $(l:programming/start)开始/$ 小部件拖到主编程区域。它会出现一个 $(4)红色边框/$，表示有问题：将鼠标悬停以查看具体内容。$(p)没错，下面没有连接的小部件——我们现在将通过创建程序来解决这个问题。$(p)找到一个 $(l:programming/inventory_import)从库存导入/$ 小部件并将其拖到 $(thing)开始/$ 小部件的正下方。"
+    },
+    {
+      "type": "text",
+      "text": "如果你放得够近，它会“卡入” $(thing)开始/$ 小部件的底部。注意连接器是如何连接的，就像拼图一样；这就是 $(thing)拼图块/$ 的名称。$(p)接下来，将一个 $(l:programming/area)区域/$ 小部件拖到 $(thing)导入/$ 小部件的右侧（$(ttcolor)$(t:其他小部件右侧的小部件充当白名单；左侧的小部件充当黑名单)而不是左侧/$），再拖一个 $(l:programming/item_filter)物品过滤器/$ 小部件，同样在 $(thing)导入/$ 小部件的右侧。再次确保它们“卡入”在一起。"
+    },
+    {
+      "type": "text",
+      "text": "你会注意到 $(thing)区域/$ 小部件也以 $(4)红色边框/$ 开始，因为尚未定义区域。拿起你的 $(item)GPS工具/$，并 $(thing)蹲下+右击/$ 之前放置的包含 $(item)铲子/$ 的 $(item)箱子/$。你会看到它高亮显示位置。$(p)现在，在程序编程器 GUI 中， $(thing)左击/$ 你的 $(item)GPS工具/$ 在 $(thing)区域/$ 小部件上：你会看到位置被复制到 $(thing)区域/$ 小部件上！"
+    },
+    {
+      "type": "text",
+      "text": "现在轮到 $(thing)物品过滤器/$： $(thing)右击/$ 它打开选项 GUI。单击 $(bold)搜索物品.../$ 按钮，并在结果搜索框中输入 '铲子'。选择你之前放入箱子的铲子类型，然后按 $(thing)Escape/$ 关闭搜索框。$(p)在 $(thing)物品过滤器/$ 窗口中，确保“物品耐久度”是 $(italic)未勾选/$ 的，这样它也会匹配部分使用过的铲子。再次按 $(thing)Escape/$：返回主 GUI。"
+    },
+    {
+      "type": "text",
+      "text": "此时，我们已经告诉无人机从箱子中拾取一个铲子；现在要让它挖掘！$(p)拖动一个 $(l:programming/dig)挖掘/$ 小部件并将其卡入 $(thing)导入/$ 小部件的底部。$(p)再拖动一个 $(thing)区域/$ 小部件并将其卡入 $(thing)挖掘/$ 小部件的右侧。"
+    },
+    {
+      "type": "text",
+      "text": "让我们定义要挖掘的区域：拿起你的 $(thing)GPS区域工具/$ 并 $(thing)右击/$ 一个方块以形成区域的一个角。$(thing)左击/$ 另一个角的方块。由于无人机将使用铲子，尽量选择泥土/沙子。$(p)确保高亮区域是 $(thing)实心立方体/$——默认应该是这样，但你可以 $(thing)左/右击/$ 工具在空中打开配置 GUI，在其中定义形状。"
+    },
+    {
+      "type": "text",
+      "text": "回到程序编程器 GUI，拿起 $(thing)GPS区域工具/$，并 $(thing)左击/$ 在 $(thing)挖掘/$ 小部件上。像之前一样，你会看到其设置被复制到区域小部件上。$(p)此时，应该没有红色高亮表示任何错误：恭喜你，你有一个有效的程序！"
+    },
+    {
+      "type": "text",
+      "text": "最后，拿一个 $(l:tools/drone)无人机/$，确保它已在 $(l:machines/charging_station)充电站/$ 中加压。将无人机项目放入程序编程器 GUI 右上角的插槽中，然后单击 $(thing)⟶ (导出)/$ 按钮（你可以在左侧的文本框中给无人机命名，如果需要）。$(p)你会听到一些声音反馈，你的无人机已被编程！"
+    },
+    {
+      "type": "text",
+      "text": "现在只需部署你的无人机： $(thing)右击/$ 在你的箱子附近的世界中，并观察它开始工作！"
+    }
+  ]
+}

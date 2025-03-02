@@ -1,0 +1,37 @@
+{
+  "name": "物流模块",
+  "icon": "pneumaticcraft:logistics_module",
+  "category": "pneumaticcraft:tubes",
+  "advancement": "pneumaticcraft:pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "该强大的模块用于将库存连接到一个 $(l:logistics/overview)物流系统/$，有效地允许通过压力管进行受控的物品和流体传输。$(p)模块指向的库存或流体罐必须配备一个 $(l:logistics/frames)物流框架/$。$(p)物流模块不支持 $(l:tubes/module_expansion_card)模块扩展卡/$。"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/patchouli/logistics_module.png"
+      ],
+      "border": "true",
+      "text": "两个物流模块连接着带有 $(l:logistics/frames#passive_provider)被动提供者/$ 和 $(l:logistics/frames#requester)请求者/$ 框架的箱子。"
+    },
+    {
+      "type": "text",
+      "text": "物流模块的网络由通过 $(l:tubes/pressure_tubes)压力管/$ 互相连接的所有模块定义；请注意，任何使用空气的机器均 $(italic)不/$ 形成网络的一部分。$(p)您可以通过模块 GUI 选择通道，或通过右键单击任何 $(item)染料/$；只有同颜色的物流模块会彼此通信，实际上为每个网络提供 16 个 $(thing)通道/$。"
+    },
+    {
+      "type": "text",
+      "text": "物流模块需要 $(l:base_concepts/pressure)压力/$；需要 3 巴压力才能让模块操作。所需的空气量是距离、运输量与一个常数的乘积。这意味着，运输整整一堆物品需要更多的空气，同时运输的距离越远所需的空气也越多。空气在 $(italic)接收/$ 物流模块处使用，因为空气是流向该模块的。"
+    },
+    {
+      "type": "text",
+      "text": "指示灯用于表示状态：$(p)$(li)$(#f00)红色/$：压力不足，至少需要 3 巴。$(li)$(#f80)橙色/$：超过 3 巴，但不足以在此距离运输物品/流体。$(li)$(#0f0)绿色/$：压力足够，待机状态。$(li)$(#00f)蓝色（脉冲）/$：物品/流体正在被运输。"
+    },
+    {
+      "type": "crafting",
+      "text": "制作物流模块",
+      "recipe": "pneumaticcraft:logistics_module"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "煤油灯",
+  "icon": "pneumaticcraft:kerosene_lamp",
+  "category": "pneumaticcraft:machines",
+  "advancement": "pneumaticcraft:refinery",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)煤油灯/$ 是一种强大的光源，运行所需的燃料显然是 $(l:manufacturing/refinery)煤油/$。它类似于您可能熟悉的远程光源，例如 $(thing)Thaumcraft 的奥术灯/$。$(p)$(italic)从技术上讲，这个灯可以运行在任何可燃燃料上，但在这种灯中，煤油的效率高于任何其他燃料，甚至比液化石油气有效。/$"
+    },
+    {
+      "type": "text",
+      "text": "$(item)煤油灯/$ 的默认范围为 10 个方块。然而，这可以在 GUI 中调整至最多 30 个方块。请注意，范围越大，灯的燃料使用量也将在平方的基础上增加。所以当您将范围加倍时，燃料使用量会乘以 4！$(p)但是，灯只使用少量燃料。使用 1000mB 煤油和默认范围为 10 个方块时，灯可以运行约 $(ttcolor)$(t:灯的效率可以在模组配置中修改：查看 'D:keroseneLampFuelEfficiency')40 分钟/$."
+    },
+    {
+      "type": "text",
+      "text": "$(item)煤油灯/$ 可以像大多数 $(pncr) 方块一样通过 $(thing)红石/$ 控制。除了常规的开/关模式外，还有一个 $(bold)插值信号/$ 模式。这个模式会（如名字所示）根据信号强度插值灯的范围。$(p)例如，假设默认最大范围为 10 个方块，当应用一个 $(#f00)红石信号/$ 为 8（满分为 15）时，灯的范围将会是 5。"
+    },
+    {
+      "type": "crafting",
+      "text": "制作煤油灯",
+      "recipe": "pneumaticcraft:kerosene_lamp"
+    }
+  ]
+}

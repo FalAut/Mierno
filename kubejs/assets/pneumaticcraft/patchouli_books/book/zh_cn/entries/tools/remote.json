@@ -1,0 +1,63 @@
+{
+  "name": "遥控器",
+  "icon": "pneumaticcraft:remote",
+  "category": "pneumaticcraft:tools",
+  "advancement": "pneumaticcraft:plastic",
+  "pages": [
+    {
+      "type": "text",
+      "text": "使用遥控器，你可以创建自己的 GUI 来通过 $(l:programming/variables#global)全局变量/$ 操作 $(l:tools/drone)无人机/$ 或 $(l:machines/universal_sensor)通用传感器/$。注意，使用 $(item)通用传感器/$ 时，你可以使用 $(item)遥控器/$ 创建无线红石！$(p)要开始创建自己的 GUI，$(thing)疾跑+右键点击/$ $(item)遥控器/$ 以打开编辑窗口。"
+    },
+    {
+      "type": "text",
+      "text": "填写窗口的方式类似于在 $(l:programming/programmer)编程器/$ 中编程；只需从右侧面板中点击并拖动小部件到左侧的主面板。$(p)要复制小部件，$(thing)中键点击/$ 并拖动现有小部件。要编辑小部件的属性，$(thing)右键点击/$ 小部件。以按钮为例，这将打开以下窗口："
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/patchouli/remote_button.png"
+      ],
+      "text": "在此窗口中，你可以配置按钮的外观和行为。"
+    },
+    {
+      "type": "text",
+      "text": "以下属性是在 $(italic)所有/$ 小部件中共有的：$(li)$(thing)文本/$ - 小部件上显示的文本$(li)$(thing)工具提示/$ - 悬停在该小部件上时显示的工具提示$(li)$(thing)启用变量/$ - 通过将小部件链接到 $(l:programming/coordinate_operator)变量/$，你可以控制小部件是否显示。通过为 X/Y/Z 字段赋值，你可以确保仅在链接的变量等于你指定的值时显示该小部件。"
+    },
+    {
+      "type": "text",
+      "title": "标签小部件",
+      "anchor": "label",
+      "text": "此小部件仅显示一些文本，带有可选的工具提示，用于信息目的。虽然标签不能 $(italic)更改/$ 变量，但可以 $(italic)显示/$ 变量，使用语法 $(thing)${#globalvarname}/$，这对于调试目的非常有用。$(p)标签小部件除了默认字段外没有其他字段。"
+    },
+    {
+      "type": "text",
+      "title": "按钮小部件",
+      "text": "按钮小部件在被按下时设置链接变量的值。$(li)$(thing)变量名称/$ - 链接的 $(l:programming/variables#global)全局变量/$。$(li)$(thing)设置值/$ - 按下按钮时分配给链接变量的 X/Y/Z 值。$(li)$(thing)宽度/高度/$ - 按钮的尺寸。"
+    },
+    {
+      "type": "text",
+      "title": "复选框小部件",
+      "text": "复选框小部件在选中时将链接变量的 X 值设置为 1，否则设置为 0。$(li)$(thing)变量名称/$ - 链接的 $(l:programming/variables#global)全局变量/$。"
+    },
+    {
+      "type": "text",
+      "title": "下拉框小部件",
+      "text": "下拉框小部件将链接变量的 X 值设置为所选元素的索引。$(li)$(thing)下拉元素/$ - 以逗号分隔的文本标签列表。$(li)$(thing)变量名称/$ - 链接的 $(l:programming/variables#global)全局变量/$。$(li)$(thing)排序/$ - 如果选中，列表中的元素将按字母顺序排序；否则，元素将按您提供的顺序出现。"
+    },
+    {
+      "type": "text",
+      "title": "示例",
+      "text": "使用编辑器 GUI 左侧的 $(thing)粘贴板/$ 按钮，导入 $(l:https://pastebin.com/4yxKG5Jc)此布局/$。$(p)这会添加三个复选框，设置全局变量 $(thing)signal1、signal2 和 signal3/$。$(p)现在放置三个 $(l:machines/universal_sensor)通用传感器/$，并给它们一些压力。在每个 $(item)传感器/$ 中放置一个 $(l:base_concepts/upgrades#dispenser)分配器升级/$。从每个 $(item)传感器/$ 运行一些红石（将它们放置在一个方块的间距，以保持红石分开）。"
+    },
+    {
+      "type": "text",
+      "title": "示例（续）",
+      "text": "在每个 $(item)传感器/$ 的 GUI 中：$(li)选择 $(thing)分配器/$ 按钮$(li)选择 $(thing)世界/$$(li)选择 $(thing)全局变量/$$(li)在 $(thing)变量名称/$ 文本字段中，依次输入 'signal1'、'signal2' 和 'signal3'。$(p)现在，$(thing)右键点击/$ 你的 $(item)遥控器/$，尝试选择/取消选择每个复选框。相应的 $(item)传感器/$ 将根据需要发出红石信号：无线红石！"
+    },
+    {
+      "type": "crafting",
+      "text": "制作遥控器",
+      "recipe": "pneumaticcraft:remote"
+    }
+  ]
+}

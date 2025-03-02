@@ -1,0 +1,22 @@
+{
+  "name": "气动发电机",
+  "icon": "pneumaticcraft:pneumatic_dynamo",
+  "category": "pneumaticcraft:machines",
+  "advancement": "pneumaticcraft:advanced_pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)气动发电机/$ 将 $(l:base_concepts/pressure)压缩空气/$ 转换为 $(thing)Forge Energy/$，该能量与 $(thing)Redstone Flux/$ 以及其他模组的能量系统兼容。默认情况下，它每tick产生40 FE，但可以通过 $(l:base_concepts/upgrades#speed)速度升级/$ 提升产出。$(item)Flux Compressor/$ 的 FE 输出速率是当前 FE 生产量的两倍；默认情况下为每tick 80 FE，但可以通过速度升级进一步提高。"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:pneumatic_dynamo",
+      "text": "影响效率的重要因素是发电机的 $(l:base_concepts/heat)温度/$。发电机需要被 $(thing)冷却/$，否则其效率将随着温度的上升而下降，直到完全不产生空气。"
+    },
+    {
+      "type": "crafting",
+      "text": "制造气动发电机",
+      "recipe": "pneumaticcraft:pneumatic_dynamo"
+    }
+  ]
+}

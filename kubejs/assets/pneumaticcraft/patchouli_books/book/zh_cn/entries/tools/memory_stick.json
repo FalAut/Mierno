@@ -1,0 +1,27 @@
+{
+  "name": "存储棒",
+  "icon": "pneumaticcraft:memory_stick",
+  "category": "pneumaticcraft:tools",
+  "advancement": "pneumaticcraft:plastic",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)存储棒/$ 是一个实用的手持设备，用于提取、存储和恢复玩家经验等级：$(li)$(thing)右键点击/$: 将一等级经验从自己转移到存储棒$(li)$(thing)蹲下 + 右键点击/$: 将一等级经验从存储棒转移到自己$(li)$(thing)左键点击/$: 切换经验自动吸收功能，所有收集到的经验球将自动被存储棒吸收"
+    },
+    {
+      "type": "text",
+      "text": "存储棒中的经验也可以作为 $(l:base_concepts/memory_essence)记忆精华/$ 流体提取。为此，只需 $(thing)右键点击/$ 任何 $(l:machines/tanks)流体罐/$，将经验转移到罐中或从罐中转移（其他模组的流体罐也可以正常使用）。右键点击空罐会尝试将记忆精华从存储棒转移到罐；右键点击已包含记忆精华的罐会尝试将罐中的记忆精华转移到存储棒。"
+    },
+    {
+      "type": "text",
+      "title": "Curios",
+      "flag": "mod:curios",
+      "text": "安装 $(thing)Curios/$ 模组后，你可以将存储棒存放在任何 Curios 插槽中，以节省背包空间。这在开启经验自动吸收功能时特别有用。"
+    },
+    {
+      "type": "crafting",
+      "text": "制作存储棒",
+      "recipe": "pneumaticcraft:memory_stick"
+    }
+  ]
+}

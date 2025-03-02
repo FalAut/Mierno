@@ -1,0 +1,23 @@
+{
+  "name": "液体导入小部件",
+  "icon": "pneumaticcraft:textures/progwidgets/liquid_import_piece.png",
+  "category": "pneumaticcraft:widget_interact",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(thing)液体导入小部件/$ 将使 $(l:tools/drone)无人机/$ 移动到指定 $(l:programming/area)区域/$ 内的最近水桶，提取该水桶中的液体并将其放入自身的水桶中。$(p)它还可以从世界中的液体方块中吸取液体，使得 $(item)无人机/$ 像一个便携泵一样工作。"
+    },
+    {
+      "type": "text",
+      "text": "$(thing)右击/$ 小部件以打开设置 GUI，您可以在此指定无人机应从哪些侧面提取液体，以及每次操作的最大导入液体量（以毫升为单位）。$(p)您可以 $(ttcolor)$(t:右侧连接以列入白名单，左侧连接以列入黑名单)连接/$ 一个 $(l:programming/liquid_filter)液体过滤器/$ 以限制无人机可以导入的内容。$(p)当 $(item)无人机/$ 的水桶满了或在水桶中找不到更多（适用的）液体时，此小部件将完成。"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/progwidgets/liquid_import_piece.png"
+      ],
+      "text": "$(italic)抽吸/$"
+    }
+  ]
+}

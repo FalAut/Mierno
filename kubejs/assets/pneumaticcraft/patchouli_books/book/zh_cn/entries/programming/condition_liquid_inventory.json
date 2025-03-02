@@ -1,0 +1,19 @@
+{
+  "name": "条件：液体小部件",
+  "icon": "pneumaticcraft:textures/progwidgets/condition_liquid_inventory_piece.png",
+  "category": "pneumaticcraft:widget_cond",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "这是一个 $(l:programming/conditions)条件/$ 小部件。$(p)$(thing)条件：液体/$ 小部件允许您（远程）检查连接的 $(l:programming/area)区域/$ 小部件中的储罐或液体方块，查看是否有特定数量的液体。它仅计算由连接的 $(l:programming/liquid_filter)液体过滤器/$ 小部件允许的液体（省略过滤器以允许所有液体）。"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/progwidgets/condition_liquid_inventory_piece.png"
+      ],
+      "text": "$(italic)条件：液体小部件/$"
+    }
+  ]
+}

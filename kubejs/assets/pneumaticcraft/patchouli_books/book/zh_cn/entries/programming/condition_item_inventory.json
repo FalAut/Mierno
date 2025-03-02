@@ -1,0 +1,19 @@
+{
+  "name": "条件：物品小部件",
+  "icon": "pneumaticcraft:textures/progwidgets/condition_item_inventory_piece.png",
+  "category": "pneumaticcraft:widget_cond",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "这是一个 $(l:programming/conditions)条件/$ 小部件。$(p)$(thing)条件：物品/$ 小部件检查库存中的特定数量的物品。它将计算所有匹配的物品（通过连接的 $(l:programming/item_filter)物品过滤器/$ 指定；省略过滤器以计算每个物品）。"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/progwidgets/condition_item_inventory_piece.png"
+      ],
+      "text": "$(italic)条件：物品小部件/$"
+    }
+  ]
+}

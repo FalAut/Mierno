@@ -1,0 +1,21 @@
+{
+  "name": "加固空气罐",
+  "icon": "pneumaticcraft:reinforced_air_canister",
+  "category": "pneumaticcraft:components",
+  "advancement": "pneumaticcraft:advanced_pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "就像它的小兄弟$(l:components/air_canister)空气罐/$ 一样，$(thing)加固空气罐/$ 可以容纳空气，并且可以在 $(l:machines/charging_station)充能站/$ 中充电和放电。但是，它的体积增加了6000mL，可以充电至20bar（它不会爆炸）。"
+    },
+    {
+      "type": "text",
+      "text": "$(thing)加固空气罐/$的一个有趣用途是作为散装空气储存设备，与宝箱和$(l:tubes/pressure_tubes)压力管/$和$(l:tubes/charging_module)充电模块等物品栏结合使用/$.使用 $(l:machines/aerial_interface)空中接口/$ 和（原版）$(thing)末影箱时，这会变得更加有趣/$..."
+    },
+    {
+      "type": "crafting",
+      "text": "制作加固空气罐",
+      "recipe": "pneumaticcraft:reinforced_air_canister"
+    }
+  ]
+}

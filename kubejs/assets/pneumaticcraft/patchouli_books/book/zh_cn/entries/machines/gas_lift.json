@@ -1,0 +1,30 @@
+{
+  "name": "气体提升装置",
+  "icon": "pneumaticcraft:gas_lift",
+  "category": "pneumaticcraft:machines",
+  "advancement": "pneumaticcraft:pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)气体提升装置/$ 本质上是一种泵。它利用 $(l:base_concepts/pressure)压力/$ 来降低液体的密度，从而将其向上推动。$(p)在加压时，它会向下挤出 $(l:components/drill_pipe)钻探管/$（您必须提供），直到它碰到任何液体方块，此时它会进行抽取。这使其非常适合 $(l:base_concepts/oil)石油/$ 的提取，因为石油可能埋藏得很深。"
+    },
+    {
+      "type": "text",
+      "text": "任何障碍物都会被无损地打破。打破方块会消耗空气；对于像泥土或沙子这样的软方块，这是一种非常小的消耗，但对于像黑曜石这样的硬方块，则需要消耗更多的空气。$(p)抽取液体所需的最小压力与它所抽取的深度成线性关系，即当前挤出的 $(item)钻探管/$ 的数量，最大为 4.9 巴。"
+    },
+    {
+      "type": "text",
+      "title": "模式选项卡",
+      "text": "气体提升装置可以切换到三种模式：$(li)$(#00f)泵送并允许空罐/$ 挤出钻探管，遇到液体时进行抽取。$(li)$(#00f)泵送并在过滤器中保留液体/$ 与上述相同，但始终在罐内保持 1000mB 的液体。这样可以在提取特定液体时保证不抽取其他液体。"
+    },
+    {
+      "type": "text",
+      "text": "$(li)$(#00f)回缩钻探管/$ 将使 $(thing)气体提升装置/$ 停止抽取，并将其挤出的任何钻探管收回到其库存中。"
+    },
+    {
+      "type": "crafting",
+      "text": "制作气体提升装置",
+      "recipe": "pneumaticcraft:gas_lift"
+    }
+  ]
+}

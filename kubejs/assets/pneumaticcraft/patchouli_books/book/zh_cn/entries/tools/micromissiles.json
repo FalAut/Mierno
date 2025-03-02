@@ -1,0 +1,43 @@
+{
+  "name": "微型导弹",
+  "icon": "pneumaticcraft:micromissiles",
+  "category": "pneumaticcraft:tools",
+  "advancement": "pneumaticcraft:printed_circuit_board",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)微型导弹/$ 是一种小型手发射导弹，具有爆炸弹药和智能目标锁定功能。要发射 $(item)微型导弹/$，只需 $(thing)右键点击/$ 导弹发射器。每个发射器默认配备 100 枚导弹。$(p)微型导弹在 24 格球形半径内寻找目标，以导弹为中心。一旦找到合适的目标，导弹将朝该目标转向。"
+    },
+    {
+      "type": "entity",
+      "entity": "pneumaticcraft:micromissile",
+      "offset": "-0.3",
+      "text": "$(italic)小巧但致命/$"
+    },
+    {
+      "type": "text",
+      "text": "$(item)微型导弹/$ 永远不会锁定发射导弹的玩家或任何属于该玩家的实体（宠物、无人机...）。但要小心附近爆炸造成的附带伤害：不推荐在近战中使用！$(p)$(item)微型导弹/$ 可以针对生物实体、矿车和船只，但不会锁定物品实体或其他非生物实体，比如画作。"
+    },
+    {
+      "type": "text",
+      "text": "如果 $(item)微型导弹/$ 击中任何实体或方块，它将立即爆炸。爆炸不会对地形造成伤害 $(ttcolor)$(t:查看模组配置中的 'B:damageTerrain')默认情况下/$。$(p)$(item)微型导弹/$ 有一个有限的生命周期，默认为 300 个滴答（15 秒） $(ttcolor)$(t:查看模组配置中的 'I:missileLifetime')。之后，导弹将耗尽燃料从天而降，但它仍然会在击中地面时爆炸。"
+    },
+    {
+      "type": "text",
+      "text": "如果你在发射时直接对准合适的实体，发射的 $(item)微型导弹/$ 将立即锁定该实体，而不管其他任何更靠近的目标。$(p)如果你 $(thing)蹲下+右键点击/$ 发射器，将打开一个界面，允许配置几个导弹属性：$(li)选择三角形可以让你在最高速度、转向速率和爆炸威力之间进行平衡。"
+    },
+    {
+      "type": "text",
+      "text": "$(li)你可以选择 $(thing)智能/$ 和 $(thing)愚蠢/$ 模式：在 $(thing)智能/$ 模式下，导弹会锁定目标，如上所述，而在 $(thing)愚蠢/$ 模式下，导弹将简单地沿直线飞行直到击中某物，但具有良好的速度和伤害能力。$(li)你可以通过在 $(bold)实体过滤器/$ 字段中输入一个 $(l:base_concepts/entity_filter)实体过滤器/$ 来过滤攻击的实体。"
+    },
+    {
+      "type": "text",
+      "text": "$(li)$(bold)保存为默认/$ 按钮会将当前设置保存，并用于所有新制作的导弹发射器。注意：设置是在服务器端保存的。"
+    },
+    {
+      "type": "crafting",
+      "recipe": "pneumaticcraft:micromissiles",
+      "text": "制作微型导弹"
+    }
+  ]
+}

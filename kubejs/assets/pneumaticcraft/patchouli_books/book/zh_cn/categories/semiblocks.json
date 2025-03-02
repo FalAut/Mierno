@@ -1,0 +1,6 @@
+{
+  "name": "半块/小工具",
+  "description": "$(thing)半块/$是奇怪的物品，它们不完全是方块，但可以像方块一样放置，并且可以与真正的方块存在于相同的空间中。$(p)另见 $(l:logistics/frames)物流框架/$在技术上也是半方块。",
+  "icon": "pneumaticcraft:transfer_gadget",
+  "sortnum": 7
+}

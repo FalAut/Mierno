@@ -1,0 +1,32 @@
+{
+  "name": "智能箱",
+  "icon": "pneumaticcraft:smart_chest",
+  "category": "pneumaticcraft:machines",
+  "advancement": "pneumaticcraft:printed_circuit_board",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)智能箱/$是一个具有72个槽位的箱子，它与其小弟 $(l:machines/reinforced_chest)强化箱/$ 一样，具备超凡的耐爆炸性，并在破坏后保留其物品栏。不过，它还有其他一些非常强大的功能……"
+    },
+    {
+      "type": "text",
+      "title": "槽位过滤",
+      "text": "$(li)如果您 $(thing)按住Alt并左击/$ 一个已放置物品的槽位，智能箱将开始过滤该槽位，仅接受该物品。$(li)您可以 $(thing)按住Alt并左击/$ 一个被过滤的槽位来移除过滤。$(li)如果您 $(thing)按住Alt并左击/$ 一个空槽位，该槽位及其后续槽位将被关闭，有效减少库存大小。$(li)如果您 $(thing)按住Alt并左击/$ 第一个关闭的槽位，所有关闭的槽位将重新开启。"
+    },
+    {
+      "type": "text",
+      "title": "推送物品",
+      "text": "智能箱的每一面可以单独配置为推送物品、拉取物品或不执行任何操作（默认）。要配置面，打开 $(thing)侧面配置/$ GUI 标签。$(p)配置为推送物品的面将尝试将物品从智能箱发送到该面相邻的物品栏。安装 $(item)发射器升级/$ 后，如果没有相邻物品栏，箱子将把物品弹出到世界中。"
+    },
+    {
+      "type": "text",
+      "title": "拉取物品",
+      "text": "配置为拉取物品的面将尝试从该面相邻的物品栏拉取物品。$(p)如果您安装 $(l:base_concepts/upgrades#magnet)磁铁升级/$，箱子可以吸收附近地面的物品。此功能仅在已配置为拉取物品的面上有效；默认的拾取范围是与该面相邻的3x3x3立方体，可以通过 $(l:base_concepts/upgrades#range)范围升级/$ 增加。"
+    },
+    {
+      "type": "crafting",
+      "text": "制作智能箱",
+      "recipe": "pneumaticcraft:smart_chest"
+    }
+  ]
+}

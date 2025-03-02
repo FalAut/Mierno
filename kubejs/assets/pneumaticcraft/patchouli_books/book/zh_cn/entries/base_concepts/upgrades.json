@@ -1,0 +1,230 @@
+{
+    "name": "升级",
+    "icon": "pneumaticcraft:volume_upgrade",
+    "category": "pneumaticcraft:base_concepts",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$(thing)升级/$ 是可制作的物品，可以插入到机器和某些工具中，以某种方式增强其功能。要向工具添加升级，您需要一个 $(l:machines/charging_station)充电站/$。$(p)每个升级的具体效果因设备而异；可以在机器的 GUI 中查看，或者（对于物品）在充电站的升级 GUI 中查看。"
+        },
+        {
+            "type": "crafting",
+            "anchor": "volume",
+            "recipe": "pneumaticcraft:volume_upgrade",
+            "text": "制作体积升级"
+        },
+        {
+            "type": "crafting",
+            "anchor": "dispenser",
+            "recipe": "pneumaticcraft:dispenser_upgrade",
+            "text": "制作投放器升级"
+        },
+        {
+            "type": "crafting",
+            "anchor": "inventory",
+            "recipe": "pneumaticcraft:inventory_upgrade",
+            "text": "制作库存升级"
+        },
+        {
+            "type": "crafting",
+            "anchor": "item_life",
+            "recipe": "pneumaticcraft:item_life_upgrade",
+            "text": "制作物品寿命升级"
+        },
+        {
+            "type": "crafting",
+            "anchor": "entity_tracker",
+            "recipe": "pneumaticcraft:entity_tracker_upgrade",
+            "text": "制作实体追踪器升级"
+        },
+        {
+            "type": "crafting",
+            "anchor": "block_tracker",
+            "recipe": "pneumaticcraft:block_tracker_upgrade",
+            "text": "制作方块追踪器升级"
+        },
+        {
+            "type": "crafting",
+            "anchor": "speed",
+            "recipe": "pneumaticcraft:speed_upgrade",
+            "text": "制作速度升级$(p)$(bold)提示：/$ 您还可以使用 $(l:machines/liquid_hopper)液体漏斗/$（或其他模组的储罐）和 $(l:components/lubricant)润滑剂/$ 一次制作多个升级！"
+        },
+        {
+            "type": "crafting",
+            "anchor": "speed2",
+            "recipe": "pneumaticcraft:speed_upgrade_from_glycerol",
+            "text": "从 $(l:renewables/glycerol)甘油/$ 制作速度升级"
+        },
+        {
+            "type": "crafting",
+            "anchor": "search",
+            "recipe": "pneumaticcraft:search_upgrade",
+            "text": "制作搜索升级"
+        },
+        {
+            "type": "crafting",
+            "anchor": "coordinate_tracker",
+            "recipe": "pneumaticcraft:coordinate_tracker_upgrade",
+            "text": "制作坐标追踪器升级"
+        },
+        {
+            "type": "crafting",
+            "anchor": "range",
+            "recipe": "pneumaticcraft:range_upgrade",
+            "text": "制作范围升级"
+        },
+        {
+            "type": "crafting",
+            "anchor": "security",
+            "recipe": "pneumaticcraft:security_upgrade",
+            "text": "制作安全升级"
+        },
+        {
+            "type": "crafting",
+            "anchor": "magnet",
+            "recipe": "pneumaticcraft:magnet_upgrade",
+            "text": "制作磁铁升级"
+        },
+        {
+            "type": "crafting",
+            "anchor": "thaumcraft",
+            "flag": "mod:thaumcraft",
+            "recipe": "pneumaticcraft:thaumcraft_upgrade",
+            "text": "制作魔法工艺升级"
+        },
+        {
+            "type": "crafting",
+            "anchor": "charging",
+            "recipe": "pneumaticcraft:charging_upgrade",
+            "text": "制作充电升级"
+        },
+        {
+            "type": "crafting",
+            "anchor": "armor",
+            "recipe": "pneumaticcraft:armor_upgrade",
+            "text": "制作护甲升级"
+        },
+        {
+            "type": "crafting",
+            "anchor": "jet_boots_1",
+            "recipe": "pneumaticcraft:jet_boots_upgrade_1",
+            "text": "制作喷气靴升级：一级"
+        },
+        {
+            "type": "crafting",
+            "anchor": "jet_boots_2",
+            "recipe": "pneumaticcraft:jet_boots_upgrade_2",
+            "text": "制作喷气靴升级：二级"
+        },
+        {
+            "type": "crafting",
+            "anchor": "jet_boots_3",
+            "recipe": "pneumaticcraft:jet_boots_upgrade_3",
+            "text": "制作喷气靴升级：三级"
+        },
+        {
+            "type": "crafting",
+            "anchor": "jet_boots_4",
+            "recipe": "pneumaticcraft:jet_boots_upgrade_4",
+            "text": "制作喷气靴升级：四级"
+        },
+        {
+            "type": "crafting",
+            "anchor": "jet_boots_5",
+            "recipe": "pneumaticcraft:jet_boots_upgrade_5",
+            "text": "制作喷气靴升级：五级"
+        },
+        {
+            "type": "crafting",
+            "anchor": "jumping_1",
+            "recipe": "pneumaticcraft:jumping_upgrade_1",
+            "text": "制作跳跃升级：一级"
+        },
+        {
+            "type": "crafting",
+            "anchor": "jumping_2",
+            "recipe": "pneumaticcraft:jumping_upgrade_2",
+            "text": "制作跳跃升级：二级"
+        },
+        {
+            "type": "crafting",
+            "anchor": "jumping_3",
+            "recipe": "pneumaticcraft:jumping_upgrade_3",
+            "text": "制作跳跃升级：三级"
+        },
+        {
+            "type": "crafting",
+            "anchor": "jumping_4",
+            "recipe": "pneumaticcraft:jumping_upgrade_4",
+            "text": "制作跳跃升级：四级"
+        },
+        {
+            "type": "crafting",
+            "anchor": "night_vision",
+            "recipe": "pneumaticcraft:night_vision_upgrade",
+            "text": "制作夜视升级"
+        },
+        {
+            "type": "crafting",
+            "anchor": "scuba",
+            "recipe": "pneumaticcraft:scuba_upgrade",
+            "text": "制作水肺升级"
+        },
+        {
+            "type": "crafting",
+            "anchor": "flippers",
+            "recipe": "pneumaticcraft:flippers_upgrade",
+            "text": "制作鳍升级"
+        },
+        {
+            "type": "crafting",
+            "anchor": "standby",
+            "recipe": "pneumaticcraft:standby_upgrade",
+            "text": "制作待机升级"
+        },
+        {
+            "type": "crafting",
+            "anchor": "minigun",
+            "recipe": "pneumaticcraft:minigun_upgrade",
+            "text": "制作迷你枪升级"
+        },
+        {
+            "type": "crafting",
+            "flag": "mod:toughasnails",
+            "anchor": "air_conditioning",
+            "recipe": "pneumaticcraft:air_conditioning_upgrade",
+            "text": "制作空调升级"
+        },
+        {
+            "type": "crafting",
+            "flag": "mod:mekanism",
+            "anchor": "radiation_shielding",
+            "recipe": "pneumaticcraft:radiation_shielding_upgrade",
+            "text": "制作辐射防护升级"
+        },
+        {
+            "type": "crafting",
+            "anchor": "gilded",
+            "recipe": "pneumaticcraft:gilded_upgrade",
+            "text": "制作镀金升级"
+        },
+        {
+            "type": "crafting",
+            "anchor": "ender_visor",
+            "recipe": "pneumaticcraft:ender_visor_upgrade",
+            "text": "制作末影护目镜升级"
+        },
+        {
+            "type": "crafting",
+            "anchor": "stomp",
+            "recipe": "pneumaticcraft:stomp_upgrade",
+            "text": "制作踩踏升级"
+        },
+        {
+            "type": "crafting",
+            "anchor": "chunkloader",
+            "recipe": "pneumaticcraft:chunkloader_upgrade",
+            "text": "制作区块加载器升级"
+        }
+    ]
+}

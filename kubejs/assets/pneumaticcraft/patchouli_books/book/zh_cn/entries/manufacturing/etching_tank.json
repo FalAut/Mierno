@@ -1,0 +1,27 @@
+{
+  "name": "刻蚀槽",
+  "icon": "pneumaticcraft:etching_tank",
+  "category": "pneumaticcraft:manufacturing",
+  "advancement": "pneumaticcraft:etchacid_bucket",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(thing)刻蚀槽/$ 首先需要填充 $(l:manufacturing/etching_acid)刻蚀酸/$。然后插入最多 25 个已经在 $(l:manufacturing/uv_light_box)紫外线光箱/$ 中部分或完全曝光的 $(thing)空印刷电路板/$。$(p)虽然可以直接将刻蚀酸倒入世界中并把印刷电路板扔进池中，但使用刻蚀槽会更安全、更快速。"
+    },
+    {
+      "type": "text",
+      "title": "自动化",
+      "text": "您可以从任何一侧管道输入 $(thing)空印刷电路板/$。成功刻蚀的 $(thing)未组装印刷电路板/$ 会移动到右上方的输出槽，而 $(thing)失败的印刷电路板/$ 则进入右下方槽。要实现自动提取，可以从机器的侧面抽取未组装的印刷电路板，或从顶部或底部抽取失败的印刷电路板。您可以通过将失败的印刷电路板管道送入 $(thing)高炉/$ 来获取未曝光的空印刷电路板并重新开始这个过程。"
+    },
+    {
+      "type": "text",
+      "title": "加热",
+      "text": "没有 $(l:base_concepts/heat)热量/$ 时，刻蚀槽需要 150 秒才能完全刻蚀一个印刷电路板（当然它可以并行刻蚀最多 25 个）。如果您给槽体施加热量，可以进一步减少处理时间，最短可达 30 秒；槽体越热，处理时间越快。必须注意的是，升热过程中，刻蚀时会消耗少量刻蚀酸。"
+    },
+    {
+      "type": "crafting",
+      "text": "制作刻蚀槽",
+      "recipe": "pneumaticcraft:etching_tank"
+    }
+  ]
+}

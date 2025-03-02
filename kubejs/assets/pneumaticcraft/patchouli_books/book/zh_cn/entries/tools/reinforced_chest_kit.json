@@ -1,0 +1,17 @@
+{
+  "name": "强化胸升级套件",
+  "icon": "pneumaticcraft:reinforced_chest_kit",
+  "category": "pneumaticcraft:tools",
+  "advancement": "pneumaticcraft:root",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)强化胸升级套件/$ 方便你将任何木箱升级为 $(l:machines/reinforced_chest)强化箱/$，同时保持箱内的物品。只需 $(thing)疾跑-右键点击/$ 升级套件以对任何木箱进行升级。$(p)注意：你将获得你使用升级套件的 $(item)木箱/$ 作为物品掉落。"
+    },
+    {
+      "type": "crafting",
+      "text": "制作强化胸升级套件。$(p)注意：强化箱必须完全为空。  ",
+      "recipe": "pneumaticcraft:reinforced_chest_kit"
+    }
+  ]
+}

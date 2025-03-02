@@ -1,0 +1,22 @@
+{
+  "name": "涡旋炮",
+  "icon": "pneumaticcraft:vortex_cannon[pneumaticcraft:air=30000]",
+  "category": "pneumaticcraft:tools",
+  "advancement": "pneumaticcraft:pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)涡旋炮/$ 是一种武器，发射 $(thing)涡流/$：空气以一种不太摩擦且基本稳定的方式旋转。$(p)您可以用它对目标发射气流：赶走敌人、推动动物、连根拔起植物和树叶，或者剪切实体。"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:vortex_cannon",
+      "text": "涡旋炮的压力越高，对目标的影响越大，射程也越远。$(p)请注意，被发射的涡流包围是可能的，这可以非常有利于快速运输。但请小心：它不提供摔落伤害保护！"
+    },
+    {
+      "type": "crafting",
+      "text": "制作涡旋炮",
+      "recipe": "pneumaticcraft:vortex_cannon"
+    }
+  ]
+}

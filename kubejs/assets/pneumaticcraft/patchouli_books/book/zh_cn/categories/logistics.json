@@ -1,0 +1,6 @@
+{
+  "name": "物流",
+  "description": "物流系统是移动物品和液体并保持库存和油箱库存的强大方式。",
+  "icon": "pneumaticcraft:logistics_drone[pneumaticcraft:air=120000]",
+  "sortnum": 8
+}

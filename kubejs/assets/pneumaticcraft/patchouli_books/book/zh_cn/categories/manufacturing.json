@@ -1,0 +1,6 @@
+{
+  "name": "制造",
+  "description": "用于生产组件以制造其他 $(pncr) 机器和工具的机器和系统.",
+  "icon": "pneumaticcraft:assembly_controller",
+  "sortnum": 3
+}

@@ -1,0 +1,72 @@
+{
+  "name": "迷你枪弹药",
+  "icon": "pneumaticcraft:gun_ammo",
+  "category": "pneumaticcraft:tools",
+  "advancement": "pneumaticcraft:minigun",
+  "pages": [
+    {
+      "type": "text",
+      "text": "枪械弹药由 $(l:tools/minigun)迷你枪/$ 使用。$(p)每个弹药卡匣最多可容纳 2000 发迷你枪子弹，具体取决于弹药类型。在 $(item)迷你枪/$ 射击时，弹药会不断消耗，弹药的剩余量可以在弹药物品的工具提示中查看、其耐久条中查看，和（当迷你枪装备时）在 HUD 上查看，HUD 位于屏幕中央的瞄准器旁边。"
+    },
+    {
+      "type": "text",
+      "anchor": "magazine",
+      "text": "弹药必须插入 $(item)迷你枪/$ 的弹匣才能使用；它不会从玩家的库存中消耗。$(thing)潜行+右键/$ 点击 $(item)迷你枪/$ 以加载弹药。$(p)弹药将按顺序从编号槽 1-4 中消费，但您可以 $(thing)中键点击/$ 一个槽来锁定它，这样 $(item)迷你枪/$ 只会从该槽中消耗弹药；如果您加载了多种弹药类型，这非常有用。$(thing)中键点击/$ 一个已锁定的槽可以将其解锁。"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:gun_ammo",
+      "text": "普通 $(item)枪械弹药/$ 本身没有特殊功能，但它的卡匣容量很大，有 2000 发弹药。$(p)此外，它是唯一可以与 $(l:tools/minigun_ammo#potions)药水/$ 合成以获得其效果的弹药类型。"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:gun_ammo_incendiary",
+      "text": "$(item)燃烧型迷你枪弹药/$ 的卡匣容量为 1000，能够点燃它击中的实体。$(p)它也有一定几率点燃方块，因此请小心！"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:gun_ammo_weighted",
+      "text": "$(item)加重型迷你枪弹药/$ 的卡匣容量为 500，造成非常高的伤害，但由于其重量，其射程仅为普通弹药的 20%。"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:gun_ammo_ap",
+      "text": "$(item)穿甲型迷你枪弹药/$ 的卡匣容量为 500，制作成本相对较高，但其造成的伤害略高于普通弹药，并且能够穿透目标的盔甲。"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:gun_ammo_explosive",
+      "text": "$(item)爆炸型迷你枪弹药/$ 的卡匣容量为 250。它在击中时有机会生成小而高效的爆炸；注意，这个爆炸也可能会伤害到您。默认情况下，爆炸不会对地形造成伤害 $(ttcolor)$(t:查看配置中的 'B:explosiveAmmoTerrainDamage')。"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:gun_ammo_freezing",
+      "text": "$(item)冰冻型迷你枪弹药/$ 的卡匣容量为 1000。它会减慢被击中目标的速度，并有机会将其包裹在一个有害的冰冻云中；请注意，这个云也可能会伤害您。$(p)它对抗耐火目标时会造成额外伤害，因此在 $(#800)下界/$ 进行战斗时是一个绝佳选择。"
+    },
+    {
+      "type": "text",
+      "title": "药水尖端弹药",
+      "anchor": "potions",
+      "text": "您可以用任何 $(item)药水/$ 合成普通的迷你枪弹药，此时该弹药将不再造成物理伤害，而是有机会将药水效果应用于目标。$(p)$(thing)飞溅/$ 和 $(thing)持续/$ 药水也可以使用；它们具有预期的范围效果，但当弹药被喷洒型药水添加时，消耗速度将是正常的 3 倍，而当被持续型药水添加时，消耗速度将是正常的 6 倍！"
+    },
+    {
+      "type": "crafting",
+      "recipe": "pneumaticcraft:gun_ammo",
+      "recipe2": "pneumaticcraft:gun_ammo_incendiary"
+    },
+    {
+      "type": "crafting",
+      "recipe": "pneumaticcraft:gun_ammo_weighted",
+      "recipe2": "pneumaticcraft:gun_ammo_ap"
+    },
+    {
+      "type": "crafting",
+      "recipe": "pneumaticcraft:gun_ammo_explosive",
+      "recipe2": "pneumaticcraft:gun_ammo_freezing"
+    },
+    {
+      "type": "crafting",
+      "recipe": "pneumaticcraft:gun_ammo_potion_crafting"
+    }
+  ]
+}

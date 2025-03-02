@@ -1,0 +1,34 @@
+{
+  "name": "巡逻炮台",
+  "icon": "pneumaticcraft:sentry_turret",
+  "category": "pneumaticcraft:machines",
+  "advancement": "pneumaticcraft:plastic",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(thing)巡逻炮台/$ 是一种自主防御武器。它使用集成的 $(l:tools/minigun)迷你枪/$ 和 $(l:tools/minigun_ammo)枪弹/$（您必须自行提供）来射击范围内的实体。默认情况下，它的射程为16个方块，但可以通过 $(l:base_concepts/upgrades#range)射程升级/$ 升级到最大32个方块。$(p)您不需要为巡逻炮台提供 $(l:base_concepts/pressure)压力/$，但您需要提供 $(l:tools/minigun_ammo)弹药/$。"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:sentry_turret",
+      "text": "可以通过在炮台的GUI中输入 $(l:base_concepts/entity_filter)实体过滤器/$ 来过滤巡逻炮台的潜在目标；您可以按住 $(thing)F1/$ 查看弹出式过滤器帮助页面。$(p)新放置的炮台默认过滤器为 $(thing)@mob/$，但是没有过滤器的炮台不会攻击放置它的玩家。"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:security_station",
+      "text": "当 $(thing)巡逻炮台/$ 被一个或多个 $(l:machines/security_station)安全站/$ 覆盖时，它将永远不会攻击在 $(italic)所有/$ 安全站的受信任列表上的玩家，无论实体过滤器如何设置。"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/patchouli/sentry_turret.png"
+      ],
+      "border": "true"
+    },
+    {
+      "type": "crafting",
+      "text": "制作巡逻炮台",
+      "recipe": "pneumaticcraft:sentry_turret"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "通量压缩机",
+  "icon": "pneumaticcraft:flux_compressor",
+  "category": "pneumaticcraft:compressors",
+  "advancement": "pneumaticcraft:advanced_pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)通量压缩机/$将$(thing)Forge能量/$(与 $(thing)红石通量/$ 和其他各种Mod的能源系统兼容）转化为$(l:base_concepts/pressure)压缩空气/$.它消耗40FE/tick的基础值，但可以用$(l:base_concepts/upgrades#speed)速度升级/$进行升级。$(p)通量压缩机的容量为100,000FE，接受FE的速度是其使用速率的两倍。"
+    },
+    {
+      "type": "crafting",
+      "text": "制作$(item)通量压缩机/$$(p)该发生器必须$(l:base_concepts/heat)冷却/$, 因为其效率会随着温度的升高而下降，直到完全不产生空气。",
+      "recipe": "pneumaticcraft:flux_compressor"
+    }
+  ]
+}

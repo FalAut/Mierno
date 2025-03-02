@@ -1,0 +1,23 @@
+{
+  "name": "条件：坐标小部件",
+  "icon": "pneumaticcraft:textures/progwidgets/condition_coordinate_piece.png",
+  "category": "pneumaticcraft:widget_cond",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "这是一个 $(l:programming/conditions)条件/$ 小部件。$(p)$(thing)条件：坐标/$ 小部件比较两个 $(l:programming/coordinate)坐标/$。可以对这些坐标进行不同的测试，尤其是针对坐标的每个轴 (X/Y/Z)。您可以检查两个坐标的某一个轴是否匹配，或者两个或三个轴是否匹配。"
+    },
+    {
+      "type": "text",
+      "text": "正在比较的轴由小部件 GUI 中的复选框定义。类似地，使用的条件（'='、'>='）由 GUI 中的单选按钮定义。$(p)您的坐标比较在 GUI 中也会以文本形式显示（例如 $(thing)x1 <= x2 和 z1 <= z2/$）。"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/progwidgets/condition_coordinate_piece.png"
+      ],
+      "text": "$(italic)条件：坐标小部件/$"
+    }
+  ]
+}

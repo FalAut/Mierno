@@ -1,0 +1,29 @@
+{
+  "name": "实体导入小部件",
+  "icon": "pneumaticcraft:textures/progwidgets/entity_import_piece.png",
+  "category": "pneumaticcraft:widget_interact",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(l:tools/drone)无人机/$ 将前往指定 $(l:programming/area)区域/$ 中距离最近的符合连接的 $(l:programming/text)文本/$ 小部件的（可选）$(l:base_concepts/entity_filter)实体过滤器/$ 的实体，并将其拾取以进行运输。$(p)这包括玩家，尽管玩家可以通过 $(thing)sneaking/$ 来轻松脱离 $(item)无人机/$ 的控制。尽管如此，被一个你可以控制的飞行实体携带起来还是有其好处的..."
+    },
+    {
+      "type": "text",
+      "title": "经验球",
+      "text": "无人机还能够使用此小部件导入 $(thing)经验球/$；$(item)@orb/$ 实体过滤器将匹配经验球。导入的经验球会转换为 $(l:base_concepts/memory_essence)记忆精华/$ 并存储在无人机的内部箱子中；然后您可以使用 $(l:programming/liquid_export)液体导出/$ 小部件将其转移到液体储罐."
+    },
+    {
+      "type": "text",
+      "title": "区域限制",
+      "text": "请注意，连接到此小部件的任何 $(l:programming/area)区域/$ 小部件必须具有 $(thing)Box/$ 区域类型；这是唯一支持的形状。不过，通过使用区域的白名单/黑名单功能，可以创建不同的形状."
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/progwidgets/entity_import_piece.png"
+      ],
+      "text": "$(italic)外星绑架/$"
+    }
+  ]
+}

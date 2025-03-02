@@ -1,0 +1,16 @@
+{
+  "name": "升级矩阵",
+  "icon": "pneumaticcraft:upgrade_matrix",
+  "category": "pneumaticcraft:components",
+  "advancement": "pneumaticcraft:tp_plant",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)升级矩阵/$ 可以代替$(item)青金石/$来制作任何$(l:base_concepts/upgrades)升级/$。使用升级矩阵的好处是大大减少了青金石的使用量，如果您的青金石数量有限且需要制作许多升级，这可能是一个福音。"
+    },
+    {
+      "type": "pneumaticcraft:thermo_plant",
+      "recipe": "pneumaticcraft:thermo_plant/upgrade_matrix"
+    }
+  ]
+}

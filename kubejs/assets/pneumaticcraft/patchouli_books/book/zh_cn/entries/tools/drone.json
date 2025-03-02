@@ -1,0 +1,47 @@
+{
+  "name": "无人机",
+  "icon": "pneumaticcraft:drone[pneumaticcraft:air=120000]",
+  "category": "pneumaticcraft:tools",
+  "advancement": "pneumaticcraft:printed_circuit_board",
+  "pages": [
+    {
+      "type": "text",
+      "text": "无人机是强大的可编程飞行机器人，可以用于各种自动化任务。在执行任何任务之前，它们需要进行编程；为此，你还需要一个 $(l:programming/programmer)程序员/$ 和一些 $(l:programming/puzzle_pieces)拼图块/$。$(p)当你放下一个已编程并且 $(l:base_concepts/pressure)加压/$ 的无人机时，它将执行其编程任务。"
+    },
+    {
+      "type": "entity",
+      "entity": "pneumaticcraft:drone",
+      "offset": -0.3
+    },
+    {
+      "type": "text",
+      "anchor": "charging",
+      "title": "自动充电",
+      "text": "无人机很聪明：当它们的空气量低时，会停止其主要程序并搜索一个有 $(l:machines/charging_station)充电站/$（带有 $(l:base_concepts/upgrades#dispenser)分发器升级/$ 且至少有 1 压力条），并且离它小于 $(ttcolor)$(t:见 'max_drone_charging_station_search_range' 在模组配置中) 80 方块/$ 的地方。$(p)找到后，$(item)无人机/$ 会前往这个 $(item)充电站/$ 并在此充电，直到该站不能再提供空气。在这之后，$(item)无人机/$ 会恢复其主要程序。"
+    },
+    {
+      "type": "text",
+      "title": "自动充电（续）",
+      "text": "在多人服务器上，你可能只想允许你的无人机在你的充电站上充电。你可以通过用 $(l:machines/security_station)安全站/$ 覆盖你的 $(item)充电站/$ 来使其私有。$(p)现在，只有在你的 $(item)安全站/$ 中被列入白名单的玩家放置的 $(item)无人机/$ 才能充电。"
+    },
+    {
+      "type": "text",
+      "text": "当 $(item)无人机/$ 的空气耗尽时，它的螺旋桨将停止并直直掉落到地面。注意：无人机会受到坠落伤害！被摧毁的 $(item)无人机/$ 将以物品形式掉落。$(p)你可以通过将其与一块 $(item)dye/$ 进行合成来给 $(item)无人机/$ 着色。你也可以通过 $(thing)右键点击/$ 它与一块 $(item)dye/$ 来在游戏内进行着色。这种着色仅为外观效果，但可以帮助你一眼辨别无人机。"
+    },
+    {
+      "type": "text",
+      "title": "调试",
+      "text": "嗯，为什么那 $(item)无人机/$ 会这样表现？为什么它完全不执行任何任务？你可以使用安装了 $(l:armor/pneumatic_helmet)气动头盔/$、 $(l:base_concepts/upgrades#dispenser)分发器/$ 和 $(l:base_concepts/upgrades#entity_tracker)实体跟踪器/$ 升级的气动头盔来调试你的程序。用 $(item)无人机/$ 作为目标并激活 $(thing)实体跟踪器/$，按下 $(thing)$(k:pneumaticcraft.helmet.debugging.drone)/$ 键。然后，在气动盔甲 GUI 中打开 $(thing)无人机调试器/$ 页面将显示该无人机的程序，包括当前的小部件和任何错误。"
+    },
+    {
+      "type": "text",
+      "title": "调试（续）",
+      "text": "这里有几个小技巧需要注意：$(li)使用 $(l:tools/gps_tool)GPS 工具/$ 右键点击无人机会使其前往 GPS 工具存储的坐标；这可能对测试无人机路径有用。$(li)黑客攻击无人机（使用气动头盔中的 $(l:base_concepts/upgrades#security)安全升级/$）会使其暂停程序并靠近你；如果无人机的程序将其留在一个难以到达的地方，则非常有用。再次黑客攻击将恢复程序。"
+    },
+    {
+      "type": "crafting",
+      "text": "制作无人机",
+      "recipe": "pneumaticcraft:drone"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "导入RF小部件",
+  "icon": "pneumaticcraft:textures/progwidgets/rf_import_piece.png",
+  "category": "pneumaticcraft:widget_interact",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(l:tools/drone)无人机/$ 具有100,000 FE（Forge Energy）的内部缓冲区。使用这个小部件，你可以从一个能量提供块（例如 $(item)热膨胀能量单元/$ 或 $(item)浸入式工程电容器/$）导入能量到无人机的内部存储中。$(p)$(italic)尽管名字叫做导入RF小部件，这个小部件导入的实际上是FE（Forge Energy），而不是RF（Redstone Flux）。这个名字有历史原因。/$"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/progwidgets/rf_import_piece.png"
+      ],
+      "text": "$(italic)我拥有力量/$"
+    }
+  ]
+}

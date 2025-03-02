@@ -1,0 +1,27 @@
+{
+  "name": "GUI概念",
+  "icon": "pneumaticcraft:textures/gui/icon/gui_mouse.png",
+  "category": "pneumaticcraft:base_concepts",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(pncr)中的大多数机械都有一个带有多个$(thing)侧面选项卡的GUI/$.有些选项卡是大多数或所有机械通用的，而有些选项卡是某些机械所独有的。以下是一些常见选项卡的列表:"
+    },
+    {
+      "type": "text",
+      "text": "$(li)$(bold)红石行为/$:在这里，你可以选择机器如何响应红石或何时应该发出红石信号.$(li)$(bold)信息 /$:信息选项卡显示有关机械用途的(静态)信息。$(li)$(bold)升级/$:在这里，您可以了解这台机器接受的升级，以及它们在机器上下文中的作用。"
+    },
+    {
+      "type": "text",
+      "text": "$(li)$(bold)压力状态/$:在这里，您可以找到机器所承受的当前压力和机器的体积。$(li)$(bold)问题/$:如果机器不工作，此选项卡将为您指出正确的方向，了解问题所在。"
+    },
+    {
+      "type": "image",
+      "text": "一个显示 3个侧面选项卡的GUI：压力状态、问题（此处没有）和特定于机器的装配控制器状态",
+      "images": [
+        "pneumaticcraft:textures/patchouli/gui_tabs.png"
+      ],
+      "border": "false"
+    }
+  ]
+}

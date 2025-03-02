@@ -1,0 +1,17 @@
+{
+  "name": "机械村民",
+  "icon": "minecraft:emerald",
+  "category": "pneumaticcraft:base_concepts",
+  "pages": [
+    {
+      "type": "text",
+      "text": "你听说过关于一个 $(thing)村民/$ 的报告，他储存了一些有趣的 $(pncr)组件。显然，他曾与一个 $(l:manufacturing/pressure_chamber)压力室/$ 发生过事故？无论如何，这些天他更喜欢待在自己的家里，可以在村庄中找到。如果找不到，$(l:machines/charging_station)充能站/$ 可能会吸引失业的村民……"
+    },
+    {
+      "type": "entity",
+      "name": "机械师",
+      "entity": "minecraft:villager{VillagerData:{profession:'pneumaticcraft:mechanic'}}",
+      "text": "$(italic)不喜欢 $(l:tools/amadron_tablet)阿马德龙/$。"
+    }
+  ]
+}

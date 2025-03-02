@@ -1,0 +1,52 @@
+{
+  "name": "气动靴",
+  "icon": "pneumaticcraft:pneumatic_boots",
+  "category": "pneumaticcraft:armor",
+  "advancement": "pneumaticcraft:printed_circuit_board",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)气动靴/$是4个$(thing)气动装甲/$部件之一.$(p)靴子以适中的空气成本提供内置的坠落保护（与抵消的坠落伤害成正比）。$(p)您还可以免费获得1个方快行走辅助（无空气费用）。 请注意，这是步伐辅助，而不是自动跳跃，它是一个可切换的功能。"
+    },
+    {
+      "type": "crafting",
+      "recipe": "pneumaticcraft:pneumatic_boots",
+      "text": "制作气动靴"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:jet_boots_upgrade_1",
+      "text": "如果你曾经想过在空中翱翔，而对世界没有任何关心（除了你还剩下多少气压），$(l:base_concepts/upgrades#jet_boots_1)喷气靴升级/$是为您准备的。喷气靴升级有5个等级，可逐渐加快飞行速度，并增加空气使用量。"
+    },
+    {
+      "type": "text",
+      "title": "喷气靴（续）",
+      "text": "当升级处于启用状态时，只需按住$(k:pneumaticcraft.boots.jet_boots)键向你正在看的方向推刺。$(p)$(thing)喷气靴/$是$(bold)严重/$使用空气的用户;强烈建议添加多个$(l:base_concepts/upgrades#volume)容积升级/$到您的靴子(和 $(l:armor/pneumatic_chestplate)胸甲/$, $(l:base_concepts/upgrades#charging)充能升级/$)，$(p)和$(l:machines/aerial_interface)天线接口/$一起使用，还建议在您的基地建立良好的充能基础设施。"
+    },
+    {
+      "type": "text",
+      "title": "喷气靴（续）",
+      "text": "如果拥有 $(l:base_concepts/upgrades#jet_boots_3)喷气靴升级：三级/$ 或更高等级，您将可以使用 $(thing)建筑模式/$，这允许您进行更具创意风格（但速度较慢）的飞行控制，并提高空中挖掘速度。$(p)此功能可以通过盔甲 GUI 切换开关（并绑定到切换键）。"
+    },
+    {
+      "type": "text",
+      "title": "喷气靴（续）",
+      "text": "如果拥有 $(l:base_concepts/upgrades#jet_boots_4)喷气靴升级：四级/$ 或更高等级，您还将获得 $(thing)飞行稳定器/$，当您释放推进键时，它将立即停止（空气消耗与您当时的速度成比例）。$(p)与建筑模式一样，此功能也可以通过盔甲 GUI 切换开关（并绑定到切换键）。"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:dispenser_upgrade",
+      "text": "通过在靴子上添加最多4个 $(l:base_concepts/upgrades#dispenser)发射器升级/$，您将获得执行 $(bold)气动踢/$ 的能力。这将对实体（不仅仅是生物！）造成适度伤害，并造成强力击退，消耗一定的空气。$(p)按下 $(thing)$(k:pneumaticcraft.boots.kick)/$ 进行踢击。"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:flippers_upgrade",
+      "text": "安装 $(l:base_concepts/upgrades#flippers)鳍升级/$ 后，您将享受游泳速度的适度提升。这没有额外的空气消耗，因此在水中是喷气靴的更便宜替代方案。"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:stomp_upgrade",
+      "text": "安装并激活 $(l:base_concepts/upgrades#stomp)踏击升级/$ 后，您可以对敌人施加毁灭性的打击。如果您以足够快的速度撞击地面以造成伤害（即使该伤害被靴子吸收），附近的生物将会受到伤害，伤害程度与您到达的速度成正比。这将消耗一定的空气，每个因此受伤的生物都会消耗一些空气。"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "刻蚀酸",
+  "icon": "pneumaticcraft:etching_acid_bucket",
+  "category": "pneumaticcraft:manufacturing",
+  "advancement": "pneumaticcraft:pressure_chamber",
+  "pages": [
+    {
+      "type": "text",
+      "text": "刻蚀酸用于化学处理 $(l:components/pcb)印刷电路板/$. 刻蚀酸在 $(l:manufacturing/pressure_chamber)压缩舱/$ 中制作，并用于 $(l:manufacturing/etching_tank)刻蚀槽/$。$(p)有关印刷电路板生产的更多信息，请参见 $(l:components/pcb)印刷电路板/$ 条目。"
+    },
+    {
+      "type": "pneumaticcraft:pressure_chamber",
+      "recipe": "pneumaticcraft:pressure_chamber/etching_acid"
+    }
+  ]
+}

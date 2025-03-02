@@ -1,0 +1,50 @@
+{
+  "name": "实体过滤器",
+  "icon": "minecraft:player_head",
+  "category": "pneumaticcraft:base_concepts",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(thing)实体过滤器/$ 在 $(pncr) 的多个地方使用，用于指定机器或工具应以某种方式影响哪些 $(thing)实体/$。$(p)在大多数可以输入过滤器的地方，按住 $(thing)F1/$ 键可以显示弹出帮助。"
+    },
+    {
+      "type": "text",
+      "text": "要按实体类型匹配实体，只需指定类型名称（例如 $(#800)creeper/$ 匹配 $(thing)minecraft:creeper/$）。要匹配具有自定义名称的实体（包括玩家），请将实体名称用引号括起来，例如 $(#800)'Minemaarten'/$ 或 $(#800)'desht'/$。$(p)当您想要指定某种特定的实体 $(italic)类型/$（例如，动物、攻击性生物、玩家一般），请在前面加上 '@'。以下是包括接受的 $(thing)@ 指定符/$ 的完整示例列表。"
+    },
+    {
+      "type": "text",
+      "title": "示例",
+      "text": "$(li)$(#800)@player/$ 匹配所有玩家$(li)$(#800)@mob/$ 匹配所有攻击性生物$(li)$(#800)@animal/$ 匹配所有被动生物（动物）$(li)$(#800)@animal(age = adult)/$ 匹配所有成年动物$(li)$(#800)@animal(age = baby)/$ 匹配所有幼年动物$(li)$(#800)@animal(breedable = yes)/$ 匹配所有可以立即繁殖的动物$(li)$(#800)sheep(shearable = yes)/$ 匹配所有可以剪毛的羊"
+    },
+    {
+      "type": "text",
+      "title": "示例（续）",
+      "text": "$(li)$(#800)sheep(shearable = yes,color = black)/$ 匹配所有可以剪毛的黑羊$(li)$(#800)wolf(color = blue)/$ 匹配所有有蓝色项圈的狼/狗。$(li)$(#800)cat(color = white)/$ 匹配所有有白色项圈的猫。$(li)$(#800)@minecart/$ 匹配矿车$(li)$(#800)@boat/$ 匹配船$(li)$(#800)@living/$ 匹配所有生物$(li)$(#800)@item/$ 匹配物品实体$(li)$(#800)@orb/$ 匹配经验球"
+    },
+    {
+      "type": "text",
+      "title": "示例（续）",
+      "text": "$(li)$(#800)@drone/$ 匹配 $(l:tools/drone)无人机/$$(li)$(#800)@mob(mod=minecraft)/$ 匹配生物，但仅限于 $(thing)minecraft/$ 命名空间$(li)$(#800)Creeper/$ 匹配苦力怕$(li)$(#800)'MineMaarten'/$（或 $(#800)\"Minemaarten\"/$）匹配名为 'MineMaarten' 的实体$(li)$(#800)c*/$ 匹配以字母 'c' 开头的任何实体（如苦力怕或牛）。$(li)$(#800)*pig*/$ 匹配名称中包含 'pig' 的任何实体（如猪或僵尸猪人）。"
+    },
+    {
+      "type": "text",
+      "text": "$(li)(#800)@player(team=team1)/$ 匹配在记分板团队 \"team1\" 中的玩家$(p)所有匹配均不区分大小写，例如 $(#800)zombie/$ 和 $(#800)Zombie/$ 都将匹配僵尸。$(p)您可以使用 ';'（分号）分隔符指定过滤器的 $(thing)序列/$ - 这是一种 $(italic)匹配任意/$ 的功能：$(li)$(#800)creeper;zombie/$ 同时匹配苦力怕 $(italic)和/$ 僵尸。"
+    },
+    {
+      "type": "text",
+      "text": "您可以在过滤器前加上 '!' 来否定过滤器：$(li)$(#800)!@player/$ 匹配任何 $(italic)不是/$ 玩家$(li)$(#800)!Creeper;Zombie/$ 匹配任何既不是苦力怕 $(italic)也不是/$ 僵尸$(li)$(#800)Creeper;!Zombie/$ 是 $(#f00)无效/$：'!' 只能放在过滤器的最前面。$(p)$(bold)注意：/$ 对于使用 $(l:programming/text)文本/$ 编程小部件的 $(l:tools/drone)无人机/$ 实体过滤器，不支持 '!'；请按正常方式将文本小部件连接到左侧。"
+    },
+    {
+      "type": "relations",
+      "entries": [
+        "pneumaticcraft:tools/micromissiles",
+        "pneumaticcraft:tubes/air_grate_module",
+        "pneumaticcraft:armor/pneumatic_helmet",
+        "pneumaticcraft:machines/sentry_turret",
+        "pneumaticcraft:machines/universal_sensor",
+        "pneumaticcraft:programming/text"
+      ],
+      "text": "$(italic)使用实体过滤的机器和工具/$"
+    }
+  ]
+}

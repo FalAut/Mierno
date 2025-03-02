@@ -1,0 +1,24 @@
+{
+  "name": "编辑标志小部件",
+  "icon": "pneumaticcraft:textures/progwidgets/edit_sign_piece.png",
+  "category": "pneumaticcraft:widget_interact",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "这将编辑连接的 $(l:programming/area)区域/$ 中所有的 $(item)标志/$ 和/或 $(l:machines/aphorism_tile)格言砖/$，使其文本与连接的 $(l:programming/text)文本/$ 小部件指定的文本相同。$(p) 每个连接的 $(thing)文本/$ 小部件代表一行；通过连接多个 $(thing)文本/$ 小部件，您可以设置多行消息。"
+    },
+    {
+      "type": "text",
+      "title": "变量",
+      "text": "您还可以通过在文本中包含 $(thing)${<var_name>}/$ 来插入 $(l:programming/variables)变量/$ 的值，例如：$(p)  $(formula)计数器: ${counter}/$$(p)如果 $(thing)counter/$ 变量设置为 $(thing)x=1,y=2,z=3/$，则会展开为 $(thing)计数器: 1, 2, 3/$。$(l:programming/variables#special)特殊/$ 和 $(l:programming/variables#global)全局变量/$ 也可以在这里使用。"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/progwidgets/edit_sign_piece.png"
+      ],
+      "text": "$(italic)编辑标志小部件/$"
+    }
+  ]
+}

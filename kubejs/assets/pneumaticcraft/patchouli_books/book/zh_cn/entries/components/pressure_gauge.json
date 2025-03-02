@@ -1,0 +1,17 @@
+{
+  "name": "压力表",
+  "icon": "pneumaticcraft:pressure_gauge",
+  "category": "pneumaticcraft:components",
+  "advancement": "pneumaticcraft:root",
+  "pages": [
+    {
+      "type": "text",
+      "text": "这是其他设备的制作组件。它本身没有用处。"
+    },
+    {
+      "type": "crafting",
+      "text": "制作压力表",
+      "recipe": "pneumaticcraft:pressure_gauge"
+    }
+  ]
+}

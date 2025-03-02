@@ -1,0 +1,17 @@
+{
+  "name": "润滑剂",
+  "icon": "pneumaticcraft:lubricant_bucket",
+  "category": "pneumaticcraft:components",
+  "advancement": "pneumaticcraft:tp_plant",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)润滑剂/$是制作$(l:base_concepts/upgrades#speed)速度升级/$所必需.$(p)它是在 $(l:manufacturing/thermopneumatic_processing_plant)热气动加工厂/$中创建的，其中$(l:manufacturing/refinery)柴油/$(或$(l:renewables/biodiesel)生物柴油/$)和$(item)红石/$。"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:lubricant_bucket",
+      "text": "$(italic)滑溜溜的东西/$"
+    }
+  ]
+}

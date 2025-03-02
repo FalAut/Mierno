@@ -1,0 +1,6 @@
+{
+  "name": "机器",
+  "description": "提供有用功能的机器和其他设备，其中许多需要$(l:base_concepts/pressure)压力/$执行此操作。",
+  "icon": "pneumaticcraft:vortex_tube",
+  "sortnum": 5
+}

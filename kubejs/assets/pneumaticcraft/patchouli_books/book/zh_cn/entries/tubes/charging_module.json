@@ -1,0 +1,22 @@
+{
+  "name": "充电模块",
+  "icon": "pneumaticcraft:charging_module",
+  "category": "pneumaticcraft:tubes",
+  "advancement": "pneumaticcraft:pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "该管道模块允许您对其面对的可加压物品进行充电（或放电），例如，对包含您的气动工具的箱子或用于远程空气传输的 $(l:components/air_canister)空气罐/$（可能通过某种类型的末影物品系统）。$(p)您还可以将此模块指向一个 $(l:machines/aerial_interface)空中接口/$，以对您自己的人物背包中的物品进行充电。"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:module_expansion_card",
+      "text": "将 $(l:tubes/module_expansion_card)模块扩展卡/$ 应用到充电模块会将模块的充电速率从每个物品10mL/滴提高到100mL/滴。"
+    },
+    {
+      "type": "crafting",
+      "text": "制作充电模块",
+      "recipe": "pneumaticcraft:charging_module"
+    }
+  ]
+}

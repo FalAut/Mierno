@@ -1,0 +1,30 @@
+{
+  "name": "散热器",
+  "icon": "pneumaticcraft:heat_sink",
+  "category": "pneumaticcraft:machines",
+  "advancement": "pneumaticcraft:root",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)散热器/$ 是一种用于消除 $(l:base_concepts/heat)热量/$ 的方块。$(p)请小心，温度高于 60°C 或低于 -60°C 的 $(item)散热器/$ 触摸时会造成伤害！$(p)$(item)散热器/$ 仅从直接相连的方块中散发热量。要连接多个 $(item)散热器/$，请使用 $(l:machines/heat_pipe)热管/$ 提供更多的表面。"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/patchouli/heat_sinks.png"
+      ],
+      "border": "true",
+      "text": "$(italic)配备多个散热器的 $(l:compressors/advanced_liquid_compressor)高级液体压缩机/$ $(italic)"
+    },
+    {
+      "type": "text",
+      "title": "主动冷却",
+      "text": "通过将散热器放置在 $(l:tubes/air_grate_module#active_cooling)空气格栅模块/$ 的范围内，可以提高 $(item)散热器/$ 的有效性。模块的范围将在您将其连接到 $(l:tubes/pressure_tubes)压力管/$ 时显示。使用多个空气格栅模块可以叠加冷却效果。"
+    },
+    {
+      "type": "crafting",
+      "text": "制作散热器",
+      "recipe": "pneumaticcraft:heat_sink"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "物品分配小部件",
+  "icon": "pneumaticcraft:textures/progwidgets/item_assign_piece.png",
+  "category": "pneumaticcraft:widget_other",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(thing)物品分配/$ 小部件是一个高级小部件，允许您将物品存储在 $(l:programming/variables)变量/$ 中。变量可以是坐标或物品；在这里我们讨论的是后者。$(p)有关坐标变量的信息以及关于变量的一般说明，请参见 $(l:programming/coordinate_operator)坐标操作符/$ 小部件。"
+    },
+    {
+      "type": "text",
+      "text": "要将物品存储在给定的 $(thing)变量/$ 中，请在 $(thing)物品分配/$ 小部件的 $(italic)右侧/$ 放置一个 $(l:programming/item_filter)物品过滤器/$ 小部件，并设置所需的物品。此物品将被分配给您通过 $(thing)右键点击/$ $(thing)物品分配/$ 小部件指定的变量。只有实际的物品会从过滤器中转移；过滤器的设置不会被转移。$(p)如果您省略 $(thing)物品过滤器/$ 小部件，则无人机持有的物品将被分配给该变量。"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/progwidgets/item_assign_piece.png"
+      ],
+      "text": "$(italic)物品分配小部件/$"
+    }
+  ]
+}

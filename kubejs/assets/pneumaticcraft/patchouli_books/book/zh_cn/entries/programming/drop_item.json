@@ -1,0 +1,23 @@
+{
+  "name": "投放物品小部件",
+  "icon": "pneumaticcraft:textures/progwidgets/item_drop_piece.png",
+  "category": "pneumaticcraft:widget_interact",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "这将使 $(l:tools/drone)无人机/$ 从其库存中向连接的 $(l:programming/area)区域/$ 释放物品。通过 $(thing)右键点击/$ $(thing)投放物品/$ 小部件，您可以指定在区域中的每个位置可以投放多少个物品。您还可以在 $(thing)随机/$ 和 $(thing)垂直/$ 模式之间切换，前者表示它将在一个小的随机偏移下投放物品（如同普通的 $(item)投放器）/$，后者则是直接向下投放物品。"
+    },
+    {
+      "type": "text",
+      "text": "您还可以连接一个 $(l:programming/item_filter)物品过滤器/$。使用过滤器后，只有过滤器允许的物品会被投放。$(p)当 $(item)无人机/$ 的库存中没有可适用的物品，或 $(item)无人机/$ 已经访问过区域内的每个位置时，该小部件将停止执行。"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/progwidgets/item_drop_piece.png"
+      ],
+      "text": "$(italic)投放物品小部件/$"
+    }
+  ]
+}

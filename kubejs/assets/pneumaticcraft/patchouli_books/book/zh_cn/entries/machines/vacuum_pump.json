@@ -1,0 +1,38 @@
+{
+  "name": "真空泵",
+  "icon": "pneumaticcraft:vacuum_pump",
+  "category": "pneumaticcraft:machines",
+  "advancement": "pneumaticcraft:pressure_chamber",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(thing)真空泵/$ 是一种用于创造……真空的机器。为此，机器消耗 $(l:base_concepts/pressure)加压空气/$。$(p)应在 $(#0c0)'+' 面/$ 施加正压力；当达到最低工作压力时， $(item)真空泵/$ 开始抽取， $(#c00)'-' 面/$ 的压力降低，最低可达 -1.0 bar，这就是一个真空。"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/patchouli/vacuum_pump.png"
+      ]
+    },
+    {
+      "type": "text",
+      "title": "应用",
+      "text": "负压（真空）有以下用途：$(li)除魔：将一个 $(item)附魔物品/$ 或 $(item)附魔书/$（具有多个附魔）和一本普通 $(item)书/$ 放置在 $(l:manufacturing/pressure_chamber)压力室/$ 中，并为该房间提供足够的负压。将随机附魔从物品转移到书籍中。$(li)当给予负压时， $(l:tubes/air_grate_module)空气格栅模块/$ 将吸引实体。"
+    },
+    {
+      "type": "text",
+      "title": "应用（续）",
+      "text": "$(li) $(l:spawning/vacuum_trap)真空捕获器/$ 和 $(l:spawning/spawner_extractor)生成器提取器/$，这两个设备是制造和使用 $(l:spawning/pressurized_spawner)加压生成器/$ 所必需的，都需要负压才能运行。"
+    },
+    {
+      "type": "crafting",
+      "text": "制作真空泵",
+      "recipe": "pneumaticcraft:vacuum_pump"
+    },
+    {
+      "type": "pneumaticcraft:pressure_chamber",
+      "header": "真空除魔",
+      "recipe": "pneumaticcraft:pressure_chamber/pressure_chamber_disenchanting"
+    }
+  ]
+}

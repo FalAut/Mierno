@@ -1,0 +1,33 @@
+{
+  "name": "GPS 工具",
+  "icon": "pneumaticcraft:gps_tool",
+  "category": "pneumaticcraft:tools",
+  "advancement": "pneumaticcraft:plastic",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)GPS 工具/$ 是一种物品，当你 $(thing)右键点击/$ 一个方块时，会保存该方块的坐标。这些数据在 $(pncr) 的多个地方使用；详见对面。$(p)$(thing)右键点击/$ 空气中的 $(item)GPS 工具/$ 将打开一个 GUI，允许直接调整坐标。$(p)潜行并滚动鼠标滚轮可以快速调整沿玩家面向轴的坐标。"
+    },
+    {
+      "type": "text",
+      "anchor": "variables",
+      "title": "链接全局变量",
+      "text": "$(l:programming/variables#global)全局变量/$ 是一个高级 $(l:base_concepts/drone)无人机/$ 功能，通过 $(l:programming/coordinate_operator)坐标操作符/$ 访问。$(p)$(thing)右键点击/$ 空气中的 $(item)GPS 工具/$ 允许输入变量名称。$(p)现在，该 $(thing)全局变量/$ 将跟踪 $(item)GPS 工具/$ 选定坐标的值。这可以用来制作使用动态区域的 $(thing)无人机程序/$。"
+    },
+    {
+      "type": "relations",
+      "entries": [
+        "pneumaticcraft:machines/air_cannon",
+        "pneumaticcraft:machines/universal_sensor",
+        "pneumaticcraft:programming/programmer",
+        "pneumaticcraft:tools/amadron_tablet"
+      ],
+      "text": "利用 $(item)GPS 工具/$ 的机器和工具。"
+    },
+    {
+      "type": "crafting",
+      "text": "制作 GPS 工具",
+      "recipe": "pneumaticcraft:gps_tool"
+    }
+  ]
+}

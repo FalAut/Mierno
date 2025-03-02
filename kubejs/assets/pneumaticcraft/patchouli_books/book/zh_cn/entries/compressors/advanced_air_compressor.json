@@ -1,0 +1,17 @@
+{
+  "name": "先进的空气压缩机",
+  "icon": "pneumaticcraft:advanced_air_compressor",
+  "category": "pneumaticcraft:compressors",
+  "advancement": "pneumaticcraft:advanced_pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)先进的空气压缩机/$是$(l:compressors/air_compressor)空气压缩机/$的$(l:base_concepts/pressure_tiers)层级2/$版本，最大安全压力为20bar。它会产生一个 $(ttcolor)$(t:这可以通过安装速度升级来增加)基础值/$ 50mL空气/刻，并且可以使用$(l:base_concepts/upgrades#speed)速度升级/$进行升级。$(p)但是，该发生器必须是 $(l:base_concepts/heat)冷却/$，因为它的效率会随着温度的升高而下降，直到完全不产生空气。"
+    },
+    {
+      "type": "crafting",
+      "text": "制作$(item)先进的空气压缩机/$",
+      "recipe": "pneumaticcraft:advanced_air_compressor"
+    }
+  ]
+}

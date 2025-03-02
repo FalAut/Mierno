@@ -1,0 +1,30 @@
+{
+  "name": "热量",
+  "icon": "minecraft:blaze_powder",
+  "category": "pneumaticcraft:base_concepts",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(pncr)添加了$(thing)热量/$系统.它从一个街区传播到另一个街区，类似于现实生活中热量的传播方式。它与 $(l:base_concepts/pressure)压力的分散方式也有一些相似之处:$(li)热量从较热的物体散布到较冷的物体。$(li)区块只会将热量传播到支持热量概念的相邻区块(参见 $(l:base_concepts/heat_sources)热源/$)。"
+    },
+    {
+      "type": "text",
+      "text": "$(li)温差越大，热量散发越快。$(li)不同的对象具有不同的 $(thing)热阻/$。 $(item)火把/$和$(item)空气/$具有高阻力, 而 $(l:base_concepts/basic_materials#compressed_iron_block)压缩铁块/$具有非常低的阻力。 $(thing)热阻/$确定热量从一个对象传播到另一个对象的速度。"
+    },
+    {
+      "type": "text",
+      "text": "$(li)不同的对象具有不同的 $(thing)热容量/$。容量越高，对于给定的热量增益，温度上升的速度就越慢。同样，对于给定的热损失，温度下降得越慢。换句话说，提高更高容量块的$(thing)温度/$需要更多的 $(thing)热量/$，但是当它失去热量时，它的温度也会下降得更慢。"
+    },
+    {
+      "type": "text",
+      "title": "保温",
+      "anchor": "insulation",
+      "text": "如果暴露在空气中，机器会失去热量;这对于 $(l:manufacturing/refinery)精炼厂/$尤其明显，它有许多裸露的面，但也适用于任何导热块，包括 $(l:base_concepts/basic_materials#compressed_iron_block)压缩铁块/$。$(p)为避免这种热量损失，请确保没有表面暴露在空气中;任何不导电的块都可以。它也不必是一个完整的块 - $(item)活板门/$ 和 $(item)台阶/$ 可以正常工作。"
+    },
+    {
+      "type": "text",
+      "title": "热源",
+      "text": "$(pncr)中的一些机器产生需要耗散的热量，而有些机器需要热量才能运行。$(p)因此，您需要 $(l:base_concepts/heat_sources)找到方法/$ 来操纵这些机器的温度......"
+    }
+  ]
+}

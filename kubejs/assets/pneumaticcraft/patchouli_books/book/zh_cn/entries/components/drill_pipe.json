@@ -1,0 +1,17 @@
+{
+  "name": "钻杆",
+  "icon": "pneumaticcraft:drill_pipe",
+  "category": "pneumaticcraft:components",
+  "advancement": "pneumaticcraft:pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)钻杆/$是$(l:machines/gas_lift)气举/$向下钻取到流体必需的。$(p)如果您愿意，它们也适用于一般建筑。"
+    },
+    {
+      "type": "crafting",
+      "text": "制作钻杆",
+      "recipe": "pneumaticcraft:drill_pipe"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "name": "程序员",
+  "icon": "pneumaticcraft:programmer",
+  "category": "pneumaticcraft:programming",
+  "advancement": "pneumaticcraft:printed_circuit_board",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)程序员/$ 是用于编程 $(l:tools/drone)无人机/$ 的机器，使用一个可视化编程系统，其中 $(l:programming/puzzle_pieces)拼图块/$ 在编程 GUI 中组合。$(thing)程序员/$ 不需要 $(l:base_concepts/pressure)压力/$ 来操作。$(thing)编程/$ 类别的其余部分有更多关于如何编写无人机程序的信息。"
+    },
+    {
+      "type": "crafting",
+      "text": "制作程序员",
+      "recipe": "pneumaticcraft:programmer"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/patchouli/programmer_gui.png"
+      ],
+      "text": "$(italic)程序员 GUI：查看以下页面以获取每个部分的信息/$"
+    },
+    {
+      "type": "text",
+      "text": "$(bold)1. 主编程区域/$$(p)该区域是您实际构建程序的地方。小部件从 $(thing)小部件托盘 (区域 2)/$ 拖动到此处并“拼接”在一起以形成程序。$(p)您可以使用鼠标滚轮或右侧的滚动条放大和缩小编程区域。"
+    },
+    {
+      "type": "text",
+      "text": "$(bold)2. 小部件托盘/$$(p)该区域存放您将用于构建程序的小部件。它保存比显示的更多小部件；您可以通过托盘下的箭头按钮循环浏览页面，或通过 $(thing)空格/$ 或 $(thing)Tab/$ 扩展托盘以显示所有小部件。$(p)当扩展时，托盘还将显示一个文本框，您可以在其中输入筛选字符串以搜索小部件。"
+    },
+    {
+      "type": "text",
+      "text": "$(bold)3. 无人机插槽/$$(p)将要编程的 $(l:tools/drone)无人机/$（或 $(l:components/network_components)网络存储/API/$）放置在此处。当准备好为无人机编程时，按下 $(thing)⟶/$ 按钮以写入程序。您也可以使用左侧的文本框为无人机命名（如果愿意）。成功时会听到声音反馈。$(p)您还可以使用 $(thing)⟵/$ 按钮从无人机（或网络存储/API）导入程序。"
+    },
+    {
+      "type": "text",
+      "text": "$(bold)4. 难度选择/$$(p)这些单选按钮控制小部件托盘中可用的编程小部件的种类。它们还启用/禁用一些高级功能，例如 $(l:programming/coordinate_operator)变量/$。$(p)$(bold)5. 玩家库存/$$(p)您的个人库存；如果您有任何 $(l:tools/gps_tool)GPS 工具/$ 或 $(l:tools/gps_area_tool)GPS 区域工具/$，则可以单击它们以将其设置转移到 $(l:programming/area)区域/$ 或 $(l:programming/coordinate)坐标/$ 小部件。"
+    },
+    {
+      "type": "text",
+      "text": "$(bold)6. 导航和显示选项/$$(p)您可以使用这些按钮来：$(li)导航到程序的 $(l:programming/start)开始/$ 小部件$(li)导航到您放置的最后一个小部件$(li)切换是否显示每个小部件的额外信息$(li)切换是否显示 $(l:programming/jump)跳转/$ 和 $(l:programming/label)标签/$ 小部件之间的连接线"
+    },
+    {
+      "type": "text",
+      "text": "$(bold)7. 其他按钮/$$(p)GUI 左边缘的按钮允许（按顺序）：$(li)$(thing)撤销/$ 最近的 20 次操作$(li)$(thing)重做/$ 上一个撤销操作$(li)$(thing)导入或导出/$ 您的程序作为 JSON 文件到 $(l:https://pastebin.com)pastebin.com/$（可选登录）$(li)$(thing)删除/$ 您的整个程序（可以撤销）$(li)$(thing)转换/$ 您的程序为 $(thing)相对/$ 坐标（有关更多信息，请参见 $(l:programming/programmer#convert_relative)此页面/$）"
+    },
+    {
+      "type": "text",
+      "anchor": "ids",
+      "title": "Progwidget IDs",
+      "text": "如果您使用 $(thing)F3+H/$ 切换到扩展工具提示信息，您会注意到每个编程小部件的工具提示最后也包含内部小部件 ID。如果您打算通过 $(l:machines/drone_interface)无人机接口/$ 进行任何无人机编程，这主要是有益的 - $(thing)setAction()/$ Lua 方法在无人机接口中将这些 ID（$(thing)pneumaticcraft:/$ 前缀是可选的）作为参数。"
+    },
+    {
+      "type": "text",
+      "title": "共享程序",
+      "text": "如果您想与其他玩家共享您的程序，有几种选择：$(li)您可以使用 $(thing)Pastebin/$ 按钮将您的程序导出到 $(l:https://pastebin.com)pastebin.com/$$(li)$(thing)Pastebin/$ GUI 还允许将程序写入剪贴板以进行复制和粘贴$(li)您可以将程序保存到 $(l:tools/drone)无人机/$ 或 $(l:components/network_components)网络存储/网络 API/$ 并将该物品交给您服务器上的另一个玩家。"
+    },
+    {
+      "type": "text",
+      "anchor": "convert_relative",
+      "title": "转换为相对",
+      "text": "假设您设计了一个运行自动化农场的程序，并想要分享这个程序。其他人在不同的世界中农场的位置会不同，因此他们必须更改每一个 $(l:programming/area)区域/$ 小部件；这太麻烦了。$(p)$(thing)转换为相对/$ 按钮使这变得更简单；它还提供工具提示，指示您需要做些什么来转换程序。"
+    },
+    {
+      "type": "text",
+      "anchor": "convert_relative",
+      "title": "转换为相对（续）",
+      "text": "您需要添加一个固定的 $(l:programming/coordinate_operator)坐标运算符/$ 小部件，以及一个包含 $(thing)基位置/$ （例如输入箱的位置）的 $(l:programming/coordinate)坐标/$ 小部件。然后，它将您程序中使用的任何绝对位置（区域或坐标）转换为相对于该基位置的坐标。$(p)现在，程序的用户只需调整一个坐标即可使用您的程序！"
+    },
+    {
+      "type": "text",
+      "flag": "mod:jei",
+      "anchor": "jei",
+      "title": "JEI 集成",
+      "text": "如果安装了 JEI，您会注意到在打开程序员 GUI 的同时，如果打开 JEI 配方显示，会有一个“+”（移动物品）按钮。单击它将为食谱中的每个输入项目添加 $(l:programming/item_filter)项目过滤器/$ 小部件。如果您在编程区域中有一个 $(l:programming/crafting)制作/$ 小部件，没有附加项目过滤器，则会将项目过滤器添加到制作小部件，以快速方便地设置食谱。否则，它们将被添加到编程区域的左上角的一行。"
+    },
+    {
+      "type": "text",
+      "flag": "mod:jei",
+      "title": "JEI 集成（续）",
+      "text": "默认情况下，仅为每种唯一物品类型添加一个项目过滤器（例如，对于 $(item)石板/$ 食谱，仅会创建一个 $(item)石头/$ 过滤器，而不是三个）。请记住，可以通过中间单击和拖动来复制小部件。如果您想为食谱中的每个物品（包括重复项）添加一个项目过滤器，请在单击 JEI 中的“+”按钮时按住 Shift。"
+    }
+  ]
+}

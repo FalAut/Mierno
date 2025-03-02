@@ -1,0 +1,19 @@
+{
+  "name": "无人机条件：RF小部件",
+  "icon": "pneumaticcraft:textures/progwidgets/condition_drone_rf_piece.png",
+  "category": "pneumaticcraft:widget_cond",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "这是一个 $(l:programming/conditions)条件/$ 小部件。$(p) $(thing)无人机条件：RF/$ 小部件允许您检查此 $(l:tools/drone)无人机/$ 携带的 $(thing)Forge Energy (FE)/$ 的数量。$(p) $(italic)尽管名称如此， 此小部件检查的是FE，而不是RF（红石能量）。这个名称是历史原因造成的。/$"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/progwidgets/condition_drone_rf_piece.png"
+      ],
+      "text": "$(italic)无人机条件：RF小部件/$"
+    }
+  ]
+}

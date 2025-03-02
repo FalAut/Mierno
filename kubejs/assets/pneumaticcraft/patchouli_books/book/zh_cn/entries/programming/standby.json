@@ -1,0 +1,19 @@
+{
+  "name": "待机小部件",
+  "icon": "pneumaticcraft:textures/progwidgets/standby_piece.png",
+  "category": "pneumaticcraft:widget_flow",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "当这个小部件被执行时，$(l:tools/drone)无人机/$ 将关闭其螺旋桨，并从空中下降。这个小部件可以用来节省 $(l:base_concepts/pressure)空气/$，因为无人机在待机模式下不消耗任何空气。$(p)不过，$(thing)无人机/$ 仍会继续执行其他小部件；一旦它执行了使其进行实际工作的任何小部件，$(thing)无人机/$ 将再次开启其螺旋桨。"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/progwidgets/standby_piece.png"
+      ],
+      "text": "$(italic)沉睡的美人/$"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "甘油",
+  "icon": "pneumaticcraft:glycerol",
+  "category": "pneumaticcraft:renewables",
+  "advancement": "pneumaticcraft:ethanol",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(thing)甘油/$ 是生产 $(l:renewables/biodiesel)生物柴油/$ 的副产品，但它被证明本身是一种相当有用的物质。其用途将在后续页面中详细介绍。"
+    },
+    {
+      "type": "crafting",
+      "recipe": "pneumaticcraft:bandage",
+      "text": "$(thing)绷带/$ 可以快速恢复 3 颗生命值。快速不是瞬间；您需要右键点击并保持 2 秒钟来使用绷带，并且在使用之间有 8 秒的冷却时间。"
+    },
+    {
+      "type": "crafting",
+      "recipe": "pneumaticcraft:speed_upgrade_from_glycerol",
+      "text": "使用 $(thing)糖/$ 的产出翻倍，没什么不好？这将节省您宝贵的 $(l:components/lubricant)Lubricant/$。"
+    },
+    {
+      "type": "spotlight",
+      "item": "minecraft:furnace",
+      "title": "作为燃料",
+      "text": "$(thing)甘油/$ 也是一种不错的燃料，相当于 4 个 $(thing)木板/$ 或半块 $(thing)煤/$。"
+    }
+  ]
+}

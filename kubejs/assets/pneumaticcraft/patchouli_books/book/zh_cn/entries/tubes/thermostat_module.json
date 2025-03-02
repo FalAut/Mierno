@@ -1,0 +1,30 @@
+{
+  "name": "温控模块",
+  "icon": "pneumaticcraft:thermostat_module",
+  "category": "pneumaticcraft:tubes",
+  "advancement": "pneumaticcraft:pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "该管模块测量其面向的方块的温度，并在温度高于设置的阈值时，在配置的频道上提供红石信号（在输出模式下使用 $(l:tubes/redstone_module)红石模块/$ 发出信号）。"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:module_expansion_card",
+      "text": "将 $(l:tubes/module_expansion_card)模块扩展卡/$ 应用于温控模块，可以解锁高级 GUI，以提供对 $(#f00)红石信号/$ 发射的更多控制。默认情况下，您可以提供一个阈值水平：低于该水平时信号关闭，高于该水平时信号完全开启（或反之亦然）。如果您在 GUI 中选择 $(bold)高级配置/$ 切换，则可以获得更多控制（见下文）。"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/patchouli/thermostat_gui.png"
+      ],
+      "text": "$(italic)<0°C = 0 红石, >1000°C = 15 红石, 0-1000°C = 插值 (例如 200°C = 3 红石)/$",
+      "anchor": "img"
+    },
+    {
+      "type": "crafting",
+      "text": "制作温控模块",
+      "recipe": "pneumaticcraft:thermostat_module"
+    }
+  ]
+}

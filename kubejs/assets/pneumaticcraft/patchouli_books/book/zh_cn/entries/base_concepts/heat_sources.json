@@ -1,0 +1,56 @@
+{
+  "name": "热源",
+  "icon": "pneumaticcraft:vortex_tube",
+  "category": "pneumaticcraft:base_concepts",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(thing)静态热源/$ 是指与机器相邻时能够增加或减少热量的方块和液体。当添加或移除的热量过多时，它们可能会转变为其他方块或液体。请注意，热量的提取/添加是外部跟踪的，因此打破/替换方块以重置提取的热量并不是可行的策略。"
+    },
+    {
+      "type": "text",
+      "title": "原版热源",
+      "text": "以下原版方块和液体作为静态热源： $(li)空气$(li)冰/打包冰/蓝冰$(li)雪$(li)火把$(li)火（会熄灭）$(li)岩浆（冷却为下界岩）$(li)水（可能会结冰或蒸发）$(li)熔岩（冷却为黑曜石）$(li)营火（会熄灭）"
+    },
+    {
+      "type": "text",
+      "title": "模组热源",
+      "text": "来自多个模组的若干方块也可以作为静态热源，具有不同的属性，包括：$(li)IC2 蒸汽和超热蒸汽$(li)IC2 冷却剂和热冷却剂$(li)IC2 和沉浸工程铀方块$(li)Quark 火焰灯$(li)Quark 硫磺和永久冻土$(li)Natura 热沙$(li)所有模组液体都有热属性（温度由模组定义）"
+    },
+    {
+      "type": "text",
+      "title": "添加自定义热源",
+      "text": "(对于模组包制作人) 所有方块热属性在数据包中定义。您可以通过将 JSON 文件添加到 $(thing)data/<mod-id>/pneumaticcraft/block_heat_properties/$ 来添加自己的定义或覆盖/删除默认定义。"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:vortex_tube",
+      "text": "一个 $(l:machines/vortex_tube)涡旋管/$ 是一个 $(thing)动态热源/$，它直接将 $(l:base_concepts/pressure)压力/$ 转换为热量和冷量。强烈建议在涡旋管的未使用侧面放置一个 $(l:machines/heat_sink)热沉/$，以提高效率。"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:heat_frame",
+      "text": "一个 $(l:semiblocks/heat_frame)热框架/$ 是一个可以用来加热（或冷冻！）任何库存中物品的小工具。请注意，热框架不会直接从 $(thing)静态热源/$ 吸收热量，但您可以在旁边放置一个 $(l:machines/heat_pipe)热管/$ 来传递热量。"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:heat_sink",
+      "text": "一个 $(l:machines/heat_sink)热沉/$ 是一个方块，可以有效地将热量（或冷量！）从它所附着的方块散发到大气中。"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:heat_pipe",
+      "text": "一个 $(l:machines/heat_pipe)热管/$ 是一个绝缘的压缩铁核心，可以在方块之间传递热量，而不与相邻的空气或液体方块有任何热连接。这是使用 $(item)压缩铁方块/$ 传递热量的更紧凑（且更便宜）替代方案。您还可以直接将 $(item)热沉/$ 连接到热管上。"
+    },
+    {
+      "type": "spotlight",
+      "item": "minecraft:furnace",
+      "text": "当将原版 $(item)熔炉/$ 连接到任何动态热源（例如 $(l:machines/vortex_tube)涡旋管/$，但也包括像 $(l:compressors/advanced_air_compressor)高级空气压缩机/$ 这样的产生热量的方块）时，热量将被熔炉消耗以作为\"燃料\"，使得熔炉可以仅靠热量运行，而无需固体燃料。这既方便又更高效。"
+    },
+    {
+      "type": "text",
+      "title": "熔炉（续）",
+      "text": "这种熔炉 \"燃料\" 的工作温度为 100°C，温度越高，速度越快。在熔炉周围放置多个热源将增加加热效果。$(p)这种加热效果同样适用于原版 $(item)高炉/$ 和 $(item)抽烟器/$。"
+    }
+  ]
+}

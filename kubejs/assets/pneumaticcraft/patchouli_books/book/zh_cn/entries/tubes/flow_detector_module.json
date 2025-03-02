@@ -1,0 +1,21 @@
+{
+  "name": "流量检测模块",
+  "icon": "pneumaticcraft:flow_detector_module",
+  "category": "pneumaticcraft:tubes",
+  "advancement": "pneumaticcraft:pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "流量检测管道模块是一个 $(l:tubes/tube_modules#inline)内嵌/$ 模块，用于测量通过管道的 $(thing)气流/$。它会发出一个 $(#f00)红石信号/$，其结果基于以下公式：$(p)  $(formula)0.2 * 流量 (mL/tick)/$$(p)例如，当气流为20mL/tick时，信号水平将为20*0.2=4。"
+    },
+    {
+      "type": "text",
+      "text": "请注意，$(thing)流量/$ 是与 $(l:base_concepts/pressure)压力/$ 不同的物理量。流量是每个滴答通过管道的空气量。因此，如果您有一个（假设）不运行的 $(l:machines/elevator)电梯/$，则流量为0，但当它运行时，将消耗空气，因此流量将不为零。因此，该模块可用于检测机器是否在使用空气。$(p)流量检测模块不支持 $(l:tubes/module_expansion_card)模块扩展卡/$。"
+    },
+    {
+      "type": "crafting",
+      "text": "制作流量检测模块",
+      "recipe": "pneumaticcraft:flow_detector_module"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "流体控制组件",
+  "description": "影响程序流体的小部件。",
+  "icon": "pneumaticcraft:textures/progwidgets/start_piece.png",
+  "parent": "pneumaticcraft:programming",
+  "sortnum": 1
+}

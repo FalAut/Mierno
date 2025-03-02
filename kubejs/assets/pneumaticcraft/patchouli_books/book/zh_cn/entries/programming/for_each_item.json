@@ -1,0 +1,24 @@
+{
+  "name": "每个物品小部件",
+  "icon": "pneumaticcraft:textures/progwidgets/for_each_item.png",
+  "category": "pneumaticcraft:widget_flow",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "这个高级小部件将针对每个连接的 $(l:programming/item_filter)物品过滤器/$ 执行一个子程序。对于每个过滤器，它会将指定的变量设置为该过滤器，并跳转到与连接的 $(l:programming/text)文本/$ 小部件匹配的 $(l:programming/label)标签/$。当该例程执行完毕（当它到达通常会跳回 $(l:programming/start)开始/$ 的程序末尾）时，它会返回到这个小部件并对下一个 $(thing)物品过滤器/$ 重复此过程。"
+    },
+    {
+      "type": "text",
+      "title": "中断",
+      "text": "您可以通过将 $(thing)每个物品/$ 使用的物品变量设置为空过滤器（使用 $(l:programming/item_assign)物品分配/$ 小部件来完成此操作）来跳出循环。下次，当程序跳回 $(thing)每个物品/$ 时，它会注意到这一点并取消对过滤器的进一步遍历。"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/progwidgets/for_each_item.png"
+      ],
+      "text": "$(italic)每个物品小部件/$"
+    }
+  ]
+}

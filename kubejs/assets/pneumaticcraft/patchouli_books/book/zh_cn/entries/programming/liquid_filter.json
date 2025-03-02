@@ -1,0 +1,19 @@
+{
+  "name": "液体过滤器小部件",
+  "icon": "pneumaticcraft:textures/progwidgets/liquid_filter_piece.png",
+  "category": "pneumaticcraft:widget_interact",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(thing)液体过滤器/$ 是一个仅用于其他小部件的 $(thing)参数/$ 的小部件。您可以通过 $(thing)右击/$ 小部件并在出现的搜索 GUI 中搜索/选择液体来指定特定的液体。"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/progwidgets/liquid_filter_piece.png"
+      ],
+      "text": "$(italic)液体过滤器小部件/$"
+    }
+  ]
+}

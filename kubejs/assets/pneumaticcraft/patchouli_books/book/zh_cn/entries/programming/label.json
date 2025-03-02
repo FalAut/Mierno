@@ -1,0 +1,23 @@
+{
+  "name": "标签小部件",
+  "icon": "pneumaticcraft:textures/progwidgets/label_piece.png",
+  "category": "pneumaticcraft:widget_flow",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "此小部件专注于 $(l:programming/flow_control)程序流/$. 标签定义了程序中的一个点，$(l:programming/jump)跳转/$ 和 $(l:programming/conditions)条件/$ 小部件可以跳转到。您必须将一个 $(l:programming/text)文本/$ 小部件附加到此小部件以命名它。任何使用该名称的 $(thing)文本/$ 小部件的跳转/条件都将跳转到此标签。"
+    },
+    {
+      "type": "text",
+      "text": "$(thing)标签/$ 小部件可以用于在程序流中创建一个 $(italic)分支/$（在使用 $(l:programming/conditions)条件/$ 时），或者只是通过将程序的不同部分放在一起以便清晰地组织您的程序。一个有用的提示是在 $(l:programming/programmer)程序员/$ GUI 左下角勾选 $(bold)显示程序流/$ 复选框；它将显示链接同名的 $(thing)跳转/条件/标签/$ 小部件的线路。"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/progwidgets/label_piece.png"
+      ],
+      "text": "$(italic)标签小部件/$"
+    }
+  ]
+}

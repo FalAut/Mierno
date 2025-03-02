@@ -1,0 +1,19 @@
+{
+  "name": "条件：RF小部件",
+  "icon": "pneumaticcraft:textures/progwidgets/condition_rf_piece.png",
+  "category": "pneumaticcraft:widget_cond",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "这是一个 $(l:programming/conditions)条件/$ 小部件。$(p)$(thing)条件：RF/$ 小部件允许您（远程）检查连接的 $(l:programming/area)区域/$ 小部件中的方块的 $(thing)Forge Energy (FE)/$ 电平是否与配置的 FE 阈值相匹配。$(p)$(italic)尽管名称如此，但此小部件检查的是 FE，而不是 RF（红石能量）。这个名称是历史遗留的。/$"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/progwidgets/condition_rf_piece.png"
+      ],
+      "text": "$(italic)条件：RF小部件/$"
+    }
+  ]
+}

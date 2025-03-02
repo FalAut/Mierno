@@ -1,0 +1,7 @@
+{
+  "name": "其它部件",
+  "description": "任何不适合任何其他类别的小部件。",
+  "icon": "pneumaticcraft:textures/progwidgets/comment_piece.png",
+  "parent": "pneumaticcraft:programming",
+  "sortnum": 4
+}

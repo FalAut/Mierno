@@ -1,0 +1,20 @@
+{
+  "name": "压力等级",
+  "icon": "pneumaticcraft:advanced_pressure_tube",
+  "category": "pneumaticcraft:base_concepts",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(pncr) 目前有三个 $(thing)等级/$ 的气动机器：$(li)$(thing)一级/$ 机器能够名义上抵抗 5 bar 的压力。$(li)$(thing)1.5 级/$ 机器可以抵抗高达 10 bar 的压力。$(li)$(thing)二级/$ 机器可以抵抗高达 20 bar 的压力。"
+    },
+    {
+      "type": "text",
+      "text": "1.5 级是$(pncr)在MC1.18版本中新增的 \"等级\"。这是一个可选等级，主要用于访问一些以前仅限于二级的功能：$(li)将工具充电至 10 bar$(li)获得 $(item)钻石钻头/$（允许 3x3 方块破坏；这过去需要 $(item)下界合金钻头/$）"
+    },
+    {
+      "type": "text",
+      "title": "表压",
+      "text": "请注意，$(thing)bar/$ 在 $(pncr) 中表示 $(bold)超出/$ 正常大气压力的压力，因此 0 bar 是无压空气，-1 bar 是真空。这也被称为 $(thing)表压/$。"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "酸面团",
+  "icon": "pneumaticcraft:sourdough",
+  "category": "pneumaticcraft:renewables",
+  "advancement": "pneumaticcraft:yeast_culture",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(thing)酸面团/$ 可通过 $(l:renewables/yeast_culture)酵母培养液/$ 和 $(thing)小麦面粉/$ 来制作。它可以烹饪成 $(item)酸面包/$，其营养价值（和口味！）优于无聊的旧香草 $(item)面包/$，或用于制作 $(item)三文鱼天妇罗/$。"
+    },
+    {
+      "type": "crafting",
+      "recipe": "pneumaticcraft:sourdough",
+      "text": "$(italic)你需要揉捏这个/$"
+    },
+    {
+      "type": "pneumaticcraft:pressure_chamber",
+      "recipe": "pneumaticcraft:pressure_chamber/wheat_flour"
+    },
+    {
+      "type": "smelting",
+      "recipe": "pneumaticcraft:sourdough_bread"
+    },
+    {
+      "type": "crafting",
+      "recipe": "pneumaticcraft:raw_salmon_tempura"
+    },
+    {
+      "type": "pneumaticcraft:thermo_plant",
+      "recipe": "pneumaticcraft:thermo_plant/salmon_tempura"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "空气罐",
+  "icon": "pneumaticcraft:air_canister",
+  "category": "pneumaticcraft:components",
+  "advancement": "pneumaticcraft:pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)空气罐/$是任何$(l:base_concepts/pressure)可加压/$物品或工具的制作组件。它也可以在$(l:machines/charging_station)充能站/$中充电和放电。$(item)空气罐/$ 的容量为3000毫升，可充电至10bar（不会爆炸）.$(p)任何使用 $(item)空气罐/$ 制作的气动物品都将保留罐的空气。"
+    },
+    {
+      "type": "crafting",
+      "text": "制作空气罐",
+      "recipe": "pneumaticcraft:air_canister"
+    }
+  ]
+}

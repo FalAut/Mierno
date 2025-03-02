@@ -1,0 +1,32 @@
+{
+  "name": "通用传感器",
+  "icon": "pneumaticcraft:universal_sensor",
+  "category": "pneumaticcraft:machines",
+  "advancement": "pneumaticcraft:plastic",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(thing)通用传感器/$ 如其名所示，是一种可以在多种应用中使用的传感器；它测量现实世界的条件，并根据这些条件输出一个 $(#f00)红石信号/$。$(p)通用性并非没有代价：传感器在几乎所有情况下需要 $(l:base_concepts/pressure)空气/$ 来运行（1 mL/刻），并且传感器需要特定的 $(l:base_concepts/upgrades)升级/$ 才能正常工作。"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:universal_sensor",
+      "text": "目前传感器可以测量超过 15 种不同的条件，从能检查某个坐标是否有方块，或是否有 Twitcher 在直播。打开 $(thing)通用传感器/$ 的图形用户界面，查看可用的选项以及描述。"
+    },
+    {
+      "type": "text",
+      "title": "升级",
+      "text": "您需要插入一个 $(l:base_concepts/upgrades#entity_tracker)实体追踪器/$、$(l:base_concepts/upgrades#dispenser)发射器/$ 或 $(l:base_concepts/upgrades#block_tracker)方块追踪器/$ 以及 $(l:tools/gps_tool)GPS工具/$ 来选择对应的传感器类别。例如，统计范围内的实体数量需要安装 $(item)实体追踪器升级/$。"
+    },
+    {
+      "type": "text",
+      "title": "示例：实体计数",
+      "text": "假设您有一个装满动物的圈子，并想杀掉一些，但前提是数量足够。$(p)添加一个 $(l:base_concepts/upgrades#entity_tracker)实体追踪器升级/$ 和足够的 $(l:base_concepts/upgrades#range)范围升级/$ 来覆盖圈子的大小。$(p)现在，在图形用户界面中，选择 $(thing)实体/$ 按钮，接着选择 $(thing)范围内/$，最后输入一个 $(l:base_concepts/entity_filter)实体过滤器/$ 以匹配您的动物类型（例如 'cow'）。"
+    },
+    {
+      "type": "crafting",
+      "text": "制作通用传感器",
+      "recipe": "pneumaticcraft:universal_sensor"
+    }
+  ]
+}

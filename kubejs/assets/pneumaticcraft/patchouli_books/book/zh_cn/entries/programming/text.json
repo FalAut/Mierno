@@ -1,0 +1,44 @@
+{
+  "name": "文本小部件",
+  "icon": "pneumaticcraft:textures/progwidgets/text_piece.png",
+  "category": "pneumaticcraft:widget_other",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(thing)文本/$ 小部件仅用作其他小部件的参数。它用于提供需要文本数据的小部件。$(p)以下页面列出了使用该小部件的小部件。"
+    },
+    {
+      "type": "relations",
+      "anchor": "entity_filter",
+      "title": "作为实体过滤器",
+      "entries": [
+        "pneumaticcraft:programming/entity_attack",
+        "pneumaticcraft:programming/entity_right_click",
+        "pneumaticcraft:programming/entity_import",
+        "pneumaticcraft:programming/entity_export",
+        "pneumaticcraft:programming/drone_condition_entity"
+      ],
+      "text": "您可以将 $(thing)文本/$ 小部件放置在这些小部件的 $(italic)左侧/$ 以创建黑名单过滤器。"
+    },
+    {
+      "type": "relations",
+      "title": "用于其他小部件",
+      "entries": [
+        "pneumaticcraft:programming/edit_sign",
+        "pneumaticcraft:programming/rename",
+        "pneumaticcraft:programming/jump",
+        "pneumaticcraft:programming/label",
+        "pneumaticcraft:programming/wait",
+        "pneumaticcraft:programming/conditions"
+      ]
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/progwidgets/text_piece.png"
+      ],
+      "text": "$(italic)文本小部件/$"
+    }
+  ]
+}

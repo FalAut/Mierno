@@ -1,0 +1,23 @@
+{
+  "name": "库存导出小部件",
+  "icon": "pneumaticcraft:textures/progwidgets/inventory_export_piece.png",
+  "category": "pneumaticcraft:widget_interact",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(l:programming/inventory_import)库存导入/$ 小部件的对立面： $(l:tools/drone)无人机/$ 将移动到指定 $(l:programming/area)区域/$ 内最近的库存，以从 $(item)无人机/$ 的库存中放下物品。$(p)$(thing)右键点击/$ 小部件可以打开设置 GUI，您可以在其中指定无人机应将物品导出到库存的哪些侧面。您还可以指定最大导出物品数量。"
+    },
+    {
+      "type": "text",
+      "text": "您还可以连接任意数量（包括零）的 $(l:programming/item_filter)物品过滤器/$ 来限制可导出的物品。请记得，$(italic)右/$ 侧的过滤器充当白名单，而 $(italic)左/$ 侧的过滤器充当黑名单。$(p)当 $(item)无人机/$ 的库存为空，或者在区域内没有可以接受要导出的物品的库存（或多个库存）时，这个小部件会执行完成。"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/progwidgets/inventory_export_piece.png"
+      ],
+      "text": "$(italic)不客气/$"
+    }
+  ]
+}

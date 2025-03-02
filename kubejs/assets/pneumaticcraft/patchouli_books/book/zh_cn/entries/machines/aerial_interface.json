@@ -1,0 +1,51 @@
+{
+  "name": "空气接口",
+  "icon": "pneumaticcraft:aerial_interface",
+  "category": "pneumaticcraft:machines",
+  "advancement": "pneumaticcraft:advanced_pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)空气接口/$ 是一个非常强大的设备，可以直接与玩家的库存连接。当它达到足够的 $(l:base_concepts/pressure)加压/$ 时，可以像其他任何库存一样进行交互。物品不会在接口内着陆，而是 $(italic)直接/$ 发送给拥有的玩家。例如，您可以在接口上使用一个 $(l:logistics/frames#requester)物流请求框架/$ 来确保自己拥有 64 根火把。"
+    },
+    {
+      "type": "text",
+      "text": "默认情况下，您的主库存可以通过接口的任何侧面访问，盔甲槽则可以通过顶部/底部访问。不过，可以通过 $(bold)侧面配置/$ GUI 侧选项卡重新配置。$(p)您可以将任何面连接到以下任意一项：$(li)主库存$(li)盔甲槽$(li)副手槽$(li)末影库存（通过普通 $(item)末影箱/$ 进行访问）。"
+    },
+    {
+      "type": "text",
+      "title": "水下呼吸",
+      "text": "显然，由于我们有一个可以链接到玩家的设备，并且由 $(l:base_concepts/pressure)空气/$ 提供动力，所以应该有一些东西可以在必要时传输这些空气 - 对吗？以每 tick 80mL 的费用，您可以在水下无限制地呼吸。$(p)这比带有 $(l:armor/pneumatic_helmet)气动头盔/$ 和 $(l:base_concepts/upgrades#scuba)水肺升级/$ 的使用效率稍高，但不提供清晰的水下视野。"
+    },
+    {
+      "type": "text",
+      "title": "接口化的锻造能量",
+      "text": "$(item)空气接口/$ 接受 $(thing)锻造能量/$（与 RF 能源及许多其他模组的电力兼容）。存储在其内部缓冲器（100,000）中的能量用于对玩家库存（和盔甲槽）中的任何可充电 FE 物品进行充电。"
+    },
+    {
+      "type": "text",
+      "title": "自动喂食",
+      "text": "通过插入 $(l:base_concepts/upgrades#dispenser)分配器升级/$，您可以使 $(item)空气接口/$ 像一个远程自动喂食器一样运作。接口仅接受食品物品，并且仅当您足够饥饿以充分利用所提供的餐点时才接受。请注意，当某个库存提供超过 1 的堆叠时，接口会等到您可以消耗该数量。为了确保可以利用最小的食物量，请使用类似 $(item)漏斗/$ 的缓慢插入器。"
+    },
+    {
+      "type": "text",
+      "title": "经验处理",
+      "text": "$(l:base_concepts/upgrades#dispenser)分配器升级/$ 还允许您向接口内泵送 $(thing)经验液体/$ 或从接口中泵出。当存在多种类型的经验液体时，您可以通过 GUI 中的 $(bold)经验/$ 选项卡选择要使用的类型。此选项卡还显示已检测到并可供使用的模组经验液体。 $(l:base_concepts/memory_essence)记忆精华/$ 始终可以使用。"
+    },
+    {
+      "type": "text",
+      "title": "经验处理（续）",
+      "text": "请注意，接口没有内部液体缓冲区；它直接使用您的经验作为“储罐”。这意味着在泵送经验液体进出时，您需要一种能够以高于每经验点液体经验量的速率输送液体的设备。根据撰写时的信息，所有已知经验液体的速度为每 tick 20mB。"
+    },
+    {
+      "type": "text",
+      "title": "自动充电",
+      "text": "通过将 $(l:tubes/charging_module)充电模块/$ 指向 $(item)空气接口/$，您可以为库存中任何 $(l:base_concepts/pressure)可加压/$ 的物品进行充电。$(p)请注意，要为佩戴的 $(l:armor/overview)气动盔甲/$ 物品充电，充电模块必须指向与您的盔甲槽连接的接口侧面。"
+    },
+    {
+      "type": "crafting",
+      "text": "制作空气接口",
+      "recipe": "pneumaticcraft:aerial_interface"
+    }
+  ]
+}

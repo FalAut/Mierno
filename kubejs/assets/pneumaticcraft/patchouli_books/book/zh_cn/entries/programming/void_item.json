@@ -1,0 +1,19 @@
+{
+  "name": "虚空物品小部件",
+  "icon": "pneumaticcraft:textures/progwidgets/void_item_piece.png",
+  "category": "pneumaticcraft:widget_interact",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "此功能将立即并永久销毁无人机库存中的物品 - 请谨慎使用！强烈建议将其与 $(l:programming/item_filter)物品过滤器/$ 结合使用。 使用过滤器时，只有被过滤器允许的物品才会被虚空处理。$(p)当无人机库存中不再有可适用的物品时，部件执行完成。"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/progwidgets/void_item_piece.png"
+      ],
+      "text": "$(italic)反正也不想要/$"
+    }
+  ]
+}

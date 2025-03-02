@@ -1,0 +1,19 @@
+{
+  "name": "虚空液体小部件",
+  "icon": "pneumaticcraft:textures/progwidgets/void_fluid_piece.png",
+  "category": "pneumaticcraft:widget_interact",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "与 $(l:programming/void_item)虚空物品小部件/$ 类似，此功能将立即并永久销毁无人机罐中的任何液体 - 请谨慎使用！强烈建议将其与 $(l:programming/liquid_filter)液体过滤器/$ 结合使用。 使用过滤器时，只有被过滤器允许的液体才会被虚空处理。"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/progwidgets/void_fluid_piece.png"
+      ],
+      "text": "$(italic)已经用完了/$"
+    }
+  ]
+}

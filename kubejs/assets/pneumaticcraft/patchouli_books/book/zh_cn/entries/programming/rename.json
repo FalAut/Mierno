@@ -1,0 +1,24 @@
+{
+  "name": "重命名小部件",
+  "icon": "pneumaticcraft:textures/progwidgets/rename_piece.png",
+  "category": "pneumaticcraft:widget_other",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "这个小部件可以重命名 $(l:tools/drone)无人机/$，就像你用 $(item)名称标签/$ 右键点击它一样。名称在附加的 $(l:programming/text)文本/$ 小部件中输入。"
+    },
+    {
+      "type": "text",
+      "title": "变量",
+      "text": "你还可以通过在文本中包含 $(thing)${<var_name>}/$ 来插入 $(l:programming/variables)变量/$ 的值，例如：$(p)  $(formula)计数器: ${counter}/$$(p)如果 $(thing)counter/$ 变量被设置为 $(thing)x=1,y=2,z=3/$，则这将展开为 $(thing)计数器: 1, 2, 3/$。$(l:programming/variables#special)特殊/$ 和 $(l:programming/variables#global)全局变量/$ 也可以在这里使用。"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/progwidgets/rename_piece.png"
+      ],
+      "text": "$(italic)你是谁来着？/$"
+    }
+  ]
+}

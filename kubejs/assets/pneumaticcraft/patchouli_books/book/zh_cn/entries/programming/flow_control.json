@@ -1,0 +1,25 @@
+{
+  "name": "流程控制",
+  "icon": "pneumaticcraft:textures/progwidgets/jump_piece.png",
+  "category": "pneumaticcraft:programming",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "当 $(l:tools/drone)无人机/$ 被部署时，它会立即开始执行其存储的程序。执行流程如下所示：$(li)程序 $(italic)始终/$ 从 $(l:programming/start)开始/$ 小部件开始，这个小部件只能有一个。$(li)流通常向 $(italic)下方/$ 推进；进入当前小部件底部连接的下一个小部件。"
+    },
+    {
+      "type": "text",
+      "text": "$(li)一个小部件执行其给定的操作，直到它决定自己已经 $(italic)完成/$ - “完成”的定义因小部件而异，这在每个单独小部件的页面中进行了描述。$(li)当当前小部件底部没有连接小部件时，执行将返回到 $(l:programming/start)开始/$ 小部件。$(p)这就是基本流程。然而，还有少数特殊情况，接下来会进行描述……"
+    },
+    {
+      "type": "text",
+      "title": "流程控制小部件",
+      "text": "$(li)$(l:programming/label)标签/$ 小部件是在程序中供跳转的一个点。$(li)$(l:programming/jump)跳转/$ 小部件触发一个立即的、无条件的跳转到匹配的 $(thing)标签/$ 小部件。$(li)$(l:programming/conditions)条件/$ 小部件可以根据它们测试的条件触发跳转。$(li)高级的 $(l:programming/for_each_item)针对每个项目/$ 和 $(l:programming/for_each_coordinate)针对每个坐标/$ 小部件会对它们的输入列表重复跳转到一个 $(thing)标签/$。"
+    },
+    {
+      "type": "text",
+      "text": "还有几个特殊小部件存在，影响流程控制：$(li)$(l:programming/standby)待命/$ 小部件，会让无人机进入“休眠”状态，直到另一个小部件实际有事情可做。$(li)$(l:programming/suicide)自杀/$ 小部件，会将 $(thing)无人机/$ 作为物品掉落，立即终止执行。"
+    }
+  ]
+}

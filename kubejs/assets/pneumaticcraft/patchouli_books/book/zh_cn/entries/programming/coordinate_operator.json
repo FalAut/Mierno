@@ -1,0 +1,27 @@
+{
+  "name": "坐标运算符小部件",
+  "icon": "pneumaticcraft:textures/progwidgets/coordinate_operation_plus_minus.png",
+  "category": "pneumaticcraft:widget_other",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(thing)坐标运算符/$ 小部件用于定义和/或操作 $(l:programming/variables)变量/$，以允许一些高级无人机功能。此小部件需要一个或多个连接的 $(l:programming/coordinate)坐标/$ 小部件来定义将要使用的值，并对连接的各部分执行给定的算术运算（在小部件的 GUI 中定义）。"
+    },
+    {
+      "type": "text",
+      "text": "可用的操作是：$(li)$(bold)加/减/$：将右侧的小部件相加，将左侧的小部件相减。$(li)$(bold)乘/除/$：将右侧的小部件相乘，然后将结果除以左侧的小部件。$(li)$(bold)最小/最大/$：从右侧的小部件中获取最大 X/Y/Z，然后从左侧的小部件中取最小值，再取之前确定的最大值。"
+    },
+    {
+      "type": "text",
+      "text": "最终结果存储在一个 $(l:programming/variables)变量/$ 中，该变量由坐标运算符 GUI 中输入的名称定义。使用这个 $(thing)变量/$，您可以稍后检索坐标：$(li)在 $(l:programming/area)区域/$ 小部件中，您可以选择使用 $(thing)变量/$ 名称，而不是使用 GPS 坐标$(li)您可以使用 $(l:programming/condition_coordinate)条件: 坐标/$ 对 $(thing)变量/$ 进行测试。"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/progwidgets/coordinate_operation_plus_minus.png"
+      ],
+      "text": "$(italic)坐标运算符小部件/$"
+    }
+  ]
+}

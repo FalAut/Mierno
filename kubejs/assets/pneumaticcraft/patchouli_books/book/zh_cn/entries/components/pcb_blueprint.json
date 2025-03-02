@@ -1,0 +1,17 @@
+{
+  "name": "PCB蓝图",
+  "icon": "pneumaticcraft:pcb_blueprint",
+  "category": "pneumaticcraft:components",
+  "advancement": "pneumaticcraft:root",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)PCB蓝图/$是一个特殊的组件，在制作 $(l:manufacturing/uv_light_box)紫外灯箱/$ 时需要。$(p)它不能正常制作，但必须交易，通常通过 $(l:tools/amadron_tablet)阿马德兰片剂/$，但也可能通过 $(l:base_concepts/villagers)机械村民/$。"
+    },
+    {
+      "type": "pneumaticcraft:amadron_trade",
+      "recipe": "pneumaticcraft:amadron/pcb_blueprint",
+      "text": "交易$(item)PCB蓝图/$."
+    }
+  ]
+}

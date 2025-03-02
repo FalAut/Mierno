@@ -1,0 +1,17 @@
+{
+  "name": "管道交汇点",
+  "icon": "pneumaticcraft:tube_junction",
+  "category": "pneumaticcraft:tubes",
+  "advancement": "pneumaticcraft:pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(thing)管道交汇点/$ 是一种非常简单的设备，可以让两个 $(l:tubes/pressure_tubes)压力管/$（任何 $(l:base_concepts/pressure_tiers)压力等级/$）交错而不相连。"
+    },
+    {
+      "type": "crafting",
+      "text": "制作管道交汇点",
+      "recipe": "pneumaticcraft:tube_junction"
+    }
+  ]
+}

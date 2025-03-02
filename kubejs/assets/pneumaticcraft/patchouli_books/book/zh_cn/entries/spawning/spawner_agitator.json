@@ -1,0 +1,23 @@
+{
+  "name": "刷怪笼激活器",
+  "icon": "pneumaticcraft:spawner_agitator",
+  "category": "pneumaticcraft:spawning",
+  "advancement": "pneumaticcraft:root",
+  "pages": [
+    {
+      "type": "text",
+      "text": "将其放置在一个普通的$(item)刷怪笼/$上，该物品会$(thing)激活/$刷怪笼:$(li)当附近没有玩家时，刷怪笼将继续刷怪$(li)防止生成的实体在玩家离开区域时消失$(p)制作怪物农场？$(p)$(thing)潜行右击/$使用$(l:logistics/logistics_configurator)逻辑配置器/$或其他可以将其移除。"
+    },
+    {
+      "type": "text",
+      "flag": "mod:apotheosis",
+      "title": "神话",
+      "text": "$(thing)神话/$是一个模组，它不仅添加了强大的自定义功能，还改变了普通刷怪笼的内部。这使得刷怪器搅拌器无法完全与其进行交互。由于你已安装了神话，刷怪器激活器的功能仅限于防止玩家远离时怪物消失；要允许怪物在玩家远离时生成，请使用神话的功能。"
+    },
+    {
+      "type": "crafting",
+      "text": "制作刷怪笼激活器",
+      "recipe": "pneumaticcraft:spawner_agitator"
+    }
+  ]
+}

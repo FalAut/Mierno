@@ -1,0 +1,17 @@
+{
+  "name": "空气压缩机",
+  "icon": "pneumaticcraft:air_compressor",
+  "category": "pneumaticcraft:compressors",
+  "advancement": "pneumaticcraft:pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)空气压缩机/$是一个简单的发电机，可以产生 $(l:base_concepts/pressure)压缩空气/$。它将燃烧原版 $(item)熔炉/$可以接受的任何固体燃料，以产生 $(ttcolor)$(t:这可以通过安装速度升级来增加)基础值/$10mL空气/刻。$(p)它$(italic)不/$接受 $(item)熔岩桶/$或任何包含液体燃料的桶;为此，请使用 $(l:compressors/liquid_compressor)液体压缩机/$。"
+    },
+    {
+      "type": "crafting",
+      "text": "制作$(item)空气压缩机/$",
+      "recipe": "pneumaticcraft:air_compressor"
+    }
+  ]
+}

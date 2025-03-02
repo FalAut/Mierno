@@ -1,0 +1,23 @@
+{
+  "name": "液体导出小部件",
+  "icon": "pneumaticcraft:textures/progwidgets/liquid_export_piece.png",
+  "category": "pneumaticcraft:widget_interact",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(l:programming/liquid_import)液体导入/$ 的反向操作：$(l:tools/drone)无人机/$ 将移动到指定 $(l:programming/area)区域/$ 内的最近水桶，以将液体从其自身的水桶卸下。$(p)此外，$(item)无人机/$ 可以在世界中放置液体：要做到这一点，请在小部件 GUI 中勾选 $(thing)在世界中放置液体/$ 选项。请注意，$(item)无人机/$ 在此过程中可能会困住自己！"
+    },
+    {
+      "type": "text",
+      "text": "您可以在小部件 GUI 中指定无人机应在哪些侧面输出其物品；您还可以指定最大导出液体量（以毫升为单位）。$(p)您可以 $(ttcolor)$(t:右侧连接以列入白名单，左侧连接以列入黑名单)连接/$ 一个 $(l:programming/liquid_filter)液体过滤器/$ 以限制无人机可导出的内容。$(p)当 $(item)无人机/$ 的水桶为空（不适用液体）时，此小部件完成，或者在该区域内没有可以接收液体的水桶时。"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/progwidgets/liquid_export_piece.png"
+      ],
+      "text": "$(italic)液体导出小部件/$"
+    }
+  ]
+}

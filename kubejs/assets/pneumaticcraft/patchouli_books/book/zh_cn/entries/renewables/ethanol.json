@@ -1,0 +1,40 @@
+{
+  "name": "乙醇",
+  "icon": "pneumaticcraft:ethanol_bucket",
+  "category": "pneumaticcraft:renewables",
+  "advancement": "pneumaticcraft:yeast_culture",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(thing)乙醇/$ 可以在 $(l:manufacturing/thermopneumatic_processing_plant)热气压处理厂/$ 中使用 $(l:renewables/yeast_culture)酵母培养/$ 和 $(thing)糖/$ 生产。它是 $(l:renewables/biodiesel)生物柴油/$ 的成分之一。"
+    },
+    {
+      "type": "text",
+      "text": "此过程对温度敏感：您需要将热气压处理厂的温度保持在 30°C 到 60°C 之间。$(p)在温暖的生物群落中，这很简单，但在较冷的地区可能需要一些努力——需要注意的是，随着您挖掘而更深，周围的温度往往会升高，因此如果您在较低的 Y 级别进行处理，中等气候的生物群落可能是合适的选择。"
+    },
+    {
+      "type": "pneumaticcraft:thermo_plant",
+      "recipe": "pneumaticcraft:thermo_plant/ethanol_from_sugar"
+    },
+    {
+      "type": "pneumaticcraft:thermo_plant",
+      "recipe": "pneumaticcraft:thermo_plant/ethanol_from_melon"
+    },
+    {
+      "type": "pneumaticcraft:thermo_plant",
+      "recipe": "pneumaticcraft:thermo_plant/ethanol_from_potato"
+    },
+    {
+      "type": "pneumaticcraft:thermo_plant",
+      "recipe": "pneumaticcraft:thermo_plant/ethanol_from_poisonous_potato"
+    },
+    {
+      "type": "pneumaticcraft:thermo_plant",
+      "recipe": "pneumaticcraft:thermo_plant/ethanol_from_apple"
+    },
+    {
+      "type": "pneumaticcraft:thermo_plant",
+      "recipe": "pneumaticcraft:thermo_plant/ethanol_from_sweet_berries"
+    }
+  ]
+}

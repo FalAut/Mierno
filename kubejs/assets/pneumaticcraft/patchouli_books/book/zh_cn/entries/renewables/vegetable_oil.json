@@ -1,0 +1,20 @@
+{
+  "name": "植物油",
+  "icon": "pneumaticcraft:vegetable_oil_bucket",
+  "category": "pneumaticcraft:renewables",
+  "advancement": "pneumaticcraft:tp_plant",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(thing)植物油/$ 可通过 $(l:manufacturing/thermopneumatic_processing_plant)热气动加工厂/$ 从各种 $(thing)种子/$ 和 $(thing)作物/$ 中生产。种子通常是比种植作物更好的油源。植物油在 $(l:renewables/biodiesel)生物柴油/$ 的生产中是必需的。"
+    },
+    {
+      "type": "pneumaticcraft:thermo_plant",
+      "recipe": "pneumaticcraft:thermo_plant/vegetable_oil_from_seeds"
+    },
+    {
+      "type": "pneumaticcraft:thermo_plant",
+      "recipe": "pneumaticcraft:thermo_plant/vegetable_oil_from_crops"
+    }
+  ]
+}

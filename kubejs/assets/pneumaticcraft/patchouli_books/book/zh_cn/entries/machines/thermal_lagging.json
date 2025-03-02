@@ -1,0 +1,22 @@
+{
+  "name": "热绝缘",
+  "icon": "pneumaticcraft:thermal_lagging",
+  "category": "pneumaticcraft:machines",
+  "advancement": "pneumaticcraft:root",
+  "pages": [
+    {
+      "type": "text",
+      "text": "正如您可能已经知道的，$(pncr) 使用 $(l:base_concepts/heat)热量/$ 的机器如果暴露在外，会向空气中散失热量。虽然您可以用几乎任何非空气、非导热的方块覆盖这些机器，但 $(thing)热绝缘/$ 特别适合用于给机器绝缘。"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:thermal_lagging",
+      "text": "$(thing)热绝缘/$ 具有一个有用的特性，即允许您 $(italic)穿透点击/$ 到背后的方块，就像绝缘材料根本不存在一样。$(p)这适用于您没有持有任何类型的 $(item)镐/$ 或 $(item)扳手/$ ，或者没有处于 $(thing)潜行/$ 状态，因为这样可以让您直接选择绝缘材料进行移除或其他交互。"
+    },
+    {
+      "type": "crafting",
+      "text": "制作热绝缘",
+      "recipe": "pneumaticcraft:thermal_lagging"
+    }
+  ]
+}

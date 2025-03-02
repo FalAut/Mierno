@@ -1,0 +1,31 @@
+{
+  "name": "原油",
+  "icon": "pneumaticcraft:oil_bucket",
+  "category": "pneumaticcraft:base_concepts",
+  "pages": [
+    {
+      "type": "text",
+      "text": "在 $(pncr) 中，唯一的世界生成是 $(thing)原油/$。它的生成方式类似于水湖;区别在于，油湖更有可能在地下深处生成，而不是在地表生成。因此， $(l:tools/seismic_sensor)地震传感器/$强烈推荐。"
+    },
+    {
+      "type": "text",
+      "text": "原油有两个用途:转化为可用于$(l:compressors/liquid_compressor)液体压缩机的/$$(l:manufacturing/refinery)精炼/$燃料, 以及用于制造$(l:components/plastic)塑料/$ 和 $(l:components/lubricant)润滑剂/$。$(p)$(item)塑料/$用于$(pncr)中的许多配方中，而 $(item)润滑剂/$是制作$(l:base_concepts/upgrades#speed)速度升级/$所必需的。"
+    },
+    {
+      "type": "text",
+      "text": "找到一些原油后，您需要提取并运输它。$(pncr)推荐的提取石油的方法是使用$(l:machines/gas_lift)气体升力/$，尽管也可以使用其他Mod的流体泵。如果你在离基地很远的地方抽水，一个早期的运输解决方案是简单的 $(l:machines/tanks)小型储箱/$，它可以容纳高达32,000mB的液体，并在破裂时保留其内容物。（甚至气体升力也可以用于此目的，因为它还可以保留其液体内容物）。"
+    },
+    {
+      "type": "image",
+      "images": [
+          "pneumaticcraft:textures/patchouli/oil_pumping.png"
+      ],
+      "text": "$(italic)使用气举装置泵送石油，上方有液体料斗/$"
+    },
+    {
+      "type": "text",
+      "title": "Mod集成",
+      "text": "$(pncr)当然不是唯一添加$(thing)油/$的Mod;其他几个 Mod 也是如此(包括 $(thing)建筑/$和$(thing)沉浸石油/$).$(p)根据你的世界生成设置， $(pncr)可能没有油;但是， $(l:manufacturing/refinery)精炼厂/$能够处理来自其他 Mod 的液体。 \"油\""
+    }
+  ]
+}

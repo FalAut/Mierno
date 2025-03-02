@@ -1,0 +1,47 @@
+{
+  "name": "静电压缩机",
+  "icon": "pneumaticcraft:electrostatic_compressor",
+  "category": "pneumaticcraft:compressors",
+  "advancement": "pneumaticcraft:advanced_pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)静电压缩机/$是空气$(l:base_concepts/pressure)压缩机/$的$(l:base_concepts/pressure_tiers)层级2/$，它使用$(thing)闪电/$作为产生压缩空气的能量。$(p)当它被闪电击中时，它会立即产生200,000mL的空气。看起来很多，但你多久看到一次闪电苦力怕？你必须让它被击中。"
+    },
+    {
+      "type": "text",
+      "text": "为了增加这种情况发生的机会，您可以将压缩机连接到一台 $(ttcolor)$(t:电网块可以通过 'pneumaticraft：electrostatic_grid' 块标签定制)电网/$ of $(item)铁栏杆/$或$(item)避雷针/$ 到这台机器上，它们充当闪电的导体。$(p)较大的电网更好：电网块可以水平方向（圆形半径）最多5个空格，最多高于或下方5个电网，但它们必须都通过彼此连接到 $(item)静电压缩机/$。"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/patchouli/electrostatic_compressor.png"
+      ]
+    },
+    {
+      "type": "text",
+      "text": "请注意，在左图中，只有中央压缩机周围有一个足够大的电网以实现最大效率;其他压缩机触发打击的几率较低（尽管这仍然比在电网中间只有一个压缩机更有效）。"
+    },
+    {
+      "type": "text",
+      "text": "在$(thing)电网/$上有多个$(item)静电压缩机/$，击中产生的空气在它们之间平均分配。$(p)为防止压缩机在撞击后压力过高时爆炸，您可以在压缩机底部连接$(item)铁栏杆/$。这样，能量可以消散到地面，而不是进入机器。"
+    },
+    {
+      "type": "text",
+      "text": "这种消散仅在达到压缩机的危险压力时发生，而不是更早。压缩机下方(在同一 Y 轴上)的每个$(item)栏杆/$ $（italic）直接/$将耗散多达10,000mL的多余空气。 $(p)因此，在共享的10个压缩机$(thing)电网/$上, $(ttcolor)$(t:200000 / 10 = 每台压缩机产生20000空气;10000 x 2 = 20000空气耗散)每台压缩机下方只需要 2 个电网块/$。(您也可以将 $(l:base_concepts/upgrades#security)安全升级/$添加到压缩器中，但这更昂贵且效果较差）"
+    },
+    {
+      "type": "text",
+      "text": "为了提高击中机会，您还可以在压缩机$(italic)上面/$放置最多10个电网块以形成$(thing)避雷针/$.每个方块都会略微提高击中几率。"
+    },
+    {
+      "type": "text",
+      "text": "$(bold)注意:/$ 与早期版本的$(pncr)不同，天然闪电$(italic)不会/$向压缩机中添加空气(使用其他Mod来创建闪电是非常可用的).相反，压缩机有很小的机会产生\"fake\"光束.这种机会在晴朗的天气里$(italic)非常/$小，但在$(thing)下雨/$会增加,  $(thing)雷雨/$时会急剧增加。"
+    },
+    {
+      "type": "crafting",
+      "text": "制作$(item)静电压缩机/$",
+      "recipe": "pneumaticcraft:electrostatic_compressor"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "模块扩展卡",
+  "icon": "pneumaticcraft:module_expansion_card",
+  "category": "pneumaticcraft:tubes",
+  "advancement": "pneumaticcraft:printed_circuit_board",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)模块扩展卡/$ 是一种可插拔的电路板，您可以将其附加到 $(l:tubes/tube_modules)管道模块/$ 上，以多种方式增强其功能。 $(thing)右键单击/$ 该卡在管道模块上进行应用。$(p)有关模块如何增强的更多信息，请参阅每个管道模块的页面。"
+    },
+    {
+      "type": "crafting",
+      "text": "制作模块扩展卡",
+      "recipe": "pneumaticcraft:module_expansion_card"
+    }
+  ]
+}

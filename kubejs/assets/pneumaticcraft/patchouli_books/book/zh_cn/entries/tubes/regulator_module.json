@@ -1,0 +1,30 @@
+{
+  "name": "调节器模块",
+  "icon": "pneumaticcraft:regulator_tube_module",
+  "category": "pneumaticcraft:tubes",
+  "advancement": "pneumaticcraft:pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "调节器管模块是一个 $(l:tubes/tube_modules#inline)内联/$ 模块，用于限制通过管道的 $(l:base_concepts/pressure)压力/$。默认情况下，该模块将在没有红石信号时将压力调节至 4.9 bar（适用于基本和高级管道），随着信号上升到 15，压力逐渐降至 0。这意味着在调节器旁边的杠杆会将其关闭，阻止任何气流通过。"
+    },
+    {
+      "type": "text",
+      "text": "当调节器的窄侧达到此压力时，管道将不再允许更多空气通过。该原理可以用作 $(thing)变压器/$：在输入（宽）端有高压空气，但调节器管将输出的压力限制在阀值压力。$(p)这允许较低级别的管道网络安全地由较高级别的网络供电。"
+    },
+    {
+      "type": "text",
+      "text": "有趣的是，$(thing)调节器模块/$ 无论红石信号如何，都允许空气在相反方向（从窄侧到宽侧）自由流动；这意味着具有满红石信号的调节器可以作为单向阀使用。$(p)请注意，$(thing)调节器/$ 并不 $(italic)主动/$ 减少其窄侧的压力；它仅在压力超过阈值时阻止气流。"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:module_expansion_card",
+      "text": "将 $(l:tubes/module_expansion_card)模块扩展卡/$ 应用到调节器模块时，将解锁一个 GUI，提供对阈值水平的更多控制。您可以在 GUI 中设置精确的阈值，或者通过 $(bold)高级配置/$ 复选框根据红石信号配置插值阈值。这与 $(l:tubes/safety_module)安全模块/$ 的工作方式完全相同。"
+    },
+    {
+      "type": "crafting",
+      "text": "制作调节器模块",
+      "recipe": "pneumaticcraft:regulator_tube_module"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "迷你枪",
+  "icon": "pneumaticcraft:minigun[pneumaticcraft:air=30000]",
+  "category": "pneumaticcraft:tools",
+  "advancement": "pneumaticcraft:pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)迷你枪/$ 是一种手持武器，依赖于 $(l:base_concepts/pressure)压缩空气/$ 和 $(l:tools/minigun_ammo)枪械弹药/$. 弹药需要插入 $(l:tools/minigun_ammo#magazine)迷你枪的弹匣/$ - 它不会从玩家的库存中消耗。$(p)要发射迷你枪，只需按住 $(thing)右键/$。枪管会开始旋转，并在达到一定转速后开始射击。"
+    },
+    {
+      "type": "text",
+      "title": "升级",
+      "text": "$(item)迷你枪/$ 的许多特性（如旋转加速、射程、药水触发几率等）都可以在 $(l:machines/charging_station)充电站/$ 中进行升级。$(p)关于每个升级及其效果的完整文档可在充电站的升级界面中查看。"
+    },
+    {
+      "type": "crafting",
+      "text": "制作迷你枪",
+      "recipe": "pneumaticcraft:minigun"
+    }
+  ]
+}

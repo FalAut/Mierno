@@ -1,0 +1,25 @@
+{
+  "name": "热管",
+  "icon": "pneumaticcraft:heat_pipe",
+  "category": "pneumaticcraft:machines",
+  "advancement": "pneumaticcraft:root",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)热管/$ 是一种绝缘的压缩铁核心，可以在方块之间传递热量，而不与相邻的空气或液体方块进行热连接。它是使用 $(thing)压缩铁块/$ 传递热量的更紧凑（且更便宜）的替代方案。$(p)您可以使用 $(l:tools/camo_applicator)伪装应用器/$ 隐藏热管。"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/patchouli/heat_sinks.png"
+      ],
+      "border": "true",
+      "text": "$(italic)待定：热管图像/$"
+    },
+    {
+      "type": "crafting",
+      "text": "制作热管",
+      "recipe": "pneumaticcraft:heat_pipe"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "强化箱",
+  "icon": "pneumaticcraft:reinforced_chest",
+  "category": "pneumaticcraft:machines",
+  "advancement": "pneumaticcraft:root",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)强化箱/$ 是一个拥有36个槽位的箱子，它具有与黑曜石相当的爆炸抗性，并且在破坏时会保留其库存。"
+    },
+    {
+      "type": "crafting",
+      "text": "制造强化箱",
+      "recipe": "pneumaticcraft:reinforced_chest"
+    }
+  ]
+}

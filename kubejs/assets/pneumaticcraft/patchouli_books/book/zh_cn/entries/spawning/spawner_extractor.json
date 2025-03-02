@@ -1,0 +1,25 @@
+{
+  "name": "刷怪提取器",
+  "icon": "pneumaticcraft:spawner_extractor",
+  "category": "pneumaticcraft:spawning",
+  "advancement": "pneumaticcraft:pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)刷怪提取器/$是获取$(l:spawning/spawner_core)刷怪核心/$的两种方式之一，如果你想使用$(l:spawning/pressurized_spawner)加压刷怪笼/$，你将需要它。$(p)要使用刷怪提取器，将其放置在一个普通的$(item)刷怪笼/$的顶部，而这个刷怪笼需要在世界中找到。"
+    },
+    {
+      "type": "text",
+      "text": "然后，给刷怪提取器提供$(thing)-0.5 bar/$的真空或更低，并准备好战斗。事实证明，刷怪笼$(italic)非常/$不喜欢被提取，并会以极高的速率刷出生物以自卫。一些有用的提示:$(li)基础提取时间大约为60秒。$(li)然而，任何附近的防御生物都会减慢提取速度，太多会导致提取停滞。"
+    },
+    {
+      "type": "text",
+      "text": "$(li)附近必须至少有一个玩家，否则提取将会停滞。$(li)如果$(thing)刷怪笼/$无法生成防御者（例如，光照不足、地面缺失……），这个过程也会减慢并最终停滞。$(p)一旦提取完成，$(thing)刷怪核心/$将被弹出，刷怪笼变为$(item)空刷怪笼/$. 这个方块可以（并且应该）被拾起，因为它用于制作$(l:spawning/pressurized_spawner)加压刷怪笼/$。"
+    },
+    {
+      "type": "crafting",
+      "text": "制作刷怪提取器。",
+      "recipe": "pneumaticcraft:spawner_extractor"
+    }
+  ]
+}

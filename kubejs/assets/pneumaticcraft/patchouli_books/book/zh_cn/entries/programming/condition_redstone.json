@@ -1,0 +1,19 @@
+{
+  "name": "条件：红石小部件",
+  "icon": "pneumaticcraft:textures/progwidgets/condition_redstone_piece.png",
+  "category": "pneumaticcraft:widget_cond",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "这是一个 $(l:programming/conditions)条件/$ 小部件。$(p)$(thing)条件：红石/$ 小部件允许您（远程）检查连接的 $(l:programming/area)区域/$ 小部件中的方块的红石电平是否与配置的红石阈值相匹配。"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/progwidgets/condition_redstone_piece.png"
+      ],
+      "text": "$(italic)条件：红石小部件/$"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "右键实体小部件",
+  "icon": "pneumaticcraft:textures/progwidgets/entity_right_click_piece.png",
+  "category": "pneumaticcraft:widget_interact",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(l:tools/drone)无人机/$ 将对指定 $(l:programming/area)区域/$ 内的每个实体，$(thing)右键单击/$ 它的第一个库存槽中的物品，且每个实体只执行一次。这可以用于剪羊毛、挤牛奶、繁殖动物等多种用途！$(p)请记住，连接到此小部件的任何 $(l:programming/area)区域/$ 小部件必须具有 $(thing)Box/$ 区域类型；这是唯一支持的形状。不过，通过使用区域的白名单/黑名单功能，可以创建不同的形状."
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/progwidgets/entity_right_click_piece.png"
+      ],
+      "text": "$(italic)戳戳/$"
+    }
+  ]
+}

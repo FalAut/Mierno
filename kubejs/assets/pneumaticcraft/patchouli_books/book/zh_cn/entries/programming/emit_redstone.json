@@ -1,0 +1,19 @@
+{
+  "name": "发射红石小部件",
+  "icon": "pneumaticcraft:textures/progwidgets/emit_redstone_piece.png",
+  "category": "pneumaticcraft:widget_interact",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "通过此小部件，您可以使 $(l:tools/drone)无人机/$ 发射 $(#f00)红石信号/$. 您可以通过 $(thing)右键点击/$ 小部件并在设置 GUI 中进行配置来指定其发射的侧面。要发射的红石信号级别由连接一个包含数字（0 - 15）的 $(l:programming/text)文本/$ 小部件来指定。"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/progwidgets/emit_redstone_piece.png"
+      ],
+      "text": "$(italic)发射红石小部件/$"
+    }
+  ]
+}

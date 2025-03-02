@@ -1,0 +1,19 @@
+{
+  "name": "无人机条件：物品小部件",
+  "icon": "pneumaticcraft:textures/progwidgets/condition_drone_inventory_piece.png",
+  "category": "pneumaticcraft:widget_cond",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(thing)无人机条件：物品/$ 小部件允许您检查此 $(l:tools/drone)无人机/$ 的库存中是否有一定数量的物品。它将统计所有匹配的物品（由连接的 $(l:programming/item_filter)物品过滤器/$ 指定，或者没有过滤器以统计每种物品）。"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/progwidgets/condition_drone_inventory_piece.png"
+      ],
+      "text": "$(italic)无人机条件：物品小部件/$"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+    "name": "塑料",
+    "icon": "pneumaticcraft:plastic_bucket",
+    "category": "pneumaticcraft:components",
+    "advancement": "pneumaticcraft:tp_plant",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$(item)塑料/$是$(pncr)中的重要合成材料。$(p)$(item)熔融塑料/$可通过在$(l:manufacturing/refinery)炼油厂/$中用$(l:manufacturing/refinery)LPG/$与$(item)煤炭/$，或在$(l:renewables/biodiesel)生物柴油/$与$(item)木炭/$在$(l:manufacturing/thermopneumatic_processing_plant)热力气压处理厂/$中制造。"
+        },
+        {
+            "type": "pneumaticcraft:thermo_plant",
+            "recipe": "pneumaticcraft:thermo_plant/plastic_from_lpg"
+        },
+        {
+            "type": "pneumaticcraft:thermo_plant",
+            "recipe": "pneumaticcraft:thermo_plant/plastic_from_biodiesel"
+        },
+        {
+            "type": "spotlight",
+            "title": "塑料板",
+            "item": "pneumaticcraft:plastic",
+            "flag": "pneumaticcraft:inWorldPlasticSolidification",
+            "text": "$(item)熔融塑料/$可通过直接倾倒入世界中凝固——约半秒后会形成$(item)塑料板/$。使用带有$(l:base_concepts/upgrades#dispenser)发射器升级/$的$(l:machines/liquid_hopper)液体漏斗/$配合$(l:machines/omnidirectional_hopper)全方位漏斗/$可轻松实现自动化。"
+        },
+        {
+            "type": "spotlight",
+            "title": "塑料板",
+            "item": "pneumaticcraft:plastic",
+            "flag": "!pneumaticcraft:inWorldPlasticSolidification",
+            "text": "将装有$(item)熔融塑料/$的桶或$(l:machines/tanks)储罐/$放入附有$(l:semiblocks/heat_frame)热力框架/$的容器中，并将框架冷却至-80°C以下（温度越低越好），即可生产$(item)塑料板/$。每消耗1000mB熔融塑料时，有概率额外获得一个塑料板。"
+        },
+        {
+            "type": "text",
+            "title": "提升产量",
+            "flag": "pneumaticcraft:inWorldPlasticSolidification",
+            "text": "另一种凝固$(item)塑料板/$的方法是将装有熔融塑料的桶或$(l:machines/tanks)储罐/$放入附有$(l:semiblocks/heat_frame)热力框架/$的容器中，并将框架冷却至-80°C以下（温度越低越好）。每消耗1000mB熔融塑料时，有概率额外获得一个塑料板。"
+        },
+        {
+            "type": "text",
+            "title": "关于储罐的注意事项",
+            "text": "尽管$(pncr)的流体储罐自带物品栏且允许放置$(thing)热力框架/$，但直接在装满熔融塑料的储罐上附加框架是无效的——必须将储罐以物品形式放入带有热力框架的容器（箱子等）中才能生效。"
+        },
+        {
+            "type": "spotlight",
+            "title": "塑料建筑砖™",
+            "item": "pneumaticcraft:plastic_brick_red",
+            "text": "使用$(item)塑料板/$与任意染料可合成此类砖块，适用于建筑用途。$(p)请勿赤脚行走其上，否则会感受到超乎寻常的疼痛！$(p)$(italic)与其他知名建筑砖品牌兼容。/$"
+        },
+        {
+            "type": "spotlight",
+            "title": "光滑塑料建筑砖™",
+            "item": "pneumaticcraft:smooth_plastic_brick_red",
+            "text": "这是$(item)塑料建筑砖/$的光滑变种，同样适用于建筑。$(p)此类砖块还具有作为优质地板的优势，能显著提升行走速度！"
+        },
+        {
+            "type": "crafting",
+            "recipe": "pneumaticcraft:plastic_brick_red",
+            "recipe2": "pneumaticcraft:smooth_plastic_brick_red",
+            "text": "其他颜色的配方可通过类比推测"
+        },
+        {
+            "type": "smelting",
+            "recipe": "pneumaticcraft:plastic_sheet_from_brick",
+            "recipe2": "pneumaticcraft:plastic_sheet_from_smooth_brick",
+            "text": "可通过熔炼砖块回收塑料板"
+        }
+    ]
+}

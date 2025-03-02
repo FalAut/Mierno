@@ -1,0 +1,16 @@
+{
+  "name": "太阳能硅片",
+  "icon": "pneumaticcraft:solar_wafer",
+  "category": "pneumaticcraft:components",
+  "advancement": "pneumaticcraft:assembly_controller",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)太阳能硅片/$是$(l:components/solar_cell)太阳能电池/$ 的中间制作组件。"
+    },
+    {
+      "type": "pneumaticcraft:pressure_chamber",
+      "recipe": "pneumaticcraft:pressure_chamber/solar_wafer"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "name": "热压缩机",
+  "icon": "pneumaticcraft:thermal_compressor",
+  "category": "pneumaticcraft:compressors",
+  "advancement": "pneumaticcraft:pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)热压缩机/$是一个简单的压缩器，它使用 $(l:base_concepts/heat)温度/$在相对（水平）侧面生产差异产生$(l:base_concepts/pressure)压缩空气/$.温度梯度越大，产生的空气就越多。$(p)注意: 尝试仅从$(l:machines/vortex_tube)涡旋管/$运行此压缩器是行不通的;您将获得净压力损失。"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/patchouli/thermal_compressor.png"
+      ],
+      "border": "true",
+      "text": "$(italic)使用熔岩和浮冰提供温度梯度的热压缩机/$"
+    },
+    {
+      "type": "text",
+      "text": "$(item)热压缩机/$的南北面和东西面与另一个热连接，但南北面或东西向之间没有交叉连接，因此您可以在一台压缩机上具有两个独立的温度梯度。$(p)热量将在连接之间均衡，因此需要一些努力来保持有用的温差。"
+    },
+    {
+      "type": "text",
+      "title": "应用",
+      "text": " $(item)热压缩机/$可能在三种主要情况下派上用场:$(li)利用$(item)涡旋管/$的$(italic)一/$侧的废热或废冷！ 通常，您只会使用涡流管的热侧或冷侧，并通过$(l:machines/heat_sink)散热器/$对另一侧进行通风。然而，$(item)热压缩机/$提供了将部分废热或废冷作为气压回收的机会。"
+    },
+    {
+      "type": "text",
+      "title": "应用（续）",
+      "text": "$(li)利用先进压缩机$(l:compressors/advanced_air_compressor)先进的空气压缩机/$的废热。通常，你会使用一个或多个$(l:tools/heat_sink)散热器/$,将这些热量排放到大气中，但使用热压缩机，也可以将一些废热作为压力回收。"
+    },
+    {
+      "type": "text",
+      "title": "应用（续）",
+      "text": "$(li)如果你有办法获得大量自然热或冷的物质，例如, e.g. $(l:base_concepts/heat_sources)熔岩，或从其他Mod中获得物块/$, 你或许可以使用它们来产生一些压力。您可能还需要能够自动放置和移除热源和用过的热源; $(l:tools/drone)无人机/$可以做到这一点，许多其他Mod解决方案也可以。"
+    },
+    {
+      "type": "text",
+      "title": "红石控制",
+      "text": "该压缩机可由$(#f00)红石信号/$操作;如果禁用，压力产生将停止，南北面和东西面之间的热阻将大大增加（仍会有少量热量泄漏，但远小于压缩机运行时）。当不需要压力时，例如当您的管网完全加压时，这可用于将能量储存为热差。"
+    },
+    {
+      "type": "crafting",
+      "text": "制作$(item)热压缩机/$",
+      "recipe": "pneumaticcraft:thermal_compressor"
+    }
+  ]
+}

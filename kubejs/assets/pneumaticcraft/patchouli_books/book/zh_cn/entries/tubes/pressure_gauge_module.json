@@ -1,0 +1,30 @@
+{
+  "name": "压力表模块",
+  "icon": "pneumaticcraft:pressure_gauge_module",
+  "category": "pneumaticcraft:tubes",
+  "advancement": "pneumaticcraft:pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "该管道模块显示了与其连接的管道中当前的 $(l:base_concepts/pressure)压力/$。它还会发出一个（定向） $(#f00)红石信号/$，其强度等于：$(p)$(formula)  强度 = 2 x 压力/$$(p)例如，压力为 3.5 巴时，会产生 7 的红石信号等级。"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:module_expansion_card",
+      "text": "将 $(l:tubes/module_expansion_card)模块扩展卡/$ 应用于压力表模块后，会解锁一个 GUI（右键单击），以提供更全面的 $(#f00)红石信号/$ 发射控制。默认情况下，您可以设置一个阈值：低于该水平时信号将关闭，高于该水平时信号将完全开启（或反之亦然）。如果您在 GUI 中选择 $(bold)高级配置/$ 切换，您将获得更大的控制权（见下面）。"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/patchouli/pressure_gauge_gui.png"
+      ],
+      "text": "$(italic)<10 bar = 0 红石, >20 bar = 15 红石, 10-20 bar = 插值（例如 12 bar = 3 红石）/$",
+      "anchor": "img"
+    },
+    {
+      "type": "crafting",
+      "text": "制作压力表模块",
+      "recipe": "pneumaticcraft:pressure_gauge_module"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "漩涡管",
+  "icon": "pneumaticcraft:vortex_tube",
+  "category": "pneumaticcraft:machines",
+  "advancement": "pneumaticcraft:pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(thing)漩涡管/$ 是一种基于 $(l:https://en.wikipedia.org/wiki/vortex_tube)现实物理学/$ 的设备。它将流入其中的 $(l:base_concepts/pressure)空气/$ 分成 $(l:base_concepts/heat)热和冷/$ 两部分，导致管道的一侧加热，而另一侧降温。请注意，热侧和冷侧之间是有热连接的，因此，当您希望利用热量时，最好排放冷侧空气；如果您希望使用冷空气，则应反向操作。您可以使用 $(l:machines/heat_sink)散热器/$ 来实现这一点。"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:vortex_tube",
+      "text": "当您放置或旋转 $(thing)漩涡管/$ 时，热端将面朝您。请注意，每一端都有一个窄窄的红色或蓝色带，指示哪个是热端，哪个是冷端。$(p)加压空气是让 $(thing)漩涡管/$ 工作所必需的。更高的压力会导致更大的温差，但同时也会以更快的速度消耗空气。"
+    },
+    {
+      "type": "crafting",
+      "text": "制作漩涡管",
+      "recipe": "pneumaticcraft:vortex_tube"
+    }
+  ]
+}

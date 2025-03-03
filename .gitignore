@@ -25,6 +25,8 @@
 !defaultconfigs/ftbchunks/ftbchunks-world.snbt
 !defaultconfigs/fluxnetworks-server.toml
 
+!hotai/
+!hotai/**
 !hotai/appeng/api/config/CondenserOutput.badiff
 !hotai/appeng/blockentity/misc/CondenserBlockEntity$1.badiff
 !hotai/appeng/blockentity/misc/CondenserBlockEntity.badiff

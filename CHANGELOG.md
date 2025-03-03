@@ -1,9 +1,18 @@
 ## v0.3.4
 
--   添加模组 Applied-Botanics、Applied-Mekanistics、Ars Énergistique 、Morph-o-Tool 和 PackagedDraconic
+-   注：因此次涉及模组变更，故不提供热修补
+-   添加模组 Applied-Botanics、Applied-Mekanistics、Ars Énergistique 、Morph-o-Tool 、Oculus、Configured、Just Enough Mekanism Multiblocks 、AE2 CraftingTree 、AE2NetworkAnalyzer 和 PackagedDraconic
 -   修复破坏炽炉后有概率崩溃的问题
 -   在任务中添加“实用”章节，用于展示整合包中添加的各种“实用”模组
 -   印刷室改为使用能量输入仓进行能量输入，印刷室控制器不再能输入能量
+
+---
+
+-   _The text content for this changelog was translated into English using machine translation. Apologies for any inaccuracies!_
+-   Added modules: Applied-Botanics, Applied-Mekanistics, Ars Énergistique, Morph-o-Tool, Oculus, Configured, Just Enough Mekanism Multiblocks, AE2 CraftingTree, AE2NetworkAnalyzer and PackagedDraconic.
+-   Fixed a crash that occurred when breaking the Chain Reactor.
+-   Added the “Utilities” chapter to the task, showcasing various “utility” mods added in the integrated pack.
+-   The Printing Chamber now uses an energy input bin for energy input, and the Printing Chamber Controller no longer accepts energy.
 
 ## v0.3.3
 

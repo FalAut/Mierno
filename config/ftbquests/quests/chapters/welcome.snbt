@@ -169,7 +169,7 @@
 			icon: "akashictome:tome"
 			id: "03407C903157428A"
 			rewards: [{
-				id: "6C1034C47843127F"
+				id: "0BA6DAD401E00A30"
 				item: {
 					Count: 1
 					id: "akashictome:tome"
@@ -204,6 +204,13 @@
 									"botania:elven_unlock": 1b
 								}
 							}
+							buildinggadgets2: {
+								Count: 1b
+								id: "patchouli:guide_book"
+								tag: {
+									"patchouli:book": "buildinggadgets2:buildinggadgets2book"
+								}
+							}
 							evilcraft: {
 								Count: 1b
 								id: "evilcraft:origins_of_darkness"
@@ -219,6 +226,13 @@
 									display: {
 										Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"translate\":\"item.ftbquests.book\"}]}"
 									}
+								}
+							}
+							laserio: {
+								Count: 1b
+								id: "patchouli:guide_book"
+								tag: {
+									"patchouli:book": "laserio:laseriobook"
 								}
 							}
 							malum: {
@@ -256,6 +270,10 @@
 							powah: {
 								Count: 1b
 								id: "powah:book"
+							}
+							rftoolsbase: {
+								Count: 1b
+								id: "rftoolsbase:manual"
 							}
 							wizards_reborn: {
 								Count: 1b
@@ -315,11 +333,6 @@
 			disable_toast: true
 			icon: {
 				Count: 1
-				ForgeCaps: {
-					"celestisynth:celestisynthitemstackcapabilities": {
-						cs.aquaSkin: 0
-					}
-				}
 				id: "ae2wtlib:wireless_universal_terminal"
 				tag: {
 					crafting: 1b

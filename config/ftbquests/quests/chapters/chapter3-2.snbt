@@ -147,6 +147,7 @@
 				}
 			}
 			id: "66389D922DCE9246"
+			optional: true
 			rewards: [{
 				id: "066F4930F2EEA243"
 				item: {
@@ -185,6 +186,7 @@
 				}
 			}
 			id: "2459B101ADBF0BB5"
+			optional: true
 			rewards: [{
 				id: "4F21D4B2E846C35A"
 				item: {

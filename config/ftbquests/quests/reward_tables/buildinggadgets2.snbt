@@ -1,0 +1,27 @@
+{
+	id: "59EBD6EE0F023B8C"
+	loot_size: 1
+	order_index: 7
+	rewards: [
+		{ item: "buildinggadgets2:gadget_building" }
+		{ item: "buildinggadgets2:gadget_exchanging" }
+		{
+			item: {
+				Count: 1
+				id: "buildinggadgets2:gadget_copy_paste"
+				tag: { }
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "buildinggadgets2:gadget_cut_paste"
+				tag: {
+					pastereplace: 1b
+				}
+			}
+		}
+		{ item: "buildinggadgets2:gadget_destruction" }
+	]
+	title: "buildinggadgets2"
+}

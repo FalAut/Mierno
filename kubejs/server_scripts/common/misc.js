@@ -68,6 +68,19 @@ EntityEvents.drops('ender_dragon', (event) => {
     itemEntity.spawn();
 });
 
+BlockEvents.broken(
+    [
+        'forbidden_arcanus:clibano_center',
+        'forbidden_arcanus:clibano_corner',
+        'forbidden_arcanus:clibano_side_vertical',
+        'forbidden_arcanus:clibano_side_horizontal',
+    ],
+    (event) => {
+        event.block.set('minecraft:air');
+        event.cancel();
+    }
+);
+
 // BlockEvents.placed('mierno:memory_matrix', (event) => {
 //     const { block, level, server } = event;
 

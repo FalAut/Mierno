@@ -1202,6 +1202,7 @@
 			dependencies: ["24FE0AA7D7BD9689"]
 			icon_scale: 0.8d
 			id: "36492F5AA6BB43D4"
+			optional: true
 			rewards: [{
 				exclude_from_claim_all: true
 				id: "2492DD9CCD8E6448"

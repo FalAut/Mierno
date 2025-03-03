@@ -1,7 +1,9 @@
 ## v0.3.4
 
--   添加模组 Applied-Botanics、Applied-Mekanistics、Ars Énergistique 和 PackagedDraconic
+-   添加模组 Applied-Botanics、Applied-Mekanistics、Ars Énergistique 、Morph-o-Tool 和 PackagedDraconic
 -   修复破坏炽炉后有概率崩溃的问题
+-   在任务中添加“实用”章节，用于展示整合包中添加的各种“实用”模组
+-   印刷室改为使用能量输入仓进行能量输入，印刷室控制器不再能输入能量
 
 ## v0.3.3
 

@@ -1,0 +1,1040 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	disable_toast: true
+	filename: "utility"
+	group: ""
+	id: "2535D803AB3B89DF"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			id: "11AF305F74446CD4"
+			rewards: [
+				{
+					id: "3E9FE27CC416137B"
+					item: "buildinggadgets2:template_manager"
+					type: "item"
+				}
+				{
+					id: "58B89794EB307FDF"
+					item: {
+						Count: 1
+						id: "buildinggadgets2:template"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "628AF67AA2FC501A"
+					table_id: 6479508806844955532L
+					type: "choice"
+				}
+			]
+			tasks: [{
+				id: "5D3594FFF89D79D5"
+				item: {
+					Count: 1
+					id: "buildinggadgets2:gadget_building"
+					tag: {
+						uuid: [I;
+							-1614107544
+							-1471790103
+							-1149440220
+							133995307
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			id: "582C10A4C848C6D8"
+			rewards: [
+				{
+					id: "2EB878A52315298C"
+					item: "modularrouters:activator_module"
+					type: "item"
+				}
+				{
+					id: "306DF6F61158F8E2"
+					item: "modularrouters:breaker_module"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "5F933D49EB6103A6"
+				item: "modularrouters:modular_router"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			id: "695E1E1D807E70E7"
+			rewards: [
+				{
+					id: "0298C5096CEC3D43"
+					item: "laserio:card_item"
+					type: "item"
+				}
+				{
+					id: "408A077D4B875262"
+					item: "laserio:card_fluid"
+					type: "item"
+				}
+				{
+					id: "159BB4679223D40F"
+					item: "laserio:card_energy"
+					type: "item"
+				}
+				{
+					id: "7D3A24EE74E2E5FC"
+					item: "laserio:laser_wrench"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "561BACE0AD550806"
+				item: "laserio:laser_node"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -0.5d
+		}
+		{
+			id: "7769CBB416E553B3"
+			rewards: [
+				{
+					id: "1EFEEC8832DA0F2D"
+					item: {
+						Count: 1
+						id: "sfm:network_tool"
+						tag: {
+							"sfm:cable_positions": [B;
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+							]
+							"sfm:capability_provider_positions": [B;
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+								0b
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2A1B08B15A8D83CD"
+					item: {
+						Count: 1
+						id: "sfm:disk"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "7E3C23B122B027FF"
+					item: {
+						Count: 1
+						id: "sfm:labelgun"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "3ECF0BF15FE016E1"
+				item: "sfm:manager"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -0.5d
+		}
+		{
+			id: "0950A69591D9F385"
+			rewards: [
+				{
+					id: "03C3C930670813C9"
+					item: {
+						Count: 1
+						id: "functionalstorage:linking_tool"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "77CDCAA829A10661"
+					item: "functionalstorage:configuration_tool"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "7F8C9219F665C2CF"
+				item: "functionalstorage:oak_1"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			id: "3B252D24E9DEAF98"
+			rewards: [{
+				id: "4EADD6408B16F5EC"
+				item: "compactmachines:personal_shrinking_device"
+				type: "item"
+			}]
+			tasks: [{
+				id: "114A72366ECAEFAC"
+				item: "compactmachines:wall"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 2.5d
+		}
+		{
+			id: "0012ACD3D56B67B5"
+			rewards: [{
+				id: "1A77D007E1862DD8"
+				item: "sophisticatedbackpacks:stack_upgrade_tier_4"
+				type: "item"
+			}]
+			tasks: [{
+				id: "20E42DAABFFE2301"
+				item: {
+					Count: 1
+					id: "sophisticatedbackpacks:backpack"
+					tag: {
+						contentsUuid: [I;
+							812733387
+							889014752
+							-2090999880
+							-2126056764
+						]
+						inventorySlots: 27
+						renderInfo: {
+							upgradeItems: [{
+								Count: 1b
+								id: "minecraft:air"
+								tag: {
+									UUID: [I;
+										-2144107732
+										-702726047
+										-1301341604
+										2022081484
+									]
+									uuid: [I;
+										-2012890827
+										602753227
+										-1265761791
+										-1800091542
+									]
+								}
+							}]
+						}
+						upgradeSlots: 1
+					}
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			id: "015932073F2D4589"
+			tasks: [{
+				id: "25D3FC48A7C668BA"
+				item: "morphtool:tool"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			id: "7F737884DE2B9F8C"
+			rewards: [
+				{
+					id: "428D15B3EEE836DD"
+					item: "xnet:advanced_connector_green"
+					type: "item"
+				}
+				{
+					id: "0C213EDD49A4E358"
+					item: "xnet:netcable_green"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "3A3960C9A5577380"
+				item: "xnet:controller"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			id: "41DB40B78E76877A"
+			rewards: [{
+				id: "076A40116F46A322"
+				item: "fluxnetworks:flux_plug"
+				type: "item"
+			}]
+			tasks: [{
+				id: "351C312FAD847E17"
+				item: "fluxnetworks:flux_point"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			id: "191D2B394AFFC26D"
+			rewards: [
+				{
+					id: "7D4803056BD4EEC8"
+					item: "rftoolsutility:timer"
+					type: "item"
+				}
+				{
+					id: "69473CB6B7802104"
+					item: "rftoolsutility:sequencer"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "352C7DAA42F02251"
+				item: "rftoolsutility:crafter1"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			id: "4DE49BAD657F9460"
+			rewards: [{
+				id: "40BF1C2D6FF7B937"
+				item: "rftoolsbuilder:shape_card_quarry"
+				type: "item"
+			}]
+			tasks: [{
+				id: "46D55CCC3912782D"
+				item: "rftoolsbuilder:builder"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			id: "72FBF737DD64CB4C"
+			rewards: [{
+				id: "429016F623D756C6"
+				item: "appbot:mana_cell_housing"
+				type: "item"
+			}]
+			tasks: [{
+				id: "68C465DC5C7D0D34"
+				item: "appbot:fluix_mana_pool"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 4.0d
+		}
+		{
+			id: "6FFFF21FC7ED9188"
+			rewards: [{
+				id: "6E35B425BBB26D9F"
+				item: "arseng:source_cell_housing"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0888E5881D1D0CC4"
+				item: "arseng:me_source_jar"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			id: "2A2DEB8E471C1ACC"
+			rewards: [{
+				id: "298D8A3BB2B4080A"
+				item: "packageddraconic:marked_draconium_injector"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0C0F008F8A3B94AA"
+				item: "packageddraconic:fusion_crafter"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			id: "0C9E2188BF18F6EC"
+			rewards: [{
+				id: "7669594F237A3E04"
+				item: "packagedauto:recipe_holder"
+				type: "item"
+			}]
+			tasks: [{
+				id: "24D17274D387F53D"
+				item: "packagedauto:encoder"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.0d
+		}
+		{
+			id: "253543F8EE608A9C"
+			rewards: [
+				{
+					count: 64
+					id: "173EF8707B69CAB9"
+					item: "ae2:certus_quartz_crystal"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "0995EB21EA345175"
+					item: "ae2:certus_quartz_crystal"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "5D7E8F42A7B36901"
+				item: "merequester:requester"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 5.5d
+		}
+		{
+			id: "279BFEF33C1758DE"
+			rewards: [{
+				count: 64
+				id: "1F64610EED56DAE6"
+				item: "expatternprovider:assembler_matrix_wall"
+				type: "item"
+			}]
+			tasks: [{
+				id: "356EC7A96B2E61D1"
+				item: "expatternprovider:assembler_matrix_wall"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			id: "759FBFB87EDEFD66"
+			rewards: [{
+				id: "67FE0776F0980221"
+				item: "expatternprovider:wireless_tool"
+				type: "item"
+			}]
+			tasks: [{
+				id: "48C36C2F0691307F"
+				item: "expatternprovider:wireless_connect"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 5.5d
+		}
+		{
+			id: "68AAF87EBC811FE8"
+			rewards: [{
+				count: 16
+				id: "0B2A83623CED820F"
+				item: "advanced_ae:quantum_storage_component"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4AC210367CD484BB"
+				item: "advanced_ae:quantum_core"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 5.5d
+		}
+		{
+			id: "3E9D30EEF0459093"
+			rewards: [{
+				id: "2944C3EE614B906B"
+				item: {
+					Count: 1
+					id: "appmek:chemical_storage_cell_1k"
+					tag: { }
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "459AC00E12C3880D"
+				item: "appmek:chemical_cell_housing"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 4.0d
+		}
+		{
+			id: "2069B0D50D1EEB97"
+			tasks: [{
+				id: "57B8B7969C1777C9"
+				item: "trashcans:ultimate_trash_can"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 2.5d
+		}
+		{
+			id: "66DA9DA66CE40E37"
+			tasks: [{
+				id: "44EC9103590A778F"
+				item: "pipez:item_pipe"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 5.5d
+		}
+		{
+			id: "1AA6688F98BDEAB4"
+			tasks: [{
+				id: "06419171865D883A"
+				item: {
+					Count: 1
+					id: "entangled:block"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.0d
+		}
+		{
+			id: "452DD87A32AC5A7E"
+			tasks: [
+				{
+					id: "24AF16627162307C"
+					item: "enderstorage:ender_tank"
+					type: "item"
+				}
+				{
+					id: "13499703C3AB254A"
+					item: "enderstorage:ender_chest"
+					type: "item"
+				}
+			]
+			x: -3.0d
+			y: -0.5d
+		}
+	]
+	title: "{mierno.utility.title}"
+}

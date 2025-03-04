@@ -15,6 +15,19 @@ ServerEvents.loaded((event) => {
     }
 });
 
+EntityEvents.spawned('item', (event) => {
+    const { server } = event;
+    const itemEntities = server.entities.filterSelector('@e[type=item]');
+
+    if (itemEntities.length > 1) {
+        itemEntities.forEach((itemEntity) => {
+            itemEntity.discard();
+        });
+
+        server.tell(Text.translate('message.mierno.too_many_item_entities_warnning').bold());
+    }
+});
+
 // ProbeJSEvents.generateDoc((event) => {
 //     event.customSnippet(
 //         'blockRightClicked',

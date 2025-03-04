@@ -237,6 +237,7 @@
     "message.mierno.psu_inver_ritual.kill_counter": "Kill: %s / 100",
     "message.mierno.game_pass": "Player %s has obtained the Pseudo-Inversion Sigil!\nTime taken: %s!\nThank you for playing!",
     "message.mierno.tyumen_gift": "You received a gift from Qiuming",
+    "message.mierno.too_many_item_entities_warnning": "Warning: There are too many item entities, all item entities have been cleared!\nPlease check if there is a problem with your device!",
 
     "death.attack.mistDamage": "%1$s got lost in the mist",
 

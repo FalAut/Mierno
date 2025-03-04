@@ -237,6 +237,7 @@
     "message.mierno.psu_inver_ritual.kill_counter": "击杀: %s / 100",
     "message.mierno.game_pass": "玩家 %s 获得了伪逆徽章！\n用时 %s！\n感谢你的游玩！",
     "message.mierno.tyumen_gift": "你收到了一份秋明的礼物",
+    "message.mierno.too_many_item_entities_warnning": "警告：当前掉落物过多，已清除所有掉落物！\n请检查您的装置是否出现问题！",
 
     "death.attack.mistDamage": "%1$s 迷失了",
 

@@ -23,3 +23,19 @@ StartupEvents.registry('item', (event) => {
         );
     }
 });
+
+Item.of('apple').withNBT({ TestNBT: true }).withCount(100).strongNBT();
+
+Item.of('apple', 100, { TestNBT: true }).strongNBT();
+
+StartupEvents.postInit((event) => {
+    let cards = ['ae2:void_card', 'ae2:equal_distribution_card', 'ae2:fuzzy_card', 'ae2:inverter_card'];
+
+    for (let index = 0; index <= 4; index++) {
+        let mb = Math.pow(4, index);
+
+        cards.forEach((card) => {
+            $Upgrades.add(Item.of(card), Item.of(`mierno:item_storage_cell_${mb}m`), 1);
+        });
+    }
+});

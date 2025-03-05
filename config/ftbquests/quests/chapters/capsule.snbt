@@ -1292,6 +1292,11 @@
 					item: { Count: 55, id: "ae2:quartz_vibrant_glass" }
 					type: "item"
 				}
+				{
+					id: "4181FB918B622A08"
+					item: "mierno:energy_input"
+					type: "item"
+				}
 			]
 			x: 1.5d
 			y: 5.0d

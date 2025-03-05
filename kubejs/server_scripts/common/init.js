@@ -19,7 +19,7 @@ EntityEvents.spawned('item', (event) => {
     const { server } = event;
     const itemEntities = server.entities.filterSelector('@e[type=item]');
 
-    if (itemEntities.length > 1) {
+    if (itemEntities.length > 256) {
         itemEntities.forEach((itemEntity) => {
             itemEntity.discard();
         });

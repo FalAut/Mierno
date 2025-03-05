@@ -36,3 +36,4 @@ const $BasicStorageCell = Java.loadClass('appeng.items.storage.BasicStorageCell'
 const $AEKeyType = Java.loadClass('appeng.api.stacks.AEKeyType');
 const $PotionBuilder = Java.loadClass('dev.latvian.mods.kubejs.misc.PotionBuilder');
 const $BrewingRecipeRegistry = Java.loadClass('net.minecraftforge.common.brewing.BrewingRecipeRegistry');
+const $Upgrades = Java.loadClass('appeng.api.upgrades.Upgrades');

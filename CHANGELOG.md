@@ -2,6 +2,18 @@
 
 -   添加掉落物上限检测，当服务器内的掉落物过多时，会发送警告并清除所有掉落物
 -   修复自定义的物品存储元件无法添加升级卡的问题
+-   修复机械精灵门不会检测下方的精灵门是否为开启状态的问题
+-   修复忆源汲取水晶没有正确设置渲染边界的问题
+-   修复印刷室胶囊任务需求不正确的问题
+
+---
+
+-   _The text content for this changelog was translated into English using machine translation. Apologies for any inaccuracies!_
+-   Added a drop item limit detection, when there are too many items in the server, a warning will be sent and all items will be cleared
+-   Fixed the custom storage component cannot add upgrade cards
+-   Fixed the Mechanical Alfheim Portal core does not detect whether the Alfheim Portal below is open
+-   Fixed the Memory Source Drawing Crystal does not set the rendering boundary correctly
+-   Fixed the Printing Room Capsule quest requirement is incorrect
 
 ## v0.3.4
 

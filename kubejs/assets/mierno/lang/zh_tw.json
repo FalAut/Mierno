@@ -237,7 +237,7 @@
     "message.mierno.psu_inver_ritual.kill_counter": "擊殺: %s / 100",
     "message.mierno.game_pass": "玩家 %s 獲得了偽逆徽章！\n用時 %s！\n感謝你的遊玩！",
     "message.mierno.tyumen_gift": "你收到了一份秋明的禮物",
-    "message.mierno.too_many_item_entities_warnning": "警告：當前掉落物過多，已清除所有掉落物！\n請檢查您的裝置是否出現問題！",
+    "message.mierno.too_many_entities_warnning": "警告：當前實體過多，已清除所有過多的實體！",
 
     "death.attack.mistDamage": "%1$s 迷失了",
 
@@ -263,7 +263,6 @@
     "tooltip.mierno.gensousitu_bucket_1": "可與一些方塊交互產生礦物，具體查看思索與 JEI",
     "tooltip.mierno.gensousitu_bucket_2": "擁有和無限水源一樣的特性",
     "tooltip.mierno.whos_gift": "右鍵打開",
-    "tooltip.mierno.composter": "每層堆肥都可以提供一個骨粉",
     "tooltip.mierno.ancient_aura_generator_core_1": "需要多方塊結構",
     "tooltip.mierno.ancient_aura_generator_core_2": "在以核心半徑 3 格範圍內放置樹葉",
     "tooltip.mierno.ancient_aura_generator_core_3": "樹葉會被核心吸收，從而轉化為靈氣",
@@ -597,7 +596,6 @@
 
     "mierno.chapter5.title": "V.偽逆",
 
-    "mierno.welcome.main.subtitle": "§e本整合包完全免費，如果是付費獲取的，那麽你肯定被騙了。",
     "mierno.welcome.main.desc1": "§c本整合包適合對各種模組和自動化有一定了解的玩家。§r",
     "mierno.welcome.main.desc2": "§a有任何問題可前往社群反饋，感謝配合！",
     "mierno.welcome.main.desc3": "製作這個整合包純屬個人興趣愛好。盡管我投入了大量時間和精力，但個人能力有限，無法滿足所有玩家的需求。",

@@ -62,7 +62,6 @@ ItemEvents.tooltip((event) => {
         Text.translate('tooltip.mierno.gensousitu_bucket_2').gold(),
     ]);
     event.add('mierno:whos_gift', Text.translate('tooltip.mierno.whos_gift').gold());
-    event.add('composter', Text.translate('tooltip.mierno.composter').gold());
 
     const cobbleGenData = [
         { tier: 1, cobbleCount: 1, time: 6, maxBuffer: 64 },

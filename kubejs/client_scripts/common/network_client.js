@@ -1,7 +1,3 @@
-ClientEvents.loggedIn((event) => {
-    event.player.runCommandSilent('/kjs reload client_scripts');
-});
-
 NetworkEvents.dataReceived('has_dream_lantern', (event) => {
     const { data, player } = event;
     const hasDreamLantern = data.getBoolean('hasDreamLantern');

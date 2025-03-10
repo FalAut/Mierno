@@ -127,7 +127,6 @@
 			]
 			shape: "gear"
 			size: 2.0d
-			subtitle: "{mierno.welcome.main.subtitle}"
 			tasks: [{
 				id: "698F64E2FD58D079"
 				type: "checkmark"

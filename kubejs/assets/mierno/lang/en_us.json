@@ -237,7 +237,7 @@
     "message.mierno.psu_inver_ritual.kill_counter": "Kill: %s / 100",
     "message.mierno.game_pass": "Player %s has obtained the Pseudo-Inversion Sigil!\nTime taken: %s!\nThank you for playing!",
     "message.mierno.tyumen_gift": "You received a gift from Qiuming",
-    "message.mierno.too_many_item_entities_warnning": "Warning: There are too many item entities, all item entities have been cleared!\nPlease check if there is a problem with your device!",
+    "message.mierno.too_many_entities_warnning": "Warning: There are too many entities, all to many entities have been cleared!",
 
     "death.attack.mistDamage": "%1$s got lost in the mist",
 
@@ -263,7 +263,6 @@
     "tooltip.mierno.gensousitu_bucket_1": "Can interact with certain blocks to produce minerals, check Ponder and JEI for details",
     "tooltip.mierno.gensousitu_bucket_2": "Has the same properties as infinite water source",
     "tooltip.mierno.whos_gift": "Right-click to open",
-    "tooltip.mierno.composter": "Each layer of compost provides one bonemeal",
     "tooltip.mierno.ancient_aura_generator_core_1": "Requires multiblock structure",
     "tooltip.mierno.ancient_aura_generator_core_2": "Place leaves within a 3-block radius of the core",
     "tooltip.mierno.ancient_aura_generator_core_3": "Leaves will be absorbed by the core to generate aura",
@@ -597,7 +596,6 @@
 
     "mierno.chapter5.title": "V. Pseudo Inversion",
 
-    "mierno.welcome.main.subtitle": "§eThis modpack is completely free, if you are paying to get it, then you are definitely being ripped off.",
     "mierno.welcome.main.desc1": "§cThis modpack is designed for players who have a certain understanding of various mods and automation.§r",
     "mierno.welcome.main.desc2": "§aIf you encounter any issues, please feel free to provide feedback in the community. Thank you for your cooperation!",
     "mierno.welcome.main.desc3": "The creation of this modpack is purely a personal hobby. Although I have invested a lot of time and effort, my personal capabilities are limited, so it may not meet the needs of every player.",

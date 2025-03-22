@@ -174,13 +174,6 @@
 					id: "akashictome:tome"
 					tag: {
 						"akashictome:data": {
-							ad_astra: {
-								Count: 1b
-								id: "patchouli:guide_book"
-								tag: {
-									"patchouli:book": "ad_astra:astrodux"
-								}
-							}
 							ae2: {
 								Count: 1b
 								id: "ae2:guide"

@@ -1,9 +1,6 @@
 ServerEvents.recipes((event) => {
     const { kubejs, minecraft } = event.recipes;
 
-    minecraft.smelting('ad_astra:etrium_ingot', 'mierno:raw_etrium');
-    minecraft.smelting('ad_astra:etrium_ingot', 'mierno:glacio_etrium_ore');
-
     function fourShaped(/**@type  {OutputItem_} */ output, /**@type  {InputItem_} */ input) {
         kubejs.shaped(output, ['AA', 'AA'], {
             A: input,
@@ -24,8 +21,6 @@ ServerEvents.recipes((event) => {
     fullShaped('mierno:mana_string_block', 'botania:mana_string', true);
     fullShaped('mierno:spirit_attuned_gem_block', 'occultism:spirit_attuned_gem', true);
     fullShaped('minecraft:skeleton_skull', 'minecraft:bone_block');
-    fullShaped('ad_astra:etrium_ingot', 'ad_astra:etrium_nugget', true);
-    fullShaped('ad_astra:etrium_block', 'ad_astra:etrium_ingot', true);
 
     event.custom({
         type: 'functionalstorage:custom_compacting',
@@ -978,7 +973,7 @@ ServerEvents.recipes((event) => {
     });
 
     kubejs.shaped('mekanism:steel_casing', ['ABA', 'BCB', 'ABA'], {
-        A: 'ad_astra:steel_plate',
+        A: 'mekanism:ingot_steel',
         B: 'forbidden_arcanus:ferrognetic_mixture',
         C: 'thermal:machine_frame',
     });
@@ -997,24 +992,9 @@ ServerEvents.recipes((event) => {
         D: 'thermal:machine_smelter',
     });
 
-    kubejs.shaped('ad_astra:nasa_workbench', ['ABC', 'DEF', 'GHG'], {
-        A: 'pneumaticcraft:assembly_io_unit_import',
-        B: 'pneumaticcraft:assembly_controller',
-        C: 'pneumaticcraft:assembly_io_unit_export',
-        D: 'pneumaticcraft:assembly_laser',
-        E: 'pneumaticcraft:assembly_platform',
-        F: 'pneumaticcraft:assembly_drill',
-        G: 'mekanism:advanced_control_circuit',
-        H: 'mekanism:steel_casing',
-    });
-
     kubejs.shaped('minecraft:wither_skeleton_skull', ['AAA', 'ABA', 'AAA'], {
         A: 'forbidden_arcanus:dark_matter',
         B: 'minecraft:skeleton_skull',
-    });
-
-    kubejs.shaped('4x ad_astra:etrium_rod', [' A ', ' A '], {
-        A: 'ad_astra:etrium_plate',
     });
 
     kubejs.shaped('pneumaticcraft:module_expansion_card', [' A ', 'BCD', ' E '], {
@@ -1025,22 +1005,10 @@ ServerEvents.recipes((event) => {
         E: 'pneumaticcraft:printed_circuit_board',
     });
 
-    kubejs.shaped('ad_astra:fuel_refinery', ['AAA', 'BCB', 'ADA'], {
-        A: 'ad_astra:steel_plate',
-        B: 'mekanism:advanced_fluid_tank',
-        C: 'mekanism:steel_casing',
-        D: 'pneumaticcraft:refinery',
-    });
-
     kubejs.shaped('mekanism:elite_control_circuit', ['AAA', 'BCB', 'AAA'], {
         A: 'mierno:milkyway_plate',
         B: 'mekanism:alloy_reinforced',
         C: 'mekanism:advanced_control_circuit',
-    });
-
-    kubejs.shaped('ad_astra:encased_etrium_block', ['AAA', 'BBB', 'AAA'], {
-        A: 'mekanism:ingot_steel',
-        B: 'ad_astra:etrium_plate',
     });
 
     kubejs.shaped('mierno:slime_boots', ['A A', 'B B'], {

@@ -108,9 +108,9 @@ MBDMachineEvents.onTick('mierno:computation_matrix', (event) => {
     const controller = $IMultiController.ofController(level, pos).orElse(null);
 
     if (controller.isFormed()) {
-        machine.triggerGeckolibAnim('formed');
+        machine.triggerGeckolibAnim('formed', 1);
     } else {
-        machine.triggerGeckolibAnim('idel');
+        machine.triggerGeckolibAnim('idel', 1);
     }
 });
 

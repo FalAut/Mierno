@@ -233,7 +233,6 @@ function spawnTrialMobs(block) {
         'ars_nouveau:wilden_stalker',
         'ars_nouveau:wilden_hunter',
         'ars_nouveau:wilden_guardian',
-        'ad_astra:star_crawler',
     ];
 
     for (let i = 0; i < 200; i++) {

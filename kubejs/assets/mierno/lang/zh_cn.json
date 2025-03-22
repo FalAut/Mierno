@@ -59,10 +59,7 @@
     "item.mierno.demon_infused_ingot": "恶魔灌注锭",
     "item.mierno.solid_etching_acid": "固态蚀刻酸",
     "item.mierno.enriched_etching_acid": "富集蚀刻酸",
-    "item.mierno.enriched_etrium": "富集埃忒恩",
     "item.mierno.enriched_deorum": "富集圣金",
-    "item.mierno.raw_etrium": "粗埃忒恩",
-    "item.mierno.milkyway_plate": "银河板",
     "item.mierno.fake_sigil": "伪逆徽章",
     "item.mierno.slime_boots": "史莱姆靴子",
     "item.mierno.slime_sling": "史莱姆弹弓",
@@ -141,8 +138,6 @@
     "block.mierno.modular_nature_altar_core": "机械自然祭坛核心",
     "block.mierno.modular_imbuement_chamber_core": "模块化灌注室核心",
     "block.mierno.glowing_obsidian": "发光的黑曜石",
-    "block.mierno.glacio_etrium_ore": "霜原星埃忒恩矿石",
-    "block.mierno.deepslate_etrium_ore": "深层埃忒恩矿石",
     "block.mierno.computation_matrix": "计算矩阵",
     "block.mierno.memory_matrix": "记忆矩阵",
 
@@ -180,7 +175,6 @@
 
     "infuse_type.mierno.etching_acid": "蚀刻酸",
     "infuse_type.mierno.deorum": "圣金",
-    "infuse_type.mierno.etrium": "埃忒恩",
 
     "message.mierno.clickopen": "点我打开",
     "message.mierno.addition_activation_ritual.title": "\n\n\n\n\n- 聚合徽章激活仪式 -\n",

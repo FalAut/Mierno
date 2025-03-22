@@ -216,5 +216,4 @@ ServerEvents.tags('fluid', (event) => {
 
 ServerEvents.tags('worldgen/biome', (event) => {
     event.add('mierno:has_structure/dark_temple', 'mierno:otherworld');
-    event.add('mierno:is_glacio', ['ad_astra:glacio_snowy_barrens', 'ad_astra:glacio_ice_peaks']);
 });

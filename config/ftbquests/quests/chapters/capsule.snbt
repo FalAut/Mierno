@@ -1774,14 +1774,14 @@
 					consume_items: true
 					count: 84L
 					id: "4244EEF2F2E92D79"
-					item: "ad_astra:encased_etrium_block"
+					item: "minecraft:dirt"
 					type: "item"
 				}
 				{
 					consume_items: true
 					count: 232L
 					id: "7B14E27F9EA99C36"
-					item: "ad_astra:glowing_iron_pillar"
+					item: "minecraft:stone"
 					type: "item"
 				}
 				{

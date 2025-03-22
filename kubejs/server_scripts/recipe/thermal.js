@@ -194,27 +194,6 @@ ServerEvents.recipes((event) => {
         type: 'thermal:smelter',
         ingredients: [
             {
-                item: 'ad_astra:ostrum_plate',
-            },
-            {
-                item: 'ad_astra:calorite_plate',
-            },
-            {
-                item: 'ad_astra:desh_plate',
-            },
-        ],
-        result: [
-            {
-                item: 'mierno:milkyway_plate',
-                count: 6,
-            },
-        ],
-    });
-
-    event.custom({
-        type: 'thermal:smelter',
-        ingredients: [
-            {
                 item: 'minecraft:redstone',
                 count: 16,
             },
@@ -488,34 +467,6 @@ ServerEvents.recipes((event) => {
         result: [
             {
                 item: 'thermal:lapis_gear',
-            },
-        ],
-    });
-
-    event.custom({
-        type: 'thermal:press',
-        ingredients: [
-            {
-                item: 'mekanism:ingot_steel',
-            },
-        ],
-        result: [
-            {
-                item: 'ad_astra:steel_plate',
-            },
-        ],
-    });
-
-    event.custom({
-        type: 'thermal:press',
-        ingredients: [
-            {
-                item: 'ad_astra:etrium_ingot',
-            },
-        ],
-        result: [
-            {
-                item: 'ad_astra:etrium_plate',
             },
         ],
     });

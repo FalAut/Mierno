@@ -59,10 +59,7 @@
     "item.mierno.demon_infused_ingot": "Demon Infused Ingot",
     "item.mierno.solid_etching_acid": "Solid Etching Acid",
     "item.mierno.enriched_etching_acid": "Enriched Etching Acid",
-    "item.mierno.enriched_etrium": "Enriched Etrium",
     "item.mierno.enriched_deorum": "Enriched Deorum",
-    "item.mierno.raw_etrium": "Raw Etrium",
-    "item.mierno.milkyway_plate": "Milkyway Plate",
     "item.mierno.fake_sigil": "Pseudo Inversion Sigil",
     "item.mierno.slime_boots": "Slime Boots",
     "item.mierno.slime_sling": "Slime Sling",
@@ -141,8 +138,6 @@
     "block.mierno.modular_nature_altar_core": "Mechanical Natural Altar Core",
     "block.mierno.modular_imbuement_chamber_core": "Modular Imbuement Chamber Core",
     "block.mierno.glowing_obsidian": "Glowing Obsidian",
-    "block.mierno.glacio_etrium_ore": "Glacio Etrium Ore",
-    "block.mierno.deepslate_etrium_ore": "Deepslate Etrium Ore",
     "block.mierno.computation_matrix": "Computation Matrix",
     "block.mierno.memory_matrix": "Memory Matrix",
 
@@ -180,7 +175,6 @@
 
     "infuse_type.mierno.etching_acid": "Etching Acid",
     "infuse_type.mierno.deorum": "Deorum",
-    "infuse_type.mierno.etrium": "Etrium",
 
     "message.mierno.clickopen": "Click to Open",
     "message.mierno.addition_activation_ritual.title": "\n\n\n\n\n- Addition Sigil Activation Ritual -\n",

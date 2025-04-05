@@ -82,6 +82,7 @@
     "item.minecraft.potion.effect.furious": "狂亂的雞尾酒",
     "item.minecraft.splash_potion.effect.furious": "噴濺型狂亂的雞尾酒",
     "item.minecraft.lingering_potion.effect.furious": "滯留型狂亂的雞尾酒",
+    "item.minecraft.tipped_arrow.effect.furious": "狂亂之箭",
 
     "block.mierno.infused_wood": "灌註之木",
     "block.mierno.misty_forest_portal": "迷霧森林傳送門",
@@ -237,7 +238,7 @@
     "message.mierno.psu_inver_ritual.kill_counter": "擊殺: %s / 100",
     "message.mierno.game_pass": "玩家 %s 獲得了偽逆徽章！\n用時 %s！\n感謝你的遊玩！",
     "message.mierno.tyumen_gift": "你收到了一份秋明的禮物",
-    "message.mierno.too_many_entities_warnning": "警告：當前掉落物過多，已清除所有掉落物！\n請檢查您的裝置是否出現問題！",
+    "message.mierno.too_many_entities_warnning": "警告：當前實體過多，已清除所有過多的實體！",
 
     "death.attack.mistDamage": "%1$s 迷失了",
 

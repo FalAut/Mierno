@@ -63,11 +63,6 @@
   "entangled": {
     "entangled_block_component": true
   },
-  "avaritia": {
-    "extreme_smithing": true,
-    "crafting_table": true,
-    "compressor": true
-  },
   "pneumaticcraft": {
     "pneumatic": true,
     "tube_module": true,

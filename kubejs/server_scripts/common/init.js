@@ -12,6 +12,7 @@ ServerEvents.loaded((event) => {
 
         server.getLevel('minecraft:overworld').setDayTime(6000);
         server.persistentData.putBoolean('first_loaded', true);
+        server.runCommandSilent('reload');
     }
 });
 
@@ -21,7 +22,7 @@ EntityEvents.spawned((event) => {
 
     const itemEntities = server.entities.filterSelector(`@e[type=${entity.type}]`);
 
-    if (itemEntities.length > 256) {
+    if (itemEntities.length > 1024) {
         itemEntities.forEach((itemEntity) => {
             itemEntity.discard();
         });

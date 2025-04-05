@@ -10,7 +10,7 @@ const SIGIL_RITUAL_CONFIGS = [
             return [
                 [multiblock.validate(level, block.pos, 'none'), 'multiblock'],
                 [time >= 5500 && time <= 6500, 'noon'],
-                [aura >= 1000000, 'aura'],
+                [aura >= 1000000, 'high_aura'],
                 [block.up.canSeeSky, 'canseesky'],
             ];
         }),

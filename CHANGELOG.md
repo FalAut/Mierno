@@ -1,7 +1,18 @@
 ## v0.3.6
 
+-   注：因此次涉及模组变更，故不提供热修补
 -   堆肥桶不再根据层数产生骨粉
 -   添加实体上限检测，当服务器内的实体过多时，会发送警告并清除所有过多的实体
+-   修复第一次创建世界时无法联机的问题
+-   磨损的铁砧现在也可以用于激活聚合徽章
+
+---
+
+-   Note: Due to changes in the mods involved this time, hotfixes will not be provided.
+-   Composters no longer produce bone meal based on layers.
+-   Added entity limit detection. When there are too many entities in the server, a warning will be sent and all excess entities will be cleared.
+-   Fixed the issue where multiplayer was unavailable when creating a world for the first time.
+-   Worn anvils can now also be used to activate the Agglomeration Badge.
 
 ## v0.3.5
 

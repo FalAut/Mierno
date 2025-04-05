@@ -1125,14 +1125,21 @@
 		{
 			dependencies: ["0F9F0DF0B936E745"]
 			id: "46753187677AC325"
-			rewards: [{
-				count: 32
-				id: "1B4F53CD71D50A29"
-				item: "minecraft:bone_meal"
-				team_reward: true
-				type: "item"
-			}]
-			subtitle: "{tooltip.mierno.composter}"
+			rewards: [
+				{
+					count: 64
+					id: "1B4F53CD71D50A29"
+					item: "minecraft:bone_meal"
+					team_reward: true
+					type: "item"
+				}
+				{
+					count: 64
+					id: "235D3B25308E74C9"
+					item: "minecraft:bone_block"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					id: "09BCFBB37AC2D4EA"

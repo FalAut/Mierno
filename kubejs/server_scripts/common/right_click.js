@@ -6,20 +6,6 @@ BlockEvents.rightClicked((event) => {
     handleCrucibleInteraction(event, 'mierno:fired_crucible', 'mierno:fired_crucible_fuel', 'lava');
 });
 
-BlockEvents.rightClicked('composter', (event) => {
-    const { block, hand, player, item } = event;
-    if (hand != 'MAIN_HAND') return;
-
-    const compostLevel = block.blockState.getValue(BlockProperties.LEVEL_COMPOSTER);
-    if (compostLevel != 8) return;
-
-    if (!player.isCrouching()) {
-        block.popItemFromFace('7x bone_meal', 'up');
-    } else if (item.isEmpty()) {
-        block.popItemFromFace('7x bone_meal', 'up');
-    }
-});
-
 BlockEvents.rightClicked('white_concrete', (event) => {
     const { hand, block, player, level } = event;
     if (hand != 'MAIN_HAND') return;

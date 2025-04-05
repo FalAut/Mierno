@@ -45,12 +45,17 @@ MBDMachineEvents.onBeforeRecipeModify('mierno:colossal_furnace_core', (event) =>
     const mbdEvent = event.getEvent();
     const { machine, recipe } = mbdEvent;
 
-    let cap = machine.getCapability(ForgeCapabilities.ITEM_HANDLER).orElse(null);
-    let furnaceCount = cap.getStackInSlot(27).count;
+    /**@type {Internal.ItemSlotCapabilityTrait} */
+    let upgradeTrait = machine.getTraitByName('upgrade_slot');
+    let storage = upgradeTrait.storage;
+    let upgradeCount = storage.getStackInSlot(0).count;
 
-    let parallelRecipe = machine.applyParallel(recipe, furnaceCount);
+    // let cap = machine.getCapability(ForgeCapabilities.ITEM_HANDLER).orElse(null);
+    // let upgradeCount = cap.getStackInSlot(27).count;
+
+    let parallelRecipe = machine.applyParallel(recipe, upgradeCount);
     let copyRecipe = parallelRecipe.copy();
-    let reductionFactor = Math.max(1 - 0.01 * furnaceCount, 0.1);
+    let reductionFactor = Math.max(1 - 0.01 * upgradeCount, 0.1);
     copyRecipe.duration = Math.ceil(recipe.duration * reductionFactor);
 
     mbdEvent.setRecipe(copyRecipe);
@@ -103,9 +108,9 @@ MBDMachineEvents.onTick('mierno:computation_matrix', (event) => {
     const controller = $IMultiController.ofController(level, pos).orElse(null);
 
     if (controller.isFormed()) {
-        machine.triggerGeckolibAnim('formed');
+        machine.triggerGeckolibAnim('formed', 1);
     } else {
-        machine.triggerGeckolibAnim('idel');
+        machine.triggerGeckolibAnim('idel', 1);
     }
 });
 

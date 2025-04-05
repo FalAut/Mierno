@@ -12,19 +12,22 @@ ServerEvents.loaded((event) => {
 
         server.getLevel('minecraft:overworld').setDayTime(6000);
         server.persistentData.putBoolean('first_loaded', true);
+        server.runCommandSilent('reload');
     }
 });
 
-EntityEvents.spawned('item', (event) => {
-    const { server } = event;
-    const itemEntities = server.entities.filterSelector('@e[type=item]');
+EntityEvents.spawned((event) => {
+    const { server, entity } = event;
+    if (entity.type == 'minecraft:player') return;
 
-    if (itemEntities.length > 256) {
+    const itemEntities = server.entities.filterSelector(`@e[type=${entity.type}]`);
+
+    if (itemEntities.length > 1024) {
         itemEntities.forEach((itemEntity) => {
             itemEntity.discard();
         });
 
-        server.tell(Text.translate('message.mierno.too_many_item_entities_warnning').bold());
+        server.tell(Text.translate('message.mierno.too_many_entities_warnning').red().bold());
     }
 });
 

@@ -6,7 +6,9 @@ JEIAddedEvents.registerCategories((event) => {
 
         category
             .title(Text.translate('jei.mierno.category.beacon_convert'))
-            .background(guiHelper.createBlankDrawable(145, 95))
+            .background(null)
+            .setWidth(145)
+            .setHeight(95)
             .icon(guiHelper.createDrawableItemStack('minecraft:beacon'))
             .handleLookup((layOut, recipe, focuses) => {
                 layOut.addSlot('INPUT', 31, 21).addItemStack(recipe.data.input);

@@ -6,7 +6,9 @@ JEIAddedEvents.registerCategories((event) => {
 
         category
             .title(Text.translate('jei.mierno.category.nether_portal_convert'))
-            .background(guiHelper.createBlankDrawable(145, 95))
+            .background(null)
+            .setWidth(145)
+            .setHeight(95)
             .icon(guiHelper.createDrawableItemStack('obsidian'))
             .handleLookup((layOut, recipe, focuses) => {
                 layOut.addSlot('INPUT', 65, 0).addItemStack(recipe.data.input);

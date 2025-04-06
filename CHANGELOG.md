@@ -1,3 +1,15 @@
+## v0.3.7
+
+-   注意：可以点击下方的热修补按钮进行快速更新，更新完后请重启游戏
+-   移除掉落物上限检测
+-   修复部分自定义 JEI 页面背景太小的问题
+
+---
+
+-   Note: You can click the hotfix button below for a quick update. Please restart the game after updating.
+-   Removed the drop item limit check.
+-   Fixed an issue where some custom JEI page backgrounds were too small.
+
 ## v0.3.6
 
 -   注：因此次涉及模组变更，故不提供热修补

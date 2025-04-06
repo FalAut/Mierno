@@ -6,7 +6,9 @@ JEIAddedEvents.registerCategories((event) => {
 
         category
             .title(Text.translate('jei.mierno.category.crucible_heat_source'))
-            .background(guiHelper.createBlankDrawable(100, 50))
+            .background(null)
+            .setWidth(100)
+            .setHeight(50)
             .icon(guiHelper.createDrawableItemStack('mierno:fired_crucible'))
             .handleLookup((layOut, recipe, focuses) => {
                 if (recipe.data.fluid) {

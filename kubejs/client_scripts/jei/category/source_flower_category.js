@@ -5,7 +5,9 @@ JEIAddedEvents.registerCategories((event) => {
 
         category
             .title(Text.translate('block.mierno.source_flower'))
-            .background(guiHelper.createBlankDrawable(105, 50))
+            .background(null)
+            .setWidth(105)
+            .setHeight(50)
             .icon(guiHelper.createDrawableItemStack('mierno:source_flower'))
             .handleLookup((layOut, recipe, focuses) => {
                 layOut.addSlot('INPUT', 16, 12).addItemStack(recipe.data.input);

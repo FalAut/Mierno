@@ -6,7 +6,9 @@ JEIAddedEvents.registerCategories((event) => {
 
         category
             .title(Text.translate('jei.mierno.category.ore_gen'))
-            .background(guiHelper.createBlankDrawable(100, 50))
+            .background(null)
+            .setWidth(100)
+            .setHeight(50)
             .icon(guiHelper.createDrawableItemStack('mierno:gensousitu_bucket'))
             .handleLookup((layOut, recipe, focuses) => {
                 layOut.addSlot('INPUT', 20, 20).addItemStack(recipe.data.input);

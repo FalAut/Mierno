@@ -16,20 +16,20 @@ ServerEvents.loaded((event) => {
     }
 });
 
-EntityEvents.spawned((event) => {
-    const { server, entity } = event;
-    if (entity.type == 'minecraft:player') return;
+// EntityEvents.spawned((event) => {
+//     const { server, entity } = event;
+//     if (entity.type == 'minecraft:player') return;
 
-    const itemEntities = server.entities.filterSelector(`@e[type=${entity.type}]`);
+//     const itemEntities = server.entities.filterSelector(`@e[type=${entity.type}]`);
 
-    if (itemEntities.length > 1024) {
-        itemEntities.forEach((itemEntity) => {
-            itemEntity.discard();
-        });
+//     if (itemEntities.length > 1024) {
+//         itemEntities.forEach((itemEntity) => {
+//             itemEntity.discard();
+//         });
 
-        server.tell(Text.translate('message.mierno.too_many_entities_warnning').red().bold());
-    }
-});
+//         server.tell(Text.translate('message.mierno.too_many_entities_warnning').red().bold());
+//     }
+// });
 
 // ProbeJSEvents.generateDoc((event) => {
 //     event.customSnippet(

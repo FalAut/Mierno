@@ -1,3 +1,11 @@
+## v0.3.8
+
+-   印刷室的配方不再需要压力
+
+---
+
+-   The recipes of Printing Room no longer require pressure
+
 ## v0.3.7
 
 -   注意：可以点击下方的热修补按钮进行快速更新，更新完后请重启游戏

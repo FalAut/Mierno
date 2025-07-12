@@ -1787,7 +1787,7 @@
 				}
 				{
 					consume_items: true
-					count: 820L
+					count: 804L
 					id: "2F51D3ECD6C7C1C4"
 					item: "mekanism:block_steel"
 					type: "item"

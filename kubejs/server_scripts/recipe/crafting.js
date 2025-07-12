@@ -100,7 +100,7 @@ ServerEvents.recipes((event) => {
     ]);
     kubejs.shapeless('mierno:flowing_source_flower', ['#botania:floating_flowers', 'mierno:source_flower']);
     kubejs.shapeless('9x botania:mana_string', 'mierno:mana_string_block');
-    kubejs.shapeless('mierno:oak_mortar', ['stick', 'bowl']);
+    kubejs.shapeless('mierno:oak_mortar', ['#forge:rods/wooden', 'bowl']);
     kubejs.shapeless('mierno:portable_crafting_table', ['stick', 'crafting_table']);
     kubejs
         .shapeless('mierno:token_base', ['mierno:infused_wood', '#axes', '#forge:shears'])

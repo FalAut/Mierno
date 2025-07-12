@@ -327,7 +327,7 @@
     "tooltip.mierno.animal_spawner": "Check JEI for spawn egg recipes corresponding to each creature",
     "tooltip.mierno.birth_spirit": "Can only be crafted by players, consumes health upon crafting",
     "tooltip.mierno.ftbquests_book": "Can also press [%s] to open quests",
-    "tooltip.mierno.dark_power_gem": "Obtained by throwing a Dark Gem into at least 5 blocks of flowing blood",
+    "tooltip.mierno.dark_power_gem": "Obtained by throwing a Dark Gem into at least 5 blocks of blood",
     "tooltip.mierno.vengeance_ring_1": "Shift+right-click to activate, allows you to see Vengeful Spirits while wearing",
     "tooltip.mierno.vengeance_ring_2": "§c§lIf you still can't see the spirit of Vengeance after activating, try wearing Spectral glasses",
     "tooltip.mierno.ae2_press": "Obtained by breaking Mysterious Blocks",

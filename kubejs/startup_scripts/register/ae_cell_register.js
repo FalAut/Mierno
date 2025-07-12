@@ -24,10 +24,6 @@ StartupEvents.registry('item', (event) => {
     }
 });
 
-Item.of('apple').withNBT({ TestNBT: true }).withCount(100).strongNBT();
-
-Item.of('apple', 100, { TestNBT: true }).strongNBT();
-
 StartupEvents.postInit((event) => {
     let cards = ['ae2:void_card', 'ae2:equal_distribution_card', 'ae2:fuzzy_card', 'ae2:inverter_card'];
 

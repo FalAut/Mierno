@@ -11,7 +11,8 @@ ServerEvents.recipes((event) => {
                         B: Item.of('mierno:addition_sigil').enchant('mierno:activate', 1).weakNBT(),
                         C: `mierno:${j}`,
                     })
-                    .keepIngredient('mierno:addition_sigil');
+                    .keepIngredient('mierno:addition_sigil')
+                    .id(`mierno:number_crafting/add_${i}_${j}`);
             }
 
             // 除法
@@ -22,7 +23,8 @@ ServerEvents.recipes((event) => {
                         B: Item.of('mierno:division_sigil').enchant('mierno:activate', 1).weakNBT(),
                         C: `mierno:${j}`,
                     })
-                    .keepIngredient('mierno:division_sigil');
+                    .keepIngredient('mierno:division_sigil')
+                    .id(`mierno:number_crafting/div_${i}_${j}`);
             }
 
             // 减法
@@ -33,7 +35,8 @@ ServerEvents.recipes((event) => {
                         B: Item.of('mierno:subtraction_sigil').enchant('mierno:activate', 1).weakNBT(),
                         C: `mierno:${j}`,
                     })
-                    .keepIngredient('mierno:subtraction_sigil');
+                    .keepIngredient('mierno:subtraction_sigil')
+                    .id(`mierno:number_crafting/sub_${i}_${j}`);
             }
 
             // 乘法
@@ -44,7 +47,8 @@ ServerEvents.recipes((event) => {
                         B: Item.of('mierno:multiplication_sigil').enchant('mierno:activate', 1).weakNBT(),
                         C: `mierno:${j}`,
                     })
-                    .keepIngredient('mierno:multiplication_sigil');
+                    .keepIngredient('mierno:multiplication_sigil')
+                    .id(`mierno:number_crafting/mul_${i}_${j}`);
             }
         }
     }

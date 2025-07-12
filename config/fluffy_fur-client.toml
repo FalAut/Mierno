@@ -18,6 +18,20 @@
 		#Enable custom effect of explosion.
 		explosionEffect = true
 
+	#Shaders
+	[graphics.shaders]
+		#Enable Rain Fog effect post process shader.
+		rainFogShader = true
+		#Intensity of Rain Fog effect post process shader.
+		#Range: 0.0 ~ 2.0
+		rainFogShaderIntensity = 0.3
+		#Intensity of Thunder Fog effect post process shader.
+		#Range: 0.0 ~ 2.0
+		thunderFogShaderIntensity = 0.1
+		#Intensity of Thunder Fog fade effect post process shader.
+		#Range: 0.0 ~ 1.0
+		thunderFogFadeShaderIntensity = 0.25
+
 #Menu
 [menu]
 	#Fluffy Fur Panorama.

@@ -1226,12 +1226,6 @@
 				}
 				{
 					consume_items: true
-					id: "5BC5AE1E93352114"
-					item: "mierno:pressure_input"
-					type: "item"
-				}
-				{
-					consume_items: true
 					id: "1593A5B642A7FE5B"
 					item: "mierno:item_output"
 					type: "item"

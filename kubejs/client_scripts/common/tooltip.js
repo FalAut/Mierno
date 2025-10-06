@@ -34,7 +34,7 @@ ItemEvents.tooltip((event) => {
 
     event.addAdvancedToAll((itemStack, advanced, text) => {
         if (itemStack.item instanceof $ArmorItem) {
-            text.addLast(Text.translate('tooltip.mierno.right_click_to_equip').yellow());
+            text.add(Text.translate('tooltip.mierno.right_click_to_equip').yellow());
         }
     });
 

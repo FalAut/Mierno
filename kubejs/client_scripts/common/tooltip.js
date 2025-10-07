@@ -82,8 +82,8 @@ ItemEvents.tooltip((event) => {
     });
 
     event.addAdvanced('mierno:portable_crafting_table', (item, advanced, text) => {
-        text.addLast(Text.translate('tooltip.mierno.portable_crafting_table_1').gold());
-        text.addLast(
+        text.add(Text.translate('tooltip.mierno.portable_crafting_table_1').gold());
+        text.add(
             Text.translate(
                 'tooltip.mierno.portable_crafting_table_2',
                 Text.keybind('key.mierno.portable_crafting').green()

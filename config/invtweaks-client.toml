@@ -149,6 +149,8 @@
 	#3 = all buttons enabled (default)
 	#Range: 0 ~ 3
 	enableButtons = 3
+	#Enable debug will log the name of the screens being opened
+	enableDebug = false
 	#Enable auto-refill
 	autoRefill = true
 	#0 = disable sorting

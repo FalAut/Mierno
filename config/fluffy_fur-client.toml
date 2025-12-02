@@ -4,6 +4,8 @@
 	#Intensity of screenshake.
 	#Range: 0.0 ~ 10.0
 	screenshakeIntensity = 1.0
+	#Enable weather render fix in fabulous graphics.
+	fabulousWeatherFix = true
 
 	#Particles
 	[graphics.particles]
@@ -31,6 +33,10 @@
 		#Intensity of Thunder Fog fade effect post process shader.
 		#Range: 0.0 ~ 1.0
 		thunderFogFadeShaderIntensity = 0.25
+		#Enable noise for Rain Fog effect.
+		rainFogShaderNoise = true
+		#Enable Interleaved Gradient Noise for Rain Fog effect.
+		rainFogShaderIGN = true
 
 #Menu
 [menu]

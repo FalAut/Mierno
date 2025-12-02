@@ -1,4 +1,8 @@
 {
+  "evilcraft": {
+    "box_of_eternal_closure": true,
+    "broom": true
+  },
   "wizards_reborn": {
     "numerical": true,
     "crystal_growth": true,
@@ -63,6 +67,11 @@
   "entangled": {
     "entangled_block_component": true
   },
+  "avaritia": {
+    "extreme_smithing": true,
+    "crafting_table": true,
+    "compressor": true
+  },
   "pneumaticcraft": {
     "pneumatic": true,
     "tube_module": true,
@@ -86,6 +95,10 @@
   "functionalstorage": {
     "armory": true
   },
+  "compactcrafting": {
+    "field_proxy": true,
+    "field_projector": true
+  },
   "balm": {
     "jade": true
   },
@@ -108,6 +121,15 @@
     "recipe_logic_provider": true,
     "multiblock_provider": true
   },
+  "extendedae_plus": {
+    "wt_locked": true,
+    "wt_frequency": true,
+    "wt_network_usable": true,
+    "wt_master_mode": true,
+    "wt_channels": true,
+    "wt_master_location": true,
+    "wt_owner": true
+  },
   "ars_nouveau": {
     "mob_jar": true
   },
@@ -124,8 +146,14 @@
     "energy": true,
     "tooltip_renderer": true
   },
+  "projectexpansion": {
+    "provider": true
+  },
   "pipez": {
     "pipe": true
+  },
+  "woot_revived": {
+    "machines": true
   },
   "mierno": {
     "numerical_source": true,

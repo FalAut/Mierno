@@ -43,6 +43,7 @@
 !config/Mekanism
 !config/Mekanism/general.toml
 !config/naturesaura-common.toml
+!config/project-expansion.toml
 
 ## Defaultconfigs
 !defaultconfigs/

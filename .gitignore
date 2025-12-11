@@ -14,8 +14,6 @@
 !config/
 !config/modpack-update-checker
 !config/modpack-update-checker/**
-!config/fml.toml
-!config/modernfix-mixins.properties
 !config/ftbquests
 !config/ftbquests/**
 !config/capsule

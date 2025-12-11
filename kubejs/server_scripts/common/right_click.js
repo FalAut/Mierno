@@ -124,15 +124,43 @@ BlockEvents.rightClicked((event) => {
     }
 });
 
-BlockEvents.rightClicked('botania:terra_plate', (event) => {
-    const { hand, block, player, level } = event;
-    if (hand != 'MAIN_HAND') return;
+// BlockEvents.rightClicked('botania:terra_plate', (event) => {
+//     const { hand, block, player, level } = event;
+//     if (hand != 'MAIN_HAND') return;
 
-    let TAA = $PatchouliAPI.getMultiblock('mierno:terrestrial_agglomeration_altar');
+//     let TAA = $PatchouliAPI.getMultiblock('mierno:terrestrial_agglomeration_altar');
 
-    if (!TAA.validate(level, block.pos.below(), 'none')) {
-        player.tell(Text.translate('message.mierno.terra_plate_error').red());
-    }
+//     if (!TAA.validate(level, block.pos.below(), 'none')) {
+//         player.tell(Text.translate('message.mierno.terra_plate_error').red());
+//     }
+// });
+
+BlockEvents.rightClicked('occultism:otherstone', (event) => {
+    const { player, item } = event;
+    if (item != 'occultism:divination_rod') return;
+
+    item.nbt.putString('occultism:divination.linked_block_id', 'occultism:iesnium_ore_natural');
+    player.tell(
+        Text.translate(
+            'item.occultism.divination_rod.message.linked_block',
+            Text.translate('block.occultism.iesnium_ore')
+        )
+    );
+    event.cancel();
+});
+
+BlockEvents.rightClicked('minecraft:netherrack', (event) => {
+    const { player, item } = event;
+    if (item != 'occultism:divination_rod') return;
+
+    item.nbt.putString('occultism:divination.linked_block_id', 'minecraft:netherrack');
+    player.tell(
+        Text.translate(
+            'item.occultism.divination_rod.message.linked_block',
+            Text.translate('block.minecraft.netherrack')
+        )
+    );
+    event.cancel();
 });
 
 BlockEvents.rightClicked('bloodmagic:altar', (event) => {

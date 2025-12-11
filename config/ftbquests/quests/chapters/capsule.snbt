@@ -411,152 +411,6 @@
 		}
 		{
 			can_repeat: true
-			icon: "botania:terra_plate"
-			id: "4842CC82C1CF0559"
-			rewards: [{
-				id: "03A4F0E1B35541F1"
-				item: {
-					Count: 1
-					id: "capsule:capsule"
-					tag: {
-						author: "?"
-						canRotate: 0b
-						color: 10076989
-						display: {
-							color: 9819623
-						}
-						isReward: 1b
-						label: "Terrestrial Agglomeration Altar.nbt"
-						oneUse: 1b
-						size: 7
-						state: 5
-						structureName: "config/capsule/rewards/terrestrial_agglomeration_altar.nbt"
-					}
-				}
-				team_reward: true
-				type: "item"
-			}]
-			tasks: [
-				{
-					consume_items: true
-					id: "1ADFB2B94E7141BC"
-					item: "botania:terra_plate"
-					type: "item"
-				}
-				{
-					consume_items: true
-					count: 20L
-					id: "24A49EAD99B9A2AE"
-					item: { Count: 20, id: "minecraft:dirt" }
-					type: "item"
-				}
-				{
-					consume_items: true
-					count: 5L
-					id: "120534C7738791AC"
-					item: { Count: 5, id: "botania:vivid_seeds" }
-					type: "item"
-				}
-				{
-					consume_items: true
-					count: 5L
-					id: "157C2B5FCB03703F"
-					item: { Count: 5, id: "botania:scorched_seeds" }
-					type: "item"
-				}
-				{
-					consume_items: true
-					count: 5L
-					id: "0D1A88D8F1691B4F"
-					item: { Count: 5, id: "botania:infused_seeds" }
-					type: "item"
-				}
-				{
-					consume_items: true
-					count: 5L
-					id: "4C051DAF1DD53EDF"
-					item: { Count: 5, id: "botania:mutated_seeds" }
-					type: "item"
-				}
-				{
-					consume_items: true
-					count: 2L
-					id: "4A009C0E30937A34"
-					item: { Count: 2, id: "ars_nouveau:blue_archwood_log" }
-					type: "item"
-				}
-				{
-					consume_items: true
-					id: "3AF7EF0E7C7ECFC5"
-					item: "ars_nouveau:blue_archwood_leaves"
-					type: "item"
-				}
-				{
-					consume_items: true
-					count: 2L
-					id: "6C994D56C5E963AD"
-					item: { Count: 2, id: "ars_nouveau:green_archwood_log" }
-					type: "item"
-				}
-				{
-					consume_items: true
-					id: "1DBB38BD57DF60A3"
-					item: "ars_nouveau:green_archwood_leaves"
-					type: "item"
-				}
-				{
-					consume_items: true
-					count: 2L
-					id: "75EC9C37CA30C980"
-					item: { Count: 2, id: "ars_nouveau:purple_archwood_log" }
-					type: "item"
-				}
-				{
-					consume_items: true
-					id: "3810ED3D93BF931A"
-					item: "ars_nouveau:purple_archwood_leaves"
-					type: "item"
-				}
-				{
-					consume_items: true
-					count: 2L
-					id: "0A75F4A590F86495"
-					item: { Count: 2, id: "ars_nouveau:red_archwood_log" }
-					type: "item"
-				}
-				{
-					consume_items: true
-					id: "1EC729F8EA579C31"
-					item: "ars_nouveau:red_archwood_leaves"
-					type: "item"
-				}
-				{
-					consume_items: true
-					count: 16L
-					id: "280B9D07903A82D9"
-					item: { Count: 16, id: "botania:pattern_framed_livingwood" }
-					type: "item"
-				}
-				{
-					consume_items: true
-					count: 4L
-					id: "5C9E8C6EE22877B4"
-					item: { Count: 4, id: "botania:mana_pylon" }
-					type: "item"
-				}
-				{
-					consume_items: true
-					count: 4L
-					id: "3ECC0FCA601482DB"
-					item: { Count: 4, id: "botania:light_relay" }
-					type: "item"
-				}
-			]
-			x: -0.5d
-			y: 2.0d
-		}
-		{
-			can_repeat: true
 			icon: "botania:natura_pylon"
 			id: "05A9162469429213"
 			rewards: [{
@@ -618,7 +472,7 @@
 					type: "item"
 				}
 			]
-			x: 0.5d
+			x: -0.5d
 			y: 2.0d
 		}
 		{
@@ -887,92 +741,6 @@
 		}
 		{
 			can_repeat: true
-			description: [
-				"{tooltip.mierno.modular_runic_altar_core_1}"
-				""
-				"{tooltip.mierno.modular_runic_altar_core_2}"
-				""
-				"{tooltip.mierno.modular_runic_altar_core_3}"
-			]
-			icon: "mierno:modular_runic_altar_core"
-			id: "015AD1574ACFDC1A"
-			rewards: [{
-				id: "7255E3337C43412D"
-				item: {
-					Count: 1
-					id: "capsule:capsule"
-					tag: {
-						author: "?"
-						canRotate: 0b
-						color: 7105644
-						display: {
-							color: 6196919
-						}
-						isReward: 1b
-						label: "Modular Runic Altar.nbt"
-						oneUse: 1b
-						size: 7
-						state: 5
-						structureName: "config/capsule/rewards/modular_runic_altar.nbt"
-					}
-				}
-				team_reward: true
-				type: "item"
-			}]
-			tasks: [
-				{
-					consume_items: true
-					id: "2C5EE3DD2C73E3A3"
-					item: "mierno:modular_runic_altar_core"
-					type: "item"
-				}
-				{
-					consume_items: true
-					count: 26L
-					id: "7882655D1D55F8C7"
-					item: { Count: 26, id: "botania:mana_diamond_block" }
-					type: "item"
-				}
-				{
-					consume_items: true
-					count: 4L
-					id: "105514DCD5766A85"
-					item: { Count: 4, id: "botania:mana_pylon" }
-					type: "item"
-				}
-				{
-					consume_items: true
-					count: 104L
-					id: "4881A8112B13D1C3"
-					item: "botania:livingrock_bricks"
-					type: "item"
-				}
-				{
-					consume_items: true
-					id: "6F4F6E3560C4BD67"
-					item: "mierno:item_input"
-					type: "item"
-				}
-				{
-					consume_items: true
-					id: "68452017E02143BA"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"celestisynth:celestisynthitemstackcapabilities": {
-								cs.aquaSkin: 0
-							}
-						}
-						id: "mierno:item_output"
-					}
-					type: "item"
-				}
-			]
-			x: -1.5d
-			y: 5.0d
-		}
-		{
-			can_repeat: true
 			icon: "mierno:void_ore_miner_controller"
 			id: "4D2F655DD344ED44"
 			rewards: [{
@@ -1181,8 +949,8 @@
 					type: "item"
 				}
 			]
-			x: 0.0d
-			y: 6.0d
+			x: -1.5d
+			y: 5.0d
 		}
 		{
 			can_repeat: true
@@ -1353,7 +1121,7 @@
 			]
 			title: "{block.forbidden_arcanus.hephaestus_forge}"
 			x: -0.5d
-			y: 8.0d
+			y: 6.5d
 		}
 		{
 			can_repeat: true
@@ -1465,65 +1233,7 @@
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: 2.0d
-		}
-		{
-			can_repeat: true
-			description: ["{tooltip.mierno.modular_mana_pool_core_1}"]
-			icon: "mierno:modular_mana_pool_core"
-			id: "5C4FDA49A2FBA3C0"
-			rewards: [{
-				id: "3324DA8DE2EBCA2D"
-				item: {
-					Count: 1
-					id: "capsule:capsule"
-					tag: {
-						author: "?"
-						canRotate: 0b
-						color: 9819623
-						display: {
-							color: 13421772
-						}
-						isReward: 1b
-						label: "Modular Mana Pool.nbt"
-						oneUse: 1b
-						size: 7
-						state: 5
-						structureName: "config/capsule/rewards/modular_mana_pool.nbt"
-					}
-				}
-				team_reward: true
-				type: "item"
-			}]
-			tasks: [
-				{
-					consume_items: true
-					id: "56DEDC663F4FADD1"
-					item: "mierno:modular_mana_pool_core"
-					type: "item"
-				}
-				{
-					consume_items: true
-					count: 94L
-					id: "6E18473A6DE90EA8"
-					item: "botania:livingrock"
-					type: "item"
-				}
-				{
-					consume_items: true
-					id: "594BD70EC3A3F47D"
-					item: "mierno:item_input"
-					type: "item"
-				}
-				{
-					consume_items: true
-					id: "5ED61774A323659C"
-					item: "mierno:item_output"
-					type: "item"
-				}
-			]
-			x: -1.5d
+			x: 0.5d
 			y: 2.0d
 		}
 		{
@@ -1576,7 +1286,7 @@
 				}
 			]
 			x: 0.5d
-			y: 8.0d
+			y: 6.5d
 		}
 		{
 			can_repeat: true
@@ -1651,7 +1361,7 @@
 				}
 			]
 			x: -1.5d
-			y: 9.0d
+			y: 7.5d
 		}
 		{
 			can_repeat: true
@@ -1710,7 +1420,7 @@
 				}
 			]
 			x: 1.5d
-			y: 9.0d
+			y: 7.5d
 		}
 		{
 			can_repeat: true
@@ -1801,7 +1511,7 @@
 				}
 			]
 			x: 0.0d
-			y: 9.0d
+			y: 7.5d
 		}
 	]
 	title: "{mierno.capsule.title}"

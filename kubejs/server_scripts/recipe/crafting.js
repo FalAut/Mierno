@@ -63,6 +63,18 @@ ServerEvents.recipes((event) => {
         },
     });
 
+    event.custom({
+        type: 'functionalstorage:custom_compacting',
+        higher_input: {
+            count: 1,
+            item: 'mekanism:nugget_steel',
+        },
+        lower_input: {
+            count: 9,
+            item: 'ae2:matter_ball',
+        },
+    });
+
     function copySelf(item) {
         kubejs.shapeless(Item.of(item).withCount(2), item);
     }
@@ -1151,4 +1163,14 @@ ServerEvents.recipes((event) => {
         B: 'thermal:lumium_ingot',
         C: 'mierno:memory_source_gem',
     });
+
+    kubejs.shaped('mekanism:nugget_steel', ['AAA', 'AAA', 'AAA'], {
+        A: 'ae2:matter_ball',
+    });
+});
+
+MBDMachineEvents.onTick((event) => {
+    event.event.machine.setMachineState('base');
+    // event.event.machine.recipeLogic.setStatus('idle');
+    // event.event.machine.recipeLogic.setProgress(0);
 });

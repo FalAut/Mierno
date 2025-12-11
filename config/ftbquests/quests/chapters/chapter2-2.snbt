@@ -1157,15 +1157,6 @@
 			x: 2.0d
 			y: -3.0d
 		}
-		{
-			id: "354F716CE555A641"
-			tasks: [{
-				id: "7A7D9D0F3A928541"
-				type: "checkmark"
-			}]
-			x: 0.5d
-			y: 3.5d
-		}
 	]
 	title: "{mierno.chapter2-2.title}"
 }

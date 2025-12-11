@@ -2,7 +2,7 @@ PlayerEvents.tick((event) => {
     const { player } = event;
     const { xRot, zza } = player;
 
-    if (!player.onClimbable() || player.isCrouching()) return;
+    if (!player.onClimbable() || player.isShiftKeyDown()) return;
 
     const speed = 0.4;
     const movement = Math.abs(xRot / 90) * speed;

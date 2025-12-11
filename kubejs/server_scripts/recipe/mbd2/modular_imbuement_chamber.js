@@ -139,17 +139,6 @@ ServerEvents.recipes((event) => {
     mierno
         .modular_imbuement_chamber()
         .inputItems([
-            'ars_nouveau:source_gem',
-            'ars_nouveau:magebloom_fiber',
-            'ars_nouveau:magebloom',
-            'botania:rune_water',
-        ])
-        .outputItems('ars_nouveau:water_essence')
-        .duration(DURATION);
-
-    mierno
-        .modular_imbuement_chamber()
-        .inputItems([
             'botania:pixie_dust',
             'botania:elementium_ingot',
             'minecraft:nether_star',

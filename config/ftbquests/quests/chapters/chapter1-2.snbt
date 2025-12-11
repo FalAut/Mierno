@@ -452,13 +452,11 @@
 				}
 			]
 			shape: "square"
-			subtitle: "{\"translate\":\"mierno.chapter1-2.terra_plate.subtitle\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"4842CC82C1CF0559\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}}"
 			tasks: [{
 				id: "04C9C16269524713"
 				item: "botania:terra_plate"
 				type: "item"
 			}]
-			title: "{mierno.chapter1-2.terra_plate.title}"
 			x: 5.5d
 			y: 0.5d
 		}

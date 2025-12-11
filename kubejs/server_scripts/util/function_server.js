@@ -95,7 +95,7 @@ const handleCrucibleInteraction = (event, crucible, inputItem, outputFluid) => {
         const itemCap = block.entity.getCapability(ForgeCapabilities.ITEM_HANDLER).resolve().get();
         const fluidCap = block.entity.getCapability(ForgeCapabilities.FLUID_HANDLER).resolve().get();
 
-        if (item.hasTag(inputItem) && !player.isCrouching()) {
+        if (item.hasTag(inputItem) && !player.isShiftKeyDown()) {
             if (itemCap.getStackInSlot(0).count < 64) {
                 itemCap.insertItem(item.withCount(1), false);
                 item.count--;
@@ -104,7 +104,7 @@ const handleCrucibleInteraction = (event, crucible, inputItem, outputFluid) => {
             event.cancel();
         }
 
-        if (item.isEmpty() && player.isCrouching()) {
+        if (item.isEmpty() && player.isShiftKeyDown()) {
             player.give(itemCap.getStackInSlot(0).withCount(1));
             itemCap.extractItem(0, 1, false);
             player.swing();

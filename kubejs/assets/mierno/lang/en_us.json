@@ -221,7 +221,6 @@
     "message.mierno.colossal_furnace_core_no_clear": "Please ensure that there are no §centities§r within the construction area of the Colossal Furnace.",
     "message.mierno.colossal_furnace_core_no_space": "Please ensure that there are no §cblocks other than the core§r within the construction area of the Colossal Furnace.",
     "message.mierno.colossal_furnace_core_no_enough_item": "The Colossal Furnace frame is incomplete. §a26§r are required, but %s are missing.",
-    "message.mierno.terra_plate_error": "The current structure of the Terra Cohesive Plate is incorrect, please check the Terra Cohesive Plate mission for more information.",
     "message.mierno.nothing_happened": "Nothing happened",
     "message.mierno.psu_inver_ritual.title": "\n\nPseudo-Inversion Ritual\n",
     "message.mierno.psu_inver_ritual.north": "- To the north, Children of Fire: %s / 12",
@@ -238,7 +237,6 @@
     "message.mierno.psu_inver_ritual.kill_counter": "Kill: %s / 100",
     "message.mierno.game_pass": "Player %s has obtained the Pseudo-Inversion Sigil!\nTime taken: %s!\nThank you for playing!",
     "message.mierno.tyumen_gift": "You received a gift from Qiuming",
-    "message.mierno.too_many_entities_warnning": "Warning: There are too many entities, all to many entities have been cleared!",
 
     "death.attack.mistDamage": "%1$s got lost in the mist",
 
@@ -332,7 +330,6 @@
     "tooltip.mierno.vengeance_ring_2": "§c§lIf you still can't see the spirit of Vengeance after activating, try wearing Spectral glasses",
     "tooltip.mierno.ae2_press": "Obtained by breaking Mysterious Blocks",
     "tooltip.mierno.clay_ball": "Clay Balls are produced by placing sand near a Clay Flower, need to consume mana",
-    "tooltip.mierno.imbuement_chamber": "The Infusion Chamber now consumes items on the pedestal after completing the infusion, this is intentional and not a bug",
     "tooltip.mierno.modular_alfheim_portal_core": "See JEI for the exact structure, which requires the Alfheim Portal below to remain open",
     "tooltip.mierno.eternal_water": "An infinite water source that can automatically output water to fluid containers",
     "tooltip.mierno.pinkinator_1": "Crafted using a Matter Cannon loaded with Pink Lumen Paint Balls",
@@ -597,10 +594,7 @@
 
     "mierno.chapter5.title": "V. Pseudo Inversion",
 
-    "mierno.welcome.main.desc1": "§cThis modpack is designed for players who have a certain understanding of various mods and automation.§r",
-    "mierno.welcome.main.desc2": "§aIf you encounter any issues, please feel free to provide feedback in the community. Thank you for your cooperation!",
-    "mierno.welcome.main.desc3": "The creation of this modpack is purely a personal hobby. Although I have invested a lot of time and effort, my personal capabilities are limited, so it may not meet the needs of every player.",
-    "mierno.welcome.main.desc4": "If this modpack does not suit your preferences, remember that you can exit the game at any time without any pressure.",
+    "mierno.welcome.main.desc1": "§cWarning ⚠ : This modpack has many magic mods. If you don't like magic mods, then this modpack may not be suitable for you! .§r",
 
     "mierno.welcome.special_thanks.title": "Special Thanks",
     "mierno.welcome.special_thanks.falaut": "§6FalAut§r - Author",

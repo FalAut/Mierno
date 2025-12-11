@@ -221,7 +221,6 @@
     "message.mierno.colossal_furnace_core_no_clear": "请保证巨型熔炉搭建范围内没有§c生物§r存在",
     "message.mierno.colossal_furnace_core_no_space": "请保证巨型熔炉搭建范围内没有除核心外的§c其他方块§r存在",
     "message.mierno.colossal_furnace_core_no_enough_item": "巨型熔炉框架不足，需要 §a26§r 个，还差 %s 个",
-    "message.mierno.terra_plate_error": "当前泰拉凝聚板的结构不正确，请查看泰拉凝聚板的任务获取更多信息",
     "message.mierno.nothing_happened": "什么都没有发生",
     "message.mierno.psu_inver_ritual.title": "\n\n伪逆仪式\n",
     "message.mierno.psu_inver_ritual.north": "- 北面，火之子嗣: %s / 12",
@@ -238,7 +237,6 @@
     "message.mierno.psu_inver_ritual.kill_counter": "击杀: %s / 100",
     "message.mierno.game_pass": "玩家 %s 获得了伪逆徽章！\n用时 %s！\n感谢你的游玩！",
     "message.mierno.tyumen_gift": "你收到了一份秋明的礼物",
-    "message.mierno.too_many_entities_warnning": "警告：当前实体过多，已清除所有过多的实体！",
 
     "death.attack.mistDamage": "%1$s 迷失了",
 
@@ -332,7 +330,6 @@
     "tooltip.mierno.vengeance_ring_2": "§c§l若激活后仍然看不到复仇之魂，请尝试戴上幽冥眼镜",
     "tooltip.mierno.ae2_press": "通过破坏神秘方块获得",
     "tooltip.mierno.clay_ball": "在粘土花附近放置沙子来产生黏土球，需要消耗魔力",
-    "tooltip.mierno.imbuement_chamber": "现在灌注室在完成灌注后会消耗掉基座上的物品，这是有意为之的，并不是bug",
     "tooltip.mierno.modular_alfheim_portal_core": "具体结构请查看JEI，需要下方的精灵门保持开启状态",
     "tooltip.mierno.eternal_water": "一个无限的水源，可以自动向液体容器输出水",
     "tooltip.mierno.pinkinator_1": "使用装满粉红色光通染色球的物质炮合成",

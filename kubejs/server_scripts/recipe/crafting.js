@@ -1168,9 +1168,3 @@ ServerEvents.recipes((event) => {
         A: 'ae2:matter_ball',
     });
 });
-
-MBDMachineEvents.onTick((event) => {
-    event.event.machine.setMachineState('base');
-    // event.event.machine.recipeLogic.setStatus('idle');
-    // event.event.machine.recipeLogic.setProgress(0);
-});

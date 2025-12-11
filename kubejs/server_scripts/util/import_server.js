@@ -20,3 +20,4 @@ const $SourceUtil = Java.loadClass('com.hollingsworth.arsnouveau.api.util.Source
 const $FireworkRocketEntity = Java.loadClass('net.minecraft.world.entity.projectile.FireworkRocketEntity');
 const $Registries = Java.loadClass('net.minecraft.core.registries.Registries');
 const $HolderSet = Java.loadClass('net.minecraft.core.HolderSet');
+const $ForgeHooks = Java.loadClass('net.minecraftforge.common.ForgeHooks');

@@ -487,7 +487,6 @@
 			]
 			shape: "square"
 			size: 1.5d
-			subtitle: "{\"translate\":\"mierno.chapter1-3.assembly_room.subtitle\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"16DC6C2BE109C5E8\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}}"
 			tasks: [{
 				id: "0DE72ECF063E6C81"
 				item: "mierno:assembly_room_controller"
@@ -1035,7 +1034,6 @@
 			]
 			shape: "square"
 			size: 1.5d
-			subtitle: "{\"translate\":\"mierno.chapter1-3.matter_mixer.subtitle\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"298B029C5CFEADA3\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}}"
 			tasks: [{
 				id: "0CDB9036F41E36B5"
 				item: "mierno:matter_mixer_controller"
@@ -1182,7 +1180,6 @@
 			]
 			shape: "square"
 			size: 1.5d
-			subtitle: "{\"translate\":\"mierno.chapter1-3.void_ore_minner.subtitle\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"4D2F655DD344ED44\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}}"
 			tasks: [{
 				id: "5550FFC44ABEAA15"
 				item: "mierno:void_ore_miner_controller"

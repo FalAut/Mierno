@@ -232,7 +232,6 @@
 				type: "item"
 			}]
 			shape: "square"
-			subtitle: "{\"translate\":\"mierno.chapter1-1.tree_ritual.subtitle\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"373C0544245F9AA0\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}}"
 			tasks: [{
 				id: "0C189C4806B67FB8"
 				item: "naturesaura:wood_stand"
@@ -269,7 +268,6 @@
 				}
 			]
 			shape: "square"
-			subtitle: "{\"translate\":\"mierno.chapter1-1.nature_altar.subtitle\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"66D8BC9D66037D0F\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}}"
 			tasks: [{
 				id: "1E4C2537F576182A"
 				item: "naturesaura:nature_altar"
@@ -466,7 +464,6 @@
 				type: "item"
 			}]
 			shape: "square"
-			subtitle: "{\"translate\":\"mierno.chapter1-1.offering_table.subtitle\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"1893AAF3ED9994A3\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}}"
 			tasks: [{
 				id: "26D2586C5E53E958"
 				item: "naturesaura:offering_table"
@@ -802,7 +799,6 @@
 			]
 			shape: "square"
 			size: 1.5d
-			subtitle: "{\"translate\":\"mierno.chapter1-1.ancient_aura_gen.subtitle\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"0CAAD36B1835ABCD\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}}"
 			tasks: [{
 				id: "59A99BAC4407854C"
 				item: "mierno:ancient_aura_generator_core"
@@ -1279,7 +1275,6 @@
 				type: "item"
 			}]
 			shape: "square"
-			subtitle: "{\"translate\":\"mierno.chapter1-1.animal_spanwer.subtitle\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"54914242D9770D22\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}}"
 			tasks: [{
 				id: "1AD5344381DD9ECD"
 				item: "naturesaura:animal_spawner"
@@ -1299,6 +1294,37 @@
 			}]
 			x: 0.0d
 			y: -1.5d
+		}
+		{
+			can_repeat: true
+			icon: {
+				Count: 1
+				id: "mbtool:mbtool"
+				tag: {
+					energy: 100000
+				}
+			}
+			id: "35E6D10EA6D10C1D"
+			rewards: [{
+				id: "119177AB267ADF47"
+				item: {
+					Count: 1
+					id: "mbtool:mbtool"
+					tag: {
+						energy: 100000
+					}
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "2A0F30EF9584A06A"
+				type: "checkmark"
+			}]
+			title: "{item.mbtool.mbtool}"
+			x: -2.0d
+			y: 0.0d
 		}
 	]
 	title: "{mierno.chapter1-1.title}"

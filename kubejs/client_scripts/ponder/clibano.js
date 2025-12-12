@@ -2,7 +2,7 @@ Ponder.registry((event) => {
     event.create('forbidden_arcanus:clibano_core').scene('clibano', '炽炉', 'mierno:clibano', (scene, util) => {
         scene.showStructure(0);
 
-        scene.text(100, '可前往「胶囊」章节获取胶囊来快速放置这个结构');
+        scene.text(100, '可使用「多方块建造工具」来快速放置这个结构');
         let base1Pos = [
             [3, 1, 1],
             [3, 1, 3],

@@ -25,7 +25,7 @@
 			}]
 			shape: "gear"
 			size: 2.0d
-			subtitle: "{\"translate\":\"mierno.chapter1-2.enter_misty_forest.subtitle\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"0AA9F448417D561E\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}}"
+			subtitle: "{\"translate\":\"mierno.chapter1-2.misty_forest_portal_subtitle\",\"color\":\"gold\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/create ponder naturesaura:calling_spirit\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}}"
 			tasks: [{
 				dimension: "mierno:misty_forest"
 				id: "74911D77994DC1FA"
@@ -250,7 +250,6 @@
 				}
 			]
 			shape: "square"
-			subtitle: "{\"translate\":\"mierno.chapter1-2.alfheim_portal.subtitle\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"05A9162469429213\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}}"
 			tasks: [
 				{
 					id: "05A4C6E59925F6E8"

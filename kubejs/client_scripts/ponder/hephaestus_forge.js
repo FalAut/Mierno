@@ -6,7 +6,7 @@ Ponder.registry((ponder) => {
             scene.scaleSceneView(0.8);
             scene.idle(20);
 
-            scene.text(200, '可前往「胶囊」章节获取胶囊来快速放置这个结构');
+            scene.text(200, '可使用「多方块建造工具」来快速放置这个结构');
             scene.world.hideSection([0, 1, 0, 9, 5, 9], 'down');
             scene.idle(20);
 

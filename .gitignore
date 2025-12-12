@@ -16,10 +16,6 @@
 !config/modpack-update-checker/**
 !config/ftbquests
 !config/ftbquests/**
-!config/capsule
-!config/capsule/**
-!config/capsule/rewards
-!config/capsule-common.toml
 !config/patchouli-client.toml
 !config/invtweaks-client.toml
 !config/ars_nouveau-client.toml
@@ -42,6 +38,7 @@
 !config/Mekanism/general.toml
 !config/naturesaura-common.toml
 !config/project-expansion.toml
+!config/mbtool-common.toml
 
 ## Defaultconfigs
 !defaultconfigs/

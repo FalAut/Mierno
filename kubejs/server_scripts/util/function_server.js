@@ -258,16 +258,14 @@ function spawnTrialMobs(block) {
 }
 
 /**
- *
- * @param {Internal.ServerPlayer} player
- * @param {Internal.InteractionHand} hand
+ * 定位结构
+ * @param {Internal.ServerLevel} level
  * @param {string} structureName
+ * @param {BlockPos} currentPos
  * @param {number} range
- * @returns
+ * @returns {BlockPos}
  */
-function spawnStructureFinderEye(player, hand, structureName, range) {
-    let item = player.getHeldItem(hand);
-    let level = player.level;
+function locateStructurePos(level, structureName, currentPos, range) {
     let structureRegistry = level.registryAccess().registryOrThrow($Registries.STRUCTURE);
     let structureKey = $ResourceKey.create(structureRegistry.key(), structureName);
     let holder = structureRegistry.getHolder(structureKey);
@@ -275,23 +273,14 @@ function spawnStructureFinderEye(player, hand, structureName, range) {
     let pair = level
         .getChunkSource()
         .getGenerator()
-        .findNearestMapStructure(level, holderSet, player.blockPosition(), range, false);
+        .findNearestMapStructure(level, holderSet, currentPos, range, false);
 
     if (pair) {
         let structurePos = pair.getFirst();
 
-        /**@type {Internal.EyeOfEnder} */
-        let eye = level.createEntity('eye_of_ender');
-        eye.setPos(player.x, player.y + 1, player.z);
-        eye.setItem(item);
-        eye.signalTo(structurePos);
-        eye.spawn();
-
-        player.swing(hand, true);
-        if (!player.isCreative()) item.count--;
-
-        level.playSound(null, player.blockPosition(), 'entity.ender_eye.launch', 'master');
+        return structurePos;
     }
+    return null;
 }
 
 /**

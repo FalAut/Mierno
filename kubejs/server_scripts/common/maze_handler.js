@@ -27,44 +27,16 @@ LoquatEvents.playerEnteredArea((event) => {
         player.tell(Text.translate('message.mierno.end_room_3').gold());
     }
 });
-const $StructureUtils = Java.loadClass('net.minecraft.gametest.framework.StructureUtils');
 
 ItemEvents.rightClicked('ae2:meteorite_compass', (event) => {
     const { level, player } = event;
     if (level.dimension != 'mierno:misty_forest') return;
     player.tell(Text.translate('message.mierno.locating_maze').gold());
 
-    let structureRegistry = level.registryAccess().registryOrThrow($Registries.STRUCTURE);
-    let structureKey = $ResourceKey.create(structureRegistry.key(), 'mierno:maze');
-    let holder = structureRegistry.getHolder(structureKey);
-    let holderSet = $HolderSet.direct([holder.get()]);
-    let pair = level
-        .getChunkSource()
-        .getGenerator()
-        .findNearestMapStructure(level, holderSet, player.blockPosition(), 1024, false);
+    let structurePos = locateStructurePos(level, 'mierno:maze', player.blockPosition(), 1024);
 
-    if (pair) {
-        let structurePos = pair.getFirst();
-        let chunkpos = level.getChunkAt(structurePos).pos;
-        const radius = 6;
-
-        for (let i = -radius; i <= radius; ++i) {
-            for (let j = -radius; j <= radius; ++j) {
-                let k = chunkpos.x + i;
-                let l = chunkpos.z + j;
-                level.setChunkForced(k, l, true);
-            }
-        }
-    }
-
-    const closestMaze = LoquatAreaManager.of(level).byTag('maze').findAny().orElse(null);
-
-    if (closestMaze) {
-        level.setBlock(
-            new BlockPos(closestMaze.center.x(), closestMaze.center.y() - 3, closestMaze.center.z()),
-            Block.getBlock('ae2:mysterious_cube').defaultBlockState(),
-            3
-        );
+    if (structurePos) {
+        level.setBlock(structurePos.north(40).west(40), Block.getBlock('ae2:mysterious_cube').defaultBlockState(), 3);
         player.tell(Text.translate('message.mierno.maze_locating_success').green());
     } else {
         player.tell(Text.translate('message.mierno.maze_locating_fail').red());

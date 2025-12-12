@@ -291,7 +291,23 @@ ItemEvents.rightClicked('mierno:portable_crafting_table', (event) => {
 });
 
 ItemEvents.rightClicked('mierno:dark_eyes', (event) => {
-    const { player, hand } = event;
+    const { player, hand, level, item } = event;
 
-    spawnStructureFinderEye(player, hand, 'mierno:dark_temple', 512);
+    let structurePos = locateStructurePos(level, 'mierno:dark_temple', player.blockPosition(), 1024);
+    if (!structurePos) return;
+
+    if (structurePos) {
+        /**@type {Internal.EyeOfEnder} */
+        let eye = level.createEntity('eye_of_ender');
+        eye.setPos(player.x, player.y + 1, player.z);
+        eye.setItem(item);
+        eye.signalTo(structurePos);
+        eye.spawn();
+        eye.setGlowing(true);
+
+        player.swing(hand, true);
+        if (!player.isCreative()) item.count--;
+
+        level.playSound(null, player.blockPosition(), 'entity.ender_eye.launch', 'master');
+    }
 });

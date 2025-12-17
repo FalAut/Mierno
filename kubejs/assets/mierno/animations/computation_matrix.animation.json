@@ -1,9 +1,8 @@
 {
     "format_version": "1.8.0",
-    "hello": "world",
     "animations": {
-        "idel": {},
-        "formed": {
+        "idle": {},
+        "working": {
             "loop": true,
             "animation_length": 7,
             "bones": {

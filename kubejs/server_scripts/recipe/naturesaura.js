@@ -12,39 +12,6 @@ ServerEvents.recipes((event) => {
         'smooth_stone',
     ]);
 
-    naturesaura.tree_ritual('naturesaura:offering_table', [
-        Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:overworld"}').weakNBT(),
-        'naturesaura:token_joy',
-        'naturesaura:ancient_stick',
-        'naturesaura:ancient_stick',
-        'naturesaura:infused_stone',
-        'mierno:infused_wood',
-        'naturesaura:infused_stone',
-        'mierno:infused_wood',
-    ]);
-
-    naturesaura.tree_ritual('mierno:engraving_table', [
-        Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:overworld"}').weakNBT(),
-        'mierno:token_base',
-        'naturesaura:ancient_stick',
-        'naturesaura:ancient_stick',
-        'mierno:infused_wood',
-        'mierno:infused_wood',
-        'mierno:infused_wood',
-        'mierno:infused_wood',
-    ]);
-
-    naturesaura.tree_ritual('tiab:time_in_a_bottle', [
-        'naturesaura:clock_hand',
-        Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:overworld"}').weakNBT(),
-        'naturesaura:sky_ingot',
-        'naturesaura:sky_ingot',
-        'naturesaura:sky_ingot',
-        'naturesaura:sky_ingot',
-        'naturesaura:sky_ingot',
-        'naturesaura:sky_ingot',
-    ]);
-
     naturesaura.tree_ritual('mierno:dream_lantern', [
         'minecraft:chain',
         'naturesaura:aura_trove',
@@ -54,17 +21,6 @@ ServerEvents.recipes((event) => {
         'mierno:infused_wood',
         'mierno:infused_wood',
         'mierno:infused_wood',
-    ]);
-
-    naturesaura.tree_ritual('botania:runic_altar', [
-        'mierno:sun_crystal_full',
-        'botania:mana_diamond',
-        'botania:livingrock',
-        'botania:livingrock',
-        'botania:livingrock',
-        'botania:mana_powder',
-        'botania:livingrock',
-        'botania:manasteel_ingot',
     ]);
 
     naturesaura.tree_ritual('naturesaura:conversion_catalyst', [

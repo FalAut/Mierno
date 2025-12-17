@@ -67,11 +67,6 @@
   "entangled": {
     "entangled_block_component": true
   },
-  "avaritia": {
-    "extreme_smithing": true,
-    "crafting_table": true,
-    "compressor": true
-  },
   "pneumaticcraft": {
     "pneumatic": true,
     "tube_module": true,
@@ -94,10 +89,6 @@
   },
   "functionalstorage": {
     "armory": true
-  },
-  "compactcrafting": {
-    "field_proxy": true,
-    "field_projector": true
   },
   "balm": {
     "jade": true
@@ -122,6 +113,7 @@
     "multiblock_provider": true
   },
   "extendedae_plus": {
+    "labeled_wireless_component": true,
     "wt_locked": true,
     "wt_frequency": true,
     "wt_network_usable": true,
@@ -151,9 +143,6 @@
   },
   "pipez": {
     "pipe": true
-  },
-  "woot_revived": {
-    "machines": true
   },
   "mierno": {
     "numerical_source": true,

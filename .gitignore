@@ -28,10 +28,8 @@
 !config/ProjectE/processing.toml
 !config/jade
 !config/jade/plugins.json
-!config/wizards_reborn-common.toml
 !config/malum-common.toml
 !config/botania-client.toml
-!config/fluffy_fur-client.toml
 !config/simplebackups-common.toml
 !config/evilcraft-common.toml
 !config/Mekanism
@@ -39,6 +37,8 @@
 !config/naturesaura-common.toml
 !config/project-expansion.toml
 !config/mbtool-common.toml
+!config/ae2
+!config/ae2/client.json
 
 ## Defaultconfigs
 !defaultconfigs/

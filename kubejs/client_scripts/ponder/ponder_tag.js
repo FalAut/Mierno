@@ -10,7 +10,6 @@ Ponder.tags((event) => {
         'mierno:gensousitu_bucket',
         'mierno:addition_sigil',
         'mierno:ancient_aura_generator_core',
-        'botania:terra_plate',
         'evilcraft:sanguinary_environmental_accumulator',
         'evilcraft:spirit_furnace',
     ]);

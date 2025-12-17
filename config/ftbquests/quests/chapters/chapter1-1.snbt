@@ -104,7 +104,7 @@
 		{
 			dependencies: [
 				"0F9F0DF0B936E745"
-				"2EBCD8DF469CB6FF"
+				"3AF464DDA565383F"
 			]
 			id: "3E9675E1ABC429B9"
 			rewards: [{
@@ -178,24 +178,6 @@
 			}]
 			x: 3.0d
 			y: -3.5d
-		}
-		{
-			dependencies: ["0EF181ADCC2BD78C"]
-			id: "2EBCD8DF469CB6FF"
-			rewards: [{
-				count: 32
-				id: "4211C8A01CFDA4FB"
-				item: "minecraft:oak_log"
-				team_reward: true
-				type: "item"
-			}]
-			tasks: [{
-				id: "0E540125FEE8A552"
-				item: "mierno:oak_mortar"
-				type: "item"
-			}]
-			x: 1.5d
-			y: -1.5d
 		}
 		{
 			dependencies: ["48D0CC04CEA4742B"]
@@ -1325,6 +1307,17 @@
 			title: "{item.mbtool.mbtool}"
 			x: -2.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["0EF181ADCC2BD78C"]
+			id: "3AF464DDA565383F"
+			tasks: [{
+				id: "4B7747582642610F"
+				item: "mierno:oak_mortar"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
 		}
 	]
 	title: "{mierno.chapter1-1.title}"

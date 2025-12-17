@@ -106,6 +106,7 @@ ServerEvents.recipes((event) => {
         Item.of('botania:mana_tablet', '{creative:1b,mana:500000}').weakNBT()
     );
     kubejs.shapeless('forbidden_arcanus:aurum_chest_boat', ['forbidden_arcanus:aurum_boat', '#forge:chests/wooden']);
+    kubejs.shapeless('naturesaura:ancient_sapling', ['oak_sapling', 'mierno:infused_wood']);
     kubejs.shapeless('forbidden_arcanus:edelwood_chest_boat', [
         'forbidden_arcanus:edelwood_boat',
         '#forge:chests/wooden',
@@ -185,6 +186,9 @@ ServerEvents.recipes((event) => {
         'mierno:cell_component_256m',
         'mierno:advance_item_cell_housing',
     ]);
+    kubejs.shapeless('9x string', Array(3).fill('botania:white_mystical_flower'));
+    kubejs.shapeless('9x feather', Array(3).fill('string'));
+    kubejs.shapeless('mierno:fiber', ['mierno:oak_mortar', '#minecraft:leaves']);
 
     kubejs.shaped('bucket', ['A A', ' A '], {
         A: 'white_concrete',
@@ -360,12 +364,6 @@ ServerEvents.recipes((event) => {
         F: 'ae2:printed_silicon',
     });
 
-    kubejs.shaped('wizards_reborn:orbital_fluid_retainer', ['ABA', ' C ', 'CCC'], {
-        A: 'thermal:electrum_plate',
-        B: 'thermal:fluid_cell',
-        C: 'fluxnetworks:flux_block',
-    });
-
     kubejs.shaped('mierno:unstable_singularity', ['AAA', 'ABA', 'AAA'], {
         A: 'mierno:unstable_ingot',
         B: 'ae2:singularity',
@@ -426,13 +424,6 @@ ServerEvents.recipes((event) => {
     kubejs.shaped('mierno:cobble_gen_tier6', ['AAA', 'ABA', 'AAA'], {
         A: 'netherite_block',
         B: 'mierno:cobble_gen_tier5',
-    });
-
-    kubejs.shaped('mierno:modular_runic_altar_core', ['ABA', 'ACA', 'ADA'], {
-        A: 'ars_nouveau:manipulation_essence',
-        B: 'botania:rune_mana',
-        C: 'botania:mana_diamond_block',
-        D: 'botania:runic_altar',
     });
 
     kubejs.shaped('mierno:void_ore_miner_controller', ['AAA', 'ABA', 'CCC'], {
@@ -596,15 +587,6 @@ ServerEvents.recipes((event) => {
     kubejs.shaped('9x forbidden_arcanus:arcane_polished_darkstone', ['AAA', 'ABA', 'AAA'], {
         A: 'forbidden_arcanus:polished_darkstone',
         B: 'forbidden_arcanus:deorum_ingot',
-    });
-
-    kubejs.shaped('mierno:modular_alfheim_portal_core', ['ABA', 'CDE', 'AFA'], {
-        A: 'botania:terrasteel_nugget',
-        B: 'ae2:cell_component_1k',
-        C: 'ae2:engineering_processor',
-        D: 'mierno:mana_input',
-        E: 'ae2:logic_processor',
-        F: 'ae2:printed_silicon',
     });
 
     kubejs.shaped(
@@ -844,12 +826,6 @@ ServerEvents.recipes((event) => {
     kubejs.shaped('mierno:mini_sun', ['AAA', 'ABA', 'AAA'], {
         A: 'glowstone',
         B: 'mierno:sun_crystal_full',
-    });
-
-    kubejs.shaped('mierno:modular_mana_pool_core', ['ABA', 'BCB', 'ABA'], {
-        A: 'botania:livingrock',
-        B: 'botania:rune_mana',
-        C: 'botania:terrasteel_ingot',
     });
 
     kubejs.shaped('mierno:upgrade_augment_signalum', ['ABA', 'CDC', 'ABA'], {
@@ -1166,5 +1142,33 @@ ServerEvents.recipes((event) => {
 
     kubejs.shaped('mekanism:nugget_steel', ['AAA', 'AAA', 'AAA'], {
         A: 'ae2:matter_ball',
+    });
+
+    kubejs.shaped('mierno:engraving_table', ['AAA', ' B ', ' A '], {
+        A: 'mierno:infused_wood',
+        B: 'minecraft:crafting_table',
+    });
+
+    kubejs.shaped('naturesaura:offering_table', ['AAA', ' B ', 'BBB'], {
+        A: 'naturesaura:infused_stone',
+        B: 'mierno:infused_wood',
+    });
+
+    kubejs.shaped('tiab:time_in_a_bottle', ['ABA', 'ACA', 'AAA'], {
+        A: 'naturesaura:sky_ingot',
+        B: 'naturesaura:clock_hand',
+        C: Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:overworld"}').weakNBT(),
+    });
+
+    kubejs.shaped('mierno:wrapped_gift', ['ABC', 'DJF', 'GHE'], {
+        A: Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:overworld"}').weakNBT(),
+        B: 'naturesaura:calling_spirit',
+        C: 'minecraft:poppy',
+        D: 'naturesaura:infused_stone',
+        E: 'mierno:infused_wood',
+        F: 'minecraft:oak_sapling',
+        G: 'naturesaura:gold_leaf',
+        H: 'naturesaura:token_joy',
+        J: 'mierno:gift_box',
     });
 });

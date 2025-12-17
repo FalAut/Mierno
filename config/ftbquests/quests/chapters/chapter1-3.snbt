@@ -864,8 +864,8 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["525DF809BFD2F98E"]
-			description: ["{image:mierno:textures/image/mana_to_fluid.png width:212 height:170 align:center}"]
+			dependencies: ["6F79995AF59A5557"]
+			description: ["{image:mierno:textures/image/mana_to_fluid.png width:143 height:153 align:center}"]
 			hide_dependency_lines: true
 			id: "72BC37D8287894FB"
 			min_width: 220
@@ -920,12 +920,8 @@
 			]
 			subtitle: "{tooltip.mierno.orbital_fluid_retainer_2}"
 			tasks: [{
-				id: "790919D891BC12F2"
-				item: {
-					Count: 1
-					id: "wizards_reborn:orbital_fluid_retainer"
-					tag: { }
-				}
+				id: "664FB9F521C337AA"
+				item: "ae2:sky_stone_tank"
 				type: "item"
 			}]
 			title: "{tooltip.mierno.orbital_fluid_retainer_1}"
@@ -1044,7 +1040,7 @@
 		}
 		{
 			dependencies: ["3899D7896D69E280"]
-			description: ["{image:mierno:textures/image/source_to_fluid.png width:160 height:163 align:center}"]
+			description: ["{image:mierno:textures/image/source_to_fluid.png width:173 height:183 align:center}"]
 			hide_dependency_lines: true
 			id: "240518FA0C977C14"
 			rewards: [

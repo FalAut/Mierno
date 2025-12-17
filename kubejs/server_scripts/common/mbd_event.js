@@ -41,6 +41,20 @@ MBDMachineEvents.onBeforeRecipeModify('mierno:fired_crucible', (event) => {
     mbdEvent.setRecipe(copyRecipe);
 });
 
+MBDMachineEvents.onBeforeRecipeWorking('mierno:computation_matrix', (event) => {
+    const mbdEvent = event.getEvent();
+    const { machine } = mbdEvent;
+
+    machine.triggerGeckolibAnim('working', 1);
+});
+
+MBDMachineEvents.onAfterRecipeWorking('mierno:computation_matrix', (event) => {
+    const mbdEvent = event.getEvent();
+    const { machine } = mbdEvent;
+
+    machine.triggerGeckolibAnim('idle', 1);
+});
+
 MBDMachineEvents.onBeforeRecipeModify('mierno:colossal_furnace_core', (event) => {
     const mbdEvent = event.getEvent();
     const { machine, recipe } = mbdEvent;
@@ -99,18 +113,6 @@ MBDMachineEvents.onBeforeRecipeModify('mierno:modular_imbuement_chamber_core', (
         copyRecipe.duration = 1;
 
         mbdEvent.setRecipe(copyRecipe);
-    }
-});
-
-MBDMachineEvents.onTick('mierno:computation_matrix', (event) => {
-    const { machine } = event.getEvent();
-    const { level, pos } = machine;
-    const controller = $IMultiController.ofController(level, pos).orElse(null);
-
-    if (controller.isFormed()) {
-        machine.triggerGeckolibAnim('formed', 1);
-    } else {
-        machine.triggerGeckolibAnim('idel', 1);
     }
 });
 
@@ -175,49 +177,3 @@ MBDMachineEvents.onBeforeRecipeWorking(
         if (aura <= 0) mbdEvent.setCanceled(true);
     }
 );
-
-// let cobbleGens = [
-//     'mierno:cobble_gen_tier1',
-//     'mierno:cobble_gen_tier2',
-//     'mierno:cobble_gen_tier3',
-//     'mierno:cobble_gen_tier4',
-//     'mierno:cobble_gen_tier5',
-//     'mierno:cobble_gen_tier6',
-// ];
-
-// MBDMachineEvents.onTick(cobbleGens, (event) => {
-//     const { machine } = event.getEvent();
-//     const { pos, customData, level } = machine;
-//     const ticksExisted = (customData.getInt('ticksExisted') || 0) + 1;
-//     customData.putInt('ticksExisted', ticksExisted);
-//     if (ticksExisted % 20 != 0) return;
-
-//     const upBlock = level.getBlock(pos.above());
-//     if (!upBlock.entity) return;
-
-//     let machinecap = machine.getCapability(ForgeCapabilities.ITEM_HANDLER).orElse(null);
-//     let upCap = upBlock.entity.getCapability(ForgeCapabilities.ITEM_HANDLER).orElse(null);
-
-//     if (!upCap) return;
-
-//     let isFull = true;
-//     for (let slot = 0; slot < upCap.slots; slot++) {
-//         let stackInSlot = upCap.getStackInSlot(slot);
-//         let maxStackSize = stackInSlot.getMaxStackSize();
-//         let currentStackSize = stackInSlot.getCount();
-
-//         if (stackInSlot.isEmpty() || currentStackSize < maxStackSize) {
-//             isFull = false;
-//             break;
-//         }
-//     }
-
-//     if (isFull) return;
-
-//     for (let slot = 0; slot < machinecap.slots; slot++) {
-//         let extractItem = machinecap.extractItem(slot, 1, false);
-//         if (!extractItem.isEmpty()) {
-//             upCap.insertItem(extractItem, false);
-//         }
-//     }
-// });

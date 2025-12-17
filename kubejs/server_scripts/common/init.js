@@ -31,21 +31,23 @@ ServerEvents.loaded((event) => {
 //     }
 // });
 
-// ProbeJSEvents.generateDoc((event) => {
-//     event.customSnippet(
-//         'blockRightClicked',
-//         ['#blockRightClicked'],
-//         [
-//             'BlockEvents.rightClicked((event) => {',
-//             '    const { hand, item, block, player, level, server } = event',
-//             '    if (hand != "MAIN_HAND") return',
-//             '',
-//             '    $0',
-//             '})',
-//         ],
-//         'Block right-clicked event template'
-//     );
-// });
+// if (Platform.isLoaded('probejs')) {
+//     ProbeJSEvents.generateDoc((event) => {
+//         event.customSnippet(
+//             'blockRightClicked',
+//             ['#blockRightClicked'],
+//             [
+//                 'BlockEvents.rightClicked((event) => {',
+//                 '    const { hand, item, block, player, level, server } = event',
+//                 '    if (hand != "MAIN_HAND") return',
+//                 '',
+//                 '    $0',
+//                 '})',
+//             ],
+//             'Block right-clicked event template'
+//         );
+//     });
+// }
 
 // ServerEvents.highPriorityData((event) => {
 //     let pentacles = [

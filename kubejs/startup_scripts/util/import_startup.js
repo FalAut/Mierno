@@ -4,7 +4,6 @@ const $NaturesAuraAPI = Java.loadClass('de.ellpeck.naturesaura.api.NaturesAuraAP
 const $LeavesBlock = Java.loadClass('net.minecraft.world.level.block.LeavesBlock');
 const $SourceUtil = Java.loadClass('com.hollingsworth.arsnouveau.api.util.SourceUtil');
 const $BasicAuraType = Java.loadClass('de.ellpeck.naturesaura.api.aura.type.BasicAuraType');
-const $MortarItem = Java.loadClass('mod.maxbogomol.wizards_reborn.common.item.equipment.MortarItem');
 const $Item$Properties = Java.loadClass('net.minecraft.world.item.Item$Properties');
 const $ItemAuraCache = Java.loadClass('de.ellpeck.naturesaura.items.ItemAuraCache');
 const $ResourceKey = Java.loadClass('net.minecraft.resources.ResourceKey');

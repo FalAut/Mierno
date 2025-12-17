@@ -11,25 +11,7 @@ ServerEvents.recipes((event) => {
     botania.petal_apothecary('botania:mutated_seeds', Array(4).fill('botania:black_lotus'), 'botania:grass_seeds');
     botania.petal_apothecary('5x botania:mutated_seeds', Array(4).fill('botania:blacker_lotus'), 'botania:grass_seeds');
 
-    /**
-     * 符文祭坛
-     * @param {OutputItem_} output
-     * @param {InputItem_} input
-     * @param {number} mana
-     */
-    function runicAltar(output, input, mana) {
-        botania.runic_altar(output, input, mana ? mana : 5200);
-
-        mierno
-            .modular_runic_altar()
-            .outputItems(output)
-            .inputItems(input)
-            .inputItems('botania:livingrock')
-            .inputMana(mana ? mana : 5200)
-            .duration(1);
-    }
-
-    runicAltar('2x botania:rune_air', [
+    botania.runic_altar('2x botania:rune_air', [
         'botania:mana_diamond',
         'botania:manasteel_ingot',
         'botania:mana_powder',
@@ -37,7 +19,7 @@ ServerEvents.recipes((event) => {
         'minecraft:feather',
     ]);
 
-    runicAltar('2x botania:rune_water', [
+    botania.runic_altar('2x botania:rune_water', [
         'botania:mana_diamond',
         'botania:manasteel_ingot',
         'botania:mana_powder',
@@ -45,7 +27,7 @@ ServerEvents.recipes((event) => {
         'ars_nouveau:blue_archwood_log',
     ]);
 
-    runicAltar('2x botania:rune_earth', [
+    botania.runic_altar('2x botania:rune_earth', [
         'botania:mana_diamond',
         'botania:manasteel_ingot',
         'botania:mana_powder',
@@ -53,7 +35,7 @@ ServerEvents.recipes((event) => {
         'ars_nouveau:green_archwood_log',
     ]);
 
-    runicAltar('2x botania:rune_mana', [
+    botania.runic_altar('2x botania:rune_mana', [
         'botania:mana_diamond',
         'botania:manasteel_ingot',
         'botania:mana_powder',
@@ -61,7 +43,7 @@ ServerEvents.recipes((event) => {
         'ars_nouveau:purple_archwood_log',
     ]);
 
-    runicAltar('2x botania:rune_fire', [
+    botania.runic_altar('2x botania:rune_fire', [
         'botania:mana_diamond',
         'botania:manasteel_ingot',
         'botania:mana_powder',
@@ -69,7 +51,7 @@ ServerEvents.recipes((event) => {
         'ars_nouveau:red_archwood_log',
     ]);
 
-    runicAltar(
+    botania.runic_altar(
         'botania:alchemy_catalyst',
         [
             'botania:mana_diamond',
@@ -97,60 +79,19 @@ ServerEvents.recipes((event) => {
         50000
     );
 
-    mierno
-        .modular_runic_altar()
-        .outputItems([
-            'botania:terra_plate',
-            'botania:rune_fire',
-            'botania:rune_earth',
-            'botania:rune_mana',
-            'botania:rune_air',
-            'botania:rune_water',
-        ])
-        .inputItems([
-            'mierno:sun_crystal_full',
-            'minecraft:lapis_block',
-            'botania:rune_fire',
-            'botania:rune_earth',
-            'botania:rune_mana',
-            'botania:rune_air',
-            'botania:rune_water',
-            'minecraft:lapis_block',
-        ])
-        .inputItems('botania:livingrock')
-        .inputMana(50000)
-        .duration(1);
-
-    runicAltar(
+    botania.runic_altar(
         Item.of('botania:mana_tablet', '{creative:1b,mana:500000}').strongNBT(),
         Array(8).fill(Item.of('botania:mana_tablet', '{mana:500000}').weakNBT()),
         100000
     );
 
-    /**
-     * 泰拉凝聚
-     * @param {OutputItem_} output
-     * @param {InputItem_ | Array} input
-     * @param {number} mana
-     */
-    function terriaAgglomeration(output, input, mana) {
-        mana = mana ? mana : 500000;
-
-        botania.terra_plate(output, input, mana);
-
-        // let duration = mana / 2000;
-        // let inputMana = mana / duration;
-
-        mierno.modular_terrestrial_agglomeration().outputItems(output).inputItems(input).duration(1).inputMana(mana);
-    }
-
-    terriaAgglomeration(
+    botania.terra_plate(
         'botania:creative_pool',
         Array(8).fill('botania:terrasteel_block').concat('botania:fabulous_pool'),
         1000000
     );
 
-    terriaAgglomeration('botania:alfheim_portal', [
+    botania.terra_plate('botania:alfheim_portal', [
         'botania:rune_mana',
         'mierno:sun_crystal_full',
         'naturesaura:calling_spirit',
@@ -158,7 +99,7 @@ ServerEvents.recipes((event) => {
         'botania:terrasteel_ingot',
     ]);
 
-    terriaAgglomeration('botania:terrasteel_ingot', [
+    botania.terra_plate('botania:terrasteel_ingot', [
         'naturesaura:infused_iron',
         'botania:rune_mana',
         'botania:rune_water',
@@ -167,7 +108,7 @@ ServerEvents.recipes((event) => {
         'botania:rune_air',
     ]);
 
-    terriaAgglomeration(
+    botania.terra_plate(
         '3x ars_nouveau:arcane_pedestal',
         [
             'botania:dragonstone',
@@ -181,7 +122,7 @@ ServerEvents.recipes((event) => {
         25000
     );
 
-    terriaAgglomeration(
+    botania.terra_plate(
         'ars_nouveau:imbuement_chamber',
         [
             'botania:dragonstone',
@@ -195,7 +136,7 @@ ServerEvents.recipes((event) => {
         25000
     );
 
-    terriaAgglomeration(
+    botania.terra_plate(
         'ae2:mysterious_cube',
         [
             'botania:elementium_ingot',
@@ -207,7 +148,7 @@ ServerEvents.recipes((event) => {
         50000
     );
 
-    terriaAgglomeration(
+    botania.terra_plate(
         'ars_nouveau:enchanting_apparatus',
         [
             'ars_nouveau:sourcestone',
@@ -222,7 +163,7 @@ ServerEvents.recipes((event) => {
         50000
     );
 
-    terriaAgglomeration(
+    botania.terra_plate(
         'ars_nouveau:arcane_core',
         [
             'ars_nouveau:sourcestone',
@@ -264,14 +205,6 @@ ServerEvents.recipes((event) => {
                 item: output,
             },
         });
-
-        mierno
-            .modular_mana_infusion()
-            .inputItems(input)
-            .blocksInStructure(1, 1, 'botania:alchemy_catalyst')
-            .outputItems(Item.of(output).withCount(2))
-            .inputMana(mana ? mana : 2000)
-            .duration(1);
     }
 
     alchemyMana('minecraft:amethyst_shard', 'minecraft:emerald');
@@ -280,42 +213,6 @@ ServerEvents.recipes((event) => {
     alchemyMana('leather', 'feather');
     alchemyMana('minecraft:prismarine_shard', 'botania:quartz_mana');
     alchemyMana('minecraft:prismarine_crystals', 'minecraft:prismarine_shard');
-
-    /**
-     * @param {OutputItem_} output
-     * @param {InputItem_} input
-     * @param {number} mana
-     */
-    function conjurationMana(output, input, mana) {
-        event.custom({
-            type: 'botania:mana_infusion',
-            catalyst: {
-                type: 'block',
-                block: 'botania:conjuration_catalyst',
-            },
-            input: {
-                item: input,
-            },
-            mana: mana ? mana : 2000,
-            output: {
-                item: output,
-                count: 2,
-            },
-        });
-
-        mierno
-            .modular_mana_infusion()
-            .inputItems(input)
-            .blocksInStructure(1, 1, 'botania:conjuration_catalyst')
-            .outputItems(Item.of(output).withCount(2))
-            .inputMana(mana ? mana : 2000)
-            .priority(-1)
-            .duration(1);
-    }
-
-    conjurationMana('string', 'string');
-    conjurationMana('leather', 'leather');
-    conjurationMana('feather', 'feather');
 
     event.custom({
         type: 'botania:mana_infusion',

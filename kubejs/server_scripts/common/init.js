@@ -12,7 +12,6 @@ ServerEvents.loaded((event) => {
 
         server.getLevel('minecraft:overworld').setDayTime(6000);
         server.persistentData.putBoolean('first_loaded', true);
-        server.runCommandSilent('reload');
     }
 });
 

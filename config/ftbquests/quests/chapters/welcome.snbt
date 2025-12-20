@@ -10,7 +10,15 @@
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["{mierno.welcome.main.desc1}"]
+			description: [
+				"{mierno.welcome.main.desc0}"
+				""
+				"{mierno.welcome.main.desc1}"
+				""
+				"{mierno.welcome.main.desc2}"
+				""
+				"{mierno.welcome.main.desc3}"
+			]
 			disable_toast: true
 			icon: {
 				Count: 1

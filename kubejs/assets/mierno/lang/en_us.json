@@ -609,14 +609,10 @@
     "mierno.chapter3-2.title": "Memory Factory",
     "mierno.chapter3-3.title": "Land of the End",
 
-    "mierno.chapter4.title": "IV. Fusion",
-    "mierno.chapter4-1.title": "Weeping Well",
-    "mierno.chapter4-2.title": "City of Tears",
-    "mierno.chapter4-3.title": "Fusion Consciousness",
-
-    "mierno.chapter5.title": "V. Pseudo Inversion",
-
-    "mierno.welcome.main.desc1": "§cWarning ⚠ : This modpack has many magic mods. If you don't like magic mods, then this modpack may not be suitable for you! .§r",
+    "mierno.welcome.main.desc0": "§4⚠⚠⚠⚠⚠⚠⚠⚠⚠Warning⚠⚠⚠⚠⚠⚠⚠⚠⚠",
+    "mierno.welcome.main.desc1": "§cThis modpack has some magic mods. If you don't like magic mods, then this modpack may not be suitable for you!",
+    "mierno.welcome.main.desc2": "§cThis modpack is not intended to teach you how to play Minecraft modpacks. Please explore it on your own.",
+    "mierno.welcome.main.desc3": "§cIf you experience any discomfort such as dizziness, nausea or fatigue during the game, don't forget that you can quit the game at any time without forcing yourself.",
 
     "mierno.welcome.special_thanks.title": "Special Thanks",
     "mierno.welcome.special_thanks.falaut": "§6FalAut§r - Author",

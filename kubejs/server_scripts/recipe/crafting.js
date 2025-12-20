@@ -1171,4 +1171,16 @@ ServerEvents.recipes((event) => {
         H: 'naturesaura:token_joy',
         J: 'mierno:gift_box',
     });
+
+    kubejs.shaped('2x pneumaticcraft:speed_upgrade', ['ABA', 'BCB', 'ABA'], {
+        A: '#pneumaticcraft:upgrade_components',
+        B: 'pneumaticcraft:glycerol',
+        C: 'modularrouters:speed_upgrade',
+    });
+
+    kubejs.shaped('pneumaticcraft:speed_upgrade', ['ABA', 'BCB', 'ABA'], {
+        A: '#pneumaticcraft:upgrade_components',
+        B: 'minecraft:sugar',
+        C: 'modularrouters:speed_upgrade',
+    });
 });

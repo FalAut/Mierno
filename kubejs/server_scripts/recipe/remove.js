@@ -300,6 +300,8 @@ ServerEvents.recipes((event) => {
         'ars_nouveau:sourcestone',
         'ars_nouveau:magebloom_crop',
         'naturesaura:tree_ritual/ancient_sapling',
+        'pneumaticcraft:speed_upgrade',
+        'pneumaticcraft:speed_upgrade_from_glycerol',
     ];
 
     recipesToRemoveID.forEach((recipe) => {

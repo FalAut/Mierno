@@ -9,6 +9,10 @@ NetworkEvents.dataReceived('has_dream_lantern', (event) => {
     }
 });
 
+NetworkEvents.dataReceived('xei_lookup_engraving', (event) => {
+    global.jeiRuntime.getRecipesGui().showTypes([ENGRAVING_RECIPE_TYPE]);
+});
+
 NetworkEvents.dataReceived('display_item_activation', (event) => {
     const { data } = event;
 

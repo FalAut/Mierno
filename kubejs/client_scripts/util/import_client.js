@@ -20,3 +20,7 @@ const $EventResult = Java.loadClass('dev.architectury.event.EventResult');
 const $UtilsJS = Java.loadClass('dev.latvian.mods.kubejs.util.UtilsJS');
 const $ConfirmLinkScreen = Java.loadClass('net.minecraft.client.gui.screens.ConfirmLinkScreen');
 const $Util = Java.loadClass('net.minecraft.Util');
+const $ModularUIContainer = Java.loadClass('com.lowdragmc.lowdraglib.gui.modular.ModularUIContainer');
+const $RecipeType = Java.loadClass('mezz.jei.api.recipe.RecipeType');
+const $CustomJSRecipe = Java.loadClass('pie.ilikepiefoo.compat.jei.impl.CustomJSRecipe');
+const ENGRAVING_RECIPE_TYPE = $RecipeType.create('mierno', 'engraving', $CustomJSRecipe);

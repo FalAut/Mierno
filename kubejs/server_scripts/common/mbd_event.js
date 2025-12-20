@@ -41,19 +41,18 @@ MBDMachineEvents.onBeforeRecipeModify('mierno:fired_crucible', (event) => {
     mbdEvent.setRecipe(copyRecipe);
 });
 
-MBDMachineEvents.onBeforeRecipeWorking('mierno:computation_matrix', (event) => {
-    const mbdEvent = event.getEvent();
-    const { machine } = mbdEvent;
+// MBDMachineEvents.onUI('mierno:aura_grinder', (event) => {
+//     const mbdEvent = event.getEvent();
+//     const { root, player } = mbdEvent;
+//     /**@type {ButtonWidget} */
+//     const test = root.getFirstWidgetById('test');
 
-    machine.triggerGeckolibAnim('working', 1);
-});
+//     test.setOnPressCallback((clickData) => {
+//         if (clickData.isRemote) return;
 
-MBDMachineEvents.onAfterRecipeWorking('mierno:computation_matrix', (event) => {
-    const mbdEvent = event.getEvent();
-    const { machine } = mbdEvent;
-
-    machine.triggerGeckolibAnim('idle', 1);
-});
+//         player.tell(1);
+//     });
+// });
 
 MBDMachineEvents.onBeforeRecipeModify('mierno:colossal_furnace_core', (event) => {
     const mbdEvent = event.getEvent();

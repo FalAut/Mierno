@@ -23,4 +23,6 @@ const $Util = Java.loadClass('net.minecraft.Util');
 const $ModularUIContainer = Java.loadClass('com.lowdragmc.lowdraglib.gui.modular.ModularUIContainer');
 const $RecipeType = Java.loadClass('mezz.jei.api.recipe.RecipeType');
 const $CustomJSRecipe = Java.loadClass('pie.ilikepiefoo.compat.jei.impl.CustomJSRecipe');
+const $Collectors = Java.loadClass('java.util.stream.Collectors');
+
 const ENGRAVING_RECIPE_TYPE = $RecipeType.create('mierno', 'engraving', $CustomJSRecipe);

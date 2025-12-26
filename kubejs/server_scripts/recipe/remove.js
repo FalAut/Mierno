@@ -302,6 +302,7 @@ ServerEvents.recipes((event) => {
         'naturesaura:tree_ritual/ancient_sapling',
         'pneumaticcraft:speed_upgrade',
         'pneumaticcraft:speed_upgrade_from_glycerol',
+        'kylin_arm:kylin_arm',
     ];
 
     recipesToRemoveID.forEach((recipe) => {

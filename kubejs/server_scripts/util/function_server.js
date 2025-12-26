@@ -73,10 +73,14 @@ function openCraftingMenu(player) {
  * @param {Internal.ServerPlayer} player
  * @param {Internal.ItemStack_} itemStack
  */
-function hasCurios(player, itemStack) {
-    let curiosInventory = $CuriosApi.getCuriosInventory(player).resolve().get();
+function hasCurios(player, curiosItem) {
+    let curioInv = $CuriosApi.getCuriosInventory(player).resolve();
+    if (curioInv.isEmpty()) {
+        return false;
+    }
+    let itemHandler = curioInv.get().getEquippedCurios();
 
-    return curiosInventory.equippedCurios.allItems.some((item) => item == itemStack);
+    return itemHandler.allItems.some((item) => item == curiosItem);
 }
 
 /**

@@ -1,4 +1,4 @@
 {
     "entities": ["player"],
-    "slots": ["portable_crafting_table", "dream_lantern", "dream_wings", "token_rage", "kylin_arm"]
+    "slots": ["portable_crafting_table", "dream_lantern", "dream_wings", "token_rage"]
 }

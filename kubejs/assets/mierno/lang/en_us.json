@@ -64,9 +64,6 @@
     "item.mierno.raw_etrium": "Raw Etrium",
     "item.mierno.milkyway_plate": "Milkyway Plate",
     "item.mierno.fake_sigil": "Pseudo Inversion Sigil",
-    "item.mierno.slime_boots": "Slime Boots",
-    "item.mierno.slime_sling": "Slime Sling",
-    "item.mierno.kylin_arm": "Kylin Arm",
     "item.mierno.meteorite_steel_ingot": "Meteorite Steel Ingot",
     "item.mierno.advance_item_cell_housing": "ME Advance Item Cell Housing",
     "item.mierno.cell_component_1m": "1M ME Storage Component",
@@ -373,10 +370,6 @@
     "tooltip.mierno.evilcraft_machine": "Note: Evilcraft machines follow the 'input from the top, output from the bottom' rule—materials must be input from the top, and products output from the bottom.",
     "tooltip.mierno.spirit_furnace": "Tip: The Spirit Furnace can be bound to an Entangled Block for use.",
     "tooltip.mierno.stella_arcanum": "Direct digging produces an explosion, but digging with a machine such as an item router or digital miner does not",
-    "tooltip.mierno.kylin_arm_1": "Allows mining blocks with bare hands when equipped",
-    "tooltip.mierno.kylin_arm_2": "Mining speed increased tenfold",
-    "tooltip.mierno.kylin_arm_3": "Ignores mining slowdowns in air and underwater",
-    "tooltip.mierno.ingot_steel": "Steel Nugget can be made with Matter Condenser",
 
     "biome.mierno.black_and_white": "Black and White",
     "biome.mierno.misty_forest": "Misty Forest",
@@ -397,7 +390,6 @@
     "curios.identifier.dream_lantern": "Dream Lantern",
     "curios.identifier.dream_wings": "Dream Wings",
     "curios.identifier.token_rage": "Token Rage",
-    "curios.identifier.kylin_arm": "Kylin Arm",
 
     "key.mierno.portable_crafting": "Open Portable Crafting Table",
     "key.mierno.toggle_zoom": "Zoom",

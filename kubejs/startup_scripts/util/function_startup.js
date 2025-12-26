@@ -155,7 +155,11 @@ function onFallWithSlimeBoots(event) {
     }
 }
 
-/**@type {Internal.Player} */
+/**
+ * 玩家是否有某个饰品
+ * @param {Internal.ServerPlayer} player
+ * @param {Internal.ItemStack_} itemStack
+ */
 function hasCurios(player, curiosItem) {
     let curioInv = $CuriosApi.getCuriosInventory(player).resolve();
     if (curioInv.isEmpty()) {

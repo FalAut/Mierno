@@ -1031,17 +1031,6 @@ ServerEvents.recipes((event) => {
         B: 'ad_astra:etrium_plate',
     });
 
-    kubejs.shaped('mierno:slime_boots', ['A A', 'B B'], {
-        A: 'slime_ball',
-        B: 'slime_block',
-    });
-
-    kubejs.shaped('mierno:slime_sling', ['ABA', 'C C', ' C '], {
-        A: 'string',
-        B: 'slime_block',
-        C: 'slime_ball',
-    });
-
     kubejs.shaped('ae2:creative_energy_cell', ['AAA', 'ABA', 'AAA'], {
         A: 'ae2:dense_energy_cell',
         B: 'ae2:singularity',
@@ -1052,7 +1041,7 @@ ServerEvents.recipes((event) => {
         B: 'ae2:singularity',
     });
 
-    kubejs.shaped('mierno:kylin_arm', [' AA', 'BCA', ' B '], {
+    kubejs.shaped('kylin_arm:kylin_arm', [' AA', 'BCA', ' B '], {
         A: 'minecraft:white_concrete',
         B: 'minecraft:gray_concrete',
         C: 'minecraft:lava_bucket',

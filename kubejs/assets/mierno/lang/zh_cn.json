@@ -64,9 +64,6 @@
     "item.mierno.raw_etrium": "粗埃忒恩",
     "item.mierno.milkyway_plate": "银河板",
     "item.mierno.fake_sigil": "伪逆徽章",
-    "item.mierno.slime_boots": "史莱姆靴子",
-    "item.mierno.slime_sling": "史莱姆弹弓",
-    "item.mierno.kylin_arm": "麒麟臂",
     "item.mierno.meteorite_steel_ingot": "陨石钢锭",
     "item.mierno.advance_item_cell_housing": "ME 高级物品元件外壳",
     "item.mierno.cell_component_1m": "1M ME存储组件",
@@ -373,10 +370,6 @@
     "tooltip.mierno.evilcraft_machine": "注意：邪恶工业的机器遵循“上进下出”规则——材料需从顶部输入，产物从底部输出",
     "tooltip.mierno.spirit_furnace": "提示：灵魂炉可以绑定到纠缠方块上使用",
     "tooltip.mierno.stella_arcanum": "直接挖掘会产生爆炸，但使用物品路由器或数字型采矿机之类的机器进行挖掘不会爆炸",
-    "tooltip.mierno.kylin_arm_1": "装备后可徒手挖掉方块",
-    "tooltip.mierno.kylin_arm_2": "挖掘速度提升至原来的十倍",
-    "tooltip.mierno.kylin_arm_3": "无视空中与水下的挖掘减速影响",
-    "tooltip.mierno.ingot_steel": "钢粒可以用物质聚合器做",
 
     "biome.mierno.black_and_white": "黑与白",
     "biome.mierno.misty_forest": "迷雾森林",
@@ -397,7 +390,6 @@
     "curios.identifier.dream_lantern": "梦之灯",
     "curios.identifier.dream_wings": "梦之翼",
     "curios.identifier.token_rage": "狂怒印记",
-    "curios.identifier.kylin_arm": "麒麟臂",
 
     "key.mierno.portable_crafting": "打开便携式工作台",
     "key.mierno.toggle_zoom": "缩放",

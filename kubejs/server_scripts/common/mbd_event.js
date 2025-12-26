@@ -54,6 +54,19 @@ MBDMachineEvents.onUI('mierno:engraving_table', (event) => {
     });
 });
 
+MBDMachineEvents.onUI('mierno:colossal_furnace_core', (event) => {
+    const mbdEvent = event.getEvent();
+    const { root, player } = mbdEvent;
+    /**@type {ButtonWidget} */
+    const aLinearScar = root.getFirstWidgetById('my_bicycle_journey');
+
+    aLinearScar.setOnPressCallback((clickData) => {
+        if (clickData.isRemote) return;
+
+        player.sendData('xei_lookup_smelting');
+    });
+});
+
 MBDMachineEvents.onBeforeRecipeModify('mierno:colossal_furnace_core', (event) => {
     const mbdEvent = event.getEvent();
     const { machine, recipe } = mbdEvent;

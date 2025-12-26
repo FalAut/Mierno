@@ -25,7 +25,7 @@ JEIAddedEvents.registerCategories((event) => {
                 layOut.moveRecipeTransferButton(180, 130);
             })
             .setDrawHandler((recipe, recipeSlotsView, guiGraphics, mouseX, mouseY) => {
-                let auraText = Text.translate('recipe.capability.natures_aura.aura', recipe.data.aura);
+                let auraText = Text.translate('recipe.capability.natures_aura.aura', recipe.data.aura).white();
                 guiGraphics.drawWordWrap(Client.font, auraText, 100, 38, 100, 0);
             });
     });
@@ -44,7 +44,7 @@ JEIAddedEvents.registerRecipes((event) => {
                 let i = content.getContent();
 
                 if (i.TYPE == 'mbd2:sized') {
-                    inputs.push(i.first.id);
+                    inputs.push(i.first);
                 } else if (i.TYPE == 'int') {
                     auraValue = i;
                 }
@@ -53,7 +53,7 @@ JEIAddedEvents.registerRecipes((event) => {
 
         let recipeData = {
             aura: auraValue,
-            output: recipe.outputs.entrySet().toArray()[0].value[0].content.first.id,
+            output: recipe.outputs.entrySet().toArray()[0].value[0].content.first,
         };
 
         for (let i = 0; i < 9; i++) {

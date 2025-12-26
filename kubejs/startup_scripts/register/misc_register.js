@@ -1,17 +1,6 @@
-StartupEvents.postInit((event) => {
-    new $BasicAuraType(
-        new ResourceLocation('mierno', 'mist'),
-        $ResourceKey.create($ResourceKey.createRegistryKey('dimension_type'), 'mierno:misty_forest'),
-        0xb0c4de,
-        0
-    ).register();
-
-    new $BasicAuraType(
-        new ResourceLocation('mierno', 'heterogeneous'),
-        $ResourceKey.create($ResourceKey.createRegistryKey('dimension_type'), 'mierno:otherworld'),
-        0x3e5b6d,
-        0
-    ).register();
+NaturesAuraEvents.init((event) => {
+    event.custom('mierno:mist', 'mierno:misty_forest', 0xb0c4de);
+    event.custom('mierno:heterogeneous', 'mierno:otherworld', 0x3e5b6d);
 });
 
 StartupEvents.registry('enchantment', (event) => {

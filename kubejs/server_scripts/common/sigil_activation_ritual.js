@@ -4,8 +4,7 @@ const SIGIL_RITUAL_CONFIGS = [
         blockType: 'crafting_table',
         check: createRitualChecker('addition', (level, block, multiblock) => {
             const time = level.getDayTime() % 24000;
-            const chunkAuraCap = level.getChunkAt(block.pos).getCapability($NaturesAuraAPI.CAP_AURA_CHUNK).orElse(null);
-            const aura = chunkAuraCap.getAuraInArea(level, block.pos, 35);
+            const aura = AuraChunk.getAuraInArea(level, block.pos, 35);
 
             return [
                 [multiblock.validate(level, block.pos, 'none'), 'multiblock'],
@@ -37,8 +36,7 @@ const SIGIL_RITUAL_CONFIGS = [
         check: createRitualChecker('subtraction', (level, block, multiblock) => {
             const isNether = level.dimension == 'minecraft:the_nether';
             const maxCharge = block.blockState.getValue(BlockProperties.RESPAWN_ANCHOR_CHARGES) >= 4;
-            const chunkAuraCap = level.getChunkAt(block.pos).getCapability($NaturesAuraAPI.CAP_AURA_CHUNK).orElse(null);
-            const aura = chunkAuraCap.getAuraInArea(level, block.pos, 35);
+            const aura = AuraChunk.getAuraInArea(level, block.pos, 35);
 
             return [
                 [multiblock.validate(level, block.pos, 'none'), 'multiblock'],

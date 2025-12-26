@@ -170,8 +170,7 @@ MBDMachineEvents.onBeforeRecipeWorking(
         const { machine } = mbdEvent;
         const level = machine.level;
 
-        const chunkAuraCap = level.getChunkAt(machine.pos).getCapability($NaturesAuraAPI.CAP_AURA_CHUNK).orElse(null);
-        const aura = chunkAuraCap.getAuraInArea(level, machine.pos, 20);
+        const aura = AuraChunk.getAuraInArea(level, machine.pos, 20);
 
         if (aura <= 0) mbdEvent.setCanceled(true);
     }

@@ -8,9 +8,8 @@
  */
 function processDreamLantern(item, player) {
     if (item == 'mierno:dream_lantern') {
-        let dreamLantern = item.getCapability($NaturesAuraAPI.CAP_AURA_CONTAINER).resolve().get();
-        if (dreamLantern.storedAura >= 1000) {
-            dreamLantern.drainAura(1000, false);
+        if (AuraItem.getStoredAura(item) >= 1000) {
+            AuraItem.drainAura(item, 1000, false);
             player.sendData('has_dream_lantern', { hasDreamLantern: true });
             return true;
         }

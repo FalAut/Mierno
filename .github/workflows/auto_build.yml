@@ -54,7 +54,7 @@ jobs:
               run: |
                   cd main_repo
                   mkdir overrides
-                  cp -r config defaultconfigs hotai kubejs ldlib overrides/
+                  cp -r config defaultconfigs kubejs ldlib overrides/
                   zip -r "../${{ steps.setup.outputs.ZIP_NAME }}" overrides manifest.json modlist.html
 
             - name: Create and package server pack
@@ -76,8 +76,8 @@ jobs:
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               with:
-                  tag_name: "v${{ steps.setup.outputs.VERSION }}"
-                  release_name: "Mierno v${{ steps.setup.outputs.VERSION }}"
+                  tag_name: 'v${{ steps.setup.outputs.VERSION }}'
+                  release_name: 'Mierno v${{ steps.setup.outputs.VERSION }}'
                   body_path: extracted_changelog.txt
                   draft: false
                   prerelease: false

@@ -1,0 +1,41 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "itemmbtoolmbtool"
+	group: ""
+	id: "7AAB6342CDA0EAE6"
+	order_index: 2
+	quest_links: [ ]
+	quests: [{
+		can_repeat: true
+		icon: {
+			Count: 1
+			id: "mbtool:mbtool"
+			tag: {
+				energy: 100000
+			}
+		}
+		id: "35E6D10EA6D10C1D"
+		rewards: [{
+			id: "119177AB267ADF47"
+			item: {
+				Count: 1
+				id: "mbtool:mbtool"
+				tag: {
+					energy: 100000
+				}
+			}
+			type: "item"
+		}]
+		shape: "gear"
+		size: 8.0d
+		tasks: [{
+			id: "2A0F30EF9584A06A"
+			type: "checkmark"
+		}]
+		title: "{item.mbtool.mbtool}"
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "{item.mbtool.mbtool}"
+}

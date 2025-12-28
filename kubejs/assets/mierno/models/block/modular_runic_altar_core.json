@@ -1,7 +1,0 @@
-{
-    "parent": "mierno:block/blockmodel_overlay_all",
-    "textures": {
-        "bg_all": "botania:block/mana_diamond_block",
-        "ov_all": "mierno:block/mana_rune_overlay"
-    }
-}

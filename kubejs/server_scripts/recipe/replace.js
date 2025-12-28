@@ -92,4 +92,5 @@ ServerEvents.recipes((event) => {
     event.replaceInput({ id: 'ad_astra:compressor' }, 'minecraft:iron_ingot', 'ad_astra:steel_plate');
     event.replaceInput({ id: 'ad_astra:cryo_freezer' }, 'ad_astra:ostrum_plate', 'ad_astra:etrium_plate');
     event.replaceInput({ id: 'ad_astra:oxygen_loader' }, 'redstone_block', 'mekanism:steel_casing');
+    event.replaceInput({ id: 'botanicalextramachinery:upgrade_pattern' }, 'netherite_ingot', 'gold_ingot');
 });

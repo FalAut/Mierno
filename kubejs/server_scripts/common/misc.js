@@ -81,6 +81,8 @@ BlockEvents.broken(
     }
 );
 
+EntityEvents.spawned('wither', (event) => event.entity.setNoAi(true));
+
 // BlockEvents.placed('mierno:memory_matrix', (event) => {
 //     const { block, level, server } = event;
 

@@ -188,7 +188,7 @@ ServerEvents.recipes((event) => {
     ]);
     kubejs.shapeless('9x string', Array(3).fill('botania:white_mystical_flower'));
     kubejs.shapeless('9x feather', Array(3).fill('string'));
-    kubejs.shapeless('mierno:fiber', ['mierno:oak_mortar', '#minecraft:leaves']);
+    kubejs.shapeless('mierno:fiber', ['mierno:oak_mortar', '#minecraft:leaves']).keepIngredient('mierno:oak_mortar');
 
     kubejs.shaped('bucket', ['A A', ' A '], {
         A: 'white_concrete',
@@ -849,12 +849,6 @@ ServerEvents.recipes((event) => {
         D: 'mierno:upgrade_augment_lumium',
     });
 
-    kubejs.shaped('mierno:modular_imbuement_chamber_core', ['ABA', 'BCB', 'ABA'], {
-        A: 'ars_nouveau:sourcestone',
-        B: 'ars_nouveau:source_gem',
-        C: 'ars_nouveau:imbuement_chamber',
-    });
-
     kubejs.shaped('mierno:modular_nature_altar_core', ['ABA', 'BCB', 'ABA'], {
         A: 'mekanism:block_steel',
         B: Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:overworld"}').weakNBT(),
@@ -1171,5 +1165,10 @@ ServerEvents.recipes((event) => {
         A: '#pneumaticcraft:upgrade_components',
         B: 'minecraft:sugar',
         C: 'modularrouters:speed_upgrade',
+    });
+
+    kubejs.shaped('botania:life_essence', [' A ', 'ABA', ' A '], {
+        A: 'botania:terrasteel_nugget',
+        B: 'naturesaura:calling_spirit',
     });
 });

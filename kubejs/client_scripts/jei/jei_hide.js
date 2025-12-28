@@ -11,6 +11,8 @@ JEIEvents.hideItems((event) => {
     event.hide('projecte:transmutation_tablet');
     event.hide('thermal:machine_crafter');
     event.hide('ad_astra:oil_bucket');
+    event.hide('botanicalextramachinery:catalyst_stone_infinity');
+    event.hide('botanicalextramachinery:catalyst_wood_infinity');
 });
 
 JEIEvents.hideFluids((event) => {

@@ -1157,6 +1157,34 @@
 			x: 2.0d
 			y: -3.0d
 		}
+		{
+			can_repeat: true
+			icon: "mierno:colorless_gem"
+			id: "1F0D0E7016996F43"
+			rewards: [{
+				id: "7FCD1D831F5F3620"
+				item: {
+					Count: 1
+					id: "expatternprovider:infinity_cell"
+					tag: {
+						record: {
+							"#c": "ae2:i"
+							id: "mierno:colorless_gem"
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			size: 8.0d
+			tasks: [{
+				id: "73EC9E505D7B05F9"
+				type: "checkmark"
+			}]
+			title: "{mierno.skip.title}"
+			x: -4.0d
+			y: 0.0d
+		}
 	]
 	title: "{mierno.chapter2-2.title}"
 }

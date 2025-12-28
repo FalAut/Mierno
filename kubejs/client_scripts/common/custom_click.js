@@ -1,5 +1,9 @@
 function openPentaclesEntry(id) {
-    $BookGuiManager.get().openEntry('occultism:dictionary_of_spirits', 'occultism:pentacles/' + id, 1);
+    try {
+        $BookGuiManager.get().openEntry('occultism:dictionary_of_spirits', 'occultism:pentacles/' + id, 1);
+    } catch (error) {
+        console.log(error);
+    }
 }
 
 function openPatchouliBook(/**@type {Internal.CustomClickEvent} */ event) {

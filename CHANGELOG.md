@@ -1,7 +1,7 @@
 ## v0.3.9
 
--   _警告：这个版本修改了很多东西，可能会破坏你的存档，如果你玩的是之前的版本，最好不要更新。_
--   _Warning: This version has modified many things and may damage your save file. If you are playing the previous version, it is best not to update._
+-   _警告：这个版本修改了很多东西，可能会破坏你的存档，如果你玩的是之前的版本，最好不要更新, 如果一定要更新，请先备份你的存档。_
+-   _Warning: This version has modified many things and may damage your save file. If you are playing the previous version, it is best not to update, If you must update, please back up your world first._
 -   添加和删除了一些模组，具体是什么我忘了
 -   移除印刷室胶囊任务中的压力输入仓需求
 -   修复数字合成样板放进样板供应器后重进存档会失效的问题

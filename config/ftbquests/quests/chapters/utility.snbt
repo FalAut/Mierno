@@ -52,28 +52,6 @@
 			y: -0.5d
 		}
 		{
-			id: "582C10A4C848C6D8"
-			rewards: [
-				{
-					id: "2EB878A52315298C"
-					item: "modularrouters:activator_module"
-					type: "item"
-				}
-				{
-					id: "306DF6F61158F8E2"
-					item: "modularrouters:breaker_module"
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "5F933D49EB6103A6"
-				item: "modularrouters:modular_router"
-				type: "item"
-			}]
-			x: 0.0d
-			y: -0.5d
-		}
-		{
 			id: "695E1E1D807E70E7"
 			rewards: [
 				{
@@ -835,36 +813,6 @@
 			y: 2.5d
 		}
 		{
-			id: "72FBF737DD64CB4C"
-			rewards: [{
-				id: "429016F623D756C6"
-				item: "appbot:mana_cell_housing"
-				type: "item"
-			}]
-			tasks: [{
-				id: "68C465DC5C7D0D34"
-				item: "appbot:fluix_mana_pool"
-				type: "item"
-			}]
-			x: -1.5d
-			y: 4.0d
-		}
-		{
-			id: "6FFFF21FC7ED9188"
-			rewards: [{
-				id: "6E35B425BBB26D9F"
-				item: "arseng:source_cell_housing"
-				type: "item"
-			}]
-			tasks: [{
-				id: "0888E5881D1D0CC4"
-				item: "arseng:me_source_jar"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 4.0d
-		}
-		{
 			id: "2A2DEB8E471C1ACC"
 			rewards: [{
 				id: "298D8A3BB2B4080A"
@@ -959,8 +907,8 @@
 				item: "merequester:requester"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 5.5d
+			x: -3.0d
+			y: 4.0d
 		}
 		{
 			id: "279BFEF33C1758DE"
@@ -975,8 +923,8 @@
 				item: "expatternprovider:assembler_matrix_wall"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 5.5d
+			x: -1.5d
+			y: 4.0d
 		}
 		{
 			id: "759FBFB87EDEFD66"
@@ -990,8 +938,8 @@
 				item: "expatternprovider:wireless_connect"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 5.5d
+			x: 0.0d
+			y: 4.0d
 		}
 		{
 			id: "68AAF87EBC811FE8"
@@ -1006,27 +954,8 @@
 				item: "advanced_ae:quantum_core"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 5.5d
-		}
-		{
-			id: "3E9D30EEF0459093"
-			rewards: [{
-				id: "2944C3EE614B906B"
-				item: {
-					Count: 1
-					id: "appmek:chemical_storage_cell_1k"
-					tag: { }
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "459AC00E12C3880D"
-				item: "appmek:chemical_cell_housing"
-				type: "item"
-			}]
-			x: -3.0d
-			y: 4.0d
+			x: 0.0d
+			y: -0.5d
 		}
 		{
 			id: "2069B0D50D1EEB97"
@@ -1037,16 +966,6 @@
 			}]
 			x: -3.0d
 			y: 2.5d
-		}
-		{
-			id: "66DA9DA66CE40E37"
-			tasks: [{
-				id: "44EC9103590A778F"
-				item: "pipez:item_pipe"
-				type: "item"
-			}]
-			x: -3.0d
-			y: 5.5d
 		}
 		{
 			id: "1AA6688F98BDEAB4"

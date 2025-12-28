@@ -1,5 +1,8 @@
 ## v0.3.9
 
+-   _警告：这个版本修改了很多东西，可能会破坏你的存档，如果你玩的是之前的版本，最好不要更新。_
+-   _Warning: This version has modified many things and may damage your save file. If you are playing the previous version, it is best not to update._
+-   添加和删除了一些模组，具体是什么我忘了
 -   移除印刷室胶囊任务中的压力输入仓需求
 -   修复数字合成样板放进样板供应器后重进存档会失效的问题
 -   修复部分 tooltip 报错刷屏的问题
@@ -15,6 +18,29 @@
 -   在刻印台配方 JEI 页面中加入配方转移按钮
 -   移除模块化灌注室
 -   在 2-2 和 2-3 章节增加了跳过选项
+-   修复龙之研究部分物品透明的问题
+-   还有一些，我忘了
+
+---
+
+-   added and deleted some mods. I can't remember exactly what they are
+-   Remove the requirement for the pressure input chamber in the printing room capsule task
+-   Fixed the issue where re-entering the archive after putting the digital synthesis template into the template supplier would fail
+-   Fixed the issue of some tooltips reporting errors and flooding the screen
+    The Terra condensation plate no longer requires a new structure
+    Steel particles are changed to be synthesized using material balls
+    The infusion chamber now does not consume items on the base
+-   Fixed the issue where some of the fuel in the giant furnace would burn itself
+    The generation interval of the maze has been increased, hoping to fix the issue where there is a very small probability of generating two connected mazes
+-   Removed the capsule (switched to using the multi-block building tool)
+-   Removed the Plant Magic module (replaced with the Plant mechanical module)
+    Some early recipes have been simplified and the number of recipes using magic equipment has been reduced
+    The tank used for converting liquid magic power and liquid magic sources has been changed to a meteorite tank
+    Add a recipe transfer button to the recipe JEI page of the engraving table
+-   Remove the modular perfusion chamber
+    A skip option has been added in Chapters 2-2 and 2-3
+-   Fixed the issue where some items in the Dragon Research were transparent
+    There are still some, I forgot
 
 ## v0.3.8
 

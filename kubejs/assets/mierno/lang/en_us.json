@@ -565,9 +565,10 @@
     "mierno.chapter3-3.title": "Land of the End",
 
     "mierno.welcome.main.desc0": "§4⚠⚠⚠⚠⚠⚠⚠⚠⚠Warning⚠⚠⚠⚠⚠⚠⚠⚠⚠",
-    "mierno.welcome.main.desc1": "§cThis modpack has some magic mods. If you don't like magic mods, then this modpack may not be suitable for you!",
-    "mierno.welcome.main.desc2": "§cThis modpack is not intended to teach you how to play Minecraft modpacks. Please explore it on your own.",
-    "mierno.welcome.main.desc3": "§cIf you experience any discomfort such as dizziness, nausea or fatigue during the game, don't forget that you can quit the game at any time without forcing yourself.",
+    "mierno.welcome.main.desc1": "§cNo matter where you heard about it, in fact, this modpack is not suitable for beginners.",
+    "mierno.welcome.main.desc2": "§cThis modpack has some magic mods. If you don't like magic mods, then this modpack may not be suitable for you!",
+    "mierno.welcome.main.desc3": "§cThis modpack is not intended to teach you how to play Minecraft modpacks. Please explore it on your own.",
+    "mierno.welcome.main.desc4": "§cThe author created this integrated package just for fun. Many aspects may not be satisfactory or even have unclear meanings. If this modpack doesn't meet your preferences, don't forget that you can quit the game at any time without forcing yourself.",
 
     "mierno.welcome.special_thanks.title": "Special Thanks",
     "mierno.welcome.special_thanks.falaut": "§6FalAut§r - Author",

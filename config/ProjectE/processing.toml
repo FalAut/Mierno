@@ -32,7 +32,3 @@
 	[processors.MekanismContentsProcessor]
 		enabled = true
 
-	#(AppliedE) Calculates EMC value of Applied Energistics 2 inventory items such as cells and wireless terminals.
-	[processors.AE2InventoryItemProcessor]
-		enabled = true
-

@@ -1,0 +1,34 @@
+# Default config file that will be copied to world's serverconfig/ftbessentials.snbt location
+# Copy values you wish to override in here
+# Example:
+# 
+# {
+# 	misc: {
+# 		enderchest: {
+# 			enabled: false
+# 		}
+# 	}
+# }
+
+{ 
+    teleportation: {
+        back: {
+            cooldown: 0
+		}
+        home: {
+            cooldown: 0
+		}
+        rtp: {
+            cooldown: 0
+        }
+        spawn: {
+            cooldown: 0
+        }
+        tpa: {
+            cooldown: 0
+        }
+        warp: {
+            cooldown: 0
+        }
+    }
+}

@@ -41,6 +41,40 @@ MBDMachineEvents.onBeforeRecipeModify('mierno:fired_crucible', (event) => {
     mbdEvent.setRecipe(copyRecipe);
 });
 
+MBDMachineEvents.onUI('mierno:engraving_table', (event) => {
+    const mbdEvent = event.getEvent();
+    const { root, player } = mbdEvent;
+    /**@type {ButtonWidget} */
+    const aLinearScar = root.getFirstWidgetById('my_bicycle_journey');
+
+    aLinearScar.setOnPressCallback((clickData) => {
+        if (clickData.isRemote) return;
+
+        if (player) {
+            player.sendData('xei_lookup_engraving');
+        } else {
+            Utils.server.getPlayerList().getPlayer(Client.player.uuid).sendData('xei_lookup_engraving');
+        }
+    });
+});
+
+MBDMachineEvents.onUI('mierno:colossal_furnace_core', (event) => {
+    const mbdEvent = event.getEvent();
+    const { root, player } = mbdEvent;
+    /**@type {ButtonWidget} */
+    const aLinearScar = root.getFirstWidgetById('my_bicycle_journey');
+
+    aLinearScar.setOnPressCallback((clickData) => {
+        if (clickData.isRemote) return;
+
+        if (player) {
+            player.sendData('xei_lookup_smelting');
+        } else {
+            Utils.server.getPlayerList().getPlayer(Client.player.uuid).sendData('xei_lookup_smelting');
+        }
+    });
+});
+
 MBDMachineEvents.onBeforeRecipeModify('mierno:colossal_furnace_core', (event) => {
     const mbdEvent = event.getEvent();
     const { machine, recipe } = mbdEvent;
@@ -50,9 +84,6 @@ MBDMachineEvents.onBeforeRecipeModify('mierno:colossal_furnace_core', (event) =>
     let storage = upgradeTrait.storage;
     let upgradeCount = storage.getStackInSlot(0).count;
 
-    // let cap = machine.getCapability(ForgeCapabilities.ITEM_HANDLER).orElse(null);
-    // let upgradeCount = cap.getStackInSlot(27).count;
-
     let parallelRecipe = machine.applyParallel(recipe, upgradeCount);
     let copyRecipe = parallelRecipe.copy();
     let reductionFactor = Math.max(1 - 0.01 * upgradeCount, 0.1);
@@ -61,107 +92,6 @@ MBDMachineEvents.onBeforeRecipeModify('mierno:colossal_furnace_core', (event) =>
     mbdEvent.setRecipe(copyRecipe);
 });
 
-MBDMachineEvents.onTick('mierno:memory_source_drawing_crystal_core', (event) => {
-    const { machine } = event.getEvent();
-    const { level, pos } = machine;
-
-    if (!$IMultiController.ofController(level, pos).orElse(null).isFormed()) return;
-
-    const { x, y, z } = pos;
-    let aabb = AABB.of(x - 2, y + 6 - 2, z - 2, x + 2, y + 6 + 2, z + 2);
-    let entities = level.getEntitiesWithin(aabb);
-
-    for (let entity of entities) {
-        if (entity.type == 'minecraft:wither' || entity.type == 'botania:pink_wither') {
-            level.getPlayers().forEach((player) => entity.stopSeenByPlayer(player));
-
-            if (machine.machineStateName == 'working') {
-                entity.setNoAi(true);
-                if (entity.getHealth() >= 150) {
-                    entity.attack(entity.damageSources().generic(), 5);
-                    entity.setInvulnerableTicks(0);
-                } else {
-                    entity.setInvulnerableTicks(100);
-                    entity.heal(1);
-                }
-            }
-        }
-    }
-});
-
-MBDMachineEvents.onBeforeRecipeModify('mierno:modular_imbuement_chamber_core', (event) => {
-    const mbdEvent = event.getEvent();
-    const { machine, recipe } = mbdEvent;
-
-    if ($SourceUtil.takeSourceWithParticles(machine.pos, machine.level, 6, 100) != null) {
-        let copyRecipe = recipe.copy();
-
-        copyRecipe.duration = 1;
-
-        mbdEvent.setRecipe(copyRecipe);
-    }
-});
-
-MBDMachineEvents.onTick('mierno:computation_matrix', (event) => {
-    const { machine } = event.getEvent();
-    const { level, pos } = machine;
-    const controller = $IMultiController.ofController(level, pos).orElse(null);
-
-    if (controller.isFormed()) {
-        machine.triggerGeckolibAnim('formed', 1);
-    } else {
-        machine.triggerGeckolibAnim('idel', 1);
-    }
-});
-
-MBDMachineEvents.onTick(
-    [
-        'mierno:modular_mana_pool_core',
-        'mierno:modular_runic_altar_core',
-        'mierno:terrestrial_agglomeration_crystal',
-        'mierno:modular_alfheim_portal_core',
-        'mierno:mana_input',
-    ],
-    (event) => {
-        const { machine } = event.getEvent();
-
-        let manaCap = machine.getCapability(BotaniaCapabilities.MANA_RECEIVER).orElse(null);
-        let itemCap = machine.getCapability(ForgeCapabilities.ITEM_HANDLER).orElse(null);
-        let remainingMana = 1000000 - manaCap.getCurrentMana();
-        let manaItem = itemCap.getStackInSlot(0);
-
-        if (manaCap.isFull()) return;
-
-        switch (manaItem) {
-            case 'botania:black_lotus':
-                if (remainingMana >= 8000) {
-                    manaCap.receiveMana(8000);
-                    manaItem.count--;
-                }
-                break;
-            case 'botania:blacker_lotus':
-                if (remainingMana >= 100000) {
-                    manaCap.receiveMana(100000);
-                    manaItem.count--;
-                }
-                break;
-            case 'botania:mana_tablet':
-                if (manaItem.nbt.getBoolean('creative')) {
-                    manaCap.receiveMana(remainingMana);
-                } else if (remainingMana >= 1000) {
-                    manaItem.getCapability(BotaniaCapabilities.MANA_ITEM).orElse(null).addMana(-1000);
-                    manaCap.receiveMana(1000);
-                }
-                break;
-            case 'botania:creative_pool':
-                manaCap.receiveMana(remainingMana);
-                break;
-            default:
-                break;
-        }
-    }
-);
-
 MBDMachineEvents.onBeforeRecipeWorking(
     ['mierno:aura_grinder', 'mierno:engraving_table', 'mierno:planting_station', 'mierno:modular_nature_altar_core'],
     (event) => {
@@ -169,55 +99,69 @@ MBDMachineEvents.onBeforeRecipeWorking(
         const { machine } = mbdEvent;
         const level = machine.level;
 
-        const chunkAuraCap = level.getChunkAt(machine.pos).getCapability($NaturesAuraAPI.CAP_AURA_CHUNK).orElse(null);
-        const aura = chunkAuraCap.getAuraInArea(level, machine.pos, 20);
+        const aura = AuraChunk.getAuraInArea(level, machine.pos, 20);
 
         if (aura <= 0) mbdEvent.setCanceled(true);
     }
 );
 
-// let cobbleGens = [
-//     'mierno:cobble_gen_tier1',
-//     'mierno:cobble_gen_tier2',
-//     'mierno:cobble_gen_tier3',
-//     'mierno:cobble_gen_tier4',
-//     'mierno:cobble_gen_tier5',
-//     'mierno:cobble_gen_tier6',
-// ];
+// MBDMachineEvents.onBeforeRecipeModify('mierno:modular_imbuement_chamber_core', (event) => {
+//     const mbdEvent = event.getEvent();
+//     const { machine, recipe } = mbdEvent;
 
-// MBDMachineEvents.onTick(cobbleGens, (event) => {
-//     const { machine } = event.getEvent();
-//     const { pos, customData, level } = machine;
-//     const ticksExisted = (customData.getInt('ticksExisted') || 0) + 1;
-//     customData.putInt('ticksExisted', ticksExisted);
-//     if (ticksExisted % 20 != 0) return;
+//     if ($SourceUtil.takeSourceWithParticles(machine.pos, machine.level, 6, 100) != null) {
+//         let copyRecipe = recipe.copy();
 
-//     const upBlock = level.getBlock(pos.above());
-//     if (!upBlock.entity) return;
+//         copyRecipe.duration = 1;
 
-//     let machinecap = machine.getCapability(ForgeCapabilities.ITEM_HANDLER).orElse(null);
-//     let upCap = upBlock.entity.getCapability(ForgeCapabilities.ITEM_HANDLER).orElse(null);
-
-//     if (!upCap) return;
-
-//     let isFull = true;
-//     for (let slot = 0; slot < upCap.slots; slot++) {
-//         let stackInSlot = upCap.getStackInSlot(slot);
-//         let maxStackSize = stackInSlot.getMaxStackSize();
-//         let currentStackSize = stackInSlot.getCount();
-
-//         if (stackInSlot.isEmpty() || currentStackSize < maxStackSize) {
-//             isFull = false;
-//             break;
-//         }
-//     }
-
-//     if (isFull) return;
-
-//     for (let slot = 0; slot < machinecap.slots; slot++) {
-//         let extractItem = machinecap.extractItem(slot, 1, false);
-//         if (!extractItem.isEmpty()) {
-//             upCap.insertItem(extractItem, false);
-//         }
+//         mbdEvent.setRecipe(copyRecipe);
 //     }
 // });
+
+// MBDMachineEvents.onTick(
+//     [
+//         'mierno:modular_mana_pool_core',
+//         'mierno:modular_runic_altar_core',
+//         'mierno:terrestrial_agglomeration_crystal',
+//         'mierno:modular_alfheim_portal_core',
+//         'mierno:mana_input',
+//     ],
+//     (event) => {
+//         const { machine } = event.getEvent();
+
+//         let manaCap = machine.getCapability(BotaniaCapabilities.MANA_RECEIVER).orElse(null);
+//         let itemCap = machine.getCapability(ForgeCapabilities.ITEM_HANDLER).orElse(null);
+//         let remainingMana = 1000000 - manaCap.getCurrentMana();
+//         let manaItem = itemCap.getStackInSlot(0);
+
+//         if (manaCap.isFull()) return;
+
+//         switch (manaItem) {
+//             case 'botania:black_lotus':
+//                 if (remainingMana >= 8000) {
+//                     manaCap.receiveMana(8000);
+//                     manaItem.count--;
+//                 }
+//                 break;
+//             case 'botania:blacker_lotus':
+//                 if (remainingMana >= 100000) {
+//                     manaCap.receiveMana(100000);
+//                     manaItem.count--;
+//                 }
+//                 break;
+//             case 'botania:mana_tablet':
+//                 if (manaItem.nbt.getBoolean('creative')) {
+//                     manaCap.receiveMana(remainingMana);
+//                 } else if (remainingMana >= 1000) {
+//                     manaItem.getCapability(BotaniaCapabilities.MANA_ITEM).orElse(null).addMana(-1000);
+//                     manaCap.receiveMana(1000);
+//                 }
+//                 break;
+//             case 'botania:creative_pool':
+//                 manaCap.receiveMana(remainingMana);
+//                 break;
+//             default:
+//                 break;
+//         }
+//     }
+// );

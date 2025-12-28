@@ -25,7 +25,7 @@
 			}]
 			shape: "gear"
 			size: 2.0d
-			subtitle: "{\"translate\":\"mierno.chapter1-2.enter_misty_forest.subtitle\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"0AA9F448417D561E\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}}"
+			subtitle: "{\"translate\":\"mierno.chapter1-2.misty_forest_portal_subtitle\",\"color\":\"gold\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/create ponder naturesaura:calling_spirit\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}}"
 			tasks: [{
 				dimension: "mierno:misty_forest"
 				id: "74911D77994DC1FA"
@@ -250,7 +250,6 @@
 				}
 			]
 			shape: "square"
-			subtitle: "{\"translate\":\"mierno.chapter1-2.alfheim_portal.subtitle\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"05A9162469429213\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}}"
 			tasks: [
 				{
 					id: "05A4C6E59925F6E8"
@@ -452,13 +451,11 @@
 				}
 			]
 			shape: "square"
-			subtitle: "{\"translate\":\"mierno.chapter1-2.terra_plate.subtitle\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"4842CC82C1CF0559\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}}"
 			tasks: [{
 				id: "04C9C16269524713"
 				item: "botania:terra_plate"
 				type: "item"
 			}]
-			title: "{mierno.chapter1-2.terra_plate.title}"
 			x: 5.5d
 			y: 0.5d
 		}
@@ -2237,6 +2234,239 @@
 			}]
 			x: 9.0d
 			y: -3.0d
+		}
+		{
+			id: "2CAC41F4592265A4"
+			tasks: [
+				{
+					id: "76F6999E4954E782"
+					item: "botanicalmachinery:mechanical_mana_pool"
+					type: "item"
+				}
+				{
+					id: "38A4938DC2802CD6"
+					item: "botanicalextramachinery:base_mana_pool"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6AE522FDAB18B469"
+					item: "botanicalextramachinery:upgraded_mana_pool"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4FAA078F853E9F8E"
+					item: "botanicalextramachinery:advanced_mana_pool"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "46DEADAC22A3E9BA"
+					item: "botanicalextramachinery:ultimate_mana_pool"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 4.0d
+		}
+		{
+			id: "72649A6D5D91538B"
+			tasks: [
+				{
+					id: "4622E472568727B8"
+					item: "botanicalmachinery:industrial_agglomeration_factory"
+					type: "item"
+				}
+				{
+					id: "089B2DB3178E2291"
+					item: "botanicalextramachinery:base_industrial_agglomeration_factory"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "58992CBECD36A912"
+					item: "botanicalextramachinery:upgraded_industrial_agglomeration_factory"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "67B236EE47DF7821"
+					item: "botanicalextramachinery:advanced_industrial_agglomeration_factory"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "44CFC62407E8A614"
+					item: "botanicalextramachinery:ultimate_industrial_agglomeration_factory"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: 4.0d
+		}
+		{
+			id: "6B1613992FE6B856"
+			tasks: [
+				{
+					id: "2D636E80C4FD29D8"
+					item: "botanicalmachinery:mechanical_runic_altar"
+					type: "item"
+				}
+				{
+					id: "2CD6827B0D38936A"
+					item: "botanicalextramachinery:base_runic_altar"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "01EC18F450F7E458"
+					item: "botanicalextramachinery:upgraded_runic_altar"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "017FED36218D8683"
+					item: "botanicalextramachinery:advanced_runic_altar"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "38FE26BCD196CC5A"
+					item: "botanicalextramachinery:ultimate_runic_altar"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 11.0d
+			y: 4.0d
+		}
+		{
+			id: "3E7815736A721845"
+			tasks: [
+				{
+					id: "0360D1D8D568DC71"
+					item: "botanicalmachinery:alfheim_market"
+					type: "item"
+				}
+				{
+					id: "22A7BE83EFBE2906"
+					item: "botanicalextramachinery:base_alfheim_market"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6C201DCD2EC30B6D"
+					item: "botanicalextramachinery:upgraded_alfheim_market"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0492E095D5ED2506"
+					item: "botanicalextramachinery:advanced_alfheim_market"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0CFA86FEBA5B698A"
+					item: "botanicalextramachinery:ultimate_alfheim_market"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 12.0d
+			y: 4.0d
+		}
+		{
+			id: "243A56AFA1987CF8"
+			tasks: [
+				{
+					id: "263AC4A46112279A"
+					item: "botanicalmachinery:mechanical_daisy"
+					type: "item"
+				}
+				{
+					id: "342B52321F5EF9FC"
+					item: "botanicalextramachinery:base_daisy"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "200347066255971D"
+					item: "botanicalextramachinery:upgraded_daisy"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2F2CAAFD8C1C0900"
+					item: "botanicalextramachinery:advanced_daisy"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2D49DEB8741C6C7D"
+					item: "botanicalextramachinery:ultimate_daisy"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: 4.0d
+		}
+		{
+			id: "7A2F27117EF9A0BF"
+			tasks: [
+				{
+					id: "5324899F896F2318"
+					item: "botanicalextramachinery:base_spark"
+					type: "item"
+				}
+				{
+					id: "03134522F6472E92"
+					item: "botanicalextramachinery:malachite_spark"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "67784BC099EB6E46"
+					item: "botanicalextramachinery:saffron_spark"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2D79DFE035CE16A8"
+					item: "botanicalextramachinery:shadow_spark"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "109F6315DECA27E7"
+					item: "botanicalextramachinery:crimson_spark"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 14.0d
+			y: 4.0d
+		}
+		{
+			id: "0A0866002A615E43"
+			rewards: [{
+				id: "2864C177675F5368"
+				item: "botanicalextramachinery:catalyst_speed"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "6133E9FB6E4B313E"
+				item: "botanicalextramachinery:catalyst_mana_infinity"
+				type: "item"
+			}]
+			x: 11.25d
+			y: 5.25d
 		}
 	]
 	title: "{mierno.chapter1-2.title}"

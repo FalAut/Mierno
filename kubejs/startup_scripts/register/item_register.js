@@ -1,7 +1,7 @@
 StartupEvents.registry('item', (event) => {
     event.create('mierno:wooden_shears', 'shears').maxDamage(50);
     event.create('mierno:fiber').color(0x4caf50).texture('naturesaura:item/gold_fiber');
-    event.createCustom('mierno:oak_mortar', () => new $MortarItem(new $Item$Properties().stacksTo(1), 400));
+    event.create('mierno:oak_mortar');
     event.create('mierno:token_base');
     event.create('mierno:gift_box');
     event.create('mierno:wrapped_gift').glow(true);
@@ -12,7 +12,7 @@ StartupEvents.registry('item', (event) => {
     event.create('mierno:memory_source_gem').rarity('epic');
     event.create('mierno:sun_crystal_full').unstackable().glow(true).rarity('uncommon');
     event.create('mierno:moon_stone_full').unstackable().glow(true).rarity('epic');
-    event.createCustom('mierno:dream_lantern', () => new $ItemAuraCache('dream_lantern', 2560000));
+    event.create('mierno:dream_lantern', 'naturesaura:aura_cache').setMaxAura(2560000);
     event.create('mierno:dark_eyes');
     event.create('mierno:addition_sigil').unstackable();
     event.create('mierno:subtraction_sigil').unstackable();

@@ -1,6 +1,4 @@
 ServerEvents.recipes((event) => {
-    event.replaceInput({ id: 'naturesaura:tree_ritual/ancient_sapling' }, 'sugar_cane', 'mierno:infused_wood');
-    event.replaceInput({ id: 'naturesaura:tree_ritual/ancient_sapling' }, 'dandelion', 'poppy');
     event.replaceInput({ id: 'naturesaura:offering/clock_hand' }, 'nether_star', 'clock');
     event.replaceInput({ id: 'botania:natura_pylon' }, 'ender_eye', 'naturesaura:infused_iron_block');
     event.replaceInput({ id: 'ars_nouveau:magebloom_crop' }, 'ars_nouveau:source_gem', 'ars_nouveau:magebloom_fiber');
@@ -94,4 +92,5 @@ ServerEvents.recipes((event) => {
     event.replaceInput({ id: 'ad_astra:compressor' }, 'minecraft:iron_ingot', 'ad_astra:steel_plate');
     event.replaceInput({ id: 'ad_astra:cryo_freezer' }, 'ad_astra:ostrum_plate', 'ad_astra:etrium_plate');
     event.replaceInput({ id: 'ad_astra:oxygen_loader' }, 'redstone_block', 'mekanism:steel_casing');
+    event.replaceInput({ id: 'botanicalextramachinery:upgrade_pattern' }, 'netherite_ingot', 'gold_ingot');
 });

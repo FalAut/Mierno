@@ -22,3 +22,10 @@ StartupEvents.modifyCreativeTab('kubejs:tab', (event) => {
         ]),
     ]);
 });
+
+StartupEvents.modifyCreativeTab('botanicalextramachinery:tab', (event) => {
+    event.remove('botanicalextramachinery:base_mana_infuser');
+    event.remove('botanicalextramachinery:upgraded_mana_infuser');
+    event.remove('botanicalextramachinery:advanced_mana_infuser');
+    event.remove('botanicalextramachinery:ultimate_mana_infuser');
+});

@@ -1234,6 +1234,64 @@
 			x: 11.0d
 			y: -3.75d
 		}
+		{
+			can_repeat: true
+			icon: "forbidden_arcanus:ferrognetic_mixture"
+			id: "40729BC8E4771FE8"
+			rewards: [
+				{
+					id: "7255826C325E3402"
+					item: {
+						Count: 1
+						id: "expatternprovider:infinity_cell"
+						tag: {
+							record: {
+								"#c": "ae2:i"
+								id: "forbidden_arcanus:ferrognetic_mixture"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3382DA33E669DAEA"
+					item: {
+						Count: 1
+						id: "expatternprovider:infinity_cell"
+						tag: {
+							record: {
+								"#c": "ae2:i"
+								id: "forbidden_arcanus:deorum_ingot"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "55C98AB8175C9813"
+					item: {
+						Count: 1
+						id: "expatternprovider:infinity_cell"
+						tag: {
+							record: {
+								"#c": "ae2:i"
+								id: "bloodmagic:ingot_hellforged"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 8.0d
+			tasks: [{
+				id: "5B4679E3970D9FDB"
+				type: "checkmark"
+			}]
+			title: "{mierno.skip.title}"
+			x: -4.0d
+			y: 0.0d
+		}
 	]
 	title: "{mierno.chapter2-3.title}"
 }

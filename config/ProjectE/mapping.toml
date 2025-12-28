@@ -100,22 +100,28 @@
 [enabledMappers]
 	#Set EMC=0 for everything in the forge:raw_materials tag
 	RawOresBlacklistMapper = false
-	#Set EMC=0 for everything in the forge:ores tag
-	OresBlacklistMapper = false
+	#(AppliedE) Maps Applied Energistics 2 matter condenser results.
+	AE2MatterCondenser = true
 	#Add Conversions for Crafting Recipes gathered from net.minecraft.item.crafting.RecipeManager
 	CraftingMapper = false
-	#Add Conversions for all lingering potions to arrow recipes
-	TippedArrowMapper = false
 	#Adds back and forth conversions of objects and their Tag variant. (EMC values assigned to tags will not behave properly if this mapper is disabled)
 	TagMapper = false
-	#Add Conversions for all weathered copper variants
-	WeatheredCopperMapper = false
 	#Add Conversions for Brewing Recipes
 	BrewingMapper = false
-	#Uses the `custom_emc.json` File to add EMC values.
-	CustomEMCMapper = true
 	#Loads json files within datapacks (data/<domain>/pe_custom_conversions/*.json) to add values and conversions
 	CustomConversionMapper = false
+	#Set EMC=0 for everything in the forge:ores tag
+	OresBlacklistMapper = false
+	#Add Conversions for all lingering potions to arrow recipes
+	TippedArrowMapper = false
+	#Add Conversions for all weathered copper variants
+	WeatheredCopperMapper = false
+	#(AppliedE) Maps Applied Energistics 2 cable facades.
+	AE2FacadeMapper = true
+	#Uses the `custom_emc.json` File to add EMC values.
+	CustomEMCMapper = true
 	#Allows other mods to easily set EMC values using the ProjectEAPI
 	APICustomEMCMapper = false
+	#(AppliedE) Maps Applied Energistics 2 P2P tunnels.
+	AE2P2PTunnels = true
 

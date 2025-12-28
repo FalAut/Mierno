@@ -125,7 +125,6 @@
 			dependencies: ["6811570107E11DA9"]
 			id: "45C64E6670B61FFC"
 			shape: "square"
-			subtitle: "{\"translate\":\"mierno.chapter3-2.computation_matrix.subtitle\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"6B96216B48F88D28\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}}"
 			tasks: [{
 				id: "29255A2E6CC152E2"
 				item: "mierno:computation_matrix"

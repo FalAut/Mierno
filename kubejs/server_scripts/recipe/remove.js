@@ -6,7 +6,6 @@ ServerEvents.recipes((event) => {
     let recipesToRemoveID = [
         'naturesaura:gold_fiber',
         'naturesaura:wood_stand',
-        'naturesaura:gold_powder',
         'naturesaura:calling_spirit',
         'naturesaura:tree_ritual/nature_altar',
         'naturesaura:tree_ritual/token_joy',
@@ -24,8 +23,6 @@ ServerEvents.recipes((event) => {
         'botania:runic_altar/mana',
         'botania:runic_altar/fire',
         'botania:runic_altar/air',
-        'botania:runic_altar',
-        'botania:runic_altar_alt',
         'botania:terra_plate',
         'botania:petal_apothecary/loonium',
         'forbidden_arcanus:aurum_chest_boat',
@@ -302,6 +299,10 @@ ServerEvents.recipes((event) => {
         'mekanism:formulaic_assemblicator',
         'ars_nouveau:sourcestone',
         'ars_nouveau:magebloom_crop',
+        'naturesaura:tree_ritual/ancient_sapling',
+        'pneumaticcraft:speed_upgrade',
+        'pneumaticcraft:speed_upgrade_from_glycerol',
+        'kylin_arm:kylin_arm',
     ];
 
     recipesToRemoveID.forEach((recipe) => {

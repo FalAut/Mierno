@@ -104,7 +104,7 @@
 		{
 			dependencies: [
 				"0F9F0DF0B936E745"
-				"2EBCD8DF469CB6FF"
+				"3AF464DDA565383F"
 			]
 			id: "3E9675E1ABC429B9"
 			rewards: [{
@@ -180,24 +180,6 @@
 			y: -3.5d
 		}
 		{
-			dependencies: ["0EF181ADCC2BD78C"]
-			id: "2EBCD8DF469CB6FF"
-			rewards: [{
-				count: 32
-				id: "4211C8A01CFDA4FB"
-				item: "minecraft:oak_log"
-				team_reward: true
-				type: "item"
-			}]
-			tasks: [{
-				id: "0E540125FEE8A552"
-				item: "mierno:oak_mortar"
-				type: "item"
-			}]
-			x: 1.5d
-			y: -1.5d
-		}
-		{
 			dependencies: ["48D0CC04CEA4742B"]
 			description: [
 				"{mierno.chapter1-1.gold_leaf.desc1}"
@@ -232,7 +214,6 @@
 				type: "item"
 			}]
 			shape: "square"
-			subtitle: "{\"translate\":\"mierno.chapter1-1.tree_ritual.subtitle\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"373C0544245F9AA0\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}}"
 			tasks: [{
 				id: "0C189C4806B67FB8"
 				item: "naturesaura:wood_stand"
@@ -269,7 +250,6 @@
 				}
 			]
 			shape: "square"
-			subtitle: "{\"translate\":\"mierno.chapter1-1.nature_altar.subtitle\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"66D8BC9D66037D0F\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}}"
 			tasks: [{
 				id: "1E4C2537F576182A"
 				item: "naturesaura:nature_altar"
@@ -466,7 +446,6 @@
 				type: "item"
 			}]
 			shape: "square"
-			subtitle: "{\"translate\":\"mierno.chapter1-1.offering_table.subtitle\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"1893AAF3ED9994A3\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}}"
 			tasks: [{
 				id: "26D2586C5E53E958"
 				item: "naturesaura:offering_table"
@@ -802,7 +781,6 @@
 			]
 			shape: "square"
 			size: 1.5d
-			subtitle: "{\"translate\":\"mierno.chapter1-1.ancient_aura_gen.subtitle\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"0CAAD36B1835ABCD\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}}"
 			tasks: [{
 				id: "59A99BAC4407854C"
 				item: "mierno:ancient_aura_generator_core"
@@ -1279,7 +1257,6 @@
 				type: "item"
 			}]
 			shape: "square"
-			subtitle: "{\"translate\":\"mierno.chapter1-1.animal_spanwer.subtitle\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"54914242D9770D22\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}}"
 			tasks: [{
 				id: "1AD5344381DD9ECD"
 				item: "naturesaura:animal_spawner"
@@ -1293,11 +1270,22 @@
 			id: "64D14AC4AC8BDA00"
 			shape: "diamond"
 			tasks: [{
-				id: "5FF769DF85826A17"
-				item: "mierno:kylin_arm"
+				id: "262E129B7FB59DDB"
+				item: "kylin_arm:kylin_arm"
 				type: "item"
 			}]
 			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0EF181ADCC2BD78C"]
+			id: "3AF464DDA565383F"
+			tasks: [{
+				id: "4B7747582642610F"
+				item: "mierno:oak_mortar"
+				type: "item"
+			}]
+			x: 1.5d
 			y: -1.5d
 		}
 	]

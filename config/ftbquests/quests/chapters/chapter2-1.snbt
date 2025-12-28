@@ -1066,7 +1066,6 @@
 			]
 			shape: "square"
 			size: 1.5d
-			subtitle: "{\"translate\":\"mierno.chapter2-1.oil_drilling_rig.subtitle\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"593C70FFFA2BF97A\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}}"
 			tasks: [{
 				id: "577A4CC572270E6B"
 				item: "mierno:oil_drilling_rig_controller"
@@ -1675,7 +1674,6 @@
 			]
 			shape: "square"
 			size: 1.5d
-			subtitle: "{\"translate\":\"mierno.chapter2-1.memory_source_drawing_crystal.subtitle\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"5A3F137CB30E2EF8\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}}"
 			tasks: [{
 				id: "29C638193DD3A59D"
 				item: "mierno:memory_source_drawing_crystal_core"
@@ -2031,7 +2029,6 @@
 			]
 			shape: "square"
 			size: 1.5d
-			subtitle: "{\"translate\":\"mierno.chapter2-1.printing_room.subtitle\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"595749813143F96E\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}}"
 			tasks: [{
 				id: "727DD1E55231A31F"
 				item: "mierno:printing_room_controller"

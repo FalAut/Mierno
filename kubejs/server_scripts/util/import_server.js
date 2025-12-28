@@ -1,7 +1,6 @@
 // priority: 99
 
 const $PatchouliAPI = Java.loadClass('vazkii.patchouli.api.PatchouliAPI').get();
-const $NaturesAuraAPI = Java.loadClass('de.ellpeck.naturesaura.api.NaturesAuraAPI');
 const $CuriosApi = Java.loadClass('top.theillusivec4.curios.api.CuriosApi');
 const $Integer = Java.loadClass('java.lang.Integer');
 const $StructurePlaceSettings = Java.loadClass(
@@ -20,3 +19,4 @@ const $SourceUtil = Java.loadClass('com.hollingsworth.arsnouveau.api.util.Source
 const $FireworkRocketEntity = Java.loadClass('net.minecraft.world.entity.projectile.FireworkRocketEntity');
 const $Registries = Java.loadClass('net.minecraft.core.registries.Registries');
 const $HolderSet = Java.loadClass('net.minecraft.core.HolderSet');
+const $ForgeHooks = Java.loadClass('net.minecraftforge.common.ForgeHooks');

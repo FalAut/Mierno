@@ -8,9 +8,8 @@
  */
 function processDreamLantern(item, player) {
     if (item == 'mierno:dream_lantern') {
-        let dreamLantern = item.getCapability($NaturesAuraAPI.CAP_AURA_CONTAINER).resolve().get();
-        if (dreamLantern.storedAura >= 1000) {
-            dreamLantern.drainAura(1000, false);
+        if (AuraItem.getStoredAura(item) >= 1000) {
+            AuraItem.drainAura(item, 1000, false);
             player.sendData('has_dream_lantern', { hasDreamLantern: true });
             return true;
         }
@@ -73,10 +72,14 @@ function openCraftingMenu(player) {
  * @param {Internal.ServerPlayer} player
  * @param {Internal.ItemStack_} itemStack
  */
-function hasCurios(player, itemStack) {
-    let curiosInventory = $CuriosApi.getCuriosInventory(player).resolve().get();
+function hasCurios(player, curiosItem) {
+    let curioInv = $CuriosApi.getCuriosInventory(player).resolve();
+    if (curioInv.isEmpty()) {
+        return false;
+    }
+    let itemHandler = curioInv.get().getEquippedCurios();
 
-    return curiosInventory.equippedCurios.allItems.some((item) => item == itemStack);
+    return itemHandler.allItems.some((item) => item == curiosItem);
 }
 
 /**
@@ -95,7 +98,7 @@ const handleCrucibleInteraction = (event, crucible, inputItem, outputFluid) => {
         const itemCap = block.entity.getCapability(ForgeCapabilities.ITEM_HANDLER).resolve().get();
         const fluidCap = block.entity.getCapability(ForgeCapabilities.FLUID_HANDLER).resolve().get();
 
-        if (item.hasTag(inputItem) && !player.isCrouching()) {
+        if (item.hasTag(inputItem) && !player.isShiftKeyDown()) {
             if (itemCap.getStackInSlot(0).count < 64) {
                 itemCap.insertItem(item.withCount(1), false);
                 item.count--;
@@ -104,7 +107,7 @@ const handleCrucibleInteraction = (event, crucible, inputItem, outputFluid) => {
             event.cancel();
         }
 
-        if (item.isEmpty() && player.isCrouching()) {
+        if (item.isEmpty() && player.isShiftKeyDown()) {
             player.give(itemCap.getStackInSlot(0).withCount(1));
             itemCap.extractItem(0, 1, false);
             player.swing();
@@ -258,16 +261,14 @@ function spawnTrialMobs(block) {
 }
 
 /**
- *
- * @param {Internal.ServerPlayer} player
- * @param {Internal.InteractionHand} hand
+ * 定位结构
+ * @param {Internal.ServerLevel} level
  * @param {string} structureName
+ * @param {BlockPos} currentPos
  * @param {number} range
- * @returns
+ * @returns {BlockPos}
  */
-function spawnStructureFinderEye(player, hand, structureName, range) {
-    let item = player.getHeldItem(hand);
-    let level = player.level;
+function locateStructurePos(level, structureName, currentPos, range) {
     let structureRegistry = level.registryAccess().registryOrThrow($Registries.STRUCTURE);
     let structureKey = $ResourceKey.create(structureRegistry.key(), structureName);
     let holder = structureRegistry.getHolder(structureKey);
@@ -275,23 +276,14 @@ function spawnStructureFinderEye(player, hand, structureName, range) {
     let pair = level
         .getChunkSource()
         .getGenerator()
-        .findNearestMapStructure(level, holderSet, player.blockPosition(), range, false);
+        .findNearestMapStructure(level, holderSet, currentPos, range, false);
 
     if (pair) {
         let structurePos = pair.getFirst();
 
-        /**@type {Internal.EyeOfEnder} */
-        let eye = level.createEntity('eye_of_ender');
-        eye.setPos(player.x, player.y + 1, player.z);
-        eye.setItem(item);
-        eye.signalTo(structurePos);
-        eye.spawn();
-
-        player.swing(hand, true);
-        if (!player.isCreative()) item.count--;
-
-        level.playSound(null, player.blockPosition(), 'entity.ender_eye.launch', 'master');
+        return structurePos;
     }
+    return null;
 }
 
 /**

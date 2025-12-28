@@ -89,7 +89,10 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["17B793516831F2C7"]
+			dependencies: [
+				"17B793516831F2C7"
+				"20FEC8DA43340AD4"
+			]
 			id: "25652CCA98D82B4A"
 			rewards: [
 				{
@@ -484,7 +487,6 @@
 			]
 			shape: "square"
 			size: 1.5d
-			subtitle: "{\"translate\":\"mierno.chapter1-3.assembly_room.subtitle\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"16DC6C2BE109C5E8\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}}"
 			tasks: [{
 				id: "0DE72ECF063E6C81"
 				item: "mierno:assembly_room_controller"
@@ -862,8 +864,8 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["525DF809BFD2F98E"]
-			description: ["{image:mierno:textures/image/mana_to_fluid.png width:212 height:170 align:center}"]
+			dependencies: ["6F79995AF59A5557"]
+			description: ["{image:mierno:textures/image/mana_to_fluid.png width:143 height:153 align:center}"]
 			hide_dependency_lines: true
 			id: "72BC37D8287894FB"
 			min_width: 220
@@ -918,12 +920,8 @@
 			]
 			subtitle: "{tooltip.mierno.orbital_fluid_retainer_2}"
 			tasks: [{
-				id: "790919D891BC12F2"
-				item: {
-					Count: 1
-					id: "wizards_reborn:orbital_fluid_retainer"
-					tag: { }
-				}
+				id: "664FB9F521C337AA"
+				item: "ae2:sky_stone_tank"
 				type: "item"
 			}]
 			title: "{tooltip.mierno.orbital_fluid_retainer_1}"
@@ -1032,7 +1030,6 @@
 			]
 			shape: "square"
 			size: 1.5d
-			subtitle: "{\"translate\":\"mierno.chapter1-3.matter_mixer.subtitle\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"298B029C5CFEADA3\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}}"
 			tasks: [{
 				id: "0CDB9036F41E36B5"
 				item: "mierno:matter_mixer_controller"
@@ -1043,7 +1040,7 @@
 		}
 		{
 			dependencies: ["3899D7896D69E280"]
-			description: ["{image:mierno:textures/image/source_to_fluid.png width:160 height:163 align:center}"]
+			description: ["{image:mierno:textures/image/source_to_fluid.png width:173 height:183 align:center}"]
 			hide_dependency_lines: true
 			id: "240518FA0C977C14"
 			rewards: [
@@ -1179,7 +1176,6 @@
 			]
 			shape: "square"
 			size: 1.5d
-			subtitle: "{\"translate\":\"mierno.chapter1-3.void_ore_minner.subtitle\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"4D2F655DD344ED44\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}}"
 			tasks: [{
 				id: "5550FFC44ABEAA15"
 				item: "mierno:void_ore_miner_controller"

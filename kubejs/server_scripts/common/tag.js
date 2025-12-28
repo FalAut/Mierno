@@ -66,6 +66,7 @@ ServerEvents.tags('item', (event) => {
         'mierno:enriched_etching_acid',
     ]);
     event.add('forge:armors/boots', 'mierno:slime_boots');
+    event.add('forge:sandstone/venus_sandstone', 'ad_astra:venus_sandstone');
 });
 
 ServerEvents.tags('block', (event) => {
@@ -106,13 +107,7 @@ ServerEvents.tags('block', (event) => {
         'mierno:void_ore_miner_controller',
         'mierno:printing_room_controller',
         'mierno:oil_drilling_rig_controller',
-        'mierno:terrestrial_agglomeration_crystal',
-        'mierno:modular_runic_altar_core',
-        'mierno:modular_offering_table_controller',
         'mierno:modular_nature_altar_core',
-        'mierno:modular_mana_pool_core',
-        'mierno:modular_imbuement_chamber_core',
-        'mierno:modular_alfheim_portal_core',
         'mierno:memory_source_drawing_crystal_core',
         'mierno:colossal_furnace_core',
         'mierno:computation_matrix',
@@ -156,13 +151,7 @@ ServerEvents.tags('block', (event) => {
         'mierno:void_ore_miner_controller',
         'mierno:printing_room_controller',
         'mierno:oil_drilling_rig_controller',
-        'mierno:terrestrial_agglomeration_crystal',
-        'mierno:modular_runic_altar_core',
-        'mierno:modular_offering_table_controller',
         'mierno:modular_nature_altar_core',
-        'mierno:modular_mana_pool_core',
-        'mierno:modular_imbuement_chamber_core',
-        'mierno:modular_alfheim_portal_core',
         'mierno:memory_source_drawing_crystal_core',
         'mierno:colossal_furnace_core',
         'mierno:computation_matrix',
@@ -217,4 +206,9 @@ ServerEvents.tags('fluid', (event) => {
 ServerEvents.tags('worldgen/biome', (event) => {
     event.add('mierno:has_structure/dark_temple', 'mierno:otherworld');
     event.add('mierno:is_glacio', ['ad_astra:glacio_snowy_barrens', 'ad_astra:glacio_ice_peaks']);
+});
+
+ServerEvents.tags('mekanism:infuse_type', (event) => {
+    event.add('mekanism:bio', 'mekanism:bio');
+    event.add('mekanism:tin', 'mekanism:tin');
 });

@@ -175,7 +175,7 @@ ServerEvents.recipes((event) => {
 
     event.custom({
         type: 'pneumaticcraft:thermo_plant',
-        air_use_multiplier: 9.9,
+        air_use_multiplier: 3,
         exothermic: false,
         fluid_input: {
             type: 'pneumaticcraft:fluid',
@@ -188,7 +188,7 @@ ServerEvents.recipes((event) => {
         item_output: {
             item: 'pneumaticcraft:creative_compressed_iron_block',
         },
-        pressure: 9.9,
+        pressure: 3,
         speed: 0.25,
         temperature: {
             min_temp: 1272,

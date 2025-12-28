@@ -4,7 +4,14 @@ LoquatEvents.playerEnteredArea((event) => {
     if (player.spectator) return;
     let startRoom = areaManager.byTag('start_room').findFirst().orElse(null);
 
-    if (tags.contains('maze') && !tags.contains('start_room') && !tags.contains('end_room')) {
+    if (
+        tags.contains('maze_outside1') ||
+        tags.contains('maze_outside2') ||
+        tags.contains('maze_outside3') ||
+        tags.contains('maze_outside4') ||
+        tags.contains('maze_outside5') ||
+        tags.contains('maze_outside6')
+    ) {
         player.tell(Text.translate('message.mierno.enter_maze').gray());
         player.tell(Text.translate('message.mierno.maze_beginning_1').gold());
         player.tell(Text.translate('message.mierno.maze_beginning_2').gold());
@@ -21,28 +28,15 @@ LoquatEvents.playerEnteredArea((event) => {
     }
 });
 
-ItemEvents.rightClicked((event) => {
-    const { item, hand, level, player } = event;
-    if (item != 'ae2:meteorite_compass' || hand != 'MAIN_HAND' || level.dimension != 'mierno:misty_forest') return;
+ItemEvents.rightClicked('ae2:meteorite_compass', (event) => {
+    const { level, player } = event;
+    if (level.dimension != 'mierno:misty_forest') return;
     player.tell(Text.translate('message.mierno.locating_maze').gold());
 
-    const playerPos = player.blockPosition();
-    const closestMaze = LoquatAreaManager.of(level)
-        .byTag('maze')
-        .min((a, b) => {
-            const distA = Math.sqrt(Math.pow(a.center.x() - playerPos.x, 2) + Math.pow(a.center.z() - playerPos.z, 2));
-            const distB = Math.sqrt(Math.pow(b.center.x() - playerPos.x, 2) + Math.pow(b.center.z() - playerPos.z, 2));
+    let structurePos = locateStructurePos(level, 'mierno:maze', player.blockPosition(), 1024);
 
-            return distA - distB;
-        })
-        .orElse(null);
-
-    if (closestMaze) {
-        level.setBlock(
-            new BlockPos(closestMaze.center.x(), closestMaze.center.y() - 3, closestMaze.center.z()),
-            Block.getBlock('ae2:mysterious_cube').defaultBlockState(),
-            3
-        );
+    if (structurePos) {
+        level.setBlock(structurePos.north(40).west(40), Block.getBlock('ae2:mysterious_cube').defaultBlockState(), 3);
         player.tell(Text.translate('message.mierno.maze_locating_success').green());
     } else {
         player.tell(Text.translate('message.mierno.maze_locating_fail').red());
@@ -54,7 +48,7 @@ BlockEvents.rightClicked((event) => {
 
     if (
         block != 'minecraft:player_wall_head' ||
-        block.entityData.SkullOwner.getString('Name') != 'Fa1Aut' ||
+        block.entityData.SkullOwner.getString('Name') != 'FalAut_' ||
         hand != 'MAIN_HAND' ||
         level.dimension != 'mierno:misty_forest'
     ) {

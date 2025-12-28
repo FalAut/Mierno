@@ -6,6 +6,20 @@ BlockEvents.rightClicked((event) => {
     handleCrucibleInteraction(event, 'mierno:fired_crucible', 'mierno:fired_crucible_fuel', 'lava');
 });
 
+// BlockEvents.rightClicked('composter', (event) => {
+//     const { block, hand, player, item } = event;
+//     if (hand != 'MAIN_HAND') return;
+
+//     const compostLevel = block.blockState.getValue(BlockProperties.LEVEL_COMPOSTER);
+//     if (compostLevel != 8) return;
+
+//     if (!player.isCrouching()) {
+//         block.popItemFromFace('7x bone_meal', 'up');
+//     } else if (item.isEmpty()) {
+//         block.popItemFromFace('7x bone_meal', 'up');
+//     }
+// });
+
 BlockEvents.rightClicked('white_concrete', (event) => {
     const { hand, block, player, level } = event;
     if (hand != 'MAIN_HAND') return;
@@ -124,15 +138,43 @@ BlockEvents.rightClicked((event) => {
     }
 });
 
-BlockEvents.rightClicked('botania:terra_plate', (event) => {
-    const { hand, block, player, level } = event;
-    if (hand != 'MAIN_HAND') return;
+// BlockEvents.rightClicked('botania:terra_plate', (event) => {
+//     const { hand, block, player, level } = event;
+//     if (hand != 'MAIN_HAND') return;
 
-    let TAA = $PatchouliAPI.getMultiblock('mierno:terrestrial_agglomeration_altar');
+//     let TAA = $PatchouliAPI.getMultiblock('mierno:terrestrial_agglomeration_altar');
 
-    if (!TAA.validate(level, block.pos.below(), 'none')) {
-        player.tell(Text.translate('message.mierno.terra_plate_error').red());
-    }
+//     if (!TAA.validate(level, block.pos.below(), 'none')) {
+//         player.tell(Text.translate('message.mierno.terra_plate_error').red());
+//     }
+// });
+
+BlockEvents.rightClicked('occultism:otherstone', (event) => {
+    const { player, item } = event;
+    if (item != 'occultism:divination_rod') return;
+
+    item.nbt.putString('occultism:divination.linked_block_id', 'occultism:iesnium_ore_natural');
+    player.tell(
+        Text.translate(
+            'item.occultism.divination_rod.message.linked_block',
+            Text.translate('block.occultism.iesnium_ore')
+        )
+    );
+    event.cancel();
+});
+
+BlockEvents.rightClicked('minecraft:netherrack', (event) => {
+    const { player, item } = event;
+    if (item != 'occultism:divination_rod') return;
+
+    item.nbt.putString('occultism:divination.linked_block_id', 'minecraft:netherrack');
+    player.tell(
+        Text.translate(
+            'item.occultism.divination_rod.message.linked_block',
+            Text.translate('block.minecraft.netherrack')
+        )
+    );
+    event.cancel();
 });
 
 BlockEvents.rightClicked('bloodmagic:altar', (event) => {
@@ -263,7 +305,23 @@ ItemEvents.rightClicked('mierno:portable_crafting_table', (event) => {
 });
 
 ItemEvents.rightClicked('mierno:dark_eyes', (event) => {
-    const { player, hand } = event;
+    const { player, hand, level, item } = event;
 
-    spawnStructureFinderEye(player, hand, 'mierno:dark_temple', 512);
+    let structurePos = locateStructurePos(level, 'mierno:dark_temple', player.blockPosition(), 1024);
+    if (!structurePos) return;
+
+    if (structurePos) {
+        /**@type {Internal.EyeOfEnder} */
+        let eye = level.createEntity('eye_of_ender');
+        eye.setPos(player.x, player.y + 1, player.z);
+        eye.setItem(item);
+        eye.signalTo(structurePos);
+        eye.spawn();
+        eye.setGlowing(true);
+
+        player.swing(hand, true);
+        if (!player.isCreative()) item.count--;
+
+        level.playSound(null, player.blockPosition(), 'entity.ender_eye.launch', 'master');
+    }
 });

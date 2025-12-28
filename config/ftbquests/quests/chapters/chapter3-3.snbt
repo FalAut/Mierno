@@ -19,7 +19,6 @@
 			id: "65D6E364C4132106"
 			shape: "gear"
 			size: 2.0d
-			subtitle: "{\"translate\":\"mierno.chapter3-3.pseudo_inversion_ritual.subtitle\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"19E856CE22E1BAE3\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"message.mierno.clickopen\"}}}"
 			tasks: [{
 				id: "7E7D20005FBED8C2"
 				item: "mierno:fake_sigil"

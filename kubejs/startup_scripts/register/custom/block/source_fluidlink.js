@@ -10,7 +10,7 @@ StartupEvents.registry('block', (event) => {
                 const { block, level } = be;
                 const tank = block.up;
 
-                if (tank.id == 'wizards_reborn:orbital_fluid_retainer') {
+                if (tank.id == 'ae2:sky_stone_tank') {
                     const tankCap = tank.entity.getCapability(ForgeCapabilities.FLUID_HANDLER).resolve().get();
                     const amount = tankCap.getFluidInTank(0).amount;
                     const maxAmount = tankCap.getTankCapacity(0);

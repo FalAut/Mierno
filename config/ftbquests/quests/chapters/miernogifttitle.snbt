@@ -1,0 +1,83 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "miernogifttitle"
+	group: ""
+	icon: "mierno:whos_gift"
+	id: "5AAA97770383F703"
+	order_index: 3
+	quest_links: [ ]
+	quests: [{
+		can_repeat: true
+		icon: "mierno:whos_gift"
+		id: "436590CDADE16835"
+		rewards: [
+			{
+				count: 64
+				id: "326616DA393DB15B"
+				item: "botanicalextramachinery:ultimate_mana_pool"
+				team_reward: true
+				type: "item"
+			}
+			{
+				count: 64
+				id: "5296AEA8B9E55A3F"
+				item: "botanicalextramachinery:ultimate_runic_altar"
+				team_reward: true
+				type: "item"
+			}
+			{
+				count: 64
+				id: "2EED81E51A1762A3"
+				item: "botanicalextramachinery:ultimate_industrial_agglomeration_factory"
+				team_reward: true
+				type: "item"
+			}
+			{
+				count: 64
+				id: "7174CB953E232B50"
+				item: "botanicalextramachinery:ultimate_alfheim_market"
+				team_reward: true
+				type: "item"
+			}
+			{
+				count: 64
+				id: "3BDA269C06673FEB"
+				item: "botanicalextramachinery:ultimate_daisy"
+				team_reward: true
+				type: "item"
+			}
+			{
+				count: 64
+				id: "051AFC1FAF2369AF"
+				item: "botanicalextramachinery:crimson_spark"
+				team_reward: true
+				type: "item"
+			}
+			{
+				count: 64
+				id: "5F3E9CECACF1B9C0"
+				item: "botanicalextramachinery:catalyst_mana_infinity"
+				team_reward: true
+				type: "item"
+			}
+			{
+				count: 64
+				id: "092C6ADE7BC06A43"
+				item: "botanicalextramachinery:catalyst_speed"
+				team_reward: true
+				type: "item"
+			}
+		]
+		shape: "gear"
+		size: 8.0d
+		tasks: [{
+			id: "755ECDFC8B3CB8AC"
+			type: "checkmark"
+		}]
+		title: "{mierno.gift.title}"
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "{mierno.gift.title}"
+}

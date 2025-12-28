@@ -1,6 +1,6 @@
 CapabilityEvents.blockEntity((event) => {
     event.attach(
-        'wizards_reborn:orbital_fluid_retainer',
+        'ae2:sky_tank',
         BotaniaCapabilityBuilder.MANA.blockEntity()
             .receiveMana((be, amount) => {
                 let fluidCap = be.getCapability(ForgeCapabilities.FLUID_HANDLER).orElse(null);

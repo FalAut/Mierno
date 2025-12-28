@@ -12,39 +12,6 @@ ServerEvents.recipes((event) => {
         'smooth_stone',
     ]);
 
-    naturesaura.tree_ritual('naturesaura:offering_table', [
-        Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:overworld"}').weakNBT(),
-        'naturesaura:token_joy',
-        'naturesaura:ancient_stick',
-        'naturesaura:ancient_stick',
-        'naturesaura:infused_stone',
-        'mierno:infused_wood',
-        'naturesaura:infused_stone',
-        'mierno:infused_wood',
-    ]);
-
-    naturesaura.tree_ritual('mierno:engraving_table', [
-        Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:overworld"}').weakNBT(),
-        'mierno:token_base',
-        'naturesaura:ancient_stick',
-        'naturesaura:ancient_stick',
-        'mierno:infused_wood',
-        'mierno:infused_wood',
-        'mierno:infused_wood',
-        'mierno:infused_wood',
-    ]);
-
-    naturesaura.tree_ritual('tiab:time_in_a_bottle', [
-        'naturesaura:clock_hand',
-        Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:overworld"}').weakNBT(),
-        'naturesaura:sky_ingot',
-        'naturesaura:sky_ingot',
-        'naturesaura:sky_ingot',
-        'naturesaura:sky_ingot',
-        'naturesaura:sky_ingot',
-        'naturesaura:sky_ingot',
-    ]);
-
     naturesaura.tree_ritual('mierno:dream_lantern', [
         'minecraft:chain',
         'naturesaura:aura_trove',
@@ -54,17 +21,6 @@ ServerEvents.recipes((event) => {
         'mierno:infused_wood',
         'mierno:infused_wood',
         'mierno:infused_wood',
-    ]);
-
-    naturesaura.tree_ritual('botania:runic_altar', [
-        'mierno:sun_crystal_full',
-        'botania:mana_diamond',
-        'botania:livingrock',
-        'botania:livingrock',
-        'botania:livingrock',
-        'botania:mana_powder',
-        'botania:livingrock',
-        'botania:manasteel_ingot',
     ]);
 
     naturesaura.tree_ritual('naturesaura:conversion_catalyst', [
@@ -124,17 +80,19 @@ ServerEvents.recipes((event) => {
 
     naturesaura.altar('naturesaura:infused_stone', 'minecraft:stone');
     naturesaura.altar('mierno:infused_wood', '#logs');
-    naturesaura.altar('minecraft:glowstone_dust', 'minecraft:redstone', 'naturesaura:conversion_catalyst');
-    naturesaura.altar('minecraft:amethyst_shard', 'minecraft:emerald', 'naturesaura:conversion_catalyst');
-    naturesaura.altar('minecraft:quartz', 'minecraft:lapis_lazuli', 'naturesaura:conversion_catalyst');
+    naturesaura.altar('minecraft:glowstone_dust', 'minecraft:redstone', 1000, 60, 'naturesaura:conversion_catalyst');
+    naturesaura.altar('minecraft:amethyst_shard', 'minecraft:emerald', 1000, 60, 'naturesaura:conversion_catalyst');
+    naturesaura.altar('minecraft:quartz', 'minecraft:lapis_lazuli', 1000, 60, 'naturesaura:conversion_catalyst');
     naturesaura.altar('botania:vivid_seeds', 'botania:grass_seeds');
     naturesaura.altar('naturesaura:infused_iron', 'iron_ingot');
     naturesaura.altar('naturesaura:infused_iron_block', 'iron_block');
-    naturesaura.altar('naturesaura:tainted_gold', 'gold_ingot', 'mierno:nether_catalyst', 1000);
-    naturesaura.altar('naturesaura:tainted_gold_block', 'gold_block', 'mierno:nether_catalyst', 9000);
+    naturesaura.altar('naturesaura:tainted_gold', 'gold_ingot', 1000, 60, 'mierno:nether_catalyst');
+    naturesaura.altar('naturesaura:tainted_gold_block', 'gold_block', 9000, 60, 'mierno:nether_catalyst');
     naturesaura.altar(
         Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:nether"}'),
         'naturesaura:bottle_two_the_rebottling',
+        1000,
+        60,
         'mierno:nether_catalyst'
     );
     naturesaura.altar(
@@ -144,16 +102,20 @@ ServerEvents.recipes((event) => {
     naturesaura.altar(
         Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:end"}'),
         'naturesaura:bottle_two_the_rebottling',
+        1000,
+        60,
         'mierno:end_catalyst'
     );
     naturesaura.altar(
         'minecraft:dragon_breath',
         Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:end"}').weakNBT(),
+        1000,
+        60,
         'mierno:end_catalyst'
     );
 
-    naturesaura.offering('mierno:whos_gift', 'mierno:wrapped_gift');
-    naturesaura.offering('mierno:dream_wings', 'naturesaura:pet_reviver');
+    naturesaura.offering('mierno:whos_gift', 'mierno:wrapped_gift', 'naturesaura:calling_spirit');
+    naturesaura.offering('mierno:dream_wings', 'naturesaura:pet_reviver', 'naturesaura:calling_spirit');
 
     naturesaura
         .animal_spawner('cow', ['naturesaura:birth_spirit', 'botania:rune_earth'])

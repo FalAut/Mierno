@@ -2,7 +2,6 @@ $modsFolderPath = "$PSScriptRoot\mods"
 
 $filesToDelete = @(
     "brightnessslider-forge-1.0-1.20.jar",
-    "create-ponder-1.20.1-0.0.2a-all.jar",
     "configured-forge-1.20.1-2.2.3.jar",
     "Controlling-forge-1.20.1-12.0.2.jar",
     "embeddium-0.3.31+mc1.20.1.jar",

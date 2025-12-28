@@ -565,9 +565,10 @@
     "mierno.chapter3-3.title": "终末之地",
 
     "mierno.welcome.main.desc0": "§4⚠⚠⚠⚠⚠⚠⚠⚠⚠警告⚠⚠⚠⚠⚠⚠⚠⚠⚠",
-    "mierno.welcome.main.desc1": "§c此整合包有一些魔法模组，如果您不喜欢魔法模组，那么这个整合包可能不适合您！",
-    "mierno.welcome.main.desc2": "§c此整合包并非旨在教您如何游玩Minecraft整合包，请自行探索。",
-    "mierno.welcome.main.desc3": "§c若您在游玩过程中出现眩晕、恶心或疲劳等任何不适，别忘了你随时可以退出游戏，无需勉强。",
+    "mierno.welcome.main.desc1": "§c不管你是从哪听说的，实际上这个整合包并不适合新手。",
+    "mierno.welcome.main.desc2": "§c此整合包有很多魔法模组，如果您不喜欢魔法模组，那么这个整合包可能不适合您！",
+    "mierno.welcome.main.desc3": "§c此整合包并非旨在教您如何游玩Minecraft整合包，请自行探索。",
+    "mierno.welcome.main.desc4": "§c作者制作本整合包时只是抱着“做着玩”的心态，许多地方可能不尽人意，甚至意义不明，如果这个整合包不符合你的喜好，别忘了你随时可以退出游戏，无需勉强。",
 
     "mierno.welcome.special_thanks.title": "特别感谢",
     "mierno.welcome.special_thanks.falaut": "§6落秋§r - 作者",

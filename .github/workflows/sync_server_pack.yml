@@ -37,9 +37,6 @@ jobs:
                       main/defaultconfigs/ server_pack/defaultconfigs/
 
                   rsync -a --delete \
-                      main/hotai/ server_pack/hotai/
-
-                  rsync -a --delete \
                       --exclude 'assets' \
                       --exclude 'client_scripts' \
                       --exclude 'config' \

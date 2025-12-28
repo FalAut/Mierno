@@ -56,10 +56,6 @@
 kubejs/README.txt
 kubejs/jsconfig.json
 
-## Hotai
-!hotai/
-!hotai/**
-
 ## MBD2
 !ldlib/
 !ldlib/**

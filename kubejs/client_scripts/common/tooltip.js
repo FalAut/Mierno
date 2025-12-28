@@ -5,8 +5,6 @@ ItemEvents.tooltip((event) => {
         { item: 'mierno:ancient_aura_generator_core', lines: 6 },
         { item: 'mierno:dream_lantern', lines: 5 },
         { item: 'mierno:colossal_furnace_core', lines: 7 },
-        { item: 'mierno:modular_runic_altar_core', lines: 3 },
-        { item: 'mierno:terrestrial_agglomeration_crystal', lines: 3 },
         { item: 'botania:third_eye', lines: 4 },
         { item: 'mierno:memory_source_drawing_crystal_core', lines: 5 },
         { item: 'occultism:divination_rod', lines: 4 },
@@ -37,13 +35,7 @@ ItemEvents.tooltip((event) => {
         }
     });
 
-    event.add('mierno:modular_imbuement_chamber_core', [
-        Text.translate('tooltip.mierno.modular_imbuement_chamber_core_1').gold(),
-        Text.translate('tooltip.mierno.modular_imbuement_chamber_core_2').gold(),
-    ]);
-    event.add('mierno:modular_mana_pool_core', Text.translate('tooltip.mierno.modular_mana_pool_core_1').gold());
     event.add('oak_sapling', Text.translate('tooltip.mierno.oak_sapling').gold());
-    event.add('mierno:oak_mortar', Text.translate('tooltip.mierno.oak_mortar').gold());
     event.add('mierno:dream_latern', Text.translate('tooltip.mierno.dream_latern').gold());
     event.add('botania:black_lotus', Text.translate('tooltip.mierno.black_lotus').gold());
     event.add(
@@ -210,10 +202,6 @@ ItemEvents.tooltip((event) => {
 
     event.add(['minecraft:clay_ball', 'botania:clayconia'], Text.translate('tooltip.mierno.clay_ball').gold());
 
-    event.add(
-        'mierno:modular_alfheim_portal_core',
-        Text.translate('tooltip.mierno.modular_alfheim_portal_core').gold()
-    );
     event.add('evilcraft:eternal_water', Text.translate('tooltip.mierno.eternal_water').gold());
 
     event.add('botania:pinkinator', [

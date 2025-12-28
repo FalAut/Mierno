@@ -3,11 +3,6 @@
     "box_of_eternal_closure": true,
     "broom": true
   },
-  "wizards_reborn": {
-    "numerical": true,
-    "crystal_growth": true,
-    "salt_campfire": true
-  },
   "minecraft": {
     "item_storage.show_name_amount": 5,
     "furnace": true,
@@ -66,6 +61,11 @@
   },
   "entangled": {
     "entangled_block_component": true
+  },
+  "avaritia": {
+    "extreme_smithing": true,
+    "crafting_table": true,
+    "compressor": true
   },
   "pneumaticcraft": {
     "pneumatic": true,

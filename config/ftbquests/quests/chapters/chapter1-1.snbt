@@ -1278,37 +1278,6 @@
 			y: -1.5d
 		}
 		{
-			can_repeat: true
-			icon: {
-				Count: 1
-				id: "mbtool:mbtool"
-				tag: {
-					energy: 100000
-				}
-			}
-			id: "35E6D10EA6D10C1D"
-			rewards: [{
-				id: "119177AB267ADF47"
-				item: {
-					Count: 1
-					id: "mbtool:mbtool"
-					tag: {
-						energy: 100000
-					}
-				}
-				type: "item"
-			}]
-			shape: "gear"
-			size: 2.0d
-			tasks: [{
-				id: "2A0F30EF9584A06A"
-				type: "checkmark"
-			}]
-			title: "{item.mbtool.mbtool}"
-			x: -2.0d
-			y: 0.0d
-		}
-		{
 			dependencies: ["0EF181ADCC2BD78C"]
 			id: "3AF464DDA565383F"
 			tasks: [{

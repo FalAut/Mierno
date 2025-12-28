@@ -44,7 +44,7 @@
 				{
 					count: 64
 					id: "73212191B5845ABD"
-					item: "ae2:fluix_glass_cable"
+					item: "ae2:fluix_smart_cable"
 					team_reward: true
 					type: "item"
 				}
@@ -89,7 +89,7 @@
 					id: "45A01D5B3446DA35"
 					item: {
 						Count: 1
-						id: "ae2:item_storage_cell_4k"
+						id: "ae2:item_storage_cell_256k"
 						tag: { }
 					}
 					team_reward: true

@@ -803,95 +803,6 @@
 			y: 0.5d
 		}
 		{
-			dependencies: ["678EFB78B1959946"]
-			id: "039DEBDCAF68B14D"
-			invisible: true
-			rewards: [{
-				id: "31A9BC9875222C4F"
-				item: {
-					Count: 1
-					id: "ftbquests:lootcrate"
-					tag: {
-						type: "automation"
-					}
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "6561072C2908CAD7"
-				item: {
-					Count: 1
-					id: "ae2:meteorite_compass"
-					tag: {
-						display: {
-							Lore: [
-								"{\"italic\":false,\"color\":\"gold\",\"translate\":\"tooltip.mierno.meteorite_compass1\"}"
-								"{\"italic\":false,\"color\":\"gold\",\"translate\":\"tooltip.mierno.meteorite_compass2\"}"
-								"{\"italic\":false,\"color\":\"gold\",\"translate\":\"tooltip.mierno.meteorite_compass3\"}"
-							]
-							Name: "{\"translate\":\"item.mierno.maze_compass\",\"bold\":true,\"italic\":false}"
-						}
-					}
-				}
-				type: "item"
-			}]
-			x: -1.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["198B6F92CB7F3082"]
-			id: "245DC334FDA4AB00"
-			rewards: [{
-				id: "15F31C45084DC19A"
-				item: {
-					Count: 1
-					id: "ftbquests:lootcrate"
-					tag: {
-						type: "automation"
-					}
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "751866613C786927"
-				item: "botania:overgrowth_seed"
-				type: "item"
-			}]
-			x: -3.5d
-			y: 1.0d
-		}
-		{
-			dependencies: ["198B6F92CB7F3082"]
-			id: "3A57FAF02C0F3714"
-			rewards: [{
-				id: "27124ADEF0C01CDF"
-				item: {
-					Count: 1
-					id: "ftbquests:lootcrate"
-					tag: {
-						type: "automation"
-					}
-				}
-				type: "item"
-			}]
-			shape: "heart"
-			tasks: [{
-				id: "093A50FD076BAEAB"
-				item: {
-					Count: 1
-					id: "tiab:time_in_a_bottle"
-					tag: {
-						storedTime: 622080000
-						totalAccumulatedTime: 622080000
-					}
-				}
-				match_nbt: true
-				type: "item"
-			}]
-			x: -3.5d
-			y: -1.0d
-		}
-		{
 			dependencies: [
 				"6F79995AF59A5557"
 				"5A8D08BBA0AB0B90"
@@ -1560,31 +1471,6 @@
 		}
 		{
 			dependencies: ["341A543368E45E54"]
-			icon: "mierno:maze_block"
-			id: "198B6F92CB7F3082"
-			invisible: true
-			rewards: [{
-				id: "50090C1CD05FA7D6"
-				item: {
-					Count: 1
-					id: "ftbquests:lootcrate"
-					tag: {
-						type: "automation"
-					}
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "33D2FC34AC68359E"
-				structure: "mierno:maze"
-				title: "{mierno.chapter1-2.find_maze.title}"
-				type: "structure"
-			}]
-			x: -2.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["341A543368E45E54"]
 			id: "14E1CFC1C6535C47"
 			rewards: [
 				{
@@ -2063,35 +1949,6 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["198B6F92CB7F3082"]
-			id: "361F553475AC6C8F"
-			rewards: [
-				{
-					id: "4248795E9BA98721"
-					item: {
-						Count: 1
-						id: "ftbquests:lootcrate"
-						tag: {
-							type: "automation"
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "5324C0F5CCC3ADA6"
-					item: "botania:blacker_lotus"
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "6488FA964B9F6198"
-				item: "botania:blacker_lotus"
-				type: "item"
-			}]
-			x: -3.5d
-			y: 0.0d
-		}
-		{
 			dependencies: ["368690E9474BB079"]
 			id: "2B96419F4DD86B22"
 			rewards: [
@@ -2495,12 +2352,13 @@
 				}
 			]
 			shape: "rsquare"
+			size: 2.0d
 			tasks: [{
 				id: "215D9E2FAD851196"
 				type: "checkmark"
 			}]
 			x: -2.0d
-			y: 1.5d
+			y: 0.0d
 		}
 	]
 	title: "{mierno.chapter1-2.title}"

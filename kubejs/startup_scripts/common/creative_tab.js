@@ -12,14 +12,14 @@ StartupEvents.modifyCreativeTab('kubejs:tab', (event) => {
         Item.of('mierno:multiplication_sigil').enchant('mierno:activate', 1),
         Item.of('mierno:division_sigil').enchant('mierno:activate', 1),
         Item.of('mierno:pseudo_inversion_sigil').enchant('mierno:activate', 1),
-        Item.of(
-            'ae2:meteorite_compass',
-            '{display:{Name:\'{"translate":"item.mierno.maze_compass","bold":true,"italic":false}\'}}'
-        ).withLore([
-            Text.translate('tooltip.mierno.meteorite_compass1').gold().italic(false),
-            Text.translate('tooltip.mierno.meteorite_compass2').gold().italic(false),
-            Text.translate('tooltip.mierno.meteorite_compass3').gold().italic(false),
-        ]),
+        // Item.of(
+        //     'ae2:meteorite_compass',
+        //     '{display:{Name:\'{"translate":"item.mierno.maze_compass","bold":true,"italic":false}\'}}'
+        // ).withLore([
+        //     Text.translate('tooltip.mierno.meteorite_compass1').gold().italic(false),
+        //     Text.translate('tooltip.mierno.meteorite_compass2').gold().italic(false),
+        //     Text.translate('tooltip.mierno.meteorite_compass3').gold().italic(false),
+        // ]),
     ]);
 });
 

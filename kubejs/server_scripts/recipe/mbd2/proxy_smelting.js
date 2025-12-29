@@ -17,7 +17,7 @@ ServerEvents.recipes((event) => {
         let recipe = event.recipes.mierno.proxy_smelting();
 
         recipe.isFuel(true);
-        recipe.slotName('fuel_input', (builder) => {
+        recipe.slotName('fuel_slot', (builder) => {
             builder.inputItems(itemId);
         });
         recipe.duration(burnTime);

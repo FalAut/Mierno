@@ -120,17 +120,17 @@ ServerEvents.recipes((event) => {
         .damageIngredient(['#axes', '#forge:shears']);
 
     kubejs.shapeless('2x ars_nouveau:magebloom_fiber', 'ars_nouveau:magebloom');
-    kubejs.shapeless(
-        Item.of(
-            'ae2:meteorite_compass',
-            '{display:{Name:\'{"translate":"item.mierno.maze_compass","bold":true,"italic":false}\'}}'
-        ).withLore([
-            Text.translate('tooltip.mierno.meteorite_compass1').gold().italic(false),
-            Text.translate('tooltip.mierno.meteorite_compass2').gold().italic(false),
-            Text.translate('tooltip.mierno.meteorite_compass3').gold().italic(false),
-        ]),
-        ['minecraft:compass', Item.of('naturesaura:aura_bottle', '{stored_type:"mierno:mist"}').weakNBT()]
-    );
+    // kubejs.shapeless(
+    //     Item.of(
+    //         'ae2:meteorite_compass',
+    //         '{display:{Name:\'{"translate":"item.mierno.maze_compass","bold":true,"italic":false}\'}}'
+    //     ).withLore([
+    //         Text.translate('tooltip.mierno.meteorite_compass1').gold().italic(false),
+    //         Text.translate('tooltip.mierno.meteorite_compass2').gold().italic(false),
+    //         Text.translate('tooltip.mierno.meteorite_compass3').gold().italic(false),
+    //     ]),
+    //     ['minecraft:compass', Item.of('naturesaura:aura_bottle', '{stored_type:"mierno:mist"}').weakNBT()]
+    // );
 
     kubejs
         .shapeless('bloodmagic:ritualdivinerdusk', ['bloodmagic:ritualdiviner', 'bloodmagic:duskscribetool'])

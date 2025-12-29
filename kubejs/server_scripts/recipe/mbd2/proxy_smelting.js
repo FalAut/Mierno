@@ -1,16 +1,26 @@
+// ServerEvents.recipes((event) => {
+//     let fuelItems = {};
+
+//     Ingredient.all.stacks.forEach((itemStack) => {
+//         const burnTime = $ForgeHooks.getBurnTime(itemStack, 'minecraft:smelting');
+
+//         if (burnTime > 0) {
+//             fuelItems[itemStack.id] = burnTime;
+//         }
+//     });
+
+//     JsonIO.write('kubejs/fuel_items.json', fuelItems);
+// });
+
 ServerEvents.recipes((event) => {
-    Ingredient.all.stacks.forEach((itemStack) => {
-        const burnTime = $ForgeHooks.getBurnTime(itemStack, 'minecraft:smelting');
+    Object.entries(JsonIO.read('kubejs/fuel_items.json')).forEach(([itemId, burnTime]) => {
+        let recipe = event.recipes.mierno.proxy_smelting();
 
-        if (burnTime > 0) {
-            let recipe = event.recipes.mierno.proxy_smelting();
-
-            recipe.isFuel(true);
-            recipe.slotName('fuel_slot', (builder) => {
-                builder.inputItems(itemStack);
-            });
-            recipe.duration(burnTime);
-        }
+        recipe.isFuel(true);
+        recipe.slotName('fuel_input', (builder) => {
+            builder.inputItems(itemId);
+        });
+        recipe.duration(burnTime);
     });
 });
 
@@ -36,3 +46,19 @@ MBDRecipeTypeEvents.onTransferProxyRecipe('mierno:proxy_smelting', (e) => {
         event.mbdRecipe = recipe;
     }
 });
+
+// ServerEvents.recipes((event) => {
+//     Ingredient.all.stacks.forEach((itemStack) => {
+//         const burnTime = $ForgeHooks.getBurnTime(itemStack, 'minecraft:smelting');
+
+//         if (burnTime > 0) {
+//             let recipe = event.recipes.mierno.proxy_smelting();
+
+//             recipe.isFuel(true);
+//             recipe.slotName('fuel_slot', (builder) => {
+//                 builder.inputItems(itemStack);
+//             });
+//             recipe.duration(burnTime);
+//         }
+//     });
+// });

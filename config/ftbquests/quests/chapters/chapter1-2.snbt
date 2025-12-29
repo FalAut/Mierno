@@ -2471,7 +2471,29 @@
 			y: 5.25d
 		}
 		{
+			can_repeat: true
+			dependencies: ["341A543368E45E54"]
 			id: "6CA90E8704D1D792"
+			rewards: [
+				{
+					id: "7D131AB142E68FC5"
+					item: {
+						Count: 1
+						id: "tiab:time_in_a_bottle"
+						tag: {
+							storedTime: 622080000
+							totalAccumulatedTime: 622080000
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 64
+					id: "7CC75EB011AABF54"
+					item: "botania:blacker_lotus"
+					type: "item"
+				}
+			]
 			shape: "rsquare"
 			tasks: [{
 				id: "215D9E2FAD851196"

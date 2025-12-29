@@ -34,9 +34,15 @@ ItemEvents.rightClicked('ae2:meteorite_compass', (event) => {
     player.tell(Text.translate('message.mierno.locating_maze').gold());
 
     let structurePos = locateStructurePos(level, 'mierno:maze', player.blockPosition(), 1024);
+    let areas = LoquatAreaManager.of(level).byPosition(structurePos.above(25));
 
     if (structurePos) {
-        level.setBlock(structurePos.north(40).west(40), Block.getBlock('ae2:mysterious_cube').defaultBlockState(), 3);
+        areas.forEach((area) => {
+            if (area.tags.contains('maze')) {
+                let mazeCenterPos = [area.center.x(), area.center.y() - 3, area.center.z()];
+                level.setBlock(mazeCenterPos, Block.getBlock('ae2:mysterious_cube').defaultBlockState(), 3);
+            }
+        });
         player.tell(Text.translate('message.mierno.maze_locating_success').green());
     } else {
         player.tell(Text.translate('message.mierno.maze_locating_fail').red());

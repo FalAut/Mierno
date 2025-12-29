@@ -1,3 +1,13 @@
+## v0.4.0
+
+-   _警告：自 0.3.9 版本开始，整合包修改了很多东西，可能会破坏你的存档，如果你玩的是 0.3.8 及之前的版本，最好不要更新, 如果一定要更新，请先备份你的存档。_
+-   _Warning: Starting from version 0.3.9, the modpack has been modified many things, which may cause damage to your saved game. If you are playing with version 0.3.8 or earlier, it is recommended not to update. If you must update, please back up your saved game first._
+-   修复巨型熔炉无法正确获取燃料的问题
+-   修复迷雾森林传送门在多方块构建工具中不显示的问题
+-   修复服务器中部分任务无法显示的问题
+-   修复服务器中客户端无法同步灵气类型的问题
+-   修复陨石罗盘偶尔定位错误的问题
+
 ## v0.3.9
 
 -   _警告：这个版本修改了很多东西，可能会破坏你的存档，如果你玩的是之前的版本，最好不要更新, 如果一定要更新，请先备份你的存档。_

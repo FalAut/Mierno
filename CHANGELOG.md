@@ -7,6 +7,13 @@
 -   修复服务器中部分任务无法显示的问题
 -   修复服务器中客户端无法同步灵气类型的问题
 
+---
+
+-   Fixed an issue where the Giant Furnace couldn't properly obtain fuel
+-   Fixed an issue where the Mist Forest Portal didn't display in the Multi-Block Builder
+-   Fixed an issue where some quests didn't display on the server
+-   Fixed an issue where clients couldn't synchronize Aura types on the server
+
 ## v0.3.9
 
 -   _警告：这个版本修改了很多东西，可能会破坏你的存档，如果你玩的是之前的版本，最好不要更新, 如果一定要更新，请先备份你的存档。_

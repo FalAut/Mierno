@@ -3,7 +3,4 @@
 
 { 
     fake_players: "allow"
-    max_claimed_chunks: ∞
-    max_force_loaded_chunks: ∞
-    force_load_mode: "always"
 }

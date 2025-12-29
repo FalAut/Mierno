@@ -805,6 +805,7 @@
 		{
 			dependencies: ["678EFB78B1959946"]
 			id: "039DEBDCAF68B14D"
+			invisible: true
 			rewards: [{
 				id: "31A9BC9875222C4F"
 				item: {
@@ -1561,6 +1562,7 @@
 			dependencies: ["341A543368E45E54"]
 			icon: "mierno:maze_block"
 			id: "198B6F92CB7F3082"
+			invisible: true
 			rewards: [{
 				id: "50090C1CD05FA7D6"
 				item: {
@@ -2467,6 +2469,16 @@
 			}]
 			x: 11.25d
 			y: 5.25d
+		}
+		{
+			id: "6CA90E8704D1D792"
+			shape: "rsquare"
+			tasks: [{
+				id: "215D9E2FAD851196"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 1.5d
 		}
 	]
 	title: "{mierno.chapter1-2.title}"

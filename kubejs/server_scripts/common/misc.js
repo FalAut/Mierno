@@ -81,7 +81,12 @@ BlockEvents.broken(
     }
 );
 
-EntityEvents.spawned('wither', (event) => event.entity.setNoAi(true));
+EntityEvents.spawned('wither', (event) => {
+    /**@type {Internal.WitherBoss} */
+    let living = event.entity;
+    living.setHealth(300);
+    living.setNoAi(true);
+});
 
 // BlockEvents.placed('mierno:memory_matrix', (event) => {
 //     const { block, level, server } = event;

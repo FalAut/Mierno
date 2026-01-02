@@ -3,6 +3,20 @@
 -   _警告：自 0.3.9 版本开始，整合包修改了很多东西，可能会破坏你的存档，如果你玩的是 0.3.8 及之前的版本，最好不要更新, 如果一定要更新，请先备份你的存档。_
 -   _Warning: Starting from version 0.3.9, the modpack has been modified many things, which may cause damage to your saved game. If you are playing with version 0.3.8 or earlier, it is recommended not to update. If you must update, please back up your saved game first._
 -   修复凋零生成后无敌的问题
+-   现在黑莲花为魔力池提供魔力时，不需要魔力池内有魔力
+-   修复多方块构建工具中，装配室的名称显示错误的问题
+-   修复基础火花和火花配方冲突的问题
+-   隐藏了最低级的植物机械，现在你可以从基础级别做起
+-   将植物机械一些材料配方中的泰拉钢改为铁
+
+---
+
+-   Fixed the issue where the invincibility effect occurred after the Wither generation.
+-   Now, when the Black Lotus provides magic power to the Magic Pool, there is no requirement for the Magic Pool to have magic power.
+-   Fixed the problem where the name of the Assembly Room was displayed incorrectly in the Multi-block Tool.
+-   Fixed the conflict between the basic sparks and the spark recipes.
+-   Hidden the lowest-level plant machinery. Now, you can start from the basic level.
+-   Changed the Terra Steel in some material recipes of the botania machinery to Iron.
 
 ## v0.4.0
 

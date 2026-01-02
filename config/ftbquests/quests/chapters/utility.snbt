@@ -857,50 +857,6 @@
 					item: "ae2:certus_quartz_crystal"
 					type: "item"
 				}
-				{
-					id: "7B7C3EDC52FD3788"
-					item: {
-						Count: 1
-						id: "ae2netanalyser:network_analyser"
-						tag: {
-							color_config: [
-								{
-									color: -855703297
-									name: "COMPRESSED"
-									type: "LINK"
-								}
-								{
-									color: -855638272
-									name: "DENSE"
-									type: "LINK"
-								}
-								{
-									color: -872414977
-									name: "NORMAL"
-									type: "NODE"
-								}
-								{
-									color: -855638272
-									name: "DENSE"
-									type: "NODE"
-								}
-								{
-									color: -855703552
-									name: "MISSING"
-									type: "NODE"
-								}
-								{
-									color: -872414977
-									name: "NORMAL"
-									type: "LINK"
-								}
-							]
-							mode: "FULL"
-							node_size: 0.4f
-						}
-					}
-					type: "item"
-				}
 			]
 			tasks: [{
 				id: "5D7E8F42A7B36901"

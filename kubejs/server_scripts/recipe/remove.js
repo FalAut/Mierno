@@ -303,6 +303,13 @@ ServerEvents.recipes((event) => {
         'pneumaticcraft:speed_upgrade',
         'pneumaticcraft:speed_upgrade_from_glycerol',
         'kylin_arm:kylin_arm',
+        'botanicalextramachinery:base_spark',
+        'botanicalmachinery:alfheim_market',
+        'botanicalmachinery:industrial_agglomeration_factory',
+        'botanicalmachinery:mechanical_apothecary',
+        'botanicalmachinery:mechanical_mana_pool',
+        'botanicalmachinery:mechanical_runic_altar',
+        'botanicalmachinery:mechanical_daisy',
     ];
 
     recipesToRemoveID.forEach((recipe) => {

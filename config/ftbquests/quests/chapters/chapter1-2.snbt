@@ -2098,14 +2098,8 @@
 			id: "2CAC41F4592265A4"
 			tasks: [
 				{
-					id: "76F6999E4954E782"
-					item: "botanicalmachinery:mechanical_mana_pool"
-					type: "item"
-				}
-				{
 					id: "38A4938DC2802CD6"
 					item: "botanicalextramachinery:base_mana_pool"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -2134,14 +2128,8 @@
 			id: "72649A6D5D91538B"
 			tasks: [
 				{
-					id: "4622E472568727B8"
-					item: "botanicalmachinery:industrial_agglomeration_factory"
-					type: "item"
-				}
-				{
 					id: "089B2DB3178E2291"
 					item: "botanicalextramachinery:base_industrial_agglomeration_factory"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -2170,14 +2158,8 @@
 			id: "6B1613992FE6B856"
 			tasks: [
 				{
-					id: "2D636E80C4FD29D8"
-					item: "botanicalmachinery:mechanical_runic_altar"
-					type: "item"
-				}
-				{
 					id: "2CD6827B0D38936A"
 					item: "botanicalextramachinery:base_runic_altar"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -2206,14 +2188,8 @@
 			id: "3E7815736A721845"
 			tasks: [
 				{
-					id: "0360D1D8D568DC71"
-					item: "botanicalmachinery:alfheim_market"
-					type: "item"
-				}
-				{
 					id: "22A7BE83EFBE2906"
 					item: "botanicalextramachinery:base_alfheim_market"
-					optional_task: true
 					type: "item"
 				}
 				{
@@ -2242,14 +2218,8 @@
 			id: "243A56AFA1987CF8"
 			tasks: [
 				{
-					id: "263AC4A46112279A"
-					item: "botanicalmachinery:mechanical_daisy"
-					type: "item"
-				}
-				{
 					id: "342B52321F5EF9FC"
 					item: "botanicalextramachinery:base_daisy"
-					optional_task: true
 					type: "item"
 				}
 				{

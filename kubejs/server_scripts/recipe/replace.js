@@ -93,4 +93,36 @@ ServerEvents.recipes((event) => {
     event.replaceInput({ id: 'ad_astra:cryo_freezer' }, 'ad_astra:ostrum_plate', 'ad_astra:etrium_plate');
     event.replaceInput({ id: 'ad_astra:oxygen_loader' }, 'redstone_block', 'mekanism:steel_casing');
     event.replaceInput({ id: 'botanicalextramachinery:upgrade_pattern' }, 'netherite_ingot', 'gold_ingot');
+    event.replaceInput(
+        { id: 'botanicalextramachinery:base_mana_pool' },
+        'botanicalmachinery:mechanical_mana_pool',
+        'botania:mana_pool'
+    );
+    event.replaceInput(
+        { id: 'botanicalextramachinery:base_runic_altar' },
+        'botanicalmachinery:mechanical_runic_altar',
+        'botania:runic_altar'
+    );
+    event.replaceInput(
+        { id: 'botanicalextramachinery:base_daisy' },
+        'botanicalmachinery:mechanical_daisy',
+        'botania:daisy'
+    );
+    event.replaceInput(
+        { id: 'botanicalextramachinery:base_apothecary' },
+        'botanicalmachinery:mechanical_apothecary',
+        'botania:apothecary_default'
+    );
+    event.replaceInput(
+        { id: 'botanicalextramachinery:base_industrial_agglomeration_factory' },
+        'botanicalmachinery:industrial_agglomeration_factory',
+        'botania:terra_plate'
+    );
+    event.replaceInput(
+        { id: 'botanicalextramachinery:base_alfheim_market' },
+        'botanicalmachinery:alfheim_market',
+        'botania:alfheim_portal'
+    );
+    event.replaceInput({ mod: 'botanicalextramachinery' }, 'botania:terrasteel_ingot', 'minecraft:iron_ingot');
+    event.replaceInput({ mod: 'botanicalextramachinery' }, 'botania:terrasteel_block', 'minecraft:iron_block');
 });

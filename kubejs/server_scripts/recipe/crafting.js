@@ -1168,7 +1168,7 @@ ServerEvents.recipes((event) => {
     });
 
     kubejs.shaped('botania:life_essence', [' A ', 'ABA', ' A '], {
-        A: 'botania:terrasteel_nugget',
+        A: 'minecraft:iron_nugget',
         B: 'naturesaura:calling_spirit',
     });
 });

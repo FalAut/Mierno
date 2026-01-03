@@ -3,6 +3,8 @@
 -   _警告：自 0.3.9 版本开始，整合包修改了很多东西，可能会破坏你的存档，如果你玩的是 0.3.8 及之前的版本，最好不要更新, 如果一定要更新，请先备份你的存档。_
 -   _Warning: Starting from version 0.3.9, the modpack has been modified many things, which may cause damage to your saved game. If you are playing with version 0.3.8 or earlier, it is recommended not to update. If you must update, please back up your saved game first._
 -   再次修复凋零生成后无敌的问题
+-   添加 Applied Mekanistics 模组
+-   修复新生魔艺魔符粉碎配方 JEI 页面材质丢失问题
 
 ## v0.4.1
 

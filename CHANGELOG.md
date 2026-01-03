@@ -7,6 +7,13 @@
 -   修复新生魔艺魔符粉碎配方 JEI 页面材质丢失问题
 -   回退植物机械模组版本以修复各种问题
 
+---
+
+-   Fixed (again) the issue of invincibility after the Wither spawned.
+-   Added the Applied Mekanistics mod.
+-   Fixed the problem of missing materials on the JEI page for the Ars Magic.
+-   Backported the version of the Botanical Machinery mod to fix various issues.
+
 ## v0.4.1
 
 -   _警告：自 0.3.9 版本开始，整合包修改了很多东西，可能会破坏你的存档，如果你玩的是 0.3.8 及之前的版本，最好不要更新, 如果一定要更新，请先备份你的存档。_

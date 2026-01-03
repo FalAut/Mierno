@@ -926,12 +926,8 @@
 		{
 			id: "1AA6688F98BDEAB4"
 			tasks: [{
-				id: "06419171865D883A"
-				item: {
-					Count: 1
-					id: "entangled:block"
-					tag: { }
-				}
+				id: "3E760702E0CAC7BF"
+				item: "appmek:chemical_cell_housing"
 				type: "item"
 			}]
 			x: -3.0d

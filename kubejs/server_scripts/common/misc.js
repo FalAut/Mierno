@@ -84,6 +84,7 @@ BlockEvents.broken(
 EntityEvents.spawned('wither', (event) => {
     /**@type {Internal.WitherBoss} */
     let living = event.entity;
+    living.setInvulnerableTicks(0);
     living.setHealth(300);
     living.setNoAi(true);
 });

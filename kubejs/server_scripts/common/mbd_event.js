@@ -41,40 +41,6 @@ MBDMachineEvents.onBeforeRecipeModify('mierno:fired_crucible', (event) => {
     mbdEvent.setRecipe(copyRecipe);
 });
 
-MBDMachineEvents.onUI('mierno:engraving_table', (event) => {
-    const mbdEvent = event.getEvent();
-    const { root, player } = mbdEvent;
-    /**@type {ButtonWidget} */
-    const aLinearScar = root.getFirstWidgetById('my_bicycle_journey');
-
-    aLinearScar.setOnPressCallback((clickData) => {
-        if (clickData.isRemote) return;
-
-        if (player) {
-            player.sendData('xei_lookup_engraving');
-        } else {
-            Utils.server.getPlayerList().getPlayer(Client.player.uuid).sendData('xei_lookup_engraving');
-        }
-    });
-});
-
-MBDMachineEvents.onUI('mierno:colossal_furnace_core', (event) => {
-    const mbdEvent = event.getEvent();
-    const { root, player } = mbdEvent;
-    /**@type {ButtonWidget} */
-    const aLinearScar = root.getFirstWidgetById('my_bicycle_journey');
-
-    aLinearScar.setOnPressCallback((clickData) => {
-        if (clickData.isRemote) return;
-
-        if (player) {
-            player.sendData('xei_lookup_smelting');
-        } else {
-            Utils.server.getPlayerList().getPlayer(Client.player.uuid).sendData('xei_lookup_smelting');
-        }
-    });
-});
-
 MBDMachineEvents.onBeforeRecipeModify('mierno:colossal_furnace_core', (event) => {
     const mbdEvent = event.getEvent();
     const { machine, recipe } = mbdEvent;
@@ -104,6 +70,32 @@ MBDMachineEvents.onBeforeRecipeWorking(
         if (aura <= 0) mbdEvent.setCanceled(true);
     }
 );
+
+MBDMachineEvents.onUI('mierno:engraving_table', (event) => {
+    const mbdEvent = event.getEvent();
+    const { root, player } = mbdEvent;
+    /**@type {ButtonWidget} */
+    const aLinearScar = root.getFirstWidgetById('my_bicycle_journey');
+
+    aLinearScar.setOnPressCallback((clickData) => {
+        if (clickData.isRemote) return;
+
+        player.sendData('xei_lookup_engraving');
+    });
+});
+
+MBDMachineEvents.onUI('mierno:colossal_furnace_core', (event) => {
+    const mbdEvent = event.getEvent();
+    const { root, player } = mbdEvent;
+    /**@type {ButtonWidget} */
+    const aLinearScar = root.getFirstWidgetById('my_bicycle_journey');
+
+    aLinearScar.setOnPressCallback((clickData) => {
+        if (clickData.isRemote) return;
+
+        player.sendData('xei_lookup_smelting');
+    });
+});
 
 // MBDMachineEvents.onBeforeRecipeModify('mierno:modular_imbuement_chamber_core', (event) => {
 //     const mbdEvent = event.getEvent();

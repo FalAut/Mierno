@@ -106,7 +106,7 @@ ServerEvents.recipes((event) => {
     event.replaceInput(
         { id: 'botanicalextramachinery:base_daisy' },
         'botanicalmachinery:mechanical_daisy',
-        'botania:daisy'
+        'botania:pure_daisy'
     );
     event.replaceInput(
         { id: 'botanicalextramachinery:base_apothecary' },

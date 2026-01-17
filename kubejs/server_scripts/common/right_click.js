@@ -85,8 +85,8 @@ BlockEvents.rightClicked('mierno:colossal_furnace_core', (event) => {
         player.tell(
             Text.translate(
                 'message.mierno.colossal_furnace_core_no_enough_item',
-                Text.of((26 - item.count).toFixed(0)).yellow()
-            ).darkRed()
+                Text.of((26 - item.count).toFixed(0)).yellow(),
+            ).darkRed(),
         );
         return;
     }
@@ -157,8 +157,8 @@ BlockEvents.rightClicked('occultism:otherstone', (event) => {
     player.tell(
         Text.translate(
             'item.occultism.divination_rod.message.linked_block',
-            Text.translate('block.occultism.iesnium_ore')
-        )
+            Text.translate('block.occultism.iesnium_ore'),
+        ),
     );
     event.cancel();
 });
@@ -171,8 +171,8 @@ BlockEvents.rightClicked('minecraft:netherrack', (event) => {
     player.tell(
         Text.translate(
             'item.occultism.divination_rod.message.linked_block',
-            Text.translate('block.minecraft.netherrack')
-        )
+            Text.translate('block.minecraft.netherrack'),
+        ),
     );
     event.cancel();
 });
@@ -281,7 +281,7 @@ ItemEvents.rightClicked('mierno:whos_gift', (event) => {
 ItemEvents.rightClicked('mierno:dream_lantern', (event) => {
     const { player, level } = event;
 
-    if (player.lookAngle.y() == 1) {
+    if (player.lookAngle.y() > 0.6) {
         const /**@type {Internal.ServerPlayer} */ serverPlayer = player;
 
         if (serverPlayer.respawnPosition) {

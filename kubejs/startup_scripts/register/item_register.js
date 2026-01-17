@@ -68,7 +68,7 @@ StartupEvents.registry('item', (event) => {
                         itemEntity.playSound('botania:black_lotus', 1, 1);
                     },
                 },
-                new $Item$Properties()
+                new $Item$Properties().rarity('rare')
             )
     );
 
@@ -92,7 +92,7 @@ StartupEvents.registry('item', (event) => {
                         itemEntity.playSound('botania:black_lotus', 1, 0.1);
                     },
                 },
-                new $Item$Properties()
+                new $Item$Properties().rarity('epic')
             )
     );
 });

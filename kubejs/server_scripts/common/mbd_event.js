@@ -58,6 +58,18 @@ MBDMachineEvents.onBeforeRecipeModify('mierno:colossal_furnace_core', (event) =>
     mbdEvent.setRecipe(copyRecipe);
 });
 
+MBDMachineEvents.onStructureFormed('mierno:colossal_furnace_core', (event) => {
+    const mbdEvent = event.getEvent();
+    const { machine } = mbdEvent;
+
+    let coreFacing = machine.getFrontFacing().get();
+
+    let be = machine.level.getBlockEntity(machine.pos);
+    let core = $IMultiController.ofController(be).get();
+
+    core.parts.forEach((part) => part.setFrontFacing(coreFacing));
+});
+
 MBDMachineEvents.onBeforeRecipeWorking(
     ['mierno:aura_grinder', 'mierno:engraving_table', 'mierno:planting_station', 'mierno:modular_nature_altar_core'],
     (event) => {
@@ -68,7 +80,7 @@ MBDMachineEvents.onBeforeRecipeWorking(
         const aura = AuraChunk.getAuraInArea(level, machine.pos, 20);
 
         if (aura <= 0) mbdEvent.setCanceled(true);
-    }
+    },
 );
 
 MBDMachineEvents.onUI('mierno:engraving_table', (event) => {

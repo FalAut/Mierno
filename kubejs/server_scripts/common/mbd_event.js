@@ -41,40 +41,6 @@ MBDMachineEvents.onBeforeRecipeModify('mierno:fired_crucible', (event) => {
     mbdEvent.setRecipe(copyRecipe);
 });
 
-MBDMachineEvents.onUI('mierno:engraving_table', (event) => {
-    const mbdEvent = event.getEvent();
-    const { root, player } = mbdEvent;
-    /**@type {ButtonWidget} */
-    const aLinearScar = root.getFirstWidgetById('my_bicycle_journey');
-
-    aLinearScar.setOnPressCallback((clickData) => {
-        if (clickData.isRemote) return;
-
-        if (player) {
-            player.sendData('xei_lookup_engraving');
-        } else {
-            Utils.server.getPlayerList().getPlayer(Client.player.uuid).sendData('xei_lookup_engraving');
-        }
-    });
-});
-
-MBDMachineEvents.onUI('mierno:colossal_furnace_core', (event) => {
-    const mbdEvent = event.getEvent();
-    const { root, player } = mbdEvent;
-    /**@type {ButtonWidget} */
-    const aLinearScar = root.getFirstWidgetById('my_bicycle_journey');
-
-    aLinearScar.setOnPressCallback((clickData) => {
-        if (clickData.isRemote) return;
-
-        if (player) {
-            player.sendData('xei_lookup_smelting');
-        } else {
-            Utils.server.getPlayerList().getPlayer(Client.player.uuid).sendData('xei_lookup_smelting');
-        }
-    });
-});
-
 MBDMachineEvents.onBeforeRecipeModify('mierno:colossal_furnace_core', (event) => {
     const mbdEvent = event.getEvent();
     const { machine, recipe } = mbdEvent;
@@ -92,6 +58,18 @@ MBDMachineEvents.onBeforeRecipeModify('mierno:colossal_furnace_core', (event) =>
     mbdEvent.setRecipe(copyRecipe);
 });
 
+MBDMachineEvents.onStructureFormed('mierno:colossal_furnace_core', (event) => {
+    const mbdEvent = event.getEvent();
+    const { machine } = mbdEvent;
+
+    let coreFacing = machine.getFrontFacing().get();
+
+    let be = machine.level.getBlockEntity(machine.pos);
+    let core = $IMultiController.ofController(be).get();
+
+    core.parts.forEach((part) => part.setFrontFacing(coreFacing));
+});
+
 MBDMachineEvents.onBeforeRecipeWorking(
     ['mierno:aura_grinder', 'mierno:engraving_table', 'mierno:planting_station', 'mierno:modular_nature_altar_core'],
     (event) => {
@@ -102,8 +80,34 @@ MBDMachineEvents.onBeforeRecipeWorking(
         const aura = AuraChunk.getAuraInArea(level, machine.pos, 20);
 
         if (aura <= 0) mbdEvent.setCanceled(true);
-    }
+    },
 );
+
+MBDMachineEvents.onUI('mierno:engraving_table', (event) => {
+    const mbdEvent = event.getEvent();
+    const { root, player } = mbdEvent;
+    /**@type {ButtonWidget} */
+    const aLinearScar = root.getFirstWidgetById('my_bicycle_journey');
+
+    aLinearScar.setOnPressCallback((clickData) => {
+        if (clickData.isRemote) return;
+
+        player.sendData('xei_lookup_engraving');
+    });
+});
+
+MBDMachineEvents.onUI('mierno:colossal_furnace_core', (event) => {
+    const mbdEvent = event.getEvent();
+    const { root, player } = mbdEvent;
+    /**@type {ButtonWidget} */
+    const aLinearScar = root.getFirstWidgetById('my_bicycle_journey');
+
+    aLinearScar.setOnPressCallback((clickData) => {
+        if (clickData.isRemote) return;
+
+        player.sendData('xei_lookup_smelting');
+    });
+});
 
 // MBDMachineEvents.onBeforeRecipeModify('mierno:modular_imbuement_chamber_core', (event) => {
 //     const mbdEvent = event.getEvent();
